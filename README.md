@@ -8,3 +8,5 @@ Abrir la carpeta `gia`, dentro están las diversas tareas:
   El [primer documento](http://localhost:8080/#/gia/TASS18-object-action-function/doc001) de la tarea contiene las instrucciones para taggear.
 
 Para poder editar en la esquina superior derecha hacer click en `Login` y usar `gia` como usuario **y** password.
+
+En [Github](https://github.com/gia-uh/brat-docker/releases/download/image-v1.0/gia-brat.tar.gz) está la imagen compactada para no tener que construirla desde cero.
