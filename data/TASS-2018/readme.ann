@@ -1,0 +1,82 @@
+T1	Concept 248 252	asma
+T2	Concept 264 282	vías respiratorias
+T3	Concept 426 430	asma
+T4	Concept 442 460	vías respiratorias
+T5	Action 431 437	afecta
+E1	Action:T5 Subject:T3 Target:T4
+T6	Concept 579 587	pulmones
+T7	Reflexive-Action 591 598	hinchan
+E2	Reflexive-Action:T7 Subject:T6
+T8	Passive-Action 696 708	diagnosticar
+E3	Passive-Action:T8 Target:T9
+T9	Concept 712 728	cáncer de pulmón
+T10	Concept 894 898	asma
+T11	Concept 906 916	enfermedad
+R1	is-a Arg1:T10 Arg2:T11
+T12	Concept 1023 1032	bronquios
+T13	Concept 1054 1074	sistema respiratorio
+R2	part-of Arg1:T12 Arg2:T13
+T14	Concept 1231 1239	síntomas
+T15	Concept 1244 1248	asma
+R3	property-of Arg1:T14 Arg2:T15
+T16	Concept 1254 1257	tos
+T17	Concept 1259 1272	falta de aire
+R4	is-a Arg1:T16 Arg2:T14
+R5	is-a Arg1:T17 Arg2:T14
+T18	Concept 1503 1517	ataque de asma
+T19	Concept 1540 1548	síntomas
+T20	Reflexive-Action 1549 1557	empeoran
+E4	Reflexive-Action:T20 Subject:T19
+T21	Action 1521 1528	produce
+E5	Action:T21 Subject:E4 Target:T18
+T22	Concept 1678 1694	cáncer de pulmón
+T23	Passive-Action 1662 1674	diagnosticar
+E6	Passive-Action:T23 Target:T22
+T24	Concept 1654 1661	díficil
+R6	is-a Arg1:E6 Arg2:T24
+T25	Concept 1884 1903	células adicionales
+T26	Action 1904 1910	forman
+E7	Action:T26 Subject:T25 Target:T27
+T27	Concept 1915 1919	masa
+T28	Concept 1928 1933	tumor
+R7	alias Arg1:T27 Arg2:T28	
+T29	Concept 2085 2104	células adicionales
+T30	Action 2112 2118	formar
+E8	Action:T30 Subject:T29 Target:T31
+T31	Concept 2122 2127	tumor
+A1	Uncertain E8
+T32	Concept 2133 2153	células cancerígenas
+T33	Reflexive-Action 2157 2163	mueren
+E9	Reflexive-Action:T33 Subject:T32
+A2	Negated E9
+T34	Concept 2373 2381	síntomas
+T35	Concept 2387 2398	tratamiento
+T36	Action 2399 2407	dependen
+E10	Action:T36 Subject:T35 Target:T37
+E11	Action:T36 Subject:T34 Target:E14
+E12	Action:T36 Subject:T34 Target:T37
+E13	Action:T36 Subject:T35 Target:E14
+T37	Concept 2412 2426	tipo de cáncer
+T38	Concept 2456 2466	enfermedad
+T39	Reflexive-Action 2435 2443	avanzada
+E14	Reflexive-Action:T39 Subject:T38
+T40	Concept 2563 2589	oxigenoterapia hiperbárica
+T41	Concept 2606 2625	terapia con oxígeno
+R8	is-a Arg1:T40 Arg2:T41	
+T42	Concept 2640 2647	oxígeno
+T43	Action 2668 2674	tratar
+E15	Action:T43 Subject:T40 Target:T45
+T44	Concept 2675 2682	heridas
+T45	Concept 2685 2696	infecciones
+E16	Action:T43 Subject:T40 Target:T44
+T46	Action 2632 2639	utiliza
+E17	Action:T46 Subject:T40 Target:T42
+T47	Passive-Action 2839 2848	infección
+E18	Passive-Action:T47 Target:T49
+T48	Concept 2856 2861	virus
+T49	Concept 2866 2881	papiloma humano
+R9	is-a Arg1:T49 Arg2:T48	
+T50	Concept 2888 2904	factor de riesgo
+R10	is-a Arg1:E18 Arg2:T50	
+T51	Concept 2927 2952	cáncer de cabeza y cuello
+R11	property-of Arg1:T50 Arg2:T51	
