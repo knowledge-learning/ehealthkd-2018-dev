@@ -1,0 +1,4 @@
+*.swp
+.stats_cache
+*.tar
+*.tar.gz
