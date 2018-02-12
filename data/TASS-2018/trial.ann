@@ -1,0 +1,231 @@
+T1	Action 35 46	interrumpir
+E1	Action:T1 Target:T2 Subject:T3
+T2	Concept 50 58	embarazo
+T3	Concept 3 9	aborto
+T5	Concept 72 81	medicinas
+T6	Concept 84 91	cirugía
+T7	Concept 108 115	embrión
+T8	Concept 121 125	feto
+T9	Concept 131 139	placenta
+T10	Concept 144 149	útero
+R2	part-of Arg1:T9 Arg2:T10	
+T11	Action 97 104	retirar
+E3	Action:T11 Target:T7 Subject:E7 Target2:T8 Target3:T9
+T12	Action 63 71	utilizan
+E7	Action:T12 Target:T5 Target2:T6
+T13	Concept 188 199	profesional
+T15	Action 171 180	realizado
+E9	Action:T15 Target:T16 Subject:T14
+T16	Concept 154 167	procedimiento
+T17	Concept 216 224	licencia
+R4	property-of Arg1:T17 Arg2:T14	
+T18	Concept 256 264	embarazo
+T19	Action 241 252	interrumpir
+E10	Action:T19 Target:T18 Subject:T21
+T20	Concept 272 280	personal
+T21	Concept 229 237	decisión
+R5	property-of Arg1:T20 Arg2:T21	
+T22	Concept 368 376	asesoría
+T24	Concept 333 346	profesionales
+T26	Concept 307 313	aborto
+T27	Action 292 301	someterse
+E11	Action:T27 Target:T26
+T28	Action 359 367	sugieren
+E12	Action:T28 Target:T137 Subject:T143
+T29	Action 285 291	piensa
+E13	Action:T29 Target:E11
+T30	Concept 394 402	adopción
+T31	Concept 412 416	hijo
+T32	Action 417 423	nacido
+E14	Action:T32 Subject:T31 Target:T33
+T33	Concept 432 438	padres
+T34	Concept 452 459	familia
+T35	Concept 446 451	nueva
+R8	property-of Arg1:T35 Arg2:T34	
+T36	Action 403 408	lleva
+E15	Action:T36 Subject:T30 Target:E14
+T37	Concept 465 471	padres
+T39	Action 515 518	dar
+E17	Action:T39 Subject:E19 Target:E18
+T40	Concept 525 530	hijos
+T41	Action 534 542	adopción
+E18	Action:T41 Target:T40
+T42	Action 489 494	tener
+E19	Action:T42 Target:T43 Subject:T23
+T43	Concept 502 509	motivos
+T44	Concept 658 663	niños
+T45	Concept 713 721	entornos
+T46	Concept 722 731	distintos
+R10	property-of Arg1:T46 Arg2:T45	
+T48	Action 693 702	provienen
+E21	Action:T48 Target:T45 Subject:E5
+T49	Concept 750 768	hogares sustitutos
+T50	Concept 778 796	hogares temporales
+R11	same-as Arg1:T50 Arg2:T49	
+T51	Concept 804 809	niños
+T52	Concept 819 828	orfanatos
+T53	Action 810 815	viven
+T54	Concept 835 845	familiares
+E23	Action:T53 Subject:T51 Target:T54 Target2:T52
+T55	Action 874 877	ser
+E24	Action:T55 Subject:E23 Target:T56
+A1	Uncertain E24
+T56	Concept 878 887	adoptados
+T57	Concept 917 925	adopción
+T58	Concept 908 913	tipos
+R12	property-of Arg1:T58 Arg2:T57	
+T59	Concept 933 941	adopción
+T60	Concept 945 958	internacional
+T61	Concept 961 969	nacional
+R13	property-of Arg1:T60 Arg2:T59	
+R14	property-of Arg1:T61 Arg2:T59	
+T62	Concept 1012 1026	Estados Unidos
+T63	Concept 987 991	niño
+T64	Action 992 997	nació
+E25	Action:T64 Subject:T63 Target:T62
+T65	Action 971 980	dependerá
+E26	Action:T65 Target:E25 Subject:T59
+T66	Concept 1037 1043	cáncer
+T67	Action 1044 1052	comienza
+E27	Action:T67 Subject:T66 Target:T68
+T68	Concept 1060 1067	células
+T71	Concept 1103 1109	cuerpo
+T70	Concept 1127 1133	cuerpo
+T72	Concept 1140 1147	células
+T73	Concept 1140 1154	células nuevas
+R15	is-a Arg1:T73 Arg2:T72	
+T74	Action 1134 1139	forma
+E29	Action:T74 Subject:T70 Target:T72
+T75	Concept 1203 1210	células
+T76	Concept 1203 1222	células envejecidas
+T77	Action 1227 1233	mueren
+E30	Action:T77 Subject:T76 Target:T76
+T78	Action 1186 1196	reemplazar
+E31	Action:T78 Subject:E29 Target:E30
+T79	Action 1364 1370	mueren
+E32	Action:T79 Subject:T84 Target:T84
+A2	Negated E32
+T80	Concept 1298 1305	células
+T81	Concept 1306 1312	nuevas
+T82	Action 1320 1323	son
+E33	Action:T82 Target:T83 Subject:T80
+T83	Concept 1324 1334	necesarias
+A3	Negated E33
+T84	Concept 1341 1348	células
+T85	Concept 1349 1360	envejecidas
+R18	property-of Arg1:T85 Arg2:T84	
+T86	Action 1291 1297	Crecen
+E34	Action:T86 Subject:E33 Target:E33
+T87	Action 1421 1427	formar
+E35	Action:T87 Target:T89 Subject:T90
+A4	Uncertain E35
+T88	Concept 1432 1436	masa
+T89	Concept 1445 1450	tumor
+R19	same-as Arg1:T89 Arg2:T88	
+T90	Concept 1394 1401	células
+T93	Concept 1475 1483	benignos
+T94	Concept 1486 1494	malignos
+T92	Concept 1456 1463	tumores
+R20	is-a Arg1:T93 Arg2:T92	
+R21	is-a Arg1:T94 Arg2:T92	
+T96	Action 1520 1523	son
+E37	Action:T96 Target:T97 Subject:T95
+A5	Negated E37
+T97	Concept 1524 1530	cáncer
+T98	Concept 1549 1557	malignos
+T101	Action 1612 1619	invadir
+E40	Action:T101 Subject:T102 Target:T103
+A7	Uncertain E40
+T102	Concept 1573 1580	células
+T103	Concept 1624 1631	tejidos
+R22	part-of Arg1:T102 Arg2:T147	
+T108	Action 1885 1893	comienza
+E42	Action:T108 Target:T109 Subject:T114
+T109	Concept 1900 1906	pulmón
+T110	Concept 1942 1946	seno
+T112	Action 1927 1935	comienza
+E43	Action:T112 Target:T110 Subject:T111
+T113	Concept 1912 1918	cáncer
+T115	Concept 1868 1874	cáncer
+T116	Action 1951 1963	diseminación
+E44	Action:T116 Subject:T117
+T117	Concept 1970 1976	cáncer
+T118	Concept 2023 2033	metástasis
+T121	Concept 2122 2132	enfermedad
+T122	Concept 2039 2047	síntomas
+T123	Concept 2053 2064	tratamiento
+T124	Action 2065 2073	dependen
+E47	Action:T124 Subject:T123 Subject2:T122 Target:T106 Target2:E6
+T126	Concept 2152 2164	tratamientos
+T127	Action 2165 2172	incluye
+E50	Action:T127 Subject:T126 Target:T128 Target2:T129 Target3:T130
+T128	Concept 2173 2180	cirugía
+T129	Concept 2182 2191	radiación
+T130	Concept 2196 2209	quimioterapia
+A6	Uncertain E50
+T131	Action 2234 2241	incluir
+E53	Action:T131 Target:T132 Target2:T133 Target3:T134 Target4:E54
+T132	Concept 2242 2258	terapia hormonal
+T133	Concept 2260 2273	inmunoterapia
+T134	Concept 2291 2308	terapia biológica
+T135	Action 2312 2322	trasplante
+E54	Action:T135 Target:T136
+T136	Concept 2326 2339	células madre
+A10	Uncertain E53
+T137	Concept 368 388	asesoría psicológica
+R6	is-a Arg1:T137 Arg2:T22	
+T4	Concept 16 29	procedimiento
+R1	is-a Arg1:T3 Arg2:T4	
+T14	Concept 188 211	profesional de la salud
+R3	is-a Arg1:T14 Arg2:T13	
+T23	Concept 465 481	padres naturales
+R9	is-a Arg1:T23 Arg2:T37	
+A14	Uncertain E19
+T38	Action 741 746	están
+E2	Action:T38 Target:T49 Subject:T47
+T114	Concept 1868 1884	cáncer de pulmón
+R24	is-a Arg1:T114 Arg2:T115	
+T111	Concept 1912 1926	cáncer de seno
+R23	is-a Arg1:T111 Arg2:T113	
+T138	Concept 2291 2298	terapia
+R26	is-a Arg1:T134 Arg2:T138	
+T139	Concept 2282 2287	tipos
+R27	property-of Arg1:T139 Arg2:T134	
+T140	Concept 2242 2249	terapia
+R28	is-a Arg1:T132 Arg2:T140	
+T141	Concept 778 785	hogares
+T142	Concept 750 757	hogares
+T143	Concept 333 358	profesionales de la salud
+R7	is-a Arg1:T143 Arg2:T24	
+R29	is-a Arg1:T49 Arg2:T142	
+R30	is-a Arg1:T50 Arg2:T141	
+R31	part-of Arg1:T68 Arg2:T71	
+R16	is-a Arg1:T76 Arg2:T75	
+T25	Concept 706 712	muchos
+R32	property-of Arg1:T25 Arg2:T45	
+T69	Action 664 673	elegibles
+E5	Action:T69 Target:T144 Subject:T44
+T144	Concept 683 692	adoptados
+T47	Concept 733 740	Algunos
+T145	Concept 846 855	naturales
+R33	property-of Arg1:T145 Arg2:T54	
+R17	property-of Arg1:T81 Arg2:T80	
+T91	Concept 1402 1413	adicionales
+R34	property-of Arg1:T91 Arg2:T90	
+T146	Concept 1500 1507	tumores
+T95	Concept 1500 1516	tumores benignos
+R35	is-a Arg1:T95 Arg2:T146	
+R36	is-a Arg1:T98 Arg2:T97	
+T99	Concept 1588 1595	tumores
+T147	Concept 1588 1604	tumores malignos
+T100	Concept 1632 1640	cercanos
+R37	property-of Arg1:T100 Arg2:T103	
+T104	Action 2014 2022	denomina
+E4	Action:T104 Subject:E44 Target:T118
+T105	Concept 2086 2092	cáncer
+T106	Concept 2078 2082	tipo
+R38	property-of Arg1:T106 Arg2:T105	
+T107	Action 2101 2109	avanzada
+E6	Action:T107 Target:T121 Subject:T121
+T119	Concept 2326 2333	células
+R25	is-a Arg1:T136 Arg2:T119	

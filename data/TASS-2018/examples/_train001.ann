@@ -1,0 +1,290 @@
+T1	Concept 3 7	asma
+T2	Concept 15 25	enfermedad
+R1	is-a Arg1:T1 Arg2:T2
+T4	Action 38 44	afecta
+E2	Action:T4 Subject:T1 Target:T5
+T5	Concept 49 67	vías respiratorias
+T6	Concept 73 91	vías respiratorias
+T7	Concept 96 101	tubos
+R3	is-a Arg1:T6 Arg2:T7
+T9	Action 106 112	llevan
+E4	Action:T9 Subject:T6 Target:T10
+T10	Concept 116 120	aire
+T11	Concept 488 492	asma
+T12	Concept 475 483	síntomas
+R6	is-a Arg1:T15 Arg2:T12
+T15	Concept 503 526	respiración con silbido
+R7	is-a Arg1:T16 Arg2:T12
+T16	Concept 542 545	tos
+T17	Concept 598 617	presión en el pecho
+R8	is-a Arg1:T17 Arg2:T12
+T18	Concept 619 643	dificultad para respirar
+R9	is-a Arg1:T18 Arg2:T12
+T19	Concept 2985 2990	genes
+T20	Concept 3046 3054	alergias
+T21	Action 3025 3041	tienen un rol en
+E10	Action:T21 Subject:T19 Target:T20
+T22	Concept 2996 3010	medio ambiente
+E11	Action:T21 Subject:T22 Target:T20
+A1	Uncertain E11
+A2	Uncertain E10
+T23	Concept 2021 2025	asma
+T24	Concept 1992 1997	cosas
+T25	Action 2005 2017	desencadenar
+E12	Action:T25 Subject:T24 Target:T23
+A3	Uncertain E12
+T26	Concept 2040 2049	alergenos
+R13	is-a Arg1:T26 Arg2:T24
+R14	is-a Arg1:T28 Arg2:T24
+T28	Concept 2074 2084	irritantes
+R15	is-a Arg1:T29 Arg2:T24
+T29	Concept 2131 2136	clima
+T30	Concept 2169 2178	ejercicio
+T31	Concept 2180 2191	infecciones
+R16	is-a Arg1:T30 Arg2:T24
+R17	is-a Arg1:T31 Arg2:T24
+T32	Concept 206 224	vías respiratorias
+T33	Concept 182 198	paredes internas
+R18	part-of Arg1:T33 Arg2:T32
+T35	Reflexive-Action 228 236	inflaman
+E19	Reflexive-Action:T35 Subject:T33
+T36	Reflexive-Action 242 251	estrechan
+E20	Reflexive-Action:T36 Subject:T33
+T37	Concept 1071 1078	ataques
+T38	Concept 1082 1086	asma
+T40	Action 1101 1110	necesitar
+E22	Action:T40 Subject:T37 Target:T41
+T41	Concept 1111 1140	atención médica de emergencia
+T42	Reflexive-Action 1150 1161	ser fatales
+E23	Reflexive-Action:T42 Subject:T37
+A5	Uncertain E22
+T43	Concept 2287 2291	asma
+T44	Concept 2318 2327	medicinas
+T45	Action 2295 2300	trata
+E24	Action:T45 Target:T43 Subject:T44
+T46	Concept 2499 2518	sistema inmunitario
+T47	Concept 2469 2476	alergia
+T48	Concept 2484 2492	reacción
+R26	is-a Arg1:T47 Arg2:T48
+T51	Concept 2678 2688	reacciones
+T52	Concept 2649 2659	sustancias
+T53	Action 2671 2677	causar
+E27	Action:T53 Subject:T52 Target:T51
+A6	Uncertain E27
+T54	Concept 2694 2699	polen
+R28	is-a Arg1:T54 Arg2:T52
+T56	Concept 3060 3068	alergias
+T57	Concept 3098 3106	síntomas
+T58	Action 3076 3084	provocar
+E29	Action:T58 Subject:T56 Target:T57
+T60	Concept 3112 3126	goteos nasales
+T61	Concept 3128 3138	estornudos
+T62	Concept 3140 3147	picazón
+T63	Concept 3149 3160	sarpullidos
+T64	Concept 3162 3167	edema
+T65	Concept 3182 3186	asma
+R32	is-a Arg1:T61 Arg2:T57
+R33	is-a Arg1:T62 Arg2:T57
+R34	is-a Arg1:T63 Arg2:T57
+R35	is-a Arg1:T64 Arg2:T57
+R36	is-a Arg1:T65 Arg2:T57
+T66	Concept 2701 2717	ácaros del polvo
+T67	Concept 2719 2734	esporas de moho
+T68	Concept 2736 2753	caspa de animales
+T69	Concept 2755 2764	alimentos
+T70	Concept 2766 2787	picaduras de insectos
+T71	Concept 2789 2798	medicinas
+R37	is-a Arg1:T66 Arg2:T52
+R38	is-a Arg1:T67 Arg2:T52
+R39	is-a Arg1:T68 Arg2:T52
+R40	is-a Arg1:T69 Arg2:T52
+R41	is-a Arg1:T70 Arg2:T52
+R42	is-a Arg1:T71 Arg2:T52
+A7	Uncertain E29
+T72	Concept 3290 3297	médicos
+T73	Concept 3303 3327	pruebas de piel y sangre
+T74	Action 3298 3302	usan
+E43	Action:T74 Subject:T72 Target:T73
+T75	Action 3333 3345	diagnosticar
+E44	Action:T75 Subject:E43 Target:T76
+T76	Concept 3350 3358	alergias
+T77	Concept 3386 3395	medicinas
+T78	Concept 3364 3376	tratamientos
+R45	is-a Arg1:T77 Arg2:T78
+T80	Concept 3397 3408	inyecciones
+R46	is-a Arg1:T80 Arg2:T78
+R2	is-a Arg1:T60 Arg2:T57
+T3	Concept 3553 3560	células
+T8	Concept 3567 3573	cuerpo
+R4	is-a Arg1:T3 Arg2:T8
+T13	Action 3574 3583	necesitan
+E1	Action:T13 Subject:T3 Target:T14
+T14	Concept 3584 3591	oxígeno
+T27	Concept 3965 3984	enfermedad pulmonar
+T34	Concept 4032 4040	pulmones
+T39	Concept 4005 4015	trastornos
+T49	Action 4020 4027	afectan
+E3	Action:T49 Subject:T39 Target:T34
+R10	is-a Arg1:T27 Arg2:T39
+T50	Concept 4053 4057	asma
+R11	is-a Arg1:T50 Arg2:T27
+T55	Concept 4059 4098	enfermedad pulmonar obstructiva crónica
+R12	is-a Arg1:T55 Arg2:T27
+T59	Concept 4107 4118	infecciones
+R19	is-a Arg1:T59 Arg2:T27
+T79	Concept 4124 4129	gripe
+R20	is-a Arg1:T79 Arg2:T59
+T81	Concept 4131 4139	neumonía
+R22	is-a Arg1:T81 Arg2:T59
+T82	Concept 4142 4154	tuberculosis
+R23	is-a Arg1:T82 Arg2:T59
+T83	Concept 4156 4172	cáncer de pulmón
+R24	is-a Arg1:T83 Arg2:T27
+T84	Concept 4217 4236	sistema inmunitario
+T85	Concept 4244 4247	red
+T86	Concept 4260 4267	células
+T87	Concept 4269 4276	tejidos
+T88	Concept 4279 4286	órganos
+R27	part-of Arg1:T86 Arg2:T85
+R29	part-of Arg1:T87 Arg2:T85
+R30	part-of Arg1:T88 Arg2:T85
+R31	is-a Arg1:T84 Arg2:T85
+T90	Action 4316 4327	defendernos
+E6	Action:T90 Subject:T84 Target:T91
+T91	Concept 4335 4343	gérmenes
+T89	Concept 5006 5011	ozono
+T92	Concept 5018 5021	gas
+T93	Action 5035 5047	se encuentra
+E5	Action:T93 Subject:T89 Target:T94
+T94	Concept 5054 5058	aire
+R43	is-a Arg1:T89 Arg2:T92
+T95	Concept 6888 6899	tratamiento
+T96	Concept 6862 6881	terapia con oxígeno
+R44	is-a Arg1:T96 Arg2:T95
+T97	Action 6907 6918	proporciona
+E7	Action:T97 Subject:T96 Target:T98
+T98	Concept 6919 6926	oxígeno
+T99	Concept 6941 6948	oxígeno
+T100	Concept 6955 6958	gas
+T101	Concept 6966 6972	cuerpo
+T102	Action 6973 6981	necesita
+E8	Action:T102 Subject:T101 Target:T99
+R47	is-a Arg1:T99 Arg2:T100
+T103	Concept 7698 7701	tos
+T104	Concept 7708 7715	reflejo
+T105	Action 7720 7738	mantiene despejada
+E9	Action:T105 Subject:T103 Target:T106
+T106	Concept 7742 7750	garganta
+T107	Concept 7757 7775	vías respiratorias
+R48	is-a Arg1:T103 Arg2:T104
+T108	Concept 8322 8326	agua
+T109	Action 8342 8349	mejorar
+E13	Action:T109 Subject:T108 Target:T110
+T110	Concept 8353 8356	tos
+A4	Uncertain E13
+E14	Action:T105 Subject:T103 Target:T107
+T111	Concept 6384 6395	condiciones
+T112	Concept 6423 6436	falta el aire
+T113	Action 6403 6415	hacer sentir
+E15	Action:T113 Subject:T111 Target:T112
+A8	Uncertain E15
+T114	Concept 6438 6463	problemas de los pulmones
+R49	is-a Arg1:T114 Arg2:T111
+T115	Concept 6469 6473	asma
+R50	is-a Arg1:T115 Arg2:T114
+T116	Concept 6475 6483	enfisema
+R51	is-a Arg1:T116 Arg2:T114
+T117	Concept 6486 6494	neumonía
+R52	is-a Arg1:T117 Arg2:T114
+T118	Concept 6496 6519	problemas de su tráquea
+T119	Concept 6529 6538	bronquios
+T120	Concept 6560 6580	sistema respiratorio
+R53	part-of Arg1:T119 Arg2:T120
+R54	is-a Arg1:T118 Arg2:T111
+T121	Concept 2816 2835	sistema inmunitario
+T122	Action 2836 2843	combate
+E16	Action:T122 Subject:T121 Target:T123
+T123	Concept 2848 2856	gérmenes
+T124	Concept 7552 7578	oxigenoterapia hiperbárica
+T125	Concept 7595 7614	terapia con oxígeno
+R55	is-a Arg1:T124 Arg2:T125
+T126	Action 7621 7628	utiliza
+E17	Action:T126 Subject:T124 Target:T130
+T127	Action 7657 7663	tratar
+E18	Action:T127 Subject:T124 Target:T129
+T128	Concept 7664 7671	heridas
+T129	Concept 7674 7685	infecciones
+E21	Action:T127 Subject:T124 Target:T128
+T130	Concept 7629 7636	oxígeno
+T131	Concept 7853 7856	tos
+T132	Concept 7867 7872	aguda
+R56	is-a Arg1:T132 Arg2:T131
+T133	Concept 7875 7882	crónica
+R57	is-a Arg1:T133 Arg2:T131
+T134	Concept 1347 1351	asma
+T135	Concept 1359 1369	enfermedad
+R58	is-a Arg1:T134 Arg2:T135
+T136	Action 1382 1388	afecta
+E25	Action:T136 Subject:T134 Target:T137
+T137	Concept 1393 1411	vías respiratorias
+T138	Concept 6314 6327	falta de aire
+T139	Concept 6359 6369	enfermedad
+T140	Concept 6346 6351	señal
+R59	property-of Arg1:T140 Arg2:T139
+R60	is-a Arg1:T138 Arg2:T140
+T141	Action 5151 5163	se encuentra
+E26	Action:T141 Subject:T142 Target:T143
+T142	Concept 5137 5150	ozono "bueno"
+T143	Concept 5170 5180	naturaleza
+T144	Action 5214 5219	sobre
+E28	Action:T144 Subject:E26 Target:T145
+T145	Concept 5223 5243	superficie terrestre
+T146	Concept 5583 5595	ozono "malo"
+T147	Action 5596 5608	se encuentra
+E30	Action:T147 Subject:T146 Target:T148
+T148	Concept 5622 5627	suelo
+T149	Concept 1011 1025	ataque de asma
+T150	Concept 1048 1056	síntomas
+T151	Reflexive-Action 1057 1065	empeoran
+E31	Reflexive-Action:T151 Subject:T150
+T152	Action 1029 1036	produce
+E32	Action:T152 Target:T149 Subject:E31
+T153	Concept 1417 1435	vías respiratorias
+T154	Concept 1444 1449	tubos
+R61	is-a Arg1:T153 Arg2:T154
+T155	Action 1454 1463	trasladan
+E33	Action:T155 Subject:T153 Target:T156
+T156	Concept 1467 1471	aire
+T157	Concept 4633 4640	alergia
+T158	Concept 4643 4647	asma
+T159	Concept 4593 4605	enfermedades
+R62	is-a Arg1:T157 Arg2:T159
+R63	is-a Arg1:T158 Arg2:T159
+T160	Concept 4869 4893	enfermedades autoinmunes
+T161	Concept 4898 4908	trastornos
+T162	Concept 4927 4946	sistema inmunitario
+T164	Concept 4983 4990	células
+T165	Concept 4993 5000	órganos
+T163	Action 4947 4953	ataque
+E34	Action:T163 Subject:T162 Target:T164
+T166	Action 4913 4919	causan
+E35	Action:T166 Subject:T160 Target:E34
+R64	is-a Arg1:T160 Arg2:T161
+R65	property-of Arg1:T12 Arg2:T11
+R66	property-of Arg1:T37 Arg2:T38
+R67	property-of Arg1:T48 Arg2:T46
+T167	Concept 8121 8132	tos crónica
+T168	Concept 8108 8114	causas
+R5	property-of Arg1:T168 Arg2:T167
+T169	Concept 8148 8152	asma
+T170	Concept 8154 8162	alergias
+T171	Concept 8164 8203	enfermedad pulmonar obstructiva crónica
+T172	Concept 8205 8209	EPOC
+T173	Concept 8212 8217	fumar
+T174	Concept 8219 8242	reflujo gastroesofágico
+R21	alias Arg1:T172 Arg2:T171
+R25	is-a Arg1:T173 Arg2:T168
+R68	is-a Arg1:T171 Arg2:T168
+R69	is-a Arg1:T170 Arg2:T168
+R70	is-a Arg1:T169 Arg2:T168
+R71	is-a Arg1:T174 Arg2:T168

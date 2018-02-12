@@ -1,0 +1,29 @@
+T1	Concept 3 7	asma
+T2	Action 8 14	afecta
+E1	Action:T2 Subject:T1 Target:T3
+T3	Concept 19 37	vías respiratorias
+T4	Concept 43 51	pulmones
+T6	Action 55 62	hinchan
+E2	Action:T6 Subject:T4 Target:T4
+T5	Concept 67 71	asma
+T7	Concept 79 89	enfermedad
+R1	is-a Arg1:T5 Arg2:T7	
+T8	Concept 94 108	ataque de asma
+T9	Action 112 119	produce
+E3	Action:T9 Target:T8 Subject:E4
+T10	Concept 131 139	síntomas
+T11	Action 140 148	empeoran
+E4	Action:T11 Target:T10
+T12	Concept 154 162	síntomas
+T13	Concept 168 179	tratamiento
+T14	Action 180 188	dependen
+E5	Action:T14 Subject:T12 Target:T15
+T16	Concept 237 247	enfermedad
+E7	Action:T14 Subject:T12 Target:T17
+T17	Concept 216 224	avanzada
+R2	property-of Arg1:T17 Arg2:T16	
+E6	Action:T14 Subject:T13 Target:T15
+E8	Action:T14 Subject:T13 Target:T17
+T15	Concept 193 197	tipo
+T18	Concept 201 207	cáncer
+R3	property-of Arg1:T15 Arg2:T18	

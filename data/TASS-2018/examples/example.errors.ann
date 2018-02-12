@@ -1,0 +1,23 @@
+T1	Concept 3 7	asma
+T3	Concept 19 37	vías respiratorias
+T4	Concept 43 51	pulmones
+T5	Concept 67 71	asma
+T7	Concept 79 89	enfermedad
+T8	Concept 94 108	ataque de asma
+T9	Action 112 119	produce
+E3	Action:T9 Target:T8 Subject:E4
+T10	Concept 127 139	los síntomas
+T11	Action 140 148	empeoran
+E4	Action:T11 Subject:T10
+T12	Concept 154 162	síntomas
+T13	Concept 168 179	tratamiento
+T14	Action 180 188	dependen
+E5	Action:T14 Subject:T12 Target:T15
+T16	Concept 237 247	enfermedad
+T17	Concept 216 224	avanzada
+E6	Action:T14 Subject:T13 Target:T15
+E8	Action:T14 Subject:T13 Target:T17
+T15	Concept 193 207	tipo de cáncer
+T19	Action 229 233	esté
+E9	Action:T19 Subject:T16 Target:T17
+R1	part-of Arg1:T1 Arg2:T3	

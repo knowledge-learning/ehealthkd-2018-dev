@@ -1,0 +1,60 @@
+T1	Concept 268 272	asma
+T2	Concept 284 302	vías respiratorias
+T3	Concept 771 775	asma
+T4	Concept 787 805	vías respiratorias
+T5	Action 776 782	afecta
+E1	Action:T5 Subject:T3 Target:T4
+T6	Concept 985 993	pulmones
+T7	Action 997 1004	hinchan
+E2	Action:T7 Subject:T6 Target:T6
+T9	Action 1151 1163	diagnosticar
+E3	Action:T9 Target:T8
+T8	Concept 1167 1183	cáncer de pulmón
+T10	Concept 1349 1353	asma
+T11	Concept 1361 1371	enfermedad
+R1	is-a Arg1:T10 Arg2:T11
+T12	Concept 1478 1487	bronquios
+T13	Concept 1509 1529	sistema respiratorio
+R2	part-of Arg1:T12 Arg2:T13	
+T14	Concept 1686 1694	síntomas
+T15	Concept 1699 1703	asma
+R3	property-of Arg1:T14 Arg2:T15	
+T16	Concept 1709 1712	tos
+T17	Concept 1714 1727	falta de aire
+R4	is-a Arg1:T16 Arg2:T14	
+R5	is-a Arg1:T17 Arg2:T14	
+T18	Concept 1814 1827	tumor maligno
+T19	Concept 1848 1854	cáncer
+R6	same-as Arg1:T18 Arg2:T19	
+T20	Action 2133 2141	empeoran
+E4	Action:T20 Target:T21
+T21	Concept 2124 2132	síntomas
+T22	Action 2105 2112	produce
+E5	Action:T22 Subject:E4 Target:T23
+T23	Concept 2087 2101	ataque de asma
+T24	Action 3030 3043	empeoramiento
+E6	Action:T24 Target:T25
+T25	Concept 3051 3059	síntomas
+T26	Action 3060 3067	produce
+E7	Action:T26 Subject:E6 Target:T27
+T27	Concept 3071 3085	ataque de asma
+T28	Concept 3237 3244	células
+T29	Action 3264 3270	formar
+E8	Action:T29 Target:T30 Subject:T28
+T30	Concept 3274 3279	tumor
+A1	Uncertain E8
+T31	Concept 3285 3305	células cancerígenas
+T32	Action 3309 3315	mueren
+E9	Action:T32 Target:T31
+A2	Negated E9
+T33	Action 3551 3559	dependen
+E10	Action:T33 Subject:T34 Target:T36
+T34	Concept 3525 3533	síntomas
+T35	Concept 3539 3550	tratamiento
+T36	Concept 3564 3578	tipo de cáncer
+T37	Concept 3608 3618	enfermedad
+T38	Concept 3587 3595	avanzada
+R7	property-of Arg1:T38 Arg2:T37	
+E11	Action:T33 Subject:T35 Target:T36
+E12	Action:T33 Subject:T34 Target:T38
+E13	Action:T33 Subject:T35 Target:T38
