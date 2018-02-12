@@ -15,17 +15,17 @@ T11	Concept 1361 1371	enfermedad
 R1	is-a Arg1:T10 Arg2:T11
 T12	Concept 1478 1487	bronquios
 T13	Concept 1509 1529	sistema respiratorio
-R2	part-of Arg1:T12 Arg2:T13	
+R2	part-of Arg1:T12 Arg2:T13
 T14	Concept 1686 1694	síntomas
 T15	Concept 1699 1703	asma
-R3	property-of Arg1:T14 Arg2:T15	
+R3	property-of Arg1:T14 Arg2:T15
 T16	Concept 1709 1712	tos
 T17	Concept 1714 1727	falta de aire
-R4	is-a Arg1:T16 Arg2:T14	
-R5	is-a Arg1:T17 Arg2:T14	
+R4	is-a Arg1:T16 Arg2:T14
+R5	is-a Arg1:T17 Arg2:T14
 T18	Concept 1814 1827	tumor maligno
 T19	Concept 1848 1854	cáncer
-R6	same-as Arg1:T18 Arg2:T19	
+R6	same-as Arg1:T18 Arg2:T19
 T20	Action 2133 2141	empeoran
 E4	Action:T20 Target:T21
 T21	Concept 2124 2132	síntomas
@@ -48,13 +48,28 @@ T32	Action 3309 3315	mueren
 E9	Action:T32 Target:T31
 A2	Negated E9
 T33	Action 3551 3559	dependen
-E10	Action:T33 Subject:T34 Target:T36
 T34	Concept 3525 3533	síntomas
 T35	Concept 3539 3550	tratamiento
 T36	Concept 3564 3578	tipo de cáncer
 T37	Concept 3608 3618	enfermedad
 T38	Concept 3587 3595	avanzada
-R7	property-of Arg1:T38 Arg2:T37	
-E11	Action:T33 Subject:T35 Target:T36
-E12	Action:T33 Subject:T34 Target:T38
-E13	Action:T33 Subject:T35 Target:T38
+R7	property-of Arg1:T38 Arg2:T37
+E11	Action:T33 Subject:T35 Target:T36 Subject2:T34 Target2:T38
+T39	Concept 3712 3723	profesional
+T40	Concept 3712 3735	profesional de la salud
+R8	is-a Arg1:T40 Arg2:T39	
+T41	Concept 3858 3866	asesoría
+T42	Concept 3867 3878	psicológica
+R9	property-of Arg1:T42 Arg2:T41	
+T43	Concept 3908 3916	asesoría
+T44	Concept 3908 3928	asesoría psicológica
+R10	is-a Arg1:T44 Arg2:T43	
+T45	Concept 4072 4085	profesionales
+T46	Action 4086 4094	sugieren
+E10	Action:T46 Target:T48 Subject:T45
+T47	Concept 4095 4103	asesoría
+T48	Concept 4095 4115	asesoría psicológica
+R11	is-a Arg1:T48 Arg2:T47	
+T49	Concept 4429 4440	profesional
+T50	Concept 4445 4453	licencia
+R12	property-of Arg1:T50 Arg2:T49	

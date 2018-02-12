@@ -63,3 +63,22 @@ Las células cancerígenas no mueren.
 Cuando un mismo fragmento del texto sirve para indicar más de acción, o una misma acción entre varios pares de sujetos y objetos, se añade una anotación por cada instancia de la acción que se necesite:
 
 Los síntomas y el tratamiento dependen del tipo de cáncer y de lo avanzada que esté la enfermedad.
+
+A veces puede existir un concepto derivado (is-a) de otro concepto, en la misma frase:
+
+Un profesional de la salud puede ...
+
+Algunas veces uan misma frase puede ser etiquetada con (is-a) o con (property-of):
+
+Los profesionales sugieren asesoría psicológica.
+
+Los profesionales sugieren asesoría psicológica.
+
+En este caso, siempre elegiremos (is-a) si necesitamos adicionar una relación al concepto que estaría siendo denotado por la propiedad:
+
+Los profesionales sugieren asesoría psicológica.
+
+En el caso anterior como necesitamos asignar como "target" a la frase "asesoría psicológica", la convertimos en un concepto y usamos una relación (is-a).
+En caso de que no hiciera falta asociarle ninguna relación, o en caso de que el concepto en sí tenga un significado propio, se anota como (property-of).
+
+Un profesional con licencia.
