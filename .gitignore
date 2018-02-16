@@ -2,3 +2,4 @@
 .stats_cache
 *.tar
 *.tar.gz
+.stats_cache
