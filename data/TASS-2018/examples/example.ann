@@ -17,13 +17,12 @@ E4	Action:T11 Target:T10
 T12	Concept 154 162	síntomas
 T13	Concept 168 179	tratamiento
 T14	Action 180 188	dependen
-E5	Action:T14 Subject:T12 Target:T15
 T16	Concept 237 247	enfermedad
-E7	Action:T14 Subject:T12 Target:T17
 T17	Concept 216 224	avanzada
 R2	property-of Arg1:T17 Arg2:T16	
-E6	Action:T14 Subject:T13 Target:T15
-E8	Action:T14 Subject:T13 Target:T17
+E6	Action:T14 Subject:T13 Target:T15 Subject2:T12 Target2:T17
 T15	Concept 193 197	tipo
 T18	Concept 201 207	cáncer
 R3	property-of Arg1:T15 Arg2:T18	
+T19	Concept 19 23	vías
+R4	is-a Arg1:T3 Arg2:T19	

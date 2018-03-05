@@ -67,42 +67,42 @@ def main():
                     label, idx = annotation[1].split(":")
                     idx = idx[1:]
 
-                    subj = None
-                    targ = None
+                    subjects = []
+                    targets = []
 
                     if label == "Action":
                         components = annotation[2:]
 
                         for c in components:
-                            if c.startswith("Subject:"):
-                                subj = c
+                            if c.startswith("Subject"):
+                                subjects.append(c)
                             else:
-                                targ = c
+                                targets.append(c)
 
-                    if subj:
+                    for subj in subjects:
                         subj = subj[8:]
                         while subj.startswith("E"):
                             subj = mapping[subj]
                         subj = subj[1:]
 
-                    if targ:
-                        targ = targ[7:]
-                        while targ.startswith("E"):
-                            targ = mapping[targ]
-                        targ = targ[1:]
-
-                    if subj:
                         rel = "subject\t%s\t%s\n" % (idx, subj)
 
                         if rel not in written:
                             output_C.write(rel)
                             written.add(rel)
-                    if targ:
+
+                    for targ in targets:
+                        targ = targ[7:]
+                        while targ.startswith("E"):
+                            targ = mapping[targ]
+                        targ = targ[1:]
+
                         rel = "target\t%s\t%s\n" % (idx, targ)
 
                         if rel not in written:
                             output_C.write("target\t%s\t%s\n" % (idx, targ))
                             written.add(rel)
+
                     # if label == "Reflexive-Action":
                     #     output_C.write("Reflexive-Action\t%s\t%s\n" % (idx, subj))
                     # if label == "Passive-Action":
