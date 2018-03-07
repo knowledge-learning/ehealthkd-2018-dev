@@ -1,21 +1,20 @@
 T1	Concept 3 7	asma
 T2	Action 8 14	afecta
-T3	Concept 19 37	vías respiratorias
-T4	Concept 43 51	pulmones
-T5	Concept 67 71	asma
-T7	Concept 79 89	enfermedad
-T8	Concept 94 108	ataque de asma
-T9	Action 112 119	produce
-T10	Concept 131 139	síntomas
-T12	Concept 154 162	síntomas
-T13	Concept 168 179	tratamiento
-T14	Action 180 188	dependen
-T16	Concept 237 247	enfermedad
-T17	Concept 216 224	avanzada
-T15	Concept 193 197	tipo
-T18	Concept 201 207	cáncer
-T19	Action 140 148	empeoran
-E1	Action:T19 
-T11	Action 55 62	hinchan
-E2	Action:T11 
-T6	Concept 19 23	vías
+T3	Concept 19 23	vías
+T4	Concept 19 37	vías respiratorias
+T5	Concept 43 51	pulmones
+T6	Action 55 62	hinchan
+T7	Concept 67 71	asma
+T8	Concept 79 89	enfermedad
+T9	Concept 94 108	ataque de asma
+T10	Concept 104 108	asma
+T11	Action 112 119	produce
+T12	Concept 131 139	síntomas
+T13	Action 140 148	empeoran
+T14	Concept 154 162	síntomas
+T15	Concept 168 179	tratamiento
+T16	Action 180 188	dependen
+T17	Concept 201 207	cáncer
+T18	Concept 193 197	tipo
+T19	Concept 216 224	avanzada
+T20	Concept 237 247	enfermedad

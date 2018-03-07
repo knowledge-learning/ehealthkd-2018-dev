@@ -1,16 +1,18 @@
 T1	Any 3 7	asma
-T3	Any 19 37	vías respiratorias
+T2	Any 8 14	afecta
+T3	Any 19 23	vías
 T4	Any 43 51	pulmones
-T5	Any 67 71	asma
+T5	Any 55 62	hinchan
+T6	Any 67 71	asma
 T7	Any 79 89	enfermedad
-T8	Any 94 108	ataque de asma
-T9	Any 112 119	produce
-T10	Any 127 139	los síntomas
-T11	Any 140 148	empeoran
+T8	Any 72 74	es
+T9	Any 94 108	ataque de asma
+T10	Any 112 119	produce
+T11	Any 131 139	síntomas
 T12	Any 154 162	síntomas
 T13	Any 168 179	tratamiento
 T14	Any 180 188	dependen
-T16	Any 237 247	enfermedad
-T17	Any 216 224	avanzada
 T15	Any 193 207	tipo de cáncer
-T19	Any 229 233	esté
+T16	Any 216 224	avanzada
+T17	Any 237 247	enfermedad
+T18	Any 24 37	respiratorias
