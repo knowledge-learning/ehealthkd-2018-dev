@@ -1,0 +1,118 @@
+T7	Concept 97 112	descubrimientos
+T6	Concept 71 75	bien
+T5	Concept 4 20	ensayos clínicos
+T4	Concept 25 50	estudios de investigación
+T3	Action 55 62	prueban
+T2	Action 83 92	aplicarse
+T1	Concept 97 120	descubrimientos médicos
+T0	Concept 127 136	pacientes
+E2	Action:T2 Target:T0 Subject:T1
+E3	Action:T3 Target:E2 Subject:T5
+R0	is-a Arg1:T5 Arg2:T4
+R1	is-a Arg1:T1 Arg2:T7
+T21	Concept 160 181	preguntas científicas
+T20	Concept 202 216	mejores formas
+T17	Concept 143 150	estudio
+T16	Action 151 159	responde
+T15	Action 184 201	intenta encontrar
+T14	Concept 210 216	formas
+T13	Action 220 228	prevenir
+T12	Action 230 238	examinar
+T11	Action 240 252	diagnosticar
+T10	Action 255 261	tratar
+T9	Concept 266 276	enfermedad
+T8	Concept 160 169	preguntas
+E10	Action:T10 Target:T9 Subject:T20
+E11	Action:T11 Target:T9 Subject:T20
+E12	Action:T12 Target:T9 Subject:T20
+E13	Action:T13 Target:T9 Subject:T20
+E15	Action:T15 Target:T20 Subject:T17
+E16	Action:T16 Target:T21 Subject:T17
+R4	is-a Arg1:T21 Arg2:T8
+R5	is-a Arg1:T20 Arg2:T14
+T31	Concept 282 289	ensayos
+T30	Concept 326 343	tratamiento nuevo
+T25	Concept 372 382	disponible
+T24	Concept 282 298	ensayos clínicos
+T23	Action 314 322	comparar
+T22	Concept 348 351	uno
+E23	Action:T23 Target:T30 Target2:T22 Subject:T24
+R8	property-of Arg1:T25 Arg2:T22
+R9	is-a Arg1:T24 Arg2:T31
+T38	Concept 389 395	ensayo
+T35	Concept 389 403	ensayo clínico
+T34	Concept 413 422	protocolo
+T33	Concept 425 439	plan de acción
+T32	Action 445 453	llevarlo
+E32	Action:T32 Target:T35 Target2:T34
+R12	is-a Arg1:T35 Arg2:T38
+R13	property-of Arg1:T34 Arg2:T35
+R15	same-as Arg1:T33 Arg2:T34
+R16	property-of Arg1:T33 Arg2:T35
+T47	Action 489 493	hará
+T46	Concept 509 513	cómo
+T45	Concept 524 531	por qué
+T44	Concept 547 554	estudio
+T43	Concept 558 567	necesaria
+T42	Concept 465 469	plan
+T41	Action 470 478	describe
+T40	Concept 500 507	estudio
+T39	Concept 537 542	parte
+E47	Action:T47 
+R17	property-of Arg1:T43 Arg2:T39
+R18	property-of Arg1:T39 Arg2:T44
+R19	part-of Arg1:T39 Arg2:T40
+R20	property-of Arg1:T42 Arg2:T40
+E41	Action:T41 Target:E47 Target2:T46 Target3:T45 Subject:T42
+T54	Action 582 587	tiene
+T53	Concept 592 599	propias
+T51	Concept 574 581	estudio
+T50	Concept 600 606	reglas
+T49	Concept 617 622	quién
+T48	Action 629 639	participar
+E48	Action:T48 Target:T51 Subject:T49
+E54	Action:T54 Target:T50 Subject:T51
+R21	part-of Arg1:T50 Arg2:T51
+R22	property-of Arg1:T53 Arg2:T50
+T67	Concept 641 648	Algunos
+T66	Action 649 658	necesitan
+T65	Concept 659 670	voluntarios
+T64	Concept 691 701	enfermedad
+T63	Concept 679 690	determinada
+T62	Concept 703 708	otros
+T61	Action 709 718	necesitan
+T60	Concept 719 727	personas
+T59	Concept 728 733	sanas
+T58	Concept 736 741	otros
+T57	Action 752 761	solicitan
+T56	Concept 762 769	hombres
+T55	Concept 772 779	mujeres
+E57	Action:T57 Target:T56 Target2:T55 Subject:T58
+E61	Action:T61 Target:T60 Subject:T62
+E66	Action:T66 Target:T65 Subject:T67
+R23	property-of Arg1:T64 Arg2:T65
+R24	property-of Arg1:T63 Arg2:T64
+R25	property-of Arg1:T59 Arg2:T60
+T74	Concept 819 845	Institutional Review Board
+T73	Concept 784 817	Consejo Institucional de Revisión
+T72	Concept 847 850	IRB
+T71	Action 852 858	revisa
+T70	Action 860 869	supervisa
+T69	Action 872 879	aprueba
+T68	Concept 894 910	ensayos clínicos
+E69	Action:T69 Target:T68 Subject:T73 Subject2:T72
+E70	Action:T70 Target:T68 Subject:T73 Subject2:T72
+E71	Action:T71 Target:T68 Subject:T73 Subject2:T72
+R26	same-as Arg1:T74 Arg2:T73
+R27	same-as Arg1:T72 Arg2:T73
+R30	same-as Arg1:T73 Arg2:T72
+R2	same-as Arg1:T72 Arg2:T74
+T19	Concept 949 956	médicos
+T18	Concept 925 945	comité independiente
+T79	Concept 958 968	estadistas
+T78	Concept 971 979	miembros
+T77	Concept 915 918	IRB
+R3	is-a Arg1:T77 Arg2:T18
+R6	part-of Arg1:T19 Arg2:T18
+R7	part-of Arg1:T79 Arg2:T18
+R10	part-of Arg1:T78 Arg2:T18

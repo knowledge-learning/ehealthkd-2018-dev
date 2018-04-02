@@ -1,0 +1,51 @@
+T1	Concept 33 40	costoso
+T2	Concept 109 116	médicos
+T3	Concept 17 22	salud
+T4	Action 69 75	cubrir
+E1	Action:T4 Target:T2 Subject:T6 Target2:T7
+T5	Action 83 88	menos
+E2	Action:T5 Target:T6
+T6	Concept 54 61	médicos
+T7	Concept 102 108	gastos
+T8	Action 149 157	necesita
+E3	Action:T8 Target:T9
+T9	Concept 172 178	gastos
+T10	Action 312 318	ayudar
+E4	Action:T10 Target:T11
+T11	Concept 271 285	organizaciones
+T12	Action 334 340	hablar
+E5	Action:T12 Target:T13 Target2:T14
+T13	Concept 370 374	pago
+T14	Concept 391 398	médicas
+T15	Action 549 555	tienen
+E6	Action:T15 Subject:T16 Subject2:T17
+T16	Concept 556 561	padre
+T17	Concept 564 569	madre
+T18	Action 646 651	crían
+E7	Action:T18 Target:T19
+T19	Concept 625 631	padres
+T20	Action 680 685	viven
+E8	Action:T20 Target:E9
+T21	Action 699 709	sustitutas
+E9	Action:T21 Target:T22
+T22	Concept 711 720	adoptivas
+T23	Action 747 750	son
+E10	Action:T23 Target:E11
+T24	Action 788 797	comparten
+E11	Action:T24 Target:T25
+T25	Concept 809 814	genes
+T26	Concept 851 857	fuente
+T27	Concept 869 873	amor
+R1	is-a Arg1:T26 Arg2:T27	
+T28	Concept 861 866	apoyo
+T29	Concept 837 842	Deben
+T30	Concept 847 850	una
+R2	part-of Arg1:T26 Arg2:T30	
+R3	property-of Arg1:T26 Arg2:T29	
+R4	same-as Arg1:T26 Arg2:T28	
+T31	Concept 896 901	todos
+T32	Concept 912 916	bien
+R5	is-a Arg1:T31 Arg2:T32	
+T33	Concept 937 947	conflictos
+T34	Concept 964 968	vida
+R6	property-of Arg1:T33 Arg2:T34	

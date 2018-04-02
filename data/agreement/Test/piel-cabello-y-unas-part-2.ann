@@ -1,0 +1,1073 @@
+T0	Action 24 29	tiene
+T1	Concept 48 53	pelos
+T2	Concept 4 11	persona
+E0	Action:T0 Target:T1 Subject:T2  
+T3	Concept 171 175	pies
+T4	Concept 144 149	manos
+T5	Concept 118 124	labios
+T6	Action 66 71	crece
+T7	Concept 58 65	cabello
+T8	Concept-FAIL 156 163	plantas
+T9	Concept-FAIL 130 136	palmas
+T10	Concept-FAIL 98 104	cuerpo
+T11	Concept-FAIL 83 93	superficie
+T12	Concept-FAIL 156 175	plantas de los pies
+T13	Concept-FAIL 130 149	palmas de las manos
+T14	Concept-FAIL 83 104	superficie del cuerpo
+E6	Action:T6 Target:T5 Subject:T7 Subject2:T7 Target-FAIL:T11 Target-FAIL2:T9 Target-FAIL3:T8 Target-FAIL4:T13 Target-FAIL5:T12 Target-FAIL6:T14 
+R0	part-of-FAIL Arg1:T11 Arg2:T10
+R1	part-of-FAIL Arg1:T8 Arg2:T3
+R2	part-of-FAIL Arg1:T9 Arg2:T4
+R3	part-of-FAIL Arg1:T13 Arg2:T4
+R4	part-of-FAIL Arg1:T12 Arg2:T3
+T15	Action-FAIL 290 293	cae
+T16	Action-FAIL 251 256	crece
+E15	Action-FAIL:T15
+E16	Action-FAIL:T16
+T17	Concept-FAIL 312 326	cabello nuevo.
+T18	Action-FAIL 307 311	nace
+E18	Action-FAIL:T18   Target-FAIL:T17 Subject-FAIL:T17
+T19	Concept 362 382	temperatura corporal
+T20	Action 350 358	mantener
+T21	Concept 330 337	cabello
+E20	Action:T20 Target:T19 Subject:T21  
+T22	Concept 424 429	nariz
+T23	Concept 415 421	orejas
+T24	Concept 409 413	ojos
+T25	Action 392 399	protege
+T26	Concept-FAIL 467 471	aire
+T27	Concept-FAIL 433 452	pequeñas partículas
+E25	Action:T25 Target:T24 Target2:T23 Target3:T22   
+R5	part-of-FAIL Arg1:T27 Arg2:T26
+T28	Concept 576 587	descamación
+T29	Concept 562 573	infecciones
+T30	Concept 541 560	pérdida del cabello
+T31	Concept 516 531	cuero cabelludo
+T32	Concept 506 510	pelo
+T33	Concept 477 486	problemas
+T34	Action-FAIL 532 540	incluyen
+T35	Action-FAIL 491 498	comunes
+E34	Action-FAIL:T34   Target-FAIL:T30 Target-FAIL2:T29 Target-FAIL3:T28 Subject-FAIL:E35
+E35	Action-FAIL:T35   Target-FAIL:T32 Target-FAIL2:T31 Subject-FAIL:T33
+R6	property-of-FAIL Arg1:T33 Arg2:T32
+R7	property-of-FAIL Arg1:T33 Arg2:T31
+R8	is-a-FAIL Arg1:T30 Arg2:T33
+R9	is-a-FAIL Arg1:T29 Arg2:T33
+R10	is-a-FAIL Arg1:T28 Arg2:T33
+T36	Concept 641 648	picazón
+T37	Action 635 640	causa
+T38	Concept 592 601	psoriasis
+T39	Concept-FAIL 651 668	parches dolorosos
+T40	Concept-FAIL 626 630	piel
+T41	Concept-FAIL 609 619	enfermedad
+T42	Concept-FAIL 651 676	parches dolorosos de piel
+T43	Concept-FAIL 704 721	escamas plateadas
+T44	Concept-FAIL 689 699	enrojecida
+T45	Concept-FAIL 677 686	engrosada
+T46	Concept-FAIL 609 630	enfermedad de la piel
+E37	Action:T37 Target:T36 Subject:T38 Target-FAIL:T39 Target-FAIL2:T42 
+R11	is-a-FAIL Arg1:T38 Arg2:T41
+R12	property-of-FAIL Arg1:T41 Arg2:T40
+R13	is-a-FAIL Arg1:T38 Arg2:T46
+R14	property-of-FAIL Arg1:T45 Arg2:T42
+R15	property-of-FAIL Arg1:T44 Arg2:T42
+R16	property-of-FAIL Arg1:T43 Arg2:T42
+T47	Concept 854 858	pies
+T48	Concept 827 832	manos
+T49	Concept 803 807	cara
+T50	Concept 791 798	espalda
+T51	Concept 771 786	cuero cabelludo
+T52	Concept 758 766	rodillas
+T53	Concept 745 752	hombros
+T54	Action 729 737	aparecer
+T55	Concept-FAIL 911 917	cuerpo
+T56	Concept-FAIL 839 846	plantas
+T57	Concept-FAIL 813 819	palmas
+T58	Concept-FAIL 839 858	plantas de los pies
+T59	Concept-FAIL 813 832	palmas de las manos
+E54	Action:T54 Target:T53 Target2:T52 Target3:T51 Target4:T50 Target5:T49  Target-FAIL:T57 Target-FAIL2:T56 Target-FAIL3:T59 Target-FAIL4:T58 
+R17	part-of-FAIL Arg1:T57 Arg2:T48
+R18	part-of-FAIL Arg1:T56 Arg2:T47
+R19	part-of-FAIL Arg1:T53 Arg2:T55
+R20	part-of-FAIL Arg1:T52 Arg2:T55
+R21	part-of-FAIL Arg1:T51 Arg2:T55
+R22	part-of-FAIL Arg1:T50 Arg2:T55
+R23	part-of-FAIL Arg1:T49 Arg2:T55
+R24	part-of-FAIL Arg1:T48 Arg2:T55
+R25	part-of-FAIL Arg1:T47 Arg2:T55
+R26	part-of-FAIL Arg1:T59 Arg2:T48
+R27	part-of-FAIL Arg1:T58 Arg2:T47
+T60	Concept 1007 1026	artritis psoriásica
+T61	Action 962 970	adquirir
+T62	Concept 927 935	personas
+T63	Concept-FAIL 984 992	artritis
+T64	Concept-FAIL 945 954	condición
+T65	Concept-FAIL 975 992	forma de artritis
+E61	Action:T61   Target-FAIL:T60 Target-FAIL2:T65 Subject-FAIL:T62 Subject-FAIL2:T64
+R28	is-a-FAIL Arg1:T60 Arg2:T63
+R29	is-a-FAIL Arg1:T60 Arg2:T65
+R30	property-of-FAIL Arg1:T64 Arg2:T62
+T66	Action 1031 1036	causa
+T67	Concept 1043 1052	psoriasis
+T68	Concept-FAIL 1059 1067	problema
+T69	Concept-FAIL 1074 1093	sistema inmunitario
+T70	Concept-FAIL 1059 1093	problema en el sistema inmunitario
+E66	Action:T66 Target:T67   Subject-FAIL:T68 Subject-FAIL2:T70
+R31	property-of-FAIL Arg1:T68 Arg2:T69
+T71	Concept 1222 1232	superficie
+T72	Action 1205 1212	avanzan
+T73	Concept 1101 1108	proceso
+T74	Concept 1117 1133	recambio celular
+T75	Concept-FAIL 1153 1157	piel
+T76	Concept-FAIL 1139 1146	células
+T77	Concept-FAIL 1185 1204	profunda de la piel
+T78	Action-FAIL 1162 1168	crecen
+T79	Concept-FAIL 1139 1157	células de la piel
+E72	Action:T72 Target:T71   Subject-FAIL:T76 Subject-FAIL2:E78
+E78	Action-FAIL:T78   Target-FAIL:T77 Subject-FAIL:T79
+R32	is-a Arg1:T74 Arg2:T73
+R33	part-of-FAIL Arg1:T76 Arg2:T75
+T80	Concept-FAIL 1262 1265	mes
+T81	Action-FAIL 1252 1258	demora
+E81	Action-FAIL:T81   Target-FAIL:T80 
+T82	Action 1332 1339	avanzan
+T83	Concept 1324 1331	células
+T84	Concept 1273 1282	psoriasis
+T85	Concept-FAIL 1350 1356	rápido
+T86	Concept-FAIL 1340 1356	demasiado rápido
+E82	Action:T82   Target-FAIL:T86 Subject-FAIL:T83
+T87	Concept-FAIL 1421 1433	toda la vida
+T88	Concept-FAIL 1391 1403	mucho tiempo
+T89	Action-FAIL 1377 1386	persistir
+T90	Concept-FAIL 1361 1370	psoriasis
+E89	Action-FAIL:T89   Target-FAIL:T88 Target-FAIL2:T87 Subject-FAIL:T90
+T91	Concept-FAIL 1472 1479	adultos
+T92	Action-FAIL 1454 1461	ocurrir
+T93	Concept-FAIL 1438 1447	psoriasis
+E92	Action-FAIL:T92   Target-FAIL:T91 Subject-FAIL:T93
+T94	Concept 1527 1538	fototerapia
+T95	Concept 1515 1524	medicinas
+T96	Concept 1507 1513	cremas
+T97	Concept 1485 1497	tratamientos
+R34	is-a Arg1:T96 Arg2:T97
+R35	is-a Arg1:T95 Arg2:T97
+R36	is-a Arg1:T94 Arg2:T97
+T98	Concept 1680 1686	llagas
+T99	Concept 1669 1677	ampollas
+T100	Action 1660 1668	causando
+T101	Concept 1654 1658	boca
+T102	Concept 1647 1651	piel
+T103	Concept 1627 1640	células sanas
+T104	Action 1618 1624	atacan
+T105	Concept 1606 1617	anticuerpos
+T106	Concept 1565 1591	enfermedad autoinmunitaria
+T107	Concept 1543 1557	pénfigo vulgar
+T108	Concept-FAIL 1565 1575	enfermedad
+E100	Action:T100 Target:T99 Target2:T98 Subject:E104  Subject-FAIL:T107
+E104	Action:T104 Target:T103 Subject:T105  
+R37	is-a Arg1:T107 Arg2:T106
+R38	is-a-FAIL Arg1:T106 Arg2:T108
+R39	part-of-FAIL Arg1:T103 Arg2:T102
+R40	part-of-FAIL Arg1:T103 Arg2:T101
+R41	property-of-FAIL Arg1:T103 Arg2:T102
+R42	property-of-FAIL Arg1:T103 Arg2:T101
+T109	Concept-FAIL 1716 1722	ataque
+T110	Action-FAIL 1702 1707	causa
+T111	Action-FAIL 1694 1698	sabe
+E110	Action-FAIL:T110   Target-FAIL:T109 
+E111	Action-FAIL:T111   Target-FAIL:E110 
+T112	Action 1741 1745	pasa
+T113	Concept 1727 1734	pénfigo
+T114	Concept-FAIL 1759 1766	persona
+T115	Concept-FAIL 1749 1756	persona
+E112	Action:T112   Target-FAIL:T113 Target-FAIL2:T115 Target-FAIL3:T114 Subject-FAIL:T113
+T116	Concept-FAIL 1831 1838	pénfigo
+T117	Action-FAIL 1822 1830	contraer
+T118	Concept-FAIL 1803 1818	riesgo genético
+T119	Action-FAIL 1790 1796	tienen
+T120	Concept-FAIL 1781 1789	personas
+E117	Action-FAIL:T117   Target-FAIL:T116 Subject-FAIL:E119
+E119	Action-FAIL:T119   Target-FAIL:T118 Subject-FAIL:T120
+T121	Concept 1843 1859	pénfigo foliáceo
+T122	Concept-FAIL 1875 1885	enfermedad
+T123	Concept-FAIL 1908 1912	piel
+T124	Concept-FAIL 1875 1901	enfermedad autoinmunitaria
+T125	Concept-FAIL 1875 1912	enfermedad autoinmunitaria de la piel
+R43	is-a-FAIL Arg1:T121 Arg2:T124
+R44	property-of-FAIL Arg1:T123 Arg2:T124
+R45	is-a-FAIL Arg1:T124 Arg2:T122
+R46	is-a-FAIL Arg1:T121 Arg2:T125
+T126	Action 1950 1956	rompen
+T127	Action 1914 1920	Genera
+T128	Concept-FAIL 1930 1939	profundas
+T129	Concept-FAIL 1921 1929	ampollas
+T130	Concept-FAIL 1957 1967	fácilmente
+T131	Concept-FAIL 1921 1939	ampollas profundas
+E126	Action:T126   Target-FAIL:T129 Target-FAIL2:T131 Subject-FAIL:T131
+E127	Action:T127   Target-FAIL:T129 Target-FAIL2:T131 
+R47	property-of-FAIL Arg1:T128 Arg2:T129
+T132	Concept-FAIL 2014 2019	fatal
+T133	Action-FAIL 2010 2013	ser
+T134	Concept-FAIL 1985 2001	personas mayores
+T135	Action-FAIL 1976 1981	común
+E133	Action-FAIL:T133   Target-FAIL:T132 
+E135	Action-FAIL:T135   Target-FAIL:T134 
+T136	Concept 2101 2118	pruebas de sangre
+T137	Concept 2091 2098	biopsia
+T138	Concept 2072 2085	examen físico
+T139	Concept 2049 2056	pénfigo
+T140	Action 2033 2045	diagnostican
+T141	Concept 2025 2032	médicos
+E140	Action:T140 Target:T139 Subject:T141  
+T142	Concept 2221 2229	síntomas
+T143	Action 2207 2216	controlar
+T144	Concept 2192 2201	medicinas
+T145	Concept 2160 2168	foliáceo
+T146	Concept 2123 2134	tratamiento
+T147	Concept-FAIL 2143 2157	pénfigo vulgar
+T148	Action-FAIL 2169 2171	es
+T149	Concept-FAIL 2123 2156	tratamiento para el pénfigo vulga
+E143	Action:T143 Target:T142   Subject-FAIL:T144
+E148	Action-FAIL:T148   Target-FAIL:E143 Subject-FAIL:T149
+R48	property-of Arg1:T146 Arg2:T145
+R49	is-a-FAIL Arg1:T144 Arg2:T146
+R50	property-of-FAIL Arg1:T146 Arg2:T147
+R51	same-as-FAIL Arg1:T145 Arg2:T149
+T150	Concept-FAIL 2257 2275	pelos de su cabeza
+T151	Action-FAIL 2237 2243	pierde
+T152	Concept-FAIL 2231 2236	Usted
+E151	Action-FAIL:T151   Target-FAIL:T150 Subject-FAIL:T152
+T153	Concept-FAIL 2336 2344	cabellos
+T154	Action-FAIL 2355 2361	crecer
+T155	Concept-FAIL 2322 2330	personas
+E154	Action-FAIL:T154    Subject-FAIL:T153
+R52	property-of-FAIL Arg1:T153 Arg2:T155
+T156	Action-FAIL 2429 2438	envejecen
+T157	Concept-FAIL 2411 2415	pelo
+T158	Action-FAIL 2403 2410	pierden
+T159	Concept-FAIL 2394 2401	mujeres
+T160	Concept-FAIL 2375 2382	hombres
+E156	Action-FAIL:T156   Target-FAIL:T159 Target-FAIL2:T160 Subject-FAIL:T159 Subject-FAIL2:T160
+E158	Action-FAIL:T158   Target-FAIL:T157 Subject-FAIL:E156
+T161	Action 2454 2462	perderlo
+T162	Concept 2536 2541	lupus
+T163	Concept 2525 2533	diabetes
+T164	Concept 2480 2492	enfermedades
+T165	Concept-FAIL 2499 2508	problemas
+T166	Concept-FAIL 2515 2523	tiroides
+T167	Concept-FAIL 2499 2523	problemas de la tiroides
+T168	Action-FAIL 2466 2471	sufre
+E161	Action:T161    Subject-FAIL:T164 Subject-FAIL2:E168
+E168	Action-FAIL:T168   Target-FAIL:T164 Target-FAIL2:T167 Target-FAIL3:T163 Target-FAIL4:T162 
+R53	is-a Arg1:T163 Arg2:T164
+R54	is-a Arg1:T162 Arg2:T164
+R55	property-of-FAIL Arg1:T165 Arg2:T166
+R56	is-a-FAIL Arg1:T165 Arg2:T164
+R57	is-a-FAIL Arg1:T167 Arg2:T164
+T169	Action 2546 2550	toma
+T170	Concept 2640 2644	pelo
+T171	Action 2633 2639	perder
+T172	Concept 2579 2607	tratamiento de quimioterapia
+T173	Concept 2559 2568	medicinas
+T174	Concept-FAIL 2579 2590	tratamiento
+E169	Action:T169 Target:T173   
+E171	Action:T171 Target:T170 Subject:E169 Subject2:T172  
+R58	is-a-FAIL Arg1:T172 Arg2:T174
+T175	Concept 2723 2737	mala nutrición
+T176	Concept 2703 2720	historia familiar
+T177	Concept 2678 2701	dieta baja en proteínas
+T178	Concept 2666 2672	estrés
+T179	Concept-FAIL 2652 2658	causas
+T180	Action-FAIL 2652 2658	causas
+E180	Action-FAIL:T180    Subject-FAIL:T178 Subject-FAIL2:T177 Subject-FAIL3:T176 Subject-FAIL4:T175
+R59	is-a-FAIL Arg1:T178 Arg2:T179
+R60	is-a-FAIL Arg1:T177 Arg2:T179
+R61	is-a-FAIL Arg1:T176 Arg2:T179
+R62	is-a-FAIL Arg1:T175 Arg2:T179
+T181	Concept-FAIL 2742 2781	tratamiento para la pérdida del cabello
+T182	Concept-FAIL 2797 2803	causas
+T183	Action-FAIL 2782 2789	depende
+E183	Action-FAIL:T183   Target-FAIL:T182 Subject-FAIL:T181
+T184	Concept-FAIL 2859 2867	problema
+T185	Action-FAIL 2845 2855	solucionar
+T186	Concept-FAIL 2833 2838	causa
+T187	Action-FAIL 2823 2829	tratar
+E185	Action-FAIL:T185   Target-FAIL:T184 Subject-FAIL:E187
+E187	Action-FAIL:T187   Target-FAIL:T186 Subject-FAIL:T186
+T188	Concept 2897 2906	medicinas
+T189	Concept 2875 2887	tratamientos
+T190	Concept-FAIL 2909 2927	trasplante capilar
+T191	Concept-FAIL 2920 2927	capilar
+T192	Action-FAIL 2909 2919	trasplante
+T193	Action-FAIL 2888 2896	incluyen
+E192	Action-FAIL:T192   Target-FAIL:T191 Subject-FAIL:T191
+E193	Action-FAIL:T193   Target-FAIL:T188 Target-FAIL2:E192 Subject-FAIL:T189
+R63	is-a-FAIL Arg1:T188 Arg2:T189
+R64	is-a-FAIL Arg1:T190 Arg2:T189
+T194	Action 2983 2990	causada
+T195	Concept 3049 3058	radiación
+T196	Concept 3043 3046	sol
+T197	Concept 3026 3038	electricidad
+T198	Concept 3005 3024	sustancias químicas
+T199	Concept 2998 3003	calor
+T200	Concept 2950 2956	lesión
+T201	Concept 2933 2942	quemadura
+T202	Concept-FAIL 2976 2982	cuerpo
+T203	Concept-FAIL 2964 2971	tejidos
+T204	Concept-FAIL 2950 2982	lesión en los tejidos del cuerpo
+E194	Action:T194  Subject:T199 Subject2:T198 Subject3:T197 Subject4:T196 Subject5:T195 Target-FAIL:T200 Target-FAIL2:T201 
+R65	is-a-FAIL Arg1:T201 Arg2:T200
+R66	part-of-FAIL Arg1:T203 Arg2:T202
+R67	property-of-FAIL Arg1:T200 Arg2:T203
+R68	is-a-FAIL Arg1:T201 Arg2:T204
+R69	is-a-FAIL Arg1:T204 Arg2:T200
+T205	Concept 3205 3215	quemaduras
+T206	Action 3179 3185	causas
+T207	Concept 3142 3150	líquidos
+T208	Concept 3113 3122	incendios
+T209	Concept 3064 3076	escaldaduras
+T210	Concept 3102 3107	vapor
+T211	Concept 3081 3099	líquidos calientes
+T212	Concept-FAIL 3153 3170	gases inflamables
+T213	Concept-FAIL 3159 3170	inflamables
+T214	Concept-FAIL 3153 3158	gases
+E206	Action:T206 Target:T205 Subject:T209 Subject2:T208  Subject-FAIL:T212 Subject-FAIL2:T207 Subject-FAIL3:T213
+R70	property-of-FAIL Arg1:T209 Arg2:T211
+R71	property-of-FAIL Arg1:T209 Arg2:T210
+R72	property-of-FAIL Arg1:T213 Arg2:T207
+R73	property-of-FAIL Arg1:T213 Arg2:T214
+R74	property-of-FAIL Arg1:T211 Arg2:T209
+R75	property-of-FAIL Arg1:T210 Arg2:T209
+T215	Concept 3230 3239	quemadura
+T216	Action 3246 3253	causada
+T217	Concept 3279 3297	partículas tóxicas
+T218	Concept-FAIL 3272 3276	humo
+T219	Action-FAIL 3258 3268	inhalación
+T220	Concept-FAIL 3258 3276	inhalación de humo
+E216	Action:T216 Target:T215   Subject-FAIL:E219 Subject-FAIL2:T220 Subject-FAIL3:T217
+E219	Action-FAIL:T219   Target-FAIL:T218 Target-FAIL2:T217 
+T221	Concept 3408 3414	muerte
+T222	Concept 3389 3394	shock
+T223	Concept 3349 3359	cicatrices
+T224	Concept 3339 3347	ampollas
+T225	Concept 3328 3337	hinchazón
+T226	Action 3321 3327	causar
+T227	Concept 3303 3313	quemaduras
+E226	Action:T226 Target:T225 Target2:T224 Target3:T223 Target4:T222 Target5:T221 Subject:T227  
+T228	Concept 3442 3453	infecciones
+T229	Action 3431 3439	conducir
+T230	Action 3461 3466	dañan
+T231	Concept-FAIL 3495 3499	piel
+T232	Action-FAIL 3478 3488	protectora
+T233	Concept-FAIL 3470 3477	barrera
+T234	Concept-FAIL 3470 3499	barrera protectora de la piel
+E229	Action:T229 Target:T228   Subject-FAIL:E230
+E230	Action:T230   Target-FAIL:E232 Target-FAIL2:T234 
+E232	Action-FAIL:T232   Target-FAIL:T231 Subject-FAIL:T233
+T235	Concept-FAIL 3523 3533	quemaduras
+T236	Concept-FAIL 3594 3618	área del cuerpo afectada
+T237	Concept-FAIL 3581 3587	grande
+T238	Concept-FAIL 3563 3571	profunda
+T239	Concept-FAIL 3548 3553	causa
+T240	Action-FAIL 3534 3541	depende
+T241	Concept-FAIL 3504 3533	tratamiento de las quemaduras
+E240	Action-FAIL:T240   Target-FAIL:T239 Subject-FAIL:T241 Subject-FAIL2:T238 Subject-FAIL3:T237
+R76	property-of-FAIL Arg1:T237 Arg2:T236
+R77	is-a-FAIL Arg1:T238 Arg2:T235
+R78	property-of-FAIL Arg1:T241 Arg2:T235
+T242	Concept 3678 3689	infecciones
+T243	Action 3667 3673	tratar
+T244	Action 3656 3664	prevenir
+T245	Concept-FAIL 3636 3648	antibióticos
+T246	Concept-FAIL 3624 3631	pomadas
+T247	Concept-FAIL 3624 3648	pomadas con antibióticos
+E243	Action:T243 Target:T242   Subject-FAIL:T247
+E244	Action:T244 Target:T242   Subject-FAIL:T246 Subject-FAIL2:T247
+R79	part-of-FAIL Arg1:T245 Arg2:T246
+T248	Action 3737 3745	necesite
+T249	Action 3763 3770	limpiar
+T250	Action 3782 3792	reemplazar
+T251	Action 3830 3836	recibe
+T252	Concept 3859 3868	nutrición
+T253	Concept 3848 3856	líquidos
+T254	Concept 3821 3829	paciente
+T255	Concept 3796 3800	piel
+T256	Concept 3774 3780	herida
+T257	Concept 3746 3757	tratamiento
+T258	Concept 3696 3706	quemaduras
+T259	Concept-FAIL 3711 3717	graves
+E248	Action:T248  Subject:T258 Target-FAIL:T257 
+E249	Action:T249 Target:T256   Subject-FAIL:T257
+E250	Action:T250 Target:T255   Subject-FAIL:T257 Subject-FAIL2:T255
+E251	Action:T251   Target-FAIL:T254 Target-FAIL2:T253 Target-FAIL3:T252 Subject-FAIL:T253 Subject-FAIL2:T252 Subject-FAIL3:T257 Subject-FAIL4:T254
+R80	property-of-FAIL Arg1:T259 Arg2:T258
+T260	Concept 3946 3950	ojos
+T261	Concept 3921 3925	piel
+T262	Action 3911 3917	afecta
+T263	Concept 3888 3906	enfermedad crónica
+T264	Concept 3873 3880	rosácea
+T265	Concept-FAIL 3888 3898	enfermedad
+E262	Action:T262 Target:T261 Target2:T260 Subject:T264  
+R81	is-a Arg1:T264 Arg2:T263
+R82	is-a-FAIL Arg1:T263 Arg2:T265
+T266	Concept 3986 3996	espinillas
+T267	Action 3952 3957	Causa
+T268	Concept-FAIL 3979 3983	piel
+T269	Action-FAIL 3958 3972	enrojecimiento
+T270	Concept-FAIL 3958 3983	enrojecimiento de la piel
+E267	Action:T267   Target-FAIL:T270 Target-FAIL2:T266 
+E269	Action-FAIL:T269   Target-FAIL:T268 Target-FAIL2:T266 
+T271	Concept-FAIL 4046 4068	personas de piel clara
+T272	Concept-FAIL 4032 4039	mujeres
+T273	Action-FAIL 4016 4021	común
+T274	Concept-FAIL 4001 4008	rosácea
+E273	Action-FAIL:T273   Target-FAIL:T272 Target-FAIL2:T271 Subject-FAIL:T274
+T275	Concept 4112 4120	avanzada
+T276	Concept 4097 4109	edad mediana
+T277	Concept 4086 4093	adultos
+T278	Action 4076 4083	afectar
+E278	Action:T278 Target:T277   
+R83	property-of Arg1:T275 Arg2:T277
+R84	property-of Arg1:T276 Arg2:T277
+T279	Concept 4176 4180	cara
+T280	Action 4166 4172	afecta
+T281	Concept 4153 4160	rosácea
+E280	Action:T280 Target:T279 Subject:T281  
+T282	Concept 4282 4289	picazón
+T283	Concept 4271 4279	sequedad
+T284	Concept 4255 4269	enrojecimiento
+T285	Concept-FAIL 4189 4197	personas
+T286	Concept-FAIL 4202 4209	rosácea
+T287	Concept-FAIL 4244 4248	ojos
+T288	Concept-FAIL 4228 4236	síntomas
+T289	Concept-FAIL 4228 4248	síntomas en los ojos
+T290	Action-FAIL 4218 4227	presentan
+T291	Concept-FAIL 4189 4209	personas con rosácea
+E290	Action-FAIL:T290   Target-FAIL:T289 Subject-FAIL:T291
+R85	property-of-FAIL Arg1:T288 Arg2:T287
+R86	is-a-FAIL Arg1:T284 Arg2:T288
+R87	is-a-FAIL Arg1:T283 Arg2:T288
+R88	is-a-FAIL Arg1:T282 Arg2:T288
+R89	property-of-FAIL Arg1:T286 Arg2:T285
+R90	property-of-FAIL Arg1:T288 Arg2:T286
+R91	is-a-FAIL Arg1:T284 Arg2:T289
+R92	is-a-FAIL Arg1:T283 Arg2:T289
+R93	is-a-FAIL Arg1:T282 Arg2:T289
+T292	Action-FAIL 4299 4306	ocurren
+T293	Concept-FAIL 4307 4316	problemas
+E292	Action-FAIL:T292   Target-FAIL:T293 
+T294	Concept-FAIL 4357 4364	rosácea
+T295	Action-FAIL 4335 4341	conoce
+T296	Concept-FAIL 4345 4350	causa
+E295	Action-FAIL:T295   Target-FAIL:T294 Subject-FAIL:T296
+T297	Action-FAIL 4409 4416	tenerla
+T298	Concept-FAIL 4455 4471	casos de rosácea
+T299	Action-FAIL 4423 4431	enrojece
+E297	Action-FAIL:T297    Subject-FAIL:E299 Subject-FAIL2:T298
+E299	Action-FAIL:T299
+T300	Concept-FAIL 4504 4513	peligrosa
+T301	Action-FAIL 4501 4503	es
+T302	Concept-FAIL 4490 4497	rosácea
+E301	Action-FAIL:T301   Target-FAIL:T300 Subject-FAIL:T302
+T303	Action-FAIL 4556 4562	ayudar
+T304	Concept-FAIL 4536 4548	tratamientos
+T305	Concept-FAIL 4525 4529	cura
+T306	Action-FAIL 4518 4524	existe
+E303	Action-FAIL:T303    Subject-FAIL:T304
+E306	Action-FAIL:T306   Target-FAIL:T305 
+T307	Concept-FAIL 4605 4612	cirugía
+T308	Concept-FAIL 4579 4588	medicinas
+T309	Concept 4670 4679	inflamada
+T310	Concept 4659 4667	irritada
+T311	Concept 4617 4627	sarpullido
+T312	Concept-FAIL 4645 4649	piel
+T313	Concept-FAIL 4634 4638	área
+T314	Concept-FAIL 4634 4649	área en la piel
+R94	part-of-FAIL Arg1:T313 Arg2:T312
+R95	property-of-FAIL Arg1:T310 Arg2:T313
+R96	property-of-FAIL Arg1:T309 Arg2:T313
+R97	is-a-FAIL Arg1:T311 Arg2:T313
+R98	property-of-FAIL Arg1:T310 Arg2:T314
+R99	property-of-FAIL Arg1:T309 Arg2:T314
+R100	is-a-FAIL Arg1:T311 Arg2:T310
+R101	is-a-FAIL Arg1:T311 Arg2:T309
+T315	Concept 4734 4739	pican
+T316	Concept 4722 4731	irritados
+T317	Concept 4711 4720	dolorosos
+T318	Concept 4704 4709	rojos
+T319	Concept 4688 4699	sarpullidos
+R102	property-of Arg1:T318 Arg2:T319
+R103	property-of Arg1:T317 Arg2:T319
+R104	property-of Arg1:T316 Arg2:T319
+R105	property-of Arg1:T315 Arg2:T319
+T320	Concept 4787 4795	ampollas
+T321	Action 4776 4784	conducir
+T322	Concept 4749 4760	sarpullidos
+T323	Concept-FAIL 4816 4826	carne viva
+T324	Concept-FAIL 4798 4812	partes de piel
+E321	Action:T321 Target:T320 Subject:T322 Target-FAIL:T323 
+R106	property-of-FAIL Arg1:T323 Arg2:T324
+T325	Concept 4848 4855	síntoma
+T326	Concept 4831 4841	sarpullido
+T327	Concept-FAIL 4866 4882	cuadros clínicos
+T328	Concept-FAIL 4848 4893	síntoma de muchos cuadros clínicos diferentes
+R107	property-of-FAIL Arg1:T325 Arg2:T327
+R108	is-a-FAIL Arg1:T326 Arg2:T325
+R109	is-a-FAIL Arg1:T328 Arg2:T325
+R110	is-a-FAIL Arg1:T326 Arg2:T328
+T329	Concept 4941 4949	alergias
+T330	Concept 4917 4938	sustancias irritantes
+T331	Concept-FAIL 4901 4907	causas
+T332	Action-FAIL 4901 4907	causas
+E332	Action-FAIL:T332    Subject-FAIL:T330 Subject-FAIL2:T329
+R111	is-a-FAIL Arg1:T330 Arg2:T331
+R112	is-a-FAIL Arg1:T329 Arg2:T331
+T333	Concept-FAIL 5015 5025	erupciones
+T334	Action-FAIL 4997 5006	propensas
+T335	Concept-FAIL 4984 4992	personas
+T336	Action-FAIL 4972 4977	hacer
+T337	Concept-FAIL 4959 4964	genes
+E334	Action-FAIL:T334   Target-FAIL:T333 Subject-FAIL:T335
+E336	Action-FAIL:T336   Target-FAIL:E334 Subject-FAIL:T337
+T338	Concept 5030 5053	dermatitis por contacto
+T339	Concept-FAIL 5074 5084	sarpullido
+T340	Concept-FAIL 5060 5084	tipo común de sarpullido
+R113	is-a-FAIL Arg1:T338 Arg2:T339
+R114	is-a-FAIL Arg1:T338 Arg2:T340
+T341	Concept 5092 5106	enrojecimiento
+T342	Concept 5108 5115	picazón
+T343	Action 5086 5091	Causa
+T344	Concept-FAIL 5140 5154	protuberancias
+T345	Concept-FAIL 5131 5154	pequeñas protuberancias
+E343	Action:T343 Target:T341 Target2:T342  Target-FAIL:T344 Target-FAIL2:T345 
+T346	Concept-FAIL 5266 5274	alérgico
+T347	Concept-FAIL 5284 5299	hiedra venenosa
+T348	Concept-FAIL 5223 5239	producto químico
+T349	Concept-FAIL 5204 5213	irritante
+T350	Action-FAIL 5194 5200	tocado
+T351	Action-FAIL 5162 5170	presenta
+T352	Concept-FAIL 5174 5182	erupción
+E350	Action-FAIL:T350   Target-FAIL:T349 Target-FAIL2:T346 
+E351	Action-FAIL:T351   Target-FAIL:T352 Subject-FAIL:E350
+R115	is-a-FAIL Arg1:T348 Arg2:T349
+R116	is-a-FAIL Arg1:T347 Arg2:T346
+T353	Concept-FAIL 5336 5350	inmediatamente
+T354	Action-FAIL 5324 5335	desarrollan
+T355	Concept-FAIL 5309 5320	sarpullidos
+E354	Action-FAIL:T354   Target-FAIL:T355 Subject-FAIL:T355
+T356	Concept-FAIL 5395 5399	días
+T357	Action-FAIL 5374 5384	transcurso
+T358	Action-FAIL 5361 5367	forman
+E357	Action-FAIL:T357   Target-FAIL:T356 Subject-FAIL:T356
+E358	Action-FAIL:T358    Subject-FAIL:E357
+T359	Action 5488 5497	necesitan
+T360	Action 5438 5449	desaparecen
+T361	Concept 5426 5437	sarpullidos
+T362	Concept-FAIL 5513 5524	largo plazo
+T363	Concept-FAIL 5498 5509	tratamiento
+T364	Concept-FAIL 5498 5524	tratamiento de largo plazo
+T365	Concept-FAIL 5479 5485	tiempo
+T366	Action-FAIL 5473 5478	toman
+T367	Concept-FAIL 5459 5465	rápida
+E359	Action:T359  Subject:T361 Target-FAIL:T363 Target-FAIL2:T364 
+E360	Action:T360  Subject:T361 Target-FAIL:T367 
+E366	Action-FAIL:T366   Target-FAIL:T365 Subject-FAIL:T361
+R117	property-of-FAIL Arg1:T362 Arg2:T363
+T368	Concept-FAIL 5569 5575	causas
+T369	Action-FAIL 5555 5561	tienen
+T370	Concept-FAIL 5543 5554	sarpullidos
+E369	Action-FAIL:T369   Target-FAIL:T368 Subject-FAIL:T370
+T371	Action-FAIL 5714 5718	debe
+T372	Concept-FAIL 5728 5746	proveedor de salud
+T373	Action-FAIL 5719 5722	ver
+T374	Action-FAIL 5689 5697	presenta
+T375	Concept-FAIL 5704 5712	síntomas
+T376	Action-FAIL 5677 5683	mejora
+T377	Concept-FAIL 5653 5669	sarpullido serio
+E371	Action-FAIL:T371    Subject-FAIL:E376 Subject-FAIL2:T377 Subject-FAIL3:E374
+E373	Action-FAIL:T373   Target-FAIL:T372 
+E374	Action-FAIL:T374   Target-FAIL:T375 
+E376	Action-FAIL:T376
+T378	Concept 5894 5901	picazón
+T379	Action 5883 5890	alivian
+T380	Concept 5854 5870	antihistamínicos
+T381	Concept 5840 5851	inflamación
+T382	Action 5829 5836	alivian
+T383	Concept 5797 5802	baños
+T384	Concept 5787 5795	lociones
+T385	Concept 5774 5785	humectantes
+T386	Concept 5752 5764	tratamientos
+T387	Concept-FAIL 5815 5824	cortisona
+T388	Concept-FAIL 5804 5810	cremas
+T389	Concept-FAIL 5804 5824	cremas con cortisona
+E379	Action:T379 Target:T378 Subject:T380  
+E382	Action:T382 Target:T381   Subject-FAIL:T388 Subject-FAIL2:T389
+R118	is-a Arg1:T385 Arg2:T386
+R119	is-a Arg1:T384 Arg2:T386
+R120	is-a Arg1:T383 Arg2:T386
+R121	property-of-FAIL Arg1:T387 Arg2:T388
+R122	is-a-FAIL Arg1:T388 Arg2:T386
+R123	is-a-FAIL Arg1:T389 Arg2:T386
+R124	is-a-FAIL Arg1:T380 Arg2:T386
+T390	Action 5941 5950	producido
+T391	Concept 5934 5940	salado
+T392	Concept 5906 5911	sudor
+T393	Concept-FAIL 5971 5975	piel
+T394	Concept-FAIL 5955 5964	glándulas
+T395	Concept-FAIL 5926 5931	claro
+T396	Concept-FAIL 5918 5925	líquido
+T397	Concept-FAIL 5955 5975	glándulas en la piel
+T398	Concept-FAIL 5918 5931	líquido claro
+E390	Action:T390 Target:T392   Subject-FAIL:T394 Subject-FAIL2:T397
+R125	property-of-FAIL Arg1:T395 Arg2:T396
+R126	property-of-FAIL Arg1:T391 Arg2:T396
+R127	is-a-FAIL Arg1:T392 Arg2:T396
+R128	part-of-FAIL Arg1:T394 Arg2:T393
+R129	is-a-FAIL Arg1:T392 Arg2:T398
+R130	property-of-FAIL Arg1:T391 Arg2:T392
+T399	Concept 6014 6020	cuerpo
+T400	Action 6032 6041	enfriarse
+T401	Concept 5980 5993	transpiración
+E400	Action:T400 Target:T399   Subject-FAIL:T401 Subject-FAIL2:T399
+T402	Concept 6132 6137	manos
+T403	Concept 6107 6111	pies
+T404	Concept 6092 6098	brazos
+T405	Concept 6046 6051	sudor
+T406	Concept-FAIL 6118 6124	palmas
+T407	Concept-FAIL 6118 6137	palmas de las manos
+T408	Action-FAIL 6055 6062	produce
+E408	Action-FAIL:T408   Target-FAIL:T405 Subject-FAIL:T404 Subject-FAIL2:T403 Subject-FAIL3:T407
+R131	part-of-FAIL Arg1:T406 Arg2:T402
+R132	part-of-FAIL Arg1:T405 Arg2:T404
+R133	part-of-FAIL Arg1:T405 Arg2:T403
+R134	part-of-FAIL Arg1:T405 Arg2:T406
+R135	is-a-FAIL Arg1:T407 Arg2:T402
+T409	Concept 6207 6211	olor
+T410	Action 6200 6206	causar
+T411	Concept 6149 6154	sudor
+T412	Action-FAIL 6158 6164	mezcla
+T413	Concept-FAIL 6189 6193	piel
+T414	Concept-FAIL 6173 6182	bacterias
+E410	Action:T410 Target:T409   Subject-FAIL:E412 Subject-FAIL2:T411
+E412	Action-FAIL:T412   Target-FAIL:T411 Target-FAIL2:T414 
+R136	part-of-FAIL Arg1:T414 Arg2:T413
+T415	Concept 6264 6276	desodorantes
+T416	Concept 6244 6261	antitranspirantes
+T417	Concept 6305 6309	olor
+T418	Action 6292 6301	controlar
+T419	Action-FAIL 6239 6243	usar
+T420	Action-FAIL 6213 6220	Bañarse
+T421	Action-FAIL 6283 6289	ayudar
+T422	Concept-FAIL 6225 6236	regularidad
+T423	Concept-FAIL 6213 6220	Bañarse
+E418	Action:T418 Target:T417   Subject-FAIL:E419 Subject-FAIL2:E420
+E419	Action-FAIL:T419   Target-FAIL:T416 Target-FAIL2:T415 
+E420	Action-FAIL:T420
+E421	Action-FAIL:T421   Target-FAIL:E418 Subject-FAIL:T415 Subject-FAIL2:T416 Subject-FAIL3:T423
+R137	property-of-FAIL Arg1:T422 Arg2:T423
+T424	Concept 6609 6626	problema de salud
+T425	Concept 6548 6564	sistema nervioso
+T426	Concept 6517 6526	trastorno
+T427	Concept 6482 6495	hiperhidrosis
+T428	Action-FAIL 6461 6470	transpira
+T429	Action-FAIL 6566 6577	disminución
+T430	Concept-FAIL 6595 6601	sangre
+T431	Concept-FAIL 6582 6588	azúcar
+T432	Concept-FAIL 6533 6541	tiroides
+T433	Concept-FAIL 6566 6588	disminución del azúcar
+T434	Concept-FAIL 6548 6555	sistema
+T435	Concept-FAIL 6517 6541	trastorno de la tiroides
+T436	Action-FAIL 6504 6511	deberse
+T437	Concept-FAIL 6461 6480	transpira demasiado
+E428	Action-FAIL:T428    Subject-FAIL:T426 Subject-FAIL2:E429 Subject-FAIL3:T424
+E429	Action-FAIL:T429   Target-FAIL:T431 
+E436	Action-FAIL:T436   Target-FAIL:T435 Target-FAIL2:T425 Target-FAIL3:T433 Subject-FAIL:T437
+R138	property-of-FAIL Arg1:T426 Arg2:T432
+R139	property-of-FAIL Arg1:T426 Arg2:T425
+R140	part-of-FAIL Arg1:T431 Arg2:T430
+R141	is-a-FAIL Arg1:T435 Arg2:T426
+R142	is-a-FAIL Arg1:T425 Arg2:T434
+R143	is-a-FAIL Arg1:T433 Arg2:T424
+R144	is-a-FAIL Arg1:T425 Arg2:T424
+R145	is-a-FAIL Arg1:T435 Arg2:T424
+R146	same-as-FAIL Arg1:T437 Arg2:T427
+T438	Concept 6708 6714	cuerpo
+T439	Action 6721 6736	sobrecalentarse
+T440	Concept 6693 6697	vida
+T441	Action 6683 6689	riesgo
+T442	Concept 6655 6665	anhidrosis
+T443	Concept-FAIL 6639 6648	demasiado
+T444	Concept-FAIL 6649 6653	poco
+T445	Action-FAIL 6628 6638	Transpirar
+T446	Concept-FAIL 6628 6653	Transpirar demasiado poco
+E439	Action:T439 Target:T438   
+E441	Action:T441 Target:T440   Subject-FAIL:E439 Subject-FAIL2:T442 Subject-FAIL3:T446
+E445	Action-FAIL:T445
+R147	property-of-FAIL Arg1:T443 Arg2:T444
+R148	same-as-FAIL Arg1:T442 Arg2:T446
+T447	Concept 6825 6835	trastornos
+T448	Concept 6804 6814	quemaduras
+T449	Concept 6784 6798	deshidratación
+T450	Concept 6758 6768	anhidrosis
+T451	Concept-FAIL 6853 6860	nervios
+T452	Concept-FAIL 6842 6846	piel
+T453	Concept-FAIL 6748 6754	causas
+T454	Concept-FAIL 6825 6846	trastornos de la piel
+T455	Action-FAIL 6772 6780	incluyen
+T456	Concept-FAIL 6748 6768	causas de anhidrosis
+T457	Action-FAIL 6748 6754	causas
+E455	Action-FAIL:T455   Target-FAIL:T449 Target-FAIL2:T448 Target-FAIL3:T454 Subject-FAIL:T456 Subject-FAIL2:T456 Subject-FAIL3:T456
+E457	Action-FAIL:T457   Target-FAIL:T450 
+R149	property-of-FAIL Arg1:T453 Arg2:T450
+R150	property-of-FAIL Arg1:T447 Arg2:T451
+R151	is-a-FAIL Arg1:T447 Arg2:T453
+R152	is-a-FAIL Arg1:T449 Arg2:T453
+R153	is-a-FAIL Arg1:T448 Arg2:T453
+R154	is-a-FAIL Arg1:T454 Arg2:T447
+T458	Action 6905 6912	afectan
+T459	Concept 6866 6876	trastornos
+T460	Concept-FAIL 6928 6932	piel
+T461	Concept-FAIL 6916 6921	color
+T462	Concept-FAIL 6900 6904	piel
+T463	Concept-FAIL 6883 6893	coloración
+T464	Concept-FAIL 6916 6932	color de la piel
+T465	Concept-FAIL 6866 6893	trastornos de la coloración
+E458	Action:T458   Target-FAIL:T461 Target-FAIL2:T464 Subject-FAIL:T459 Subject-FAIL2:T465
+R155	property-of-FAIL Arg1:T463 Arg2:T462
+R156	property-of-FAIL Arg1:T459 Arg2:T463
+R157	property-of-FAIL Arg1:T461 Arg2:T460
+R158	is-a-FAIL Arg1:T465 Arg2:T459
+T466	Concept 7024 7034	especiales
+T467	Concept 7016 7023	células
+T468	Action 7002 7011	producido
+T469	Concept 6937 6941	piel
+T470	Concept 6965 6973	pigmento
+T471	Concept 6982 6990	melanina
+T472	Concept-FAIL 7041 7045	piel
+T473	Action-FAIL 6953 6958	color
+T474	Concept-FAIL 6953 6958	color
+T475	Action-FAIL 6942 6949	obtiene
+E468	Action:T468 Target:T471 Subject:T467  
+E473	Action-FAIL:T473   Target-FAIL:T469 Subject-FAIL:T471
+E475	Action-FAIL:T475   Target-FAIL:T474 Target-FAIL2:T470 Subject-FAIL:T469
+R159	is-a Arg1:T471 Arg2:T470
+R160	property-of Arg1:T466 Arg2:T467
+R161	part-of-FAIL Arg1:T467 Arg2:T472
+T476	Concept 7105 7115	producción
+T477	Action 7095 7101	afecta
+T478	Concept 7060 7067	células
+T479	Action 7082 7090	enferman
+T480	Action 7071 7076	dañan
+T481	Concept-FAIL 7119 7127	melanina
+T482	Concept-FAIL 7105 7127	producción de melanina
+E477	Action:T477   Target-FAIL:T476 Target-FAIL2:T482 Subject-FAIL:E480
+E479	Action:T479   Target-FAIL:T478 Target-FAIL2:E477 Subject-FAIL:T478
+E480	Action:T480   Target-FAIL:T478 Target-FAIL2:E477 Subject-FAIL:T478
+R162	property-of-FAIL Arg1:T476 Arg2:T481
+R163	is-a-FAIL Arg1:T482 Arg2:T476
+T483	Concept-FAIL 7208 7212	piel
+T484	Concept-FAIL 7193 7212	regiones de la piel
+T485	Action-FAIL 7167 7174	afectan
+T486	Concept-FAIL 7137 7166	trastornos de la pigmentación
+T487	Concept-FAIL 7154 7166	pigmentación
+T488	Action-FAIL 7137 7147	trastornos
+E485	Action-FAIL:T485   Target-FAIL:T484 Subject-FAIL:T486
+E488	Action-FAIL:T488   Target-FAIL:T487 
+R164	part-of-FAIL Arg1:T484 Arg2:T483
+T489	Concept 7265 7274	demasiada
+T490	Concept 7288 7292	piel
+T491	Action 7296 7304	oscurece
+T492	Concept 7275 7283	melanina
+T493	Action 7257 7264	produce
+T494	Concept-FAIL 7250 7256	cuerpo
+E491	Action:T491 Target:T490   Subject-FAIL:E493
+E493	Action:T493 Target:T492   Subject-FAIL:T494
+R165	property-of Arg1:T489 Arg2:T492
+T495	Concept 7387 7391	piel
+T496	Action 7374 7383	oscurecer
+T497	Concept 7363 7366	sol
+T498	Action 7349 7359	exposición
+T499	Concept 7322 7332	enfermedad
+T500	Concept 7322 7343	enfermedad de Addison
+T501	Concept 7309 7317	embarazo
+T502	Concept-FAIL 7349 7366	exposición al sol
+E496	Action:T496 Target:T495 Subject:T500 Subject2:T501  Subject-FAIL:E498 Subject-FAIL2:T502
+E498	Action:T498 Target:T497   
+R166	is-a Arg1:T500 Arg2:T499
+T503	Concept 7436 7440	piel
+T504	Action 7453 7458	clara
+T505	Concept 7399 7405	cuerpo
+T506	Concept 7423 7431	melanina
+T507	Action 7406 7413	produce
+T508	Concept-FAIL 7418 7422	poca
+E504	Action:T504 Target:T503   Subject-FAIL:T505
+E507	Action:T507 Target:T506 Subject:T505  
+R167	property-of-FAIL Arg1:T508 Arg2:T506
+T509	Concept 7507 7511	piel
+T510	Action 7492 7497	causa
+T511	Concept 7479 7487	afección
+T512	Concept 7463 7471	vitiligo
+T513	Concept-FAIL 7512 7517	clara
+T514	Concept-FAIL 7498 7503	áreas
+T515	Action-FAIL 7512 7517	clara
+E510	Action:T510  Subject:T512 Target-FAIL:T514 Target-FAIL2:E515 
+E515	Action-FAIL:T515   Target-FAIL:T509 
+R168	is-a Arg1:T512 Arg2:T511
+R169	property-of-FAIL Arg1:T513 Arg2:T514
+R170	part-of-FAIL Arg1:T514 Arg2:T509
+T516	Concept 7573 7577	piel
+T517	Action 7558 7564	afecta
+T518	Concept 7538 7553	cuadro genético
+T519	Concept 7522 7531	albinismo
+T520	Concept-FAIL 7585 7592	persona
+E517	Action:T517 Target:T516 Subject:T519  
+R171	is-a Arg1:T519 Arg2:T518
+R172	part-of-FAIL Arg1:T516 Arg2:T520
+T521	Concept-FAIL 7610 7619	albinismo
+T522	Concept-FAIL 7598 7605	persona
+R173	property-of-FAIL Arg1:T521 Arg2:T522
+T523	Concept 7809 7813	piel
+T524	Concept 7759 7769	quemaduras
+T525	Concept 7744 7752	ampollas
+T526	Concept 7727 7738	infecciones
+T527	Concept-FAIL 7818 7823	clara
+T528	Action-FAIL 7787 7793	causas
+T529	Concept-FAIL 7787 7793	causas
+T530	Action-FAIL 7818 7823	clara
+E528	Action-FAIL:T528   Target-FAIL:T523 Subject-FAIL:T524 Subject-FAIL2:T525 Subject-FAIL3:T526
+E530	Action-FAIL:T530   Target-FAIL:T523 Target-FAIL2:T523 Target-FAIL3:T523 Subject-FAIL:T524 Subject-FAIL2:T525 Subject-FAIL3:T526
+R174	property-of-FAIL Arg1:T527 Arg2:T523
+R175	is-a-FAIL Arg1:T524 Arg2:T529
+R176	is-a-FAIL Arg1:T525 Arg2:T529
+R177	is-a-FAIL Arg1:T526 Arg2:T529
+T531	Concept 7879 7886	picazón
+T532	Action 7870 7878	producen
+T533	Concept 7828 7837	urticaria
+T534	Concept-FAIL 7842 7857	ronchas rojizas
+T535	Concept-FAIL 7893 7897	piel
+T536	Concept-FAIL 7850 7857	rojizas
+T537	Concept-FAIL 7842 7849	ronchas
+E532	Action:T532 Target:T531 Subject:T533  
+R178	is-a-FAIL Arg1:T533 Arg2:T534
+R179	is-a-FAIL Arg1:T533 Arg2:T537
+R180	property-of-FAIL Arg1:T536 Arg2:T537
+T538	Action-FAIL 7909 7916	causada
+T539	Concept-FAIL 7966 7972	comida
+T540	Concept-FAIL 7948 7959	medicamento
+T541	Concept-FAIL 7925 7942	reacción alérgica
+T542	Concept-FAIL 7925 7933	reacción
+E538	Action-FAIL:T538   Target-FAIL:T541 Target-FAIL2:T541 Subject-FAIL:T540 Subject-FAIL2:T539
+T543	Action 8096 8102	formen
+T544	Concept 8107 8114	ronchas
+T545	Action 8083 8090	inflame
+T546	Concept 8075 8079	piel
+T547	Concept 8038 8057	sustancias químicas
+T548	Action 8024 8034	liberación
+T549	Action 7999 8007	provocan
+T550	Concept 7978 7998	reacciones alérgicas
+T551	Concept-FAIL 8038 8048	sustancias
+T552	Concept-FAIL 8024 8057	liberación de sustancias químicas
+T553	Concept-FAIL 7978 7988	reacciones
+E543	Action:T543 Target:T544 Subject:T547  
+E545	Action:T545 Target:T546 Subject:T547  
+E548	Action:T548 Target:T547   
+E549	Action:T549  Subject:T550 Target-FAIL:E548 Target-FAIL2:T552 
+R181	is-a-FAIL Arg1:T550 Arg2:T553
+R182	is-a-FAIL Arg1:T547 Arg2:T551
+T554	Action-FAIL 8163 8172	propensas
+T555	Concept-FAIL 8181 8190	urticaria
+T556	Concept-FAIL 8146 8154	alergias
+T557	Concept-FAIL 8120 8128	personas
+E554	Action-FAIL:T554   Target-FAIL:T555 Subject-FAIL:T557
+R183	property-of-FAIL Arg1:T556 Arg2:T557
+T558	Concept 8255 8261	estrés
+T559	Concept 8238 8249	infecciones
+T560	Concept 8213 8219	causas
+R184	is-a Arg1:T559 Arg2:T560
+R185	is-a Arg1:T558 Arg2:T560
+T561	Concept-FAIL 8283 8288	común
+T562	Concept-FAIL 8266 8275	urticaria
+R186	property-of-FAIL Arg1:T561 Arg2:T562
+T563	Concept-FAIL 8391 8400	inyección
+T564	Concept-FAIL 8375 8384	medicinas
+T565	Action-FAIL 8365 8374	necesiten
+T566	Concept-FAIL 8340 8345	serio
+T567	Concept-FAIL 8332 8336	caso
+T568	Action-FAIL 8296 8307	desaparecer
+E565	Action-FAIL:T565   Target-FAIL:T564 Target-FAIL2:T563 
+E568	Action-FAIL:T568
+R187	property-of-FAIL Arg1:T566 Arg2:T567
+T569	Concept 8516 8527	respiración
+T570	Action 8502 8512	dificultar
+T571	Action 8441 8447	causar
+T572	Concept 8425 8434	urticaria
+T573	Concept 8411 8420	ocasiones
+T574	Concept-FAIL 8486 8499	respiratorias
+T575	Concept-FAIL 8452 8473	inflamación peligrosa
+T576	Concept-FAIL 8405 8420	raras ocasiones
+T577	Concept-FAIL 8481 8499	vías respiratorias
+T578	Concept-FAIL 8464 8473	peligrosa
+T579	Concept-FAIL 8452 8463	inflamación
+T580	Concept-FAIL 8405 8410	raras
+E570	Action:T570 Target:T569 Subject:T572  
+E571	Action:T571  Subject:T572 Target-FAIL:T575 Target-FAIL2:T579 
+R188	property-of-FAIL Arg1:T576 Arg2:T573
+R189	property-of-FAIL Arg1:T580 Arg2:T573
+R190	property-of-FAIL Arg1:T578 Arg2:T579
+T581	Concept 8600 8604	piel
+T582	Action 8572 8577	causa
+T583	Concept 8563 8571	vitiligo
+T584	Concept-FAIL 8578 8593	manchas blancas
+T585	Concept-FAIL 8586 8593	blancas
+T586	Concept-FAIL 8578 8585	manchas
+E582	Action:T582  Subject:T583 Target-FAIL:T584 Subject-FAIL:T586
+R191	part-of-FAIL Arg1:T584 Arg2:T581
+R192	property-of-FAIL Arg1:T585 Arg2:T586
+R193	part-of-FAIL Arg1:T586 Arg2:T581
+T587	Concept-FAIL 8638 8643	nariz
+T588	Concept-FAIL 8631 8635	boca
+T589	Concept-FAIL 8625 8629	ojos
+T590	Action-FAIL 8614 8620	afecta
+E590	Action-FAIL:T590   Target-FAIL:T589 Target-FAIL2:T588 Subject-FAIL:T587
+T591	Concept 8692 8697	color
+T592	Concept 8703 8707	piel
+T593	Action 8688 8691	dan
+T594	Concept 8676 8683	células
+T595	Action 8662 8671	destruyen
+E593	Action:T593 Target:T591 Subject:T594  
+E595	Action:T595 Target:T594   
+R194	property-of Arg1:T591 Arg2:T592
+T596	Concept-FAIL 8749 8756	celular
+T597	Action-FAIL 8737 8748	destrucción
+T598	Concept-FAIL 8725 8730	causa
+T599	Action-FAIL 8715 8721	conoce
+E597	Action-FAIL:T597   Target-FAIL:T596 Subject-FAIL:T598
+E599	Action-FAIL:T599   Target-FAIL:T598 
+T600	Concept 8794 8806	enfermedades
+T601	Concept 8794 8818	enfermedades autoinmunes
+T602	Concept 8781 8789	personas
+T603	Concept-FAIL 8837 8855	tendencia familiar
+T604	Concept-FAIL 8847 8855	familiar
+T605	Concept-FAIL 8837 8846	tendencia
+T606	Concept-FAIL 8807 8818	autoinmunes
+R195	is-a-FAIL Arg1:T601 Arg2:T600
+R196	part-of-FAIL Arg1:T601 Arg2:T602
+R197	property-of-FAIL Arg1:T603 Arg2:T602
+R198	is-a-FAIL Arg1:T606 Arg2:T600
+R199	property-of-FAIL Arg1:T601 Arg2:T602
+T607	Concept 8922 8929	comunes
+T608	Action 8949 8957	expuesta
+T609	Concept 8939 8943	piel
+T610	Concept-FAIL 8898 8913	manchas blancas
+T611	Concept-FAIL 8961 8964	sol
+T612	Concept-FAIL 8906 8913	blancas
+T613	Concept-FAIL 8898 8905	manchas
+E608	Action:T608   Target-FAIL:T609 Subject-FAIL:T609 Subject-FAIL2:T611
+R200	property-of-FAIL Arg1:T607 Arg2:T610
+R201	property-of-FAIL Arg1:T612 Arg2:T613
+R202	property-of-FAIL Arg1:T607 Arg2:T613
+R203	part-of-FAIL Arg1:T613 Arg2:T609
+T614	Concept-FAIL 8988 8995	manchas
+T615	Action-FAIL 8999 9008	diseminan
+E615	Action-FAIL:T615   Target-FAIL:T614 
+T616	Concept 9064 9069	canas
+T617	Action 9028 9036	provocar
+T618	Concept 9013 9021	vitiligo
+T619	Action-FAIL 9040 9049	aparición
+E617	Action:T617  Subject:T618 Target-FAIL:E619 Target-FAIL2:T616 
+E619	Action-FAIL:T619   Target-FAIL:T616 
+T620	Concept 9128 9132	boca
+T621	Concept 9109 9114	color
+T622	Action 9102 9108	perder
+T623	Concept-FAIL 9083 9094	piel oscura
+T624	Concept-FAIL 9088 9094	oscura
+T625	Concept-FAIL 9083 9087	piel
+E622	Action:T622 Target:T621   
+R204	property-of Arg1:T621 Arg2:T620
+R205	property-of-FAIL Arg1:T624 Arg2:T625
+T626	Concept 9230 9237	manchas
+T627	Action 9219 9225	cubrir
+T628	Concept 9201 9211	cosméticos
+T629	Action 9178 9186	proteger
+T630	Concept 9190 9194	piel
+T631	Concept 9144 9164	bloqueadores solares
+E627	Action:T627 Target:T626 Subject:T628  
+E629	Action:T629 Target:T630 Subject:T631  
+T632	Concept 9300 9307	cirugía
+T633	Concept 9286 9297	fototerapia
+T634	Concept 9275 9284	medicinas
+T635	Concept 9242 9253	tratamiento
+T636	Concept 9242 9266	tratamiento del vitiligo
+T637	Action-FAIL 9267 9274	incluye
+E637	Action-FAIL:T637   Target-FAIL:T634 Subject-FAIL:T636
+R206	is-a Arg1:T636 Arg2:T635
+R207	part-of-FAIL Arg1:T634 Arg2:T636
+R208	part-of-FAIL Arg1:T632 Arg2:T636
+R209	part-of-FAIL Arg1:T633 Arg2:T636
+R210	is-a-FAIL Arg1:T634 Arg2:T635
+R211	is-a-FAIL Arg1:T633 Arg2:T635
+R212	is-a-FAIL Arg1:T632 Arg2:T635
+T638	Concept-FAIL 9339 9348	adecuados
+T639	Concept-FAIL 9322 9334	tratamientos
+R213	property-of-FAIL Arg1:T638 Arg2:T639
+T640	Concept 9523 9531	posición
+T641	Action 9499 9509	permanecer
+T642	Concept 9447 9454	úlceras
+T643	Concept 9447 9466	úlceras por presión
+T644	Concept-FAIL 9540 9556	demasiado tiempo
+T645	Concept-FAIL 9471 9476	áreas
+T646	Concept-FAIL 9471 9494	áreas de piel lesionada
+T647	Concept-FAIL 9540 9549	demasiado
+T648	Concept-FAIL 9550 9556	tiempo
+T649	Concept-FAIL 9485 9494	lesionada
+T650	Concept-FAIL 9471 9484	áreas de piel
+E641	Action:T641   Target-FAIL:T644 Target-FAIL2:T640 Subject-FAIL:T643
+R214	is-a Arg1:T643 Arg2:T642
+R215	is-a-FAIL Arg1:T646 Arg2:T645
+R216	is-a-FAIL Arg1:T643 Arg2:T646
+R217	property-of-FAIL Arg1:T649 Arg2:T650
+R218	is-a-FAIL Arg1:T643 Arg2:T650
+R219	property-of-FAIL Arg1:T647 Arg2:T648
+T651	Concept-FAIL 9731 9746	silla de ruedas
+T652	Concept-FAIL 9731 9736	silla
+T653	Concept-FAIL 9713 9717	cama
+T654	Action-FAIL 9697 9705	recluido
+E654	Action-FAIL:T654
+R220	is-a-FAIL Arg1:T651 Arg2:T652
+T655	Action 9810 9816	causar
+T656	Concept 9783 9790	úlceras
+T657	Concept 9783 9802	úlceras por presión
+T658	Concept-FAIL 9875 9890	vida en peligro
+T659	Action-FAIL 9866 9871	poner
+T660	Concept-FAIL 9817 9835	infecciones graves
+T661	Concept-FAIL 9829 9835	graves
+T662	Concept-FAIL 9817 9828	infecciones
+E655	Action:T655   Target-FAIL:T660 Target-FAIL2:T662 Subject-FAIL:T656
+E659	Action-FAIL:T659   Target-FAIL:T658 Subject-FAIL:T656
+R221	is-a Arg1:T657 Arg2:T656
+R222	property-of-FAIL Arg1:T661 Arg2:T662
+T663	Concept-FAIL 9947 9981	centros de cuidados especializados
+T664	Concept-FAIL 9967 9981	especializados
+T665	Concept-FAIL 9958 9966	cuidados
+T666	Concept-FAIL 9947 9954	centros
+R223	property-of-FAIL Arg1:T664 Arg2:T665
+R224	is-a-FAIL Arg1:T663 Arg2:T666
+T667	Concept 9987 9994	úlceras
+T668	Concept 9987 10006	úlceras por presión
+T669	Concept-FAIL 10018 10042	variedad de tratamientos
+T670	Concept-FAIL 10030 10042	tratamientos
+T671	Action-FAIL 10007 10013	tienen
+E671	Action-FAIL:T671   Target-FAIL:T670 Subject-FAIL:T668
+R225	is-a Arg1:T668 Arg2:T667
+R226	part-of-FAIL Arg1:T669 Arg2:T667
+T672	Action 10073 10078	curan
+T673	Concept 10048 10055	úlceras
+T674	Concept 10060 10069	avanzadas
+T675	Concept-FAIL 10106 10111	mejor
+T676	Concept-FAIL 10118 10140	tratamiento anticipado
+T677	Concept-FAIL 10130 10140	anticipado
+T678	Concept-FAIL 10118 10129	tratamiento
+E672	Action:T672 Target:T673   
+R227	property-of Arg1:T674 Arg2:T673
+R228	property-of-FAIL Arg1:T675 Arg2:T676
+R229	property-of-FAIL Arg1:T677 Arg2:T678

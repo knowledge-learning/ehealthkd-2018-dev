@@ -1,0 +1,1881 @@
+T0	Concept 77 86	minerales
+T1	Concept 58 64	tierra
+T2	Concept 18 26	elemento
+T3	Concept 3 11	arsénico
+T4	Action-FAIL 42 51	encuentra
+T5	Concept-FAIL 18 34	elemento natural
+T6	Concept-FAIL 27 34	natural
+E4	Action-FAIL:T4 Target-FAIL:T1 Target-FAIL2:T0 Subject-FAIL:T3
+R0	is-a-FAIL Arg1:T5 Arg2:T2
+R1	is-a-FAIL Arg1:T3 Arg2:T5
+R2	property-of-FAIL Arg1:T6 Arg2:T2
+R3	is-a-FAIL Arg1:T2 Arg2:T3
+T7	Concept 181 191	industrias
+T8	Concept 156 167	plaguicidas
+T9	Concept 143 149	madera
+T10	Concept 108 116	arsénico
+T11	Concept 92 103	componentes
+T12	Action-FAIL 130 139	preservar
+T13	Concept-FAIL 92 116	componentes del arsénico
+T14	Concept-FAIL 173 180	ciertas
+T15	Action-FAIL 120 124	usan
+E12	Action-FAIL:T12 Target-FAIL:T9 Subject-FAIL:T13
+E15	Action-FAIL:T15 Subject-FAIL:T11
+R4	is-a-FAIL Arg1:T13 Arg2:T11
+R5	part-of-FAIL Arg1:T8 Arg2:T13
+R6	property-of-FAIL Arg1:T14 Arg2:T7
+R7	property-of-FAIL Arg1:T10 Arg2:T11
+T16	Concept 260 265	polvo
+T17	Concept 282 288	viento
+T18	Concept 240 246	tierra
+T19	Concept 230 234	agua
+T20	Concept 221 225	aire
+T21	Concept 196 204	arsénico
+T22	Action-FAIL 273 278	lleva
+E22	Action-FAIL:T22 Target-FAIL:T18 Subject-FAIL:T17
+R8	part-of-FAIL Arg1:T21 Arg2:T20
+R9	part-of-FAIL Arg1:T21 Arg2:T19
+R10	part-of-FAIL Arg1:T21 Arg2:T18
+T23	Concept 337 352	desbordamientos
+T24	Concept 319 323	agua
+T25	Action-FAIL 304 312	penetrar
+E25	Action-FAIL:T25 Target-FAIL:T24
+T26	Concept 400 409	problemas
+T27	Concept 357 367	exposición
+T28	Action-FAIL 386 392	causar
+T29	Concept-FAIL 400 418	problemas de salud
+T30	Concept-FAIL 357 379	exposición al arsénico
+T31	Concept-FAIL 413 418	salud
+T32	Concept-FAIL 371 379	arsénico
+E28	Action-FAIL:T28 Target-FAIL:T29 Subject-FAIL:T30
+R11	is-a-FAIL Arg1:T30 Arg2:T27
+R12	is-a-FAIL Arg1:T29 Arg2:T26
+R13	property-of-FAIL Arg1:T31 Arg2:T26
+R14	property-of-FAIL Arg1:T32 Arg2:T27
+T33	Concept 489 494	color
+T34	Concept 501 505	piel
+T35	Concept 458 465	niveles
+T36	Concept 438 444	tiempo
+T37	Concept 423 433	exposición
+T38	Concept-FAIL 423 471	exposición por tiempo prolongado a niveles bajos
+T39	Concept-FAIL 489 505	color de la piel
+T40	Action-FAIL 478 485	cambiar
+T41	Concept-FAIL 458 471	niveles bajos
+T42	Concept-FAIL 438 455	tiempo prolongado
+T43	Concept-FAIL 466 471	bajos
+T44	Concept-FAIL 445 455	prolongado
+E40	Action-FAIL:T40 Target-FAIL:T39 Subject-FAIL:T38
+R15	is-a-FAIL Arg1:T42 Arg2:T36
+R16	is-a-FAIL Arg1:T41 Arg2:T35
+R17	is-a-FAIL Arg1:T39 Arg2:T33
+R18	is-a-FAIL Arg1:T38 Arg2:T37
+R19	property-of-FAIL Arg1:T34 Arg2:T33
+R20	property-of-FAIL Arg1:T44 Arg2:T36
+R21	property-of-FAIL Arg1:T36 Arg2:T37
+R22	property-of-FAIL Arg1:T43 Arg2:T35
+T45	Concept 538 546	verrugas
+T46	Concept 520 526	callos
+T47	Concept-FAIL 529 546	pequeñas verrugas
+T48	Action-FAIL 513 519	causar
+T49	Concept-FAIL 529 537	pequeñas
+E48	Action-FAIL:T48 Target-FAIL:T46 Target-FAIL2:T47
+R23	is-a-FAIL Arg1:T47 Arg2:T45
+R24	property-of-FAIL Arg1:T49 Arg2:T45
+T50	Concept 551 561	exposición
+T51	Concept 611 617	muerte
+T52	Concept 584 592	arsénico
+T53	Concept 564 571	niveles
+T54	Concept-FAIL 551 592	exposición a niveles elevados de arsénico
+T55	Action-FAIL 599 607	provocar
+T56	Concept-FAIL 564 592	niveles elevados de arsénico
+T57	Concept-FAIL 564 580	niveles elevados
+T58	Concept-FAIL 572 580	elevados
+E55	Action-FAIL:T55 Target-FAIL:T51 Subject-FAIL:T54
+R25	is-a-FAIL Arg1:T57 Arg2:T53
+R26	is-a-FAIL Arg1:T56 Arg2:T53
+R27	is-a-FAIL Arg1:T54 Arg2:T50
+R28	property-of-FAIL Arg1:T58 Arg2:T53
+R29	property-of-FAIL Arg1:T52 Arg2:T53
+T59	Concept 710 721	propiedades
+T60	Concept 699 707	personas
+T61	Concept 682 691	violencia
+T62	Concept 656 663	amenaza
+T63	Concept 622 632	terrorismo
+T64	Concept-FAIL 656 676	amenaza de la fuerza
+T65	Concept-FAIL 670 676	fuerza
+T66	Concept-FAIL 647 650	uso
+R30	is-a-FAIL Arg1:T64 Arg2:T62
+R31	property-of-FAIL Arg1:T61 Arg2:T60
+R32	property-of-FAIL Arg1:T61 Arg2:T59
+R33	is-a-FAIL Arg1:T63 Arg2:T64
+R34	is-a-FAIL Arg1:T63 Arg2:T61
+R35	is-a-FAIL Arg1:T66 Arg2:T63
+R36	is-a-FAIL Arg1:T62 Arg2:T63
+R37	property-of-FAIL Arg1:T65 Arg2:T66
+R38	property-of-FAIL Arg1:T65 Arg2:T62
+R39	property-of-FAIL Arg1:T61 Arg2:T62
+R40	property-of-FAIL Arg1:T61 Arg2:T66
+R41	property-of-FAIL Arg1:T60 Arg2:T61
+R42	property-of-FAIL Arg1:T59 Arg2:T61
+T67	Action 747 752	lanza
+T68	Concept 814 821	muertes
+T69	Concept 799 811	enfermedades
+T70	Concept 778 786	gérmenes
+T71	Concept 760 769	bacterias
+T72	Concept 753 758	virus
+T73	Concept 726 732	ataque
+T74	Action-FAIL 792 798	causar
+T75	Concept-FAIL 726 746	ataque bioterrorista
+T76	Concept-FAIL 733 746	bioterrorista
+E67	Action:T67 Target:T72 Target2:T71 Target3:T70 Subject-FAIL:T75 Subject-FAIL2:T73
+E74	Action-FAIL:T74 Target-FAIL:T69 Target-FAIL2:T68 Subject-FAIL:T75
+R43	is-a-FAIL Arg1:T75 Arg2:T73
+R44	property-of-FAIL Arg1:T76 Arg2:T73
+T77	Concept 867 877	naturaleza
+T78	Concept 829 837	gérmenes
+T79	Action-FAIL 850 860	encuentran
+E79	Action-FAIL:T79 Target-FAIL:T77 Subject-FAIL:T78
+T80	Concept 936 945	capacidad
+T81	Concept 911 921	peligrosos
+T82	Concept 1002 1013	tratamiento
+T83	Action-FAIL 922 932	aumentando
+T84	Action-FAIL 951 957	causar
+T85	Concept-FAIL 960 969	diseminar
+T86	Concept-FAIL 960 982	diseminar enfermedades
+T87	Action-FAIL 990 998	resistir
+T88	Concept-FAIL 1002 1020	tratamiento médico
+T89	Concept-FAIL 1014 1020	médico
+T90	Concept-FAIL 970 982	enfermedades
+E83	Action-FAIL:T83 Target-FAIL:T80 Subject-FAIL:T81
+E84	Action-FAIL:T84 Target-FAIL:T86
+E87	Action-FAIL:T87 Target-FAIL:T88
+R45	is-a-FAIL Arg1:T88 Arg2:T82
+R46	is-a-FAIL Arg1:T86 Arg2:T85
+R47	property-of-FAIL Arg1:T89 Arg2:T82
+T91	Concept 1071 1075	aire
+T92	Action 1048 1057	diseminan
+T93	Concept 1091 1100	alimentos
+T94	Concept 1080 1084	agua
+T95	Concept 1026 1033	agentes
+T96	Concept-FAIL 1026 1044	agentes biológicos
+T97	Concept-FAIL 1034 1044	biológicos
+E92	Action:T92 Target:T91 Target2:T94 Target3:T93 Subject-FAIL:T96 Subject-FAIL2:T95
+R48	is-a-FAIL Arg1:T96 Arg2:T95
+R49	property-of-FAIL Arg1:T97 Arg2:T95
+T98	Concept 1144 1151	persona
+T99	Concept-FAIL 1154 1158	otra
+T100	Action-FAIL 1125 1136	diseminarse
+E100	Action-FAIL:T100 Target-FAIL:T99 Subject-FAIL:T98
+T101	Concept 1206 1210	días
+T102	Concept 1198 1203	horas
+T103	Action 1169 1175	causan
+T104	Concept 1176 1186	enfermedad
+T105	Concept-FAIL 1191 1210	varias horas o días
+E103	Action:T103 Target:T104
+R50	property-of-FAIL Arg1:T105 Arg2:T104
+T106	Action 1234 1242	preocupa
+T107	Concept 1364 1371	agentes
+T108	Concept 1336 1343	viruela
+T109	Concept 1325 1330	peste
+T110	Concept 1315 1320	ébola
+T111	Concept 1279 1284	virus
+T112	Concept 1262 1271	botulismo
+T113	Concept 1251 1257	ántrax
+T114	Concept 1218 1229	científicos
+T115	Concept-FAIL 1279 1306	virus de fiebre hemorrágica
+T116	Concept-FAIL 1364 1382	agentes biológicos
+T117	Action-FAIL 1352 1358	usarse
+T118	Concept-FAIL 1279 1294	virus de fiebre
+T119	Concept-FAIL 1372 1382	biológicos
+T120	Concept-FAIL 1295 1306	hemorrágica
+T121	Concept-FAIL 1288 1294	fiebre
+E106	Action:T106 Subject:T114 Target-FAIL:E117
+E117	Action-FAIL:T117 Target-FAIL:T116 Subject-FAIL:T113 Subject-FAIL2:T112 Subject-FAIL3:T115 Subject-FAIL4:T110 Subject-FAIL5:T109 Subject-FAIL6:T108
+R51	is-a-FAIL Arg1:T118 Arg2:T111
+R52	is-a-FAIL Arg1:T116 Arg2:T107
+R53	is-a-FAIL Arg1:T115 Arg2:T118
+R54	property-of-FAIL Arg1:T119 Arg2:T107
+R55	property-of-FAIL Arg1:T120 Arg2:T121
+T122	Concept 1438 1446	personas
+T123	Action 1398 1401	usa
+T124	Concept 1501 1508	vacunas
+T125	Concept 1489 1498	medicinas
+T126	Concept 1458 1465	agentes
+T127	Concept 1402 1409	medidas
+T128	Concept 1387 1397	biodefensa
+T129	Action-FAIL 1423 1431	proteger
+T130	Action-FAIL 1478 1488	incluyendo
+T131	Concept-FAIL 1458 1476	agentes biológicos
+T132	Concept-FAIL 1402 1417	medidas médicas
+T133	Concept-FAIL 1466 1476	biológicos
+T134	Concept-FAIL 1410 1417	médicas
+E123	Action:T123 Subject:T128 Target-FAIL:T132 Target-FAIL2:T127
+E129	Action-FAIL:T129 Target-FAIL:T122 Subject-FAIL:T132
+E130	Action-FAIL:T130 Target-FAIL:T131 Target-FAIL2:T125 Target-FAIL3:T124
+R56	is-a-FAIL Arg1:T132 Arg2:T127
+R57	is-a-FAIL Arg1:T131 Arg2:T126
+R58	property-of-FAIL Arg1:T134 Arg2:T127
+R59	property-of-FAIL Arg1:T133 Arg2:T126
+T135	Concept 1588 1595	ataques
+T136	Concept 1544 1556	preparativos
+T137	Concept 1526 1541	investigaciones
+T138	Concept-FAIL 1588 1610	ataques bioterroristas
+T139	Action-FAIL 1570 1580	defenderse
+T140	Concept-FAIL 1544 1564	preparativos médicos
+T141	Concept-FAIL 1596 1610	bioterroristas
+T142	Concept-FAIL 1557 1564	médicos
+E139	Action-FAIL:T139 Target-FAIL:T138 Subject-FAIL:T140 Subject-FAIL2:T137
+R60	is-a-FAIL Arg1:T140 Arg2:T136
+R61	is-a-FAIL Arg1:T138 Arg2:T135
+R62	property-of-FAIL Arg1:T142 Arg2:T136
+R63	property-of-FAIL Arg1:T141 Arg2:T135
+T143	Concept 1678 1685	período
+T144	Concept 1627 1638	temperatura
+T145	Concept 1615 1620	clima
+T146	Action-FAIL 1621 1623	es
+T147	Concept-FAIL 1678 1695	período de tiempo
+T148	Concept-FAIL 1627 1647	temperatura promedio
+T149	Concept-FAIL 1666 1677	determinado
+T150	Concept-FAIL 1654 1659	lugar
+T151	Concept-FAIL 1689 1695	tiempo
+T152	Concept-FAIL 1639 1647	promedio
+E146	Action-FAIL:T146 Target-FAIL:T148 Target-FAIL2:T147 Subject-FAIL:T145
+R64	is-a-FAIL Arg1:T148 Arg2:T144
+R65	is-a-FAIL Arg1:T147 Arg2:T143
+R66	property-of-FAIL Arg1:T149 Arg2:T143
+R67	property-of-FAIL Arg1:T151 Arg2:T143
+R68	is-a-FAIL Arg1:T152 Arg2:T144
+R69	is-a-FAIL Arg1:T144 Arg2:T145
+T153	Concept 1757 1764	lluvias
+T154	Concept 1744 1755	temperatura
+T155	Concept 1774 1782	patrones
+T156	Concept 1766 1771	nieve
+T157	Concept 1700 1716	cambio climático
+T158	Action-FAIL 1723 1729	cambio
+T159	Concept-FAIL 1774 1792	patrones de viento
+T160	Concept-FAIL 1700 1706	cambio
+T161	Concept-FAIL 1810 1814	años
+T162	Action-FAIL 1797 1802	duran
+T163	Concept-FAIL 1786 1792	viento
+T164	Concept-FAIL 1730 1740	importante
+T165	Concept-FAIL 1723 1729	cambio
+E158	Action-FAIL:T158 Target-FAIL:T154 Target-FAIL2:T153 Target-FAIL3:T156 Target-FAIL4:T159 Subject-FAIL:T157
+E162	Action-FAIL:T162 Target-FAIL:T161 Subject-FAIL:T165
+R70	is-a-FAIL Arg1:T157 Arg2:T160
+R71	is-a-FAIL Arg1:T159 Arg2:T155
+R72	property-of-FAIL Arg1:T164 Arg2:T165
+R73	is-a-FAIL Arg1:T165 Arg2:T157
+R74	property-of-FAIL Arg1:T154 Arg2:T165
+R75	property-of-FAIL Arg1:T153 Arg2:T165
+R76	property-of-FAIL Arg1:T156 Arg2:T165
+R77	property-of-FAIL Arg1:T155 Arg2:T165
+R78	property-of-FAIL Arg1:T163 Arg2:T165
+T166	Concept 1862 1873	actividades
+T167	Concept 1841 1851	naturaleza
+T168	Concept 1887 1894	humanos
+T169	Concept-FAIL 1862 1894	actividades de los seres humanos
+T170	Action-FAIL 1826 1833	causado
+T171	Concept-FAIL 1881 1894	seres humanos
+T172	Concept-FAIL 1881 1886	seres
+E170	Action-FAIL:T170 Target-FAIL:T167 Target-FAIL2:T169
+R79	is-a-FAIL Arg1:T171 Arg2:T168
+R80	is-a-FAIL Arg1:T169 Arg2:T166
+R81	property-of-FAIL Arg1:T168 Arg2:T172
+T173	Concept 1953 1958	ritmo
+T174	Concept 1912 1930	cambios climáticos
+T175	Concept-FAIL 1968 1981	más acelerado
+T176	Action-FAIL 1937 1947	ocurriendo
+T177	Concept-FAIL 1912 1919	cambios
+T178	Concept-FAIL 1903 1906	día
+T179	Concept-FAIL 1972 1981	acelerado
+E176	Action-FAIL:T176 Target-FAIL:T173 Subject-FAIL:T174
+R82	is-a-FAIL Arg1:T174 Arg2:T177
+R83	property-of-FAIL Arg1:T175 Arg2:T173
+T180	Concept 2079 2086	impacto
+T181	Concept 2098 2103	salud
+T182	Concept 2049 2065	cambio climático
+T183	Concept 1987 2001	investigadores
+T184	Concept-FAIL 2079 2103	impacto en nuestra salud
+T185	Action-FAIL 2008 2018	estudiando
+T186	Concept-FAIL 2090 2103	nuestra salud
+T187	Action-FAIL 2068 2075	reducir
+T188	Concept-FAIL 2038 2065	mitigar el cambio climático
+T189	Concept-FAIL 2038 2045	mitigar
+T190	Concept-FAIL 2090 2097	nuestra
+T191	Concept-FAIL 2028 2034	manera
+T192	Concept-FAIL 2022 2027	menor
+E185	Action-FAIL:T185 Target-FAIL:T188 Target-FAIL2:E187 Subject-FAIL:T183
+E187	Action-FAIL:T187 Target-FAIL:T184
+R84	is-a-FAIL Arg1:T188 Arg2:T189
+R85	is-a-FAIL Arg1:T186 Arg2:T181
+R86	is-a-FAIL Arg1:T184 Arg2:T180
+R87	property-of-FAIL Arg1:T190 Arg2:T181
+R88	property-of-FAIL Arg1:T192 Arg2:T191
+T193	Concept 2144 2149	áreas
+T194	Concept 2109 2139	campos eléctricos y magnéticos
+T195	Concept 2129 2139	magnéticos
+T196	Concept 2109 2115	campos
+T197	Concept-FAIL 2144 2197	áreas de energía alrededor de dispositivos eléctricos
+T198	Concept-FAIL 2144 2160	áreas de energía
+T199	Concept-FAIL 2109 2126	campos eléctricos
+T200	Concept-FAIL 2153 2160	energía
+T201	Concept-FAIL 2187 2197	eléctricos
+T202	Concept-FAIL 2174 2186	dispositivos
+T203	Concept-FAIL 2116 2126	eléctricos
+R89	is-a-FAIL Arg1:T194 Arg2:T196
+R90	is-a-FAIL Arg1:T199 Arg2:T196
+R91	is-a-FAIL Arg1:T198 Arg2:T193
+R92	is-a-FAIL Arg1:T197 Arg2:T193
+R93	is-a-FAIL Arg1:T194 Arg2:T197
+R94	property-of-FAIL Arg1:T200 Arg2:T193
+R95	is-a-FAIL Arg1:T193 Arg2:T194
+T204	Action 2219 2228	preocupan
+T205	Concept 2236 2246	exposición
+T206	Concept 2279 2285	cáncer
+T207	Concept 2249 2255	campos
+T208	Concept 2207 2215	personas
+T209	Concept-FAIL 2236 2273	exposición a campos electromagnéticos
+T210	Concept-FAIL 2249 2273	campos electromagnéticos
+T211	Concept-FAIL 2256 2273	electromagnéticos
+E204	Action:T204 Subject:T208 Target-FAIL:T209 Target-FAIL2:T206 Target-FAIL3:T205
+R96	is-a-FAIL Arg1:T209 Arg2:T205
+R97	is-a-FAIL Arg1:T210 Arg2:T207
+R98	property-of-FAIL Arg1:T211 Arg2:T207
+R99	property-of-FAIL Arg1:T207 Arg2:T205
+R100	property-of-FAIL Arg1:T206 Arg2:T205
+T212	Concept 2295 2303	estudios
+T213	Action-FAIL 2323 2331	relación
+T214	Action-FAIL 2428 2447	establecen relación
+T215	Action-FAIL 2308 2318	encontrado
+T216	Concept-FAIL 2386 2403	leucemia infantil
+T217	Concept-FAIL 2341 2364	exposición a los campos
+T218	Concept-FAIL 2439 2447	relación
+T219	Action-FAIL 2428 2438	establecen
+T220	Concept-FAIL 2416 2424	estudios
+T221	Concept-FAIL 2395 2403	infantil
+T222	Concept-FAIL 2386 2394	leucemia
+T223	Concept-FAIL 2376 2382	riesgo
+T224	Concept-FAIL 2370 2375	mayor
+T225	Concept-FAIL 2358 2364	campos
+T226	Concept-FAIL 2341 2351	exposición
+T227	Concept-FAIL 2323 2331	relación
+T228	Action-FAIL 2304 2318	han encontrado
+E213	Action-FAIL:T213 Target-FAIL:T216 Subject-FAIL:T217
+E214	Action-FAIL:T214 Target-FAIL:T216 Subject-FAIL:T217
+E215	Action-FAIL:T215 Target-FAIL:E213 Subject-FAIL:T212
+E219	Action-FAIL:T219 Target-FAIL:T218 Subject-FAIL:T220
+E228	Action-FAIL:T228 Target-FAIL:T227 Subject-FAIL:T212
+R101	property-of-FAIL Arg1:T221 Arg2:T222
+R102	property-of-FAIL Arg1:T224 Arg2:T223
+T229	Concept 2523 2529	campos
+T230	Concept 2563 2571	cánceres
+T231	Concept 2489 2499	evidencias
+T232	Concept 2455 2470	investigaciones
+T233	Action-FAIL 2548 2556	provoque
+T234	Action-FAIL 2510 2520	exposición
+T235	Concept-FAIL 2523 2547	campos electromagnéticos
+T236	Concept-FAIL 2563 2582	cánceres infantiles
+T237	Action-FAIL 2478 2488	encontrado
+T238	Concept-FAIL 2572 2582	infantiles
+T239	Concept-FAIL 2530 2547	electromagnéticos
+T240	Concept-FAIL 2510 2520	exposición
+T241	Action-FAIL 2474 2488	han encontrado
+E233	Action-FAIL:T233 Target-FAIL:T236 Subject-FAIL:T235
+E234	Action-FAIL:T234 Target-FAIL:T235 Subject-FAIL:E237
+E237	Action-FAIL:T237 Target-FAIL:T231 Subject-FAIL:T232
+E241	Action-FAIL:T241 Target-FAIL:T231 Subject-FAIL:T232
+R103	is-a-FAIL Arg1:T236 Arg2:T230
+R104	is-a-FAIL Arg1:T235 Arg2:T229
+R105	property-of-FAIL Arg1:T239 Arg2:T229
+R106	property-of-FAIL Arg1:T238 Arg2:T230
+T242	Concept 2646 2652	cáncer
+T243	Action 2640 2645	causa
+T244	Concept 2629 2639	exposición
+T245	Concept 2596 2603	adultos
+T246	Action-FAIL 2611 2621	demostrado
+T247	Action-FAIL 2607 2621	han demostrado
+T248	Concept-FAIL 2584 2592	Estudios
+E243	Action:T243 Target:T242 Subject:T244
+E246	Action-FAIL:T246 Target-FAIL:E243 Subject-FAIL:T245
+E247	Action-FAIL:T247 Target-FAIL:T244 Subject-FAIL:T248
+R107	property-of-FAIL Arg1:T245 Arg2:T248
+T249	Concept 2742 2748	cáncer
+T250	Action 2735 2741	causen
+T251	Concept 2668 2680	preocupación
+T252	Action 2662 2667	causa
+T253	Concept 2757 2766	problemas
+T254	Concept 2700 2709	teléfonos
+T255	Concept-FAIL 2700 2734	teléfonos inalámbricos y celulares
+T256	Concept-FAIL 2757 2775	problemas de salud
+T257	Concept-FAIL 2700 2722	teléfonos inalámbricos
+T258	Concept-FAIL 2770 2775	salud
+T259	Concept-FAIL 2725 2734	celulares
+T260	Concept-FAIL 2710 2722	inalámbricos
+T261	Concept-FAIL 2684 2691	algunos
+E250	Action:T250 Target:T249 Target-FAIL:T256 Subject-FAIL:T255 Subject-FAIL2:T254
+E252	Action:T252 Target:T251
+R108	is-a-FAIL Arg1:T257 Arg2:T254
+R109	is-a-FAIL Arg1:T256 Arg2:T253
+R110	is-a-FAIL Arg1:T255 Arg2:T257
+R111	property-of-FAIL Arg1:T260 Arg2:T254
+T262	Concept 2839 2848	radiación
+T263	Concept 2798 2805	energía
+T264	Action 2791 2797	emiten
+T265	Concept 2781 2790	teléfonos
+T266	Concept-FAIL 2839 2865	radiación electromagnética
+T267	Concept-FAIL 2798 2824	energía de radiofrecuencia
+T268	Concept-FAIL 2849 2865	electromagnética
+T269	Concept-FAIL 2809 2824	radiofrecuencia
+E264	Action:T264 Subject:T265 Target-FAIL:T267 Target-FAIL2:T263
+R112	is-a-FAIL Arg1:T266 Arg2:T262
+R113	is-a-FAIL Arg1:T267 Arg2:T263
+R114	is-a-FAIL Arg1:T267 Arg2:T266
+R115	property-of-FAIL Arg1:T269 Arg2:T263
+R116	property-of-FAIL Arg1:T268 Arg2:T262
+T270	Action 2925 2931	pruebe
+T271	Concept 2936 2944	relación
+T272	Concept 2970 2979	problemas
+T273	Concept 2958 2967	celulares
+T274	Concept 2983 2988	salud
+T275	Concept 2900 2909	evidencia
+T276	Action-FAIL 2889 2899	encontrado
+T277	Concept-FAIL 2970 2999	problemas de salud en humanos
+T278	Concept-FAIL 2983 2999	salud en humanos
+T279	Concept-FAIL 2900 2920	evidencia científica
+T280	Concept-FAIL 2992 2999	humanos
+T281	Concept-FAIL 2951 2954	uso
+T282	Concept-FAIL 2910 2920	científica
+E270	Action:T270 Target:T271 Subject-FAIL:T279 Subject-FAIL2:T275
+E276	Action-FAIL:T276 Target-FAIL:E270
+R117	is-a-FAIL Arg1:T279 Arg2:T275
+R118	is-a-FAIL Arg1:T278 Arg2:T274
+R119	is-a-FAIL Arg1:T277 Arg2:T272
+R120	property-of-FAIL Arg1:T282 Arg2:T275
+R121	property-of-FAIL Arg1:T274 Arg2:T272
+R122	property-of-FAIL Arg1:T280 Arg2:T274
+T283	Concept 3089 3098	respuesta
+T284	Concept 3050 3065	investigaciones
+T285	Concept 3018 3029	científicos
+T286	Action-FAIL 3075 3080	poder
+T287	Action-FAIL 3030 3039	necesitan
+T288	Concept-FAIL 3089 3109	respuesta categórica
+T289	Concept-FAIL 3099 3109	categórica
+E286	Action-FAIL:T286 Target-FAIL:T288
+E287	Action-FAIL:T287 Target-FAIL:T284 Subject-FAIL:T285
+R123	is-a-FAIL Arg1:T288 Arg2:T283
+R124	property-of-FAIL Arg1:T289 Arg2:T283
+T290	Concept 3239 3250	contaminado
+T291	Concept 3204 3208	casa
+T292	Concept 3186 3190	aire
+T293	Concept 3166 3176	exteriores
+T294	Action 3156 3162	ocurre
+T295	Concept 3133 3146	contaminación
+T296	Action-FAIL 3233 3238	estar
+T297	Concept-FAIL 3186 3218	aire dentro de su casa u oficina
+T298	Concept-FAIL 3186 3208	aire dentro de su casa
+T299	Concept-FAIL 3133 3155	contaminación del aire
+T300	Action-FAIL 3119 3125	pensar
+T301	Concept-FAIL 3111 3118	Solemos
+T302	Concept-FAIL 3211 3218	oficina
+T303	Concept-FAIL 3191 3197	dentro
+T304	Concept-FAIL 3151 3155	aire
+E294	Action:T294 Target:T293 Subject-FAIL:T299 Subject-FAIL2:T295
+E296	Action-FAIL:T296 Target-FAIL:T290 Subject-FAIL:T297
+E300	Action-FAIL:T300 Target-FAIL:E294 Subject-FAIL:T301
+R125	is-a-FAIL Arg1:T299 Arg2:T295
+R126	is-a-FAIL Arg1:T298 Arg2:T292
+R127	is-a-FAIL Arg1:T297 Arg2:T292
+R128	property-of-FAIL Arg1:T304 Arg2:T295
+R129	property-of-FAIL Arg1:T290 Arg2:T292
+T305	Concept 3298 3306	síntomas
+T306	Concept 3377 3385	edificio
+T307	Concept 3263 3268	grupo
+T308	Concept-FAIL 3291 3306	mismos síntomas
+T309	Concept-FAIL 3263 3280	grupo de personas
+T310	Concept-FAIL 3371 3376	mismo
+T311	Concept-FAIL 3358 3364	tiempo
+T312	Concept-FAIL 3291 3297	mismos
+T313	Concept-FAIL 3272 3280	personas
+R130	is-a-FAIL Arg1:T309 Arg2:T307
+R131	is-a-FAIL Arg1:T308 Arg2:T305
+R132	property-of-FAIL Arg1:T308 Arg2:T309
+R133	property-of-FAIL Arg1:T312 Arg2:T305
+R134	property-of-FAIL Arg1:T310 Arg2:T306
+T314	Concept 3432 3442	enfermedad
+T315	Concept 3403 3408	causa
+T316	Concept-FAIL 3432 3457	enfermedad del legionario
+T317	Concept-FAIL 3403 3419	causa específica
+T318	Concept-FAIL 3447 3457	legionario
+T319	Concept-FAIL 3409 3419	específica
+R135	is-a-FAIL Arg1:T317 Arg2:T315
+R136	is-a-FAIL Arg1:T316 Arg2:T314
+R137	is-a-FAIL Arg1:T316 Arg2:T317
+R138	property-of-FAIL Arg1:T318 Arg2:T314
+R139	property-of-FAIL Arg1:T319 Arg2:T315
+T320	Concept-FAIL 3470 3475	causa
+T321	Concept 3534 3542	edificio
+T322	Concept 3521 3529	síndrome
+T323	Action-FAIL 3509 3515	conoce
+T324	Concept-FAIL 3534 3550	edificio enfermo
+T325	Concept-FAIL 3521 3550	síndrome del edificio enfermo
+T326	Concept-FAIL 3543 3550	enfermo
+E323	Action-FAIL:T323 Target-FAIL:T325
+R140	is-a-FAIL Arg1:T325 Arg2:T322
+R141	is-a-FAIL Arg1:T324 Arg2:T321
+R142	property-of-FAIL Arg1:T326 Arg2:T321
+T327	Concept 3663 3671	personas
+T328	Concept 3633 3642	molestias
+T329	Action 3626 3632	causan
+T330	Concept 3585 3592	calidad
+T331	Concept 3568 3577	problemas
+T332	Concept-FAIL 3682 3687	mejor
+T333	Action-FAIL 3675 3681	siente
+T334	Concept-FAIL 3691 3726	eliminar la fuente de contaminación
+T335	Concept-FAIL 3691 3699	eliminar
+T336	Concept-FAIL 3568 3601	problemas con la calidad del aire
+T337	Concept-FAIL 3585 3601	calidad del aire
+T338	Concept-FAIL 3713 3726	contaminación
+T339	Concept-FAIL 3703 3709	fuente
+T340	Concept-FAIL 3648 3655	mayoría
+T341	Concept-FAIL 3616 3625	solamente
+T342	Concept-FAIL 3605 3615	interiores
+T343	Concept-FAIL 3597 3601	aire
+E329	Action:T329 Target:T328 Subject-FAIL:T336 Subject-FAIL2:T331
+E333	Action-FAIL:T333 Target-FAIL:T332 Subject-FAIL:T327
+R143	is-a-FAIL Arg1:T337 Arg2:T330
+R144	property-of-FAIL Arg1:T336 Arg2:T331
+R145	is-a-FAIL Arg1:T334 Arg2:T335
+R146	property-of-FAIL Arg1:T330 Arg2:T331
+R147	property-of-FAIL Arg1:T343 Arg2:T330
+R148	property-of-FAIL Arg1:T342 Arg2:T343
+R149	property-of-FAIL Arg1:T338 Arg2:T339
+T344	Concept 3853 3859	cáncer
+T345	Concept 3824 3850	enfermedades respiratorias
+T346	Action 3770 3776	causar
+T347	Concept 3777 3784	cuadros
+T348	Concept 3749 3762	contaminantes
+T349	Concept-FAIL 3824 3836	enfermedades
+T350	Concept-FAIL 3812 3817	tarde
+T351	Action-FAIL 3792 3801	presentan
+E346	Action:T346 Target:T347 Subject:T348
+E351	Action-FAIL:T351 Target-FAIL:T350 Subject-FAIL:T347
+R150	is-a Arg1:T345 Arg2:T347
+R151	is-a Arg1:T344 Arg2:T347
+R152	is-a-FAIL Arg1:T345 Arg2:T349
+T352	Concept 3969 3973	aire
+T353	Concept 3957 3964	calidad
+T354	Concept 3926 3939	contaminantes
+T355	Action 3913 3921	eliminar
+T356	Concept 3882 3890	edificio
+T357	Action-FAIL 3861 3871	Asegurarse
+T358	Concept-FAIL 3957 3987	calidad del aire en interiores
+T359	Concept-FAIL 3957 3973	calidad del aire
+T360	Concept-FAIL 3946 3953	mejorar
+T361	Concept-FAIL 3901 3910	ventilado
+T362	Action-FAIL 3946 3953	mejorar
+T363	Action-FAIL 3901 3910	ventilado
+E355	Action:T355 Target-FAIL:T354 Subject-FAIL:T354
+E357	Action-FAIL:T357 Target-FAIL:T361 Subject-FAIL:T356
+E362	Action-FAIL:T362 Target-FAIL:T353 Subject-FAIL:E355 Subject-FAIL2:E363
+E363	Action-FAIL:T363 Target-FAIL:T356
+R153	is-a-FAIL Arg1:T359 Arg2:T353
+R154	is-a-FAIL Arg1:T358 Arg2:T359
+R155	property-of-FAIL Arg1:T353 Arg2:T352
+T364	Concept 3992 3997	gente
+T365	Concept 4049 4057	fábricas
+T366	Action 4038 4044	operar
+T367	Concept 4027 4035	cosechas
+T368	Action 4015 4022	sembrar
+T369	Concept-FAIL 4073 4080	beberla
+T370	Concept-FAIL 4095 4101	recreo
+T371	Action-FAIL 4073 4080	beberla
+E366	Action:T366 Target:T365 Subject:T364
+E368	Action:T368 Target:T367 Subject:T364
+E371	Action-FAIL:T371 Subject-FAIL:T364
+T372	Concept 4118 4130	vida salvaje
+T373	Concept-FAIL 4143 4147	ella
+T374	Action-FAIL 4131 4139	dependen
+T375	Concept-FAIL 4153 4163	sobrevivir
+T376	Concept-FAIL 4118 4122	vida
+T377	Action-FAIL 4153 4163	sobrevivir
+T378	Concept-FAIL 4107 4112	peces
+E374	Action-FAIL:T374 Target-FAIL:T373 Subject-FAIL:T372
+E377	Action-FAIL:T377 Target-FAIL:T372 Target-FAIL2:T378
+R156	is-a-FAIL Arg1:T372 Arg2:T376
+T379	Concept 4234 4241	océanos
+T380	Concept 4226 4231	lagos
+T381	Concept 4214 4224	riachuelos
+T382	Concept 4208 4212	ríos
+T383	Action 4193 4198	dañar
+T384	Concept 4172 4185	contaminantes
+T385	Concept-FAIL 4199 4212	nuestros ríos
+E383	Action:T383 Target:T381 Target2:T380 Target3:T379 Subject:T384 Target-FAIL:T385 Target-FAIL2:T382
+R157	is-a-FAIL Arg1:T385 Arg2:T382
+T386	Concept 4299 4308	bacterias
+T387	Concept 4282 4292	nutrientes
+T388	Concept 4271 4276	suelo
+T389	Concept-FAIL 4256 4263	comunes
+R158	property-of-FAIL Arg1:T389 Arg2:T388
+R159	property-of-FAIL Arg1:T389 Arg2:T387
+T390	Concept 4354 4372	corrientes de agua
+T391	Concept 4347 4351	ríos
+T392	Concept 4328 4333	suelo
+T393	Action 4320 4324	lava
+T394	Concept 4313 4319	lluvia
+T395	Concept-FAIL 4368 4372	agua
+T396	Concept-FAIL 4354 4364	corrientes
+T397	Action-FAIL 4339 4344	lleva
+E393	Action:T393 Target:T392 Subject:T394
+E397	Action-FAIL:T397 Target-FAIL:T391 Target-FAIL2:T390 Subject-FAIL:T394
+R160	is-a-FAIL Arg1:T390 Arg2:T396
+T398	Concept 4429 4444	huevos de peces
+T399	Concept 4408 4416	animales
+T400	Action 4402 4407	matar
+T401	Concept 4377 4385	suciedad
+T402	Concept-FAIL 4429 4435	huevos
+T403	Concept-FAIL 4408 4426	animales diminutos
+T404	Concept-FAIL 4377 4395	suciedad del suelo
+T405	Concept-FAIL 4417 4426	diminutos
+T406	Concept-FAIL 4390 4395	suelo
+E400	Action:T400 Target-FAIL:T403 Target-FAIL2:T398 Target-FAIL3:T399 Subject-FAIL:T404 Subject-FAIL2:T401
+R161	is-a-FAIL Arg1:T404 Arg2:T401
+R162	is-a-FAIL Arg1:T403 Arg2:T399
+R163	is-a-FAIL Arg1:T398 Arg2:T402
+R164	property-of-FAIL Arg1:T401 Arg2:T406
+R165	property-of-FAIL Arg1:T405 Arg2:T399
+T407	Action 4507 4514	matando
+T408	Action 4490 4498	bloquear
+T409	Action 4452 4460	obstruir
+T410	Concept 4519 4526	plantas
+T411	Concept 4502 4505	luz
+T412	Concept 4465 4474	branquias
+T413	Concept-FAIL 4465 4487	branquias de los peces
+T414	Concept-FAIL 4482 4487	peces
+E407	Action:T407 Target:T410
+E408	Action:T408 Target:T411
+E409	Action:T409 Target-FAIL:T413 Target-FAIL2:T412
+R166	is-a-FAIL Arg1:T413 Arg2:T412
+R167	part-of-FAIL Arg1:T412 Arg2:T414
+T415	Concept 4620 4636	presas acuíferas
+T416	Concept 4610 4617	lagunas
+T417	Concept 4603 4608	lagos
+T418	Concept 4564 4577	fertilizantes
+T419	Concept 4532 4542	nutrientes
+T420	Action-FAIL 4579 4585	causan
+T421	Concept-FAIL 4620 4626	presas
+T422	Concept-FAIL 4586 4595	problemas
+T423	Action-FAIL 4586 4595	problemas
+E420	Action-FAIL:T420 Target-FAIL:T422 Subject-FAIL:T419
+E423	Action-FAIL:T423 Target-FAIL:T417 Target-FAIL2:T416 Target-FAIL3:T415 Subject-FAIL:T419
+R168	part-of Arg1:T419 Arg2:T418
+R169	is-a-FAIL Arg1:T415 Arg2:T421
+T424	Concept 4677 4682	algas
+T425	Action 4670 4676	crecer
+T426	Concept 4656 4663	fósforo
+T427	Concept 4641 4650	nitrógeno
+T428	Action-FAIL 4692 4698	volver
+T429	Concept-FAIL 4708 4712	agua
+T430	Concept-FAIL 4699 4704	verde
+E425	Action:T425 Target:T424 Subject:T426 Subject2:T427
+E428	Action-FAIL:T428 Target-FAIL:T429 Subject-FAIL:T424
+R170	part-of-FAIL Arg1:T430 Arg2:T429
+T431	Concept 4814 4820	salada
+T432	Concept 4806 4811	dulce
+T433	Concept 4801 4805	agua
+T434	Action 4787 4797	contaminar
+T435	Concept 4751 4778	aguas estancadas residuales
+T436	Concept 4718 4727	bacterias
+T437	Concept-FAIL 4751 4767	aguas estancadas
+T438	Concept-FAIL 4751 4756	aguas
+E434	Action:T434 Target:T433 Subject:T436
+R171	is-a-FAIL Arg1:T437 Arg2:T438
+R172	is-a-FAIL Arg1:T435 Arg2:T438
+R173	property-of-FAIL Arg1:T432 Arg2:T433
+R174	property-of-FAIL Arg1:T431 Arg2:T433
+R175	part-of-FAIL Arg1:T435 Arg2:T436
+R176	part-of-FAIL Arg1:T436 Arg2:T435
+R177	is-a-FAIL Arg1:T432 Arg2:T433
+R178	is-a-FAIL Arg1:T431 Arg2:T433
+T439	Concept 4886 4891	gases
+T440	Concept 4865 4883	partículas sólidas
+T441	Concept 4825 4847	contaminación del aire
+T442	Concept-FAIL 4855 4861	mezcla
+T443	Concept-FAIL 4886 4902	gases en el aire
+T444	Concept-FAIL 4865 4875	partículas
+T445	Concept-FAIL 4843 4847	aire
+T446	Concept-FAIL 4825 4838	contaminación
+T447	Concept-FAIL 4898 4902	aire
+R179	is-a-FAIL Arg1:T441 Arg2:T446
+R180	is-a-FAIL Arg1:T440 Arg2:T444
+R181	is-a-FAIL Arg1:T443 Arg2:T439
+R182	property-of-FAIL Arg1:T440 Arg2:T442
+R183	property-of-FAIL Arg1:T443 Arg2:T442
+R184	is-a-FAIL Arg1:T441 Arg2:T442
+R185	part-of-FAIL Arg1:T440 Arg2:T441
+R186	part-of-FAIL Arg1:T439 Arg2:T441
+R187	part-of-FAIL Arg1:T441 Arg2:T447
+T448	Concept 5050 5060	partículas
+T449	Concept 5004 5019	esporas de moho
+T450	Concept 4992 4997	polen
+T451	Concept 4982 4987	polvo
+T452	Concept 4969 4977	fábricas
+T453	Concept 4942 4961	compuestos químicos
+T454	Concept 4908 4917	emisiones
+T455	Action-FAIL 5033 5044	suspendidas
+T456	Concept-FAIL 5004 5011	esporas
+T457	Concept-FAIL 4942 4952	compuestos
+T458	Concept-FAIL 4908 4936	emisiones de los automóviles
+T459	Concept-FAIL 4925 4936	automóviles
+E455	Action-FAIL:T455 Target-FAIL:T448 Subject-FAIL:T449 Subject-FAIL2:T450 Subject-FAIL3:T451 Subject-FAIL4:T452 Subject-FAIL5:T453 Subject-FAIL6:T458
+R188	is-a-FAIL Arg1:T458 Arg2:T454
+R189	is-a-FAIL Arg1:T453 Arg2:T457
+R190	is-a-FAIL Arg1:T449 Arg2:T456
+R191	property-of-FAIL Arg1:T454 Arg2:T459
+R192	part-of-FAIL Arg1:T453 Arg2:T452
+R193	is-a-FAIL Arg1:T449 Arg2:T448
+R194	is-a-FAIL Arg1:T450 Arg2:T448
+R195	is-a-FAIL Arg1:T453 Arg2:T448
+R196	is-a-FAIL Arg1:T454 Arg2:T448
+T460	Concept 5145 5153	ciudades
+T461	Concept 5115 5137	contaminación del aire
+T462	Concept 5115 5128	contaminación
+T463	Concept 5075 5078	gas
+T464	Concept 5065 5070	ozono
+T465	Concept-FAIL 5086 5108	componente fundamental
+T466	Concept-FAIL 5086 5096	componente
+R197	is-a Arg1:T464 Arg2:T463
+R198	is-a Arg1:T461 Arg2:T462
+R199	part-of Arg1:T461 Arg2:T460
+R200	is-a-FAIL Arg1:T465 Arg2:T466
+R201	part-of-FAIL Arg1:T465 Arg2:T461
+R202	part-of-FAIL Arg1:T464 Arg2:T462
+T467	Concept 5223 5227	smog
+T468	Concept 5180 5202	contaminación del aire
+T469	Concept 5180 5193	contaminación
+T470	Concept 5165 5170	ozono
+T471	Action-FAIL 5171 5176	forma
+E471	Action-FAIL:T471 Target-FAIL:T468 Subject-FAIL:T470
+R203	is-a Arg1:T468 Arg2:T469
+R204	is-a-FAIL Arg1:T468 Arg2:T467
+R205	part-of-FAIL Arg1:T470 Arg2:T468
+R206	same-as-FAIL Arg1:T467 Arg2:T470
+T472	Concept 5264 5271	tóxicos
+T473	Concept-FAIL 5255 5259	aire
+T474	Concept-FAIL 5237 5250	contaminantes
+T475	Concept-FAIL 5237 5259	contaminantes del aire
+R207	part-of-FAIL Arg1:T474 Arg2:T473
+R208	part-of-FAIL Arg1:T472 Arg2:T474
+R209	property-of-FAIL Arg1:T472 Arg2:T475
+T476	Concept 5329 5347	problemas de salud
+T477	Action-FAIL 5293 5301	aumentar
+T478	Concept-FAIL 5276 5286	inhalación
+T479	Concept-FAIL 5329 5338	problemas
+T480	Action-FAIL 5276 5286	inhalación
+E477	Action-FAIL:T477 Target-FAIL:T476 Subject-FAIL:T478
+E480	Action-FAIL:T480 
+R210	is-a-FAIL Arg1:T476 Arg2:T479
+T481	Concept 5486 5508	contaminación del aire
+T482	Concept 5469 5478	problemas
+T483	Action 5453 5459	riesgo
+T484	Concept 5408 5415	adultos
+T485	Concept 5396 5402	pulmón
+T486	Concept 5383 5390	corazón
+T487	Concept 5353 5361	personas
+T488	Concept-FAIL 5469 5508	problemas por la contaminación del aire
+T489	Concept-FAIL 5486 5499	contaminación
+T490	Concept-FAIL 5408 5427	adultos de más edad
+T491	Concept-FAIL 5353 5402	personas con enfermedades del corazón o de pulmón
+T492	Concept-FAIL 5353 5378	personas con enfermedades
+T493	Concept-FAIL 5434 5439	niños
+T494	Concept-FAIL 5366 5378	enfermedades
+E483	Action:T483 Target-FAIL:T488 Target-FAIL2:T482 Subject-FAIL:T490 Subject-FAIL2:T491 Subject-FAIL3:T493 Subject-FAIL4:T484 Subject-FAIL5:T487
+R211	is-a-FAIL Arg1:T492 Arg2:T487
+R212	is-a-FAIL Arg1:T491 Arg2:T487
+R213	is-a-FAIL Arg1:T490 Arg2:T484
+R214	is-a-FAIL Arg1:T481 Arg2:T489
+R215	is-a-FAIL Arg1:T488 Arg2:T482
+R216	property-of-FAIL Arg1:T494 Arg2:T487
+R217	is-a-FAIL Arg1:T486 Arg2:T494
+R218	is-a-FAIL Arg1:T485 Arg2:T494
+R219	property-of-FAIL Arg1:T482 Arg2:T481
+T495	Concept 5652 5657	salud
+T496	Action 5641 5648	afectar
+T497	Concept 5557 5565	exterior
+T498	Action 5534 5540	ocurre
+T499	Concept 5513 5530	polución del aire
+T500	Concept-FAIL 5627 5638	contaminado
+T501	Concept-FAIL 5570 5606	aire en el interior de los edificios
+T502	Concept-FAIL 5570 5589	aire en el interior
+T503	Concept-FAIL 5570 5574	aire
+T504	Concept-FAIL 5513 5521	polución
+T505	Concept-FAIL 5597 5606	edificios
+T506	Concept-FAIL 5581 5589	interior
+E496	Action:T496 Target:T495 Subject-FAIL:T501 Subject-FAIL2:T499
+E498	Action:T498 Target:T497 Subject:T499 Target-FAIL:T506
+R220	is-a-FAIL Arg1:T499 Arg2:T504
+R221	is-a-FAIL Arg1:T502 Arg2:T503
+R222	is-a-FAIL Arg1:T501 Arg2:T502
+R223	part-of-FAIL Arg1:T500 Arg2:T501
+R224	part-of-FAIL Arg1:T506 Arg2:T505
+T507	Action 5693 5700	ocurren
+T508	Action 5771 5782	descomponen
+T509	Concept 5760 5767	equipos
+T510	Concept 5750 5757	errores
+T511	Action 5742 5749	cometen
+T512	Concept 5733 5741	personas
+T513	Concept 5710 5720	accidentes
+T514	Concept 5663 5683	derrames de petróleo
+T515	Concept-FAIL 5663 5671	derrames
+E507	Action:T507 Target-FAIL:T513 Target-FAIL2:T514 Subject-FAIL:T514 Subject-FAIL2:T513 Subject-FAIL3:E511 Subject-FAIL4:E508
+E508	Action:T508 Target:T509 Subject:T509
+E511	Action:T511 Target:T510 Subject:T512
+T516	Concept 5828 5845	actos deliberados
+T517	Concept 5806 5825	desastres naturales
+T518	Action-FAIL 5790 5796	causas
+T519	Concept-FAIL 5828 5833	actos
+T520	Concept-FAIL 5806 5815	desastres
+T521	Concept-FAIL 5790 5796	causas
+E518	Action-FAIL:T518 Target-FAIL:T517 Target-FAIL2:T516
+R225	is-a-FAIL Arg1:T516 Arg2:T519
+R226	is-a-FAIL Arg1:T517 Arg2:T520
+R227	is-a-FAIL Arg1:T517 Arg2:T521
+R228	is-a-FAIL Arg1:T516 Arg2:T521
+T522	Concept 5913 5923	económicos
+T523	Concept 5899 5910	ambientales
+T524	Concept 5851 5871	derrames de petróleo
+T525	Action-FAIL 5891 5898	efectos
+T526	Concept-FAIL 5851 5859	derrames
+T527	Concept-FAIL 5891 5898	efectos
+E525	Action-FAIL:T525 Target-FAIL:T523 Target-FAIL2:T522 Subject-FAIL:T524
+R229	is-a-FAIL Arg1:T524 Arg2:T526
+R230	property-of-FAIL Arg1:T523 Arg2:T527
+R231	property-of-FAIL Arg1:T522 Arg2:T527
+R232	property-of-FAIL Arg1:T527 Arg2:T524
+T528	Action 5965 5972	afectar
+T529	Concept 5978 5990	salud humana
+T530	Concept 5929 5949	derrames de petróleo
+T531	Concept-FAIL 5978 5983	salud
+T532	Concept-FAIL 5929 5937	derrames
+E528	Action:T528 Target:T529 Subject:T530
+R233	is-a-FAIL Arg1:T530 Arg2:T532
+R234	is-a-FAIL Arg1:T529 Arg2:T531
+T533	Action 6013 6021	depender
+T534	Concept 5998 6005	efectos
+T535	Concept 6037 6045	petróleo
+T536	Concept-FAIL 6037 6056	petróleo se derramó
+T537	Concept-FAIL 6029 6033	tipo
+E533	Action:T533 Subject:T534 Target-FAIL:T536 Target-FAIL2:T537
+R235	is-a-FAIL Arg1:T536 Arg2:T535
+R236	property-of-FAIL Arg1:T537 Arg2:T535
+T538	Concept 6153 6175	cantidad de exposición
+T539	Concept 6129 6147	tipo de exposición
+T540	Concept 6107 6115	factores
+T541	Concept-FAIL 6153 6161	cantidad
+T542	Concept-FAIL 6129 6133	tipo
+T543	Action-FAIL 6116 6124	incluyen
+E543	Action-FAIL:T543 Target-FAIL:T539 Target-FAIL2:T538 Subject-FAIL:T540
+R237	is-a-FAIL Arg1:T539 Arg2:T542
+R238	is-a-FAIL Arg1:T538 Arg2:T541
+R239	is-a-FAIL Arg1:T539 Arg2:T540
+R240	is-a-FAIL Arg1:T538 Arg2:T540
+T544	Concept 6235 6241	riesgo
+T545	Concept 6211 6219	derrames
+T546	Action 6203 6210	limpian
+T547	Concept 6190 6198	personas
+T548	Concept-FAIL 6229 6241	mayor riesgo
+T549	Action-FAIL 6220 6225	están
+E546	Action:T546 Target:T545 Subject:T547
+E549	Action-FAIL:T549 Target-FAIL:T544 Subject-FAIL:E546
+R241	is-a-FAIL Arg1:T548 Arg2:T544
+R242	property-of-FAIL Arg1:T548 Arg2:T545
+T550	Concept 6247 6256	problemas
+T551	Concept 6343 6349	estrés
+T552	Concept 6301 6323	problemas neurológicos
+T553	Concept 6272 6290	irritación cutánea
+T554	Concept-FAIL 6272 6299	irritación cutánea y ocular
+T555	Action-FAIL 6264 6271	incluir
+T556	Concept-FAIL 6301 6339	problemas neurológicos y respiratorios
+T557	Concept-FAIL 6301 6310	problemas
+T558	Concept-FAIL 6272 6282	irritación
+T559	Concept-FAIL 6326 6339	respiratorios
+T560	Concept-FAIL 6293 6299	ocular
+E555	Action-FAIL:T555 Target-FAIL:T554 Target-FAIL2:T556 Target-FAIL3:T551 Subject-FAIL:T550
+R243	is-a-FAIL Arg1:T553 Arg2:T558
+R244	is-a-FAIL Arg1:T552 Arg2:T557
+R245	is-a-FAIL Arg1:T556 Arg2:T552
+R246	is-a-FAIL Arg1:T554 Arg2:T558
+R247	is-a-FAIL Arg1:T560 Arg2:T553
+R248	is-a-FAIL Arg1:T553 Arg2:T550
+R249	is-a-FAIL Arg1:T552 Arg2:T550
+R250	is-a-FAIL Arg1:T559 Arg2:T550
+R251	is-a-FAIL Arg1:T551 Arg2:T550
+T561	Action-FAIL 6357 6361	sabe
+T562	Concept-FAIL 6413 6421	derrames
+T563	Concept-FAIL 6382 6403	efectos a largo plazo
+T564	Concept-FAIL 6392 6403	largo plazo
+T565	Concept-FAIL 6382 6389	efectos
+E561	Action-FAIL:T561 Target-FAIL:T563 Subject-FAIL:T562
+R252	is-a-FAIL Arg1:T563 Arg2:T565
+T566	Action 6491 6496	dañar
+T567	Concept 6518 6532	medio ambiente
+T568	Concept 6500 6512	salud humana
+T569	Concept 6464 6483	sustancias químicas
+T570	Concept-FAIL 6518 6523	medio
+T571	Concept-FAIL 6500 6505	salud
+T572	Concept-FAIL 6464 6474	sustancias
+E566	Action:T566 Target:T568 Target2:T567 Subject:T569
+R253	is-a-FAIL Arg1:T569 Arg2:T572
+R254	is-a-FAIL Arg1:T568 Arg2:T571
+R255	is-a-FAIL Arg1:T567 Arg2:T570
+T573	Action 6574 6584	convierten
+T574	Concept 6547 6557	sustancias
+T575	Concept 6588 6604	desechos tóxicos
+T576	Concept-FAIL 6561 6569	desechan
+T577	Concept-FAIL 6588 6596	desechos
+T578	Action-FAIL 6561 6569	desechan
+E573	Action:T573 Target:T575 Subject-FAIL:T574 Subject-FAIL2:E578
+E578	Action-FAIL:T578 Target-FAIL:T574
+R256	is-a-FAIL Arg1:T575 Arg2:T577
+R257	property-of-FAIL Arg1:T576 Arg2:T574
+T579	Concept-FAIL 6636 6645	productos
+T580	Concept-FAIL 6649 6665	nuestros hogares
+T581	Concept-FAIL 6658 6665	hogares
+R258	is-a-FAIL Arg1:T580 Arg2:T581
+R259	property-of-FAIL Arg1:T580 Arg2:T579
+T582	Concept 6757 6777	diluyente de pintura
+T583	Concept 6731 6754	insecticidas en aerosol
+T584	Concept 6717 6729	pilas viejas
+T585	Concept 6691 6711	desperdicios tóxicos
+T586	Concept 6670 6676	basura
+T587	Concept-FAIL 6757 6766	diluyente
+T588	Concept-FAIL 6731 6743	insecticidas
+T589	Concept-FAIL 6720 6721	a
+T590	Concept-FAIL 6691 6703	desperdicios
+R260	part-of Arg1:T585 Arg2:T586
+R261	is-a Arg1:T583 Arg2:T585
+R262	is-a Arg1:T582 Arg2:T585
+R263	is-a-FAIL Arg1:T585 Arg2:T590
+R264	is-a-FAIL Arg1:T584 Arg2:T589
+R265	is-a-FAIL Arg1:T583 Arg2:T588
+R266	is-a-FAIL Arg1:T582 Arg2:T587
+R267	is-a-FAIL Arg1:T584 Arg2:T590
+R268	is-a-FAIL Arg1:T584 Arg2:T585
+T591	Concept 6853 6880	desechos tóxicos domésticos
+T592	Concept 6853 6869	desechos tóxicos
+T593	Action 6816 6823	generan
+T594	Concept 6783 6793	habitantes
+T595	Concept-FAIL 6853 6861	desechos
+T596	Concept-FAIL 6801 6815	Estados Unidos
+E593	Action:T593 Target:T591 Subject:T594
+R269	is-a Arg1:T591 Arg2:T592
+R270	is-a-FAIL Arg1:T592 Arg2:T595
+R271	part-of-FAIL Arg1:T596 Arg2:T594
+T597	Concept 6930 6967	producto secundario de la fabricación
+T598	Concept 6894 6914	desperdicios tóxicos
+T599	Concept-FAIL 6930 6949	producto secundario
+T600	Concept-FAIL 6930 6938	producto
+T601	Concept-FAIL 6894 6906	desperdicios
+R272	is-a-FAIL Arg1:T598 Arg2:T601
+R273	is-a-FAIL Arg1:T599 Arg2:T600
+R274	is-a-FAIL Arg1:T597 Arg2:T599
+R275	is-a-FAIL Arg1:T597 Arg2:T598
+R276	is-a-FAIL Arg1:T598 Arg2:T597
+T602	Action-FAIL 6981 6986	tener
+T603	Concept-FAIL 6969 6974	Usted
+T604	Concept-FAIL 6987 6999	desperdicios
+T605	Concept-FAIL 6987 7007	desperdicios tóxicos
+T606	Concept-FAIL 7026 7033	cochera
+T607	Concept-FAIL 7014 7020	sótano
+E602	Action-FAIL:T602 Target-FAIL:T605 Subject-FAIL:T603
+R277	is-a-FAIL Arg1:T605 Arg2:T604
+R278	property-of-FAIL Arg1:T607 Arg2:T605
+R279	property-of-FAIL Arg1:T606 Arg2:T605
+T608	Concept-FAIL 7097 7103	basura
+T609	Action-FAIL 7087 7091	bote
+T610	Action-FAIL 7042 7048	vierta
+T611	Concept-FAIL 7072 7079	desagüe
+T612	Concept-FAIL 7056 7064	cañerías
+E609	Action-FAIL:T609 Target-FAIL:T608
+E610	Action-FAIL:T610 Target-FAIL:T612 Target-FAIL2:T611
+T613	Action-FAIL 7112 7117	puede
+T614	Concept-FAIL 7129 7140	reciclarlos
+T615	Concept-FAIL 7118 7126	donarlos
+E613	Action-FAIL:T613 Target-FAIL:T615 Target-FAIL2:T614
+T616	Concept 7196 7227	desperdicios tóxicos domésticos
+T617	Concept 7168 7177	programas
+T618	Concept 7149 7160	comunidades
+T619	Action-FAIL 7161 7167	tienen
+T620	Concept-FAIL 7168 7227	programas de recolección de desperdicios tóxicos domésticos
+T621	Concept-FAIL 7196 7216	desperdicios tóxicos
+T622	Concept-FAIL 7196 7208	desperdicios
+T623	Concept-FAIL 7168 7192	programas de recolección
+T624	Action-FAIL 7181 7192	recolección
+E619	Action-FAIL:T619 Target-FAIL:T620 Subject-FAIL:T618
+E624	Action-FAIL:T624 Target-FAIL:T616 Subject-FAIL:T617
+R280	is-a-FAIL Arg1:T623 Arg2:T617
+R281	is-a-FAIL Arg1:T621 Arg2:T622
+R282	is-a-FAIL Arg1:T616 Arg2:T621
+R283	is-a-FAIL Arg1:T620 Arg2:T623
+R284	part-of-FAIL Arg1:T617 Arg2:T618
+T625	Concept 7327 7333	cuerpo
+T626	Concept 7299 7318	sustancia peligrosa
+T627	Concept 7279 7285	toxina
+T628	Concept 7270 7276	veneno
+T629	Concept-FAIL 7299 7308	sustancia
+R285	is-a Arg1:T628 Arg2:T626
+R286	is-a-FAIL Arg1:T627 Arg2:T626
+R287	same-as-FAIL Arg1:T627 Arg2:T628
+T630	Concept 7406 7410	piel
+T631	Concept-FAIL 7380 7410	absorberlo a través de la piel
+T632	Concept-FAIL 7380 7390	absorberlo
+T633	Concept-FAIL 7367 7377	inyectarlo
+T634	Concept-FAIL 7356 7365	inhalarlo
+T635	Concept-FAIL 7346 7354	tragarlo
+T636	Action-FAIL 7380 7390	absorberlo
+T637	Action-FAIL 7367 7377	inyectarlo
+T638	Action-FAIL 7356 7365	inhalarlo
+T639	Action-FAIL 7346 7354	tragarlo
+E636	Action-FAIL:T636 
+E637	Action-FAIL:T637 
+E638	Action-FAIL:T638 
+E639	Action-FAIL:T639 
+R288	is-a-FAIL Arg1:T631 Arg2:T632
+T640	Concept-FAIL 7458 7483	ingiere demasiado de ella
+T641	Concept-FAIL 7458 7465	ingiere
+T642	Concept-FAIL 7445 7451	veneno
+T643	Concept-FAIL 7422 7431	sustancia
+R289	is-a-FAIL Arg1:T640 Arg2:T641
+R290	is-a-FAIL Arg1:T643 Arg2:T642
+R291	property-of-FAIL Arg1:T640 Arg2:T643
+T644	Concept 7489 7496	efectos
+T645	Concept 7605 7611	muerte
+T646	Concept 7598 7602	coma
+T647	Concept 7581 7596	lesión cerebral
+T648	Concept 7544 7574	enfermedades de corta duración
+T649	Concept 7521 7533	intoxicación
+T650	Action-FAIL 7534 7540	varían
+T651	Concept-FAIL 7489 7515	efectos del envenenamiento
+T652	Concept-FAIL 7581 7587	lesión
+T653	Concept-FAIL 7544 7556	enfermedades
+T654	Concept-FAIL 7501 7515	envenenamiento
+E650	Action-FAIL:T650 Target-FAIL:T648 Target-FAIL2:T647 Target-FAIL3:T646 Target-FAIL4:T645 Subject-FAIL:T649 Subject-FAIL2:T651
+R292	is-a-FAIL Arg1:T648 Arg2:T653
+R293	is-a-FAIL Arg1:T647 Arg2:T652
+R294	is-a-FAIL Arg1:T651 Arg2:T644
+R295	property-of-FAIL Arg1:T644 Arg2:T654
+R296	property-of-FAIL Arg1:T644 Arg2:T649
+R297	is-a-FAIL Arg1:T648 Arg2:T644
+R298	is-a-FAIL Arg1:T647 Arg2:T644
+R299	is-a-FAIL Arg1:T646 Arg2:T644
+R300	is-a-FAIL Arg1:T645 Arg2:T644
+T655	Action 7661 7665	usar
+T656	Action 7618 7626	prevenir
+T657	Concept 7680 7689	productos
+T658	Concept 7631 7646	envenenamientos
+T659	Concept-FAIL 7710 7731	indican las etiquetas
+T660	Concept-FAIL 7710 7717	indican
+T661	Action-FAIL 7661 7675	usar y guardar
+T662	Action-FAIL 7668 7675	guardar
+E655	Action:T655 Target-FAIL:T657
+E656	Action:T656 Target-FAIL:E661 Target-FAIL2:T658 Subject-FAIL:T658 Subject-FAIL2:E655
+E661	Action-FAIL:T661 Target-FAIL:T657
+E662	Action-FAIL:T662 Target-FAIL:T657
+R301	is-a-FAIL Arg1:T659 Arg2:T660
+R302	property-of-FAIL Arg1:T659 Arg2:T657
+T663	Action-FAIL 7756 7764	alejados
+T664	Concept-FAIL 7769 7789	alcance de los niños
+T665	Concept-FAIL 7769 7776	alcance
+T666	Concept-FAIL 7746 7755	productos
+E663	Action-FAIL:T663 Target-FAIL:T664 Subject-FAIL:T666
+R303	is-a-FAIL Arg1:T664 Arg2:T665
+T667	Concept 7847 7853	veneno
+T668	Concept 7812 7826	envenenamiento
+T669	Action-FAIL 7794 7805	tratamiento
+T670	Action-FAIL 7827 7834	depende
+T671	Concept-FAIL 7839 7843	tipo
+T672	Concept-FAIL 7794 7805	tratamiento
+E669	Action-FAIL:T669 Target-FAIL:T667 Subject-FAIL:T668
+E670	Action-FAIL:T670 Target-FAIL:T671 Subject-FAIL:T672
+R304	property-of-FAIL Arg1:T672 Arg2:T668
+R305	property-of-FAIL Arg1:T671 Arg2:T667
+T673	Concept-FAIL 7871 7878	alguien
+T674	Concept-FAIL 7887 7897	envenenado
+T675	Action-FAIL 7898 7903	llame
+T676	Concept-FAIL 7858 7866	sospecha
+T677	Concept-FAIL 7907 7949	centro de control de envenenamientos local
+T678	Concept-FAIL 7907 7943	centro de control de envenenamientos
+T679	Concept-FAIL 7907 7913	centro
+E675	Action-FAIL:T675 Target-FAIL:T677 Subject-FAIL:T673
+R306	is-a-FAIL Arg1:T678 Arg2:T679
+R307	is-a-FAIL Arg1:T677 Arg2:T678
+R308	property-of-FAIL Arg1:T676 Arg2:T674
+R309	property-of-FAIL Arg1:T674 Arg2:T673
+T680	Concept 8047 8056	peligroso
+T681	Concept 8016 8019	gas
+T682	Concept 7985 8004	monóxido de carbono
+T683	Concept-FAIL 8029 8037	ni color
+T684	Concept-FAIL 8020 8028	sin olor
+T685	Concept-FAIL 8005 8009	(CO)
+T686	Concept-FAIL 7985 7993	monóxido
+T687	Concept-FAIL 8006 8008	CO
+R310	is-a Arg1:T682 Arg2:T681
+R311	is-a-FAIL Arg1:T682 Arg2:T686
+R312	same-as-FAIL Arg1:T685 Arg2:T682
+R313	property-of-FAIL Arg1:T684 Arg2:T681
+R314	property-of-FAIL Arg1:T683 Arg2:T681
+R315	property-of-FAIL Arg1:T680 Arg2:T681
+R316	same-as-FAIL Arg1:T687 Arg2:T682
+R317	property-of-FAIL Arg1:T680 Arg2:T682
+T688	Action 8064 8070	causar
+T689	Concept 8103 8109	muerte
+T690	Concept 8087 8097	enfermedad
+E688	Action:T688 Target:T690 Target2:T689
+T691	Concept 8250 8273	sistemas de calefacción
+T692	Concept 8233 8247	fogones de gas
+T693	Concept 8224 8231	estufas
+T694	Concept 8211 8222	candelabros
+T695	Concept 8201 8209	camiones
+T696	Concept 8187 8198	automóviles
+T697	Action 8173 8182	expulsado
+T698	Concept 8136 8157	humo de la combustión
+T699	Concept 8114 8116	CO
+T700	Concept-FAIL 8250 8258	sistemas
+T701	Concept-FAIL 8233 8240	fogones
+T702	Concept-FAIL 8136 8140	humo
+T703	Action-FAIL 8120 8129	encuentra
+E697	Action:T697 Target-FAIL:T696 Target-FAIL2:T695 Target-FAIL3:T694 Target-FAIL4:T693 Target-FAIL5:T692 Target-FAIL6:T691 Target-FAIL7:T698 Subject-FAIL:T699 Subject-FAIL2:T696 Subject-FAIL3:T695 Subject-FAIL4:T694 Subject-FAIL5:T693 Subject-FAIL6:T692 Subject-FAIL7:T691
+E703	Action-FAIL:T703 Target-FAIL:T698 Subject-FAIL:T699
+R318	is-a-FAIL Arg1:T698 Arg2:T702
+R319	is-a-FAIL Arg1:T692 Arg2:T701
+R320	is-a-FAIL Arg1:T691 Arg2:T700
+R321	part-of-FAIL Arg1:T699 Arg2:T698
+T704	Action 8314 8324	acumularse
+T705	Concept 8278 8280	CO
+T706	Concept-FAIL 8354 8386	buena circulación de aire fresco
+T707	Concept-FAIL 8360 8386	circulación de aire fresco
+T708	Concept-FAIL 8375 8386	aire fresco
+T709	Concept-FAIL 8375 8379	aire
+T710	Concept-FAIL 8360 8371	circulación
+T711	Concept-FAIL 8328 8335	lugares
+T712	Concept-FAIL 8302 8307	humos
+T713	Concept-FAIL 8281 8292	proveniente
+E704	Action:T704 Target-FAIL:T711 Target-FAIL2:T705 Subject-FAIL:T705
+R322	is-a-FAIL Arg1:T707 Arg2:T710
+R323	is-a-FAIL Arg1:T706 Arg2:T707
+R324	property-of-FAIL Arg1:T712 Arg2:T713
+R325	property-of-FAIL Arg1:T713 Arg2:T705
+R326	property-of-FAIL Arg1:T706 Arg2:T711
+T714	Action 8406 8417	envenenarse
+T715	Concept 8392 8399	persona
+T716	Concept-FAIL 8421 8432	respirarlos
+T717	Action-FAIL 8421 8432	respirarlos
+E714	Action:T714 Target-FAIL:T716 Target-FAIL2:T715 Subject-FAIL:T715
+E717	Action-FAIL:T717 Target-FAIL:T715
+T718	Action-FAIL 8520 8529	parecerse
+T719	Concept-FAIL 8539 8557	otras enfermedades
+T720	Concept-FAIL 8504 8512	síntomas
+T721	Concept-FAIL 8545 8557	enfermedades
+T722	Concept-FAIL 8489 8491	CO
+T723	Concept-FAIL 8461 8468	alguien
+T724	Concept-FAIL 8474 8484	envenenado
+E718	Action-FAIL:T718 Target-FAIL:T719 Subject-FAIL:T720
+R327	property-of-FAIL Arg1:T724 Arg2:T723
+R328	part-of-FAIL Arg1:T722 Arg2:T724
+R329	is-a-FAIL Arg1:T719 Arg2:T721
+R330	property-of-FAIL Arg1:T720 Arg2:T723
+T725	Concept 8640 8642	CO
+T726	Action 8612 8617	morir
+T727	Concept 8593 8604	intoxicadas
+T728	Concept 8582 8590	dormidas
+T729	Concept 8563 8571	personas
+T730	Concept-FAIL 8621 8635	envenenamiento
+E726	Action:T726 Target-FAIL:T730 Target-FAIL2:T729 Subject-FAIL:T729 Subject-FAIL2:T725
+R331	property-of Arg1:T728 Arg2:T729
+R332	property-of Arg1:T727 Arg2:T729
+R333	property-of-FAIL Arg1:T725 Arg2:T730
+T731	Action 8696 8706	advertirle
+T732	Concept 8742 8747	hogar
+T733	Concept-FAIL 8716 8747	altos niveles de CO en su hogar
+T734	Concept-FAIL 8716 8735	altos niveles de CO
+T735	Concept-FAIL 8722 8729	niveles
+T736	Concept-FAIL 8687 8689	CO
+T737	Concept-FAIL 8675 8683	detector
+T738	Concept-FAIL 8733 8735	CO
+T739	Concept-FAIL 8716 8729	altos niveles
+T740	Concept-FAIL 8675 8689	detector de CO
+E731	Action:T731 Target-FAIL:T733 Target-FAIL2:T739 Subject-FAIL:T737 Subject-FAIL2:T740
+R334	property-of-FAIL Arg1:T736 Arg2:T737
+R335	is-a-FAIL Arg1:T734 Arg2:T735
+R336	is-a-FAIL Arg1:T733 Arg2:T734
+R337	property-of-FAIL Arg1:T739 Arg2:T738
+R338	part-of-FAIL Arg1:T738 Arg2:T732
+T741	Concept 8924 8929	salud
+T742	Action 8915 8920	dañar
+T743	Concept 8891 8903	ingredientes
+T744	Action 8882 8890	contener
+T745	Concept 8833 8843	jardinería
+T746	Concept 8806 8831	reparación de automóviles
+T747	Concept 8793 8804	carpintería
+T748	Concept 8783 8791	limpieza
+T749	Concept 8753 8762	productos
+T750	Concept-FAIL 8953 8967	medio ambiente
+T751	Concept-FAIL 8953 8958	medio
+T752	Concept-FAIL 8940 8947	familia
+T753	Concept-FAIL 8853 8874	otros usos domésticos
+T754	Concept-FAIL 8853 8858	otros
+T755	Concept-FAIL 8806 8816	reparación
+T756	Action-FAIL 8767 8774	utiliza
+E742	Action:T742 Target:T741 Subject:T743 Target-FAIL:T752 Target-FAIL2:T750
+E744	Action:T744 Target:T743 Subject:T749
+E756	Action-FAIL:T756 Target-FAIL:T748 Target-FAIL2:T747 Target-FAIL3:T746 Target-FAIL4:T745 Target-FAIL5:T753 Subject-FAIL:T749
+R339	is-a-FAIL Arg1:T746 Arg2:T755
+R340	is-a-FAIL Arg1:T753 Arg2:T754
+R341	property-of-FAIL Arg1:T749 Arg2:T748
+R342	property-of-FAIL Arg1:T749 Arg2:T747
+R343	property-of-FAIL Arg1:T749 Arg2:T746
+R344	property-of-FAIL Arg1:T749 Arg2:T745
+T757	Concept 9001 9010	productos
+T758	Concept 8973 8991	sustancias tóxicas
+T759	Concept-FAIL 9036 9043	inhalan
+T760	Concept-FAIL 9070 9087	través de la piel
+T761	Concept-FAIL 9059 9067	absorben
+T762	Concept-FAIL 9048 9056	ingieren
+T763	Concept-FAIL 9025 9029	daño
+T764	Action-FAIL 9018 9024	causar
+T765	Concept-FAIL 8973 8983	sustancias
+T766	Action-FAIL 9059 9067	absorben
+T767	Action-FAIL 9048 9056	ingieren
+T768	Action-FAIL 9036 9043	inhalan
+T769	Action-FAIL 9025 9029	daño
+E764	Action-FAIL:T764 Target-FAIL:T763 Subject-FAIL:T758
+E766	Action-FAIL:T766 Target-FAIL:T758
+E767	Action-FAIL:T767 Target-FAIL:T758
+E768	Action-FAIL:T768 Target-FAIL:T758
+E769	Action-FAIL:T769 Subject-FAIL:E768 Subject-FAIL2:E767 Subject-FAIL3:E766
+R345	is-a-FAIL Arg1:T758 Arg2:T765
+R346	property-of-FAIL Arg1:T758 Arg2:T757
+R347	part-of-FAIL Arg1:T758 Arg2:T757
+T770	Action 9101 9109	afectada
+T771	Concept 9092 9097	gente
+T772	Concept 9114 9132	sustancias tóxicas
+T773	Concept-FAIL 9114 9124	sustancias
+E770	Action:T770 Target-FAIL:T772 Target-FAIL2:T771 Subject-FAIL:T771 Subject-FAIL2:T772
+R348	is-a-FAIL Arg1:T772 Arg2:T773
+T774	Action 9198 9204	causar
+T775	Concept 9205 9227	defectos de nacimiento
+T776	Concept 9236 9245	problemas
+T777	Concept 9259 9272	daño cerebral
+T778	Concept 9278 9284	muerte
+T779	Concept 9175 9191	sustancia tóxica
+T780	Concept 9162 9167	dosis
+T781	Concept-FAIL 9205 9213	defectos
+T782	Concept-FAIL 9236 9252	problemas graves
+T783	Concept-FAIL 9259 9263	daño
+T784	Concept-FAIL 9175 9184	sustancia
+T785	Concept-FAIL 9156 9167	Altas dosis
+T786	Concept-FAIL 9246 9252	graves
+T787	Concept-FAIL 9156 9161	Altas
+E774	Action:T774 Subject:T779 Target-FAIL:T775 Target-FAIL2:T782 Target-FAIL3:T777 Target-FAIL4:T778 Target-FAIL5:T776
+R349	is-a-FAIL Arg1:T785 Arg2:T780
+R350	is-a-FAIL Arg1:T779 Arg2:T784
+R351	part-of-FAIL Arg1:T785 Arg2:T779
+R352	is-a-FAIL Arg1:T777 Arg2:T783
+R353	is-a-FAIL Arg1:T782 Arg2:T776
+R354	is-a-FAIL Arg1:T775 Arg2:T781
+R355	property-of-FAIL Arg1:T787 Arg2:T780
+R356	property-of-FAIL Arg1:T786 Arg2:T776
+R357	is-a-FAIL Arg1:T777 Arg2:T776
+R358	is-a-FAIL Arg1:T778 Arg2:T776
+R359	is-a-FAIL Arg1:T775 Arg2:T776
+R360	part-of-FAIL Arg1:T780 Arg2:T779
+T788	Concept-FAIL 9322 9331	productos
+T789	Concept-FAIL 9339 9362	contenedores originales
+T790	Concept-FAIL 9339 9351	contenedores
+T791	Action-FAIL 9309 9317	mantenga
+T792	Concept-FAIL 9298 9307	problemas
+T793	Action-FAIL 9291 9297	evitar
+E791	Action-FAIL:T791 Target-FAIL:T789 Subject-FAIL:T788
+E793	Action-FAIL:T793 Target-FAIL:T792
+R361	is-a-FAIL Arg1:T789 Arg2:T790
+T794	Concept-FAIL 9413 9426	instrucciones
+T795	Action-FAIL 9557 9563	mezcla
+T796	Concept-FAIL 9658 9665	fumador
+T797	Action-FAIL 9642 9650	exhalado
+T798	Concept-FAIL 9637 9641	humo
+T799	Concept-FAIL 9626 9630	pipa
+T800	Concept-FAIL 9619 9623	puro
+T801	Concept-FAIL 9607 9617	cigarrillo
+T802	Action-FAIL 9598 9603	quema
+T803	Concept-FAIL 9568 9572	humo
+T804	Concept-FAIL 9529 9549	humo de segunda mano
+E795	Action-FAIL:T795 Target-FAIL:T804 Subject-FAIL:T803 Subject-FAIL2:T798
+E797	Action-FAIL:T797 Target-FAIL:T798 Subject-FAIL:T796
+E802	Action-FAIL:T802 Target-FAIL:T801 Target-FAIL2:T800 Target-FAIL3:T799 Subject-FAIL:T803
+T805	Action-FAIL 9667 9675	Contiene
+T806	Concept-FAIL 9693 9712	sustancias químicas
+T807	Concept-FAIL 9693 9703	sustancias
+E805	Action-FAIL:T805 Target-FAIL:T806
+R362	is-a-FAIL Arg1:T806 Arg2:T807
+T808	Action 9778 9784	causar
+T809	Concept 9785 9791	cáncer
+T810	Concept 9753 9760	tóxicos
+T811	Concept 9730 9748	productos químicos
+T812	Concept-FAIL 9730 9739	productos
+E808	Action:T808 Target:T809 Subject:T811
+R363	is-a-FAIL Arg1:T811 Arg2:T812
+R364	part-of-FAIL Arg1:T810 Arg2:T811
+R365	property-of-FAIL Arg1:T810 Arg2:T811
+T813	Action-FAIL 9813 9819	segura
+T814	Concept-FAIL 9804 9812	cantidad
+T815	Concept-FAIL 9823 9843	humo de segunda mano
+T816	Concept-FAIL 9831 9843	segunda mano
+E813	Action-FAIL:T813 Target-FAIL:T815 Subject-FAIL:T814
+T817	Concept 9907 9920	perjudiciales
+T818	Concept 9853 9866	bajos niveles
+T819	Concept-FAIL 9870 9880	inhalación
+T820	Concept-FAIL 9853 9895	bajos niveles de inhalación pasiva de humo
+T821	Concept-FAIL 9859 9866	niveles
+T822	Concept-FAIL 9891 9895	humo
+T823	Action-FAIL 9870 9880	inhalación
+E823	Action-FAIL:T823 Target-FAIL:T822
+R366	is-a-FAIL Arg1:T818 Arg2:T821
+R367	property-of-FAIL Arg1:T817 Arg2:T820
+R368	is-a-FAIL Arg1:T820 Arg2:T819
+R369	property-of-FAIL Arg1:T818 Arg2:T822
+R370	property-of-FAIL Arg1:T817 Arg2:T822
+T824	Action 9941 9949	proteger
+T825	Concept 10025 10041	lugares cerrados
+T826	Concept 9956 9968	no fumadores
+T827	Concept-FAIL 9975 10000	inhalación pasiva de humo
+T828	Concept-FAIL 9996 10000	humo
+T829	Concept-FAIL 10016 10021	fumar
+T830	Concept-FAIL 10025 10032	lugares
+T831	Concept-FAIL 9975 9992	inhalación pasiva
+T832	Concept-FAIL 9975 9985	inhalación
+T833	Action-FAIL 10016 10021	fumar
+T834	Action-FAIL 10007 10015	permitir
+E824	Action:T824 Target:T826
+E833	Action-FAIL:T833 Target-FAIL:T825
+E834	Action-FAIL:T834 Target-FAIL:E833 Subject-FAIL:E824
+R371	is-a-FAIL Arg1:T831 Arg2:T832
+R372	is-a-FAIL Arg1:T825 Arg2:T830
+R373	part-of-FAIL Arg1:T825 Arg2:T829
+R374	is-a-FAIL Arg1:T827 Arg2:T831
+T835	Concept 10112 10117	suelo
+T836	Concept 10102 10106	agua
+T837	Concept 10093 10097	aire
+T838	Concept 10046 10054	mercurio
+T839	Action-FAIL 10077 10086	encuentra
+T840	Concept-FAIL 10061 10069	elemento
+E839	Action-FAIL:T839 Target-FAIL:T837 Target-FAIL2:T836 Target-FAIL3:T835 Subject-FAIL:T838
+R375	is-a-FAIL Arg1:T838 Arg2:T840
+R376	part-of-FAIL Arg1:T838 Arg2:T837
+R377	part-of-FAIL Arg1:T838 Arg2:T836
+R378	part-of-FAIL Arg1:T838 Arg2:T835
+T841	Concept 10146 10153	líquido
+T842	Concept 10122 10139	mercurio metálico
+T843	Concept-FAIL 10194 10202	sin olor
+T844	Concept-FAIL 10146 10163	líquido brillante
+T845	Concept-FAIL 10171 10179	plateado
+T846	Concept-FAIL 10171 10191	plateado blanquecino
+T847	Concept-FAIL 10122 10130	mercurio
+T848	Concept-FAIL 10154 10163	brillante
+R379	is-a-FAIL Arg1:T842 Arg2:T847
+R380	is-a-FAIL Arg1:T844 Arg2:T841
+R381	property-of-FAIL Arg1:T846 Arg2:T844
+R382	property-of-FAIL Arg1:T843 Arg2:T844
+R383	is-a-FAIL Arg1:T842 Arg2:T844
+R384	is-a-FAIL Arg1:T842 Arg2:T841
+R385	property-of-FAIL Arg1:T848 Arg2:T842
+T849	Concept-FAIL 10214 10222	calienta
+T850	Concept-FAIL 10230 10251	gas sin olor ni color
+T851	Concept-FAIL 10243 10251	ni color
+T852	Concept-FAIL 10234 10242	sin olor
+T853	Concept-FAIL 10230 10233	gas
+R386	is-a-FAIL Arg1:T850 Arg2:T853
+R387	part-of-FAIL Arg1:T849 Arg2:T853
+T854	Action 10297 10303	formar
+T855	Concept 10282 10291	elementos
+T856	Action 10264 10271	combina
+T857	Concept 10313 10322	cristales
+T858	Concept 10304 10310	polvos
+T859	Concept-FAIL 10276 10291	otros elementos
+E854	Action:T854 Target:T858 Target2:T857 Subject-FAIL:E856
+E856	Action:T856 Target-FAIL:T859 Target-FAIL2:E854 Subject-FAIL:T855
+R388	is-a-FAIL Arg1:T859 Arg2:T855
+T860	Concept 10359 10368	productos
+T861	Concept 10327 10335	mercurio
+T862	Action-FAIL 10339 10348	encuentra
+T863	Concept-FAIL 10352 10368	muchos productos
+E862	Action-FAIL:T862 Target-FAIL:T863 Subject-FAIL:T861
+R389	is-a-FAIL Arg1:T863 Arg2:T860
+R390	part-of-FAIL Arg1:T861 Arg2:T860
+T864	Concept 10428 10455	tapaduras dentales de plata
+T865	Concept 10458 10472	pilas de botón
+T866	Concept 10405 10426	termómetros de vidrio
+T867	Concept 10373 10390	mercurio metálico
+T868	Action-FAIL 10391 10401	se utiliza
+T869	Concept-FAIL 10428 10446	tapaduras dentales
+T870	Concept-FAIL 10428 10437	tapaduras
+T871	Concept-FAIL 10458 10463	pilas
+T872	Concept-FAIL 10405 10416	termómetros
+T873	Concept-FAIL 10373 10381	mercurio
+E868	Action-FAIL:T868 Target-FAIL:T866 Target-FAIL2:T864 Target-FAIL3:T865 Subject-FAIL:T867
+R391	is-a-FAIL Arg1:T867 Arg2:T873
+R392	is-a-FAIL Arg1:T866 Arg2:T872
+R393	is-a-FAIL Arg1:T865 Arg2:T871
+R394	is-a-FAIL Arg1:T869 Arg2:T870
+R395	is-a-FAIL Arg1:T864 Arg2:T869
+R396	part-of-FAIL Arg1:T867 Arg2:T866
+R397	part-of-FAIL Arg1:T867 Arg2:T864
+R398	part-of-FAIL Arg1:T867 Arg2:T865
+T874	Action 10503 10513	utilizarse
+T875	Concept 10526 10533	pomadas
+T876	Concept 10517 10523	cremas
+T877	Concept 10478 10483	sales
+T878	Concept 10478 10495	sales de mercurio
+T879	Concept-FAIL 10526 10546	pomadas para la piel
+T880	Concept-FAIL 10542 10546	piel
+T881	Concept-FAIL 10487 10495	mercurio
+E874	Action:T874 Target-FAIL:T876 Target-FAIL2:T879 Target-FAIL3:T878 Subject-FAIL:T878 Subject-FAIL2:T876 Subject-FAIL3:T875
+R399	is-a Arg1:T878 Arg2:T877
+R400	is-a-FAIL Arg1:T879 Arg2:T875
+T882	Concept-FAIL 10573 10583	industrias
+T883	Concept 10625 10629	agua
+T884	Action 10611 10618	asienta
+T885	Concept 10603 10607	aire
+T886	Concept 10588 10596	mercurio
+E884	Action:T884 Target:T883 Subject:T886
+R401	property-of-FAIL Arg1:T885 Arg2:T886
+R402	part-of-FAIL Arg1:T886 Arg2:T885
+T887	Action 10731 10736	comen
+T888	Action 10679 10689	acumularse
+T889	Concept 10737 10744	pescado
+T890	Concept 10718 10726	animales
+T891	Concept 10703 10711	mariscos
+T892	Concept 10693 10701	pescados
+T893	Concept 10658 10676	cadena alimenticia
+T894	Concept-FAIL 10658 10664	cadena
+T895	Action-FAIL 10637 10642	pasar
+E887	Action:T887 Target:T889 Subject:T890
+E888	Action:T888 Target:T892 Target2:T891 Target-FAIL:T890 Target-FAIL2:E887
+E895	Action-FAIL:T895 Target-FAIL:T893
+R403	is-a-FAIL Arg1:T893 Arg2:T894
+T896	Action 10769 10777	sensible
+T897	Concept 10800 10808	mercurio
+T898	Concept 10749 10765	sistema nervioso
+T899	Concept-FAIL 10749 10756	sistema
+E896	Action:T896 Target:T897 Subject:T898
+R404	is-a-FAIL Arg1:T898 Arg2:T899
+T900	Concept 10869 10876	riñones
+T901	Concept 10855 10862	cerebro
+T902	Action 10846 10851	dañar
+T903	Action 10813 10823	exposición
+T904	Concept 10826 10839	altos niveles
+T905	Concept-FAIL 10832 10839	niveles
+E902	Action:T902 Target:T901 Target2:T900 Subject-FAIL:E903
+E903	Action:T903 Target-FAIL:E902 Target-FAIL2:T904
+R405	is-a-FAIL Arg1:T904 Arg2:T905
+T906	Concept 10928 10935	cuerpos
+T907	Action 10901 10908	pasarle
+T908	Concept 10942 10947	bebés
+T909	Concept 10912 10920	mercurio
+T910	Concept 10882 10893	embarazadas
+E907	Action:T907 Target:T909 Subject:T910 Target-FAIL:T908
+R406	property-of-FAIL Arg1:T909 Arg2:T906
+R407	part-of-FAIL Arg1:T906 Arg2:T910
+R408	part-of-FAIL Arg1:T909 Arg2:T906
+T911	Action 10992 11003	encontrarse
+T912	Concept 11020 11030	interiores
+T913	Concept 11007 11017	exteriores
+T914	Concept 10974 10980	hongos
+T915	Concept 10952 10956	moho
+E911	Action:T911 Target:T913 Target2:T912 Subject-FAIL:T915 Subject-FAIL2:T914
+R409	part-of Arg1:T914 Arg2:T915
+T916	Action 11032 11038	Crecen
+T917	Concept 11079 11086	húmedas
+T918	Concept 11069 11076	mojadas
+T919	Concept 11060 11067	cálidas
+T920	Concept 11048 11059	condiciones
+E916	Action:T916 Target-FAIL:T920
+R410	property-of-FAIL Arg1:T919 Arg2:T920
+R411	property-of-FAIL Arg1:T918 Arg2:T920
+R412	property-of-FAIL Arg1:T917 Arg2:T920
+T921	Action-FAIL 11149 11155	tendrá
+T922	Concept-FAIL 11156 11162	hongos
+T923	Concept-FAIL 11129 11133	casa
+T924	Concept-FAIL 11097 11122	lugares mojados o húmedos
+T925	Concept-FAIL 11097 11112	lugares mojados
+T926	Concept-FAIL 11097 11104	lugares
+E921	Action-FAIL:T921 Target-FAIL:T922 Subject-FAIL:T923
+R413	is-a-FAIL Arg1:T925 Arg2:T926
+R414	is-a-FAIL Arg1:T924 Arg2:T925
+R415	part-of-FAIL Arg1:T924 Arg2:T923
+T927	Concept 11167 11171	moho
+T928	Action-FAIL 11178 11186	causarle
+T929	Concept-FAIL 11187 11205	problemas de salud
+T930	Concept-FAIL 11187 11196	problemas
+T931	Concept-FAIL 11200 11205	salud
+T932	Action-FAIL 11187 11196	problemas
+E928	Action-FAIL:T928 Target-FAIL:T929 Subject-FAIL:T927
+E932	Action-FAIL:T932 Target-FAIL:T931 Subject-FAIL:T927
+R416	is-a-FAIL Arg1:T929 Arg2:T930
+T933	Concept 11259 11279	reacciones alérgicas
+T934	Action 11252 11258	causar
+T935	Concept 11230 11245	esporas de moho
+T936	Concept 11223 11227	moho
+T937	Action 11217 11222	tocar
+T938	Action 11207 11214	Inhalar
+E934	Action:T934 Target-FAIL:T933 Subject-FAIL:E937 Subject-FAIL2:E938
+E937	Action:T937 Target:T936 Target-FAIL:T935
+E938	Action:T938 Target:T936 Target-FAIL:T935
+T939	Concept 11342 11363	infecciones micóticas
+T940	Action 11335 11341	causar
+E940	Action:T940 Target:T939
+T941	Concept 11458 11466	pulmones
+T942	Concept 11443 11451	garganta
+T943	Concept 11433 11438	nariz
+T944	Concept 11424 11428	piel
+T945	Concept 11415 11419	ojos
+T946	Action 11401 11410	irritarle
+T947	Concept 11390 11394	moho
+T948	Action 11376 11386	exposición
+E946	Action:T946 Target:T945 Target2:T944 Target3:T942 Target4:T941 Subject:E948 Target-FAIL:T943
+E948	Action:T948 Target:T947
+T949	Concept 11519 11523	aire
+T950	Concept 11471 11476	ozono
+T951	Action-FAIL 11528 11538	respiramos
+T952	Concept-FAIL 11483 11495	gas incoloro
+T953	Concept-FAIL 11487 11495	incoloro
+T954	Concept-FAIL 11483 11486	gas
+E951	Action-FAIL:T951 Target-FAIL:T949
+R417	part-of Arg1:T950 Arg2:T949
+R418	is-a-FAIL Arg1:T950 Arg2:T952
+R419	is-a-FAIL Arg1:T950 Arg2:T954
+R420	property-of-FAIL Arg1:T953 Arg2:T950
+T955	Concept 11558 11562	malo
+T956	Concept-FAIL 11550 11555	bueno
+T957	Concept 11635 11645	naturaleza
+T958	Action-FAIL 11619 11628	encuentra
+T959	Concept-FAIL 11688 11709	superficie terrestre.
+T960	Concept-FAIL 11602 11615	ozono "bueno"
+T961	Concept-FAIL 11688 11708	superficie terrestre
+T962	Concept-FAIL 11609 11614	bueno
+T963	Concept-FAIL 11602 11607	ozono
+E958	Action-FAIL:T958 Target-FAIL:T960 Subject-FAIL:T957
+R421	property-of-FAIL Arg1:T962 Arg2:T963
+R422	part-of-FAIL Arg1:T961 Arg2:T957
+R423	part-of-FAIL Arg1:T963 Arg2:T961
+T964	Action 11714 11721	protege
+T965	Concept-FAIL 11729 11755	rayos ultravioleta del sol
+E964	Action:T964 
+T966	Concept 11843 11849	hombre
+T967	Action 11825 11835	fabricadas
+T968	Concept 11805 11824	sustancias químicas
+T969	Action 11789 11800	desapareció
+T970	Concept-FAIL 11757 11788	Parte de la capa de ozono bueno
+T971	Concept-FAIL 11769 11788	capa de ozono bueno
+E967	Action:T967 Target:T968 Subject:T966
+E969	Action:T969 Target-FAIL:T970 Target-FAIL2:T971 Subject-FAIL:E967 Subject-FAIL2:T968
+T972	Concept-FAIL 11911 11920	demasiada
+T973	Concept-FAIL 11921 11943	radiación ultravioleta
+T974	Action-FAIL 11899 11908	exponerse
+T975	Concept-FAIL 11883 11891	personas
+T976	Concept-FAIL 11866 11877	ozono bueno
+E974	Action-FAIL:T974 Target-FAIL:T973 Subject-FAIL:T975
+R424	property-of-FAIL Arg1:T972 Arg2:T973
+T977	Concept 11996 12005	cataratas
+T978	Action 11955 11963	aumentar
+T979	Concept-FAIL 12008 12043	problemas en el sistema inmunitario
+T980	Concept-FAIL 11977 11993	cáncer en la pie
+T981	Concept-FAIL 12024 12043	sistema inmunitario
+T982	Concept-FAIL 12008 12017	problemas
+T983	Concept-FAIL 11990 11994	piel
+T984	Concept-FAIL 11977 11983	cáncer
+T985	Concept-FAIL 11967 11973	riesgo
+E978	Action:T978 Target-FAIL:T980 Target-FAIL2:T977 Target-FAIL3:T979 Target-FAIL4:T985
+R425	property-of-FAIL Arg1:T983 Arg2:T984
+R426	property-of-FAIL Arg1:T982 Arg2:T981
+R427	property-of-FAIL Arg1:T985 Arg2:T984
+R428	property-of-FAIL Arg1:T985 Arg2:T977
+R429	property-of-FAIL Arg1:T985 Arg2:T982
+T986	Action-FAIL 12064 12073	encuentra
+T987	Concept-FAIL 12077 12092	nivel del suelo
+T988	Concept-FAIL 12048 12060	ozono "malo"
+T989	Concept-FAIL 12087 12092	suelo
+T990	Concept-FAIL 12055 12059	malo
+T991	Concept-FAIL 12048 12053	ozono
+E986	Action-FAIL:T986 Target-FAIL:T988 Subject-FAIL:T988
+R430	property-of-FAIL Arg1:T990 Arg2:T991
+R431	part-of-FAIL Arg1:T991 Arg2:T989
+T992	Concept 12208 12219	luz del sol
+T993	Action 12177 12187	reaccionan
+T994	Concept 12169 12176	fuentes
+T995	Concept 12152 12160	fábricas
+T996	Concept-FAIL 12188 12200	químicamente
+T997	Action-FAIL 12097 12102	forma
+T998	Concept-FAIL 12114 12146	contaminantes de los automóviles
+T999	Concept-FAIL 12135 12146	automóviles
+T1000	Concept-FAIL 12114 12127	contaminantes
+E993	Action:T993 Target:T992 Subject-FAIL:T998 Subject-FAIL2:T995 Subject-FAIL3:T994 Subject-FAIL4:T1000
+E997	Action-FAIL:T997 Subject-FAIL:E993
+R432	is-a-FAIL Arg1:T999 Arg2:T994
+R433	is-a-FAIL Arg1:T995 Arg2:T994
+R434	part-of-FAIL Arg1:T1000 Arg2:T999
+R435	part-of-FAIL Arg1:T1000 Arg2:T995
+T1001	Concept-FAIL 12252 12256	smog
+T1002	Concept-FAIL 12227 12247	componente principal
+T1003	Concept-FAIL 12268 12272	peor
+T1004	Concept-FAIL 12276 12282	verano
+T1005	Action 12317 12323	dañino
+T1006	Concept 12296 12306	ozono malo
+T1007	Action 12284 12292	Respirar
+E1005	Action:T1005 Subject:E1007
+E1007	Action:T1007 Target:T1006
+T1008	Concept 12452 12463	permanentes
+T1009	Concept 12435 12451	daños pulmonares
+T1010	Concept 12418 12426	enfisema
+T1011	Concept 12405 12415	bronquitis
+T1012	Concept 12399 12403	asma
+T1013	Concept 12382 12393	condiciones
+T1014	Action 12365 12378	empeoramiento
+T1015	Concept 12333 12336	tos
+T1016	Action 12325 12332	Provoca
+T1017	Concept-FAIL 12492 12500	habitual
+T1018	Action-FAIL 12471 12481	exposición
+T1019	Concept-FAIL 12355 12363	garganta
+T1020	Action-FAIL 12338 12348	irritación
+T1021	Concept-FAIL 12338 12363	irritación en la garganta
+E1014	Action:T1014 Target-FAIL:T1013
+E1016	Action:T1016 Target:T1015 Target2:E1014 Target3:T1009 Target-FAIL:E1020 Target-FAIL2:T1013 Target-FAIL3:T1021 Subject-FAIL:E1018
+E1018	Action-FAIL:T1018 
+E1020	Action-FAIL:T1020 Target-FAIL:T1019 Subject-FAIL:T1019
+R436	is-a Arg1:T1012 Arg2:T1013
+R437	is-a Arg1:T1011 Arg2:T1013
+R438	is-a Arg1:T1010 Arg2:T1013
+R439	property-of Arg1:T1008 Arg2:T1009
+T1022	Concept 12579 12587	personas
+T1023	Concept 12594 12602	animales
+T1024	Concept 12565 12573	cultivos
+T1025	Action 12553 12558	daños
+T1026	Concept 12506 12512	plagas
+T1027	Action-FAIL 12513 12518	viven
+E1025	Action:T1025 Target:T1024 Target2:T1023 Target3:T1022 Subject:T1026
+E1027	Action-FAIL:T1027 Subject-FAIL:T1026
+T1028	Action 12635 12643	librarse
+T1029	Concept 12608 12618	pesticidas
+T1030	Concept-FAIL 12647 12652	ellas
+E1028	Action:T1028 Subject:T1029 Target-FAIL:T1030
+T1031	Concept 12786 12794	gérmenes
+T1032	Concept 12780 12784	moho
+T1033	Concept 12770 12778	roedores
+T1034	Action 12750 12757	control
+T1035	Concept 12722 12741	sustancias químicas
+T1036	Concept 12695 12703	insectos
+T1037	Action 12689 12694	matar
+T1038	Concept 12658 12668	pesticidas
+T1039	Action-FAIL 12713 12721	incluyen
+T1040	Concept-FAIL 12761 12768	hierbas
+E1034	Action:T1034 Target:T1033 Target2:T1032 Target3:T1031 Subject:T1035 Target-FAIL:T1040
+E1037	Action:T1037 Target:T1036 Subject:T1038
+E1039	Action-FAIL:T1039 Target-FAIL:E1034 Subject-FAIL:T1038
+R440	part-of-FAIL Arg1:T1035 Arg2:T1038
+T1041	Concept 12842 12852	pesticidas
+T1042	Concept 12811 12831	productos domésticos
+T1043	Action-FAIL 12832 12841	contienen
+E1043	Action-FAIL:T1043 Target-FAIL:T1041 Subject-FAIL:T1042
+R441	part-of-FAIL Arg1:T1041 Arg2:T1042
+T1044	Concept 12921 12929	animales
+T1045	Concept 12936 12943	plantas
+T1046	Concept 12907 12915	gérmenes
+T1047	Action 12897 12902	matar
+T1048	Concept 12888 12893	salud
+T1049	Action 12876 12884	proteger
+T1050	Concept 12858 12868	pesticidas
+T1051	Concept-FAIL 12964 12968	daño
+T1052	Action-FAIL 12955 12963	causarle
+T1053	Action-FAIL 12964 12968	daño
+E1047	Action:T1047 Subject:T1050 Target-FAIL:E1052 Target-FAIL2:E1053
+E1049	Action:T1049 Target:T1048 Subject:T1050
+E1052	Action-FAIL:T1052 Target-FAIL:T1051 Subject-FAIL:T1046 Subject-FAIL2:T1044 Subject-FAIL3:T1045
+E1053	Action-FAIL:T1053 Subject-FAIL:T1045 Subject-FAIL2:T1044 Subject-FAIL3:T1046
+T1054	Concept 13040 13048	mascotas
+T1055	Concept 13025 13033	personas
+T1056	Action 13008 13015	dañinos
+T1057	Concept-FAIL 12983 12988	estos
+E1056	Action:T1056 Target:T1055 Target2:T1054 Subject-FAIL:T1057
+T1058	Action-FAIL 13065 13073	prefiera
+T1059	Concept-FAIL 13091 13110	métodos no químicos
+E1058	Action-FAIL:T1058 Target-FAIL:T1059
+T1060	Action-FAIL 13138 13147	utilícelo
+T1061	Concept-FAIL 13127 13136	pesticida
+T1062	Action-FAIL 13115 13123	necesita
+E1060	Action-FAIL:T1060 
+E1062	Action-FAIL:T1062 
+T1063	Concept-FAIL 13207 13215	mascotas
+T1064	Concept-FAIL 13199 13204	niños
+T1065	Concept-FAIL 13178 13185	cuidado
+T1066	Action-FAIL 13163 13168	Tenga
+E1066	Action-FAIL:T1066 Target-FAIL:T1065
+T1067	Concept 13305 13319	medio ambiente
+T1068	Action 13293 13301	proteger
+T1069	Concept 13252 13262	pesticidas
+T1070	Action 13239 13247	desechar
+T1071	Concept-FAIL 13263 13276	correctamente
+E1068	Action:T1068 Target:T1067 Subject:E1070
+E1070	Action:T1070 Target:T1069
+T1072	Concept 13376 13385	populares
+T1073	Concept 13325 13335	pesticidas
+T1074	Concept-FAIL 13325 13354	pesticidas con base biológica
+T1075	Concept-FAIL 13340 13354	base biológica
+R442	is-a-FAIL Arg1:T1074 Arg2:T1073
+R443	property-of-FAIL Arg1:T1072 Arg2:T1074
+R444	property-of-FAIL Arg1:T1075 Arg2:T1073
+R445	property-of-FAIL Arg1:T1072 Arg2:T1073
+T1076	Concept-FAIL 13427 13440	tradicionales
+T1077	Concept-FAIL 13411 13418	seguros
+T1078	Concept-FAIL 13459 13464	sabor
+T1079	Concept-FAIL 13451 13455	olor
+T1080	Action-FAIL 13445 13450	tiene
+E1080	Action-FAIL:T1080 Target-FAIL:T1079 Target-FAIL2:T1078
+T1081	Concept-FAIL 13504 13508	casa
+T1082	Concept-FAIL 13489 13497	problema
+T1083	Action-FAIL 13477 13485	causarle
+E1083	Action-FAIL:T1083 Target-FAIL:T1082
+T1084	Action 13534 13548	descomposición
+T1085	Concept 13596 13600	agua
+T1086	Concept 13585 13590	rocas
+T1087	Concept 13574 13579	suelo
+T1088	Concept 13561 13567	uranio
+T1089	Concept 13513 13518	radón
+T1090	Concept-FAIL 13549 13556	natural
+T1091	Action-FAIL 13519 13527	proviene
+E1084	Action:T1084 Target:T1088 Subject-FAIL:T1088
+E1091	Action-FAIL:T1091 Subject-FAIL:T1089 Subject-FAIL2:E1084
+R446	part-of Arg1:T1088 Arg2:T1087
+R447	part-of Arg1:T1088 Arg2:T1086
+R448	part-of Arg1:T1088 Arg2:T1085
+T1092	Concept 13634 13650	cáncer de pulmón
+T1093	Action 13625 13630	causa
+T1094	Concept 13605 13610	radón
+T1095	Concept-FAIL 13658 13672	Estados Unidos
+T1096	Concept-FAIL 13634 13640	cáncer
+E1093	Action:T1093 Target:T1092 Subject:T1094
+R449	is-a-FAIL Arg1:T1092 Arg2:T1096
+T1097	Concept-FAIL 13682 13687	bajos
+T1098	Concept-FAIL 13688 13704	niveles de radón
+T1099	Concept-FAIL 13712 13729	espacios abiertos
+R450	property-of-FAIL Arg1:T1097 Arg2:T1098
+T1100	Concept-FAIL 13762 13778	niveles elevados
+T1101	Concept-FAIL 13738 13748	interiores
+T1102	Concept 13821 13830	edificios
+T1103	Concept 13809 13814	casas
+T1104	Action 13795 13801	entrar
+T1105	Concept 13783 13788	radón
+T1106	Concept-FAIL 13858 13863	pisos
+T1107	Concept-FAIL 13843 13850	grietas
+T1108	Concept-FAIL 13883 13892	cimientos
+T1109	Concept-FAIL 13869 13876	paredes
+E1104	Action:T1104 Target:T1103 Target2:T1102 Subject:T1105
+R451	property-of-FAIL Arg1:T1107 Arg2:T1106
+R452	property-of-FAIL Arg1:T1107 Arg2:T1109
+R453	property-of-FAIL Arg1:T1107 Arg2:T1108
+T1110	Concept 13961 13973	agua de pozo
+T1111	Concept 13935 13939	agua
+T1112	Concept 13897 13902	radón
+T1113	Action-FAIL 13917 13928	encontrarse
+E1113	Action-FAIL:T1113 Target-FAIL:T1111 Target-FAIL2:T1110 Subject-FAIL:T1112
+R454	part-of-FAIL Arg1:T1112 Arg2:T1111
+R455	part-of-FAIL Arg1:T1112 Arg2:T1110
+T1114	Concept-FAIL 14059 14067	análisis
+T1115	Concept-FAIL 14033 14041	elevados
+T1116	Concept-FAIL 14016 14032	niveles de radón
+T1117	Concept-FAIL 14005 14009	casa
+R456	property-of-FAIL Arg1:T1115 Arg2:T1116
+R457	property-of-FAIL Arg1:T1116 Arg2:T1117
+T1118	Concept-FAIL 14203 14209	prueba
+T1119	Action-FAIL 14195 14199	haga
+T1120	Concept-FAIL 14178 14185	alguien
+T1121	Concept-FAIL 14152 14163	ferreterías
+T1122	Action-FAIL 14166 14175	contratar
+T1123	Concept-FAIL 14115 14130	kit de análisis
+T1124	Action-FAIL 14104 14111	comprar
+E1119	Action-FAIL:T1119 Target-FAIL:T1118 Subject-FAIL:T1120
+E1122	Action-FAIL:T1122 Target-FAIL:E1119
+E1124	Action-FAIL:T1124 Target-FAIL:T1123
+T1125	Concept-FAIL 14283 14298	niveles seguros
+T1126	Concept-FAIL 14259 14276	cantidad de radón
+T1127	Action-FAIL 14246 14255	disminuir
+T1128	Concept-FAIL 14215 14223	sistemas
+E1127	Action-FAIL:T1127 Target-FAIL:T1126 Subject-FAIL:T1128
+R458	property-of-FAIL Arg1:T1125 Arg2:T1126
+T1129	Action-FAIL 14309 14316	depende
+T1130	Concept-FAIL 14346 14350	casa
+T1131	Concept-FAIL 14333 14339	diseño
+T1132	Concept-FAIL 14321 14327	tamaño
+T1133	Concept-FAIL 14303 14308	costo
+E1129	Action-FAIL:T1129 Target-FAIL:T1132 Target-FAIL2:T1131 Subject-FAIL:T1133
+R459	property-of-FAIL Arg1:T1132 Arg2:T1130
+R460	property-of-FAIL Arg1:T1131 Arg2:T1130
+T1134	Concept 14385 14390	salud
+T1135	Action 14370 14376	afecta
+T1136	Concept 14355 14369	medio ambiente
+E1135	Action:T1135 Target:T1134 Subject:T1136
+T1137	Concept-FAIL 14493 14505	agua potable
+T1138	Action-FAIL 14485 14492	tenemos
+T1139	Concept-FAIL 14444 14456	último siglo
+T1140	Action-FAIL 14428 14437	duplicado
+T1141	Concept-FAIL 14400 14416	promedio de vida
+E1138	Action-FAIL:T1138 Target-FAIL:T1137
+E1140	Action-FAIL:T1140 Target-FAIL:T1141 Subject-FAIL:T1141
+T1142	Concept 14613 14619	tierra
+T1143	Concept 14603 14607	agua
+T1144	Concept 14594 14598	aire
+T1145	Concept 14570 14584	medio ambiente
+T1146	Concept-FAIL 14633 14652	problemas de salud.
+T1147	Action-FAIL 14626 14632	causar
+T1148	Concept-FAIL 14534 14547	contaminación
+T1149	Concept-FAIL 14646 14651	salud
+T1150	Action-FAIL 14633 14642	problemas
+T1151	Action-FAIL 14534 14547	contaminación
+E1147	Action-FAIL:T1147 Target-FAIL:T1146 Subject-FAIL:T1148
+E1150	Action-FAIL:T1150 Target-FAIL:T1149 Subject-FAIL:E1151
+E1151	Action-FAIL:T1151 Target-FAIL:T1145
+R461	part-of Arg1:T1144 Arg2:T1145
+R462	part-of Arg1:T1143 Arg2:T1145
+R463	part-of Arg1:T1142 Arg2:T1145
+R464	property-of-FAIL Arg1:T1148 Arg2:T1145
+T1152	Concept 14780 14785	hogar
+T1153	Concept 14762 14766	aire
+T1154	Concept 14736 14755	sustancias químicas
+T1155	Concept 14714 14727	contaminantes
+T1156	Action 14698 14710	consecuencia
+T1157	Concept 14670 14684	crisis de asma
+E1156	Action:T1156 Subject:T1155 Target-FAIL:T1157 Subject-FAIL:T1154
+R465	property-of-FAIL Arg1:T1155 Arg2:T1152
+R466	property-of-FAIL Arg1:T1154 Arg2:T1153
+R467	property-of-FAIL Arg1:T1154 Arg2:T1152
+R468	property-of-FAIL Arg1:T1155 Arg2:T1153
+R469	part-of-FAIL Arg1:T1154 Arg2:T1153
+R470	part-of-FAIL Arg1:T1154 Arg2:T1152
+R471	is-a-FAIL Arg1:T1155 Arg2:T1154
+T1158	Concept 14829 14842	mundo natural
+T1159	Concept 14795 14814	riesgos ambientales
+T1160	Concept 14852 14857	radón
+T1161	Concept-FAIL 14864 14870	tierra
+R472	part-of-FAIL Arg1:T1159 Arg2:T1158
+R473	is-a-FAIL Arg1:T1160 Arg2:T1159
+R474	is-a-FAIL Arg1:T1159 Arg2:T1158
+T1162	Action-FAIL 15006 15009	uso
+T1163	Concept-FAIL 15026 15036	industrias
+T1164	Concept-FAIL 15016 15023	minería
+T1165	Concept-FAIL 14990 14998	mercurio
+T1166	Concept-FAIL 14977 14984	asbesto
+T1167	Action-FAIL 14963 14973	exposición
+T1168	Concept-FAIL 14950 14957	pintura
+T1169	Concept-FAIL 14921 14943	intoxicación por plomo
+T1170	Concept-FAIL 14895 14914	actividades humanas
+T1171	Action-FAIL 14882 14891	resultado
+E1162	Action-FAIL:T1162 Target-FAIL:T1164 Target-FAIL2:T1163 Subject-FAIL:T1166 Subject-FAIL2:T1165
+E1167	Action-FAIL:T1167 Target-FAIL:T1166 Target-FAIL2:T1165
+E1171	Action-FAIL:T1171 Subject-FAIL:T1170

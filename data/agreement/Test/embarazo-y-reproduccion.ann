@@ -1,0 +1,970 @@
+T0	Concept 3 9	aborto
+T1	Action 35 46	interrumpir
+T2	Concept 50 58	embarazo
+T3	Concept 16 29	procedimiento
+E1	Action:T1 Target:T2 Subject:T0  
+R0	is-a Arg1:T0 Arg2:T3
+T4	Concept 144 149	útero
+T5	Concept 131 139	placenta
+T6	Concept 121 125	feto
+T7	Concept 108 115	embrión
+T8	Action 97 104	retirar
+T9	Concept 84 91	cirugía
+T10	Concept 72 81	medicinas
+T11	Action-FAIL 63 71	utilizan
+E8	Action:T8 Target:T7 Target2:T6  Target-FAIL:T5 Subject-FAIL:E11 Subject-FAIL2:T9 Subject-FAIL3:T10
+E11	Action-FAIL:T11   Target-FAIL:T10 Target-FAIL2:T9 
+R1	part-of Arg1:T5 Arg2:T4
+R2	same-as-FAIL Arg1:T7 Arg2:T6
+T12	Concept 188 199	profesional
+T13	Concept 216 224	licencia
+T14	Concept 154 167	procedimiento
+T15	Concept-FAIL 188 211	profesional de la salud
+T16	Action-FAIL 171 180	realizado
+T17	Concept-FAIL 206 211	salud
+E16	Action-FAIL:T16   Target-FAIL:T14 Subject-FAIL:T15
+R3	is-a-FAIL Arg1:T15 Arg2:T12
+R4	property-of-FAIL Arg1:T13 Arg2:T15
+T18	Action 241 252	interrumpir
+T19	Concept 272 280	personal
+T20	Concept 256 264	embarazo
+T21	Concept 229 237	decisión
+E18	Action:T18   Target-FAIL:T20 Subject-FAIL:T21
+R5	property-of-FAIL Arg1:T19 Arg2:T21
+T22	Concept 307 313	aborto
+T23	Action 359 367	sugieren
+T24	Concept 333 346	profesionales
+T25	Concept 368 376	asesoría
+T26	Concept-FAIL 318 325	mayoría
+T27	Concept-FAIL 333 358	profesionales de la salud
+T28	Concept-FAIL 368 388	asesoría psicológica
+T29	Concept-FAIL 377 388	psicológica
+T30	Concept-FAIL 353 358	salud
+T31	Concept-FAIL 292 301	someterse
+T32	Action-FAIL 285 291	piensa
+E23	Action:T23   Target-FAIL:T28 Subject-FAIL:T27
+E32	Action-FAIL:T32
+R6	is-a-FAIL Arg1:T28 Arg2:T25
+R7	is-a-FAIL Arg1:T27 Arg2:T24
+R8	property-of-FAIL Arg1:T26 Arg2:T27
+T33	Concept 495 505	trastornos
+T34	Action 416 422	ofrece
+T35	Concept 484 491	riesgos
+T36	Concept 449 457	personas
+T37	Concept 437 442	apoyo
+T38	Concept 423 434	información
+T39	Concept 393 406	asesoramiento
+T40	Action-FAIL 471 483	pueden tener
+T41	Concept-FAIL 495 515	trastornos genéticos
+T42	Concept-FAIL 393 415	asesoramiento genético
+T43	Action-FAIL 462 468	tienen
+T44	Concept-FAIL 506 515	genéticos
+T45	Concept-FAIL 407 415	genético
+E34	Action:T34   Target-FAIL:T38 Target-FAIL2:T37 Subject-FAIL:T42
+E40	Action-FAIL:T40   Target-FAIL:T41 Subject-FAIL:T36
+E43	Action-FAIL:T43   Target-FAIL:T41 Subject-FAIL:T36
+R9	is-a-FAIL Arg1:T41 Arg2:T33
+R10	is-a-FAIL Arg1:T42 Arg2:T39
+R11	property-of-FAIL Arg1:T35 Arg2:T41
+T46	Concept 545 550	usted
+T47	Action 533 540	reunirá
+T48	Concept 570 577	riesgos
+T49	Concept 520 529	genetista
+T50	Concept-FAIL 570 587	riesgos genéticos
+T51	Action-FAIL 556 562	hablar
+T52	Concept-FAIL 578 587	genéticos
+E47	Action:T47 Target:T46 Subject:T49  
+E51	Action-FAIL:T51   Target-FAIL:T50 Subject-FAIL:T49
+R12	is-a-FAIL Arg1:T50 Arg2:T48
+T53	Action 689 695	planee
+T54	Concept 617 622	usted
+T55	Action 680 686	piense
+T56	Concept 705 709	bebé
+T57	Concept 661 672	información
+T58	Concept 628 636	familiar
+T59	Concept 592 600	consulta
+T60	Action-FAIL 696 701	tener
+T61	Action-FAIL 646 653	acceder
+E53	Action:T53   Target-FAIL:E60 Target-FAIL2:T56 
+E55	Action:T55   Target-FAIL:E60 Target-FAIL2:T56 
+E60	Action-FAIL:T60   Target-FAIL:T56 
+E61	Action-FAIL:T61   Target-FAIL:T57 
+T62	Action 717 724	obtener
+T63	Concept 745 752	pruebas
+T64	Concept 729 740	información
+T65	Concept-FAIL 745 762	pruebas genéticas
+T66	Concept-FAIL 753 762	genéticas
+E62	Action:T62 Target:T64   
+R13	is-a-FAIL Arg1:T65 Arg2:T63
+R14	property-of-FAIL Arg1:T66 Arg2:T63
+T67	Action 792 798	buscar
+T68	Concept 799 812	asesoramiento
+T69	Concept 779 786	razones
+T70	Concept-FAIL 772 778	muchas
+T71	Concept-FAIL 799 821	asesoramiento genético
+T72	Action-FAIL 764 771	Existen
+T73	Concept-FAIL 813 821	genético
+E67	Action:T67   Target-FAIL:T71 Target-FAIL2:T68 
+E72	Action-FAIL:T72   Target-FAIL:E67 Subject-FAIL:T69
+R15	is-a-FAIL Arg1:T71 Arg2:T68
+R16	property-of-FAIL Arg1:T70 Arg2:T69
+R17	property-of-FAIL Arg1:T73 Arg2:T68
+T74	Concept 915 924	muy altos
+T75	Concept 842 852	enfermedad
+T76	Concept 826 834	diabetes
+T77	Action-FAIL 909 914	están
+T78	Concept-FAIL 888 907	azúcar en la sangre
+T79	Concept-FAIL 866 884	niveles de glucosa
+T80	Concept-FAIL 901 907	sangre
+T81	Concept-FAIL 888 894	azúcar
+T82	Concept-FAIL 877 884	glucosa
+E77	Action-FAIL:T77   Target-FAIL:T74 Subject-FAIL:T79 Subject-FAIL2:T78
+R18	is-a Arg1:T76 Arg2:T75
+R19	same-as-FAIL Arg1:T79 Arg2:T78
+R20	property-of-FAIL Arg1:T74 Arg2:T80
+R21	property-of-FAIL Arg1:T74 Arg2:T81
+R22	property-of-FAIL Arg1:T74 Arg2:T82
+T83	Concept 991 995	bebé
+T84	Concept 962 970	embarazo
+T85	Concept 943 950	glucosa
+T86	Concept-FAIL 929 939	nivel alto
+T87	Concept-FAIL 935 939	alto
+R23	property-of-FAIL Arg1:T86 Arg2:T85
+R24	property-of-FAIL Arg1:T87 Arg2:T85
+T88	Concept 1078 1086	diabetes
+T89	Concept 1052 1066	Estados Unidos
+T90	Action-FAIL 1067 1074	padecen
+T91	Concept-FAIL 1078 1098	diabetes gestacional
+T92	Concept-FAIL 1025 1032	mujeres
+T93	Concept-FAIL 1025 1044	mujeres embarazadas
+T94	Concept-FAIL 1087 1098	gestacional
+T95	Concept-FAIL 1033 1044	embarazadas
+E90	Action-FAIL:T90   Target-FAIL:T91 Subject-FAIL:T93
+R25	is-a-FAIL Arg1:T93 Arg2:T92
+R26	is-a-FAIL Arg1:T91 Arg2:T88
+R27	property-of-FAIL Arg1:T94 Arg2:T88
+T96	Action 1143 1150	aparece
+T97	Concept 1130 1138	diabetes
+T98	Concept 1103 1111	diabetes
+T99	Concept 1103 1123	diabetes gestacional
+T100	Concept 1189 1199	embarazada
+T101	Concept 1178 1183	mujer
+T102	Concept-FAIL 1155 1166	primera vez
+E96	Action:T96   Target-FAIL:T102 Target-FAIL2:T97 Subject-FAIL:T99 Subject-FAIL2:T97
+R28	property-of Arg1:T100 Arg2:T101
+R29	is-a Arg1:T99 Arg2:T98
+R30	is-a-FAIL Arg1:T99 Arg2:T97
+R31	same-as-FAIL Arg1:T97 Arg2:T98
+T103	Concept 1307 1315	diabetes
+T104	Concept 1271 1275	bebé
+T105	Action 1240 1250	desaparece
+T106	Concept 1231 1239	diabetes
+T107	Concept-FAIL 1316 1322	tipo 2
+T108	Action-FAIL 1263 1267	nace
+T109	Concept-FAIL 1307 1322	diabetes tipo 2
+E105	Action:T105  Subject:T106 Target-FAIL:T106 
+E108	Action-FAIL:T108    Subject-FAIL:T104
+R32	property-of-FAIL Arg1:T107 Arg2:T103
+R33	is-a-FAIL Arg1:T109 Arg2:T103
+T110	Concept 1381 1389	diabetes
+T111	Concept 1370 1378	obesidad
+T112	Concept 1340 1344	niño
+T113	Concept-FAIL 1360 1366	riesgo
+T114	Action-FAIL 1353 1357	está
+T115	Concept-FAIL 1390 1396	tipo 2
+T116	Action-FAIL 1360 1366	riesgo
+T117	Concept-FAIL 1381 1396	diabetes tipo 2
+E114	Action-FAIL:T114   Target-FAIL:T113 Subject-FAIL:T112
+E116	Action-FAIL:T116   Target-FAIL:T111 Target-FAIL2:T117 Subject-FAIL:T112
+R34	property-of-FAIL Arg1:T115 Arg2:T110
+R35	property-of-FAIL Arg1:T113 Arg2:T111
+R36	property-of-FAIL Arg1:T113 Arg2:T110
+R37	is-a-FAIL Arg1:T117 Arg2:T110
+T118	Concept 1403 1410	mayoría
+T119	Concept 1484 1501	segundo trimestre
+T120	Concept 1506 1514	embarazo
+T121	Concept 1469 1477	diabetes
+T122	Concept 1418 1425	mujeres
+T123	Action-FAIL 1451 1460	detección
+T124	Action-FAIL 1433 1437	hace
+T125	Concept-FAIL 1441 1447	examen
+T126	Concept-FAIL 1451 1460	detección
+T127	Action-FAIL 1441 1447	examen
+E123	Action-FAIL:T123   Target-FAIL:T125 
+E124	Action-FAIL:T124   Target-FAIL:T122 Target-FAIL2:E123 
+E127	Action-FAIL:T127   Target-FAIL:T126 Subject-FAIL:T122
+R38	property-of Arg1:T118 Arg2:T122
+T128	Concept 1574 1579	antes
+T129	Concept 1539 1544	mayor
+T130	Concept 1545 1551	riesgo
+T131	Concept 1520 1527	mujeres
+T132	Concept-FAIL 1563 1573	examinadas
+T133	Action-FAIL 1559 1562	ser
+T134	Action-FAIL 1532 1538	tienen
+T135	Action-FAIL 1563 1573	examinadas
+E133	Action-FAIL:T133   Target-FAIL:T132 Subject-FAIL:T130
+E134	Action-FAIL:T134   Target-FAIL:T130 Subject-FAIL:T131
+E135	Action-FAIL:T135    Subject-FAIL:T131
+R39	property-of Arg1:T129 Arg2:T130
+R40	property-of-FAIL Arg1:T128 Arg2:T132
+R41	part-of-FAIL Arg1:T130 Arg2:T131
+T136	Action 1665 1671	quedar
+T137	Concept 1584 1589	usted
+T138	Concept 1672 1682	embarazada
+T139	Concept 1644 1652	diabetes
+T140	Concept 1599 1607	diabetes
+T141	Concept-FAIL 1656 1661	antes
+T142	Action-FAIL 1631 1640	controlar
+T143	Action-FAIL 1593 1598	tiene
+T144	Concept-FAIL 1612 1617	mejor
+T145	Concept-FAIL 1618 1625	momento
+E136	Action:T136   Target-FAIL:T138 Subject-FAIL:T137
+E142	Action-FAIL:T142
+E143	Action-FAIL:T143   Target-FAIL:T140 Subject-FAIL:T137
+R42	property-of-FAIL Arg1:T144 Arg2:T145
+R43	property-of-FAIL Arg1:T140 Arg2:T137
+R44	same-as-FAIL Arg1:T139 Arg2:T140
+T146	Concept 1837 1847	embarazada
+T147	Concept 1770 1777	semanas
+T148	Concept 1782 1790	embarazo
+T149	Concept 1749 1753	bebé
+T150	Concept 1688 1695	niveles
+T151	Action 1732 1738	causar
+T152	Concept 1718 1724	sangre
+T153	Concept-FAIL 1761 1769	primeras
+T154	Concept-FAIL 1696 1701	altos
+T155	Concept-FAIL 1688 1711	niveles altos de azúcar
+T156	Concept-FAIL 1739 1743	daño
+T157	Action-FAIL 1739 1743	daño
+T158	Concept-FAIL 1688 1701	niveles altos
+T159	Concept-FAIL 1761 1777	primeras semanas
+T160	Concept-FAIL 1705 1711	azúcar
+E151	Action:T151   Target-FAIL:T156 Target-FAIL2:E157 Subject-FAIL:T155 Subject-FAIL2:T160
+E157	Action-FAIL:T157   Target-FAIL:T149 
+R45	property-of-FAIL Arg1:T154 Arg2:T150
+R46	is-a-FAIL Arg1:T155 Arg2:T150
+R47	part-of-FAIL Arg1:T155 Arg2:T152
+R48	property-of-FAIL Arg1:T153 Arg2:T147
+R49	is-a-FAIL Arg1:T159 Arg2:T147
+R50	is-a-FAIL Arg1:T158 Arg2:T150
+R51	property-of-FAIL Arg1:T158 Arg2:T160
+R52	part-of-FAIL Arg1:T159 Arg2:T148
+T161	Concept 1883 1888	sanos
+T162	Concept 1868 1872	bebé
+T163	Action-FAIL 1854 1862	mantener
+T164	Concept-FAIL 1877 1882	usted
+T165	Action-FAIL 1903 1911	mantener
+T166	Action-FAIL 2004 2010	quedar
+T167	Concept-FAIL 2011 2021	embarazada
+T168	Concept-FAIL 1937 1943	sangre
+T169	Concept-FAIL 1915 1920	nivel
+T170	Concept-FAIL 1915 1930	nivel de azúcar
+T171	Concept-FAIL 1924 1930	azúcar
+E163	Action-FAIL:T163   Target-FAIL:T162 Target-FAIL2:T164 
+E165	Action-FAIL:T165   Target-FAIL:T170 Subject-FAIL:T162 Subject-FAIL2:T164
+E166	Action-FAIL:T166   Target-FAIL:T167 Subject-FAIL:T164
+R53	is-a-FAIL Arg1:T170 Arg2:T169
+R54	part-of-FAIL Arg1:T170 Arg2:T168
+R55	property-of-FAIL Arg1:T161 Arg2:T164
+R56	property-of-FAIL Arg1:T161 Arg2:T162
+T172	Action 2067 2075	aumentan
+T173	Concept 2122 2127	usted
+T174	Concept 2115 2119	bebé
+T175	Concept 2080 2093	posibilidades
+T176	Concept 2058 2066	embarazo
+T177	Concept 2038 2046	diabetes
+T178	Concept-FAIL 2080 2106	posibilidades de problemas
+T179	Concept-FAIL 2097 2106	problemas
+E172	Action:T172  Subject:T177 Target-FAIL:T178 Target-FAIL2:T175 
+T180	Concept 2185 2190	usted
+T181	Concept 2196 2206	embarazada
+T182	Concept 2159 2166	seguros
+T183	Concept 2142 2154	medicamentos
+T184	Action-FAIL 2191 2195	está
+T185	Action-FAIL 2172 2177	tomar
+E184	Action-FAIL:T184   Target-FAIL:T181 Subject-FAIL:T180
+E185	Action-FAIL:T185   Target-FAIL:T183 Subject-FAIL:T180
+R57	property-of-FAIL Arg1:T182 Arg2:T183
+T186	Action-FAIL 2223 2228	dañar
+T187	Concept-FAIL 2234 2238	bebé
+E186	Action-FAIL:T186   Target-FAIL:T187 
+T188	Action-FAIL 2246 2254	incluyen
+T189	Concept-FAIL 2311 2322	suplementos
+T190	Concept-FAIL 2301 2308	hierbas
+T191	Concept-FAIL 2289 2299	con receta
+T192	Concept-FAIL 2281 2286	libre
+T193	Concept-FAIL 2275 2280	venta
+T194	Concept-FAIL 2259 2271	medicamentos
+E188	Action-FAIL:T188   Target-FAIL:T194 Target-FAIL2:T190 Target-FAIL3:T189 
+R58	property-of-FAIL Arg1:T193 Arg2:T192
+R59	property-of-FAIL Arg1:T193 Arg2:T191
+R60	property-of-FAIL Arg1:T194 Arg2:T193
+T195	Action-FAIL 2332 2337	hable
+T196	Action-FAIL 2361 2369	comenzar
+T197	Action-FAIL 2381 2386	tomar
+T198	Action-FAIL 2372 2377	dejar
+T199	Concept-FAIL 2393 2404	medicamento
+T200	Concept-FAIL 2345 2351	doctor
+E195	Action-FAIL:T195   Target-FAIL:T200 
+E196	Action-FAIL:T196   Target-FAIL:E197 
+E197	Action-FAIL:T197   Target-FAIL:T199 
+E198	Action-FAIL:T198   Target-FAIL:E197 
+T201	Concept-FAIL 2481 2485	bebé
+T202	Concept-FAIL 2448 2459	perjudicial
+T203	Action-FAIL 2440 2443	ser
+T204	Action-FAIL 2418 2422	usar
+T205	Concept-FAIL 2426 2433	remedio
+E203	Action-FAIL:T203   Target-FAIL:T202 Subject-FAIL:E204
+E204	Action-FAIL:T204   Target-FAIL:T205 
+T206	Action 2543 2549	tienen
+T207	Action 2598 2603	toman
+T208	Concept 2604 2616	medicamentos
+T209	Concept 2581 2597	acidez estomacal
+T210	Concept 2566 2578	convulsiones
+T211	Concept 2560 2564	asma
+T212	Concept 2550 2558	diabetes
+T213	Concept 2519 2538	mujeres embarazadas
+T214	Concept-FAIL 2620 2626	receta
+T215	Concept-FAIL 2581 2587	acidez
+T216	Concept-FAIL 2519 2526	mujeres
+T217	Concept-FAIL 2604 2626	medicamentos de receta
+E206	Action:T206 Target:T212 Target2:T211 Target3:T210 Target4:T209 Subject:T213  
+E207	Action:T207  Subject:E206 Target-FAIL:T208 Target-FAIL2:T217 
+R61	is-a-FAIL Arg1:T213 Arg2:T216
+R62	property-of-FAIL Arg1:T208 Arg2:T214
+R63	is-a-FAIL Arg1:T217 Arg2:T208
+T218	Action-FAIL 2643 2651	tomarlos
+T219	Concept-FAIL 2631 2639	decisión
+T220	Concept-FAIL 2682 2692	beneficios
+T221	Concept-FAIL 2672 2679	riesgos
+E218	Action-FAIL:T218
+T222	Concept-FAIL 2765 2771	juntos
+T223	Concept-FAIL 2756 2764	decisión
+T224	Action-FAIL 2745 2750	tomar
+T225	Concept-FAIL 2705 2735	proveedor de cuidados de salud
+T226	Concept-FAIL 2705 2726	proveedor de cuidados
+T227	Concept-FAIL 2705 2714	proveedor
+E224	Action-FAIL:T224   Target-FAIL:T223 Subject-FAIL:T225
+R64	is-a-FAIL Arg1:T225 Arg2:T226
+R65	is-a-FAIL Arg1:T226 Arg2:T227
+R66	property-of-FAIL Arg1:T222 Arg2:T223
+T228	Concept 2815 2824	vitaminas
+T229	Concept 2815 2834	vitaminas regulares
+T230	Action 2809 2814	tomar
+T231	Concept 2777 2796	mujeres embarazadas
+T232	Concept-FAIL 2868 2876	muy poco
+T233	Concept-FAIL 2856 2865	demasiado
+T234	Action-FAIL 2898 2907	necesitan
+T235	Concept-FAIL 2884 2893	vitaminas
+T236	Action-FAIL 2850 2855	tener
+T237	Concept-FAIL 2777 2784	mujeres
+E230	Action:T230 Target:T229 Subject:T231  
+E234	Action-FAIL:T234   Target-FAIL:T235 Target-FAIL2:T231 
+E236	Action-FAIL:T236   Target-FAIL:T235 Subject-FAIL:T231
+R67	is-a Arg1:T229 Arg2:T228
+R68	is-a-FAIL Arg1:T231 Arg2:T237
+R69	property-of-FAIL Arg1:T233 Arg2:T235
+R70	property-of-FAIL Arg1:T232 Arg2:T235
+T238	Concept-FAIL 2947 2954	mujeres
+T239	Concept-FAIL 2947 2966	mujeres embarazadas
+T240	Concept-FAIL 2917 2937	vitaminas especiales
+T241	Concept-FAIL 2917 2926	vitaminas
+T242	Action-FAIL 2909 2916	Existen
+E242	Action-FAIL:T242   Target-FAIL:T240 
+R71	is-a-FAIL Arg1:T240 Arg2:T241
+R72	is-a-FAIL Arg1:T239 Arg2:T238
+T243	Concept-FAIL 3011 3016	todos
+T244	Concept-FAIL 3021 3025	días
+T245	Action-FAIL 3035 3041	quedar
+T246	Concept-FAIL 2971 2981	importante
+T247	Action-FAIL 2968 2970	Es
+T248	Concept-FAIL 3074 3082	embarazo
+T249	Concept-FAIL 3042 3052	embarazada
+T250	Concept-FAIL 2998 3003	ácido
+T251	Concept-FAIL 2998 3010	ácido fólico
+E245	Action-FAIL:T245   Target-FAIL:T249 
+E247	Action-FAIL:T247   Target-FAIL:T246 Subject-FAIL:T251
+R73	is-a-FAIL Arg1:T251 Arg2:T250
+R74	property-of-FAIL Arg1:T243 Arg2:T244
+T252	Concept 3155 3172	columna vertebral
+T253	Concept 3142 3149	cerebro
+T254	Concept 3117 3126	problemas
+T255	Action 3108 3116	prevenir
+T256	Concept 3087 3099	ácido fólico
+T257	Concept-FAIL 3155 3162	columna
+T258	Concept-FAIL 3117 3137	problemas congénitos
+T259	Action-FAIL 3100 3105	ayuda
+T260	Concept-FAIL 3087 3092	ácido
+E255	Action:T255  Subject:T256 Target-FAIL:T258 Target-FAIL2:T254 
+E259	Action-FAIL:T259   Target-FAIL:E255 Subject-FAIL:T256
+R75	is-a-FAIL Arg1:T256 Arg2:T260
+R76	property-of-FAIL Arg1:T253 Arg2:T258
+R77	property-of-FAIL Arg1:T252 Arg2:T258
+R78	property-of-FAIL Arg1:T254 Arg2:T253
+R79	property-of-FAIL Arg1:T254 Arg2:T252
+T261	Concept-FAIL 3232 3242	importante
+T262	Action-FAIL 3181 3185	está
+T263	Action-FAIL 3225 3227	es
+T264	Concept-FAIL 3204 3213	alimentos
+T265	Concept-FAIL 3204 3224	alimentos saludables
+T266	Action-FAIL 3198 3203	comer
+T267	Concept-FAIL 3186 3196	embarazada
+E262	Action-FAIL:T262   Target-FAIL:T267 
+E263	Action-FAIL:T263   Target-FAIL:T261 Subject-FAIL:E266
+E266	Action-FAIL:T266   Target-FAIL:T265 
+R80	is-a-FAIL Arg1:T265 Arg2:T264
+T268	Concept-FAIL 3328 3336	embarazo
+T269	Concept-FAIL 3301 3313	ácido fólico
+T270	Concept-FAIL 3301 3306	ácido
+T271	Concept-FAIL 3292 3298	calcio
+T272	Concept-FAIL 3284 3290	hierro
+T273	Concept-FAIL 3273 3282	proteínas
+T274	Concept-FAIL 3254 3259	Usted
+T275	Action-FAIL 3260 3268	necesita
+E275	Action-FAIL:T275   Target-FAIL:T273 Target-FAIL2:T272 Target-FAIL3:T271 Target-FAIL4:T269 Subject-FAIL:T274
+R81	is-a-FAIL Arg1:T269 Arg2:T270
+T276	Concept-FAIL 3427 3448	alimentos que consume
+T277	Action-FAIL 3449 3452	son
+T278	Concept-FAIL 3456 3465	principal
+T279	Concept-FAIL 3466 3486	fuente de nutrientes
+T280	Concept-FAIL 3427 3436	alimentos
+T281	Concept-FAIL 3402 3407	doble
+T282	Concept-FAIL 3393 3398	comer
+T283	Action-FAIL 3378 3383	decir
+T284	Concept-FAIL 3352 3366	comer para dos
+E277	Action-FAIL:T277   Target-FAIL:T279 Subject-FAIL:T276
+E283	Action-FAIL:T283   Target-FAIL:T282 Subject-FAIL:T284
+R82	property-of-FAIL Arg1:T281 Arg2:T282
+R83	property-of-FAIL Arg1:T278 Arg2:T279
+R84	is-a-FAIL Arg1:T276 Arg2:T280
+T285	Concept-FAIL 3574 3578	hijo
+T286	Concept-FAIL 3563 3568	madre
+T287	Concept-FAIL 3542 3547	mejor
+T288	Concept-FAIL 3548 3554	opción
+T289	Action-FAIL 3533 3538	serán
+T290	Concept-FAIL 3520 3532	equilibradas
+T291	Concept-FAIL 3509 3517	sensatas
+T292	Concept-FAIL 3501 3508	Comidas
+E289	Action-FAIL:T289   Target-FAIL:T288 Subject-FAIL:T292
+R85	property-of-FAIL Arg1:T287 Arg2:T288
+R86	property-of-FAIL Arg1:T291 Arg2:T292
+R87	property-of-FAIL Arg1:T290 Arg2:T292
+T293	Action-FAIL 3666 3672	ganará
+T294	Concept-FAIL 3642 3647	mayor
+T295	Concept-FAIL 3648 3662	parte del peso
+T296	Concept-FAIL 3629 3637	embarazo
+T297	Concept-FAIL 3600 3604	peso
+T298	Action-FAIL 3591 3596	subir
+T299	Concept-FAIL 3580 3585	Usted
+E293	Action-FAIL:T293    Subject-FAIL:T295
+E298	Action-FAIL:T298   Target-FAIL:T297 Subject-FAIL:T299
+R88	property-of-FAIL Arg1:T294 Arg2:T295
+T300	Action-FAIL 3822 3831	requerían
+T301	Concept-FAIL 3847 3858	embarazadas
+T302	Concept-FAIL 3792 3797	meses
+T303	Concept-FAIL 3779 3786	últimos
+T304	Concept-FAIL 3787 3791	seis
+T305	Concept-FAIL 3801 3809	embarazo
+T306	Concept-FAIL 3737 3753	calorías diarias
+T307	Concept-FAIL 3737 3745	calorías
+T308	Concept-FAIL 3733 3736	300
+T309	Action-FAIL 3723 3732	necesitan
+T310	Concept-FAIL 3700 3707	mayoría
+T311	Concept-FAIL 3715 3722	mujeres
+E300	Action-FAIL:T300
+E309	Action-FAIL:T309   Target-FAIL:T306 Subject-FAIL:T311
+R89	is-a-FAIL Arg1:T306 Arg2:T307
+R90	property-of-FAIL Arg1:T308 Arg2:T306
+R91	property-of-FAIL Arg1:T310 Arg2:T311
+R92	property-of-FAIL Arg1:T303 Arg2:T302
+R93	property-of-FAIL Arg1:T304 Arg2:T302
+T312	Concept-FAIL 3891 3898	iguales
+T313	Action-FAIL 3887 3890	son
+T314	Concept-FAIL 3878 3886	calorías
+E313	Action-FAIL:T313   Target-FAIL:T312 Subject-FAIL:T314
+T315	Concept 4038 4045	postres
+T316	Concept 4029 4035	dulces
+T317	Concept 4018 4027	refrescos
+T318	Action 4000 4010	encuentran
+T319	Concept 3968 3983	calorías vacías
+T320	Concept 3953 3963	nutrientes
+T321	Concept 3917 3932	alimentos sanos
+T322	Concept-FAIL 3968 3976	calorías
+T323	Concept-FAIL 3943 3949	llenos
+T324	Action-FAIL 3937 3942	estén
+T325	Concept-FAIL 3917 3926	alimentos
+T326	Action-FAIL 3908 3916	necesita
+T327	Concept-FAIL 3903 3907	bebé
+T328	Action-FAIL 3943 3949	llenos
+E318	Action:T318 Target:T319   Subject-FAIL:T317 Subject-FAIL2:T316 Subject-FAIL3:T315
+E324	Action-FAIL:T324   Target-FAIL:T320 Subject-FAIL:T321
+E326	Action-FAIL:T326   Target-FAIL:T321 Subject-FAIL:T327
+E328	Action-FAIL:T328   Target-FAIL:T320 Subject-FAIL:T321
+R94	is-a-FAIL Arg1:T321 Arg2:T325
+R95	property-of-FAIL Arg1:T323 Arg2:T320
+R96	is-a-FAIL Arg1:T319 Arg2:T322
+T329	Concept 4139 4143	bebé
+T330	Concept 4125 4130	usted
+T331	Concept 4056 4068	presión alta
+T332	Concept-FAIL 4107 4116	problemas
+T333	Action-FAIL 4098 4106	causarle
+T334	Concept-FAIL 4081 4091	embarazada
+T335	Action-FAIL 4076 4080	está
+T336	Concept-FAIL 4056 4063	presión
+T337	Action-FAIL 4047 4052	Tener
+T338	Action-FAIL 4107 4116	problemas
+E333	Action-FAIL:T333   Target-FAIL:T332 Subject-FAIL:T330 Subject-FAIL2:T329
+E335	Action-FAIL:T335   Target-FAIL:T334 
+E337	Action-FAIL:T337   Target-FAIL:T331 
+E338	Action-FAIL:T338   Target-FAIL:T330 Target-FAIL2:T329 Subject-FAIL:T331
+R97	is-a-FAIL Arg1:T331 Arg2:T336
+T339	Action-FAIL 4191 4197	quedar
+T340	Concept-FAIL 4198 4208	embarazada
+T341	Concept-FAIL 4169 4176	presión
+T342	Concept-FAIL 4169 4181	presión alta
+T343	Action-FAIL 4162 4168	tenido
+T344	Concept-FAIL 4145 4150	Usted
+E339	Action-FAIL:T339   Target-FAIL:T340 Subject-FAIL:T344
+E343	Action-FAIL:T343   Target-FAIL:T342 Subject-FAIL:T344
+R98	is-a-FAIL Arg1:T342 Arg2:T341
+T345	Action-FAIL 4218 4227	padecerla
+T346	Concept-FAIL 4239 4247	embarazo
+E345	Action-FAIL:T345
+T347	Concept 4265 4289	hipertensión gestacional
+T348	Concept-FAIL 4265 4277	hipertensión
+R99	is-a-FAIL Arg1:T347 Arg2:T348
+T349	Concept-FAIL 4371 4381	nacimiento
+T350	Concept-FAIL 4371 4391	nacimiento prematuro
+T351	Concept-FAIL 4361 4368	nacidos
+T352	Concept-FAIL 4354 4368	recién nacidos
+T353	Concept-FAIL 4342 4346	peso
+T354	Concept-FAIL 4337 4346	bajo peso
+T355	Action-FAIL 4330 4336	causar
+E355	Action-FAIL:T355   Target-FAIL:T354 
+R100	is-a-FAIL Arg1:T354 Arg2:T353
+R101	is-a-FAIL Arg1:T350 Arg2:T349
+R102	is-a-FAIL Arg1:T352 Arg2:T351
+T356	Concept 4490 4495	salud
+T357	Concept 4406 4423	presión sanguínea
+T358	Concept-FAIL 4507 4511	bebé
+T359	Concept-FAIL 4470 4481	importantes
+T360	Action-FAIL 4466 4469	son
+T361	Concept-FAIL 4449 4456	cuidado
+T362	Concept-FAIL 4449 4465	cuidado prenatal
+T363	Concept-FAIL 4435 4443	embarazo
+T364	Concept-FAIL 4406 4413	presión
+T365	Action-FAIL 4470 4481	importantes
+T366	Action-FAIL 4393 4402	Controlar
+E360	Action-FAIL:T360   Target-FAIL:T359 Subject-FAIL:T357 Subject-FAIL2:T362
+E365	Action-FAIL:T365   Target-FAIL:T356 Subject-FAIL:E366
+E366	Action-FAIL:T366   Target-FAIL:T357 
+R103	is-a-FAIL Arg1:T357 Arg2:T364
+R104	is-a-FAIL Arg1:T362 Arg2:T361
+R105	property-of-FAIL Arg1:T363 Arg2:T357
+T367	Concept-FAIL 4652 4659	algunos
+T368	Concept-FAIL 4660 4672	medicamentos
+T369	Concept-FAIL 4621 4628	cambios
+T370	Concept-FAIL 4621 4649	cambios en el estilo de vida
+T371	Concept-FAIL 4593 4600	control
+T372	Concept-FAIL 4615 4619	bebé
+T373	Concept-FAIL 4593 4610	control cuidadoso
+T374	Action-FAIL 4582 4589	incluir
+T375	Concept-FAIL 4517 4559	tratamientos para la hipertensión arterial
+T376	Concept-FAIL 4517 4529	tratamientos
+T377	Concept-FAIL 4538 4559	hipertensión arterial
+T378	Concept-FAIL 4538 4550	hipertensión
+T379	Concept-FAIL 4517 4574	tratamientos para la hipertensión arterial en el embarazo
+E374	Action-FAIL:T374   Target-FAIL:T373 Target-FAIL2:T370 Target-FAIL3:T368 Subject-FAIL:T379
+R106	is-a-FAIL Arg1:T375 Arg2:T376
+R107	is-a-FAIL Arg1:T379 Arg2:T375
+R108	is-a-FAIL Arg1:T379 Arg2:T376
+R109	is-a-FAIL Arg1:T377 Arg2:T378
+R110	is-a-FAIL Arg1:T373 Arg2:T371
+R111	property-of-FAIL Arg1:T372 Arg2:T373
+R112	is-a-FAIL Arg1:T370 Arg2:T369
+R113	property-of-FAIL Arg1:T367 Arg2:T368
+T380	Action 4734 4745	desarrollar
+T381	Concept 4746 4758	preeclampsia
+T382	Concept 4694 4706	presión alta
+T383	Concept 4682 4689	mujeres
+T384	Concept-FAIL 4718 4726	embarazo
+T385	Concept-FAIL 4694 4701	presión
+E380	Action:T380 Target:T381 Subject:T383  
+R114	property-of Arg1:T382 Arg2:T383
+R115	is-a-FAIL Arg1:T382 Arg2:T385
+T386	Action-FAIL 4765 4770	causa
+T387	Concept-FAIL 4774 4805	aumento repentino de la presión
+T388	Concept-FAIL 4774 4781	aumento
+T389	Concept-FAIL 4774 4791	aumento repentino
+T390	Concept-FAIL 4798 4805	presión
+T391	Concept-FAIL 4798 4814	presión arterial
+T392	Concept-FAIL 4774 4814	aumento repentino de la presión arterial
+E386	Action-FAIL:T386   Target-FAIL:T392 
+R116	is-a-FAIL Arg1:T391 Arg2:T390
+R117	is-a-FAIL Arg1:T392 Arg2:T387
+R118	is-a-FAIL Arg1:T392 Arg2:T389
+R119	is-a-FAIL Arg1:T392 Arg2:T388
+R120	is-a-FAIL Arg1:T387 Arg2:T389
+R121	is-a-FAIL Arg1:T387 Arg2:T388
+R122	is-a-FAIL Arg1:T389 Arg2:T388
+T393	Concept 4937 4941	bebé
+T394	Concept 4919 4924	madre
+T395	Concept 4908 4912	vida
+T396	Concept 4856 4868	preeclampsia
+T397	Action-FAIL 4875 4883	implicar
+T398	Concept-FAIL 4887 4893	riesgo
+T399	Action-FAIL 4887 4893	riesgo
+E397	Action-FAIL:T397   Target-FAIL:T398 Subject-FAIL:T396
+E399	Action-FAIL:T399   Target-FAIL:T395 Subject-FAIL:T396
+R123	property-of-FAIL Arg1:T395 Arg2:T394
+R124	property-of-FAIL Arg1:T395 Arg2:T393
+T400	Concept-FAIL 4959 4979	manera de prevenirla
+T401	Action-FAIL 4949 4955	conoce
+E401	Action-FAIL:T401   Target-FAIL:T400 
+T402	Concept-FAIL 5095 5109	complicaciones
+T403	Action-FAIL 5081 5090	disminuir
+T404	Action-FAIL 5072 5078	evitar
+T405	Concept-FAIL 5047 5053	médico
+T406	Action-FAIL 5029 5039	observadas
+T407	Concept-FAIL 4984 4991	mayoría
+T408	Concept-FAIL 4999 5006	mujeres
+T409	Concept-FAIL 4999 5023	mujeres con preeclampsia
+E403	Action-FAIL:T403   Target-FAIL:T402 Subject-FAIL:E406
+E404	Action-FAIL:T404   Target-FAIL:T402 Subject-FAIL:E406
+E406	Action-FAIL:T406   Target-FAIL:T409 Subject-FAIL:T405
+R125	is-a-FAIL Arg1:T409 Arg2:T408
+R126	property-of-FAIL Arg1:T407 Arg2:T409
+T410	Action 5125 5129	cura
+T411	Concept 5134 5146	preeclampsia
+T412	Concept-FAIL 5114 5119	único
+T413	Concept-FAIL 5153 5172	nacimiento del bebé
+T414	Concept-FAIL 5168 5172	bebé
+T415	Action-FAIL 5153 5163	nacimiento
+E410	Action:T410   Target-FAIL:T411 Subject-FAIL:E415
+E415	Action-FAIL:T415   Target-FAIL:T414 
+T416	Concept 5211 5218	riesgos
+T417	Action 5194 5202	implican
+T418	Concept 5184 5193	embarazos
+T419	Concept-FAIL 5203 5210	algunos
+T420	Concept-FAIL 5174 5179	Todos
+E417	Action:T417 Target:T416 Subject:T418  
+R127	property-of-FAIL Arg1:T420 Arg2:T418
+R128	property-of-FAIL Arg1:T419 Arg2:T416
+T421	Concept-FAIL 5298 5308	embarazada
+T422	Action-FAIL 5291 5297	quedar
+T423	Concept-FAIL 5254 5262	problema
+T424	Concept-FAIL 5254 5271	problema de salud
+T425	Concept-FAIL 5232 5241	problemas
+T426	Action-FAIL 5226 5231	tener
+E422	Action-FAIL:T422   Target-FAIL:T421 
+E426	Action-FAIL:T426   Target-FAIL:T425 
+R129	is-a-FAIL Arg1:T424 Arg2:T423
+T427	Concept-FAIL 5361 5369	embarazo
+T428	Concept-FAIL 5340 5349	condición
+T429	Action-FAIL 5324 5335	desarrollar
+E429	Action-FAIL:T429   Target-FAIL:T428 
+T430	Concept-FAIL 5471 5490	abuso de sustancias
+T431	Concept-FAIL 5423 5440	problema de salud
+T432	Concept-FAIL 5423 5431	problema
+T433	Action-FAIL 5377 5383	causas
+T434	Concept-FAIL 5399 5418	embarazos múltiples
+T435	Concept-FAIL 5409 5418	múltiples
+T436	Concept-FAIL 5399 5408	embarazos
+E433	Action-FAIL:T433    Subject-FAIL:T434 Subject-FAIL2:T430
+R130	property-of-FAIL Arg1:T435 Arg2:T436
+R131	is-a-FAIL Arg1:T434 Arg2:T436
+T437	Concept-FAIL 5710 5716	riesgo
+T438	Action-FAIL 5697 5706	minimizar
+T439	Action-FAIL 5667 5676	enterarse
+T440	Concept-FAIL 5655 5661	médico
+T441	Action-FAIL 5641 5647	hablar
+T442	Concept-FAIL 5627 5634	crónica
+T443	Concept-FAIL 5616 5626	enfermedad
+E438	Action-FAIL:T438   Target-FAIL:T437 
+E439	Action-FAIL:T439
+E441	Action-FAIL:T441    Subject-FAIL:T440
+R132	property-of-FAIL Arg1:T442 Arg2:T443
+T444	Concept-FAIL 5815 5840	profesionales de la salud
+T445	Concept-FAIL 5805 5811	equipo
+T446	Action-FAIL 5848 5857	supervise
+T447	Concept-FAIL 5805 5840	equipo de profesionales de la salud
+T448	Action-FAIL 5793 5801	necesite
+T449	Concept-FAIL 5765 5773	embarazo
+T450	Action-FAIL 5754 5761	produce
+E446	Action-FAIL:T446   Target-FAIL:T449 Subject-FAIL:T447
+E448	Action-FAIL:T448   Target-FAIL:T447 
+E450	Action-FAIL:T450   Target-FAIL:T449 
+R133	is-a-FAIL Arg1:T447 Arg2:T445
+T451	Concept 6237 6257	diabetes gestacional
+T452	Concept 6260 6279	incompatibilidad Rh
+T453	Concept 6166 6174	embarazo
+T454	Concept 6121 6131	afecciones
+T455	Concept-FAIL 6277 6279	Rh
+T456	Concept-FAIL 6260 6276	incompatibilidad
+T457	Concept-FAIL 6246 6257	gestacional
+T458	Concept-FAIL 6237 6245	diabetes
+T459	Concept-FAIL 6155 6161	riesgo
+T460	Concept-FAIL 6155 6174	riesgo del embarazo
+T461	Action-FAIL 6143 6151	aumentar
+T462	Action-FAIL 6155 6161	riesgo
+E461	Action-FAIL:T461   Target-FAIL:T460 Subject-FAIL:T454
+E462	Action-FAIL:T462   Target-FAIL:T453 Subject-FAIL:T454
+R134	property-of-FAIL Arg1:T459 Arg2:T453
+R135	property-of-FAIL Arg1:T457 Arg2:T458
+R136	is-a-FAIL Arg1:T452 Arg2:T456
+R137	is-a-FAIL Arg1:T451 Arg2:T458
+R138	is-a-FAIL Arg1:T451 Arg2:T460
+R139	is-a-FAIL Arg1:T452 Arg2:T460
+R140	is-a-FAIL Arg1:T451 Arg2:T454
+R141	is-a-FAIL Arg1:T452 Arg2:T454
+T463	Action-FAIL 6335 6344	tratarlas
+T464	Action-FAIL 6321 6332	detectarlas
+T465	Concept-FAIL 6289 6305	cuidado prenatal
+T466	Concept-FAIL 6289 6296	cuidado
+E463	Action-FAIL:T463    Subject-FAIL:T465
+E464	Action-FAIL:T464    Subject-FAIL:T465
+R142	is-a-FAIL Arg1:T465 Arg2:T466
+T467	Concept 6398 6404	fatiga
+T468	Concept 6379 6395	dolor de espalda
+T469	Concept 6370 6377	náuseas
+T470	Concept 6354 6363	molestias
+T471	Concept-FAIL 6429 6437	embarazo
+T472	Concept-FAIL 6379 6384	dolor
+R143	is-a Arg1:T469 Arg2:T470
+R144	is-a Arg1:T468 Arg2:T470
+R145	is-a Arg1:T467 Arg2:T470
+R146	is-a-FAIL Arg1:T468 Arg2:T472
+R147	part-of-FAIL Arg1:T470 Arg2:T471
+T473	Concept 6554 6574	trastornos genéticos
+T474	Action 6545 6553	detectar
+T475	Concept 6505 6523	exámenes de sangre
+T476	Concept 6505 6513	exámenes
+T477	Concept 6483 6500	pruebas genéticas
+T478	Concept-FAIL 6554 6564	trastornos
+T479	Concept-FAIL 6483 6490	pruebas
+E474	Action:T474 Target:T473 Subject:T477  
+R148	is-a Arg1:T475 Arg2:T476
+R149	is-a Arg1:T477 Arg2:T475
+R150	is-a-FAIL Arg1:T477 Arg2:T479
+R151	is-a-FAIL Arg1:T473 Arg2:T478
+T480	Action 6632 6637	hacen
+T481	Concept 6638 6655	pruebas genéticas
+T482	Concept 6624 6631	médicos
+T483	Concept-FAIL 6638 6645	pruebas
+E480	Action:T480 Target:T481 Subject:T482  
+R152	is-a-FAIL Arg1:T481 Arg2:T483
+T484	Concept-FAIL 6711 6720	distintos
+T485	Concept-FAIL 6703 6710	motivos
+T486	Action-FAIL 6689 6695	tienen
+T487	Concept-FAIL 6680 6688	personas
+E486	Action-FAIL:T486   Target-FAIL:T485 Subject-FAIL:T487
+R153	property-of-FAIL Arg1:T484 Arg2:T485
+T488	Concept-FAIL 6872 6880	positiva
+T489	Concept-FAIL 6861 6867	prueba
+T490	Action-FAIL 6834 6842	tratarse
+T491	Action-FAIL 6821 6831	prevenirse
+T492	Concept-FAIL 6804 6814	enfermedad
+E490	Action-FAIL:T490   Target-FAIL:T492 
+E491	Action-FAIL:T491   Target-FAIL:T492 
+R154	property-of-FAIL Arg1:T488 Arg2:T489
+T493	Concept 7047 7069	cobertura de un seguro
+T494	Concept 7022 7044	planificación familiar
+T495	Concept 6994 7004	decisiones
+T496	Action 6988 6993	tomar
+T497	Action 6965 6971	ayudar
+T498	Concept 6950 6957	pruebas
+T499	Concept 6932 6942	resultados
+T500	Concept 6910 6921	tratamiento
+T501	Action 6903 6909	existe
+T502	Concept-FAIL 7047 7056	cobertura
+T503	Concept-FAIL 7022 7035	planificación
+T504	Concept-FAIL 6978 6985	persona
+E496	Action:T496 Target:T495   Subject-FAIL:T504
+E497	Action:T497 Target:E496 Subject:T499  
+E501	Action:T501 Target:T500   Subject-FAIL:T500
+R155	is-a Arg1:T494 Arg2:T495
+R156	is-a Arg1:T493 Arg2:T495
+R157	part-of-FAIL Arg1:T499 Arg2:T498
+R158	is-a-FAIL Arg1:T494 Arg2:T503
+R159	is-a-FAIL Arg1:T493 Arg2:T502
+R160	property-of-FAIL Arg1:T499 Arg2:T498
+T505	Concept-FAIL 7143 7154	desventajas
+T506	Concept-FAIL 7128 7136	ventajas
+T507	Concept-FAIL 7102 7113	información
+T508	Action-FAIL 7096 7101	darle
+T509	Concept-FAIL 7074 7089	asesor genético
+T510	Concept-FAIL 7074 7080	asesor
+E508	Action-FAIL:T508   Target-FAIL:T507 Subject-FAIL:T509
+R161	is-a-FAIL Arg1:T509 Arg2:T510
+R162	is-a-FAIL Arg1:T506 Arg2:T507
+R163	is-a-FAIL Arg1:T505 Arg2:T507
+T511	Concept 7233 7238	salud
+T512	Concept 7245 7249	bebé
+T513	Concept 7208 7219	información
+T514	Concept 7175 7194	exámenes prenatales
+T515	Concept-FAIL 7175 7183	exámenes
+T516	Action-FAIL 7195 7207	proporcionan
+E516	Action-FAIL:T516   Target-FAIL:T513 Subject-FAIL:T514
+R164	property-of Arg1:T511 Arg2:T512
+R165	is-a-FAIL Arg1:T514 Arg2:T515
+R166	is-a-FAIL Arg1:T514 Arg2:T513
+R167	property-of-FAIL Arg1:T513 Arg2:T511
+T517	Concept-FAIL 7349 7354	salud
+T518	Action-FAIL 7338 7345	evalúan
+T519	Concept-FAIL 7321 7329	embarazo
+T520	Concept-FAIL 7283 7293	rutinarios
+T521	Concept-FAIL 7274 7282	exámenes
+E518	Action-FAIL:T518   Target-FAIL:T517 Target-FAIL2:T519 Subject-FAIL:T521
+R168	property-of-FAIL Arg1:T520 Arg2:T521
+T522	Concept-FAIL 7640 7648	exámenes
+T523	Action-FAIL 7624 7633	sugerirle
+T524	Concept-FAIL 7588 7617	proveedor de cuidados médicos
+T525	Concept-FAIL 7588 7597	proveedor
+E523	Action-FAIL:T523   Target-FAIL:T522 Subject-FAIL:T524
+R169	is-a-FAIL Arg1:T524 Arg2:T525
+T526	Concept 7778 7782	SIDA
+T527	Concept 7759 7775	síndrome de Down
+T528	Concept 7737 7757	diabetes gestacional
+T529	Concept 7667 7672	tests
+T530	Concept-FAIL 7759 7767	síndrome
+T531	Concept-FAIL 7737 7745	diabetes
+T532	Action-FAIL 7728 7736	detectar
+T533	Concept-FAIL 7714 7722	exámenes
+T534	Concept-FAIL 7677 7684	comunes
+E532	Action-FAIL:T532   Target-FAIL:T528 Target-FAIL2:T527 Target-FAIL3:T526 Subject-FAIL:T533
+R170	is-a-FAIL Arg1:T529 Arg2:T533
+R171	is-a-FAIL Arg1:T528 Arg2:T531
+R172	is-a-FAIL Arg1:T527 Arg2:T530
+R173	property-of-FAIL Arg1:T534 Arg2:T529
+R174	is-a-FAIL Arg1:T528 Arg2:T529
+R175	is-a-FAIL Arg1:T527 Arg2:T529
+R176	is-a-FAIL Arg1:T526 Arg2:T529
+T535	Concept-FAIL 7872 7877	salud
+T536	Concept-FAIL 7859 7868	problemas
+T537	Concept-FAIL 7840 7846	signos
+T538	Concept-FAIL 7830 7837	riesgos
+R177	property-of-FAIL Arg1:T537 Arg2:T536
+R178	property-of-FAIL Arg1:T538 Arg2:T536
+R179	property-of-FAIL Arg1:T536 Arg2:T535
+T539	Concept 7976 7998	pruebas de diagnóstico
+T540	Action 7966 7975	sugerirle
+T541	Concept 7953 7959	doctor
+T542	Concept-FAIL 7976 7983	pruebas
+E540	Action:T540 Target:T539 Subject:T541  
+R180	is-a-FAIL Arg1:T539 Arg2:T542
+T543	Concept-FAIL 8041 8046	salud
+T544	Concept-FAIL 8028 8037	problemas
+T545	Action-FAIL 8018 8027	descartan
+T546	Action-FAIL 8006 8015	confirman
+E545	Action-FAIL:T545   Target-FAIL:T544 
+E546	Action-FAIL:T546   Target-FAIL:T544 
+R181	property-of-FAIL Arg1:T544 Arg2:T543
+T547	Concept 8158 8167	trimestre
+T548	Concept-FAIL 8138 8146	embarazo
+T549	Concept-FAIL 8112 8133	período de tres meses
+R182	part-of-FAIL Arg1:T547 Arg2:T548
+R183	same-as-FAIL Arg1:T549 Arg2:T547
+T550	Action 8212 8222	desarrolla
+T551	Concept 8196 8200	feto
+T552	Action 8201 8206	crece
+E550	Action:T550  Subject:T551 Target-FAIL:T551 
+E552	Action:T552  Subject:T551 Target-FAIL:T551 
+T553	Concept 8247 8266	exámenes prenatales
+T554	Concept 8228 8244	chequeos médicos
+T555	Concept-FAIL 8275 8286	importantes
+T556	Concept-FAIL 8247 8255	exámenes
+T557	Concept-FAIL 8228 8236	chequeos
+R184	is-a-FAIL Arg1:T554 Arg2:T557
+R185	is-a-FAIL Arg1:T553 Arg2:T556
+R186	property-of-FAIL Arg1:T555 Arg2:T553
+R187	property-of-FAIL Arg1:T555 Arg2:T554
+T558	Concept 8306 8321	atención médica
+T559	Action-FAIL 8298 8305	obtener
+T560	Concept-FAIL 8306 8314	atención
+T561	Action-FAIL 8360 8368	mantener
+T562	Concept-FAIL 8374 8378	bebé
+T563	Action-FAIL 8386 8395	saludable
+E559	Action-FAIL:T559   Target-FAIL:T558 
+E561	Action-FAIL:T561   Target-FAIL:E563 Subject-FAIL:T558
+E563	Action-FAIL:T563   Target-FAIL:T562 
+R188	is-a-FAIL Arg1:T558 Arg2:T560
+T564	Concept-FAIL 8463 8472	saludable
+T565	Concept-FAIL 8457 8462	dieta
+T566	Concept-FAIL 8457 8472	dieta saludable
+R189	property-of-FAIL Arg1:T564 Arg2:T565
+T567	Action 8599 8607	previene
+T568	Concept 8587 8594	cirugía
+T569	Concept 8562 8572	vasectomía
+T570	Concept-FAIL 8635 8644	embarazar
+T571	Concept-FAIL 8651 8656	mujer
+T572	Concept-FAIL 8615 8621	hombre
+T573	Action-FAIL 8635 8644	embarazar
+E567	Action:T567  Subject:T569 Target-FAIL:T570 Target-FAIL2:E573 
+E573	Action-FAIL:T573   Target-FAIL:T571 Subject-FAIL:T572
+R190	is-a Arg1:T569 Arg2:T568
+T574	Concept-FAIL 8671 8681	permanente
+T575	Concept-FAIL 8685 8708	control de la natalidad
+R191	property-of-FAIL Arg1:T574 Arg2:T575
+T576	Concept 8747 8752	tubos
+T577	Concept 8767 8774	esperma
+T578	Action 8757 8763	llevan
+T579	Action-FAIL 8736 8742	cortar
+T580	Concept-FAIL 8785 8795	testículos
+T581	Concept-FAIL 8713 8723	vasectomía
+E578	Action:T578 Target:T577 Subject:T576 Target-FAIL:T580 
+E579	Action-FAIL:T579   Target-FAIL:T576 Subject-FAIL:T581
+T582	Concept-FAIL 8875 8880	hogar
+T583	Action-FAIL 8861 8869	regresan
+T584	Concept-FAIL 8853 8860	hombres
+E583	Action-FAIL:T583   Target-FAIL:T582 Subject-FAIL:T584
+T585	Concept-FAIL 9000 9011	vida sexual
+T586	Action-FAIL 8990 8996	afecta
+T587	Concept-FAIL 8976 8986	vasectomía
+E586	Action-FAIL:T586   Target-FAIL:T585 Subject-FAIL:T587
+T588	Action 9076 9084	realizar
+T589	Concept 9085 9092	pruebas
+T590	Concept 9064 9070	doctor
+T591	Concept-FAIL 9085 9103	pruebas a su semen
+T592	Action-FAIL 9109 9119	asegurarse
+T593	Concept-FAIL 9098 9103	semen
+T594	Concept-FAIL 9132 9139	esperma
+E588	Action:T588  Subject:T590 Target-FAIL:T591 Target-FAIL2:T589 
+E592	Action-FAIL:T592    Subject-FAIL:T593
+T595	Concept 9150 9160	vasectomía
+T596	Action-FAIL 9167 9177	revertirse
+T597	Concept-FAIL 9167 9177	revertirse
+T598	Action-FAIL 9161 9166	puede
+E596	Action-FAIL:T596   Target-FAIL:T595 Target-FAIL2:T595 
+E598	Action-FAIL:T598   Target-FAIL:T597 Subject-FAIL:T595
+T599	Concept 9244 9256	enfermedades
+T600	Action 9225 9232	protege
+T601	Concept 9208 9218	vasectomía
+T602	Concept-FAIL 9244 9271	enfermedades de transmisión
+T603	Concept-FAIL 9260 9278	transmisión sexual
+T604	Concept-FAIL 9288 9296	VIH/SIDA
+E600	Action:T600  Subject:T601 Target-FAIL:T602 Target-FAIL2:T599 
+R192	is-a-FAIL Arg1:T602 Arg2:T599
+R193	is-a-FAIL Arg1:T603 Arg2:T599
+R194	same-as-FAIL Arg1:T604 Arg2:T603
+T605	Concept 9383 9417	enfermedades de transmisión sexual
+T606	Concept 9383 9395	enfermedades
+T607	Concept 9329 9339	vasectomía
+T608	Action 9318 9324	tenido
+T609	Concept 9359 9363	sexo
+T610	Action 9349 9358	practicar
+T611	Concept 9302 9309	hombres
+T612	Action-FAIL 9376 9382	evitar
+T613	Concept-FAIL 9359 9370	sexo seguro
+T614	Concept-FAIL 9399 9417	transmisión sexual
+T615	Concept-FAIL 9399 9410	transmisión
+T616	Concept-FAIL 9376 9382	evitar
+T617	Concept-FAIL 9364 9370	seguro
+T618	Action-FAIL 9340 9348	deberían
+E608	Action:T608   Target-FAIL:T607 Subject-FAIL:T611
+E610	Action:T610   Target-FAIL:T613 Target-FAIL2:T609 Subject-FAIL:T611
+E612	Action-FAIL:T612   Target-FAIL:T605 Subject-FAIL:T611
+E618	Action-FAIL:T618   Target-FAIL:E610 Subject-FAIL:T611
+R195	is-a-FAIL Arg1:T613 Arg2:T609
+R196	is-a-FAIL Arg1:T605 Arg2:T606
+R197	is-a-FAIL Arg1:T614 Arg2:T615
+R198	is-a-FAIL Arg1:T614 Arg2:T606

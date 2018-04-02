@@ -1,0 +1,1331 @@
+T0	Concept 110 119	organismo
+T1	Concept 101 107	tejido
+T2	Concept 93 99	célula
+T3	Action 51 56	crear
+T4	Concept 3 12	clonación
+T5	Concept-FAIL 78 84	exacta
+T6	Concept-FAIL 57 77	una réplica genética
+T7	Concept-FAIL 35 45	utilizados
+T8	Concept-FAIL 69 77	genética
+T9	Concept-FAIL 61 68	réplica
+T10	Concept-FAIL 26 34	procesos
+T11	Action-FAIL 13 21	describe
+E3	Action:T3   Target-FAIL:T6 Subject-FAIL:T4
+E11	Action-FAIL:T11   Target-FAIL:T10 Subject-FAIL:T4
+R0	property-of-FAIL Arg1:T5 Arg2:T6
+R1	property-of-FAIL Arg1:T8 Arg2:T9
+T12	Concept 212 216	clon
+T13	Concept 190 198	original
+T14	Concept-FAIL 161 182	constitución genética
+T15	Concept-FAIL 124 140	material copiado
+T16	Concept-FAIL 133 140	copiado
+T17	Action-FAIL 203 211	denomina
+T18	Concept-FAIL 174 182	genética
+T19	Concept-FAIL 161 173	constitución
+T20	Concept-FAIL 124 132	material
+E17	Action-FAIL:T17   Target-FAIL:T12 Subject-FAIL:T20
+R2	same-as-FAIL Arg1:T15 Arg2:T13
+R3	property-of-FAIL Arg1:T14 Arg2:T15
+R4	property-of-FAIL Arg1:T14 Arg2:T13
+R5	same-as-FAIL Arg1:T15 Arg2:T12
+R6	property-of-FAIL Arg1:T19 Arg2:T18
+R7	property-of-FAIL Arg1:T16 Arg2:T20
+T21	Concept 268 273	Dolly
+T22	Concept 221 225	clon
+T23	Concept-FAIL 245 259	oveja escocesa
+T24	Action-FAIL 237 240	fue
+T25	Concept-FAIL 251 259	escocesa
+T26	Concept-FAIL 245 250	oveja
+T27	Concept-FAIL 230 236	famoso
+E24	Action-FAIL:T24
+R8	is-a-FAIL Arg1:T21 Arg2:T23
+R9	is-a-FAIL Arg1:T21 Arg2:T22
+R10	property-of-FAIL Arg1:T26 Arg2:T25
+R11	property-of-FAIL Arg1:T22 Arg2:T27
+T28	Concept 377 382	madre
+T29	Concept 364 370	cuerpo
+T30	Action 342 352	desarrolla
+T31	Concept 334 338	bebé
+T32	Concept 302 310	problema
+T33	Concept 278 285	defecto
+T34	Concept-FAIL 278 295	defecto congénito
+T35	Action-FAIL 315 321	ocurre
+T36	Concept-FAIL 286 295	congénito
+E30	Action:T30   Target-FAIL:T31 Subject-FAIL:T31
+E35	Action-FAIL:T35    Subject-FAIL:T33
+R12	is-a-FAIL Arg1:T34 Arg2:T33
+R13	is-a-FAIL Arg1:T33 Arg2:T32
+R14	part-of-FAIL Arg1:T29 Arg2:T28
+R15	property-of-FAIL Arg1:T33 Arg2:T36
+T37	Action 422 429	ocurren
+T38	Concept 402 410	defectos
+T39	Concept-FAIL 456 461	meses
+T40	Concept-FAIL 402 421	defectos congénitos
+T41	Concept-FAIL 442 474	primeros tres meses del embarazo
+T42	Concept-FAIL 411 421	congénitos
+E37	Action:T37  Subject:T38 Target-FAIL:T41 
+R16	is-a-FAIL Arg1:T40 Arg2:T38
+R17	property-of-FAIL Arg1:T38 Arg2:T42
+T43	Action 519 523	nace
+T44	Concept 504 518	Estados Unidos
+T45	Concept 491 496	bebés
+T46	Concept-FAIL 531 548	defecto congénito
+T47	Concept-FAIL 539 548	congénito
+T48	Concept-FAIL 531 538	defecto
+E43	Action:T43  Subject:T45 Target-FAIL:T48 
+R18	property-of-FAIL Arg1:T46 Arg2:T45
+R19	property-of-FAIL Arg1:T48 Arg2:T47
+T49	Concept 611 625	funcionamiento
+T50	Concept 600 606	cuerpo
+T51	Concept 588 595	aspecto
+T52	Action 577 584	afectar
+T53	Concept-FAIL 628 633	ambos
+T54	Concept-FAIL 553 570	defecto congénito
+T55	Concept-FAIL 561 570	congénito
+T56	Concept-FAIL 553 560	defecto
+E52	Action:T52 Target:T51 Target2:T49  Target-FAIL:T53 Subject-FAIL:T54 Subject-FAIL2:T56
+R20	property-of-FAIL Arg1:T51 Arg2:T50
+R21	property-of-FAIL Arg1:T56 Arg2:T55
+R22	part-of-FAIL Arg1:T51 Arg2:T50
+T57	Concept-FAIL 762 778	fáciles de notar
+T58	Concept-FAIL 723 746	problemas estructurales
+T59	Concept-FAIL 694 718	defectos del tubo neural
+T60	Concept-FAIL 673 687	labio leporino
+T61	Concept-FAIL 643 662	defectos congénitos
+T62	Concept-FAIL 733 746	estructurales
+T63	Concept-FAIL 723 732	problemas
+T64	Action-FAIL 751 757	pueden
+T65	Action-FAIL 719 722	son
+T66	Concept-FAIL 712 718	neural
+T67	Concept-FAIL 707 711	tubo
+T68	Concept-FAIL 694 702	defectos
+T69	Concept-FAIL 679 687	leporino
+T70	Concept-FAIL 673 678	labio
+T71	Concept-FAIL 652 662	congénitos
+T72	Concept-FAIL 643 651	defectos
+E64	Action-FAIL:T64
+E65	Action-FAIL:T65   Target-FAIL:T63 Subject-FAIL:T72
+R23	is-a-FAIL Arg1:T60 Arg2:T61
+R24	is-a-FAIL Arg1:T59 Arg2:T61
+R25	is-a-FAIL Arg1:T59 Arg2:T58
+R26	is-a-FAIL Arg1:T60 Arg2:T58
+R27	property-of-FAIL Arg1:T57 Arg2:T58
+R28	property-of-FAIL Arg1:T72 Arg2:T71
+R29	property-of-FAIL Arg1:T70 Arg2:T69
+R30	property-of-FAIL Arg1:T67 Arg2:T66
+R31	part-of-FAIL Arg1:T68 Arg2:T67
+R32	property-of-FAIL Arg1:T63 Arg2:T62
+T73	Concept 848 855	pruebas
+T74	Action 843 847	usan
+T75	Concept 835 842	médicos
+T76	Concept-FAIL 848 866	pruebas especiales
+T77	Concept-FAIL 795 800	otros
+T78	Concept-FAIL 811 829	defectos cardíacos
+T79	Concept-FAIL 856 866	especiales
+T80	Concept-FAIL 820 829	cardíacos
+T81	Concept-FAIL 811 819	defectos
+T82	Action-FAIL 785 794	encontrar
+E74	Action:T74   Target-FAIL:T73 Subject-FAIL:T75
+E82	Action-FAIL:T82
+R33	is-a-FAIL Arg1:T78 Arg2:T77
+R34	is-a-FAIL Arg1:T76 Arg2:T73
+R35	property-of-FAIL Arg1:T79 Arg2:T73
+R36	property-of-FAIL Arg1:T81 Arg2:T80
+T83	Concept 914 921	severos
+T84	Concept 906 911	leves
+T85	Concept-FAIL 872 891	defectos congénitos
+T86	Action-FAIL 892 902	pueden ser
+T87	Concept-FAIL 881 891	congénitos
+T88	Concept-FAIL 872 880	defectos
+E86	Action-FAIL:T86   Target-FAIL:T84 Target-FAIL2:T83 Subject-FAIL:T88
+R37	part-of-FAIL Arg1:T84 Arg2:T85
+R38	part-of-FAIL Arg1:T83 Arg2:T85
+R39	property-of-FAIL Arg1:T88 Arg2:T87
+T89	Concept 939 944	causa
+T90	Concept-FAIL 966 985	defectos congénitos
+T91	Action-FAIL 923 935	Se desconoce
+T92	Concept-FAIL 975 985	congénitos
+T93	Concept-FAIL 966 974	defectos
+E91	Action-FAIL:T91   Target-FAIL:T93 Subject-FAIL:T89
+R40	property-of-FAIL Arg1:T93 Arg2:T92
+T94	Concept 1084 1092	embarazo
+T95	Concept 1050 1058	defectos
+T96	Action 1029 1041	diagnosticar
+T97	Concept 991 1002	proveedores
+T98	Concept-FAIL 1097 1115	pruebas prenatales
+T99	Concept-FAIL 1050 1072	defectos de nacimiento
+T100	Concept-FAIL 1006 1021	atención médica
+T101	Concept-FAIL 1105 1115	prenatales
+T102	Concept-FAIL 1097 1104	pruebas
+T103	Concept-FAIL 1062 1072	nacimiento
+T104	Action-FAIL 1022 1028	pueden
+T105	Concept-FAIL 1015 1021	médica
+T106	Concept-FAIL 1006 1014	atención
+E96	Action:T96 Target:T95 Subject:T97  
+E104	Action-FAIL:T104
+R41	property-of-FAIL Arg1:T100 Arg2:T97
+R42	is-a-FAIL Arg1:T99 Arg2:T95
+R43	property-of-FAIL Arg1:T106 Arg2:T105
+R44	part-of-FAIL Arg1:T97 Arg2:T106
+R45	property-of-FAIL Arg1:T102 Arg2:T101
+R46	property-of-FAIL Arg1:T95 Arg2:T103
+T107	Concept-FAIL 1148 1165	atención prenatal
+T108	Action-FAIL 1126 1128	es
+T109	Concept-FAIL 1129 1139	importante
+T110	Concept-FAIL 1166 1173	regular
+T111	Concept-FAIL 1157 1165	prenatal
+T112	Concept-FAIL 1148 1156	atención
+T113	Action-FAIL 1140 1147	obtener
+E108	Action-FAIL:T108   Target-FAIL:T109 
+E113	Action-FAIL:T113    Subject-FAIL:T112
+R47	property-of-FAIL Arg1:T112 Arg2:T111
+T114	Action 1210 1220	encuentran
+T115	Concept 1247 1251	bebé
+T116	Action 1238 1243	nacer
+T117	Concept-FAIL 1181 1203	defectos de nacimiento
+T118	Concept-FAIL 1227 1234	después
+T119	Concept-FAIL 1193 1203	nacimiento
+T120	Concept-FAIL 1181 1189	defectos
+E114	Action:T114   Target-FAIL:T117 Target-FAIL2:T118 Subject-FAIL:T120
+E116	Action:T116   Target-FAIL:T115 Subject-FAIL:T115
+R48	property-of-FAIL Arg1:T120 Arg2:T119
+T121	Concept 1285 1294	inmediato
+T122	Concept 1276 1281	obvio
+T123	Concept 1265 1272	defecto
+T124	Action-FAIL 1273 1275	es
+E124	Action-FAIL:T124   Target-FAIL:T122 Target-FAIL2:T121 Subject-FAIL:T123
+R49	property-of-FAIL Arg1:T122 Arg2:T123
+T125	Concept 1394 1398	vida
+T126	Action 1357 1368	descubrirlo
+T127	Concept 1319 1328	proveedor
+T128	Concept 1305 1314	ocasiones
+T129	Concept-FAIL 1332 1347	atención médica
+T130	Action-FAIL 1348 1353	puede
+T131	Concept-FAIL 1341 1347	médica
+T132	Concept-FAIL 1332 1340	atención
+E126	Action:T126  Subject:T127  
+E130	Action-FAIL:T130
+R50	property-of-FAIL Arg1:T129 Arg2:T127
+R51	property-of-FAIL Arg1:T132 Arg2:T131
+T133	Action 1434 1443	necesitan
+T134	Concept 1444 1452	cuidados
+T135	Concept-FAIL 1455 1476	atenciones especiales
+T136	Concept-FAIL 1414 1433	defectos congénitos
+T137	Concept-FAIL 1466 1476	especiales
+T138	Concept-FAIL 1455 1465	atenciones
+T139	Concept-FAIL 1423 1433	congénitos
+T140	Concept-FAIL 1414 1422	defectos
+T141	Concept-FAIL 1404 1409	bebés
+E133	Action:T133 Target:T134  Target-FAIL:T135 Target-FAIL2:T138 Subject-FAIL:T136 Subject-FAIL2:T141
+R52	property-of-FAIL Arg1:T139 Arg2:T140
+R53	property-of-FAIL Arg1:T137 Arg2:T138
+T142	Action 1502 1509	incluir
+T143	Concept 1555 1563	terapias
+T144	Concept 1530 1552	aparatos de asistencia
+T145	Concept 1519 1528	medicinas
+T146	Concept 1510 1517	cirugía
+T147	Concept 1482 1494	tratamientos
+E142	Action:T142 Target:T146 Target2:T145 Target3:T144 Target4:T143 Subject:T147  
+T148	Concept 1711 1729	glucocerebrosidasa
+T149	Concept 1696 1702	enzima
+T150	Concept 1648 1655	persona
+T151	Concept 1597 1607	enfermedad
+T152	Concept 1568 1589	enfermedad de Gaucher
+T153	Concept-FAIL 1620 1634	poco frecuente
+T154	Concept-FAIL 1568 1578	enfermedad
+T155	Concept-FAIL 1597 1619	enfermedad hereditaria
+T156	Concept-FAIL 1678 1688	suficiente
+T157	Action-FAIL 1659 1664	tiene
+T158	Concept-FAIL 1620 1624	poco
+T159	Concept-FAIL 1625 1634	frecuente
+T160	Concept-FAIL 1608 1619	hereditaria
+E157	Action-FAIL:T157   Target-FAIL:T149 Subject-FAIL:T150
+R54	is-a Arg1:T148 Arg2:T149
+R55	is-a-FAIL Arg1:T152 Arg2:T155
+R56	is-a-FAIL Arg1:T152 Arg2:T154
+R57	is-a-FAIL Arg1:T155 Arg2:T151
+R58	property-of-FAIL Arg1:T153 Arg2:T152
+R59	property-of-FAIL Arg1:T149 Arg2:T150
+R60	is-a-FAIL Arg1:T152 Arg2:T151
+R61	property-of-FAIL Arg1:T160 Arg2:T152
+R62	property-of-FAIL Arg1:T158 Arg2:T159
+R63	property-of-FAIL Arg1:T159 Arg2:T152
+R64	property-of-FAIL Arg1:T156 Arg2:T149
+T161	Concept 1836 1843	cerebro
+T162	Concept 1811 1817	huesos
+T163	Concept 1801 1809	pulmones
+T164	Concept 1793 1799	hígado
+T165	Concept 1787 1791	bazo
+T166	Action 1746 1757	acumulación
+T167	Concept 1761 1780	sustancias grasosas
+T168	Concept-FAIL 1731 1735	Esto
+E166	Action:T166   Target-FAIL:T165 Target-FAIL2:T164 Target-FAIL3:T163 Target-FAIL4:T162 Target-FAIL5:T161 Target-FAIL6:T167 Subject-FAIL:T167 Subject-FAIL2:T168
+T169	Concept 1879 1883	cura
+T170	Concept 1848 1869	enfermedad de Gaucher
+T171	Action-FAIL 1873 1878	tiene
+E171	Action-FAIL:T171   Target-FAIL:T169 Subject-FAIL:T170
+R65	part-of-FAIL Arg1:T169 Arg2:T170
+T172	Concept 2013 2019	eficaz
+T173	Concept 1943 1952	medicinas
+T174	Concept-FAIL 1966 1993	sustitución de las hormonas
+T175	Concept-FAIL 1955 1962	terapia
+T176	Concept-FAIL 1889 1912	opciones de tratamiento
+T177	Concept-FAIL 1955 1993	terapia de sustitución de las hormonas
+T178	Concept-FAIL 1901 1912	tratamiento
+R66	part-of-FAIL Arg1:T173 Arg2:T176
+R67	part-of-FAIL Arg1:T174 Arg2:T175
+R68	part-of-FAIL Arg1:T175 Arg2:T176
+R69	property-of-FAIL Arg1:T172 Arg2:T176
+R70	property-of-FAIL Arg1:T172 Arg2:T177
+R71	is-a-FAIL Arg1:T173 Arg2:T178
+R72	is-a-FAIL Arg1:T177 Arg2:T178
+T179	Concept 2056 2069	daño cerebral
+T180	Concept-FAIL 2031 2047	buen tratamiento
+T181	Concept-FAIL 2036 2047	tratamiento
+T182	Concept 2115 2132	Von Hippel-Lindau
+T183	Concept 2217 2224	quistes
+T184	Concept 2207 2214	tumores
+T185	Action 2192 2203	crecimiento
+T186	Concept 2146 2165	enfermedad genética
+T187	Concept 2134 2137	VHL
+T188	Concept-FAIL 2231 2237	cuerpo
+T189	Concept-FAIL 2166 2176	poco común
+T190	Concept-FAIL 2101 2111	enfermedad
+T191	Concept-FAIL 2101 2132	enfermedad de Von Hippel-Lindau
+T192	Action-FAIL 2181 2188	provoca
+E185	Action:T185 Target:T184 Target2:T183   Subject-FAIL:T191
+E192	Action-FAIL:T192   Target-FAIL:E185 Subject-FAIL:T182
+R73	is-a-FAIL Arg1:T191 Arg2:T190
+R74	is-a-FAIL Arg1:T191 Arg2:T186
+R75	property-of-FAIL Arg1:T189 Arg2:T191
+R76	part-of-FAIL Arg1:T183 Arg2:T188
+R77	part-of-FAIL Arg1:T184 Arg2:T188
+R78	same-as-FAIL Arg1:T187 Arg2:T182
+R79	property-of-FAIL Arg1:T182 Arg2:T190
+R80	same-as-FAIL Arg1:T182 Arg2:T187
+R81	is-a-FAIL Arg1:T182 Arg2:T186
+T193	Concept 2275 2283	benignos
+T194	Concept 2262 2272	cancerosos
+T195	Concept 2243 2250	tumores
+R82	property-of-FAIL Arg1:T194 Arg2:T195
+R83	property-of-FAIL Arg1:T193 Arg2:T195
+R84	is-a-FAIL Arg1:T194 Arg2:T195
+R85	is-a-FAIL Arg1:T193 Arg2:T195
+T196	Concept-FAIL 2371 2378	hombres
+T197	Concept-FAIL 2386 2401	aparato genital
+T198	Concept-FAIL 2349 2357	páncreas
+T199	Concept-FAIL 2337 2344	riñones
+T200	Concept-FAIL 2317 2331	médula espinal
+T201	Action-FAIL 2292 2298	crecer
+T202	Concept-FAIL 2305 2312	cerebro
+E201	Action-FAIL:T201   Target-FAIL:T202 Target-FAIL2:T200 Target-FAIL3:T199 Target-FAIL4:T198 Target-FAIL5:T197 
+R86	part-of-FAIL Arg1:T197 Arg2:T196
+T203	Concept 2474 2483	ubicación
+T204	Concept 2462 2468	tamaño
+T205	Action 2449 2457	dependen
+T206	Concept 2422 2432	enfermedad
+T207	Concept 2407 2415	síntomas
+T208	Action-FAIL 2440 2446	varían
+T209	Concept-FAIL 2422 2439	enfermedad de VHL
+T210	Concept-FAIL 2491 2498	tumores
+T211	Concept-FAIL 2436 2439	VHL
+E205	Action:T205 Target:T204 Target2:T203 Subject:T207  
+E208	Action-FAIL:T208   Target-FAIL:T207 
+R87	is-a-FAIL Arg1:T209 Arg2:T206
+R88	part-of-FAIL Arg1:T207 Arg2:T206
+R89	is-a-FAIL Arg1:T211 Arg2:T206
+R90	property-of-FAIL Arg1:T207 Arg2:T211
+R91	property-of-FAIL Arg1:T203 Arg2:T210
+R92	property-of-FAIL Arg1:T204 Arg2:T210
+T212	Concept 2637 2658	hipertensión arterial
+T213	Concept 2581 2610	debilidad en las extremidades
+T214	Concept 2573 2579	mareos
+T215	Concept 2551 2561	equilibrio
+T216	Concept 2515 2532	dolores de cabeza
+T217	Concept-FAIL 2612 2621	problemas
+T218	Concept-FAIL 2564 2571	caminar
+T219	Concept-FAIL 2534 2543	problemas
+T220	Concept-FAIL 2629 2634	vista
+T221	Action-FAIL 2612 2621	problemas
+T222	Action-FAIL 2534 2543	problemas
+E221	Action-FAIL:T221   Target-FAIL:T220 
+E222	Action-FAIL:T222   Target-FAIL:T215 
+R93	part-of-FAIL Arg1:T215 Arg2:T219
+T223	Concept-FAIL 2730 2741	importantes
+T224	Concept-FAIL 2708 2725	enfermedad de VHL
+T225	Concept-FAIL 2678 2701	tratamiento anticipados
+T226	Concept-FAIL 2663 2672	detección
+T227	Action-FAIL 2678 2689	tratamiento
+T228	Action-FAIL 2663 2672	detección
+T229	Concept-FAIL 2690 2701	anticipados
+T230	Concept-FAIL 2708 2718	enfermedad
+T231	Concept-FAIL 2722 2725	VHL
+E227	Action-FAIL:T227   Target-FAIL:T231 
+E228	Action-FAIL:T228   Target-FAIL:T231 
+R94	property-of-FAIL Arg1:T223 Arg2:T225
+R95	property-of-FAIL Arg1:T223 Arg2:T226
+R96	is-a-FAIL Arg1:T231 Arg2:T230
+T232	Concept 2802 2814	radioterapia
+T233	Concept 2773 2780	cirugía
+T234	Concept 2746 2757	tratamiento
+T235	Action-FAIL 2764 2772	implicar
+E235	Action-FAIL:T235   Target-FAIL:T233 Target-FAIL2:T232 Subject-FAIL:T234
+R97	is-a-FAIL Arg1:T233 Arg2:T234
+R98	is-a-FAIL Arg1:T232 Arg2:T234
+T236	Concept-FAIL 2905 2922	daños permanentes
+T237	Action-FAIL 2898 2904	causen
+T238	Concept-FAIL 2874 2882	pequeños
+T239	Concept-FAIL 2838 2860	crecimientos tumorales
+T240	Concept-FAIL 2819 2823	meta
+E237	Action-FAIL:T237   Target-FAIL:T236 Subject-FAIL:T239
+R99	property-of-FAIL Arg1:T238 Arg2:T239
+T241	Concept 2942 2966	ladrillos de la herencia
+T242	Concept 2928 2933	genes
+R100	is-a-FAIL Arg1:T242 Arg2:T241
+R101	same-as-FAIL Arg1:T242 Arg2:T241
+T243	Concept-FAIL 2989 2994	hijos
+T244	Concept-FAIL 2980 2986	padres
+T245	Concept 3019 3022	ADN
+T246	Concept 3000 3005	genes
+T247	Concept-FAIL 3056 3065	proteínas
+T248	Concept-FAIL 3028 3041	instrucciones
+T249	Action-FAIL 3006 3015	contienen
+E249	Action-FAIL:T249   Target-FAIL:T245 Subject-FAIL:T246
+R102	part-of-FAIL Arg1:T245 Arg2:T246
+T250	Concept-FAIL 3140 3147	células
+T251	Action-FAIL 3085 3093	realizan
+T252	Concept-FAIL 3116 3125	funciones
+E251	Action-FAIL:T251   Target-FAIL:T252 
+T253	Concept 3270 3293	tareas de mantenimiento
+T254	Action 3246 3254	realizan
+T255	Concept 3236 3243	toxinas
+T256	Action 3224 3235	descomponen
+T257	Concept 3211 3222	estructuras
+T258	Action 3200 3210	construyen
+T259	Concept 3170 3179	moléculas
+T260	Action 3163 3169	mueven
+T261	Concept 3153 3162	proteínas
+T262	Concept-FAIL 3270 3276	tareas
+E254	Action:T254  Subject:T261 Target-FAIL:T262 Target-FAIL2:T253 
+E256	Action:T256 Target:T255 Subject:T261  
+E258	Action:T258 Target:T257 Subject:T261  
+E260	Action:T260 Target:T259 Subject:T261  
+R103	is-a-FAIL Arg1:T253 Arg2:T262
+T263	Concept-FAIL 3354 3366	varios genes
+T264	Concept-FAIL 3345 3348	gen
+T265	Action-FAIL 3332 3338	cambio
+T266	Concept-FAIL 3319 3327	mutación
+T267	Action-FAIL 3307 3314	produce
+E265	Action-FAIL:T265   Target-FAIL:T264 Target-FAIL2:T263 
+E267	Action-FAIL:T267   Target-FAIL:T266 
+T268	Concept 3455 3464	proteínas
+T269	Concept 3425 3434	proteínas
+T270	Action 3412 3420	fabricar
+T271	Concept 3393 3406	instrucciones
+T272	Action 3382 3388	cambia
+T273	Concept 3373 3381	mutación
+T274	Concept-FAIL 3494 3500	falten
+T275	Concept-FAIL 3478 3491	correctamente
+T276	Action-FAIL 3468 3477	funcionen
+T277	Action-FAIL 3494 3500	falten
+E270	Action:T270 Target:T269 Subject:T271  
+E272	Action:T272 Target:T271 Subject:T273  
+E276	Action-FAIL:T276   Target-FAIL:T268 Subject-FAIL:E272
+E277	Action-FAIL:T277   Target-FAIL:T268 Subject-FAIL:E272
+R104	same-as-FAIL Arg1:T269 Arg2:T268
+T278	Concept-FAIL 3524 3543	enfermedad genética
+T279	Concept 3569 3586	mutación genética
+T280	Concept-FAIL 3605 3611	padres
+T281	Action-FAIL 3557 3564	heredar
+E281	Action-FAIL:T281   Target-FAIL:T279 
+T282	Concept 3728 3750	enfermedades genéticas
+T283	Action 3712 3723	identificar
+T284	Concept 3697 3704	tejidos
+T285	Concept 3661 3678	pruebas genéticas
+T286	Concept-FAIL 3661 3688	pruebas genéticas de sangre
+T287	Concept-FAIL 3661 3668	pruebas
+T288	Concept-FAIL 3682 3688	sangre
+E283	Action:T283 Target:T282   Subject-FAIL:T287 Subject-FAIL2:T284 Subject-FAIL3:T285
+R105	is-a-FAIL Arg1:T286 Arg2:T285
+R106	is-a-FAIL Arg1:T285 Arg2:T287
+R107	property-of-FAIL Arg1:T288 Arg2:T285
+R108	property-of-FAIL Arg1:T284 Arg2:T285
+T289	Action 3787 3793	afecta
+T290	Concept 3813 3821	personas
+T291	Concept 3756 3771	enfermedad rara
+T292	Concept 3756 3766	enfermedad
+T293	Concept-FAIL 3829 3843	Estados Unidos
+E289	Action:T289   Target-FAIL:T290 Subject-FAIL:T292 Subject-FAIL2:T291
+R109	is-a Arg1:T291 Arg2:T292
+T294	Action-FAIL 3992 3998	tratar
+T295	Concept-FAIL 4002 4017	enfermedad rara
+T296	Action-FAIL 3952 3961	encontrar
+T297	Concept-FAIL 3965 3977	especialista
+E294	Action-FAIL:T294
+E296	Action-FAIL:T296   Target-FAIL:T297 
+T298	Action-FAIL 4131 4140	encontrar
+T299	Concept-FAIL 4141 4144	uno
+T300	Action-FAIL 4120 4128	ayudarle
+T301	Concept-FAIL 4092 4112	clínicas de genética
+T302	Concept-FAIL 4053 4089	organizaciones de enfermedades raras
+T303	Concept-FAIL 4041 4051	enfermedad
+T304	Concept-FAIL 4019 4034	Grupos de apoyo
+E298	Action-FAIL:T298
+E300	Action-FAIL:T300   Target-FAIL:E298 Subject-FAIL:T304 Subject-FAIL2:T302 Subject-FAIL3:T301
+T305	Concept 4299 4306	varones
+T306	Concept 4246 4268	enfermedad hereditaria
+T307	Concept 4149 4198	deficiencia de glucosa -6- fosfato-deshidrogenasa
+T308	Concept-FAIL 4246 4256	enfermedad
+T309	Concept-FAIL 4149 4160	deficiencia
+T310	Concept-FAIL 4231 4237	G-6-PD
+T311	Concept-FAIL 4164 4198	glucosa -6- fosfato-deshidrogenasa
+T312	Action-FAIL 4273 4278	se da
+T313	Concept-FAIL 4216 4237	deficiencia de G-6-PD
+E312	Action-FAIL:T312   Target-FAIL:T305 Subject-FAIL:T307
+R110	same-as-FAIL Arg1:T310 Arg2:T311
+R111	is-a-FAIL Arg1:T307 Arg2:T309
+R112	is-a-FAIL Arg1:T306 Arg2:T308
+R113	property-of-FAIL Arg1:T309 Arg2:T305
+R114	is-a-FAIL Arg1:T307 Arg2:T308
+R115	same-as-FAIL Arg1:T307 Arg2:T313
+R116	is-a-FAIL Arg1:T307 Arg2:T306
+T314	Action 4448 4454	llevan
+T315	Concept 4476 4484	pulmones
+T316	Concept 4458 4465	oxígeno
+T317	Action 4390 4396	afecta
+T318	Concept 4416 4430	glóbulos rojos
+T319	Concept 4368 4389	deficiencia de G-6-PD
+T320	Concept-FAIL 4491 4509	tejidos del cuerpo
+T321	Concept-FAIL 4368 4379	deficiencia
+T322	Concept-FAIL 4503 4509	cuerpo
+T323	Concept-FAIL 4491 4498	tejidos
+E314	Action:T314 Target:T316 Subject:T318  
+E317	Action:T317 Target:T318 Subject:T319  
+R117	is-a-FAIL Arg1:T319 Arg2:T321
+R118	property-of-FAIL Arg1:T316 Arg2:T315
+R119	part-of-FAIL Arg1:T316 Arg2:T320
+R120	part-of-FAIL Arg1:T323 Arg2:T322
+T324	Concept 4553 4570	anemia hemolítica
+T325	Concept 4514 4529	problema médico
+T326	Action-FAIL 4540 4546	causar
+E326	Action-FAIL:T326   Target-FAIL:T324 Subject-FAIL:T325
+R121	is-a-FAIL Arg1:T324 Arg2:T325
+T327	Action 4651 4661	reponerlos
+T328	Concept 4638 4644	cuerpo
+T329	Action 4614 4624	destruidos
+T330	Concept 4595 4609	glóbulos rojos
+E327	Action:T327 Target:T330 Subject:T328  
+E329	Action:T329 Target:T330   
+T331	Concept-FAIL 4919 4925	estrés
+T332	Concept-FAIL 4897 4904	virales
+T333	Concept-FAIL 4883 4894	bacterianas
+T334	Concept-FAIL 4871 4882	infecciones
+T335	Concept-FAIL 4844 4856	medicamentos
+T336	Concept-FAIL 4832 4841	alimentos
+T337	Action-FAIL 4781 4789	combinan
+T338	Concept-FAIL 4802 4810	químicos
+T339	Concept-FAIL 4763 4777	glóbulos rojos
+E337	Action-FAIL:T337   Target-FAIL:T338 Subject-FAIL:T339
+R122	part-of-FAIL Arg1:T338 Arg2:T336
+R123	part-of-FAIL Arg1:T338 Arg2:T335
+R124	property-of-FAIL Arg1:T333 Arg2:T334
+R125	property-of-FAIL Arg1:T332 Arg2:T334
+T340	Concept 4969 4979	enfermedad
+T341	Action 4953 4965	diagnosticar
+T342	Concept 4930 4946	examen de sangre
+E341	Action:T341 Target:T340 Subject:T342  
+T343	Concept 5141 5164	transfusiones de sangre
+T344	Action 5052 5062	suspensión
+T345	Concept 5114 5128	glóbulos rojos
+T346	Concept 5076 5085	sustancia
+T347	Concept 5038 5047	infección
+T348	Action 5025 5034	controlar
+T349	Concept 5007 5019	medicamentos
+T350	Concept 4985 4997	tratamientos
+T351	Action-FAIL 5090 5095	cause
+T352	Concept-FAIL 5096 5105	problemas
+T353	Action-FAIL 5096 5105	problemas
+E344	Action:T344 Target:T346   
+E348	Action:T348 Target:T347 Subject:T349  
+E351	Action-FAIL:T351   Target-FAIL:T352 Subject-FAIL:T346
+E353	Action-FAIL:T353   Target-FAIL:T345 Subject-FAIL:T346
+R126	part-of-FAIL Arg1:T349 Arg2:T350
+R127	part-of-FAIL Arg1:T345 Arg2:T352
+R128	is-a-FAIL Arg1:T349 Arg2:T350
+R129	is-a-FAIL Arg1:T346 Arg2:T350
+R130	is-a-FAIL Arg1:T343 Arg2:T350
+T354	Action 5236 5245	contienen
+T355	Concept 5278 5287	proteínas
+T356	Action 5269 5277	producir
+T357	Concept 5250 5263	instrucciones
+T358	Concept-FAIL 5228 5233	hijos
+T359	Concept-FAIL 5219 5225	padres
+E354	Action:T354 Target:T357   
+E356	Action:T356 Target:T355 Subject:T357  
+T360	Concept-FAIL 5352 5365	correctamente
+T361	Concept-FAIL 5328 5337	correctas
+T362	Concept-FAIL 5318 5327	proteínas
+T363	Action-FAIL 5305 5313	producen
+T364	Concept-FAIL 5296 5301	genes
+E363	Action-FAIL:T363   Target-FAIL:T362 Subject-FAIL:T364
+R131	property-of-FAIL Arg1:T361 Arg2:T362
+T365	Concept 5503 5515	enfermedades
+T366	Action 5494 5502	prevenir
+T367	Action 5485 5491	tratar
+T368	Concept 5474 5479	genes
+T369	Action 5462 5469	utiliza
+T370	Concept 5413 5429	terapia genética
+T371	Concept-FAIL 5445 5457	experimental
+T372	Concept-FAIL 5437 5444	técnica
+T373	Concept-FAIL 5413 5420	terapia
+T374	Concept-FAIL 5437 5457	técnica experimental
+E366	Action:T366 Target:T365 Subject:T370  
+E367	Action:T367 Target:T365 Subject:T370  
+E369	Action:T369 Target:T368 Subject:T370  
+R132	is-a-FAIL Arg1:T370 Arg2:T373
+R133	property-of-FAIL Arg1:T371 Arg2:T372
+R134	is-a-FAIL Arg1:T370 Arg2:T372
+R135	is-a-FAIL Arg1:T370 Arg2:T374
+T375	Concept 5615 5622	anormal
+T376	Action 5599 5608	sustituir
+T377	Action 5567 5576	inserción
+T378	Concept 5539 5555	terapia genética
+T379	Concept-FAIL 5587 5593	normal
+T380	Concept-FAIL 5583 5586	gen
+T381	Action-FAIL 5556 5563	incluye
+T382	Concept-FAIL 5539 5546	terapia
+T383	Concept-FAIL 5583 5593	gen normal
+E376	Action:T376   Target-FAIL:T380 Target-FAIL2:T375 Subject-FAIL:T378 Subject-FAIL2:T383
+E377	Action:T377   Target-FAIL:T380 Target-FAIL2:T383 Subject-FAIL:T378
+E381	Action-FAIL:T381   Target-FAIL:E377 Subject-FAIL:T378
+R136	property-of-FAIL Arg1:T379 Arg2:T380
+R137	property-of-FAIL Arg1:T375 Arg2:T380
+T384	Concept 5687 5699	experimental
+T385	Concept 5662 5678	terapia genética
+T386	Concept-FAIL 5662 5669	terapia
+T387	Concept-FAIL 5644 5653	esperanza
+R138	property-of Arg1:T384 Arg2:T385
+R139	is-a-FAIL Arg1:T385 Arg2:T386
+R140	property-of-FAIL Arg1:T387 Arg2:T385
+T388	Concept-FAIL 5786 5794	cercanos
+T389	Concept-FAIL 5776 5785	parientes
+T390	Concept-FAIL 5758 5763	salud
+T391	Concept-FAIL 5733 5744	información
+T392	Action-FAIL 5722 5729	incluye
+T393	Concept-FAIL 5704 5721	historia familiar
+T394	Concept-FAIL 5704 5712	historia
+E392	Action-FAIL:T392   Target-FAIL:T391 Subject-FAIL:T393
+R141	is-a-FAIL Arg1:T393 Arg2:T394
+R142	part-of-FAIL Arg1:T391 Arg2:T390
+R143	property-of-FAIL Arg1:T388 Arg2:T389
+T395	Concept 5927 5933	cáncer
+T396	Concept 5916 5924	diabetes
+T397	Concept 5898 5914	derrame cerebral
+T398	Concept 5874 5896	insuficiencia cardiaca
+T399	Concept 5856 5865	problemas
+T400	Concept 5799 5816	historia familiar
+T401	Concept-FAIL 5840 5850	importante
+T402	Concept-FAIL 5823 5839	factor de riesgo
+T403	Concept-FAIL 5799 5807	historia
+T404	Action-FAIL 5833 5839	riesgo
+E404	Action-FAIL:T404   Target-FAIL:T399 Subject-FAIL:T400
+R144	is-a Arg1:T398 Arg2:T399
+R145	is-a Arg1:T397 Arg2:T399
+R146	is-a Arg1:T396 Arg2:T399
+R147	is-a Arg1:T395 Arg2:T399
+R148	is-a-FAIL Arg1:T398 Arg2:T402
+R149	is-a-FAIL Arg1:T397 Arg2:T402
+R150	is-a-FAIL Arg1:T395 Arg2:T402
+R151	is-a-FAIL Arg1:T396 Arg2:T402
+R152	property-of-FAIL Arg1:T401 Arg2:T402
+R153	is-a-FAIL Arg1:T400 Arg2:T402
+T405	Concept-FAIL 6019 6029	enfermedad
+T406	Action-FAIL 6006 6014	adquirir
+T407	Concept-FAIL 5989 6002	posibilidades
+T408	Action-FAIL 5977 5984	aumente
+T409	Concept-FAIL 5938 5954	factor de riesgo
+E406	Action-FAIL:T406   Target-FAIL:T405 
+E408	Action-FAIL:T408   Target-FAIL:T407 Subject-FAIL:T409
+T410	Action-FAIL 6395 6406	disminuirlo
+T411	Concept-FAIL 6364 6370	riesgo
+T412	Action-FAIL 6446 6458	sometiéndose
+T413	Concept-FAIL 6465 6473	exámenes
+T414	Concept-FAIL 6439 6443	sano
+T415	Concept-FAIL 6420 6434	estilo de vida
+T416	Concept-FAIL 6420 6426	estilo
+T417	Action-FAIL 6407 6416	siguiendo
+E410	Action-FAIL:T410   Target-FAIL:T411 
+E412	Action-FAIL:T412   Target-FAIL:T413 
+E417	Action-FAIL:T417   Target-FAIL:T415 
+R154	is-a-FAIL Arg1:T415 Arg2:T416
+R155	property-of-FAIL Arg1:T414 Arg2:T415
+T418	Concept-FAIL 6585 6605	información de salud
+T419	Concept-FAIL 6585 6596	información
+T420	Action-FAIL 6572 6581	agréguele
+T421	Concept-FAIL 6552 6569	árbol genealógico
+T422	Concept-FAIL 6552 6557	árbol
+E420	Action-FAIL:T420   Target-FAIL:T418 Subject-FAIL:T421
+R156	is-a-FAIL Arg1:T421 Arg2:T422
+R157	is-a-FAIL Arg1:T418 Arg2:T419
+T423	Concept-FAIL 6667 6685	actas de defunción
+T424	Concept-FAIL 6667 6672	actas
+T425	Concept-FAIL 6643 6660	registros médicos
+T426	Concept-FAIL 6643 6652	registros
+R158	is-a-FAIL Arg1:T425 Arg2:T426
+R159	is-a-FAIL Arg1:T423 Arg2:T424
+T427	Concept 6779 6791	cromosoma 21
+T428	Action 6745 6750	nacen
+T429	Concept 6732 6740	personas
+T430	Concept 6714 6723	condición
+T431	Concept 6690 6706	síndrome de Down
+T432	Concept-FAIL 6779 6788	cromosoma
+T433	Concept-FAIL 6765 6774	adicional
+T434	Concept-FAIL 6759 6764	copia
+T435	Concept-FAIL 6690 6698	síndrome
+E428	Action:T428   Target-FAIL:T429 Subject-FAIL:T429
+R160	is-a Arg1:T431 Arg2:T430
+R161	is-a-FAIL Arg1:T431 Arg2:T435
+R162	property-of-FAIL Arg1:T431 Arg2:T429
+R163	is-a-FAIL Arg1:T427 Arg2:T432
+R164	property-of-FAIL Arg1:T433 Arg2:T434
+T436	Concept 6872 6895	discapacidades mentales
+T437	Concept 6837 6854	problemas físicos
+T438	Concept 6797 6805	personas
+T439	Concept-FAIL 6872 6886	discapacidades
+T440	Concept-FAIL 6837 6846	problemas
+T441	Action-FAIL 6831 6836	tener
+T442	Concept-FAIL 6797 6823	personas con este síndrome
+T443	Concept-FAIL 6815 6823	síndrome
+E441	Action-FAIL:T441   Target-FAIL:T437 Target-FAIL2:T436 Subject-FAIL:T442 Subject-FAIL2:T442
+R165	is-a-FAIL Arg1:T442 Arg2:T438
+R166	is-a-FAIL Arg1:T437 Arg2:T440
+R167	is-a-FAIL Arg1:T436 Arg2:T439
+T444	Concept-FAIL 6919 6928	condición
+T445	Concept-FAIL 6932 6941	diferente
+T446	Concept-FAIL 6902 6909	persona
+R168	property-of-FAIL Arg1:T445 Arg2:T446
+R169	part-of-FAIL Arg1:T444 Arg2:T446
+T447	Concept-FAIL 6947 6973	personas con este síndrome
+T448	Concept-FAIL 6947 6955	personas
+T449	Concept-FAIL 7001 7019	problemas de salud
+T450	Concept-FAIL 7001 7010	problemas
+T451	Action-FAIL 6989 6994	tener
+T452	Concept-FAIL 6965 6973	síndrome
+E451	Action-FAIL:T451   Target-FAIL:T449 Subject-FAIL:T447
+R170	is-a-FAIL Arg1:T449 Arg2:T450
+R171	is-a-FAIL Arg1:T447 Arg2:T448
+T453	Concept 7038 7059	problemas del corazón
+T454	Concept-FAIL 7038 7047	problemas
+T455	Action-FAIL 7028 7033	nacer
+E455	Action-FAIL:T455   Target-FAIL:T453 
+R172	is-a-FAIL Arg1:T453 Arg2:T454
+T456	Concept 7153 7162	esqueleto
+T457	Concept 7139 7147	tiroides
+T458	Concept 7130 7134	ojos
+T459	Concept 7114 7124	intestinos
+T460	Concept-FAIL 7086 7108	problemas en los oídos
+T461	Concept-FAIL 7086 7095	problemas
+T462	Action-FAIL 7076 7085	presentar
+T463	Concept-FAIL 7103 7108	oídos
+T464	Action-FAIL 7086 7095	problemas
+E462	Action-FAIL:T462    Subject-FAIL:T461
+E464	Action-FAIL:T464   Target-FAIL:T463 Target-FAIL2:T459 Target-FAIL3:T458 Target-FAIL4:T457 Target-FAIL5:T456 
+R173	is-a-FAIL Arg1:T460 Arg2:T461
+T465	Concept 7247 7252	madre
+T466	Concept 7236 7240	edad
+T467	Action 7220 7228	aumentan
+T468	Concept 7203 7219	síndrome de Down
+T469	Concept-FAIL 7236 7252	edad de la madre
+T470	Concept-FAIL 7168 7181	posibilidades
+T471	Concept-FAIL 7194 7219	bebé con síndrome de Down
+T472	Concept-FAIL 7203 7211	síndrome
+T473	Concept-FAIL 7194 7198	bebé
+T474	Action-FAIL 7185 7190	tener
+E467	Action:T467   Target-FAIL:T470 Target-FAIL2:T468 Subject-FAIL:T469 Subject-FAIL2:T466
+E474	Action-FAIL:T474   Target-FAIL:T468 
+R174	property-of Arg1:T466 Arg2:T465
+R175	is-a-FAIL Arg1:T468 Arg2:T472
+R176	is-a-FAIL Arg1:T471 Arg2:T473
+R177	is-a-FAIL Arg1:T469 Arg2:T466
+T475	Concept 7283 7287	cura
+T476	Action 7277 7282	tiene
+T477	Concept 7257 7273	síndrome de Down
+T478	Concept-FAIL 7257 7265	síndrome
+E476	Action:T476 Target:T475 Subject:T477  
+R178	is-a-FAIL Arg1:T477 Arg2:T478
+T479	Concept 7333 7344	habilidades
+T480	Action 7317 7324	mejorar
+T481	Concept-FAIL 7302 7310	temprana
+T482	Concept-FAIL 7293 7301	atención
+T483	Concept-FAIL 7293 7310	atención temprana
+E480	Action:T480 Target:T479   Subject-FAIL:T482 Subject-FAIL2:T483
+R179	is-a-FAIL Arg1:T481 Arg2:T482
+T484	Concept 7351 7359	atención
+T485	Concept 7420 7431	educacional
+T486	Concept 7404 7415	ocupacional
+T487	Concept 7396 7402	física
+T488	Concept 7374 7381	terapia
+T489	Concept-FAIL 7386 7394	lenguaje
+T490	Action-FAIL 7366 7373	incluir
+T491	Concept-FAIL 7374 7394	terapia del lenguaje
+E490	Action-FAIL:T490   Target-FAIL:T488 Subject-FAIL:T484
+R180	property-of-FAIL Arg1:T485 Arg2:T488
+R181	property-of-FAIL Arg1:T486 Arg2:T488
+R182	property-of-FAIL Arg1:T487 Arg2:T488
+R183	property-of-FAIL Arg1:T489 Arg2:T488
+R184	is-a-FAIL Arg1:T491 Arg2:T488
+R185	is-a-FAIL Arg1:T487 Arg2:T488
+R186	is-a-FAIL Arg1:T486 Arg2:T488
+R187	is-a-FAIL Arg1:T485 Arg2:T488
+R188	is-a-FAIL Arg1:T488 Arg2:T484
+T492	Concept-FAIL 7462 7470	personas
+T493	Concept-FAIL 7462 7491	personas con síndrome de Down
+T494	Concept-FAIL 7522 7533	productivas
+T495	Concept-FAIL 7512 7519	felices
+T496	Concept-FAIL 7506 7511	vidas
+T497	Action-FAIL 7499 7505	llevar
+T498	Concept-FAIL 7475 7491	síndrome de Down
+T499	Concept-FAIL 7475 7483	síndrome
+E497	Action-FAIL:T497   Target-FAIL:T496 Subject-FAIL:T493
+R189	is-a-FAIL Arg1:T498 Arg2:T499
+R190	property-of-FAIL Arg1:T495 Arg2:T496
+R191	property-of-FAIL Arg1:T495 Arg2:T496
+R192	is-a-FAIL Arg1:T493 Arg2:T492
+T500	Concept 7630 7639	adicional
+T501	Concept 7618 7629	cromosoma X
+T502	Concept 7538 7561	síndrome de Klinefelter
+T503	Concept-FAIL 7661 7668	células
+T504	Concept-FAIL 7618 7627	cromosoma
+T505	Concept-FAIL 7538 7546	síndrome
+T506	Action-FAIL 7579 7585	ocurre
+T507	Action-FAIL 7608 7614	tienen
+T508	Concept-FAIL 7596 7603	hombres
+T509	Concept-FAIL 7568 7574	cuadro
+E506	Action-FAIL:T506   Target-FAIL:T502 Subject-FAIL:E507
+E507	Action-FAIL:T507   Target-FAIL:T501 Subject-FAIL:T508
+R193	property-of Arg1:T500 Arg2:T501
+R194	is-a-FAIL Arg1:T502 Arg2:T505
+R195	is-a-FAIL Arg1:T501 Arg2:T504
+R196	part-of-FAIL Arg1:T501 Arg2:T503
+R197	is-a-FAIL Arg1:T502 Arg2:T509
+T510	Concept 7752 7760	lenguaje
+T511	Concept 7739 7745	social
+T512	Concept 7731 7737	físico
+T513	Action 7688 7695	afectar
+T514	Concept 7673 7681	síndrome
+T515	Concept-FAIL 7720 7730	desarrollo
+T516	Concept-FAIL 7709 7730	etapas del desarrollo
+E513	Action:T513  Subject:T514 Target-FAIL:T515 Target-FAIL2:T516 
+R198	property-of-FAIL Arg1:T510 Arg2:T515
+R199	property-of-FAIL Arg1:T512 Arg2:T515
+R200	property-of-FAIL Arg1:T511 Arg2:T515
+R201	property-of-FAIL Arg1:T512 Arg2:T516
+R202	property-of-FAIL Arg1:T511 Arg2:T516
+R203	property-of-FAIL Arg1:T510 Arg2:T516
+T517	Concept 7765 7772	síntoma
+T518	Concept 7789 7801	infertilidad
+T519	Concept-FAIL 7777 7782	común
+R204	is-a Arg1:T518 Arg2:T517
+R205	property-of-FAIL Arg1:T519 Arg2:T517
+T520	Concept-FAIL 7977 7985	corporal
+T521	Action-FAIL 7950 7955	tener
+T522	Action-FAIL 7988 7991	ser
+T523	Concept-FAIL 7998 8008	musculosos
+T524	Concept-FAIL 7968 7974	facial
+T525	Concept-FAIL 7962 7967	vello
+T526	Concept-FAIL 7919 7942	síndrome de Klinefelter
+T527	Concept-FAIL 7919 7927	síndrome
+T528	Concept-FAIL 7850 7858	cantidad
+T529	Concept-FAIL 7862 7874	testosterona
+T530	Action-FAIL 7832 7840	producen
+E521	Action-FAIL:T521   Target-FAIL:T525 
+E522	Action-FAIL:T522   Target-FAIL:T523 
+E530	Action-FAIL:T530   Target-FAIL:T529 
+R206	property-of-FAIL Arg1:T528 Arg2:T529
+R207	is-a-FAIL Arg1:T526 Arg2:T527
+R208	property-of-FAIL Arg1:T524 Arg2:T525
+R209	property-of-FAIL Arg1:T520 Arg2:T525
+T531	Concept-FAIL 8080 8090	expresarse
+T532	Concept-FAIL 8069 8077	lenguaje
+T533	Concept-FAIL 8043 8055	dificultades
+T534	Action-FAIL 8033 8042	presentar
+E534	Action-FAIL:T534
+R210	property-of-FAIL Arg1:T532 Arg2:T533
+R211	property-of-FAIL Arg1:T531 Arg2:T533
+T535	Concept-FAIL 8129 8152	problemas de adaptación
+T536	Concept-FAIL 8129 8138	problemas
+T537	Action-FAIL 8122 8128	tengan
+T538	Concept-FAIL 8112 8119	tímidos
+T539	Action-FAIL 8107 8111	sean
+E537	Action-FAIL:T537   Target-FAIL:T535 
+E539	Action-FAIL:T539   Target-FAIL:T538 
+R212	is-a-FAIL Arg1:T535 Arg2:T536
+T540	Concept-FAIL 8334 8342	normales
+T541	Concept-FAIL 8314 8333	relaciones sociales
+T542	Concept-FAIL 8314 8324	relaciones
+T543	Concept-FAIL 8304 8311	exitosa
+T544	Concept-FAIL 8296 8303	carrera
+T545	Concept-FAIL 8284 8290	normal
+T546	Concept-FAIL 8272 8283	vida sexual
+T547	Concept-FAIL 8272 8276	vida
+T548	Action-FAIL 8262 8267	tiene
+T549	Action-FAIL 8254 8259	crece
+T550	Concept-FAIL 8248 8253	niños
+T551	Action-FAIL 8217 8228	tratamiento
+E548	Action-FAIL:T548   Target-FAIL:T546 Target-FAIL2:T544 Target-FAIL3:T541 Subject-FAIL:T550 Subject-FAIL2:T550 Subject-FAIL3:T550
+E549	Action-FAIL:T549    Subject-FAIL:T550
+E551	Action-FAIL:T551   Target-FAIL:T550 
+R213	part-of-FAIL Arg1:T546 Arg2:T547
+R214	property-of-FAIL Arg1:T545 Arg2:T546
+R215	is-a-FAIL Arg1:T541 Arg2:T542
+R216	property-of-FAIL Arg1:T540 Arg2:T541
+R217	property-of-FAIL Arg1:T543 Arg2:T544
+T552	Concept 8396 8412	tejido conectivo
+T553	Action 8386 8392	afecta
+T554	Concept 8372 8381	trastorno
+T555	Concept 8347 8365	síndrome de Marfan
+T556	Concept-FAIL 8396 8402	tejido
+T557	Concept-FAIL 8347 8355	síndrome
+E553	Action:T553 Target:T552 Subject:T555  
+R218	is-a Arg1:T555 Arg2:T554
+R219	is-a-FAIL Arg1:T555 Arg2:T557
+T558	Concept 8538 8545	órganos
+T559	Concept 8513 8529	vasos sanguíneos
+T560	Concept 8501 8507	huesos
+T561	Concept 8491 8495	piel
+T562	Action 8480 8485	apoyo
+T563	Concept 8455 8464	proteínas
+T564	Concept 8417 8433	tejido conectivo
+T565	Concept-FAIL 8513 8518	vasos
+T566	Concept-FAIL 8417 8423	tejido
+E562	Action:T562 Target:T561 Target2:T560 Target3:T559  Target-FAIL:T558 Subject-FAIL:T564 Subject-FAIL2:T563
+R220	part-of Arg1:T563 Arg2:T564
+R221	is-a Arg1:T559 Arg2:T558
+R222	is-a Arg1:T560 Arg2:T558
+R223	is-a Arg1:T561 Arg2:T558
+T567	Concept 8576 8585	fibrilina
+T568	Concept 8560 8569	proteínas
+R224	is-a Arg1:T567 Arg2:T568
+T569	Concept 8590 8608	síndrome de Marfan
+T570	Concept 8647 8650	gen
+T571	Concept-FAIL 8631 8667	problema con el gen de la fibrilina.
+T572	Action-FAIL 8615 8624	resultado
+T573	Concept-FAIL 8590 8598	síndrome
+T574	Concept-FAIL 8631 8639	problema
+T575	Concept-FAIL 8647 8666	gen de la fibrilina
+T576	Concept-FAIL 8657 8666	fibrilina
+E572	Action-FAIL:T572   Target-FAIL:T571 Subject-FAIL:T569
+R225	is-a-FAIL Arg1:T575 Arg2:T570
+R226	property-of-FAIL Arg1:T574 Arg2:T575
+R227	is-a-FAIL Arg1:T569 Arg2:T573
+R228	is-a-FAIL Arg1:T576 Arg2:T570
+T577	Action 8739 8745	variar
+T578	Concept 8723 8731	síntomas
+T579	Concept 8710 8716	severo
+T580	Concept 8703 8707	leve
+T581	Concept 8671 8689	síndrome de Marfan
+T582	Concept-FAIL 8671 8679	síndrome
+E577	Action:T577   Target-FAIL:T578 Subject-FAIL:T578
+R229	property-of Arg1:T580 Arg2:T581
+R230	property-of Arg1:T579 Arg2:T581
+R231	is-a-FAIL Arg1:T581 Arg2:T582
+R232	property-of-FAIL Arg1:T578 Arg2:T581
+T583	Action-FAIL 8760 8763	con
+T584	Concept-FAIL 8751 8759	personas
+T585	Concept-FAIL 8820 8844	articulaciones flexibles
+T586	Concept-FAIL 8805 8813	delgadas
+T587	Concept-FAIL 8798 8803	altas
+T588	Action-FAIL 8790 8793	ser
+T589	Concept-FAIL 8764 8782	síndrome de Marfan
+E583	Action-FAIL:T583   Target-FAIL:T589 Subject-FAIL:T584
+E588	Action-FAIL:T588   Target-FAIL:T587 Target-FAIL2:T586 Target-FAIL3:T585 Subject-FAIL:E583
+T590	Action 8896 8902	tienen
+T591	Concept 8864 8872	personas
+T592	Concept 8983 8988	fugas
+T593	Concept 8959 8968	debilidad
+T594	Concept 8930 8946	vasos sanguíneos
+T595	Concept 8903 8912	problemas
+T596	Concept 8877 8895	síndrome de Marfan
+T597	Concept-FAIL 9005 9014	cardíacas
+T598	Concept-FAIL 8996 9004	válvulas
+T599	Concept-FAIL 8983 9014	fugas en las válvulas cardíacas
+T600	Concept-FAIL 8959 8980	debilidad en la aorta
+T601	Concept-FAIL 8930 8935	vasos
+T602	Concept-FAIL 8903 8923	problemas de corazón
+T603	Concept-FAIL 8877 8885	síndrome
+T604	Action-FAIL 8873 8876	con
+T605	Concept-FAIL 8996 9014	válvulas cardíacas
+T606	Concept-FAIL 8975 8980	aorta
+T607	Concept-FAIL 8916 8923	corazón
+E590	Action:T590   Target-FAIL:T595 Subject-FAIL:T591 Subject-FAIL2:T602 Subject-FAIL3:E604
+E604	Action-FAIL:T604   Target-FAIL:T596 Subject-FAIL:T591
+R233	is-a-FAIL Arg1:T596 Arg2:T603
+R234	is-a-FAIL Arg1:T602 Arg2:T595
+R235	is-a-FAIL Arg1:T594 Arg2:T601
+R236	is-a-FAIL Arg1:T599 Arg2:T592
+R237	property-of-FAIL Arg1:T597 Arg2:T598
+R238	property-of-FAIL Arg1:T592 Arg2:T605
+R239	property-of-FAIL Arg1:T593 Arg2:T606
+R240	is-a-FAIL Arg1:T593 Arg2:T595
+R241	is-a-FAIL Arg1:T592 Arg2:T595
+T608	Concept-FAIL 9037 9061	problemas con los huesos
+T609	Concept-FAIL 9037 9046	problemas
+T610	Action-FAIL 9031 9036	tener
+T611	Action-FAIL 9037 9046	problemas
+T612	Concept-FAIL 9108 9116	pulmones
+T613	Concept-FAIL 9085 9101	sistema nervioso
+T614	Concept-FAIL 9076 9080	piel
+T615	Concept-FAIL 9067 9071	ojos
+T616	Concept-FAIL 9055 9061	huesos
+E610	Action-FAIL:T610
+E611	Action-FAIL:T611   Target-FAIL:T616 Target-FAIL2:T615 Target-FAIL3:T614 Target-FAIL4:T613 Target-FAIL5:T612 
+R242	is-a-FAIL Arg1:T608 Arg2:T609
+T617	Concept 9165 9173	síndrome
+T618	Action 9149 9161	diagnosticar
+T619	Concept 9137 9143	examen
+E618	Action:T618 Target:T617 Subject:T619  
+T620	Action 9259 9273	diagnosticarlo
+T621	Concept 9240 9253	examen físico
+T622	Concept 9217 9234	historia familiar
+T623	Concept 9199 9215	historia clínica
+T624	Action 9191 9195	usar
+T625	Concept 9178 9184	doctor
+E620	Action:T620    Subject-FAIL:T625 Subject-FAIL2:E624
+E624	Action:T624 Target:T623 Target2:T622 Target3:T621 Subject:T625 Subject2:T625 Subject3:T625  
+T626	Concept 9359 9373	complicaciones
+T627	Action 9350 9358	prevenir
+T628	Action 9340 9347	atrasar
+T629	Concept 9311 9323	tratamientos
+T630	Action 9290 9295	tiene
+T631	Concept 9296 9300	cura
+T632	Concept 9278 9286	síndrome
+T633	Action-FAIL 9331 9337	ayudar
+E627	Action:T627 Target:T626   Subject-FAIL:T629
+E628	Action:T628  Subject:T629 Target-FAIL:E627 Target-FAIL2:T626 
+E630	Action:T630 Target:T631 Subject:T632  
+E633	Action-FAIL:T633   Target-FAIL:E627 Subject-FAIL:T629
+T634	Concept 9420 9428	terapias
+T635	Concept 9404 9411	cirugía
+T636	Concept 9390 9402	medicamentos
+T637	Action-FAIL 9381 9389	incluyen
+E637	Action-FAIL:T637   Target-FAIL:T636 Target-FAIL2:T635 
+R243	is-a Arg1:T636 Arg2:T634
+R244	is-a Arg1:T635 Arg2:T634
+T638	Concept 9509 9514	niñas
+T639	Concept 9491 9501	desarrollo
+T640	Action 9481 9487	afecta
+T641	Concept 9458 9476	trastorno genético
+T642	Concept 9433 9451	síndrome de Turner
+T643	Concept-FAIL 9458 9467	trastorno
+T644	Concept-FAIL 9433 9441	síndrome
+E640	Action:T640 Target:T639 Subject:T642  
+R245	property-of Arg1:T639 Arg2:T638
+R246	is-a Arg1:T642 Arg2:T641
+R247	is-a-FAIL Arg1:T641 Arg2:T643
+R248	is-a-FAIL Arg1:T642 Arg2:T644
+T645	Concept 9553 9563	incompleto
+T646	Concept 9543 9550	ausente
+T647	Concept 9531 9542	cromosoma X
+T648	Concept-FAIL 9531 9540	cromosoma
+T649	Action-FAIL 9519 9524	causa
+E649	Action-FAIL:T649   Target-FAIL:T648 
+R249	property-of Arg1:T646 Arg2:T647
+R250	property-of Arg1:T645 Arg2:T647
+R251	is-a-FAIL Arg1:T647 Arg2:T648
+T650	Action 9630 9639	funcionan
+T651	Concept 9619 9626	ovarios
+T652	Concept 9569 9574	niñas
+T653	Concept-FAIL 9599 9603	baja
+T654	Concept-FAIL 9604 9612	estatura
+T655	Action-FAIL 9582 9591	presentan
+T656	Concept-FAIL 9599 9612	baja estatura
+E650	Action:T650 Target:T651   
+E655	Action-FAIL:T655    Subject-FAIL:T652
+R252	property-of-FAIL Arg1:T653 Arg2:T654
+R253	property-of-FAIL Arg1:T654 Arg2:T652
+R254	part-of-FAIL Arg1:T651 Arg2:T652
+T657	Concept 9715 9725	infértiles
+T658	Concept 9680 9687	mujeres
+T659	Concept-FAIL 9704 9710	Turner
+T660	Concept-FAIL 9692 9710	síndrome de Turner
+R255	property-of Arg1:T657 Arg2:T658
+R256	property-of-FAIL Arg1:T659 Arg2:T658
+R257	property-of-FAIL Arg1:T660 Arg2:T658
+T661	Concept 9855 9874	problemas tiroideos
+T662	Concept 9840 9852	osteoporosis
+T663	Concept 9829 9838	cataratas
+T664	Concept 9819 9827	diabetes
+T665	Concept 9800 9817	problemas renales
+T666	Concept 9777 9798	hipertensión arterial
+T667	Concept 9753 9771	problemas de salud
+T668	Concept-FAIL 9855 9864	problemas
+T669	Concept-FAIL 9800 9809	problemas
+T670	Concept-FAIL 9753 9762	problemas
+R258	is-a Arg1:T661 Arg2:T667
+R259	is-a Arg1:T662 Arg2:T667
+R260	is-a Arg1:T663 Arg2:T667
+R261	is-a Arg1:T664 Arg2:T667
+R262	is-a Arg1:T665 Arg2:T667
+R263	is-a Arg1:T666 Arg2:T667
+R264	is-a-FAIL Arg1:T667 Arg2:T670
+R265	is-a-FAIL Arg1:T665 Arg2:T669
+R266	is-a-FAIL Arg1:T661 Arg2:T668
+T671	Concept 9959 9974	prueba genética
+T672	Action 9888 9900	diagnostican
+T673	Concept 9904 9922	síndrome de Turner
+T674	Concept 9880 9887	médicos
+T675	Concept-FAIL 9959 9965	prueba
+T676	Concept-FAIL 9904 9912	síndrome
+T677	Concept-FAIL 9944 9952	síntomas
+E672	Action:T672 Target:T673 Subject:T674  
+R267	is-a-FAIL Arg1:T673 Arg2:T676
+R268	is-a-FAIL Arg1:T671 Arg2:T675
+T678	Concept 10000 10018	pruebas prenatales
+T679	Concept-FAIL 10000 10007	pruebas
+T680	Action-FAIL 9987 9996	encuentra
+E680	Action-FAIL:T680    Subject-FAIL:T678
+R269	is-a-FAIL Arg1:T678 Arg2:T679
+T681	Concept 10084 10096	tratamientos
+T682	Concept 10047 10065	síndrome de Turner
+T683	Concept 10034 10038	cura
+T684	Action 10023 10029	existe
+T685	Concept-FAIL 10084 10114	tratamientos para los síntomas
+T686	Action-FAIL 10072 10075	hay
+T687	Concept-FAIL 10047 10055	síndrome
+T688	Concept-FAIL 10106 10114	síntomas
+E684	Action:T684 Target:T683   Subject-FAIL:T682
+E686	Action-FAIL:T686   Target-FAIL:T685 
+R270	is-a-FAIL Arg1:T682 Arg2:T687
+R271	is-a-FAIL Arg1:T685 Arg2:T681
+T689	Concept 10203 10211	promedio
+T690	Concept 10181 10190	estaturas
+T691	Concept 10166 10171	niñas
+T692	Action 10149 10155	ayudar
+T693	Concept 10119 10142	hormona del crecimiento
+T694	Concept 10119 10126	hormona
+T695	Action-FAIL 10172 10180	alcancen
+E692	Action:T692  Subject:T693 Target-FAIL:T691 Target-FAIL2:E695 
+E695	Action-FAIL:T695   Target-FAIL:T690 Subject-FAIL:T691
+R272	is-a Arg1:T693 Arg2:T694
+R273	property-of Arg1:T689 Arg2:T690
+T696	Concept 10267 10284	desarrollo sexual
+T697	Action 10254 10263	estimular
+T698	Concept 10216 10247	terapia de sustitución hormonal
+T699	Concept 10216 10223	terapia
+T700	Concept-FAIL 10267 10277	desarrollo
+T701	Concept-FAIL 10239 10247	hormonal
+T702	Concept-FAIL 10227 10238	sustitución
+E697	Action:T697 Target:T696 Subject:T698  
+R274	is-a Arg1:T698 Arg2:T699
+R275	property-of-FAIL Arg1:T701 Arg2:T702
+R276	part-of-FAIL Arg1:T696 Arg2:T700
+T703	Action 10331 10337	ayudar
+T704	Concept 10363 10381	síndrome de Turner
+T705	Concept 10348 10355	mujeres
+T706	Concept 10290 10323	técnicas de reproducción asistida
+T707	Concept-FAIL 10363 10371	síndrome
+T708	Concept-FAIL 10290 10298	técnicas
+T709	Concept-FAIL 10315 10323	asistida
+T710	Concept-FAIL 10302 10314	reproducción
+T711	Action-FAIL 10391 10402	embarazarse
+E703	Action:T703  Subject:T706 Target-FAIL:T705 Target-FAIL2:E711 
+E711	Action-FAIL:T711   Target-FAIL:T705 
+R277	property-of Arg1:T704 Arg2:T705
+R278	property-of-FAIL Arg1:T709 Arg2:T710
+R279	is-a-FAIL Arg1:T706 Arg2:T708
+R280	is-a-FAIL Arg1:T704 Arg2:T707
+T712	Concept 10407 10424	síndrome X frágil
+T713	Concept-FAIL 10475 10486	hereditaria
+T714	Concept-FAIL 10463 10474	intelectual
+T715	Concept-FAIL 10450 10462	discapacidad
+T716	Concept-FAIL 10407 10415	síndrome
+T717	Concept-FAIL 10450 10486	discapacidad intelectual hereditaria
+R281	is-a-FAIL Arg1:T712 Arg2:T716
+R282	property-of-FAIL Arg1:T714 Arg2:T715
+R283	property-of-FAIL Arg1:T713 Arg2:T715
+R284	is-a-FAIL Arg1:T712 Arg2:T715
+R285	is-a-FAIL Arg1:T712 Arg2:T717
+T718	Concept 10491 10501	enfermedad
+T719	Action 10505 10512	causada
+T720	Concept 10524 10534	específico
+T721	Concept 10520 10523	gen
+E719	Action:T719 Target:T718 Subject:T721  
+R286	property-of Arg1:T720 Arg2:T721
+T722	Concept 10595 10614	desarrollo cerebral
+T723	Action 10577 10586	necesaria
+T724	Concept 10568 10576	proteína
+T725	Action 10556 10563	produce
+T726	Concept 10552 10555	gen
+T727	Concept-FAIL 10595 10605	desarrollo
+E723	Action:T723 Target:T724 Subject:T722  
+E725	Action:T725 Target:T724 Subject:T726  
+R287	is-a-FAIL Arg1:T722 Arg2:T727
+T728	Concept 10640 10643	gen
+T729	Concept 10695 10703	proteína
+T730	Action 10665 10673	produzca
+T731	Concept 10657 10664	persona
+T732	Action-FAIL 10624 10631	defecto
+T733	Action-FAIL 10644 10648	hace
+T734	Concept-FAIL 10624 10631	defecto
+E730	Action:T730 Target:T729 Subject:T731  
+E732	Action-FAIL:T732   Target-FAIL:T728 
+E733	Action-FAIL:T733   Target-FAIL:E730 Subject-FAIL:T734
+R288	property-of-FAIL Arg1:T734 Arg2:T728
+T735	Concept-FAIL 10724 10731	síntoma
+T736	Concept-FAIL 10735 10743	X frágil
+T737	Concept-FAIL 10724 10743	síntoma de X frágil
+R289	part-of-FAIL Arg1:T735 Arg2:T736
+T738	Concept-FAIL 10894 10901	severos
+T739	Concept-FAIL 10885 10893	síntomas
+T740	Action-FAIL 10879 10884	tener
+T741	Concept-FAIL 10856 10871	cambios mayores
+T742	Concept-FAIL 10843 10851	personas
+E740	Action-FAIL:T740   Target-FAIL:T739 Subject-FAIL:T742
+R290	property-of-FAIL Arg1:T741 Arg2:T742
+R291	property-of-FAIL Arg1:T738 Arg2:T739
+T743	Action-FAIL 10918 10923	tiene
+T744	Concept-FAIL 10924 10928	cura
+T745	Concept-FAIL 10906 10914	X frágil
+E743	Action-FAIL:T743   Target-FAIL:T744 Subject-FAIL:T745
+T746	Concept 10956 10964	síntomas
+T747	Action 10941 10947	tratar
+T748	Concept-FAIL 10969 10986	terapia educativa
+T749	Concept-FAIL 11014 11023	medicinas
+T750	Concept-FAIL 11005 11011	física
+T751	Concept-FAIL 10994 11002	conducta
+T752	Concept-FAIL 10977 10986	educativa
+T753	Concept-FAIL 10969 10976	terapia
+E747	Action:T747 Target:T746   Subject-FAIL:T748 Subject-FAIL2:T753 Subject-FAIL3:T749
+R292	is-a-FAIL Arg1:T752 Arg2:T753
+R293	is-a-FAIL Arg1:T751 Arg2:T753
+R294	is-a-FAIL Arg1:T750 Arg2:T753
+T754	Concept-FAIL 11033 11044	tratamiento
+T755	Action-FAIL 11025 11032	Obtener
+E755	Action-FAIL:T755   Target-FAIL:T754 
+T756	Concept 11137 11145	síndrome
+T757	Action 11121 11133	diagnosticar
+T758	Concept 11099 11114	prueba genética
+T759	Concept-FAIL 11099 11105	prueba
+E757	Action:T757 Target:T756 Subject:T758  
+R295	is-a-FAIL Arg1:T758 Arg2:T759
+T760	Concept-FAIL 11168 11172	cura
+T761	Action-FAIL 11162 11167	tiene
+T762	Concept-FAIL 11150 11158	X frágil
+E761	Action-FAIL:T761   Target-FAIL:T760 Subject-FAIL:T762
+T763	Concept-FAIL 11258 11267	medicinas
+T764	Concept-FAIL 11213 11230	terapia educativa
+T765	Concept-FAIL 11213 11220	terapia
+T766	Concept-FAIL 11200 11208	síntomas
+T767	Action-FAIL 11185 11191	tratar
+E767	Action-FAIL:T767   Target-FAIL:T766 Subject-FAIL:T764 Subject-FAIL2:T763
+T768	Concept-FAIL 11289 11297	temprano
+T769	Concept-FAIL 11277 11288	tratamiento
+R296	property-of-FAIL Arg1:T768 Arg2:T769
+T770	Concept 11388 11395	energía
+T771	Action 11379 11387	producir
+T772	Action 11369 11376	obtener
+T773	Concept 11354 11363	organismo
+T774	Concept 11335 11342	proceso
+T775	Concept 11317 11328	metabolismo
+T776	Action-FAIL 11347 11350	usa
+T777	Concept-FAIL 11413 11422	alimentos
+T778	Action-FAIL 11427 11434	ingiere
+E771	Action:T771 Target:T770   Subject-FAIL:T775 Subject-FAIL2:E778
+E772	Action:T772 Target:T770   Subject-FAIL:T775 Subject-FAIL2:E778
+E776	Action-FAIL:T776   Target-FAIL:T775 Subject-FAIL:T773
+E778	Action-FAIL:T778   Target-FAIL:T777 Subject-FAIL:T773
+R297	is-a Arg1:T775 Arg2:T774
+T779	Concept 11490 11496	grasas
+T780	Concept 11474 11487	carbohidratos
+T781	Concept 11463 11472	proteínas
+T782	Concept 11439 11445	comida
+R298	part-of Arg1:T781 Arg2:T782
+R299	is-a-FAIL Arg1:T779 Arg2:T782
+R300	part-of-FAIL Arg1:T780 Arg2:T782
+R301	part-of-FAIL Arg1:T779 Arg2:T782
+T783	Concept 11588 11596	azúcares
+T784	Concept 11599 11605	ácidos
+T785	Concept 11575 11584	alimentos
+T786	Action 11544 11555	descomponen
+T787	Concept 11502 11521	sustancias químicas
+T788	Concept-FAIL 11610 11634	combustible de su cuerpo
+T789	Concept-FAIL 11610 11621	combustible
+T790	Concept-FAIL 11502 11543	sustancias químicas del sistema digestivo
+T791	Concept-FAIL 11502 11512	sustancias
+T792	Concept-FAIL 11526 11543	sistema digestivo
+E786	Action:T786 Target:T785   Subject-FAIL:T790 Subject-FAIL2:T787
+R302	is-a-FAIL Arg1:T787 Arg2:T791
+R303	is-a-FAIL Arg1:T790 Arg2:T787
+R304	is-a-FAIL Arg1:T788 Arg2:T789
+R305	is-a-FAIL Arg1:T784 Arg2:T788
+R306	is-a-FAIL Arg1:T783 Arg2:T788
+R307	part-of-FAIL Arg1:T787 Arg2:T792
+T793	Concept 11761 11775	grasa corporal
+T794	Concept 11747 11755	músculos
+T795	Concept 11735 11741	hígado
+T796	Concept 11707 11725	tejidos corporales
+T797	Concept 11707 11714	tejidos
+T798	Concept 11669 11676	energía
+T799	Action 11655 11663	utilizar
+T800	Concept 11639 11648	organismo
+T801	Concept-FAIL 11761 11766	grasa
+T802	Concept-FAIL 11692 11703	almacenarla
+T803	Action-FAIL 11692 11703	almacenarla
+E799	Action:T799 Target:T798 Subject:T800  
+E803	Action-FAIL:T803   Target-FAIL:T798 Subject-FAIL:T800
+R308	is-a Arg1:T796 Arg2:T797
+R309	is-a Arg1:T795 Arg2:T796
+R310	is-a Arg1:T794 Arg2:T796
+R311	is-a Arg1:T793 Arg2:T796
+R312	property-of-FAIL Arg1:T802 Arg2:T798
+R313	is-a-FAIL Arg1:T793 Arg2:T801
+T804	Concept 11883 11890	proceso
+T805	Action 11866 11877	interrumpen
+T806	Concept 11839 11848	anormales
+T807	Concept 11819 11838	reacciones químicas
+T808	Concept 11780 11800	trastorno metabólico
+T809	Action-FAIL 11801 11807	ocurre
+T810	Concept-FAIL 11819 11829	reacciones
+T811	Concept-FAIL 11780 11789	trastorno
+T812	Concept-FAIL 11855 11861	cuerpo
+E805	Action:T805   Target-FAIL:T804 Subject-FAIL:T807
+E809	Action-FAIL:T809   Target-FAIL:T808 Subject-FAIL:T810
+R314	property-of Arg1:T806 Arg2:T807
+R315	is-a-FAIL Arg1:T808 Arg2:T811
+R316	is-a-FAIL Arg1:T807 Arg2:T810
+T813	Concept 12135 12142	lípidos
+T814	Concept 12115 12128	carbohidratos
+T815	Concept-FAIL 12076 12109	descomposición de los aminoácidos
+T816	Concept-FAIL 12076 12090	descomposición
+T817	Action-FAIL 12065 12072	afectan
+T818	Concept-FAIL 12098 12109	aminoácidos
+T819	Action-FAIL 12076 12090	descomposición
+E817	Action-FAIL:T817   Target-FAIL:T815 
+E819	Action-FAIL:T819   Target-FAIL:T818 Target-FAIL2:T814 Target-FAIL3:T813 
+R317	is-a-FAIL Arg1:T815 Arg2:T816
+T820	Concept 12213 12220	células
+T821	Action 12189 12196	afectan
+T822	Concept 12160 12187	enfermedades mitocondriales
+T823	Concept-FAIL 12160 12172	enfermedades
+T824	Concept-FAIL 12200 12205	parte
+T825	Concept-FAIL 12237 12244	energía
+T826	Action-FAIL 12225 12233	producen
+E821	Action:T821  Subject:T822 Target-FAIL:T820 Target-FAIL2:T824 
+E826	Action-FAIL:T826   Target-FAIL:T825 Subject-FAIL:T824
+R318	is-a-FAIL Arg1:T822 Arg2:T823
+R319	part-of-FAIL Arg1:T824 Arg2:T820
+T827	Action 12361 12370	funcionan
+T828	Action 12347 12355	enferman
+T829	Concept 12334 12342	páncreas
+T830	Concept 12322 12328	hígado
+T831	Concept 12305 12312	órganos
+T832	Concept 12273 12293	trastorno metabólico
+T833	Action 12258 12269	desarrollar
+T834	Concept-FAIL 12273 12282	trastorno
+E827	Action:T827   Target-FAIL:T831 Subject-FAIL:T829 Subject-FAIL2:T830
+E828	Action:T828   Target-FAIL:T831 Subject-FAIL:T829 Subject-FAIL2:T830
+E833	Action:T833 Target:T832   Subject-FAIL:E828 Subject-FAIL2:E827
+R320	is-a Arg1:T830 Arg2:T831
+R321	is-a Arg1:T829 Arg2:T831
+R322	is-a-FAIL Arg1:T832 Arg2:T834
+T835	Concept-FAIL 12387 12395	diabetes

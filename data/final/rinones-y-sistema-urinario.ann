@@ -1,0 +1,1435 @@
+T3	Concept 41 46	orina
+T2	Concept 3 20	análisis de orina
+T1	Concept 3 11	análisis
+T0	Concept 28 34	prueba
+R0	is-a Arg1:T2 Arg2:T1
+R1	is-a Arg1:T2 Arg2:T0
+R419	property-of Arg1:T3 Arg2:T0
+T11	Concept 126 135	problemas
+T9	Action 93 102	infección
+T8	Action 73 81	chequear
+T7	Concept 110 124	vías urinarias
+T6	Concept 126 143	problemas renales
+T5	Concept 146 154	diabetes
+E9	Action:T9 Target:T7
+R2	is-a Arg1:T6 Arg2:T11
+E8	Action:T8 Target:E9 Target2:T6 Target3:T5
+T20	Action 225 234	ingresado
+T19	Concept 279 289	embarazada
+T18	Concept 203 210	chequeo
+T17	Concept 156 161	Usted
+T16	Action 176 185	someterse
+T15	Concept 188 191	uno
+T14	Concept 203 217	chequeo médico
+T13	Concept 238 246	hospital
+T12	Concept 261 268	cirugía
+E16	Action:T16 Target:T15 Target2:T17 Subject:T17
+E20	Action:T20 Target:T17
+R3	part-of Arg1:T15 Arg2:T14
+R5	is-a Arg1:T14 Arg2:T18
+T26	Concept 291 295	Este
+T23	Action 310 320	monitorear
+T22	Concept 329 348	condiciones médicas
+T21	Concept 351 363	tratamientos
+E23	Action:T23 Target:T22 Target2:T21 Subject:T26
+T4	Concept 467 473	orinar
+T39	Concept 368 376	cistitis
+T38	Concept 441 447	vejiga
+T36	Concept 474 483	frecuente
+T35	Concept 486 498	urgentemente
+T34	Concept 454 463	necesidad
+T33	Concept 429 447	dolor en la vejiga
+T31	Concept 368 389	cistitis intersticial
+T30	Concept 397 406	condición
+T29	Action 411 416	causa
+T28	Concept 417 426	molestias
+T27	Concept 429 434	dolor
+E29	Action:T29 Target:T28 Target2:T33 Target3:T34 Subject:T31
+R8	is-a Arg1:T31 Arg2:T30
+R9	is-a Arg1:T33 Arg2:T27
+R10	is-a Arg1:T31 Arg2:T39
+R4	property-of Arg1:T36 Arg2:T4
+R6	property-of Arg1:T35 Arg2:T4
+R7	property-of Arg1:T34 Arg2:T4
+T41	Concept 529 536	mujeres
+T40	Concept 548 555	hombres
+T45	Concept 580 587	persona
+T44	Concept 590 597	persona
+T43	Concept 561 569	síntomas
+T42	Action 570 576	varían
+E42	Action:T42 Subject:T43
+T53	Concept 640 646	orinar
+T52	Concept 647 656	frecuente
+T51	Concept 659 671	urgentemente
+T50	Concept 627 636	sin ganas
+T49	Concept 599 606	Algunas
+T47	Action 614 620	sentir
+T46	Concept 621 626	dolor
+E47	Action:T47 Target:T46 Subject:T49
+R16	property-of Arg1:T52 Arg2:T53
+R17	property-of Arg1:T51 Arg2:T53
+T57	Concept 702 707	dolor
+T56	Concept 689 697	urgencia
+T55	Concept 673 678	Otros
+T54	Action 679 685	tienen
+E54	Action:T54 Target:T56 Subject:T55
+R11	property-of Arg1:T57 Arg2:T56
+T62	Concept 729 736	mujeres
+T60	Concept 713 721	síntomas
+T59	Action 744 752	empeorar
+T58	Concept 764 776	menstruación
+E59	Action:T59 Target:T58 Subject:T60
+R12	property-of Arg1:T60 Arg2:T62
+T65	Action 793 802	presentar
+T64	Concept 803 808	dolor
+T63	Concept 821 840	relaciones sexuales
+E65	Action:T65 Target:T64
+R13	property-of Arg1:T64 Arg2:T63
+T73	Concept 870 878	cistitis
+T71	Concept 845 854	desconoce
+T70	Action 858 863	causa
+T67	Concept 870 891	cistitis intersticial
+E70	Action:T70 Target:T67 Subject:T71
+R14	is-a Arg1:T67 Arg2:T73
+T76	Concept 928 933	tiene
+T75	Concept 903 909	examen
+T74	Action 914 921	indique
+E74	Action:T74 Target:T76 Subject:T75
+T82	Concept 939 946	médicos
+T81	Action 954 962	realizar
+T80	Concept 963 970	pruebas
+T79	Action 976 985	descartar
+T78	Concept 1001 1007	causas
+T77	Concept 1015 1023	síntomas
+E79	Action:T79 Target:T78 Subject:T80
+E81	Action:T81 Target:T80 Subject:T82
+R22	property-of Arg1:T78 Arg2:T77
+T86	Concept 1050 1062	tratamientos
+T85	Action 1070 1076	ayudar
+T84	Concept 1097 1105	personas
+T83	Concept 1036 1040	cura
+E85	Action:T85 Target:T84 Subject:T86
+T89	Concept 1127 1137	creatinina
+T88	Concept 1144 1163	producto de desecho
+T87	Concept 1170 1176	sangre
+R23	is-a Arg1:T89 Arg2:T88
+R24	part-of Arg1:T89 Arg2:T87
+T96	Concept 1187 1195	proteína
+T95	Concept 1202 1207	dieta
+T94	Concept 1257 1263	cuerpo
+T93	Concept 1242 1250	músculos
+T92	Concept 1213 1227	descomposición
+R27	part-of Arg1:T93 Arg2:T94
+R28	part-of Arg1:T96 Arg2:T95
+R29	property-of Arg1:T92 Arg2:T93
+T104	Action 1282 1289	elimina
+T103	Concept 1349 1354	orina
+T102	Concept 1268 1278	creatinina
+T101	Action 1327 1331	sale
+T100	Concept 1336 1342	cuerpo
+T99	Concept 1296 1302	sangre
+T98	Concept 1311 1318	riñones
+E101	Action:T101 Target:T100 Subject:T102
+E104	Action:T104 Target:T99 Target2:T102 Subject:T98
+T110	Concept 1421 1427	sangre
+T109	Action 1428 1435	aumenta
+T108	Concept 1383 1390	riñones
+T107	Concept 1365 1375	enfermedad
+T106	Concept 1395 1400	nivel
+T105	Concept 1404 1414	creatinina
+E109	Action:T109 Target:T106
+R31	property-of Arg1:T106 Arg2:T105
+R15	part-of Arg1:T105 Arg2:T110
+T114	Concept 1503 1513	creatinina
+T113	Concept 1441 1449	análisis
+T112	Action 1477 1487	determinar
+T111	Concept 1492 1499	niveles
+E112	Action:T112 Target:T111 Subject:T113
+R18	property-of Arg1:T111 Arg2:T114
+T120	Concept 1573 1584	funcionando
+T119	Concept 1519 1526	pruebas
+T118	Action 1544 1553	comprobar
+T117	Concept 1589 1596	riñones
+E118	Action:T118 Target:T120 Subject:T119
+R34	property-of Arg1:T120 Arg2:T117
+T125	Concept 1601 1609	diabetes
+T124	Concept 1625 1631	deseos
+T123	Concept 1601 1618	diabetes insípida
+T122	Action 1619 1624	causa
+T121	Concept 1625 1641	deseos de orinar
+E122	Action:T122 Target:T121 Subject:T123
+R35	is-a Arg1:T123 Arg2:T125
+R36	is-a Arg1:T121 Arg2:T124
+T130	Concept 1672 1680	diabetes
+T129	Concept 1659 1667	personas
+T128	Concept 1672 1689	diabetes insípida
+T127	Action 1690 1696	tienen
+T126	Concept 1703 1706	sed
+E127	Action:T127 Target:T126 Subject:T129
+R37	property-of Arg1:T128 Arg2:T129
+R38	is-a Arg1:T128 Arg2:T130
+T136	Concept 1756 1762	deseos
+T135	Concept 1708 1712	Esto
+T134	Concept 1739 1747	personas
+T133	Action 1748 1755	sientan
+T132	Concept 1756 1776	deseos de ir al baño
+T131	Action 1723 1728	causa
+E133	Action:T133 Target:T132 Subject:T134
+R39	is-a Arg1:T132 Arg2:T136
+E131	Action:T131 Target:E133 Subject:T135
+T141	Concept 1841 1849	orinarse
+T140	Concept 1793 1798	ciclo
+T139	Action 1805 1815	impedirles
+T138	Concept 1816 1822	dormir
+E139	Action:T139 Target:T138 Target2:T141 Subject:T140
+T146	Concept 1924 1928	agua
+T145	Concept 1865 1871	cuerpo
+T144	Concept 1901 1906	orina
+T143	Action 1872 1879	produce
+T142	Concept 1919 1928	pura agua
+E143	Action:T143 Target:T144 Subject:T145
+R40	is-a Arg1:T144 Arg2:T142
+R19	is-a Arg1:T142 Arg2:T146
+T10	Concept 2050 2056	azúcar
+T158	Concept 1933 1941	diabetes
+T157	Concept 1987 1991	(DM)
+T156	Concept 2063 2069	sangre
+T155	Concept 2033 2038	altos
+T152	Concept 1933 1950	diabetes insípida
+T151	Concept 1969 1986	diabetes mellitus
+T150	Concept 2022 2030	insulina
+T149	Concept 2039 2046	niveles
+T148	Concept 2005 2014	problemas
+T147	Action 1997 2004	implica
+E147	Action:T147 Target:T148 Target2:T155 Subject:T151
+R42	is-a Arg1:T152 Arg2:T158
+R43	same-as Arg1:T157 Arg2:T151
+R20	property-of Arg1:T148 Arg2:T150
+R21	part-of Arg1:T10 Arg2:T156
+R25	property-of Arg1:T149 Arg2:T10
+R26	property-of Arg1:T155 Arg2:T149
+T160	Concept 2095 2104	similares
+T159	Concept 2075 2083	síntomas
+T167	Concept 2122 2130	diabetes
+T165	Action 2143 2152	relaciona
+T164	Concept 2122 2139	diabetes insípida
+T163	Concept 2181 2188	riñones
+T162	Concept 2201 2209	líquidos
+T161	Action 2189 2196	manejan
+E161	Action:T161 Target:T162 Subject:T163
+E165	Action:T165 Target:E161 Subject:T164
+R47	is-a Arg1:T164 Arg2:T167
+T168	Concept 2239 2247	mellitus
+T175	Concept 2253 2261	exámenes
+T174	Concept 2276 2282	sangre
+T173	Concept 2309 2313	caso
+T170	Concept 2253 2270	exámenes de orina
+T169	Action 2290 2297	revelar
+E169	Action:T169 Target:T173 Subject:T170 Subject2:T174
+R48	is-a Arg1:T170 Arg2:T175
+R30	is-a Arg1:T174 Arg2:T175
+T184	Concept 2334 2342	diabetes
+T181	Concept 2412 2419	riñones
+T179	Action 2370 2378	problema
+T178	Concept 2386 2405	glándula pituitaria
+T177	Concept 2334 2351	diabetes insípida
+T176	Action 2355 2362	causada
+E179	Action:T179 Target:T181 Target2:T178
+R49	is-a Arg1:T177 Arg2:T184
+E176	Action:T176 Target:T177 Subject:E179
+T188	Concept 2460 2465	causa
+T187	Concept 2470 2478	problema
+T186	Concept 2424 2435	tratamiento
+T185	Action 2436 2441	varía
+E185	Action:T185 Target:T188 Subject:T186
+R32	property-of Arg1:T188 Arg2:T187
+T196	Concept 2491 2498	riñones
+T195	Concept 2505 2510	sanos
+T194	Action 2512 2519	limpian
+T193	Concept 2523 2529	sangre
+E194	Action:T194 Target:T193 Subject:T196
+R53	property-of Arg1:T195 Arg2:T196
+T203	Concept 2582 2589	fuertes
+T202	Concept 2602 2606	sana
+T201	Concept 2548 2556	hormonas
+T200	Action 2539 2547	producen
+T199	Action 2561 2570	mantienen
+T198	Concept 2575 2581	huesos
+T197	Concept 2595 2601	sangre
+E199	Action:T199 Target:T198 Target2:T197 Subject:T201
+E200	Action:T200 Target:T201
+R55	property-of Arg1:T203 Arg2:T198
+R56	property-of Arg1:T202 Arg2:T197
+T210	Concept 2651 2662	tratamiento
+T209	Action 2668 2677	sustituir
+T207	Concept 2619 2626	riñones
+T206	Action 2627 2633	fallan
+E206	Action:T206 Target:T207
+E209	Action:T209 Target:T207 Subject:T210
+T218	Action 2733 2743	trasplante
+T217	Concept 2747 2752	riñón
+T216	Action 2723 2729	reciba
+T215	Concept 2771 2782	tratamiento
+T214	Concept 2791 2799	diálisis
+T213	Action 2754 2764	necesitará
+E213	Action:T213 Target:T215
+E218	Action:T218 Target:T217
+R61	is-a Arg1:T214 Arg2:T215
+E216	Action:T216 Target:E218
+T24	Concept 2858 2868	peligrosos
+T232	Concept 2807 2812	tipos
+T230	Concept 2873 2879	cuerpo
+T229	Concept 2881 2887	exceso
+T228	Concept 2824 2830	sangre
+T227	Action 2813 2820	filtran
+T226	Action 2836 2844	eliminar
+T225	Concept 2849 2857	desechos
+T224	Concept 2891 2894	sal
+T223	Concept 2897 2901	agua
+E227	Action:T227 Target:T228 Subject:T232
+R65	property-of Arg1:T229 Arg2:T224
+R66	property-of Arg1:T229 Arg2:T223
+R33	property-of Arg1:T24 Arg2:T225
+R41	part-of Arg1:T225 Arg2:T230
+E226	Action:T226 Target:T225 Target2:T229 Subject:E227
+T238	Concept 2909 2914	tipos
+T237	Action 2915 2921	tienen
+T236	Concept 2922 2929	riesgos
+T235	Concept 2932 2942	beneficios
+E237	Action:T237 Target:T236 Target2:T235 Subject:T238
+T241	Concept 2981 2989	especial
+T240	Action 2966 2970	siga
+T239	Concept 2975 2980	dieta
+E240	Action:T240 Target:T239
+R69	property-of Arg1:T241 Arg2:T239
+T251	Concept 3043 3051	diálisis
+T250	Concept 3060 3064	caso
+T246	Concept 2994 3000	médico
+T244	Action 3018 3025	decidir
+E244	Action:T244 Target:T251 Subject:T246
+T258	Concept 3078 3081	dos
+T257	Concept 3066 3071	Usted
+T256	Action 3072 3077	tiene
+T255	Action 3100 3105	cerca
+T254	Concept 3110 3116	tamaño
+T253	Concept 3082 3089	riñones
+T252	Concept 3123 3127	puño
+E255	Action:T255 Target:T254 Subject:T253
+E256	Action:T256 Target:T258 Subject:T257
+R73	property-of Arg1:T254 Arg2:T252
+R44	property-of Arg1:T258 Arg2:T253
+T262	Concept 3132 3139	función
+T261	Concept 3140 3149	principal
+T260	Action 3153 3160	filtrar
+T259	Concept 3164 3170	sangre
+E260	Action:T260 Target:T259
+R74	property-of Arg1:T261 Arg2:T262
+T271	Concept 3203 3217	exceso de agua
+T270	Concept 3172 3177	Ellos
+T267	Action 3229 3235	vuelve
+T266	Concept 3236 3241	orina
+T265	Action 3178 3186	eliminan
+T264	Concept 3190 3197	desecho
+E265	Action:T265 Target:T264 Target2:T271 Subject:T270
+E267	Action:T267 Target:T266 Subject:T264 Subject2:T271
+T279	Concept 3287 3293	cuerpo
+T278	Action 3338 3346	producir
+T277	Concept 3347 3355	hormonas
+T276	Action 3251 3260	mantienen
+T275	Concept 3264 3282	equilibrio químico
+T274	Action 3295 3301	ayudan
+T273	Action 3304 3313	controlar
+T272	Concept 3317 3333	presión arterial
+E273	Action:T273 Target:T272
+E276	Action:T276 Target:T275
+E278	Action:T278 Target:T277
+R77	part-of Arg1:T275 Arg2:T279
+E274	Action:T274 Target:E273 Target2:E278
+T291	Concept 3360 3370	enfermedad
+T289	Action 3430 3436	pueden
+T288	Concept 3360 3384	enfermedad renal crónica
+T287	Action 3385 3394	significa
+T286	Concept 3403 3410	riñones
+T285	Concept 3417 3424	dañados
+T284	Action 3437 3444	filtrar
+T283	Concept 3448 3454	sangre
+E287	Action:T287 Target:T286 Subject:T288
+E289	Action:T289 Subject:T286
+R80	property-of Arg1:T285 Arg2:T286
+R45	is-a Arg1:T288 Arg2:T291
+A1	Negated E289
+E284	Action:T284 Target:T283 Subject:E289 Subject2:T286
+T300	Concept 3475 3479	daño
+T299	Action 3486 3495	ocasionar
+T298	Concept 3504 3512	desechos
+T297	Action 3516 3524	acumulen
+T296	Concept 3531 3537	cuerpo
+T295	Action 3540 3546	causen
+T294	Concept 3553 3562	problemas
+T293	Action 3575 3585	perjudicar
+T292	Concept 3589 3594	salud
+E293	Action:T293 Target:T292 Subject:T294
+E295	Action:T295 Target:T294 Subject:T298
+E297	Action:T297 Target:T296 Subject:T298
+E299	Action:T299 Target:E297 Target2:E295 Subject:T300
+T306	Concept 3665 3675	enfermedad
+T304	Concept 3599 3607	diabetes
+T303	Concept 3613 3634	hipertensión arterial
+T302	Action 3643 3649	causas
+T301	Concept 3665 3689	enfermedad renal crónica
+E302	Action:T302 Target:T301 Subject:T304 Subject2:T303
+R46	is-a Arg1:T301 Arg2:T306
+T313	Concept 3694 3698	daño
+T309	Action 3708 3715	produce
+T308	Concept 3694 3704	daño renal
+E309	Action:T309 Target:T308
+R86	is-a Arg1:T308 Arg2:T313
+T329	Concept 3823 3833	enfermedad
+T328	Concept 3823 3839	enfermedad renal
+T323	Concept 3752 3770	análisis de sangre
+T322	Concept 3773 3778	orina
+T321	Action 3802 3807	saber
+E321	Action:T321 Target:T328 Subject:T323 Subject2:T322
+R50	is-a Arg1:T328 Arg2:T329
+T337	Concept 3877 3887	enfermedad
+T335	Action 3900 3906	pueden
+T334	Action 3907 3917	retrasarla
+T333	Concept 3845 3857	tratamientos
+T332	Action 3868 3873	curar
+T331	Concept 3877 3893	enfermedad renal
+E332	Action:T332 Target:T331 Subject:T333
+E334	Action:T334 
+E335	Action:T335 Target:E334 Subject:T333
+R95	is-a Arg1:T331 Arg2:T337
+T345	Concept 4001 4007	sangre
+T344	Concept 3928 3940	medicamentos
+T343	Action 3946 3953	reducir
+T342	Concept 3957 3973	presión arterial
+T341	Action 3975 3984	controlar
+T340	Concept 3988 3994	azúcar
+T339	Action 4010 4017	reducir
+T338	Concept 4021 4031	colesterol
+E339	Action:T339 Target:T338 Subject:T344
+E341	Action:T341 Target:T340 Subject:T344
+E343	Action:T343 Target:T342 Subject:T344
+R96	part-of Arg1:T340 Arg2:T345
+T353	Concept 4036 4046	enfermedad
+T352	Concept 4036 4052	enfermedad renal
+T349	Concept 4036 4060	enfermedad renal crónica
+T348	Action 4071 4079	empeorar
+E348	Action:T348 Subject:T349
+R99	is-a Arg1:T352 Arg2:T353
+R100	is-a Arg1:T349 Arg2:T352
+T357	Concept 4120 4133	insuficiencia
+T355	Action 4109 4117	conducir
+T354	Concept 4120 4139	insuficiencia renal
+E355	Action:T355 Target:T354
+R101	is-a Arg1:T354 Arg2:T357
+T363	Action 4189 4199	trasplante
+T362	Concept 4203 4208	riñón
+T361	Concept 4148 4155	riñones
+T360	Action 4156 4162	fallan
+T359	Action 4164 4174	necesitará
+T358	Concept 4175 4183	diálisis
+E360	Action:T360 Subject:T361
+E363	Action:T363 Target:T362
+E359	Action:T359 Target:T358 Target2:E363 Subject:E360
+T371	Concept 4245 4259	parte inferior
+T370	Concept 4213 4219	vejiga
+T369	Concept 4226 4238	órgano hueco
+T368	Concept 4264 4271	abdomen
+T367	Action 4281 4289	almacena
+T366	Concept 4293 4298	orina
+E367	Action:T367 Target:T366 Subject:T370
+R102	is-a Arg1:T370 Arg2:T369
+R51	part-of Arg1:T371 Arg2:T368
+R52	part-of Arg1:T370 Arg2:T371
+T376	Concept 4311 4322	condiciones
+T375	Action 4334 4341	afectar
+T374	Concept 4345 4365	función de la vejiga
+E375	Action:T375 Target:T374 Subject:T376
+T383	Concept 4371 4378	médicos
+T382	Action 4379 4391	diagnostican
+T381	Concept 4396 4408	enfermedades
+T380	Concept 4415 4421	vejiga
+E382	Action:T382 Target:T381 Subject:T383
+R108	property-of Arg1:T381 Arg2:T380
+T32	Concept 4526 4532	vejiga
+T25	Concept 4514 4519	pared
+T391	Action 4456 4464	incluyen
+T390	Concept 4465 4482	análisis de orina
+T389	Concept 4484 4496	radiografías
+T388	Concept 4499 4507	exámenes
+T387	Concept 4540 4551	instrumento
+T386	Concept 4560 4571	cistoscopio
+E391	Action:T391 Target:T390 Target2:T389 Target3:T388
+R112	is-a Arg1:T386 Arg2:T387
+R54	part-of Arg1:T25 Arg2:T32
+R57	property-of Arg1:T388 Arg2:T25
+T396	Concept 4612 4620	problema
+T395	Concept 4576 4587	tratamiento
+T394	Action 4588 4595	depende
+T393	Concept 4602 4607	causa
+E394	Action:T394 Target:T393 Subject:T395
+R58	property-of Arg1:T393 Arg2:T396
+T401	Action 4628 4635	incluir
+T400	Concept 4636 4645	medicinas
+T399	Concept 4667 4674	cirugía
+E401	Action:T401 Target:T400 Target2:T399
+T409	Concept 4696 4701	mitad
+T408	Concept 4708 4715	espalda
+T407	Concept 4737 4746	costillas
+T406	Concept 4723 4729	debajo
+T405	Action 4679 4689	encuentran
+E405	Action:T405 Target:T409 Target2:T406
+R117	property-of Arg1:T409 Arg2:T408
+R118	property-of Arg1:T406 Arg2:T407
+T415	Concept 4798 4806	pequeñas
+T414	Concept 4763 4768	riñón
+T413	Concept 4786 4797	estructuras
+T412	Concept 4816 4824	nefrones
+R119	property-of Arg1:T415 Arg2:T413
+R120	is-a Arg1:T413 Arg2:T412
+R121	part-of Arg1:T413 Arg2:T414
+T424	Concept 4844 4852	desechos
+T423	Concept 4879 4885	sangre
+T422	Concept 4904 4909	orina
+T421	Concept 4826 4831	Ellos
+T420	Action 4832 4839	filtran
+T419	Concept 4858 4872	exceso de agua
+E420	Action:T420 Target:T424 Target2:T423 Subject:T421 Subject2:T419
+T435	Concept 4914 4919	orina
+T434	Action 4920 4925	fluye
+T433	Concept 4930 4935	tubos
+T432	Concept 4945 4953	uréteres
+T431	Action 4955 4963	llegando
+T430	Concept 4969 4975	vejiga
+T429	Action 4981 4989	almacena
+T428	Concept 4993 4998	orina
+T427	Concept 5009 5014	usted
+T426	Action 5015 5017	va
+T425	Concept 5021 5025	baño
+E426	Action:T426 Target:T425 Subject:T427
+E429	Action:T429 Target:T428 Subject:T430
+E431	Action:T431 Target:T430 Subject:T435
+E434	Action:T434 Subject:T435
+R59	is-a Arg1:T432 Arg2:T433
+T440	Concept 5045 5057	enfermedades
+T438	Concept 5045 5065	enfermedades renales
+T437	Action 5066 5072	atacan
+T436	Concept 5077 5085	nefrones
+E437	Action:T437 Target:T436 Subject:T438
+R60	is-a Arg1:T438 Arg2:T440
+T445	Concept 5111 5118	riñones
+T444	Action 5129 5137	eliminar
+T443	Concept 5138 5146	desechos
+T442	Concept 5092 5096	daño
+T441	Action 5097 5102	causa
+E444	Action:T444 Target:T443 Subject:T445
+A2	Negated E444
+E441	Action:T441 Target:E444 Subject:T442
+T451	Concept 5152 5158	causas
+T450	Action 5159 5167	incluyen
+T449	Concept 5168 5187	problemas genéticos
+T448	Concept 5189 5197	lesiones
+T447	Concept 5200 5212	medicamentos
+E450	Action:T450 Target:T449 Target2:T448 Target3:T447 Subject:T451
+T474	Concept 5233 5245	mayor riesgo
+T473	Concept 5261 5271	enfermedad
+T464	Action 5342 5350	problema
+T463	Concept 5214 5219	Usted
+T462	Action 5226 5232	correr
+T460	Action 5249 5256	padecer
+T459	Concept 5261 5277	enfermedad renal
+T458	Action 5281 5286	tiene
+T457	Concept 5287 5295	diabetes
+T456	Concept 5297 5304	presión
+T455	Concept 5315 5323	familiar
+T454	Concept 5358 5365	riñones
+E458	Action:T458 Target:T457 Target2:T456 Target3:T455 Subject:T463
+E460	Action:T460 Target:T459 Subject:T463
+E462	Action:T462 Target:T474 Subject:T463
+E464	Action:T464 Target:T454 Subject:T455
+R62	is-a Arg1:T459 Arg2:T473
+T480	Concept 5370 5380	enfermedad
+T479	Concept 5370 5386	enfermedad renal
+T477	Concept 5370 5394	enfermedad renal crónica
+T476	Action 5398 5405	dañando
+T475	Concept 5410 5418	nefrones
+E476	Action:T476 Target:T475 Subject:T477
+R131	is-a Arg1:T479 Arg2:T480
+R132	is-a Arg1:T477 Arg2:T479
+T488	Concept 5535 5545	enfermedad
+T487	Concept 5503 5511	de orina
+T485	Concept 5483 5500	pruebas de sangre
+T484	Action 5517 5525	detectar
+T483	Concept 5535 5551	enfermedad renal
+T482	Action 5475 5482	hacerle
+T481	Concept 5462 5468	médico
+E482	Action:T482 Target:T485 Subject:T487 Subject2:T481
+E484	Action:T484 Target:T483 Target2:T487 Subject:T485 Subject2:E482
+R63	is-a Arg1:T483 Arg2:T488
+T500	Action 5646 5656	reemplazar
+T499	Concept 5615 5626	tratamiento
+T497	Concept 5660 5667	función
+T496	Action 5684 5694	desempeñan
+T495	Concept 5560 5567	riñones
+T494	Action 5568 5574	fallan
+T493	Concept 5593 5609	trasplante renal
+T492	Concept 5615 5639	tratamiento con diálisis
+T491	Concept 5699 5706	riñones
+E494	Action:T494 Subject:T495
+E496	Action:T496 Target:T491 Subject:T497
+E500	Action:T500 Target:T493 Target2:T492 Target3:T497 Subject:T495
+R134	is-a Arg1:T492 Arg2:T499
+T510	Concept 5796 5810	exceso de agua
+T509	Concept 5757 5763	cuerpo
+T506	Concept 5711 5727	aparato urinario
+T505	Concept 5734 5752	sistema de drenaje
+T504	Action 5769 5777	eliminar
+T503	Concept 5782 5790	desechos
+E504	Action:T504 Target:T503 Target2:T510 Subject:T506
+R136	is-a Arg1:T506 Arg2:T505
+R137	part-of Arg1:T505 Arg2:T509
+T519	Concept 5864 5870	uretra
+T517	Action 5812 5819	Incluye
+T516	Concept 5824 5831	riñones
+T515	Concept 5837 5845	uréteres
+T514	Concept 5851 5857	vejiga
+E517	Action:T517 Target:T516 Target2:T515 Target3:T514 Target4:T519
+T534	Concept 5922 5933	infecciones
+T532	Concept 5872 5880	Personas
+T531	Concept 5894 5898	edad
+T530	Concept 5901 5905	sexo
+T529	Action 5913 5921	contraer
+T528	Concept 5922 5943	infecciones urinarias
+E529	Action:T529 Target:T528 Subject:T532
+R147	property-of Arg1:T531 Arg2:T532
+R148	property-of Arg1:T530 Arg2:T532
+R149	is-a Arg1:T528 Arg2:T534
+T537	Concept 5954 5961	mujeres
+T536	Action 5965 5971	sufren
+T535	Concept 6002 6009	hombres
+E536	Action:T536 Subject:T537 Subject2:T535
+T547	Concept 6116 6122	lesión
+T544	Concept 6055 6063	diabetes
+T543	Action 6049 6054	tiene
+T542	Action 6065 6073	necesita
+T541	Concept 6077 6081	tubo
+T540	Action 6087 6093	drenar
+T539	Concept 6097 6103	vejiga
+T538	Concept 6129 6143	médula espinal
+E540	Action:T540 Target:T539 Subject:T541
+E542	Action:T542 Target:T541 Subject:T544
+E543	Action:T543 Subject:T544
+R64	property-of Arg1:T547 Arg2:T538
+T558	Concept 6169 6178	infección
+T557	Action 6148 6154	piensa
+T556	Concept 6169 6187	infección urinaria
+T555	Action 6207 6210	vea
+T554	Concept 6216 6222	médico
+E555	Action:T555 Target:T554
+E557	Action:T557 Target:T556
+R153	is-a Arg1:T556 Arg2:T558
+T563	Concept 6260 6266	prueba
+T562	Action 6240 6251	confirmarlo
+T561	Concept 6227 6233	médico
+T560	Action 6234 6239	puede
+T559	Concept 6260 6275	prueba de orina
+E562	Action:T562 
+R154	is-a Arg1:T559 Arg2:T563
+E560	Action:T560 Target:E562 Subject:T561
+T573	Concept 6289 6294	sanos
+T572	Concept 6281 6288	riñones
+T571	Action 6295 6302	limpian
+T570	Concept 6306 6312	sangre
+T569	Action 6313 6323	eliminando
+T568	Concept 6337 6344	líquido
+T567	Concept 6327 6333	exceso
+T566	Concept 6346 6355	minerales
+T565	Concept 6358 6366	desechos
+E571	Action:T571 Target:T570 Subject:T572
+R155	property-of Arg1:T573 Arg2:T572
+R156	property-of Arg1:T567 Arg2:T568
+E569	Action:T569 Target:T568 Target2:T566 Target3:T565 Subject:T572 Subject2:E571
+T582	Concept 6420 6427	fuertes
+T581	Concept 6440 6444	sana
+T580	Action 6376 6384	producen
+T579	Concept 6385 6393	hormonas
+T578	Action 6398 6407	mantienen
+T577	Concept 6413 6419	huesos
+T576	Concept 6433 6439	sangre
+E578	Action:T578 Target:T582 Target2:T581 Subject:T579
+E580	Action:T580 Target:T579
+R158	property-of Arg1:T582 Arg2:T577
+R159	property-of Arg1:T581 Arg2:T576
+T590	Action 6487 6496	funcionan
+T589	Concept 6497 6510	correctamente
+T586	Concept 6477 6478	n
+T585	Concept 6458 6465	riñones
+E590	Action:T590 Target:T589 Subject:T585
+R67	property-of Arg1:T586 Arg2:T585
+T595	Concept 6539 6549	peligrosos
+T594	Action 6519 6529	acumularse
+T593	Concept 6530 6538	desechos
+T592	Concept 6556 6565	organismo
+E594	Action:T594 Target:T593
+R163	property-of Arg1:T595 Arg2:T593
+R164	part-of Arg1:T593 Arg2:T592
+T599	Concept 6585 6601	presión arterial
+T597	Action 6573 6581	elevarse
+E597	Action:T597 Target:T599
+T611	Concept 6675 6689	glóbulos rojos
+T609	Action 6654 6662	producir
+T607	Concept 6640 6648	líquidos
+T606	Concept 6630 6636	exceso
+T603	Concept 6663 6674	suficientes
+T602	Concept 6606 6612	cuerpo
+T601	Action 6619 6626	retener
+E601	Action:T601 Target:T607 Subject:T602
+E609	Action:T609 Target:T611 Subject:E601
+R168	property-of Arg1:T606 Arg2:T607
+R68	property-of Arg1:T603 Arg2:T611
+T619	Action 6706 6712	fallan
+T618	Concept 6698 6705	riñones
+T617	Concept 6725 6736	tratamiento
+T616	Action 6742 6752	reemplazar
+T615	Concept 6757 6766	funciones
+E619	Action:T619 Target:T618 Target2:T617
+E616	Action:T616 Target:T615 Subject:T617 Subject2:E619
+T625	Concept 6806 6817	tratamiento
+T624	Concept 6836 6846	trasplante
+T622	Concept 6822 6830	diálisis
+R172	is-a Arg1:T622 Arg2:T625
+R70	is-a Arg1:T624 Arg2:T625
+T628	Concept 6859 6870	tratamiento
+T627	Concept 6881 6891	beneficios
+T626	Concept 6894 6905	desventajas
+R175	property-of Arg1:T627 Arg2:T628
+R176	property-of Arg1:T626 Arg2:T628
+T637	Concept 7028 7040	alimentación
+T634	Action 7043 7053	planificar
+T633	Action 6946 6952	escoja
+T632	Concept 6930 6941	tratamiento
+T631	Concept 6990 7004	estilo de vida
+T630	Action 6977 6984	cambios
+T629	Concept 7058 7069	actividades
+E633	Action:T633 Target:T632
+E634	Action:T634 Target:T629
+E630	Action:T630 Target:T631 Target2:E634 Target3:T637 Target4:T629
+T651	Concept 7097 7110	profesionales
+T650	Concept 7097 7122	profesionales de la salud
+T645	Concept 7127 7134	familia
+T644	Concept 7141 7147	amigos
+T643	Concept 7167 7175	personas
+T642	Concept 7180 7199	insuficiencia renal
+T641	Action 7206 7212	llevar
+T640	Concept 7217 7221	vida
+T639	Concept 7222 7227	plena
+T638	Concept 7230 7236	activa
+E641	Action:T641 Target:T640 Subject:T643
+R179	property-of Arg1:T639 Arg2:T640
+R180	property-of Arg1:T638 Arg2:T640
+R182	is-a Arg1:T650 Arg2:T651
+R71	property-of Arg1:T642 Arg2:T643
+T659	Concept 7297 7301	agua
+T658	Concept 7308 7314	sangre
+T657	Concept 7242 7249	riñones
+T656	Action 7250 7258	producen
+T655	Concept 7259 7264	orina
+T654	Action 7268 7275	filtrar
+T653	Concept 7276 7284	desechos
+T652	Concept 7287 7293	exceso
+E654	Action:T654 Target:T653 Target2:T652 Subject:T657
+E656	Action:T656 Target:T655 Subject:T657
+R185	part-of Arg1:T659 Arg2:T658
+R186	property-of Arg1:T652 Arg2:T659
+R187	property-of Arg1:T653 Arg2:T659
+T663	Concept 7319 7326	desecho
+T662	Concept 7339 7343	urea
+R191	is-a Arg1:T662 Arg2:T663
+T666	Concept 7348 7354	sangre
+T665	Action 7358 7368	transporta
+T664	Concept 7379 7386	riñones
+E665	Action:T665 Target:T664 Subject:T666
+T675	Concept 7398 7405	riñones
+T672	Concept 7448 7456	delgados
+T671	Concept 7410 7415	orina
+T670	Action 7416 7421	llega
+T669	Concept 7427 7433	vejiga
+T668	Concept 7442 7447	tubos
+T667	Concept 7466 7474	uréteres
+E670	Action:T670 Target:T669 Subject:T671
+R192	property-of Arg1:T672 Arg2:T668
+R193	is-a Arg1:T668 Arg2:T667
+T679	Concept 7479 7485	vejiga
+T678	Action 7486 7494	almacena
+T677	Concept 7498 7503	orina
+E678	Action:T678 Target:T677 Subject:T679
+T37	Action 7601 7608	pequeña
+T687	Concept 7551 7557	vejiga
+T686	Concept 7581 7586	llena
+T685	Action 7561 7568	expande
+T684	Concept 7621 7626	vacía
+E685	Action:T685 Target:T687 Subject:T687
+R197	property-of Arg1:T686 Arg2:T687
+R198	property-of Arg1:T684 Arg2:T687
+E1	Action:T37 Target:T687 Subject:T687
+T693	Concept 7676 7682	vejiga
+T692	Action 7689 7698	almacenar
+T691	Concept 7737 7742	orina
+T690	Concept 7634 7650	sistema urinario
+T689	Concept 7660 7671	normalmente
+E692	Action:T692 Target:T691 Subject:T693
+R201	property-of Arg1:T689 Arg2:T690
+T708	Concept 7825 7830	orina
+T705	Concept 7792 7803	condiciones
+T704	Action 7811 7817	causar
+T703	Action 7831 7839	contenga
+T702	Concept 7840 7846	sangre
+T701	Concept 7849 7857	proteína
+E703	Action:T703 Target:T702 Target2:T701 Subject:T708
+E704	Action:T704 Target:E703 Subject:T705
+T717	Concept 7862 7867	usted
+T715	Concept 7877 7894	problema urinario
+T714	Action 7896 7901	acuda
+T713	Concept 7907 7916	proveedor
+T709	Action 7868 7873	tiene
+E709	Action:T709 Target:T715 Subject:T717
+E714	Action:T714 Target:T713 Subject:T715
+T725	Concept 7942 7950	análisis
+T724	Concept 7968 7975	pruebas
+T721	Concept 7942 7959	análisis de orina
+T719	Action 7992 8004	diagnosticar
+T718	Concept 8008 8016	problema
+E719	Action:T719 Target:T718 Subject:T724
+R205	is-a Arg1:T721 Arg2:T725
+R72	is-a Arg1:T721 Arg2:T724
+T728	Concept 8021 8032	tratamiento
+T727	Action 8033 8040	depende
+T726	Concept 8047 8052	causa
+E727	Action:T727 Target:T726 Subject:T728
+T743	Concept 8070 8077	cálculo
+T738	Action 8123 8128	forma
+T737	Concept 8091 8115	pieza sólida de material
+T736	Action 8141 8147	debido
+T733	Concept 8058 8064	piedra
+T732	Concept 8070 8083	cálculo renal
+T731	Concept 8135 8140	riñón
+T730	Concept 8150 8160	sustancias
+T729	Concept 8177 8182	orina
+E736	Action:T736 Target:T730
+E738	Action:T738 Subject:T732
+R207	is-a Arg1:T732 Arg2:T737
+R208	same-as Arg1:T733 Arg2:T732
+R212	same-as Arg1:T732 Arg2:T733
+R75	part-of Arg1:T730 Arg2:T729
+T747	Concept 8198 8205	pequeña
+T746	Concept 8235 8241	grande
+T745	Concept 8214 8228	grano de arena
+T744	Concept 8251 8256	perla
+R213	property-of Arg1:T747 Arg2:T745
+R214	property-of Arg1:T746 Arg2:T744
+T753	Concept 8276 8283	piedras
+T752	Action 8295 8303	eliminan
+T751	Concept 8276 8291	piedras renales
+T750	Concept 8308 8314	cuerpo
+T749	Concept 8319 8331	ayuda médica
+E752	Action:T752 Subject:T750 Subject2:T751
+R76	is-a Arg1:T751 Arg2:T753
+T765	Action 8339 8347	atorarse
+T761	Concept 8410 8414	gran
+T760	Concept 8355 8369	vías urinarias
+T759	Action 8371 8379	bloquear
+T758	Concept 8383 8397	flujo de orina
+T757	Action 8400 8406	causar
+T756	Concept 8415 8420	dolor
+E757	Action:T757 Target:T756
+E759	Action:T759 Target:T758
+E765	Action:T765 Target:T760
+R217	property-of Arg1:T761 Arg2:T756
+T780	Action 8435 8447	diagnostican
+T778	Concept 8509 8515	sangre
+T777	Concept 8521 8533	diagnósticos
+T775	Concept 8487 8495	análisis
+T774	Concept 8538 8544	imagen
+T770	Concept 8426 8434	doctores
+T769	Concept 8452 8459	piedras
+T768	Concept 8467 8474	riñones
+T767	Concept 8487 8504	análisis de orina
+E780	Action:T780 Target:T769 Subject:T770
+R220	is-a Arg1:T767 Arg2:T775
+R78	part-of Arg1:T769 Arg2:T768
+R79	property-of Arg1:T774 Arg2:T777
+T784	Action 8563 8567	pasa
+T783	Concept 8553 8559	piedra
+T782	Action 8599 8607	necesite
+T781	Concept 8608 8619	tratamiento
+E782	Action:T782 Target:T781 Subject:T783
+E784	Action:T784 Subject:T783
+T795	Concept 8736 8742	cuerpo
+T792	Action 8679 8688	insertado
+T791	Action 8711 8716	lleva
+T790	Concept 8648 8663	ondas de choque
+T789	Concept 8668 8678	endoscopio
+T788	Concept 8702 8706	tubo
+T787	Concept 8720 8725	orina
+T786	Concept 8752 8758	uretra
+T785	Concept 8766 8773	cirugía
+E791	Action:T791 Target:T787 Subject:T788
+E792	Action:T792 Target:T788 Subject:T789
+R222	is-a Arg1:T788 Arg2:T786
+T801	Concept 8819 8825	sangre
+T800	Concept 8784 8792	diabetes
+T799	Concept 8797 8812	nivel de azúcar
+T798	Concept 8833 8840	elevado
+R228	property-of Arg1:T799 Arg2:T801
+R229	property-of Arg1:T798 Arg2:T799
+T811	Concept 8846 8853	riñones
+T810	Concept 8858 8865	filtros
+T809	Action 8870 8877	limpian
+T808	Concept 8881 8887	sangre
+E809	Action:T809 Target:T808 Subject:T811
+R233	is-a Arg1:T811 Arg2:T810
+T817	Concept 8911 8919	desechos
+T816	Concept 8926 8934	líquidos
+T815	Action 8938 8946	acumulan
+T814	Concept 8953 8959	sangre
+T813	Action 8972 8977	salir
+T812	Concept 8982 8991	organismo
+E813	Action:T813 Target:T812 Subject:T816 Subject2:T817
+E815	Action:T815 Target:T817 Target2:T816 Subject:T814
+T822	Concept 9025 9033	diabetes
+T821	Action 9007 9017	ocasionado
+T820	Concept 8996 9006	daño renal
+T819	Concept 9046 9066	nefropatía diabética
+E821	Action:T821 Target:T820 Target2:T822
+R234	is-a Arg1:T820 Arg2:T819
+R237	is-a Arg1:T819 Arg2:T822
+T828	Action 9068 9076	Comienza
+T827	Concept 9079 9086	ocurrir
+T826	Concept 9120 9128	síntomas
+T825	Action 9106 9115	aparezcan
+E825	Action:T825 Target:T826
+E828	Action:T828 Target:T827
+T61	Action 9198 9208	detectarla
+T833	Concept 9182 9192	periódicas
+T832	Concept 9134 9142	personas
+T831	Concept 9147 9155	diabetes
+T830	Action 9162 9171	someterse
+T829	Concept 9174 9181	pruebas
+E830	Action:T830 Target:T829 Subject:T832
+R238	property-of Arg1:T831 Arg2:T832
+R239	property-of Arg1:T833 Arg2:T829
+E2	Action:T61 Subject:T829
+T848	Concept 9234 9240	examen
+T847	Concept 9244 9249	orina
+T846	Concept 9255 9263	análisis
+T845	Concept 9267 9273	sangre
+T844	Action 9308 9313	están
+T843	Concept 9314 9325	funcionando
+T841	Action 9279 9282	ver
+T840	Concept 9214 9221	pruebas
+T837	Concept 9300 9307	riñones
+E841	Action:T841 Target:T837 Subject:T840
+E844	Action:T844 Target:T843 Subject:T837
+R81	property-of Arg1:T847 Arg2:T848
+R82	is-a Arg1:T848 Arg2:T840
+R83	property-of Arg1:T845 Arg2:T846
+R84	is-a Arg1:T846 Arg2:T840
+T853	Action 9338 9346	continúa
+T851	Concept 9333 9337	daño
+T850	Concept 9352 9359	riñones
+T849	Action 9367 9373	fallar
+E849	Action:T849 Subject:T850
+E853	Action:T853 Target:T851 Target2:E849
+T859	Concept 9422 9435	insuficiencia
+T858	Concept 9449 9463	Estados Unidos
+T857	Concept 9388 9396	diabetes
+T856	Action 9403 9408	causa
+T855	Concept 9422 9441	insuficiencia renal
+E856	Action:T856 Target:T855 Subject:T857
+R245	is-a Arg1:T855 Arg2:T859
+T867	Concept 9482 9495	insuficiencia
+T865	Concept 9526 9536	trasplante
+T864	Concept 9469 9477	personas
+T863	Concept 9482 9501	insuficiencia renal
+T862	Action 9502 9511	requieren
+T861	Concept 9512 9520	diálisis
+T860	Concept 9526 9542	trasplante renal
+E862	Action:T862 Target:T861 Target2:T860 Subject:T864
+R246	property-of Arg1:T863 Arg2:T864
+R247	is-a Arg1:T863 Arg2:T867
+R249	is-a Arg1:T860 Arg2:T865
+T873	Action 9555 9563	retrasar
+T872	Concept 9567 9575	progreso
+T870	Action 9593 9600	impedir
+T869	Concept 9605 9612	empeore
+T868	Concept 9580 9590	daño renal
+E870	Action:T870 Target:T869
+E873	Action:T873 Target:T872
+R85	property-of Arg1:T872 Arg2:T868
+T882	Concept 9693 9703	demasiadas
+T881	Action 9687 9692	comer
+T880	Concept 9627 9635	glucemia
+T879	Concept 9641 9657	presión arterial
+T878	Concept 9669 9681	medicamentos
+T877	Concept 9704 9713	proteínas
+T876	Action 9614 9623	Controlar
+T875	Action 9659 9664	tomar
+E875	Action:T875 Subject:T878
+E876	Action:T876 Target:T880 Target2:T879
+E881	Action:T881 Target:T877
+R251	property-of Arg1:T882 Arg2:T877
+A3	Negated E881
+T903	Action 9807 9818	produciendo
+T902	Concept 9822 9827	orina
+T901	Concept 9732 9739	riñones
+T900	Action 9740 9747	filtran
+T899	Action 9750 9757	limpian
+T898	Concept 9761 9767	sangre
+T897	Action 9769 9779	eliminando
+T896	Concept 9784 9804	productos de desecho
+E897	Action:T897 Target:T896 Subject:T901
+E899	Action:T899 Target:T898 Subject:T901
+E900	Action:T900 Target:T898 Subject:T901
+E903	Action:T903 Target:T902 Subject:T901
+T914	Concept 9833 9840	pruebas
+T910	Action 9862 9865	ver
+T909	Concept 9833 9848	pruebas renales
+T908	Concept 9901 9908	riñones
+T907	Action 9885 9896	funcionando
+E910	Action:T910 Subject:T909
+R260	is-a Arg1:T909 Arg2:T914
+E907	Action:T907 Target:T908 Subject:E910
+T69	Concept 9925 9932	pruebas
+T68	Concept 9955 9961	imagen
+T66	Concept 9936 9942	sangre
+T915	Concept 9944 9949	orina
+R87	is-a Arg1:T66 Arg2:T69
+R88	is-a Arg1:T915 Arg2:T69
+R89	is-a Arg1:T68 Arg2:T69
+T930	Concept 9982 9992	enfermedad
+T929	Concept 10002 10007	etapa
+T928	Action 10020 10027	muestra
+T926	Concept 9982 9998	enfermedad renal
+T925	Concept 10002 10016	etapa temprana
+T924	Concept 10028 10034	signos
+T923	Concept 10037 10045	síntomas
+E928	Action:T928 Target:T924 Target2:T923 Subject:T926
+R263	property-of Arg1:T925 Arg2:T926
+R264	same-as Arg1:T924 Arg2:T923
+R265	is-a Arg1:T926 Arg2:T930
+R266	is-a Arg1:T925 Arg2:T929
+T934	Action 10098 10109	funcionando
+T933	Concept 10051 10058	pruebas
+T932	Action 10081 10086	saber
+T931	Concept 10114 10121	riñones
+E934	Action:T934 Target:T931
+E932	Action:T932 Target:E934 Subject:T933
+T955	Concept 10164 10174	enfermedad
+T952	Concept 10259 10271	enfermedades
+T951	Concept 10290 10307	historia familiar
+T950	Concept 10290 10298	historia
+T948	Concept 10311 10330	insuficiencia renal
+T946	Action 10144 10148	haga
+T945	Concept 10253 10257	alta
+T943	Concept 10152 10159	chequeo
+T942	Concept 10164 10180	enfermedad renal
+T941	Concept 10206 10224	factores de riesgo
+T940	Concept 10226 10234	diabetes
+T939	Concept 10236 10252	presión arterial
+T938	Concept 10259 10283	enfermedades del corazón
+E946	Action:T946 Target:T943
+R270	property-of Arg1:T945 Arg2:T939
+R271	part-of Arg1:T940 Arg2:T941
+R272	part-of Arg1:T939 Arg2:T941
+R273	part-of Arg1:T938 Arg2:T941
+R276	is-a Arg1:T938 Arg2:T952
+R277	is-a Arg1:T951 Arg2:T950
+R279	is-a Arg1:T942 Arg2:T955
+R90	property-of Arg1:T942 Arg2:T943
+T958	Concept 10348 10352	saco
+T957	Concept 10335 10341	quiste
+T956	Concept 10348 10369	saco lleno de líquido
+R283	is-a Arg1:T956 Arg2:T958
+R91	is-a Arg1:T957 Arg2:T956
+T960	Concept 10392 10399	quistes
+T959	Concept 10392 10407	quistes renales
+R285	is-a Arg1:T959 Arg2:T960
+T963	Concept 10443 10450	simples
+T962	Concept 10427 10442	quistes renales
+T961	Concept 10497 10505	benignos
+R286	property-of Arg1:T961 Arg2:T962
+R287	property-of Arg1:T963 Arg2:T962
+T969	Concept 10527 10539	enfermedades
+T968	Action 10544 10550	causan
+T967	Concept 10551 10566	quistes renales
+E968	Action:T968 Target:T967 Subject:T969
+T972	Concept 10582 10601	poliquistosis renal
+T971	Concept 10610 10621	hereditaria
+R290	part-of Arg1:T971 Arg2:T972
+T976	Concept 10639 10646	quistes
+T975	Action 10647 10653	crecen
+T974	Concept 10661 10668	riñones
+E975	Action:T975 Target:T974 Subject:T976
+T982	Concept 10670 10675	Estos
+T980	Action 10716 10725	funcionen
+T979	Concept 10726 10729	mal
+T978	Action 10683 10691	agrandar
+T977	Concept 10696 10703	riñones
+E978	Action:T978 Target:T977 Subject:T982
+E980	Action:T980 Target:T979
+T987	Concept 10805 10818	insuficiencia
+T986	Concept 10756 10764	personas
+T985	Concept 10769 10788	poliquistosis renal
+T984	Action 10789 10796	termina
+T983	Concept 10805 10824	insuficiencia renal
+E984	Action:T984 Target:T983 Subject:T986
+R291	property-of Arg1:T985 Arg2:T986
+R293	is-a Arg1:T983 Arg2:T987
+T992	Action 10834 10839	causa
+T991	Concept 10840 10847	quistes
+T990	Concept 10868 10874	cuerpo
+T989	Concept 10887 10893	hígado
+E992	Action:T992 Target:T991
+R294	part-of Arg1:T989 Arg2:T990
+T999	Concept 10935 10944	principio
+T998	Action 10913 10922	presentan
+T997	Concept 10923 10944	síntomas al principio
+T995	Concept 10923 10931	síntomas
+E998	Action:T998 Subject:T997
+R298	is-a Arg1:T997 Arg2:T995
+T1007	Concept 10974 10987	poliquistosis
+T1006	Concept 10998 11005	pruebas
+T1005	Concept 11023 11031	historia
+T1004	Concept 10950 10957	médicos
+T1003	Action 10958 10970	diagnostican
+T1002	Concept 10974 10993	poliquistosis renal
+T1001	Concept 10998 11017	pruebas de imágenes
+T1000	Concept 11023 11040	historia familiar
+E1003	Action:T1003 Target:T1002 Subject:T1004
+R299	is-a Arg1:T1002 Arg2:T1007
+R300	is-a Arg1:T1001 Arg2:T1006
+R301	is-a Arg1:T1000 Arg2:T1005
+T1012	Action 11059 11065	pueden
+T1011	Concept 11046 11058	tratamientos
+T1010	Action 11066 11072	ayudar
+T1009	Concept 11081 11089	síntomas
+T1008	Concept 11096 11110	complicaciones
+E1010	Action:T1010 Target:T1009 Target2:T1008 Subject:T1011
+E1012	Action:T1012 
+T1024	Concept 11197 11204	riñones
+T1023	Concept 11231 11244	insuficiencia
+T1022	Concept 11112 11117	Estos
+T1021	Action 11118 11126	incluyen
+T1020	Concept 11127 11139	medicamentos
+T1019	Concept 11141 11169	cambios en el estilo de vida
+T1018	Concept 11184 11192	personas
+T1017	Concept 11197 11218	riñones poliquísticos
+T1016	Action 11219 11230	desarrollan
+T1015	Concept 11231 11250	insuficiencia renal
+T1014	Concept 11252 11260	diálisis
+T1013	Concept 11266 11285	trasplante de riñón
+E1016	Action:T1016 Target:T1015 Target2:T1014 Target3:T1013 Subject:T1018
+E1021	Action:T1021 Target:T1020 Target2:T1019 Subject:T1022
+R302	property-of Arg1:T1017 Arg2:T1018
+R303	is-a Arg1:T1017 Arg2:T1024
+R304	is-a Arg1:T1015 Arg2:T1023
+T72	Action 11408 11416	diálisis
+T1033	Concept 11290 11300	enfermedad
+T1031	Concept 11290 11315	enfermedad renal quística
+T1030	Concept 11356 11366	enfermedad
+T1028	Concept 11336 11344	personas
+T1027	Concept 11356 11380	enfermedad renal crónica
+T1025	Action 11326 11332	ocurre
+E1025	Action:T1025 Target:T1028 Subject:T1031
+R305	property-of Arg1:T1027 Arg2:T1028
+R308	is-a Arg1:T1027 Arg2:T1030
+R92	is-a Arg1:T1031 Arg2:T1033
+E3	Action:T72 Target:T1028
+T1042	Concept 11437 11450	poliquistosis
+T1040	Action 11499 11505	forman
+T1038	Concept 11534 11540	cuerpo
+T1037	Concept 11462 11469	riñones
+T1036	Concept 11477 11490	tamaño normal
+T1035	Concept 11437 11456	poliquistosis renal
+T1034	Concept 11506 11513	quistes
+E1040	Action:T1040 Target:T1034 Subject:T1037
+R309	property-of Arg1:T1036 Arg2:T1037
+R310	part-of Arg1:T1037 Arg2:T1038
+R93	is-a Arg1:T1035 Arg2:T1042
+T1045	Action 11558 11566	no tiene
+T1044	Concept 11547 11557	enfermedad
+T1043	Concept 11567 11575	síntomas
+E1045	Action:T1045 Target:T1043 Subject:T1044
+T1050	Action 11622 11631	necesitan
+T1048	Concept 11593 11600	quistes
+T1047	Concept 11605 11616	inofensivos
+T1046	Concept 11632 11643	tratamiento
+E1050	Action:T1050 Target:T1046 Subject:T1048
+R312	property-of Arg1:T1047 Arg2:T1048
+A4	Negated E1050
+T1057	Action 11654 11660	causan
+T1056	Concept 11661 11675	complicaciones
+T1055	Concept 11680 11691	tratamiento
+T1054	Concept 11700 11709	medicinas
+T1053	Action 11711 11717	drenar
+T1052	Concept 11722 11729	quistes
+T1051	Concept 11732 11739	cirugía
+E1053	Action:T1053 Target:T1052
+E1057	Action:T1057 Target:T1056
+R313	is-a Arg1:T1054 Arg2:T1055
+R94	is-a Arg1:T1051 Arg2:T1055
+T1066	Concept 11744 11754	trasplante
+T1064	Concept 11802 11806	sano
+T1063	Concept 11744 11760	trasplante renal
+T1062	Concept 11768 11777	operación
+T1061	Action 11783 11792	colocarle
+T1060	Concept 11796 11801	riñón
+T1059	Concept 11813 11819	cuerpo
+E1061	Action:T1061 Target:T1060 Target2:T1059 Subject:T1062
+R314	is-a Arg1:T1063 Arg2:T1062
+R315	property-of Arg1:T1064 Arg2:T1060
+R316	part-of Arg1:T1060 Arg2:T1059
+R317	is-a Arg1:T1063 Arg2:T1066
+T1092	Concept 11937 11941	vena
+T1091	Concept 11872 11877	nuevo
+T1090	Concept 11903 11910	abdomen
+T1089	Concept 11884 11898	parte inferior
+T1088	Concept 11832 11842	trasplante
+T1087	Concept 11847 11855	cirujano
+T1086	Action 11856 11862	coloca
+T1085	Concept 11866 11871	riñón
+T1084	Action 11913 11920	conecta
+T1083	Concept 11924 11931	arteria
+T1082	Concept 11937 11949	vena renales
+T1081	Concept 11972 11977	riñón
+E1084	Action:T1084 Target:T1083 Target2:T1082 Subject:T1087 Subject2:T1083 Subject3:T1082
+E1086	Action:T1086 Target:T1085 Subject:T1087
+R326	property-of Arg1:T1091 Arg2:T1085
+R327	part-of Arg1:T1089 Arg2:T1090
+R330	is-a Arg1:T1082 Arg2:T1092
+T1101	Concept 12004 12009	nuevo
+T1100	Action 12022 12030	producir
+T1099	Action 12068 12073	fluir
+T1098	Concept 11998 12003	riñón
+T1097	Concept 12031 12036	orina
+T1096	Concept 12050 12056	sangre
+E1099	Action:T1099 Target:T1096
+E1100	Action:T1100 Target:T1097 Subject:T1098
+R331	property-of Arg1:T1101 Arg2:T1098
+T1111	Action 12119 12125	vienen
+T1110	Action 12142 12150	fallecen
+T1109	Concept 12129 12137	donantes
+T1108	Concept 12097 12118	riñones trasplantados
+E1110	Action:T1110 Target:T1109
+E1111	Action:T1111 
+R335	part-of Arg1:T1108 Arg2:T1109
+T1116	Concept 12152 12159	Algunos
+T1115	Action 12160 12169	provienen
+T1113	Concept 12173 12191	familiares en vida
+E1115	Action:T1115 Target:T1113 Subject:T1116
+T1130	Action 12237 12247	trasplante
+T1129	Action 12300 12307	impedir
+T1128	Action 12254 12259	tomar
+T1127	Concept 12260 12272	medicamentos
+T1126	Concept 12197 12205	personas
+T1125	Concept 12315 12324	organismo
+T1124	Action 12325 12332	rechace
+T1123	Concept 12336 12354	riñón trasplantado
+T1122	Concept 12336 12341	riñón
+E1124	Action:T1124 Target:T1123 Subject:T1125
+E1130	Action:T1130 Target:T1126
+R341	is-a Arg1:T1123 Arg2:T1122
+E1128	Action:T1128 Target:T1127 Subject:E1130
+E1129	Action:T1129 Target:E1124 Subject:E1128
+T1139	Concept 12359 12365	uretra
+T1138	Concept 12372 12376	tubo
+T1137	Action 12400 12405	salir
+T1136	Concept 12394 12399	orina
+T1135	Concept 12410 12416	cuerpo
+T1134	Action 12381 12388	permite
+E1137	Action:T1137 Target:T1135 Subject:T1136
+R343	is-a Arg1:T1139 Arg2:T1138
+E1134	Action:T1134 Target:E1137 Subject:T1139
+T1144	Concept 12450 12454	tubo
+T1143	Concept 12455 12460	largo
+T1142	Concept 12425 12432	hombres
+T1141	Concept 12437 12443	uretra
+T1140	Concept 12486 12490	pene
+R344	property-of Arg1:T1143 Arg2:T1144
+R345	part-of Arg1:T1141 Arg2:T1142
+R346	part-of Arg1:T1141 Arg2:T1140
+R347	is-a Arg1:T1141 Arg2:T1144
+R97	part-of Arg1:T1140 Arg2:T1142
+T1148	Concept 12499 12506	mujeres
+T1147	Concept 12511 12517	uretra
+T1146	Concept 12521 12526	corta
+R351	part-of Arg1:T1147 Arg2:T1148
+R352	property-of Arg1:T1146 Arg2:T1147
+T1154	Concept 12546 12555	problemas
+T1153	Action 12532 12538	causas
+T1152	Concept 12562 12568	uretra
+T1151	Concept 12580 12594	envejecimiento
+T1150	Concept 12596 12606	enfermedad
+T1149	Concept 12609 12615	lesión
+E1153	Action:T1153 Target:T1154 Subject:T1151 Subject2:T1150 Subject3:T1149
+R353	property-of Arg1:T1154 Arg2:T1152
+T1162	Concept 12682 12688	orinar
+T1161	Concept 12621 12630	problemas
+T1160	Concept 12637 12643	uretra
+T1159	Action 12651 12657	causar
+T1158	Concept 12658 12663	dolor
+T1157	Concept 12666 12676	dificultad
+E1159	Action:T1159 Target:T1158 Target2:T1157 Subject:T1161
+R358	property-of Arg1:T1157 Arg2:T1162
+R359	property-of Arg1:T1161 Arg2:T1160
+T1167	Action 12720 12728	sangrado
+T1166	Action 12731 12740	secreción
+T1165	Concept 12748 12754	uretra
+E1166	Action:T1166 Subject:T1165
+E1167	Action:T1167 Subject:T1165
+T1177	Concept 12817 12825	exámenes
+T1176	Concept 12810 12816	varios
+T1175	Concept 12760 12768	doctores
+T1174	Action 12769 12781	diagnostican
+T1173	Concept 12786 12805	problemas uretrales
+T1172	Concept 12786 12795	problemas
+E1174	Action:T1174 Target:T1173 Subject:T1175
+R363	is-a Arg1:T1173 Arg2:T1172
+R364	property-of Arg1:T1176 Arg2:T1177
+T1186	Concept 12842 12850	análisis
+T1184	Action 12833 12841	incluyen
+T1183	Concept 12920 12926	cámara
+T1182	Concept 12842 12859	análisis de orina
+T1181	Concept 12861 12868	rayos X
+T1180	Concept 12949 12960	cistoscopia
+T1179	Concept 12889 12903	sonda especial
+T1178	Concept 12874 12880	examen
+E1184	Action:T1184 Target:T1182 Target2:T1180
+R365	property-of Arg1:T1183 Arg2:T1179
+R366	is-a Arg1:T1180 Arg2:T1179
+R367	part-of Arg1:T1180 Arg2:T1178
+R370	is-a Arg1:T1182 Arg2:T1186
+T1193	Concept 12965 12976	tratamiento
+T1191	Concept 12992 13010	causa del problema
+T1190	Action 12977 12984	depende
+E1190	Action:T1190 Target:T1191 Subject:T1193
+T1196	Action 13018 13025	incluir
+T1195	Concept 13026 13035	medicinas
+T1194	Concept 13057 13064	cirugía
+E1196	Action:T1196 Target:T1195 Target2:T1194
+T1206	Concept 13115 13121	exceso
+T1205	Concept 13070 13077	riñones
+T1204	Action 13078 13084	forman
+T1203	Concept 13088 13093	orina
+T1202	Action 13094 13103	filtrando
+T1201	Concept 13104 13112	desechos
+T1200	Concept 13125 13129	agua
+T1199	Concept 13136 13142	sangre
+E1204	Action:T1204 Target:T1203 Subject:T1205
+R375	property-of Arg1:T1206 Arg2:T1200
+R376	part-of Arg1:T1200 Arg2:T1199
+E1202	Action:T1202 Target:T1201 Target2:T1206 Subject:T1205 Subject2:E1204
+T1211	Concept 13147 13153	sangre
+T1210	Action 13154 13159	lleva
+T1209	Concept 13164 13172	desechos
+T1208	Concept 13179 13186	riñones
+E1210	Action:T1210 Target:T1209 Target2:T1208 Subject:T1211
+T1218	Concept 13232 13240	delgados
+T1217	Action 13213 13217	pasa
+T1216	Concept 13195 13202	riñones
+T1215	Concept 13207 13212	orina
+T1214	Concept 13226 13231	tubos
+T1213	Concept 13250 13258	uréteres
+T1212	Concept 13268 13274	vejiga
+E1217	Action:T1217 Target:T1213 Target2:T1212 Target3:T1216 Subject:T1215
+R377	property-of Arg1:T1218 Arg2:T1214
+R378	is-a Arg1:T1213 Arg2:T1214
+T1231	Action 13347 13354	obligar
+T1230	Action 13378 13386	alejarse
+T1229	Concept 13394 13401	riñones
+T1228	Concept 13280 13288	músculos
+T1227	Concept 13311 13319	uréteres
+T1226	Action 13323 13331	contraen
+T1225	Action 13334 13341	relajan
+T1224	Action 13368 13373	bajar
+T1223	Concept 13360 13365	orina
+E1230	Action:T1230 Target:T1229 Subject:T1223
+R380	part-of Arg1:T1228 Arg2:T1227
+E1224	Action:T1224 Target:T1223 Target2:T1229
+E1225	Action:T1225 Subject:T1228
+E1226	Action:T1226 Subject:T1228
+E1231	Action:T1231 Target:E1230
+T1238	Concept 13426 13431	orina
+T1237	Action 13432 13438	fluyen
+T1236	Concept 13446 13454	uréteres
+T1235	Concept 13460 13466	vejiga
+E1237	Action:T1237 Target:T1235 Target2:T1236 Subject:T1238
+T1248	Concept 13539 13550	obstrucción
+T1247	Concept 13553 13559	lesión
+T1246	Concept 13494 13503	problemas
+T1245	Concept 13512 13520	uréteres
+T1244	Action 13528 13534	surgir
+E1244	Action:T1244 Target:T1246 Subject:T1248 Subject2:T1247
+R386	property-of Arg1:T1246 Arg2:T1245
+T1256	Action 13587 13596	estancada
+T1255	Action 13599 13605	vuelve
+T1254	Action 13619 13627	contraer
+T1253	Concept 13632 13650	infección urinaria
+T1252	Concept 13632 13641	infección
+T1251	Concept 13607 13612	usted
+T1250	Concept 13575 13580	orina
+E1254	Action:T1254 Target:T1253 Subject:T1251
+E1255	Action:T1255 Subject:T1250
+E1256	Action:T1256 Subject:T1250
+R388	is-a Arg1:T1253 Arg2:T1252
+T1262	Concept 13656 13664	doctores
+T1261	Action 13665 13677	diagnostican
+T1259	Concept 13682 13707	problemas de los uréteres
+T1258	Concept 13723 13731	exámenes
+E1261	Action:T1261 Target:T1259 Subject:T1262
+T1266	Concept 13749 13755	vejiga
+T1265	Concept 13759 13770	hiperactiva
+T1264	Action 13778 13785	expulsa
+T1263	Concept 13786 13791	orina
+E1264	Action:T1264 Target:T1263 Subject:T1266
+R391	property-of Arg1:T1265 Arg2:T1266
+T1273	Concept 13844 13857	incontinencia
+T1269	Action 13832 13843	presentarse
+E1269	Action:T1269 Target:T1273
+T1285	Concept 13897 13903	doctor
+T1284	Action 13910 13917	recetar
+T1283	Concept 13921 13928	remedio
+T1282	Action 13933 13939	relaje
+T1281	Concept 13944 13952	músculos
+T1280	Concept 13959 13966	nervios
+E1282	Action:T1282 Target:T1281 Target2:T1280 Subject:T1283
+E1284	Action:T1284 Target:T1283 Subject:T1285
+T1289	Concept 13974 13986	medicamentos
+T1288	Concept 13998 14007	pastillas
+T1287	Concept 14009 14017	líquidos
+T1286	Concept 14020 14027	parches
+R396	is-a Arg1:T1288 Arg2:T1289
+R397	is-a Arg1:T1287 Arg2:T1289
+R398	is-a Arg1:T1286 Arg2:T1289
+T1295	Concept 14037 14056	efectos secundarios
+T1294	Concept 14066 14075	medicinas
+T1293	Concept 14087 14091	ojos
+T1292	Concept 14094 14098	boca
+T1291	Concept 14099 14104	secos
+T1290	Concept 14107 14120	estreñimiento
+R399	property-of Arg1:T1291 Arg2:T1292
+R400	property-of Arg1:T1291 Arg2:T1293
+R401	property-of Arg1:T1295 Arg2:T1294
+R402	is-a Arg1:T1290 Arg2:T1295
+R403	is-a Arg1:T1291 Arg2:T1295
+T1301	Concept 14171 14175	ojos
+T1300	Concept 14144 14163	efectos secundarios
+T1299	Concept 14192 14197	gotas
+T1298	Concept 14199 14207	colirios
+T1297	Action 14127 14133	lidiar
+E1297	Action:T1297 Target:T1300 Subject:T1299 Subject2:T1298
+R409	same-as Arg1:T1299 Arg2:T1298
+R410	is-a Arg1:T1298 Arg2:T1299

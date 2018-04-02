@@ -1,0 +1,864 @@
+T3	Concept 16 29	procedimiento
+T2	Concept 50 58	embarazo
+T1	Action 35 46	interrumpir
+T0	Concept 3 9	aborto
+E1	Action:T1 Target:T2 Subject:T0
+R0	is-a Arg1:T0 Arg2:T3
+T11	Action 63 71	utilizan
+T10	Concept 72 81	medicinas
+T9	Concept 84 91	cirugía
+T8	Action 97 104	retirar
+T7	Concept 108 115	embrión
+T6	Concept 121 125	feto
+T5	Concept 131 139	placenta
+T4	Concept 144 149	útero
+E11	Action:T11 Target:T10 Target2:T9 
+R1	part-of Arg1:T5 Arg2:T4
+R2	same-as Arg1:T7 Arg2:T6
+E8	Action:T8 Target:T7 Target2:T6 Target3:T5 Subject:E11
+T16	Action 171 180	realizado
+T15	Concept 188 211	profesional de la salud
+T14	Concept 154 167	procedimiento
+T13	Concept 216 224	licencia
+T12	Concept 188 199	profesional
+E16	Action:T16 Target:T14 Subject:T15
+R3	is-a Arg1:T15 Arg2:T12
+R4	property-of Arg1:T13 Arg2:T15
+T21	Concept 229 237	decisión
+T20	Concept 256 264	embarazo
+T19	Concept 272 280	personal
+T18	Action 241 252	interrumpir
+E18	Action:T18 Target:T20 Subject:T21
+R5	property-of Arg1:T19 Arg2:T21
+T17	Action 292 301	someterse
+T32	Action 285 291	piensa
+T28	Concept 368 388	asesoría psicológica
+T27	Concept 333 358	profesionales de la salud
+T26	Concept 318 325	mayoría
+T25	Concept 368 376	asesoría
+T24	Concept 333 346	profesionales
+T23	Action 359 367	sugieren
+T22	Concept 307 313	aborto
+E23	Action:T23 Target:T28 Subject:T27
+R6	is-a Arg1:T28 Arg2:T25
+R7	is-a Arg1:T27 Arg2:T24
+R8	property-of Arg1:T26 Arg2:T27
+E2	Action:T17 Target:T22 
+E32	Action:T32 Target:E2 
+T43	Action 462 468	tienen
+T42	Concept 393 415	asesoramiento genético
+T41	Concept 495 515	trastornos genéticos
+T40	Action 471 483	pueden tener
+T39	Concept 393 406	asesoramiento
+T38	Concept 423 434	información
+T37	Concept 437 442	apoyo
+T36	Concept 449 457	personas
+T35	Concept 484 491	riesgos
+T34	Action 416 422	ofrece
+T33	Concept 495 505	trastornos
+E34	Action:T34 Target:T38 Target2:T37 Subject:T42
+E40	Action:T40 Target:T41 Subject:T36
+E43	Action:T43 Target:T41 Subject:T36
+R9	is-a Arg1:T41 Arg2:T33
+R10	is-a Arg1:T42 Arg2:T39
+R11	property-of Arg1:T35 Arg2:T41
+T51	Action 556 562	hablar
+T50	Concept 570 587	riesgos genéticos
+T49	Concept 520 529	genetista
+T48	Concept 570 577	riesgos
+T47	Action 533 540	reunirá
+T46	Concept 545 550	usted
+E47	Action:T47 Target:T46 Subject:T49
+E51	Action:T51 Target:T50 Subject:T49
+R12	is-a Arg1:T50 Arg2:T48
+T61	Action 646 653	acceder
+T60	Action 696 701	tener
+T59	Concept 592 600	consulta
+T58	Concept 628 636	familiar
+T57	Concept 661 672	información
+T56	Concept 705 709	bebé
+T55	Action 680 686	piense
+T54	Concept 617 622	usted
+T53	Action 689 695	planee
+E60	Action:T60 Target:T56 
+E61	Action:T61 Target:T57 
+E55	Action:T55 Target:E60 
+E53	Action:T53 Target:E60 
+T65	Concept 745 762	pruebas genéticas
+T64	Concept 729 740	información
+T63	Concept 745 752	pruebas
+T62	Action 717 724	obtener
+E62	Action:T62 Target:T64 
+R13	is-a Arg1:T65 Arg2:T63
+T72	Action 764 771	Existen
+T71	Concept 799 821	asesoramiento genético
+T70	Concept 772 778	muchas
+T69	Concept 779 786	razones
+T68	Concept 799 812	asesoramiento
+T67	Action 792 798	buscar
+E67	Action:T67 Target:T71 
+E72	Action:T72 Target:E67 Subject:T69
+R15	is-a Arg1:T71 Arg2:T68
+R16	property-of Arg1:T70 Arg2:T69
+T81	Concept 888 894	azúcar
+T79	Concept 866 884	niveles de glucosa
+T78	Concept 888 907	azúcar en la sangre
+T76	Concept 826 834	diabetes
+T75	Concept 842 852	enfermedad
+T74	Concept 915 924	muy altos
+R18	is-a Arg1:T76 Arg2:T75
+R19	same-as Arg1:T79 Arg2:T78
+R21	property-of Arg1:T74 Arg2:T81
+R14	property-of Arg1:T74 Arg2:T79
+T86	Concept 929 939	nivel alto
+T85	Concept 943 950	glucosa
+T84	Concept 962 970	embarazo
+T83	Concept 991 995	bebé
+R23	property-of Arg1:T86 Arg2:T85
+T93	Concept 1025 1044	mujeres embarazadas
+T92	Concept 1025 1032	mujeres
+T91	Concept 1078 1098	diabetes gestacional
+T90	Action 1067 1074	padecen
+T89	Concept 1052 1066	Estados Unidos
+T88	Concept 1078 1086	diabetes
+E90	Action:T90 Target:T91 Subject:T93
+R25	is-a Arg1:T93 Arg2:T92
+R26	is-a Arg1:T91 Arg2:T88
+T102	Concept 1155 1166	primera vez
+T101	Concept 1178 1183	mujer
+T100	Concept 1189 1199	embarazada
+T99	Concept 1103 1123	diabetes gestacional
+T98	Concept 1103 1111	diabetes
+T97	Concept 1130 1138	diabetes
+T96	Action 1143 1150	aparece
+E96	Action:T96 Target:T100 Subject:T99
+R28	property-of Arg1:T100 Arg2:T101
+R29	is-a Arg1:T99 Arg2:T98
+R30	is-a Arg1:T99 Arg2:T97
+T29	Action 1286 1293	aumenta
+T109	Concept 1307 1322	diabetes tipo 2
+T108	Action 1263 1267	nace
+T106	Concept 1231 1239	diabetes
+T105	Action 1240 1250	desaparece
+T104	Concept 1271 1275	bebé
+T103	Concept 1307 1315	diabetes
+E108	Action:T108  Subject:T104
+R33	is-a Arg1:T109 Arg2:T103
+E105	Action:T105 Target:T106 Subject:T106 Subject2:E108
+E3	Action:T29 Target:T109 Subject:E105
+T117	Concept 1381 1396	diabetes tipo 2
+T116	Action 1360 1366	riesgo
+T112	Concept 1340 1344	niño
+T111	Concept 1370 1378	obesidad
+T110	Concept 1381 1389	diabetes
+E116	Action:T116 Target:T111 Target2:T117 Subject:T112
+R37	is-a Arg1:T117 Arg2:T110
+T127	Action 1441 1447	examen
+T123	Action 1451 1460	detección
+T122	Concept 1418 1425	mujeres
+T121	Concept 1469 1477	diabetes
+T120	Concept 1506 1514	embarazo
+T119	Concept 1484 1501	segundo trimestre
+T118	Concept 1403 1410	mayoría
+E123	Action:T123 Target:T121 
+E127	Action:T127 Target:E123 Subject:T122
+R38	property-of Arg1:T118 Arg2:T122
+T135	Action 1563 1573	examinadas
+T134	Action 1532 1538	tienen
+T131	Concept 1520 1527	mujeres
+T130	Concept 1545 1551	riesgo
+T129	Concept 1539 1544	mayor
+T128	Concept 1574 1579	antes
+E134	Action:T134 Target:T130 Subject:T131
+E135	Action:T135 Target:E134 Subject:E134
+R39	property-of Arg1:T129 Arg2:T130
+T145	Concept 1618 1625	momento
+T144	Concept 1612 1617	mejor
+T143	Action 1593 1598	tiene
+T142	Action 1631 1640	controlar
+T141	Concept 1656 1661	antes
+T140	Concept 1599 1607	diabetes
+T139	Concept 1644 1652	diabetes
+T138	Concept 1672 1682	embarazada
+T137	Concept 1584 1589	usted
+T136	Action 1665 1671	quedar
+E136	Action:T136 Target:T138 Subject:T137
+E142	Action:T142 Target:T139 Subject:T137
+E143	Action:T143 Target:T140 Subject:T137
+R42	property-of Arg1:T144 Arg2:T145
+T159	Concept 1761 1777	primeras semanas
+T158	Concept 1688 1701	niveles altos
+T157	Action 1739 1743	daño
+T155	Concept 1688 1711	niveles altos de azúcar
+T152	Concept 1718 1724	sangre
+T151	Action 1732 1738	causar
+T150	Concept 1688 1695	niveles
+T149	Concept 1749 1753	bebé
+T148	Concept 1782 1790	embarazo
+T147	Concept 1770 1777	semanas
+T146	Concept 1837 1847	embarazada
+E157	Action:T157 Target:T149 
+R46	is-a Arg1:T155 Arg2:T150
+R47	part-of Arg1:T155 Arg2:T152
+R49	is-a Arg1:T159 Arg2:T147
+R50	is-a Arg1:T158 Arg2:T150
+R52	part-of Arg1:T159 Arg2:T148
+E151	Action:T151 Target:E157 Subject:T155
+T170	Concept 1915 1930	nivel de azúcar
+T169	Concept 1915 1920	nivel
+T168	Concept 1937 1943	sangre
+T167	Concept 2011 2021	embarazada
+T166	Action 2004 2010	quedar
+T165	Action 1903 1911	mantener
+T164	Concept 1877 1882	usted
+T163	Action 1854 1862	mantener
+T162	Concept 1868 1872	bebé
+T161	Concept 1883 1888	sanos
+E165	Action:T165 Target:T170 Subject:T162 Subject2:T164
+E166	Action:T166 Target:T167 Subject:T164
+R53	is-a Arg1:T170 Arg2:T169
+R54	part-of Arg1:T170 Arg2:T168
+R55	property-of Arg1:T161 Arg2:T164
+R56	property-of Arg1:T161 Arg2:T162
+E163	Action:T163 Target:T162 Target2:T164 Subject:E165
+T178	Concept 2080 2106	posibilidades de problemas
+T177	Concept 2038 2046	diabetes
+T176	Concept 2058 2066	embarazo
+T175	Concept 2080 2093	posibilidades
+T174	Concept 2115 2119	bebé
+T173	Concept 2122 2127	usted
+T172	Action 2067 2075	aumentan
+E172	Action:T172 Target:T178 Subject:T177
+T185	Action 2172 2177	tomar
+T184	Action 2191 2195	está
+T183	Concept 2142 2154	medicamentos
+T182	Concept 2159 2166	seguros
+T181	Concept 2196 2206	embarazada
+T180	Concept 2185 2190	usted
+E184	Action:T184 Target:T181 Subject:T180
+E185	Action:T185 Target:T183 Subject:T180
+R57	property-of Arg1:T182 Arg2:T183
+T187	Concept 2234 2238	bebé
+T186	Action 2223 2228	dañar
+E186	Action:T186 Target:T187 
+T194	Concept 2259 2271	medicamentos
+T193	Concept 2275 2280	venta
+T192	Concept 2281 2286	libre
+T191	Concept 2289 2299	con receta
+T190	Concept 2301 2308	hierbas
+T189	Concept 2311 2322	suplementos
+T188	Action 2246 2254	incluyen
+E188	Action:T188 Target:T194 Target2:T190 Target3:T189 
+R58	property-of Arg1:T193 Arg2:T192
+R59	property-of Arg1:T193 Arg2:T191
+R60	property-of Arg1:T194 Arg2:T193
+T200	Concept 2345 2351	doctor
+T199	Concept 2393 2404	medicamento
+T198	Action 2372 2377	dejar
+T197	Action 2381 2386	tomar
+T196	Action 2361 2369	comenzar
+T195	Action 2332 2337	hable
+E195	Action:T195 Target:T200 
+E197	Action:T197 Target:T199 
+E198	Action:T198 Target:E197 
+E196	Action:T196 Target:E197 
+T30	Action 2448 2459	perjudicial
+T205	Concept 2426 2433	remedio
+T204	Action 2418 2422	usar
+T201	Concept 2481 2485	bebé
+E204	Action:T204 Target:T205 
+E4	Action:T30 Target:T201 Subject:E204
+T217	Concept 2604 2626	medicamentos de receta
+T216	Concept 2519 2526	mujeres
+T213	Concept 2519 2538	mujeres embarazadas
+T212	Concept 2550 2558	diabetes
+T211	Concept 2560 2564	asma
+T210	Concept 2566 2578	convulsiones
+T209	Concept 2581 2597	acidez estomacal
+T208	Concept 2604 2616	medicamentos
+T207	Action 2598 2603	toman
+T206	Action 2543 2549	tienen
+E206	Action:T206 Target:T212 Target2:T211 Target3:T210 Target4:T209 Subject:T213
+E207	Action:T207 Target:T217 Subject:E206
+R61	is-a Arg1:T213 Arg2:T216
+R63	is-a Arg1:T217 Arg2:T208
+T31	Action 2657 2664	depende
+T221	Concept 2672 2679	riesgos
+T220	Concept 2682 2692	beneficios
+T219	Concept 2631 2639	decisión
+T218	Action 2643 2651	tomarlos
+E218	Action:T218  
+E5	Action:T31 Target:T221 Target2:T220 Subject:T219
+T227	Concept 2705 2714	proveedor
+T226	Concept 2705 2726	proveedor de cuidados
+T225	Concept 2705 2735	proveedor de cuidados de salud
+T224	Action 2745 2750	tomar
+T223	Concept 2756 2764	decisión
+T222	Concept 2765 2771	juntos
+E224	Action:T224 Target:T223 Subject:T225
+R64	is-a Arg1:T225 Arg2:T226
+R65	is-a Arg1:T226 Arg2:T227
+T237	Concept 2777 2784	mujeres
+T236	Action 2850 2855	tener
+T235	Concept 2884 2893	vitaminas
+T234	Action 2898 2907	necesitan
+T233	Concept 2856 2865	demasiado
+T232	Concept 2868 2876	muy poco
+T231	Concept 2777 2796	mujeres embarazadas
+T230	Action 2809 2814	tomar
+T229	Concept 2815 2834	vitaminas regulares
+T228	Concept 2815 2824	vitaminas
+E230	Action:T230 Target:T229 Subject:T231
+E234	Action:T234 Target:T235 Target2:T231 
+E236	Action:T236 Target:T235 Subject:T231
+R67	is-a Arg1:T229 Arg2:T228
+R68	is-a Arg1:T231 Arg2:T237
+R69	property-of Arg1:T233 Arg2:T235
+R70	property-of Arg1:T232 Arg2:T235
+T242	Action 2909 2916	Existen
+T241	Concept 2917 2926	vitaminas
+T240	Concept 2917 2937	vitaminas especiales
+T239	Concept 2947 2966	mujeres embarazadas
+T238	Concept 2947 2954	mujeres
+E242	Action:T242 Target:T240 
+R71	is-a Arg1:T240 Arg2:T241
+R72	is-a Arg1:T239 Arg2:T238
+T44	Action 2982 2987	tomar
+T251	Concept 2998 3010	ácido fólico
+T250	Concept 2998 3003	ácido
+T249	Concept 3042 3052	embarazada
+T248	Concept 3074 3082	embarazo
+T246	Concept 2971 2981	importante
+T245	Action 3035 3041	quedar
+T244	Concept 3021 3025	días
+T243	Concept 3011 3016	todos
+E245	Action:T245 Target:T249 
+R73	is-a Arg1:T251 Arg2:T250
+R74	property-of Arg1:T243 Arg2:T244
+E6	Action:T44 Target:T251 
+T260	Concept 3087 3092	ácido
+T258	Concept 3117 3137	problemas congénitos
+T256	Concept 3087 3099	ácido fólico
+T255	Action 3108 3116	prevenir
+T254	Concept 3117 3126	problemas
+T253	Concept 3142 3149	cerebro
+T252	Concept 3155 3172	columna vertebral
+E255	Action:T255 Target:T258 Subject:T256
+R75	is-a Arg1:T256 Arg2:T260
+R76	property-of Arg1:T253 Arg2:T258
+R77	property-of Arg1:T252 Arg2:T258
+R17	is-a Arg1:T258 Arg2:T254
+T267	Concept 3186 3196	embarazada
+T266	Action 3198 3203	comer
+T265	Concept 3204 3224	alimentos saludables
+T264	Concept 3204 3213	alimentos
+T261	Concept 3232 3242	importante
+E266	Action:T266 Target:T265 Subject:T267
+R80	is-a Arg1:T265 Arg2:T264
+T275	Action 3260 3268	necesita
+T274	Concept 3254 3259	Usted
+T273	Concept 3273 3282	proteínas
+T272	Concept 3284 3290	hierro
+T271	Concept 3292 3298	calcio
+T270	Concept 3301 3306	ácido
+T269	Concept 3301 3313	ácido fólico
+T268	Concept 3328 3336	embarazo
+E275	Action:T275 Target:T273 Target2:T272 Target3:T271 Target4:T269 Subject:T274
+R81	is-a Arg1:T269 Arg2:T270
+T52	Concept 3495 3499	bebé
+T45	Action 3476 3486	nutrientes
+T284	Concept 3352 3366	comer para dos
+T283	Action 3378 3383	decir
+T282	Concept 3393 3398	comer
+T281	Concept 3402 3407	doble
+T280	Concept 3427 3436	alimentos
+T279	Concept 3466 3486	fuente de nutrientes
+T278	Concept 3456 3465	principal
+T276	Concept 3427 3448	alimentos que consume
+E283	Action:T283 Target:T282 Subject:T284
+R82	property-of Arg1:T281 Arg2:T282
+R83	property-of Arg1:T278 Arg2:T279
+R84	is-a Arg1:T276 Arg2:T280
+R20	is-a Arg1:T276 Arg2:T279
+E7	Action:T45 Target:T52 Subject:T276
+T292	Concept 3501 3508	Comidas
+T291	Concept 3509 3517	sensatas
+T290	Concept 3520 3532	equilibradas
+T288	Concept 3548 3554	opción
+T287	Concept 3542 3547	mejor
+T286	Concept 3563 3568	madre
+T285	Concept 3574 3578	hijo
+R85	property-of Arg1:T287 Arg2:T288
+R86	property-of Arg1:T291 Arg2:T292
+R87	property-of Arg1:T290 Arg2:T292
+T299	Concept 3580 3585	Usted
+T298	Action 3591 3596	subir
+T297	Concept 3600 3604	peso
+T296	Concept 3629 3637	embarazo
+T295	Concept 3648 3662	parte del peso
+T294	Concept 3642 3647	mayor
+T293	Action 3666 3672	ganará
+E293	Action:T293 Target:T295 
+E298	Action:T298 Target:T297 Subject:T299
+R88	property-of Arg1:T294 Arg2:T295
+T311	Concept 3715 3722	mujeres
+T310	Concept 3700 3707	mayoría
+T309	Action 3723 3732	necesitan
+T308	Concept 3733 3736	300
+T307	Concept 3737 3745	calorías
+T306	Concept 3737 3753	calorías diarias
+T305	Concept 3801 3809	embarazo
+T304	Concept 3787 3791	seis
+T303	Concept 3779 3786	últimos
+T302	Concept 3792 3797	meses
+T301	Concept 3847 3858	embarazadas
+T300	Action 3822 3831	requerían
+E300	Action:T300 Target:T306 Subject:T311
+E309	Action:T309 Target:T306 Subject:T311
+R89	is-a Arg1:T306 Arg2:T307
+R90	property-of Arg1:T308 Arg2:T306
+R91	property-of Arg1:T310 Arg2:T311
+R92	property-of Arg1:T303 Arg2:T302
+R93	property-of Arg1:T304 Arg2:T302
+T314	Concept 3878 3886	calorías
+T313	Action 3887 3890	son
+T312	Concept 3891 3898	iguales
+E313	Action:T313 Target:T312 Subject:T314
+A1	Negated E313
+T328	Action 3943 3949	llenos
+T327	Concept 3903 3907	bebé
+T326	Action 3908 3916	necesita
+T325	Concept 3917 3926	alimentos
+T322	Concept 3968 3976	calorías
+T321	Concept 3917 3932	alimentos sanos
+T320	Concept 3953 3963	nutrientes
+T319	Concept 3968 3983	calorías vacías
+T318	Action 4000 4010	encuentran
+T317	Concept 4018 4027	refrescos
+T316	Concept 4029 4035	dulces
+T315	Concept 4038 4045	postres
+E318	Action:T318 Target:T319 Subject:T317 Subject2:T316 Subject3:T315
+E326	Action:T326 Target:T321 Subject:T327
+E328	Action:T328 Target:T320 Subject:T321
+R94	is-a Arg1:T321 Arg2:T325
+R96	is-a Arg1:T319 Arg2:T322
+T337	Action 4047 4052	Tener
+T336	Concept 4056 4063	presión
+T334	Concept 4081 4091	embarazada
+T333	Action 4098 4106	causarle
+T332	Concept 4107 4116	problemas
+T331	Concept 4056 4068	presión alta
+T330	Concept 4125 4130	usted
+T329	Concept 4139 4143	bebé
+E333	Action:T333 Target:T332 Subject:T331
+E337	Action:T337 Target:T331 
+R97	is-a Arg1:T331 Arg2:T336
+T344	Concept 4145 4150	Usted
+T343	Action 4162 4168	tenido
+T342	Concept 4169 4181	presión alta
+T341	Concept 4169 4176	presión
+T340	Concept 4198 4208	embarazada
+T339	Action 4191 4197	quedar
+E339	Action:T339 Target:T340 Subject:T344
+E343	Action:T343 Target:T342 Subject:T344
+R98	is-a Arg1:T342 Arg2:T341
+T346	Concept 4239 4247	embarazo
+T345	Action 4218 4227	padecerla
+E345	Action:T345  
+T348	Concept 4265 4277	hipertensión
+T347	Concept 4265 4289	hipertensión gestacional
+R99	is-a Arg1:T347 Arg2:T348
+T355	Action 4330 4336	causar
+T354	Concept 4337 4346	bajo peso
+T353	Concept 4342 4346	peso
+T352	Concept 4354 4368	recién nacidos
+T351	Concept 4361 4368	nacidos
+T350	Concept 4371 4391	nacimiento prematuro
+T349	Concept 4371 4381	nacimiento
+E355	Action:T355 Target:T354 
+R100	is-a Arg1:T354 Arg2:T353
+R101	is-a Arg1:T350 Arg2:T349
+R102	is-a Arg1:T352 Arg2:T351
+T366	Action 4393 4402	Controlar
+T365	Action 4470 4481	importantes
+T364	Concept 4406 4413	presión
+T363	Concept 4435 4443	embarazo
+T362	Concept 4449 4465	cuidado prenatal
+T361	Concept 4449 4456	cuidado
+T358	Concept 4507 4511	bebé
+T357	Concept 4406 4423	presión sanguínea
+T356	Concept 4490 4495	salud
+E366	Action:T366 Target:T357 
+R103	is-a Arg1:T357 Arg2:T364
+R104	is-a Arg1:T362 Arg2:T361
+E365	Action:T365 Target:T356 Target2:T358 Subject:E366
+T66	Action 4593 4600	control
+T379	Concept 4517 4574	tratamientos para la hipertensión arterial en el embarazo
+T378	Concept 4538 4550	hipertensión
+T377	Concept 4538 4559	hipertensión arterial
+T376	Concept 4517 4529	tratamientos
+T375	Concept 4517 4559	tratamientos para la hipertensión arterial
+T374	Action 4582 4589	incluir
+T372	Concept 4615 4619	bebé
+T370	Concept 4621 4649	cambios en el estilo de vida
+T369	Concept 4621 4628	cambios
+T368	Concept 4660 4672	medicamentos
+T367	Concept 4652 4659	algunos
+R106	is-a Arg1:T375 Arg2:T376
+R107	is-a Arg1:T379 Arg2:T375
+R108	is-a Arg1:T379 Arg2:T376
+R109	is-a Arg1:T377 Arg2:T378
+R112	is-a Arg1:T370 Arg2:T369
+R113	property-of Arg1:T367 Arg2:T368
+E9	Action:T66 Target:T372 Target2:T370 Target3:T368 
+E374	Action:T374 Target:E9 Subject:T379
+T385	Concept 4694 4701	presión
+T384	Concept 4718 4726	embarazo
+T383	Concept 4682 4689	mujeres
+T382	Concept 4694 4706	presión alta
+T381	Concept 4746 4758	preeclampsia
+T380	Action 4734 4745	desarrollar
+E380	Action:T380 Target:T381 Subject:T383
+R114	property-of Arg1:T382 Arg2:T383
+R115	is-a Arg1:T382 Arg2:T385
+T392	Concept 4774 4814	aumento repentino de la presión arterial
+T391	Concept 4798 4814	presión arterial
+T390	Concept 4798 4805	presión
+T389	Concept 4774 4791	aumento repentino
+T388	Concept 4774 4781	aumento
+T387	Concept 4774 4805	aumento repentino de la presión
+T386	Action 4765 4770	causa
+E386	Action:T386 Target:T392 
+R116	is-a Arg1:T391 Arg2:T390
+R117	is-a Arg1:T392 Arg2:T387
+R118	is-a Arg1:T392 Arg2:T389
+R119	is-a Arg1:T392 Arg2:T388
+R120	is-a Arg1:T387 Arg2:T389
+R121	is-a Arg1:T387 Arg2:T388
+R122	is-a Arg1:T389 Arg2:T388
+T399	Action 4887 4893	riesgo
+T396	Concept 4856 4868	preeclampsia
+T395	Concept 4908 4912	vida
+T394	Concept 4919 4924	madre
+T393	Concept 4937 4941	bebé
+E399	Action:T399 Target:T395 Subject:T396
+R123	property-of Arg1:T395 Arg2:T394
+R124	property-of Arg1:T395 Arg2:T393
+T401	Action 4949 4955	conoce
+T400	Concept 4959 4979	manera de prevenirla
+E401	Action:T401 Target:T400 
+T409	Concept 4999 5023	mujeres con preeclampsia
+T408	Concept 4999 5006	mujeres
+T407	Concept 4984 4991	mayoría
+T406	Action 5029 5039	observadas
+T405	Concept 5047 5053	médico
+T404	Action 5072 5078	evitar
+T403	Action 5081 5090	disminuir
+T402	Concept 5095 5109	complicaciones
+E406	Action:T406 Target:T409 Subject:T405
+R125	is-a Arg1:T409 Arg2:T408
+R126	property-of Arg1:T407 Arg2:T409
+E404	Action:T404 Target:T402 Subject:E406
+E403	Action:T403 Target:T402 Subject:E406
+T415	Action 5153 5163	nacimiento
+T414	Concept 5168 5172	bebé
+T412	Concept 5114 5119	único
+T411	Concept 5134 5146	preeclampsia
+T410	Action 5125 5129	cura
+E415	Action:T415 Target:T414 
+E410	Action:T410 Target:T411 Subject:E415
+T420	Concept 5174 5179	Todos
+T418	Concept 5184 5193	embarazos
+T417	Action 5194 5202	implican
+T416	Concept 5211 5218	riesgos
+E417	Action:T417 Target:T416 Subject:T418
+R127	property-of Arg1:T420 Arg2:T418
+T426	Action 5226 5231	tener
+T425	Concept 5232 5241	problemas
+T424	Concept 5254 5271	problema de salud
+T423	Concept 5254 5262	problema
+T422	Action 5291 5297	quedar
+T421	Concept 5298 5308	embarazada
+E422	Action:T422 Target:T421 
+E426	Action:T426 Target:T425 
+R129	is-a Arg1:T424 Arg2:T423
+T429	Action 5324 5335	desarrollar
+T428	Concept 5340 5349	condición
+T427	Concept 5361 5369	embarazo
+E429	Action:T429 Target:T428 
+T436	Concept 5399 5408	embarazos
+T434	Concept 5399 5418	embarazos múltiples
+T433	Action 5377 5383	causas
+T432	Concept 5423 5431	problema
+T431	Concept 5423 5440	problema de salud
+T430	Concept 5471 5490	abuso de sustancias
+E433	Action:T433  Subject:T434 Subject2:T430 Subject3:T431
+R131	is-a Arg1:T434 Arg2:T436
+T443	Concept 5548 5558	enfermedad
+T442	Concept 5559 5566	crónica
+T441	Action 5573 5579	hablar
+T440	Concept 5587 5593	médico
+T439	Action 5599 5608	enterarse
+T438	Action 5629 5638	minimizar
+T437	Concept 5642 5648	riesgo
+E438	Action:T438 Target:T437 
+E439	Action:T439  
+E441	Action:T441  Subject:T440
+R132	property-of Arg1:T442 Arg2:T443
+T450	Action 5686 5693	produce
+T449	Concept 5697 5705	embarazo
+T448	Action 5725 5733	necesite
+T447	Concept 5737 5772	equipo de profesionales de la salud
+T446	Action 5780 5789	supervise
+T445	Concept 5737 5743	equipo
+E446	Action:T446 Target:T449 Subject:T447
+E448	Action:T448 Target:T447 
+E450	Action:T450 Target:T449 
+R133	is-a Arg1:T447 Arg2:T445
+T461	Action 5819 5827	aumentar
+T460	Concept 5831 5850	riesgo del embarazo
+T458	Concept 5913 5921	diabetes
+T456	Concept 5936 5952	incompatibilidad
+T454	Concept 5797 5807	afecciones
+T453	Concept 5842 5850	embarazo
+T452	Concept 5936 5955	incompatibilidad Rh
+T451	Concept 5913 5933	diabetes gestacional
+E461	Action:T461 Target:T460 Subject:T454
+R136	is-a Arg1:T452 Arg2:T456
+R137	is-a Arg1:T451 Arg2:T458
+R140	is-a Arg1:T451 Arg2:T454
+R141	is-a Arg1:T452 Arg2:T454
+R22	part-of Arg1:T460 Arg2:T453
+T466	Concept 5965 5972	cuidado
+T465	Concept 5965 5981	cuidado prenatal
+T464	Action 5997 6008	detectarlas
+T463	Action 6011 6020	tratarlas
+E463	Action:T463  Subject:T465
+E464	Action:T464  Subject:T465
+R142	is-a Arg1:T465 Arg2:T466
+T472	Concept 6055 6060	dolor
+T471	Concept 6105 6113	embarazo
+T470	Concept 6030 6039	molestias
+T469	Concept 6046 6053	náuseas
+T468	Concept 6055 6071	dolor de espalda
+T467	Concept 6074 6080	fatiga
+R143	is-a Arg1:T469 Arg2:T470
+R144	is-a Arg1:T468 Arg2:T470
+R145	is-a Arg1:T467 Arg2:T470
+R146	is-a Arg1:T468 Arg2:T472
+R147	part-of Arg1:T470 Arg2:T471
+T479	Concept 6119 6126	pruebas
+T478	Concept 6190 6200	trastornos
+T477	Concept 6119 6136	pruebas genéticas
+T476	Concept 6141 6149	exámenes
+T475	Concept 6141 6159	exámenes de sangre
+T474	Action 6181 6189	detectar
+T473	Concept 6190 6210	trastornos genéticos
+E474	Action:T474 Target:T473 Subject:T477
+R148	is-a Arg1:T475 Arg2:T476
+R149	is-a Arg1:T477 Arg2:T475
+R150	is-a Arg1:T477 Arg2:T479
+R151	is-a Arg1:T473 Arg2:T478
+T483	Concept 6230 6237	pruebas
+T482	Concept 6216 6223	médicos
+T481	Concept 6230 6247	pruebas genéticas
+T480	Action 6224 6229	hacen
+E480	Action:T480 Target:T481 Subject:T482
+R152	is-a Arg1:T481 Arg2:T483
+T487	Concept 6272 6280	personas
+T486	Action 6281 6287	tienen
+T485	Concept 6295 6302	motivos
+T484	Concept 6303 6312	distintos
+E486	Action:T486 Target:T485 Subject:T487
+R153	property-of Arg1:T484 Arg2:T485
+T492	Concept 6396 6406	enfermedad
+T491	Action 6413 6423	prevenirse
+T490	Action 6426 6434	tratarse
+T489	Concept 6453 6459	prueba
+T488	Concept 6464 6472	positiva
+E490	Action:T490 Target:T492 
+E491	Action:T491 Target:T492 
+R154	property-of Arg1:T488 Arg2:T489
+T504	Concept 6570 6577	persona
+T503	Concept 6614 6627	planificación
+T502	Concept 6639 6648	cobertura
+T501	Action 6495 6501	existe
+T500	Concept 6502 6513	tratamiento
+T499	Concept 6524 6534	resultados
+T498	Concept 6542 6549	pruebas
+T497	Action 6557 6563	ayudar
+T496	Action 6580 6585	tomar
+T495	Concept 6586 6596	decisiones
+T494	Concept 6614 6636	planificación familiar
+T493	Concept 6639 6661	cobertura de un seguro
+E496	Action:T496 Target:T495 Subject:T504
+E497	Action:T497 Target:E496 Subject:T499
+E501	Action:T501 Target:T500 
+R155	is-a Arg1:T494 Arg2:T495
+R156	is-a Arg1:T493 Arg2:T495
+R157	part-of Arg1:T499 Arg2:T498
+R158	is-a Arg1:T494 Arg2:T503
+R159	is-a Arg1:T493 Arg2:T502
+T510	Concept 6666 6672	asesor
+T509	Concept 6666 6681	asesor genético
+T508	Action 6688 6693	darle
+T507	Concept 6694 6705	información
+T506	Concept 6720 6728	ventajas
+T505	Concept 6735 6746	desventajas
+E508	Action:T508 Target:T507 Subject:T509
+R161	is-a Arg1:T509 Arg2:T510
+R162	is-a Arg1:T506 Arg2:T507
+R163	is-a Arg1:T505 Arg2:T507
+T73	Action 6851 6856	nacer
+T516	Action 6787 6799	proporcionan
+T515	Concept 6767 6775	exámenes
+T514	Concept 6767 6786	exámenes prenatales
+T513	Concept 6800 6811	información
+T512	Concept 6837 6841	bebé
+T511	Concept 6825 6830	salud
+E516	Action:T516 Target:T513 Subject:T514
+R164	property-of Arg1:T511 Arg2:T512
+R165	is-a Arg1:T514 Arg2:T515
+R167	property-of Arg1:T513 Arg2:T511
+E10	Action:T73 Target:T512 Subject:T512
+T521	Concept 6866 6874	exámenes
+T520	Concept 6875 6885	rutinarios
+T519	Concept 6913 6921	embarazo
+T518	Action 6930 6937	evalúan
+T517	Concept 6941 6946	salud
+E518	Action:T518 Target:T517 Target2:T519 Subject:T521
+R168	property-of Arg1:T520 Arg2:T521
+T525	Concept 6984 6993	proveedor
+T524	Concept 6984 7013	proveedor de cuidados médicos
+T523	Action 7020 7029	sugerirle
+T522	Concept 7036 7044	exámenes
+E523	Action:T523 Target:T522 Subject:T524
+R169	is-a Arg1:T524 Arg2:T525
+T534	Concept 7073 7080	comunes
+T533	Concept 7110 7118	exámenes
+T532	Action 7124 7132	detectar
+T531	Concept 7133 7141	diabetes
+T530	Concept 7155 7163	síndrome
+T529	Concept 7063 7068	tests
+T528	Concept 7133 7153	diabetes gestacional
+T527	Concept 7155 7171	síndrome de Down
+T526	Concept 7174 7178	SIDA
+E532	Action:T532 Target:T528 Target2:T527 Target3:T526 Subject:T533
+R170	is-a Arg1:T529 Arg2:T533
+R171	is-a Arg1:T528 Arg2:T531
+R172	is-a Arg1:T527 Arg2:T530
+R173	property-of Arg1:T534 Arg2:T529
+T538	Concept 7191 7198	riesgos
+T537	Concept 7201 7207	signos
+T536	Concept 7220 7229	problemas
+T535	Concept 7233 7238	salud
+R177	property-of Arg1:T537 Arg2:T536
+R178	property-of Arg1:T538 Arg2:T536
+R179	property-of Arg1:T536 Arg2:T535
+T542	Concept 7337 7344	pruebas
+T541	Concept 7314 7320	doctor
+T540	Action 7327 7336	sugerirle
+T539	Concept 7337 7359	pruebas de diagnóstico
+E540	Action:T540 Target:T539 Subject:T541
+R180	is-a Arg1:T539 Arg2:T542
+T546	Action 7367 7376	confirman
+T545	Action 7379 7388	descartan
+T544	Concept 7389 7398	problemas
+T543	Concept 7402 7407	salud
+E545	Action:T545 Target:T544 
+E546	Action:T546 Target:T544 
+R181	property-of Arg1:T544 Arg2:T543
+T549	Concept 7436 7457	período de tres meses
+T548	Concept 7462 7470	embarazo
+T547	Concept 7482 7491	trimestre
+R182	part-of Arg1:T547 Arg2:T548
+R183	same-as Arg1:T549 Arg2:T547
+T552	Action 7525 7530	crece
+T551	Concept 7520 7524	feto
+T550	Action 7536 7546	desarrolla
+E550	Action:T550 Target:T551 Subject:T551
+E552	Action:T552 Target:T551 Subject:T551
+T557	Concept 7552 7560	chequeos
+T556	Concept 7571 7579	exámenes
+T555	Concept 7599 7610	importantes
+T554	Concept 7552 7568	chequeos médicos
+T553	Concept 7571 7590	exámenes prenatales
+R184	is-a Arg1:T554 Arg2:T557
+R185	is-a Arg1:T553 Arg2:T556
+R186	property-of Arg1:T555 Arg2:T553
+R187	property-of Arg1:T555 Arg2:T554
+T563	Action 7710 7719	saludable
+T562	Concept 7698 7702	bebé
+T561	Action 7684 7692	mantener
+T560	Concept 7630 7638	atención
+T559	Action 7622 7629	obtener
+T558	Concept 7630 7645	atención médica
+E559	Action:T559 Target:T558 
+E563	Action:T563 Target:T562 
+R188	is-a Arg1:T558 Arg2:T560
+E561	Action:T561 Target:E563 Subject:T558
+T573	Action 7805 7814	embarazar
+T572	Concept 7785 7791	hombre
+T571	Concept 7821 7826	mujer
+T569	Concept 7732 7742	vasectomía
+T568	Concept 7757 7764	cirugía
+T567	Action 7769 7777	previene
+E573	Action:T573 Target:T571 Subject:T572
+R190	is-a Arg1:T569 Arg2:T568
+E567	Action:T567 Target:E573 Subject:T569
+T575	Concept 7855 7878	control de la natalidad
+T574	Concept 7841 7851	permanente
+R191	property-of Arg1:T574 Arg2:T575
+T581	Concept 7883 7893	vasectomía
+T580	Concept 7955 7965	testículos
+T579	Action 7906 7912	cortar
+T578	Action 7927 7933	llevan
+T577	Concept 7937 7944	esperma
+T576	Concept 7917 7922	tubos
+E578	Action:T578 Target:T577 Subject:T576
+E579	Action:T579 Target:T576 Subject:T581
+T584	Concept 7985 7992	hombres
+T583	Action 7993 8001	regresan
+T582	Concept 8007 8012	hogar
+E583	Action:T583 Target:T582 Subject:T584
+T587	Concept 8037 8047	vasectomía
+T586	Action 8051 8057	afecta
+T585	Concept 8061 8072	vida sexual
+E586	Action:T586 Target:T585 Subject:T587
+T594	Concept 8145 8152	esperma
+T593	Concept 8111 8116	semen
+T592	Action 8122 8132	asegurarse
+T591	Concept 8098 8116	pruebas a su semen
+T590	Concept 8077 8083	doctor
+T589	Concept 8098 8105	pruebas
+T588	Action 8089 8097	realizar
+E588	Action:T588 Target:T591 Subject:T590
+E592	Action:T592  Subject:T593
+R24	is-a Arg1:T591 Arg2:T589
+T596	Action 8180 8190	revertirse
+T595	Concept 8163 8173	vasectomía
+E596	Action:T596 Target:T595 Target2:T595 
+T77	Concept 8257 8291	enfermedades de transmisión sexual
+T604	Concept 8301 8309	VIH/SIDA
+T601	Concept 8221 8231	vasectomía
+T600	Action 8238 8245	protege
+T599	Concept 8257 8269	enfermedades
+E600	Action:T600 Target:T77 Subject:T601
+R27	is-a Arg1:T77 Arg2:T599
+R32	is-a Arg1:T604 Arg2:T77
+T618	Action 8353 8361	deberían
+T613	Concept 8372 8383	sexo seguro
+T612	Action 8389 8395	evitar
+T611	Concept 8315 8322	hombres
+T610	Action 8362 8371	practicar
+T609	Concept 8372 8376	sexo
+T608	Action 8331 8337	tenido
+T607	Concept 8342 8352	vasectomía
+T606	Concept 8396 8408	enfermedades
+T605	Concept 8396 8430	enfermedades de transmisión sexual
+E608	Action:T608 Target:T607 Subject:T611
+E610	Action:T610 Target:T613 
+E612	Action:T612 Target:T605 Subject:E608
+E618	Action:T618 Target:E610 Subject:E608
+R195	is-a Arg1:T613 Arg2:T609
+R196	is-a Arg1:T605 Arg2:T606

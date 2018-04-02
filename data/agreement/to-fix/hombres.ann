@@ -1,0 +1,151 @@
+T0	Concept 85 95	fertilidad
+T1	Action 47 54	afectar
+T2	Concept 39 44	dolor
+T3	Action 32 38	causar
+T4	Concept 4 13	problemas
+T5	Concept 4 24	problemas en el pene
+T7	Concept-FAIL 103 110	hombres
+T8	Concept-FAIL 73 79	sexual
+T9	Concept-FAIL 58 72	funcionamiento
+E1	Action:T1 Target:T0 Target-FAIL2:T9 Subject-FAIL:T5
+E3	Action:T3 Target:T2 Subject:T5 Target-FAIL:E1
+R0	is-a Arg1:T5 Arg2:T4
+R1	property-of-FAIL Arg1:T8 Arg2:T9
+R2	property-of-FAIL Arg1:T0 Arg2:T7
+T10	Concept 171 177	hombre
+T11	Concept 112 124	Infertilidad
+T13	Action-FAIL 241 250	intentado
+T14	Concept-FAIL 216 221	mujer
+T15	Action-FAIL 200 209	embarazar
+T16	Concept-FAIL 184 196	dificultades
+T17	Action-FAIL 178 183	tiene
+T18	Action-FAIL 156 160	usan
+T19	Concept-FAIL 147 155	doctores
+T20	Concept-FAIL 131 138	término
+E13	Action-FAIL:T13 Target-FAIL:E15
+E15	Action-FAIL:T15 Target-FAIL:T14
+E17	Action-FAIL:T17 Subject-FAIL:T10 Target:T16 Target2:E15
+E18	Action-FAIL:T18 Target-FAIL:T20 Subject-FAIL:T19
+R3	is-a-FAIL Arg1:T11 Arg2:T20
+T21	Concept 351 357	hombre
+T22	Concept 335 343	problema
+T23	Concept 312 324	infertilidad
+R5	part-of-FAIL Arg1:T22 Arg2:T21
+R6	is-a-FAIL Arg1:T23 Arg2:T22
+T24	Concept-FAIL 392 397	mujer
+T25	Concept-FAIL 377 385	problema
+R7	part-of-FAIL Arg1:T25 Arg2:T24
+T28	Action-FAIL 450 458	sospecha
+T29	Concept-FAIL 466 474	infértil
+T30	Concept-FAIL 490 496	médico
+T31	Action-FAIL 476 484	consulte
+E28	Action-FAIL:T28 Target-FAIL:T29
+E31	Action-FAIL:T31 Target-FAIL:T30
+T32	Concept 555 563	problema
+T33	Concept 555 579	problema de infertilidad
+T34	Action 526 536	determinar
+T35	Concept 506 514	exámenes
+E34	Action:T34 Target:T33 Subject:T35
+R8	is-a-FAIL Arg1:T33 Arg2:T32
+T37	Concept 669 705	tecnologías de reproducción asistida
+T38	Concept 659 666	cirugía
+T39	Concept 645 657	medicamentos
+T40	Concept 623 635	tratamientos
+R9	is-a-FAIL Arg1:T39 Arg2:T40
+R10	is-a-FAIL Arg1:T38 Arg2:T40
+R11	is-a-FAIL Arg1:T37 Arg2:T40
+T47	Action 751 759	tratadas
+T48	Concept 743 750	parejas
+T50	Concept-FAIL 790 795	bebés
+T51	Action-FAIL 784 789	tener
+E47	Action:T47 Target:T48
+E51	Action-FAIL:T51 Target-FAIL:T50 Subject-FAIL:T48
+T54	Action 812 818	tienen
+T55	Concept 804 811	hombres
+T56	Concept 819 828	problemas
+T58	Concept-FAIL 829 837	sexuales
+E54	Action:T54 Subject:T55 Target-FAIL2:T56
+R16	property-of-FAIL Arg1:T58 Arg2:T56
+T59	Concept 875 882	comunes
+T60	Action 862 870	haciendo
+T61	Concept 845 854	problemas
+T62	Action 896 905	envejecen
+E60	Action:T60 Target:T59 Subject:T61
+E62	Action:T62 Target-FAIL:E60
+T63	Concept 997 1005	factores
+T64	Concept 956 965	problemas
+T65	Concept 937 949	medicamentos
+T66	Concept 925 935	enfermedad
+T67	Concept 910 916	estrés
+T70	Concept-FAIL 966 977	emocionales
+R18	property-of-FAIL Arg1:T70 Arg2:T64
+R19	is-a-FAIL Arg1:T64 Arg2:T63
+R20	is-a-FAIL Arg1:T65 Arg2:T63
+R21	is-a-FAIL Arg1:T66 Arg2:T63
+R22	is-a-FAIL Arg1:T67 Arg2:T63
+T71	Action 1092 1097	duran
+T72	Concept 1064 1069	común
+T75	Action-FAIL 1118 1125	generan
+T76	Concept-FAIL 1126 1134	angustia
+T77	Concept-FAIL 1110 1115	meses
+T78	Concept-FAIL 1082 1091	problemas
+T79	Concept-FAIL 1177 1200	profesional de la salud
+T80	Concept-FAIL 1177 1188	profesional
+T81	Action-FAIL 1165 1171	acudir
+T82	Concept-FAIL 1054 1060	sexual
+T83	Concept-FAIL 1043 1053	disfunción
+T84	Concept-FAIL 1013 1022	problemas
+E71	Action:T71 Subject-FAIL:T78 Subject-FAIL2:T77
+E75	Action-FAIL:T75 Target-FAIL:T76 Subject-FAIL:T78
+E81	Action-FAIL:T81 Target-FAIL:T79
+R24	is-a-FAIL Arg1:T83 Arg2:T84
+R25	property-of-FAIL Arg1:T72 Arg2:T84
+R26	is-a-FAIL Arg1:T79 Arg2:T80
+T85	Concept 1265 1270	salud
+T86	Concept 1220 1227	hombres
+T87	Action-FAIL 1251 1259	atención
+E87	Action-FAIL:T87 Target-FAIL:T85 Subject-FAIL:T86
+T91	Concept 1371 1400	bajos niveles de testosterona
+T92	Concept 1350 1368	cáncer de próstata
+T93	Concept 1333 1340	hombres
+T94	Action 1309 1316	afectan
+T95	Concept 1284 1304	condiciones de salud
+T96	Concept-FAIL 1350 1356	cáncer
+E94	Action:T94 Target:T93 Target-FAIL:T95 Subject-FAIL:T92 Subject-FAIL2:T91
+R27	is-a Arg1:T92 Arg2:T95
+R28	is-a Arg1:T91 Arg2:T95
+T97	Concept 1463 1470	hombres
+T98	Action 1449 1458	enfrentan
+T99	Concept 1483 1489	cáncer
+T100	Concept 1483 1499	cáncer del colon
+T101	Concept 1428 1435	riesgos
+T102	Concept 1428 1444	riesgos de salud
+T103	Action 1546 1554	tratarse
+T104	Action 1533 1543	prevenirse
+T105	Concept 1502 1514	enfermedades
+T106	Concept 1502 1524	enfermedades cardiacas
+T107	Concept-FAIL 1574 1584	anticipado
+T108	Concept-FAIL 1562 1573	diagnóstico
+T110	Concept-FAIL 1416 1427	principales
+E98	Action:T98 Subject:T97 Target-FAIL3:T102
+E103	Action:T103 Subject:T108 Target:T102
+E104	Action:T104 Subject-FAIL:T108 Target:T102
+R29	is-a Arg1:T102 Arg2:T101
+R30	is-a Arg1:T100 Arg2:T99
+R31	is-a Arg1:T106 Arg2:T102
+R32	is-a Arg1:T100 Arg2:T102
+R33	is-a-FAIL Arg1:T106 Arg2:T105
+R34	property-of-FAIL Arg1:T110 Arg2:T101
+R36	property-of-FAIL Arg1:T107 Arg2:T108
+T111	Concept 1627 1639	enfermedades
+T112	Action 1616 1626	determinar
+T113	Concept 1586 1593	Pruebas
+T114	Concept 1586 1608	Pruebas de diagnóstico
+T115	Concept-FAIL 1640 1657	en forma temprana
+T118	Action-FAIL 1679 1688	tratarlas
+E112	Action:T112 Target:T111 Subject:T114
+E118	Action-FAIL:T118 Target-FAIL:T111
+R37	is-a Arg1:T114 Arg2:T113
+R38	property-of-FAIL Arg1:T115 Arg2:T111
+R4	property-of Arg1:T82 Arg2:T83	
+R12	is-a Arg1:T92 Arg2:T96	

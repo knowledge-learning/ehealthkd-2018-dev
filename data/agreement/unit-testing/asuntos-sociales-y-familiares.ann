@@ -1,0 +1,67 @@
+T0	Concept 33 40	costoso
+T1	Concept-FAIL 3 10	cuidado
+T2	Concept-FAIL 17 22	salud
+T3	Concept 54 61	médicos
+T4	Action 69 75	cubrir
+T5	Concept 109 116	médicos
+T6	Action-FAIL 89 94	parte
+T7	Concept-FAIL 102 108	gastos
+T8	Action-FAIL 83 88	menos
+E4	Action:T4 Target:T5 Subject:T3 Target-FAIL:T7
+E8	Action-FAIL:T8 Target-FAIL:T3
+T9	Concept 172 178	gastos
+T10	Action-FAIL 186 191	están
+T11	Action-FAIL 149 157	necesita
+E10	Action-FAIL:T10 Subject-FAIL:T9
+E11	Action-FAIL:T11 Target-FAIL:T9
+T12	Action 312 318	ayudar
+T13	Concept-FAIL 246 255	programas
+T14	Concept-FAIL 271 285	organizaciones
+E12	Action:T12 Target-FAIL:T14 Subject-FAIL:T13
+T15	Concept 370 374	pago
+T16	Action 334 340	hablar
+T17	Concept-FAIL 355 360	dudas
+T18	Concept-FAIL 391 398	médicas
+E16	Action:T16 Target:T15 Target-FAIL:T17 Target-FAIL2:T18
+T19	Concept 556 561	padre
+T20	Action 549 555	tienen
+T21	Concept-FAIL 597 602	ellos
+T22	Concept-FAIL 564 569	madre
+E20	Action:T20 Subject:T19 Subject-FAIL:T21 Subject-FAIL2:T22
+T23	Concept-FAIL 638 645	abuelos
+T24	Action-FAIL 621 624	hay
+T25	Concept-FAIL 625 631	padres
+T26	Action-FAIL 646 651	crían
+E24	Action-FAIL:T24 Target-FAIL:T23
+E26	Action-FAIL:T26 Target-FAIL:T25
+T27	Concept 711 720	adoptivas
+T28	Action 699 709	sustitutas
+T29	Action 680 685	viven
+E28	Action:T28 Target:T27
+E29	Action:T29 Target:E28
+T30	Action 747 750	son
+T31	Concept-FAIL 775 783	personas
+T32	Concept-FAIL 809 814	genes
+T33	Action-FAIL 788 797	comparten
+E30	Action:T30 Target-FAIL:T31 Target-FAIL2:E33
+E33	Action-FAIL:T33 Target-FAIL:T32
+T34	Concept 861 866	apoyo
+T35	Concept 847 850	una
+T36	Concept 837 842	Deben
+T37	Concept 869 873	amor
+T38	Concept 851 857	fuente
+R0	is-a Arg1:T38 Arg2:T37
+R1	property-of Arg1:T38 Arg2:T36
+R2	part-of-FAIL Arg1:T38 Arg2:T35
+R3	same-as-FAIL Arg1:T38 Arg2:T34
+T39	Concept-FAIL 925 931	tiempo
+T40	Concept-FAIL 882 891	significa
+T41	Concept-FAIL 912 916	bien
+T42	Concept-FAIL 896 901	todos
+R4	part-of-FAIL Arg1:T39 Arg2:T40
+R5	is-a-FAIL Arg1:T42 Arg2:T41
+T43	Concept 937 947	conflictos
+T44	Concept-FAIL 964 978	vida familiar.
+T45	Concept-FAIL 964 968	vida
+R6	is-a-FAIL Arg1:T43 Arg2:T44
+R7	property-of-FAIL Arg1:T43 Arg2:T45

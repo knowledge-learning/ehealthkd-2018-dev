@@ -1,0 +1,544 @@
+T0	Concept 113 129	condición médica
+T1	Action 87 93	buscar
+T2	Concept 75 81	cuerpo
+T3	Concept 62 70	interior
+T4	Action 50 58	observar
+T5	Concept 42 49	médicos
+T6	Concept 3 14	diagnóstico
+T7	Concept 3 27	diagnóstico por imágenes
+T8	Action-FAIL 28 35	permite
+T9	Concept-FAIL 94 102	indicios
+T10	Concept-FAIL 113 122	condición
+E1	Action:T1 Subject:T5 Target-FAIL:T9 Target-FAIL2:T0
+E4	Action:T4 Target:T3 Subject:T5
+E8	Action-FAIL:T8 Target-FAIL:E4 Target-FAIL2:E1 Subject-FAIL:T7
+R0	is-a Arg1:T7 Arg2:T6
+R1	part-of Arg1:T3 Arg2:T2
+R2	property-of-FAIL Arg1:T9 Arg2:T0
+R3	is-a-FAIL Arg1:T0 Arg2:T10
+T11	Concept 180 188	imágenes
+T12	Action 174 179	crear
+T13	Concept 158 166	técnicas
+T14	Concept 147 155	aparatos
+T15	Concept-FAIL 235 241	cuerpo
+T16	Concept-FAIL 210 221	actividades
+T17	Concept-FAIL 196 207	estructuras
+E12	Action:T12 Target:T11 Subject:T14 Subject2:T13
+R4	part-of-FAIL Arg1:T17 Arg2:T15
+T18	Action-FAIL 339 349	examinarse
+T19	Concept-FAIL 313 329	parte del cuerpo
+T20	Concept-FAIL 296 304	síntomas
+T21	Action-FAIL 265 268	use
+T22	Concept-FAIL 272 278	médico
+T23	Concept-FAIL 254 260	imagen
+E18	Action-FAIL:T18 Target-FAIL:T19 Target-FAIL2:T20 Subject-FAIL:T22
+E21	Action-FAIL:T21 Target-FAIL:T23 Subject-FAIL:T22
+T24	Action 382 388	duelen
+T25	Concept 358 365	pruebas
+T26	Concept 358 378	pruebas por imágenes
+E24	Action:T24 Subject:T26
+R5	is-a Arg1:T26 Arg2:T25
+T30	Concept 541 552	dosis bajas
+T31	Concept 556 565	radiación
+T32	Concept 518 525	pruebas
+T33	Action 533 540	incluir
+E33	Action:T33 Target:T31 Subject:T32
+R7	property-of Arg1:T30 Arg2:T31
+T34	Concept 631 637	cámara
+T35	Action 604 613	introduce
+T36	Concept-FAIL 620 626	cuerpo
+T37	Concept-FAIL 638 646	diminuta
+T38	Concept-FAIL 578 599	estudios por imágenes
+T39	Concept-FAIL 578 586	estudios
+E35	Action:T35 Target:T34 Target-FAIL:T36
+R8	property-of-FAIL Arg1:T37 Arg2:T34
+R9	is-a-FAIL Arg1:T38 Arg2:T39
+T40	Concept 685 696	herramienta
+T41	Concept 706 716	tubo visor
+R10	is-a Arg1:T41 Arg2:T40
+T42	Concept 876 881	colon
+T43	Concept 862 870	pulmones
+T44	Concept 849 856	corazón
+T45	Concept 819 825	órgano
+T46	Action 792 800	observar
+T47	Concept-FAIL 804 812	interior
+T48	Concept-FAIL 765 771	cuerpo
+T49	Concept-FAIL 752 760	conducto
+T50	Concept-FAIL 721 727	médico
+T51	Action-FAIL 731 736	mueve
+E46	Action:T46 Target-FAIL:T47 Subject-FAIL:T50
+E51	Action-FAIL:T51 Subject-FAIL:T50
+R11	is-a Arg1:T44 Arg2:T45
+R12	is-a Arg1:T43 Arg2:T45
+R13	is-a Arg1:T42 Arg2:T45
+R14	part-of-FAIL Arg1:T49 Arg2:T48
+R15	property-of-FAIL Arg1:T47 Arg2:T45
+T53	Concept 920 929	anestesia
+T54	Action 911 919	requerir
+T55	Concept 889 903	procedimientos
+E54	Action:T54 Target:T53 Subject:T55
+T56	Concept 972 978	imagen
+T57	Concept 946 957	ultrasonido
+T58	Concept 934 943	ecografía
+R16	is-a Arg1:T57 Arg2:T56
+R17	is-a Arg1:T58 Arg2:T56
+T59	Concept-FAIL 1045 1056	estructuras
+T60	Concept-FAIL 1035 1042	órganos
+T61	Action-FAIL 1026 1034	observar
+T62	Concept-FAIL 1005 1020	alta frecuencia
+T63	Concept-FAIL 994 1001	sonoras
+T64	Concept-FAIL 988 993	ondas
+E61	Action-FAIL:T61 Target-FAIL:T60 Target-FAIL2:T59
+R18	property-of-FAIL Arg1:T63 Arg2:T64
+R19	property-of-FAIL Arg1:T62 Arg2:T64
+T65	Concept 1194 1201	órganos
+T66	Concept 1179 1185	hígado
+T67	Concept 1167 1174	riñones
+T68	Concept 1145 1161	vasos sanguíneos
+T69	Concept 1132 1139	corazón
+T70	Action 1125 1128	ver
+T71	Concept 1085 1098	profesionales
+T72	Concept 1085 1110	profesionales de la salud
+T73	Action-FAIL 1115 1119	usan
+E70	Action:T70 Target:T69 Target2:T67 Target3:T66 Target-FAIL:T68
+E73	Action-FAIL:T73 Target-FAIL:E70 Subject-FAIL:T72
+R20	is-a Arg1:T72 Arg2:T71
+R21	is-a Arg1:T66 Arg2:T65
+R22	is-a Arg1:T67 Arg2:T65
+R23	is-a Arg1:T68 Arg2:T65
+R24	is-a Arg1:T69 Arg2:T65
+T74	Concept 1286 1290	feto
+T75	Action 1274 1282	observar
+T76	Concept 1245 1252	pruebas
+T77	Concept 1228 1235	médicos
+T80	Concept-FAIL 1257 1268	ultrasonido
+E75	Action:T75 Target:T74 Subject-FAIL2:T77
+T82	Concept 1354 1363	radiación
+T83	Action 1342 1348	expone
+T84	Concept 1329 1338	ecografía
+T85	Concept-FAIL 1312 1324	radiografías
+E83	Action:T83 Subject:T84 Target-FAIL:T82 Subject-FAIL:T85
+T86	Concept 1475 1486	transductor
+T87	Concept 1455 1466	dispositivo
+T88	Action 1446 1451	mueve
+T89	Concept 1439 1445	médico
+T91	Concept-FAIL 1425 1433	especial
+T92	Concept-FAIL 1417 1424	técnico
+E88	Action:T88 Target:T86 Subject:T89 Subject-FAIL2:T92
+R27	is-a Arg1:T86 Arg2:T87
+R28	property-of-FAIL Arg1:T91 Arg2:T92
+T93	Concept 1569 1576	tejidos
+T94	Action 1554 1561	rebotan
+T95	Concept 1536 1541	ondas
+T96	Action 1530 1535	envía
+T97	Concept 1518 1529	transductor
+T98	Concept-FAIL 1588 1594	cuerpo
+T100	Concept-FAIL 1542 1549	sonoras
+E94	Action:T94 Target:T93 Subject-FAIL2:T95
+E96	Action:T96 Subject:T97 Target-FAIL2:T95
+R30	part-of-FAIL Arg1:T93 Arg2:T98
+R31	property-of-FAIL Arg1:T100 Arg2:T95
+T101	Action 1641 1648	rebotan
+T102	Concept 1631 1636	ondas
+T103	Action 1619 1626	captura
+T104	Concept 1599 1610	transductor
+E101	Action:T101 Subject-FAIL:T102
+E103	Action:T103 Subject:T104 Target-FAIL:E101
+T105	Concept 1681 1689	imágenes
+T106	Action 1672 1676	crea
+T107	Concept 1653 1660	máquina
+T108	Concept 1653 1671	máquina ecográfica
+E106	Action:T106 Target:T105 Subject:T108
+R32	is-a Arg1:T108 Arg2:T107
+T111	Concept 1768 1774	médico
+T112	Action 1775 1778	vea
+T113	Action 1753 1760	permite
+T114	Concept 1735 1748	procedimiento
+T115	Concept 1718 1728	endoscopía
+T116	Concept-FAIL 1797 1803	cuerpo
+T117	Concept-FAIL 1782 1790	interior
+E112	Action:T112 Subject:T111 Target-FAIL:T117
+E113	Action:T113 Target:E112 Subject:T115
+R34	is-a-FAIL Arg1:T115 Arg2:T114
+R35	part-of-FAIL Arg1:T117 Arg2:T116
+T119	Concept 1849 1859	tubo visor
+T120	Concept 1816 1827	instrumento
+T121	Concept 1836 1846	endoscopio
+R37	is-a Arg1:T121 Arg2:T120
+R38	is-a Arg1:T119 Arg2:T120
+R40	same-as-FAIL Arg1:T121 Arg2:T119
+T122	Concept 1888 1894	cámara
+T123	Concept 1865 1876	endoscopios
+T124	Concept-FAIL 1928 1935	delgado
+T125	Concept-FAIL 1920 1925	largo
+T126	Concept-FAIL 1915 1919	tubo
+T127	Action-FAIL 1904 1909	unida
+T129	Concept-FAIL 1895 1903	diminuta
+E127	Action-FAIL:T127 Target-FAIL:T126 Subject-FAIL:T122
+R41	property-of-FAIL Arg1:T129 Arg2:T122
+R42	property-of-FAIL Arg1:T125 Arg2:T126
+R43	property-of-FAIL Arg1:T124 Arg2:T126
+R44	part-of-FAIL Arg1:T122 Arg2:T123
+T130	Action-FAIL 1950 1955	mueve
+T131	Concept-FAIL 1940 1946	médico
+E130	Action-FAIL:T130 Subject-FAIL:T131
+T132	Concept 2078 2085	cirugía
+T133	Action 2068 2072	usan
+T134	Concept 2053 2064	endoscopios
+T136	Concept-FAIL 2124 2142	pólipos  del colon
+T137	Action-FAIL 2109 2120	extirpación
+E133	Action:T133 Target:T132 Subject:T134 Target-FAIL:E137
+E137	Action-FAIL:T137 Target-FAIL:T136
+T140	Concept 2384 2390	cuerpo
+T141	Concept 2356 2365	funciones
+T142	Concept 2342 2353	estructuras
+T143	Action 2329 2337	observar
+T144	Concept 2303 2323	material radioactivo
+T145	Concept 2282 2293	gammagrafía
+T146	Action-FAIL 2295 2302	utiliza
+T147	Concept-FAIL 2258 2278	escanografía nuclear
+E143	Action:T143 Target:T142 Target2:T141 Subject-FAIL:T144
+E146	Action-FAIL:T146 Target-FAIL:T144 Subject-FAIL:T147
+R48	part-of Arg1:T141 Arg2:T140
+R49	part-of Arg1:T142 Arg2:T140
+R50	same-as-FAIL Arg1:T145 Arg2:T147
+T149	Concept 2435 2449	radioactividad
+T150	Action 2424 2431	detecta
+T151	Concept 2404 2410	cámara
+T153	Concept-FAIL 2411 2419	especial
+E150	Action:T150 Target:T149 Subject-FAIL2:T151
+R53	property-of-FAIL Arg1:T153 Arg2:T151
+T154	Concept 2494 2501	pequeña
+T155	Concept 2502 2507	dosis
+T156	Concept 2473 2480	persona
+T157	Action 2481 2489	recibirá
+T160	Concept-FAIL 2525 2536	radioactiva
+E157	Action:T157 Target:T155 Subject:T156
+R54	property-of Arg1:T154 Arg2:T155
+R57	property-of-FAIL Arg1:T160 Arg2:T155
+T164	Concept 2688 2696	imágenes
+T165	Action 2679 2683	toma
+T166	Concept 2672 2678	cámara
+T167	Action 2614 2621	acuesta
+T168	Concept 2602 2610	paciente
+T169	Concept-FAIL 2622 2629	inmóvil
+E165	Action:T165 Target:T164 Subject:T166
+E167	Action:T167 Subject-FAIL:T168
+T170	Concept 2859 2870	infecciones
+T171	Concept 2848 2856	lesiones
+T172	Concept 2838 2846	cánceres
+T173	Concept 2815 2825	afecciones
+T174	Action 2802 2814	diagnosticar
+T175	Concept 2792 2799	médicos
+T176	Action 2779 2785	ayudan
+T177	Concept 2755 2778	escanografías nucleares
+T178	Concept-FAIL 2755 2768	escanografías
+E174	Action:T174 Target:T173 Subject:T175
+E176	Action:T176 Target:T175 Subject:T177
+R58	is-a Arg1:T172 Arg2:T173
+R59	is-a Arg1:T171 Arg2:T173
+R60	is-a Arg1:T170 Arg2:T173
+R61	is-a-FAIL Arg1:T177 Arg2:T178
+T179	Action 2887 2894	mostrar
+T180	Concept 2955 2963	pulmones
+T181	Concept 2941 2948	corazón
+T182	Concept 2924 2931	órganos
+T183	Action-FAIL 2898 2912	funcionamiento
+E179	Action:T179 Target-FAIL:E183
+E183	Action-FAIL:T183 Target-FAIL:T182
+R62	is-a Arg1:T181 Arg2:T182
+R63	is-a Arg1:T180 Arg2:T182
+T185	Concept 3081 3092	estructuras
+T186	Concept 3071 3078	órganos
+T187	Action 3062 3070	observar
+T188	Concept 3042 3056	ondas de radio
+T189	Action 3022 3026	usan
+T190	Concept 3030 3034	gran
+T191	Concept 3035 3039	imán
+T192	Concept 3017 3020	IRM
+T193	Concept-FAIL 3127 3133	cuerpo
+T199	Concept-FAIL 3042 3047	ondas
+T200	Concept-FAIL 2982 3015	imágenes por resonancia magnética
+E187	Action:T187 Target:T186 Target2:T185
+E189	Action:T189 Target:T191 Target2:T188 Subject:T200
+R65	property-of Arg1:T190 Arg2:T191
+R68	part-of-FAIL Arg1:T186 Arg2:T193
+R69	part-of-FAIL Arg1:T185 Arg2:T193
+R73	is-a-FAIL Arg1:T188 Arg2:T199
+T201	Concept 3270 3277	tumores
+T202	Concept 3241 3263	rupturas de ligamentos
+T203	Concept 3223 3233	afecciones
+T204	Action 3194 3206	diagnosticar
+T205	Concept 3180 3188	imágenes
+T206	Action 3165 3173	utilizan
+T207	Concept 3139 3164	profesionales de la salud
+T208	Concept-FAIL 3139 3152	profesionales
+E204	Action:T204 Target:T203 Subject-FAIL2:T207
+E206	Action:T206 Target:T205 Subject:T207
+R74	is-a Arg1:T202 Arg2:T203
+R75	is-a Arg1:T201 Arg2:T203
+R76	is-a-FAIL Arg1:T207 Arg2:T208
+T209	Action 3337 3345	examinar
+T210	Concept 3349 3356	cerebro
+T211	Concept 3362 3376	médula espinal
+T212	Concept 3283 3316	imágenes por resonancia magnética
+E209	Action:T209 Target:T210 Target2:T211 Subject-FAIL:T212
+T214	Concept-FAIL 3461 3468	aparato
+T215	Action-FAIL 3440 3447	desliza
+T216	Concept-FAIL 3428 3432	mesa
+T217	Action-FAIL 3413 3420	acuesta
+T218	Concept-FAIL 3401 3409	paciente
+E215	Action-FAIL:T215 Target-FAIL:T214 Subject-FAIL:T216
+E217	Action-FAIL:T217 Target-FAIL:T216 Subject-FAIL:T218
+T219	Concept-FAIL 3508 3515	estudio
+T220	Concept-FAIL 3560 3567	inmóvil
+T221	Action-FAIL 3549 3559	permanecer
+T222	Concept-FAIL 3535 3543	paciente
+T223	Action-FAIL 3522 3529	demorar
+E221	Action-FAIL:T221 Target-FAIL:T220 Subject-FAIL:T222
+E223	Action-FAIL:T223 Subject-FAIL:T219
+T224	Concept 3593 3598	dolor
+T225	Action 3587 3592	causa
+T226	Concept 3572 3583	exploración
+E225	Action:T225 Target:T224 Subject:T226
+T227	Concept 3629 3634	ruido
+T228	Action 3618 3622	hace
+T229	Concept 3603 3617	máquina de IRM
+E228	Action:T228 Target:T227 Subject:T229
+T233	Concept 3639 3646	técnico
+T235	Action 3653 3662	ofrecerle
+T237	Concept-FAIL 3663 3670	tapones
+E235	Action:T235 Subject:T233 Target:T237
+T238	Concept 3738 3744	examen
+T239	Concept 3738 3754	examen de sangre
+T240	Concept 3725 3730	HbA1c
+T242	Concept-FAIL 3781 3792	prediabetes
+T243	Concept-FAIL 3763 3778	diabetes tipo 2
+T244	Concept-FAIL 3763 3771	diabetes
+T246	Concept-FAIL 3700 3723	hemoglobina glicosilada
+R81	is-a Arg1:T239 Arg2:T238
+R85	same-as-FAIL Arg1:T240 Arg2:T246
+R87	is-a-FAIL Arg1:T243 Arg2:T244
+T252	Concept-FAIL 3916 3921	HbA1c
+T253	Action-FAIL 3901 3905	usar
+T254	Concept-FAIL 3886 3893	médicos
+T255	Concept-FAIL 3909 3921	prueba HbA1c
+T256	Action-FAIL 3979 3984	hacer
+T257	Concept-FAIL 3954 3973	pruebas de diabetes
+T258	Concept-FAIL 3988 3999	diagnóstico
+E253	Action-FAIL:T253 Target-FAIL:T252 Subject-FAIL:T254
+E256	Action-FAIL:T256 Target-FAIL:T258 Subject:T254
+R90	is-a-FAIL Arg1:T255 Arg2:T257
+T259	Concept-FAIL 4066 4074	diabetes
+T260	Action-FAIL 4053 4062	manejando
+T261	Action-FAIL 4032 4035	ver
+T262	Concept-FAIL 4021 4026	HbA1c
+T263	Action-FAIL 4009 4017	utilizan
+E260	Action-FAIL:T260 Target-FAIL:T259
+E261	Action-FAIL:T261 Target-FAIL:E260 Subject-FAIL:T262
+E263	Action-FAIL:T263 Target-FAIL:T262
+T270	Concept-FAIL 4299 4305	prueba
+T272	Concept-FAIL 4299 4311	prueba HbA1c
+T273	Action-FAIL 4284 4293	someterse
+T274	Concept-FAIL 4269 4277	diabetes
+T275	Action-FAIL 4263 4268	tiene
+E273	Action-FAIL:T273 Target-FAIL:T272
+E275	Action-FAIL:T275 Target-FAIL:T274
+T276	Concept-FAIL 4526 4541	demasiado alto,
+T277	Concept-FAIL 4505 4522	esultado de HbA1c
+T279	Concept-FAIL 4578 4593	plan de cuidado
+T280	Action-FAIL 4567 4574	cambiar
+E280	Action-FAIL:T280 Target-FAIL:T279
+R95	property-of-FAIL Arg1:T276 Arg2:T277
+T281	Concept 4674 4692	tejidos corporales
+T282	Concept 4666 4671	orina
+T283	Concept 4646 4654	muestras
+T284	Action 4637 4645	examinan
+T285	Concept 4614 4636	pruebas de laboratorio
+T287	Concept-FAIL 4614 4621	pruebas
+T288	Concept-FAIL 4658 4664	sangre
+E284	Action:T284 Subject:T285 Target-FAIL4:T283
+R96	is-a-FAIL Arg1:T285 Arg2:T287
+T289	Concept 4762 4772	resultados
+T290	Action 4744 4754	determinar
+T291	Concept 4730 4738	muestras
+T292	Action 4717 4725	analizan
+T293	Concept 4710 4716	médico
+T294	Concept 4697 4704	técnico
+T295	Concept-FAIL 4793 4809	límites normales
+T296	Action-FAIL 4773 4778	están
+E290	Action:T290 Subject:T291 Target-FAIL:E296
+E292	Action:T292 Target:T291 Subject:T293 Subject2:T294
+E296	Action-FAIL:T296 Target-FAIL:T295 Subject-FAIL:T289
+T299	Concept-FAIL 4832 4848	rango de valores
+T301	Action-FAIL 4824 4828	usan
+T302	Concept-FAIL 4815 4823	análisis
+E301	Action-FAIL:T301 Target-FAIL:T299 Subject-FAIL:T302
+T303	Concept-FAIL 4958 4966	análisis
+T304	Concept-FAIL 4940 4950	resultados
+T305	Action-FAIL 4928 4935	afectan
+T306	Concept-FAIL 4919 4927	factores
+E305	Action-FAIL:T305 Target-FAIL:T304 Subject-FAIL:T306
+R104	part-of-FAIL Arg1:T304 Arg2:T303
+T307	Concept 5005 5015	resultados
+T308	Action 4992 5000	comparar
+T309	Concept 4971 4977	médico
+T310	Concept-FAIL 5029 5039	anteriores
+T311	Concept-FAIL 5020 5028	análisis
+E308	Action:T308 Target:T307 Subject:T309 Target-FAIL:T311
+R105	property-of-FAIL Arg1:T310 Arg2:T311
+T312	Action 5115 5123	detectar
+T313	Concept 5093 5109	examen de rutina
+T314	Concept 5045 5052	pruebas
+T315	Concept 5045 5067	pruebas de laboratorio
+T316	Concept-FAIL 5124 5131	cambios
+T317	Concept-FAIL 5093 5099	examen
+E312	Action:T312 Subject:T313 Target:T316
+R106	is-a Arg1:T315 Arg2:T314
+R107	part-of Arg1:T315 Arg2:T313
+R108	is-a-FAIL Arg1:T313 Arg2:T317
+T320	Concept 5253 5265	enfermedades
+T321	Action 5243 5252	controlar
+T322	Concept 5228 5240	tratamientos
+T323	Action 5220 5227	evaluar
+T324	Action 5207 5217	planificar
+T325	Concept 5189 5205	cuadros clínicos
+T326	Action 5176 5188	diagnosticar
+T327	Concept-FAIL 5166 5173	médicos
+E321	Action:T321 Target:T320
+E323	Action:T323 Target:T322 Subject-FAIL:T327
+E324	Action:T324 Target:T322 Subject-FAIL:T327
+E326	Action:T326 Target:T325 Subject-FAIL:T327
+T328	Concept 5312 5335	ondas electromagnéticas
+T329	Concept 5294 5303	radiación
+T330	Concept 5271 5278	rayos X
+R109	is-a Arg1:T330 Arg2:T329
+R110	same-as-FAIL Arg1:T328 Arg2:T329
+T331	Action 5361 5369	muestran
+T332	Concept 5341 5360	imágenes de rayos X
+T333	Concept-FAIL 5388 5394	cuerpo
+T334	Concept-FAIL 5373 5381	interior
+E331	Action:T331 Subject:T332 Target-FAIL:T334
+R111	part-of-FAIL Arg1:T334 Arg2:T333
+T338	Concept 5508 5517	radiación
+T339	Action 5474 5482	absorben
+T340	Concept 5466 5473	tejidos
+T341	Concept-FAIL 5483 5493	diferentes
+T342	Concept-FAIL 5494 5504	cantidades
+E339	Action:T339 Subject:T340 Target-FAIL2:T338
+R113	property-of-FAIL Arg1:T341 Arg2:T342
+R114	property-of-FAIL Arg1:T342 Arg2:T338
+T344	Concept 5593 5599	huesos
+T345	Concept 5569 5576	rayos X
+T346	Action 5543 5550	absorbe
+T347	Concept 5522 5528	calcio
+T348	Concept-FAIL 5607 5614	blancos
+E346	Action:T346 Target:T345 Subject:T347
+T350	Action-FAIL 5649 5657	absorben
+T351	Concept-FAIL 5633 5640	tejidos
+T352	Concept-FAIL 5633 5648	tejidos blandos
+T353	Concept-FAIL 5619 5624	grasa
+E350	Action-FAIL:T350 Subject-FAIL:T352 Subject-FAIL2:T353
+R116	is-a-FAIL Arg1:T352 Arg2:T351
+T354	Concept-FAIL 5755 5761	negros
+T356	Concept-FAIL 5739 5747	pulmones
+T357	Concept-FAIL 5708 5722	menor cantidad
+T358	Action-FAIL 5697 5704	absorbe
+T359	Concept-FAIL 5692 5696	aire
+E358	Action-FAIL:T358 Target-FAIL:T357 Subject-FAIL:T359
+T360	Concept 5814 5819	rotos
+T361	Concept 5807 5813	huesos
+T362	Action 5803 5806	ver
+T363	Concept 5787 5794	rayos X
+T364	Concept-FAIL 5830 5837	rayos X
+E362	Action:T362 Target:T361 Subject:T363
+R117	property-of Arg1:T360 Arg2:T361
+T365	Concept 5930 5938	neumonía
+T366	Action 5921 5929	detectar
+T367	Concept 5892 5904	radiografías
+T368	Concept-FAIL 5892 5913	radiografías de tórax
+E366	Action:T366 Target:T365 Subject-FAIL2:T368
+R118	is-a-FAIL Arg1:T368 Arg2:T367
+T369	Concept 5990 5996	cáncer
+T370	Concept 5990 6004	cáncer de mama
+T371	Action 5978 5986	detectar
+T372	Concept 5965 5972	rayos X
+T373	Concept 5944 5955	mamografías
+E371	Action:T371 Target:T370 Subject-FAIL2:T373
+R119	is-a Arg1:T370 Arg2:T369
+R120	is-a-FAIL Arg1:T373 Arg2:T372
+T375	Concept-FAIL 6115 6134	partes de su cuerpo
+T376	Action-FAIL 6098 6106	proteger
+T377	Action-FAIL 6067 6071	usar
+T378	Concept-FAIL 6075 6092	delantal de plomo
+T381	Concept-FAIL 6034 6045	radiografía
+E376	Action-FAIL:T376 Target-FAIL:T375 Subject-FAIL:T378
+E377	Action-FAIL:T377 Target-FAIL:T378
+T382	Concept-FAIL 6179 6190	radiografía
+T385	Action-FAIL 6165 6171	recibe
+T386	Concept-FAIL 6151 6160	radiación
+E385	Action-FAIL:T385 Target-FAIL:T386 Target-FAIL2:T382
+T387	Action 6241 6247	expone
+T388	Concept 6220 6240	radiografía de tórax
+T389	Concept-FAIL 6254 6272	dosis de radiación
+T391	Concept-FAIL 6220 6231	radiografía
+E387	Action:T387 Target-FAIL:T389 Subject-FAIL:T388
+R122	is-a-FAIL Arg1:T388 Arg2:T391
+T392	Concept 6428 6434	cuerpo
+T393	Action 6413 6424	funcionando
+T394	Action 6386 6394	muestran
+T395	Concept 6371 6385	signos vitales
+E393	Action:T393 Target-FAIL2:T392
+E394	Action:T394 Target:E393 Subject:T395
+T405	Concept 6613 6623	tecnología
+T406	Concept 6602 6604	TC
+T407	Concept 6576 6600	tomografía computarizada
+T408	Concept-FAIL 6629 6653	diagnóstico con imágenes
+R130	is-a-FAIL Arg1:T407 Arg2:T405
+R131	is-a-FAIL Arg1:T407 Arg2:T408
+R132	same-as-FAIL Arg1:T407 Arg2:T406
+T410	Concept 6666 6683	equipo de rayos X
+T411	Concept 6713 6726	transversales
+T412	Concept 6704 6712	imágenes
+T413	Action 6698 6703	crear
+E413	Action:T413 Target:T412 Subject:T410
+R136	property-of-FAIL Arg1:T411 Arg2:T412
+T414	Concept-FAIL 6793 6800	inmóvil
+T415	Action-FAIL 6783 6792	permanece
+T416	Concept-FAIL 6774 6782	paciente
+E415	Action-FAIL:T415 Target-FAIL:T414 Subject-FAIL:T416
+T417	Concept-FAIL 6854 6860	centro
+T418	Action-FAIL 6825 6829	pasa
+T419	Concept-FAIL 6820 6824	mesa
+T420	Concept-FAIL 6919 6924	dolor
+T421	Action-FAIL 6913 6918	causa
+T422	Concept-FAIL 6896 6909	procedimiento
+T423	Concept-FAIL 6873 6891	máquina de rayos X
+E418	Action-FAIL:T418 Target-FAIL:T417 Subject-FAIL:T419
+E421	Action-FAIL:T421 Target-FAIL:T420 Subject-FAIL:T422
+R137	part-of-FAIL Arg1:T417 Arg2:T423
+T424	Concept 7016 7033	partes del cuerpo
+T425	Action 7037 7041	vean
+T426	Action 6996 7001	ayuda
+T427	Concept 6973 6991	tinte de contraste
+T428	Action 6963 6969	recibe
+T429	Concept 6954 6962	paciente
+E425	Action:T425 Subject-FAIL:T424
+E426	Action:T426 Target:E425 Subject:T427
+E428	Action:T428 Target:T427 Subject:T429
+R139	property-of Arg1:T16 Arg2:T15	
+T27	Action 1236 1240	usan
+E2	Action:T27 Subject:T77 Target:T76
+R6	property-of Arg1:T80 Arg2:T76	
+R25	property-of Arg1:T169 Arg2:T168	
+R26	same-as Arg1:T192 Arg2:T200	
+R29	is-a Arg1:T272 Arg2:T270	
+R33	is-a Arg1:T288 Arg2:T283	
+R36	is-a Arg1:T282 Arg2:T283	
+R39	is-a Arg1:T281 Arg2:T283	
+T28	Concept 5138 5143	salud
+R45	property-of Arg1:T316 Arg2:T28	
+R46	property-of Arg1:T348 Arg2:T344	
+T29	Concept 5536 5542	huesos
+R47	part-of Arg1:T347 Arg2:T29	
+R51	property-of Arg1:T354 Arg2:T356	

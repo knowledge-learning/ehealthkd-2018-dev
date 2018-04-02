@@ -1,0 +1,129 @@
+T0	Concept 3 19	personal militar
+T1	Action 49 58	enfrentan
+T2	Concept 26 35	veteranos
+T3	Concept 26 45	veteranos de guerra
+T4	Concept 72 81	problemas
+T5	Concept 72 90	problemas de salud
+T6	Concept-FAIL 117 122	civil
+T7	Concept-FAIL 107 116	población
+T8	Concept-FAIL 12 19	militar
+T9	Concept-FAIL 3 11	personal
+E1	Action:T1 Target:T5 Subject:T3 Subject2:T0  
+R0	is-a Arg1:T5 Arg2:T4
+R1	is-a Arg1:T3 Arg2:T2
+R2	property-of-FAIL Arg1:T8 Arg2:T9
+R3	property-of-FAIL Arg1:T6 Arg2:T7
+T10	Concept 163 172	problemas
+T11	Action 145 154	enfrentan
+T12	Concept 128 136	familias
+T13	Concept-FAIL 173 184	específicos
+E11	Action:T11 Target:T10 Subject:T12  
+R4	property-of-FAIL Arg1:T13 Arg2:T10
+T14	Concept 219 228	problemas
+T15	Concept 219 237	problemas de salud
+T16	Action 213 218	tiene
+T17	Concept-FAIL 191 203	grupo racial
+T18	Concept-FAIL 238 249	específicos
+T19	Concept-FAIL 206 212	étnico
+T20	Concept-FAIL 197 203	racial
+T21	Concept-FAIL 191 196	grupo
+E16	Action:T16 Target:T15   Subject-FAIL:T17 Subject-FAIL2:T21
+R5	is-a Arg1:T15 Arg2:T14
+R6	property-of-FAIL Arg1:T19 Arg2:T21
+R7	is-a-FAIL Arg1:T20 Arg2:T21
+R8	property-of-FAIL Arg1:T18 Arg2:T15
+T22	Concept 331 339	personas
+T23	Action 317 324	afectan
+T24	Concept 294 303	problemas
+T25	Concept 277 284	enlaces
+T26	Action 266 276	encontrará
+T27	Concept-FAIL 331 354	personas afroamericanas
+T28	Concept-FAIL 307 312	salud
+T29	Concept-FAIL 259 265	página
+T30	Concept-FAIL 340 354	afroamericanas
+T31	Concept-FAIL 294 312	problemas de salud
+E23	Action:T23 Target:T22   Subject-FAIL:T24 Subject-FAIL2:T31
+E26	Action:T26   Target-FAIL:T25 Subject-FAIL:T29 Subject-FAIL2:T25
+R9	part-of-FAIL Arg1:T28 Arg2:T24
+R10	is-a-FAIL Arg1:T27 Arg2:T22
+R11	is-a-FAIL Arg1:T31 Arg2:T24
+R12	property-of-FAIL Arg1:T30 Arg2:T22
+T32	Concept 376 382	étnico
+T33	Concept 361 373	grupo racial
+T34	Action-FAIL 383 388	tiene
+T35	Concept-FAIL 408 419	específicos
+T36	Concept-FAIL 402 407	salud
+T37	Concept-FAIL 389 398	problemas
+T38	Concept-FAIL 361 366	grupo
+T39	Concept-FAIL 389 407	problemas de salud
+E34	Action-FAIL:T34   Target-FAIL:T37 Subject-FAIL:T33 Subject-FAIL2:T32
+R13	is-a-FAIL Arg1:T33 Arg2:T38
+R14	part-of-FAIL Arg1:T36 Arg2:T37
+R15	part-of-FAIL Arg1:T35 Arg2:T37
+R16	property-of-FAIL Arg1:T39 Arg2:T32
+R17	property-of-FAIL Arg1:T39 Arg2:T33
+T40	Concept 501 519	asiáticoamericanos
+T41	Action 487 494	afectan
+T42	Concept 464 473	problemas
+T43	Concept 447 454	enlaces
+T44	Action 436 446	encontrará
+T45	Concept 429 435	página
+T46	Concept-FAIL 477 482	salud
+T47	Concept-FAIL 464 482	problemas de salud
+E41	Action:T41 Target:T40   Subject-FAIL:T42 Subject-FAIL2:T47
+E44	Action:T44 Target:T43 Subject:T45  
+R18	part-of-FAIL Arg1:T46 Arg2:T42
+R19	is-a-FAIL Arg1:T47 Arg2:T42
+T48	Concept-FAIL 573 584	específicos
+T49	Concept-FAIL 567 572	salud
+T50	Concept-FAIL 554 563	problemas
+T51	Action-FAIL 548 553	tiene
+T52	Concept-FAIL 541 547	étnico
+T53	Concept-FAIL 526 538	grupo racial
+T54	Concept-FAIL 526 531	grupo
+E51	Action-FAIL:T51   Target-FAIL:T50 Subject-FAIL:T53 Subject-FAIL2:T52
+R20	is-a-FAIL Arg1:T53 Arg2:T54
+R21	part-of-FAIL Arg1:T48 Arg2:T50
+R22	part-of-FAIL Arg1:T49 Arg2:T50
+T55	Action 652 659	afectan
+T56	Concept 666 674	personas
+T57	Concept 629 638	problemas
+T58	Concept 612 619	enlaces
+T59	Action 601 611	encontrará
+T60	Concept 594 600	página
+T61	Concept-FAIL 666 692	personas hispanoamericanas
+T62	Concept-FAIL 642 647	salud
+T63	Concept-FAIL 629 647	problemas de salud
+T64	Concept-FAIL 675 692	hispanoamericanas
+E55	Action:T55   Target-FAIL:T61 Target-FAIL2:T56 Subject-FAIL:T57 Subject-FAIL2:T63
+E59	Action:T59 Target:T58 Subject:T60  
+R23	part-of-FAIL Arg1:T62 Arg2:T57
+R24	property-of-FAIL Arg1:T64 Arg2:T56
+R25	is-a-FAIL Arg1:T63 Arg2:T57
+T65	Action-FAIL 721 726	tiene
+T66	Concept-FAIL 714 720	étnico
+T67	Concept-FAIL 746 757	específicos
+T68	Concept-FAIL 740 745	salud
+T69	Concept-FAIL 727 736	problemas
+T70	Concept-FAIL 699 710	grupo racia
+T71	Concept-FAIL 699 704	grupo
+E65	Action-FAIL:T65   Target-FAIL:T69 Subject-FAIL:T70 Subject-FAIL2:T66
+R26	is-a-FAIL Arg1:T70 Arg2:T71
+R27	part-of-FAIL Arg1:T68 Arg2:T69
+R28	part-of-FAIL Arg1:T67 Arg2:T69
+T72	Concept 839 861	indios norteamericanos
+T73	Concept 839 845	indios
+T74	Action 825 832	afectan
+T75	Concept 802 811	problemas
+T76	Concept 785 792	enlaces
+T77	Action 774 784	encontrará
+T78	Concept 767 773	página
+T79	Concept-FAIL 815 820	salud
+T80	Concept-FAIL 846 861	norteamericanos
+T81	Concept-FAIL 802 820	problemas de salud
+E74	Action:T74 Target:T72   Subject-FAIL:T75 Subject-FAIL2:T81
+E77	Action:T77 Target:T76 Subject:T78  
+R29	is-a Arg1:T72 Arg2:T73
+R30	part-of-FAIL Arg1:T79 Arg2:T75
+R31	property-of-FAIL Arg1:T80 Arg2:T73
+R32	is-a-FAIL Arg1:T81 Arg2:T75

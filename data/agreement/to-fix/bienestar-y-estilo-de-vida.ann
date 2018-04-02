@@ -1,0 +1,1029 @@
+T0	Concept 122 128	lesión
+T1	Concept 96 109	discapacitado
+T2	Action 42 48	ayudan
+T3	Concept-FAIL 63 70	moverse
+T4	Concept-FAIL 51 58	caminar
+T5	Concept-FAIL 29 38	movilidad
+T6	Action-FAIL 18 25	asistir
+T7	Concept-FAIL 4 12	aparatos
+T8	Action-FAIL 112 117	tiene
+T9	Concept-FAIL 85 89	otro
+T10	Concept-FAIL 77 82	lugar
+T11	Action-FAIL 63 70	moverse
+T12	Action-FAIL 51 58	caminar
+T13	Concept-FAIL 4 38	aparatos para asistir la movilidad
+E2	Action:T2 Target-FAIL:T4 Target-FAIL2:T3 Subject-FAIL:T7 Subject-FAIL2:T13
+E6	Action-FAIL:T6 Target-FAIL:T5 Subject-FAIL:T7
+E8	Action-FAIL:T8 
+E11	Action-FAIL:T11 Target-FAIL:T10 Target-FAIL2:T9
+E12	Action-FAIL:T12 
+R0	same-as-FAIL Arg1:T9 Arg2:T10
+T14	Concept 171 177	bastón
+T15	Concept 158 165	andador
+T16	Concept-FAIL 190 196	riesgo
+T17	Action-FAIL 181 186	corre
+T18	Action-FAIL 146 154	necesite
+T19	Concept-FAIL 133 141	probable
+E17	Action-FAIL:T17 Target-FAIL:T16
+E18	Action-FAIL:T18 Target-FAIL:T15 Target-FAIL2:T14
+T20	Concept 301 308	muletas
+T21	Concept 270 277	rodilla
+T22	Concept 260 267	tobillo
+T23	Concept 255 258	pie
+T24	Action-FAIL 296 300	usar
+T25	Action-FAIL 240 248	apoyarse
+T26	Concept-FAIL 226 231	menos
+T27	Concept-FAIL 232 236	peso
+T28	Action-FAIL 220 225	poner
+E24	Action-FAIL:T24 Target-FAIL:T20
+E25	Action-FAIL:T25 Target-FAIL:T23 Target-FAIL2:T22 Target-FAIL3:T21
+E28	Action-FAIL:T28 Target-FAIL:T27
+R1	property-of-FAIL Arg1:T26 Arg2:T27
+T29	Concept 424 434	enfermedad
+T30	Concept 411 417	lesión
+T31	Concept 358 377	triciclo motorizado
+T32	Concept 337 352	silla de ruedas
+T33	Concept-FAIL 390 397	caminar
+T34	Action-FAIL 384 389	puede
+T35	Action-FAIL 324 332	requerir
+E34	Action-FAIL:T34 Target-FAIL:T33 Subject-FAIL:T30 Subject-FAIL2:T29
+E35	Action-FAIL:T35 Target-FAIL:T32 Target-FAIL2:T31
+T36	Concept 458 466	aparatos
+T37	Action 481 489	requiere
+T38	Concept 490 503	investigación
+T39	Concept-FAIL 439 448	selección
+T40	Action-FAIL 467 471	toma
+T41	Concept-FAIL 472 478	tiempo
+T42	Action-FAIL 439 448	selección
+E37	Action:T37 Target:T38 Subject-FAIL:T39 Subject-FAIL2:E42
+E40	Action-FAIL:T40 Target-FAIL:T41 Subject-FAIL:T39
+E42	Action-FAIL:T42 Target-FAIL:T36
+R2	part-of-FAIL Arg1:T36 Arg2:T39
+T43	Concept 537 546	andadores
+T44	Concept 522 530	bastones
+T45	Concept 509 516	muletas
+T46	Concept-FAIL 565 570	usted
+T47	Action-FAIL 553 562	adaptarse
+E47	Action-FAIL:T47 Target-FAIL:T43 Target-FAIL2:T44 Target-FAIL3:T45 Subject-FAIL:T43 Subject-FAIL2:T44 Subject-FAIL3:T45
+T48	Action 629 637	resultar
+T49	Concept 650 659	inseguros
+T50	Concept 638 647	incómodos
+T51	Action 593 602	brindarán
+T52	Concept 603 608	apoyo
+T53	Concept 579 588	adecuados
+E48	Action:T48 Target-FAIL:T50 Target-FAIL2:T49
+E51	Action:T51 Target:T52 Subject-FAIL:T53
+T54	Action 747 755	ayudarle
+T55	Concept 733 738	salud
+T56	Concept 698 715	ejercicio regular
+T57	Concept-FAIL 719 724	bueno
+T58	Action-FAIL 676 680	oído
+T59	Concept-FAIL 661 666	Todos
+T60	Concept-FAIL 768 772	peso
+T61	Action-FAIL 758 763	bajar
+T62	Action-FAIL 716 724	es bueno
+T63	Concept-FAIL 698 707	ejercicio
+E54	Action:T54 Target-FAIL:E61 Subject-FAIL:T56
+E58	Action-FAIL:T58 Target-FAIL:T59
+E61	Action-FAIL:T61 Target-FAIL:T60
+E62	Action-FAIL:T62 Target-FAIL:T55 Subject-FAIL:T56
+R3	property-of-FAIL Arg1:T57 Arg2:T56
+R4	is-a-FAIL Arg1:T56 Arg2:T63
+T64	Action-FAIL 883 891	ejercita
+T65	Concept-FAIL 864 874	sedentario
+T66	Concept-FAIL 856 863	trabajo
+T67	Action-FAIL 820 824	pasa
+T68	Action-FAIL 847 852	tiene
+T69	Concept-FAIL 838 845	ocupado
+T70	Concept-FAIL 831 837	tiempo
+T71	Concept-FAIL 796 818	muchos estadounidenses
+T72	Concept-FAIL 782 787	usted
+E64	Action-FAIL:T64 Target-FAIL:T72 Subject-FAIL:T72
+E67	Action-FAIL:T67 Target-FAIL:T70 Subject-FAIL:T72
+E68	Action-FAIL:T68 Target-FAIL:T66 Subject-FAIL:T72
+T73	Concept 916 923	noticia
+T74	Concept-FAIL 940 955	demasiado tarde
+T75	Concept-FAIL 910 915	buena
+T76	Concept-FAIL 910 923	buena noticia
+R5	property-of-FAIL Arg1:T75 Arg2:T73
+R6	property-of-FAIL Arg1:T74 Arg2:T73
+R7	is-a-FAIL Arg1:T76 Arg2:T73
+T77	Concept 1013 1020	maneras
+T78	Action 1003 1012	encontrar
+T79	Action 982 990	comenzar
+T80	Concept 970 975	Usted
+T81	Concept-FAIL 1034 1050	actividad física
+T82	Action-FAIL 1024 1029	hacer
+E78	Action:T78 Target:T77 Target-FAIL:T80 Subject-FAIL:T80
+E79	Action:T79 Target-FAIL:T80 Subject-FAIL:T80
+E82	Action-FAIL:T82 Target-FAIL:T81
+T83	Concept 1153 1162	ejercicio
+T84	Concept 1138 1149	recomendada
+T85	Action 1117 1125	realizar
+T86	Concept 1085 1094	beneficio
+T87	Concept-FAIL 1171 1175	edad
+T88	Concept-FAIL 1129 1137	cantidad
+T89	Action-FAIL 1107 1113	tratar
+T90	Concept-FAIL 1096 1101	usted
+T91	Concept-FAIL 1079 1084	mayor
+T92	Action-FAIL 1068 1075	obtener
+T93	Action-FAIL 1079 1084	mayor
+E85	Action:T85 Target-FAIL:T88 Target-FAIL2:E93 Subject-FAIL:T83
+E89	Action-FAIL:T89 Target-FAIL:E85 Subject-FAIL:T90
+E92	Action-FAIL:T92 Target-FAIL:T86
+E93	Action-FAIL:T93 Target-FAIL:T86
+R8	property-of-FAIL Arg1:T91 Arg2:T86
+R9	property-of-FAIL Arg1:T84 Arg2:T88
+R10	property-of-FAIL Arg1:T84 Arg2:T83
+T94	Action 1281 1286	vivir
+T95	Concept 1252 1264	enfermedades
+T96	Action 1235 1244	controlar
+T97	Action 1224 1232	prevenir
+T98	Action 1214 1221	ayudará
+T99	Concept 1180 1185	usted
+T100	Concept-FAIL 1189 1194	logra
+T101	Action-FAIL 1199 1206	sentirá
+T102	Concept-FAIL 1291 1297	tiempo
+E94	Action:T94 Subject:T99 Target-FAIL:T102
+E96	Action:T96 Target:T95
+E97	Action:T97 Target:T95
+E98	Action:T98 Target:E97 Target2:E96 Subject-FAIL:T100 Subject-FAIL2:T99
+E101	Action-FAIL:T101 Target-FAIL:T99 Subject-FAIL:T100
+T103	Concept 1347 1356	problemas
+T104	Action 1338 1346	detectar
+T105	Concept 1322 1330	exámenes
+T106	Concept 1303 1311	chequeos
+T107	Concept 1303 1319	chequeos médicos
+T108	Action-FAIL 1370 1377	ocurran
+E104	Action:T104 Target:T103 Subject:T107 Subject2:T105
+E108	Action-FAIL:T108 Subject-FAIL:T103
+R11	is-a Arg1:T107 Arg2:T106
+T109	Concept 1435 1456	posibilidades de cura
+T110	Concept 1404 1413	problemas
+T111	Action 1394 1403	encontrar
+T112	Concept-FAIL 1461 1468	mayores
+T113	Concept-FAIL 1416 1422	tiempo
+T114	Concept-FAIL 1435 1448	posibilidades
+T115	Action-FAIL 1457 1460	son
+E111	Action:T111 Target:T110
+E115	Action-FAIL:T115 
+R12	is-a-FAIL Arg1:T109 Arg2:T114
+T116	Concept 1564 1578	estilo de vida
+T117	Concept 1544 1552	historia
+T118	Concept 1544 1561	historia familiar
+T119	Concept 1537 1542	salud
+T120	Concept 1531 1535	edad
+T121	Action 1514 1524	dependerán
+T122	Concept 1485 1493	exámenes
+T123	Concept 1474 1482	chequeos
+T124	Concept-FAIL 1564 1570	estilo
+T125	Concept-FAIL 1498 1503	usted
+T126	Action-FAIL 1504 1512	necesita
+E121	Action:T121 Target:T120 Target2:T119 Target3:T118 Target4:T116 Subject:T122 Subject2:T123
+E126	Action-FAIL:T126 Target-FAIL:T123 Target-FAIL2:T122 Subject-FAIL:T125
+R13	is-a Arg1:T118 Arg2:T117
+R14	is-a-FAIL Arg1:T116 Arg2:T124
+T127	Concept 1758 1776	servicios de salud
+T128	Concept 1740 1751	información
+T129	Action 1729 1736	obtener
+T130	Concept 1715 1722	persona
+T131	Concept 1664 1684	información de salud
+T132	Concept-FAIL 1781 1789	necesita
+T133	Concept-FAIL 1808 1816	entiende
+T134	Concept-FAIL 1646 1657	comprensión
+T135	Action-FAIL 1808 1816	entiende
+T136	Action-FAIL 1781 1789	necesita
+T137	Action-FAIL 1688 1695	refiere
+T138	Concept-FAIL 1646 1684	comprensión de la información de salud
+T139	Concept-FAIL 1758 1767	servicios
+T140	Action-FAIL 1646 1657	comprensión
+E129	Action:T129 Target:T128 Target2:T127 Subject:T130
+E135	Action-FAIL:T135 Target-FAIL:T128 Subject-FAIL:T130
+E136	Action-FAIL:T136 Target-FAIL:T127 Subject-FAIL:T130
+E137	Action-FAIL:T137 Target-FAIL:T130 Subject-FAIL:T138
+E140	Action-FAIL:T140 Target-FAIL:T131
+R15	property-of-FAIL Arg1:T132 Arg2:T127
+R16	property-of-FAIL Arg1:T133 Arg2:T131
+R17	is-a-FAIL Arg1:T127 Arg2:T139
+T141	Concept-FAIL 1874 1880	buenas
+T142	Concept-FAIL 1881 1891	decisiones
+T143	Concept-FAIL 1881 1900	decisiones de salud
+T144	Action-FAIL 1868 1873	tomar
+T145	Action-FAIL 1855 1862	utiliza
+T146	Concept-FAIL 1842 1847	forma
+T147	Action-FAIL 1829 1836	refiere
+E144	Action-FAIL:T144 Target-FAIL:T143
+E145	Action-FAIL:T145 
+E147	Action-FAIL:T147 Target-FAIL:T146
+R18	is-a-FAIL Arg1:T143 Arg2:T142
+R19	property-of-FAIL Arg1:T141 Arg2:T143
+T148	Concept 1962 1967	nivel
+T149	Concept 1957 1967	bajo nivel
+T150	Concept 1935 1949	Estados Unidos
+T151	Concept-FAIL 1971 2000	comprensión de la información
+T152	Concept-FAIL 1909 1931	90 millones de adultos
+T153	Concept-FAIL 1957 2009	bajo nivel de comprensión de la información de salud
+T154	Concept-FAIL 1957 1961	bajo
+T155	Concept-FAIL 1909 1920	90 millones
+T156	Concept-FAIL 1971 2009	comprensión de la información de salud
+T157	Action-FAIL 1950 1956	tienen
+T158	Concept-FAIL 1924 1931	adultos
+E157	Action-FAIL:T157 Target-FAIL:T156 Subject-FAIL:T158
+R20	is-a-FAIL Arg1:T149 Arg2:T148
+R21	property-of-FAIL Arg1:T148 Arg2:T152
+R22	property-of-FAIL Arg1:T149 Arg2:T156
+R23	property-of-FAIL Arg1:T155 Arg2:T158
+R24	property-of-FAIL Arg1:T154 Arg2:T148
+T159	Concept 2078 2083	salud
+T160	Action 2069 2074	dañar
+T161	Action 2016 2022	afecta
+T162	Concept 2027 2038	capacidades
+T163	Concept-FAIL 2050 2060	decisiones
+T164	Action-FAIL 2044 2049	tomar
+E160	Action:T160 Target:T159
+E161	Action:T161 Target:T162
+E164	Action-FAIL:T164 Target-FAIL:T163
+T165	Concept 2125 2137	enfermedades
+T166	Concept 2125 2146	enfermedades crónicas
+T167	Action 2113 2120	manejar
+T168	Concept 2098 2107	problemas
+T169	Concept-FAIL 2160 2169	vida sana
+T170	Concept-FAIL 2138 2146	crónicas
+T171	Action-FAIL 2092 2097	tener
+E167	Action:T167 Target-FAIL:T165 Target-FAIL2:T166
+E171	Action-FAIL:T171 Target-FAIL:T168
+R25	is-a Arg1:T166 Arg2:T165
+R26	property-of-FAIL Arg1:T170 Arg2:T165
+T172	Concept 2233 2238	salud
+T173	Concept 2184 2192	hospital
+T174	Concept-FAIL 2218 2229	peor estado
+T175	Concept-FAIL 2193 2205	más a menudo
+T176	Concept-FAIL 2178 2180	ir
+T177	Concept-FAIL 2223 2229	estado
+T178	Concept-FAIL 2218 2222	peor
+T179	Concept-FAIL 2223 2238	estado de salud
+T180	Action-FAIL 2208 2214	tienen
+T181	Action-FAIL 2178 2180	ir
+E180	Action-FAIL:T180 Target-FAIL:T179
+E181	Action-FAIL:T181 Target-FAIL:T173
+R27	property-of-FAIL Arg1:T175 Arg2:T176
+R28	property-of-FAIL Arg1:T178 Arg2:T177
+R29	property-of-FAIL Arg1:T177 Arg2:T172
+T182	Concept 2254 2263	ejercicio
+T183	Concept 2254 2271	ejercicio regular
+T184	Action-FAIL 2310 2319	hacer por
+T185	Concept-FAIL 2323 2328	salud
+T186	Concept-FAIL 2286 2299	mejores cosas
+T187	Concept-FAIL 2294 2299	cosas
+E184	Action-FAIL:T184 Target-FAIL:T185
+R30	is-a Arg1:T183 Arg2:T182
+R31	is-a-FAIL Arg1:T182 Arg2:T186
+T188	Concept 2393 2407	aptitud física
+T189	Concept 2377 2390	salud general
+T190	Concept 2343 2353	beneficios
+T191	Concept-FAIL 2336 2342	muchos
+T192	Concept-FAIL 2420 2426	riesgo
+T193	Action-FAIL 2411 2416	bajar
+T194	Action-FAIL 2366 2373	mejorar
+T195	Concept-FAIL 2450 2458	crónicas
+T196	Concept-FAIL 2437 2449	enfermedades
+T197	Concept-FAIL 2437 2458	enfermedades crónicas
+T198	Concept-FAIL 2393 2400	aptitud
+T199	Concept-FAIL 2377 2382	salud
+T200	Action-FAIL 2330 2335	Tiene
+E193	Action-FAIL:T193 Target-FAIL:T192
+E194	Action-FAIL:T194 Target-FAIL:T189 Target-FAIL2:T188
+E200	Action-FAIL:T200 Target-FAIL:T190
+R32	property-of-FAIL Arg1:T191 Arg2:T190
+R33	is-a-FAIL Arg1:T189 Arg2:T199
+R34	is-a-FAIL Arg1:T188 Arg2:T198
+R35	is-a-FAIL Arg1:T197 Arg2:T196
+R36	property-of-FAIL Arg1:T195 Arg2:T196
+R37	property-of-FAIL Arg1:T192 Arg2:T197
+T201	Concept 2471 2476	tipos
+T202	Concept 2491 2500	ejercicio
+T203	Concept-FAIL 2477 2487	diferentes
+R38	property-of-FAIL Arg1:T203 Arg2:T201
+R39	property-of-FAIL Arg1:T201 Arg2:T202
+T204	Concept-FAIL 2551 2556	usted
+T205	Concept-FAIL 2536 2545	adecuados
+T206	Concept-FAIL 2530 2535	tipos
+T207	Action-FAIL 2520 2525	elija
+E207	Action-FAIL:T207 Target-FAIL:T206
+R40	property-of-FAIL Arg1:T205 Arg2:T206
+T208	Concept 2569 2578	ejercicio
+T209	Concept 2569 2586	ejercicio regular
+T210	Action 2558 2565	Incluir
+T211	Concept-FAIL 2616 2623	difícil
+E210	Action:T210 Target-FAIL:T208 Target-FAIL2:T209
+R41	is-a Arg1:T209 Arg2:T208
+R42	property-of-FAIL Arg1:T211 Arg2:T209
+T212	Concept-FAIL 2688 2694	tiempo
+T213	Concept-FAIL 2711 2718	bloques
+T214	Concept-FAIL 2688 2707	tiempo de ejercicio
+T215	Action-FAIL 2677 2684	dividir
+T216	Action-FAIL 2655 2663	comenzar
+T217	Concept-FAIL 2643 2648	usted
+E215	Action-FAIL:T215 Target-FAIL:T212 Subject-FAIL:T217
+E216	Action-FAIL:T216 Subject-FAIL:T217
+R43	property-of-FAIL Arg1:T213 Arg2:T214
+R44	is-a-FAIL Arg1:T214 Arg2:T212
+T218	Concept-FAIL 2759 2763	bien
+T219	Action-FAIL 2728 2733	hacer
+T220	Concept-FAIL 2734 2744	10 minutos
+E219	Action-FAIL:T219 Target-FAIL:T220
+T221	Concept-FAIL 2832 2843	recomendada
+T222	Concept-FAIL 2810 2831	cantidad de ejercicio
+T223	Action-FAIL 2777 2784	avanzar
+T224	Concept-FAIL 2765 2770	Usted
+E223	Action-FAIL:T223 Target-FAIL:T224
+R45	property-of-FAIL Arg1:T221 Arg2:T222
+T225	Concept 2904 2909	salud
+T226	Concept 2897 2901	edad
+T227	Action 2883 2890	depende
+T228	Concept-FAIL 2848 2869	cantidad de ejercicio
+T229	Concept-FAIL 2848 2856	cantidad
+T230	Concept-FAIL 2860 2869	ejercicio
+T231	Action-FAIL 2874 2882	necesita
+E227	Action:T227 Target:T226 Target2:T225 Subject-FAIL:T228 Subject-FAIL2:T229
+E231	Action-FAIL:T231 Target-FAIL:T230
+R46	property-of-FAIL Arg1:T229 Arg2:T230
+T232	Concept 2970 2986	condición física
+T233	Action 2959 2966	mejorar
+T234	Concept 2915 2923	deportes
+T235	Action-FAIL 2989 2999	mantenerse
+T236	Concept-FAIL 3003 3008	forma
+T237	Action-FAIL 2989 2997	mantener
+T238	Concept-FAIL 2970 2979	condición
+T239	Concept-FAIL 2949 2955	manera
+T240	Concept-FAIL 2939 2955	excelente manera
+T241	Action-FAIL 2931 2934	ser
+E233	Action:T233 Target:T232 Subject-FAIL:T234
+E235	Action-FAIL:T235 
+E237	Action-FAIL:T237 Target-FAIL:T236 Subject-FAIL:T234
+E241	Action-FAIL:T241 Target-FAIL:T240 Subject-FAIL:T234
+R47	is-a-FAIL Arg1:T240 Arg2:T239
+R48	is-a-FAIL Arg1:T232 Arg2:T238
+T242	Concept 3049 3063	gran motivador
+T243	Concept 3020 3035	meta específica
+T244	Concept-FAIL 3054 3063	motivador
+T245	Action-FAIL 3042 3045	ser
+T246	Concept-FAIL 3020 3024	meta
+E245	Action-FAIL:T245 Target-FAIL:T242 Subject-FAIL:T243
+R49	is-a-FAIL Arg1:T242 Arg2:T244
+R50	is-a-FAIL Arg1:T243 Arg2:T246
+T247	Concept 3099 3110	resistencia
+T248	Concept 3087 3096	fortaleza
+T249	Action-FAIL 3078 3086	necesita
+T250	Concept-FAIL 3065 3076	Físicamente
+E249	Action-FAIL:T249 Target-FAIL:T248 Target-FAIL2:T247
+T251	Action 3129 3134	varía
+T252	Concept 3115 3128	entrenamiento
+T253	Concept-FAIL 3144 3151	deporte
+E251	Action:T251 Target:T252 Subject-FAIL:T252
+R51	property-of-FAIL Arg1:T253 Arg2:T252
+T254	Concept 3204 3212	natación
+T255	Concept 3181 3198	salto con pértiga
+T256	Action-FAIL 3161 3163	es
+E256	Action-FAIL:T256 Target-FAIL:T255 Target-FAIL2:T254
+T257	Concept 3252 3262	ejercicios
+T258	Action 3239 3247	combinar
+T259	Concept-FAIL 3227 3232	usted
+E258	Action:T258 Target:T257 Subject-FAIL:T259
+T260	Concept 3314 3330	actividad física
+T261	Action 3290 3297	incluir
+T262	Concept-FAIL 3302 3310	variedad
+T263	Concept-FAIL 3337 3343	rutina
+T264	Action-FAIL 3268 3277	significa
+E261	Action:T261 Target-FAIL:T263 Target-FAIL2:T260 Subject-FAIL:T260
+E264	Action-FAIL:T264 
+R52	part-of-FAIL Arg1:T262 Arg2:T260
+T265	Concept 3423 3429	huesos
+T266	Action 3409 3418	fortalece
+T267	Concept 3383 3408	combinación de ejercicios
+T268	Action 3365 3375	demuestran
+T269	Concept 3349 3364	investigaciones
+E266	Action:T266 Target:T265 Subject:T267
+E268	Action:T268 Target:E266 Subject:T269
+T270	Concept-FAIL 3454 3460	cuerpo
+T271	Action-FAIL 3440 3448	escuchar
+E271	Action-FAIL:T271 
+T272	Concept-FAIL 3537 3546	demasiado
+T273	Action-FAIL 3528 3536	haciendo
+T274	Action-FAIL 3494 3500	siente
+T275	Action-FAIL 3468 3474	siente
+T276	Concept-FAIL 3501 3506	dolor
+T277	Concept-FAIL 3483 3491	a menudo
+T278	Concept-FAIL 3475 3482	cansado
+E273	Action-FAIL:T273 
+E274	Action-FAIL:T274 
+E275	Action-FAIL:T275 
+R53	part-of-FAIL Arg1:T277 Arg2:T278
+T279	Action 3558 3566	resultar
+T280	Concept 3570 3578	lesiones
+E279	Action:T279 Target:T280
+T281	Concept 3623 3635	forma segura
+T282	Action 3593 3597	usar
+T283	Concept 3613 3619	equipo
+T284	Concept 3601 3607	cuerpo
+E282	Action:T282 Target:T284 Target2:T283
+T285	Concept-FAIL 3673 3677	bebe
+T286	Concept-FAIL 3666 3670	come
+T287	Concept-FAIL 3648 3658	importante
+R54	property-of-FAIL Arg1:T287 Arg2:T286
+R55	part-of-FAIL Arg1:T287 Arg2:T285
+T288	Concept 3726 3738	gente activa
+T289	Concept 3693 3702	nutriente
+T290	Concept 3682 3686	agua
+T291	Concept-FAIL 3707 3717	importante
+T292	Concept-FAIL 3726 3731	gente
+T293	Action-FAIL 3687 3689	es
+T294	Concept-FAIL 3703 3717	más importante
+E293	Action-FAIL:T293 Target-FAIL:T289 Subject-FAIL:T290
+R56	is-a-FAIL Arg1:T290 Arg2:T289
+R57	part-of-FAIL Arg1:T291 Arg2:T290
+R58	property-of-FAIL Arg1:T294 Arg2:T289
+R59	is-a-FAIL Arg1:T288 Arg2:T292
+T295	Concept-FAIL 3775 3786	ejercitarse
+T296	Concept-FAIL 3764 3771	después
+T297	Concept-FAIL 3754 3761	durante
+T298	Concept-FAIL 3747 3752	antes
+T299	Action-FAIL 3740 3746	Bébala
+E299	Action-FAIL:T299 
+T300	Concept 3885 3893	internet
+T301	Concept 3869 3879	televisión
+T302	Concept 3856 3864	revistas
+T303	Concept 3843 3848	salud
+T304	Concept 3822 3833	información
+T305	Action 3813 3821	obtienen
+T306	Concept 3788 3796	Millones
+T307	Concept 3800 3812	consumidores
+E305	Action:T305 Target:T304 Subject:T307
+R60	part-of-FAIL Arg1:T303 Arg2:T304
+R61	property-of-FAIL Arg1:T306 Arg2:T307
+T308	Concept 3934 3945	actualizada
+T309	Concept 3922 3931	confiable
+T310	Concept 3907 3918	información
+R62	property-of Arg1:T309 Arg2:T310
+R63	property-of Arg1:T308 Arg2:T310
+T311	Concept-FAIL 3996 4002	página
+T312	Concept-FAIL 4006 4012	opción
+T313	Concept-FAIL 4014 4032	acerca de nosotros
+T314	Action-FAIL 3983 3989	busque
+T315	Action-FAIL 3965 3972	utiliza
+T316	Concept-FAIL 3973 3981	internet
+E314	Action-FAIL:T314 Target-FAIL:T312
+E315	Action-FAIL:T315 Target-FAIL:T316
+R64	is-a-FAIL Arg1:T313 Arg2:T312
+T317	Action-FAIL 4035 4041	Piense
+E317	Action-FAIL:T317 
+T318	Action 4111 4117	quiere
+T319	Concept 4118 4129	información
+T320	Concept 4130 4136	actual
+T321	Concept 4159 4184	basada en investigaciones
+T322	Concept 4149 4156	neutral
+T323	Concept 4138 4147	imparcial
+T324	Concept-FAIL 4105 4110	Usted
+E318	Action:T318 Target:T319 Subject-FAIL:T324
+R65	property-of Arg1:T320 Arg2:T319
+R66	property-of Arg1:T323 Arg2:T319
+R67	property-of Arg1:T322 Arg2:T319
+R68	property-of Arg1:T321 Arg2:T319
+T325	Action 4253 4262	encontrar
+T326	Concept 4305 4313	síntomas
+T327	Action 4291 4300	comiencen
+T328	Concept 4267 4277	enfermedad
+T329	Concept 4224 4232	exámenes
+T330	Action 4215 4223	realizan
+T331	Concept-FAIL 4197 4204	chequeo
+T332	Concept-FAIL 4197 4211	chequeo médico
+T333	Action-FAIL 4244 4250	ayudar
+E325	Action:T325 Target:T328 Subject-FAIL:T329
+E327	Action:T327 Target-FAIL:T326 Subject-FAIL:T328 Subject-FAIL2:T326
+E330	Action:T330 Target:T329
+E333	Action-FAIL:T333 Target-FAIL:E325 Subject-FAIL:T329
+R69	is-a-FAIL Arg1:T332 Arg2:T331
+R70	property-of-FAIL Arg1:T326 Arg2:T328
+T334	Concept 4370 4380	afecciones
+T335	Concept 4355 4367	enfermedades
+T336	Action 4345 4354	descubrir
+T337	Concept 4321 4328	pruebas
+T338	Concept-FAIL 4413 4420	fáciles
+T339	Concept-FAIL 4381 4396	anticipadamente
+T340	Action-FAIL 4336 4342	ayudar
+E336	Action:T336 Target:T335 Target2:T334 Subject-FAIL:T337
+E340	Action-FAIL:T340 Target-FAIL:E336 Subject-FAIL:T337
+T341	Action 4452 4460	realizan
+T342	Concept 4440 4448	exámenes
+T343	Concept-FAIL 4483 4489	doctor
+T344	Concept-FAIL 4467 4478	consultorio
+T345	Concept-FAIL 4432 4439	Algunos
+E341	Action:T341 Target:T342
+R71	property-of-FAIL Arg1:T345 Arg2:T342
+T346	Concept 4508 4526	equipos especiales
+T347	Concept 4491 4496	Otros
+T348	Concept-FAIL 4604 4611	clínica
+T349	Concept-FAIL 4578 4585	oficina
+T350	Concept-FAIL 4578 4595	oficina diferente
+T351	Action-FAIL 4562 4571	dirigirse
+T352	Concept-FAIL 4508 4515	equipos
+T353	Action-FAIL 4498 4507	necesitan
+E351	Action-FAIL:T351 Target-FAIL:T349 Target-FAIL2:T348
+E353	Action-FAIL:T353 Target-FAIL:T346
+R72	is-a-FAIL Arg1:T350 Arg2:T349
+R73	is-a-FAIL Arg1:T346 Arg2:T352
+T354	Concept 4747 4759	enfermedades
+T355	Concept 4715 4733	factores de riesgo
+T356	Concept 4680 4703	antecedentes familiares
+T357	Concept 4670 4674	sexo
+T358	Concept 4661 4665	edad
+T359	Concept 4617 4624	pruebas
+T360	Action-FAIL 4709 4714	tiene
+T361	Action-FAIL 4644 4654	dependerán
+T362	Action-FAIL 4635 4643	necesite
+T363	Concept-FAIL 4629 4634	usted
+E360	Action-FAIL:T360 Target-FAIL:T355 Subject-FAIL:T363
+E361	Action-FAIL:T361 Subject-FAIL:T359
+E362	Action-FAIL:T362 Target-FAIL:T359 Subject-FAIL:T363
+R74	property-of-FAIL Arg1:T358 Arg2:T363
+R75	property-of-FAIL Arg1:T357 Arg2:T363
+R76	property-of-FAIL Arg1:T356 Arg2:T363
+R77	property-of-FAIL Arg1:T355 Arg2:T354
+T364	Action-FAIL 4859 4865	hablar
+T365	Concept-FAIL 4872 4877	ellos
+T366	Concept-FAIL 4828 4838	resultados
+T367	Action-FAIL 4815 4823	obtendrá
+T368	Action-FAIL 4777 4785	realicen
+T369	Concept-FAIL 4790 4797	pruebas
+E364	Action-FAIL:T364 Target-FAIL:T365
+E367	Action-FAIL:T367 Target-FAIL:T366
+E368	Action-FAIL:T368 Target-FAIL:T369
+T370	Concept 4943 4951	medicina
+T371	Concept 4966 4978	convencional
+T372	Concept 4943 4963	medicina tradicional
+T373	Concept 4907 4919	tratamientos
+T374	Action 4902 4906	usan
+T375	Concept 4886 4901	estadounidenses
+T376	Concept-FAIL 4952 4963	tradicional
+T377	Action-FAIL 4927 4930	son
+T378	Concept-FAIL 4879 4885	Muchos
+E374	Action:T374 Target:T373 Subject:T375
+E377	Action-FAIL:T377 Target-FAIL:T372 Subject-FAIL:T373
+R78	is-a Arg1:T372 Arg2:T370
+R79	property-of-FAIL Arg1:T378 Arg2:T375
+R80	same-as-FAIL Arg1:T371 Arg2:T376
+T379	Concept 5047 5059	alternativos
+T380	Concept 5032 5044	integrativos
+T381	Concept 5015 5030	complementarios
+T382	Concept 4986 4998	tratamientos
+T383	Action-FAIL 5006 5014	llamarse
+E383	Action-FAIL:T383 Target-FAIL:T381 Target-FAIL2:T380 Target-FAIL3:T379 Subject-FAIL:T382
+R81	property-of-FAIL Arg1:T381 Arg2:T382
+R82	property-of-FAIL Arg1:T380 Arg2:T382
+R83	property-of-FAIL Arg1:T379 Arg2:T382
+T384	Concept 5108 5116	medicina
+T385	Concept 5108 5129	medicina convencional
+T386	Concept 5064 5087	medicina complementaria
+T387	Concept 5064 5072	medicina
+T388	Action-FAIL 5091 5094	usa
+E388	Action-FAIL:T388 Target-FAIL:T386 Target-FAIL2:T385
+R84	is-a Arg1:T386 Arg2:T387
+R85	is-a Arg1:T385 Arg2:T384
+T389	Concept 5220 5226	cáncer
+T390	Concept 5200 5211	tratamiento
+T391	Concept 5176 5195	efectos secundarios
+T392	Action 5164 5171	aliviar
+T393	Concept 5147 5157	acupuntura
+T394	Concept-FAIL 5176 5183	efectos
+E392	Action:T392 Target:T391 Subject:T393
+R86	part-of-FAIL Arg1:T391 Arg2:T390
+R87	property-of-FAIL Arg1:T390 Arg2:T389
+R88	property-of-FAIL Arg1:T391 Arg2:T390
+T395	Concept 5328 5345	medicina integral
+T396	Action 5257 5264	brindan
+T397	Concept 5246 5256	hospitales
+T398	Concept 5235 5243	doctores
+T399	Concept-FAIL 5307 5317	coordinada
+T400	Concept-FAIL 5271 5288	tipos de cuidados
+T401	Concept-FAIL 5280 5288	cuidados
+E396	Action:T396 Subject:T398 Subject2:T397 Target-FAIL:T400 Target-FAIL2:T401
+T402	Concept 5411 5422	alternativa
+T403	Concept 5377 5398	medicina convencional
+T404	Concept 5491 5502	promisorios
+T405	Action 5485 5490	sonar
+T406	Concept 5428 5438	beneficios
+T407	Concept-FAIL 5448 5477	tratamientos no tradicionales
+T408	Concept-FAIL 5449 5477	ratamientos no tradicionales
+T409	Concept-FAIL 5448 5460	tratamientos
+E405	Action:T405 Target:T404 Subject-FAIL:T408
+R89	is-a-FAIL Arg1:T408 Arg2:T409
+R90	property-of-FAIL Arg1:T406 Arg2:T408
+T410	Action 5610 5615	saben
+T411	Concept 5586 5606	medicina alternativa
+T412	Concept 5570 5582	tratamientos
+T413	Concept 5550 5559	seguridad
+T414	Action 5539 5546	conocen
+T415	Concept 5521 5535	investigadores
+T416	Concept-FAIL 5619 5633	funcionan bien
+T417	Concept-FAIL 5586 5594	medicina
+T418	Concept-FAIL 5629 5633	bien
+T419	Action-FAIL 5619 5628	funcionan
+E410	Action:T410 Target-FAIL:E419 Subject-FAIL:T415
+E414	Action:T414 Target-FAIL:T413 Subject-FAIL:T415
+E419	Action-FAIL:T419 Target-FAIL:T418
+R91	property-of-FAIL Arg1:T413 Arg2:T412
+R92	property-of-FAIL Arg1:T412 Arg2:T411
+R93	is-a-FAIL Arg1:T411 Arg2:T417
+T420	Action 5669 5679	determinar
+T421	Concept 5726 5735	prácticas
+T422	Concept 5698 5706	utilidad
+T423	Concept 5683 5692	seguridad
+T424	Action 5644 5654	realizando
+T425	Concept 5655 5663	estudios
+E420	Action:T420 Target:T423 Target2:T422 Subject:T425
+E424	Action:T424 Target:T425
+R94	property-of Arg1:T422 Arg2:T421
+R95	property-of Arg1:T423 Arg2:T421
+T426	Concept 5821 5845	propiedades terapéuticas
+T427	Concept 5813 5818	sabor
+T428	Concept 5806 5811	aroma
+T429	Concept 5755 5761	planta
+T430	Concept 5741 5747	hierba
+T431	Concept-FAIL 5781 5787	planta
+T432	Concept-FAIL 5821 5832	propiedades
+T433	Action-FAIL 5795 5798	usa
+E433	Action-FAIL:T433 Subject-FAIL:T429
+R96	is-a-FAIL Arg1:T430 Arg2:T429
+R97	part-of-FAIL Arg1:T430 Arg2:T431
+R98	property-of-FAIL Arg1:T428 Arg2:T430
+R99	property-of-FAIL Arg1:T427 Arg2:T430
+R100	property-of-FAIL Arg1:T426 Arg2:T430
+R101	part-of-FAIL Arg1:T430 Arg2:T429
+R102	property-of-FAIL Arg1:T428 Arg2:T429
+R103	property-of-FAIL Arg1:T427 Arg2:T429
+R104	property-of-FAIL Arg1:T426 Arg2:T429
+R105	is-a-FAIL Arg1:T426 Arg2:T432
+T434	Concept 5892 5914	suplementos dietéticos
+T435	Concept 5867 5886	medicina herbolaria
+T436	Concept-FAIL 5851 5860	productos
+T437	Concept-FAIL 5851 5886	productos de la medicina herbolaria
+T438	Concept-FAIL 5867 5875	medicina
+T439	Concept-FAIL 5892 5903	suplementos
+R106	part-of-FAIL Arg1:T436 Arg2:T435
+R107	is-a-FAIL Arg1:T436 Arg2:T434
+R108	is-a-FAIL Arg1:T434 Arg2:T439
+R109	is-a-FAIL Arg1:T437 Arg2:T434
+T440	Concept 5989 5996	frescas
+T441	Concept 5981 5988	plantas
+T442	Concept 5999 6004	secas
+T443	Concept 5964 5973	extractos
+T444	Concept 5959 5962	tés
+T445	Concept 5951 5957	polvos
+T446	Concept 5941 5949	cápsulas
+T447	Concept 5931 5939	píldoras
+T448	Action-FAIL 5919 5925	venden
+E448	Action-FAIL:T448 Target-FAIL:T447 Target-FAIL2:T446 Target-FAIL3:T445 Target-FAIL4:T444 Target-FAIL5:T443 Target-FAIL6:T441
+R110	property-of Arg1:T440 Arg2:T441
+R111	property-of Arg1:T442 Arg2:T441
+T449	Action 6035 6042	mejorar
+T450	Concept 6046 6051	salud
+T451	Concept 6010 6018	personas
+T452	Action-FAIL 6024 6029	toman
+E449	Action:T449 Target:T450 Subject-FAIL:E452
+E452	Action-FAIL:T452 Subject-FAIL:T451
+T453	Concept 6128 6134	buenos
+T454	Concept 6118 6125	seguros
+T455	Concept 6097 6104	natural
+T456	Concept-FAIL 6074 6095	productos etiquetados
+T457	Action-FAIL 6060 6065	creen
+T458	Concept-FAIL 6074 6083	productos
+E457	Action-FAIL:T457 Target-FAIL:T458
+R112	property-of-FAIL Arg1:T455 Arg2:T458
+R113	property-of-FAIL Arg1:T454 Arg2:T458
+R114	property-of-FAIL Arg1:T453 Arg2:T458
+T459	Concept-FAIL 6173 6179	cierto
+T460	Concept 6237 6244	pruebas
+T461	Concept 6227 6234	control
+T462	Action 6208 6213	pasan
+T463	Concept 6185 6204	hierbas medicinales
+T464	Concept-FAIL 6253 6277	medicinas convencionales
+T465	Concept-FAIL 6185 6192	hierbas
+E462	Action:T462 Target:T461 Target2:T460 Target3:T460 Target4:T461 Subject:T463 Subject-FAIL:T464
+R115	is-a-FAIL Arg1:T463 Arg2:T465
+T466	Concept 6337 6342	daños
+T467	Concept 6337 6350	daños severos
+T468	Action 6330 6336	causar
+T469	Concept 6316 6322	efedra
+T470	Concept 6304 6313	consuelda
+T471	Concept 6287 6294	hierbas
+E468	Action:T468 Subject:T471 Target-FAIL:T466 Target-FAIL2:T467
+R116	is-a Arg1:T470 Arg2:T471
+R117	is-a Arg1:T469 Arg2:T471
+R118	is-a Arg1:T467 Arg2:T466
+T472	Concept 6419 6430	venta libre
+T473	Concept 6407 6413	receta
+T474	Concept 6391 6403	medicamentos
+T475	Action 6375 6386	interactuar
+T476	Concept 6360 6367	hierbas
+E475	Action:T475 Target:T474 Subject:T476
+R119	property-of Arg1:T473 Arg2:T474
+R120	property-of Arg1:T472 Arg2:T474
+T477	Concept-FAIL 6464 6471	hierbas
+T478	Concept-FAIL 6464 6483	hierbas medicinales
+T479	Action-FAIL 6459 6463	usar
+T480	Concept-FAIL 6435 6440	usted
+E479	Action-FAIL:T479 Target-FAIL:T477 Subject-FAIL:T480
+R121	is-a-FAIL Arg1:T478 Arg2:T477
+T481	Action-FAIL 6601 6608	tomando
+T482	Concept-FAIL 6585 6591	hierba
+T483	Concept-FAIL 6562 6568	médico
+T484	Action-FAIL 6548 6556	avisarle
+E481	Action-FAIL:T481 Target-FAIL:T482
+E484	Action-FAIL:T484 Target-FAIL:T483
+T485	Concept-FAIL 6638 6646	inactivo
+T486	Concept-FAIL 6625 6635	sedentario
+T487	Concept-FAIL 6610 6624	Estilo de vida
+R122	property-of-FAIL Arg1:T486 Arg2:T487
+R123	property-of-FAIL Arg1:T485 Arg2:T487
+R124	same-as-FAIL Arg1:T486 Arg2:T485
+T488	Action-FAIL 6661 6673	ha escuchado
+T489	Concept-FAIL 6648 6653	Usted
+E488	Action-FAIL:T488 
+T490	Concept 6843 6848	gente
+T491	Concept-FAIL 6874 6890	forma sedentaria
+T492	Concept-FAIL 6864 6870	tiempo
+T493	Action-FAIL 6849 6853	pasa
+T494	Concept-FAIL 6833 6838	mundo
+T495	Concept-FAIL 6805 6819	Estados Unidos
+T496	Concept-FAIL 6880 6890	sedentaria
+E493	Action-FAIL:T493 Target-FAIL:T492 Subject-FAIL:T490
+R125	property-of-FAIL Arg1:T491 Arg2:T492
+R126	property-of-FAIL Arg1:T496 Arg2:T490
+T497	Concept 7030 7041	videojuegos
+T498	Action 7022 7029	jugando
+T499	Concept 7009 7019	televisión
+T500	Action 6999 7005	viendo
+T501	Concept 6986 6997	dispositivo
+T502	Concept 6967 6978	computadora
+T503	Concept-FAIL 6938 6946	sentados
+T504	Concept-FAIL 6908 6920	tiempo libre
+T505	Action-FAIL 6938 6946	sentados
+T506	Action-FAIL 6921 6928	estamos
+E498	Action:T498 Target:T497
+E500	Action:T500 Target:T499
+E505	Action-FAIL:T505 Target-FAIL:T502 Target-FAIL2:T501 Target-FAIL3:E500 Target-FAIL4:E498
+E506	Action-FAIL:T506 Target-FAIL:E505
+R127	property-of-FAIL Arg1:T503 Arg2:T504
+T507	Concept 7131 7141	escritorio
+T508	Action 7116 7124	sentados
+T509	Concept 7089 7098	inactivos
+T510	Concept 7062 7070	trabajos
+T511	Concept-FAIL 7104 7115	largos días
+T512	Action-FAIL 7074 7084	han vuelto
+E508	Action:T508 Target:T507
+E512	Action-FAIL:T512 Target-FAIL:T509 Target-FAIL2:E508 Subject-FAIL:T510
+R128	property-of-FAIL Arg1:T509 Arg2:T510
+T513	Concept 7210 7216	trenes
+T514	Concept 7198 7207	autobuses
+T515	Concept 7190 7196	coches
+T516	Action-FAIL 7156 7170	transportarnos
+T517	Concept-FAIL 7146 7152	manera
+T518	Concept-FAIL 7146 7170	manera de transportarnos
+T519	Action-FAIL 7183 7188	ayuda
+E516	Action-FAIL:T516 
+E519	Action-FAIL:T519 Subject-FAIL:T518
+R129	is-a-FAIL Arg1:T518 Arg2:T517
+R130	part-of-FAIL Arg1:T515 Arg2:T518
+R131	part-of-FAIL Arg1:T514 Arg2:T518
+R132	part-of-FAIL Arg1:T513 Arg2:T518
+T520	Concept 7275 7296	enfermedades crónicas
+T521	Concept-FAIL 7236 7244	inactivo
+T522	Concept-FAIL 7221 7235	estilo de vida
+T523	Concept-FAIL 7221 7244	estilo de vida inactivo
+T524	Concept-FAIL 7275 7287	enfermedades
+T525	Action-FAIL 7259 7264	causa
+E525	Action-FAIL:T525 Target-FAIL:T520 Subject-FAIL:T523
+R133	property-of-FAIL Arg1:T521 Arg2:T522
+R134	is-a-FAIL Arg1:T520 Arg2:T524
+T526	Concept 7367 7383	muerte prematura
+T527	Concept 7357 7363	riesgo
+T528	Action 7345 7353	aumentar
+T529	Concept-FAIL 7322 7330	inactivo
+T530	Concept-FAIL 7307 7321	estilo de vida
+T531	Concept-FAIL 7307 7330	estilo de vida inactivo
+E528	Action:T528 Target:T527 Subject-FAIL:T530 Subject-FAIL2:T531
+R135	property-of-FAIL Arg1:T529 Arg2:T530
+R136	is-a-FAIL Arg1:T526 Arg2:T527
+R137	property-of-FAIL Arg1:T527 Arg2:T526
+T532	Concept 7441 7446	salud
+T533	Concept 7398 7408	sedentario
+T534	Concept-FAIL 7426 7432	riesgo
+T535	Action-FAIL 7426 7432	riesgo
+E535	Action-FAIL:T535 Target-FAIL:T532 Subject-FAIL:T533
+T536	Concept-FAIL 7506 7516	lentamente
+T537	Action-FAIL 7497 7505	comenzar
+T538	Concept-FAIL 7451 7456	usted
+T539	Concept-FAIL 7465 7475	sedentario
+E537	Action-FAIL:T537 
+R138	property-of-FAIL Arg1:T539 Arg2:T538
+T540	Concept-FAIL 7518 7523	Usted
+T541	Concept-FAIL 7564 7577	forma gradual
+T542	Concept-FAIL 7551 7560	ejercicio
+T543	Action-FAIL 7537 7546	agregando
+E543	Action-FAIL:T543 Target-FAIL:T542 Subject-FAIL:T540
+T544	Concept-FAIL 7603 7608	mejor
+T545	Action-FAIL 7639 7643	haga
+T546	Concept-FAIL 7627 7636	abrumarse
+E545	Action-FAIL:T545 
+T547	Action-FAIL 7658 7663	Hacer
+T548	Concept-FAIL 7690 7695	mejor
+T549	Concept-FAIL 7669 7678	ejercicio
+E547	Action-FAIL:T547 Target-FAIL:T549
+T550	Concept-FAIL 7802 7807	salud
+T551	Concept-FAIL 7795 7799	edad
+T552	Concept-FAIL 7777 7786	ejercicio
+T553	Concept-FAIL 7753 7773	cantidad recomendada
+T554	Concept-FAIL 7724 7728	meta
+T555	Concept-FAIL 7905 7912	mejores
+T556	Concept-FAIL 7862 7872	importante
+T557	Concept-FAIL 7890 7895	tipos
+T558	Action-FAIL 7876 7885	encontrar
+T559	Concept-FAIL 7848 7857	ejercicio
+T560	Concept-FAIL 7820 7838	maneras diferentes
+E558	Action-FAIL:T558 Target-FAIL:T557
+R139	property-of-FAIL Arg1:T560 Arg2:T559
+R140	property-of-FAIL Arg1:T555 Arg2:T557
+T561	Concept-FAIL 8024 8031	trabajo
+T562	Concept-FAIL 8014 8018	casa
+T563	Concept-FAIL 7986 8001	pequeñas formas
+T564	Concept-FAIL 7978 7982	vida
+T565	Concept-FAIL 7956 7972	actividad física
+T566	Action-FAIL 7949 7955	añadir
+E566	Action-FAIL:T566 Target-FAIL:T565
+R141	part-of-FAIL Arg1:T565 Arg2:T564
+R142	part-of-FAIL Arg1:T563 Arg2:T565
+T567	Concept-FAIL 8084 8094	trabajando
+T568	Concept-FAIL 8118 8129	computadora
+T569	Action-FAIL 8060 8068	sentamos
+T570	Concept-FAIL 8047 8055	nosotros
+T571	Concept-FAIL 8036 8043	mayoría
+E569	Action-FAIL:T569 Target-FAIL:T568 Subject-FAIL:T570
+R143	part-of-FAIL Arg1:T570 Arg2:T571
+T572	Concept-FAIL 8162 8177	estadounidenses
+T573	Concept-FAIL 8151 8154	20%
+T574	Concept 8256 8264	compañía
+T575	Concept 8245 8254	diversión
+T576	Action 8235 8244	agregarle
+T577	Concept 8219 8227	mascotas
+T578	Concept-FAIL 8271 8293	sensación de seguridad
+E576	Action:T576 Target:T575 Target2:T574 Subject:T577 Target-FAIL:T578
+T579	Concept-FAIL 8448 8452	sana
+T580	Concept-FAIL 8428 8435	mascota
+T581	Action-FAIL 8464 8473	reconocer
+T582	Concept-FAIL 8488 8505	problemas médicos
+T583	Concept-FAIL 8478 8484	signos
+E581	Action-FAIL:T581 
+R144	part-of-FAIL Arg1:T583 Arg2:T582
+T584	Concept 8556 8563	trabajo
+T585	Action 8542 8549	ocurren
+T586	Concept 8524 8541	salud ocupacional
+T587	Concept 8511 8520	problemas
+T588	Concept-FAIL 8571 8575	tipo
+T589	Concept-FAIL 8579 8584	labor
+T590	Action-FAIL 8589 8596	realiza
+E585	Action:T585 Target:T584 Subject:T587
+E590	Action-FAIL:T590 Target-FAIL:T589
+R145	property-of-FAIL Arg1:T586 Arg2:T587
+R146	property-of-FAIL Arg1:T587 Arg2:T586
+R147	property-of-FAIL Arg1:T588 Arg2:T589
+T591	Concept 8675 8681	riesgo
+T592	Action 8664 8671	reducir
+T593	Concept 8602 8617	buena seguridad
+T594	Concept-FAIL 8691 8700	problemas
+T595	Concept-FAIL 8633 8643	prevención
+T596	Concept-FAIL 8608 8617	seguridad
+T597	Concept-FAIL 8620 8629	prácticas
+T598	Concept-FAIL 8620 8643	prácticas de prevención
+E592	Action:T592 Target-FAIL:T594 Target-FAIL2:T591 Subject-FAIL:T596 Subject-FAIL2:T595 Subject-FAIL3:T598 Subject-FAIL4:T593
+R148	is-a-FAIL Arg1:T593 Arg2:T596
+R149	property-of-FAIL Arg1:T595 Arg2:T597
+R150	property-of-FAIL Arg1:T595 Arg2:T596
+T599	Concept-FAIL 8825 8829	ropa
+T600	Concept-FAIL 8825 8838	ropa adecuada
+T601	Concept-FAIL 8813 8819	equipo
+T602	Action-FAIL 8806 8809	use
+T603	Concept-FAIL 8788 8792	área
+T604	Concept-FAIL 8788 8803	área de trabajo
+T605	Action-FAIL 8763 8770	prepare
+T606	Concept-FAIL 8755 8761	estrés
+T607	Concept-FAIL 8724 8728	buen
+T608	Concept-FAIL 8729 8742	estado físico
+T609	Action-FAIL 8710 8720	mantenerse
+T610	Action-FAIL 8744 8751	reduzca
+E602	Action-FAIL:T602 Target-FAIL:T601 Target-FAIL2:T599
+E605	Action-FAIL:T605 Target-FAIL:T603
+E609	Action-FAIL:T609 Target-FAIL:T608
+E610	Action-FAIL:T610 Target-FAIL:T606
+R151	property-of-FAIL Arg1:T607 Arg2:T608
+R152	is-a-FAIL Arg1:T604 Arg2:T603
+R153	is-a-FAIL Arg1:T600 Arg2:T599
+T611	Concept 8867 8872	salud
+T612	Action 8856 8863	afectan
+T613	Concept 8847 8855	factores
+E612	Action:T612 Target:T611 Subject:T613
+T614	Concept-FAIL 8941 8945	edad
+T615	Concept-FAIL 8914 8935	constitución genética
+T616	Action-FAIL 8895 8904	controlar
+T617	Concept-FAIL 8874 8881	Algunos
+E616	Action-FAIL:T616 Target-FAIL:T617
+T618	Concept-FAIL 8977 8983	estilo
+T619	Concept-FAIL 8977 8991	estilo de vida
+T620	Action-FAIL 8964 8973	modificar
+T621	Concept-FAIL 8952 8957	usted
+E620	Action-FAIL:T620 Target-FAIL:T618 Subject-FAIL:T621
+R154	is-a-FAIL Arg1:T619 Arg2:T618
+T622	Concept 9078 9083	salud
+T623	Concept 8999 9008	ejercicio
+T624	Concept-FAIL 9040 9047	mejores
+T625	Concept-FAIL 9048 9053	cosas
+T626	Concept-FAIL 9012 9025	forma regular
+T627	Action-FAIL 9040 9047	mejores
+T628	Action-FAIL 8993 8998	Hacer
+T629	Concept-FAIL 9018 9025	regular
+E627	Action-FAIL:T627 Target-FAIL:T622 Subject-FAIL:E628
+E628	Action-FAIL:T628 Target-FAIL:T623
+R155	property-of-FAIL Arg1:T626 Arg2:T623
+R156	is-a-FAIL Arg1:T623 Arg2:T625
+R157	property-of-FAIL Arg1:T624 Arg2:T625
+R158	property-of-FAIL Arg1:T629 Arg2:T623
+T630	Action 9165 9170	bajar
+T631	Concept 9174 9180	riesgo
+T632	Concept 9191 9212	enfermedades crónicas
+T633	Action 9121 9128	mejorar
+T634	Concept 9148 9161	estado físico
+T635	Concept 9132 9145	salud general
+T636	Concept 9098 9108	beneficios
+T637	Concept-FAIL 9191 9203	enfermedades
+E630	Action:T630 Target:T631 Subject-FAIL:T636
+E633	Action:T633 Target:T635 Target2:T634 Subject-FAIL:T636
+R159	part-of-FAIL Arg1:T631 Arg2:T632
+R160	is-a-FAIL Arg1:T632 Arg2:T637
+R161	property-of-FAIL Arg1:T631 Arg2:T632
+T638	Concept-FAIL 9357 9363	semana
+T639	Concept-FAIL 9312 9323	actividades
+T640	Concept-FAIL 9415 9419	días
+T641	Concept-FAIL 9388 9404	actividad física
+T642	Concept-FAIL 9374 9378	hora
+T643	Concept 9484 9492	aeróbica
+T644	Concept 9462 9481	intensidad moderada
+T645	Concept 9440 9449	ejercicio
+R162	property-of Arg1:T644 Arg2:T645
+R163	property-of Arg1:T643 Arg2:T645
+T646	Concept-FAIL 9544 9555	actividades
+T647	Concept-FAIL 9654 9683	fortalecimiento de los huesos
+T648	Concept-FAIL 9627 9651	fortalecimiento muscular
+T649	Concept-FAIL 9610 9625	alta intensidad
+T650	Concept-FAIL 9588 9606	Actividad aeróbica
+R164	property-of-FAIL Arg1:T649 Arg2:T650
+R165	is-a-FAIL Arg1:T650 Arg2:T646
+R166	is-a-FAIL Arg1:T648 Arg2:T646
+R167	is-a-FAIL Arg1:T647 Arg2:T646
+T651	Action 9786 9795	consultar
+T652	Concept 9711 9730	mujeres embarazadas
+T653	Concept 9689 9705	personas mayores
+T654	Concept-FAIL 9845 9854	ejercicio
+T655	Concept-FAIL 9816 9831	atención médica
+T656	Concept-FAIL 9733 9740	quienes
+T657	Concept-FAIL 9803 9812	proveedor
+T658	Concept-FAIL 9774 9779	salud
+T659	Concept-FAIL 9748 9770	necesidades especiales
+T660	Concept-FAIL 9803 9831	proveedor de atención médica
+E651	Action:T651 Subject:T653 Target-FAIL:T660 Subject-FAIL:T656 Subject-FAIL2:T652
+R168	property-of-FAIL Arg1:T659 Arg2:T658
+R169	is-a-FAIL Arg1:T657 Arg2:T652
+R170	property-of-FAIL Arg1:T659 Arg2:T656
+R171	property-of-FAIL Arg1:T655 Arg2:T657
+T661	Concept 9964 9973	ejercicio
+T662	Concept 9932 9936	peso
+T663	Action 9925 9931	perder
+T664	Concept 9894 9902	personas
+T665	Action-FAIL 9954 9959	hacer
+E663	Action:T663 Target:T662 Subject:T664
+E665	Action-FAIL:T665 Target-FAIL:T661 Subject-FAIL:T664
+T666	Concept 10033 10041	calorías
+T667	Action 10022 10028	quemar
+T668	Concept 10004 10009	dieta
+T669	Action 9993 10000	ajustar
+E667	Action:T667 Target:T666 Subject-FAIL:E669
+E669	Action:T669 Target:T668
+T670	Action-FAIL 10123 10131	comenzar
+T671	Concept-FAIL 10132 10140	despacio
+T672	Concept-FAIL 10086 10101	hacer ejercicio
+T673	Concept-FAIL 10066 10071	usted
+E670	Action-FAIL:T670 Subject-FAIL:T673
+R172	property-of-FAIL Arg1:T672 Arg2:T673
+T674	Concept-FAIL 10329 10333	nada
+T675	Concept-FAIL 10281 10285	poco
+T676	Concept-FAIL 10289 10298	ejercicio
+R173	property-of-FAIL Arg1:T675 Arg2:T676
+R174	property-of-FAIL Arg1:T674 Arg2:T676

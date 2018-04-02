@@ -1,0 +1,1003 @@
+T1	Concept 3 7	acné
+T2	Concept 15 25	enfermedad
+T3	Concept 26 31	común
+T4	Action 47 54	provoca
+E1	Action:T4 Subject:T1 Target:T5
+T5	Concept 55 65	espinillas
+T6	Concept 67 73	granos
+T7	Concept 38 42	piel
+R1	is-a Arg1:T1 Arg2:T2	
+R2	property-of Arg1:T3 Arg2:T2	
+R3	part-of Arg1:T7 Arg2:T2	
+R4	same-as Arg1:T5 Arg2:T6	
+T8	Concept 80 90	espinillas
+T9	Concept 112 121	folículos
+T10	Concept 122 129	pilosos
+T11	Action 169 174	tapan
+E2	Action:T11 Subject:T9 Target:T9
+T12	Concept 161 165	piel
+R5	property-of Arg1:T10 Arg2:T9	
+T13	Action 94 100	forman
+E3	Action:T13 Subject:E2 Target:T8
+T14	Action 137 147	encuentran
+E4	Action:T14 
+T15	Concept 194 204	espinillas
+T16	Concept 220 226	rostro
+T17	Concept 231 237	cuello
+T18	Concept 242 249	espalda
+T19	Concept 254 259	pecho
+T20	Concept 266 273	hombros
+T21	Action 205 213	aparecen
+E5	Action:T21 Subject:T15 Target:T16 Target2:T17 Target3:T18 Target4:T19 Target5:T20
+T22	Concept 285 292	persona
+T23	Concept 305 309	acné
+T24	Action 299 304	tener
+E6	Action:T24 Subject:T22 Target:T23
+A1	Uncertain E6
+T25	Concept 480 498	cambios hormonales
+T26	Concept 849 859	piel sucia
+T27	Action 866 875	favorecer
+E7	Action:T27 Subject:T26 Target:T28
+T28	Concept 879 883	acné
+A2	Uncertain E7
+T29	Concept 902 915	puntos negros
+T30	Concept 922 932	espinillas
+T31	Action 940 948	producto
+E8	Action:T31 Subject:T32 Target:T30 Target2:T29
+A3	Negated E8
+T32	Concept 955 963	suciedad
+T33	Concept 824 832	creencia
+T34	Concept 833 838	común
+R6	property-of Arg1:T34 Arg2:T33	
+T35	Action 978 985	produce
+E9	Action:T35 Subject:T36 Target:T37
+T36	Concept 968 974	estrés
+T37	Concept 986 990	acné
+T38	Action 1003 1013	empeorarlo
+E10	Action:T38 Subject:T36 Target:T37
+A4	Negated E9
+A5	Uncertain E10
+T39	Concept 1019 1031	tratamientos
+T40	Concept 1040 1044	acné
+T41	Concept 1054 1066	medicamentos
+T42	Concept 1069 1075	cremas
+R7	property-of Arg1:T39 Arg2:T40	
+R8	is-a Arg1:T41 Arg2:T39	
+R9	is-a Arg1:T42 Arg2:T39	
+T43	Concept 1270 1278	ampollas
+T44	Concept 1282 1290	vesícula
+R10	same-as Arg1:T44 Arg2:T43	
+T45	Concept 1335 1339	bula
+R11	same-as Arg1:T45 Arg2:T43	
+T46	Concept 1081 1089	ampollas
+T47	Concept 1124 1136	capa externa
+T48	Concept 1143 1147	piel
+R12	part-of Arg1:T47 Arg2:T48	
+T49	Concept 1094 1099	sacos
+T50	Concept 1110 1117	líquido
+R13	property-of Arg1:T50 Arg2:T49	
+R14	is-a Arg1:T46 Arg2:T49	
+T51	Concept 1368 1376	ampollas
+T52	Concept 1405 1413	fricción
+T53	Concept 1415 1419	roce
+T54	Concept 1422 1429	presión
+R15	same-as Arg1:T53 Arg2:T52	
+R16	same-as Arg1:T54 Arg2:T52	
+T55	Action 1377 1384	ocurren
+E11	Action:T55 Subject:T52 Target:T51
+T56	Concept 1651 1655	piel
+T57	Concept 1665 1672	ampolla
+R17	part-of Arg1:T56 Arg2:T57	
+T58	Action 1681 1687	evitar
+E12	Action:T58 Subject:T56 Target:T59
+A6	Uncertain E12
+T59	Concept 1692 1703	infecciones
+T60	Concept 1705 1710	Usted
+T61	Concept 1727 1732	venda
+T62	Action 1717 1722	poner
+E13	Action:T62 Subject:T60 Target:T61
+A7	Uncertain E13
+T63	Action 1738 1748	mantenerla
+E14	Action:T63 Subject:E13 Target:T64
+T64	Concept 1749 1755	limpia
+T65	Concept 2033 2038	botox
+T66	Concept 2046 2051	droga
+T67	Concept 2065 2071	toxina
+T68	Action 2072 2081	producida
+E15	Action:T68 Subject:T69 Target:T67
+T69	Concept 2098 2119	Clostridium botulinum
+T70	Concept 2089 2097	bacteria
+R18	is-a Arg1:T69 Arg2:T70	
+R19	is-a Arg1:T65 Arg2:T66	
+T71	Action 2052 2057	hecha
+E16	Action:T71 Subject:T67 Target:T65
+T72	Concept 2133 2139	toxina
+T73	Action 2144 2149	causa
+E17	Action:T73 Subject:T72 Target:T76
+T74	Concept 2161 2185	intoxicación alimentaria
+T75	Concept 2186 2195	peligrosa
+T76	Concept 2217 2226	botulismo
+R20	is-a Arg1:T76 Arg2:T74	
+R21	property-of Arg1:T75 Arg2:T74	
+T77	Concept 2232 2243	inyecciones
+T79	Action 2263 2274	debilitando
+E18	Action:T79 Subject:T78 Target:T81
+T80	Action 2277 2288	paralizando
+E19	Action:T80 Subject:T78 Target:T81
+T81	Concept 2302 2310	músculos
+T82	Action 2313 2323	bloqueando
+E20	Action:T82 Subject:T78 Target:T83
+T83	Concept 2332 2339	nervios
+T78	Concept 2232 2252	inyecciones de botox
+R22	is-a Arg1:T78 Arg2:T77	
+T84	Concept 2345 2352	efectos
+T85	Action 2353 2361	perduran
+E21	Action:T85 Target:T84
+T86	Concept 2393 2412	efectos secundarios
+T87	Concept 2428 2433	dolor
+T88	Concept 2495 2500	gripe
+T89	Concept 2502 2517	dolor de cabeza
+T90	Concept 2520 2538	malestar estomacal
+T91	Concept 2463 2471	síntomas
+R23	is-a Arg1:T87 Arg2:T86	
+R24	is-a Arg1:T89 Arg2:T86	
+R25	is-a Arg1:T90 Arg2:T86	
+R26	is-a Arg1:T91 Arg2:T86	
+T92	Concept 2544 2555	inyecciones
+T94	Action 2593 2598	caída
+E23	Action:T94 Target:T95 Subject:T92
+T95	Concept 2615 2623	párpados
+A8	Uncertain E23
+T93	Concept 2924 2942	problemas de salud
+T96	Concept 2948 2956	melanoma
+T97	Concept 2974 2988	cáncer de piel
+T98	Concept 2974 2980	cáncer
+R27	is-a Arg1:T97 Arg2:T98	
+R28	is-a Arg1:T96 Arg2:T93	
+R29	is-a Arg1:T97 Arg2:T93	
+T99	Concept 2993 3004	luz del sol
+T100	Action 3005 3010	llega
+E22	Action:T100 Subject:T99 Target:T101
+T101	Concept 3016 3022	tierra
+T102	Concept 3042 3047	rayos
+T103	Concept 3048 3056	visibles
+T104	Concept 3059 3069	invisibles
+R30	property-of Arg1:T103 Arg2:T102	
+R31	property-of Arg1:T104 Arg2:T102	
+R32	is-a Arg1:T99 Arg2:T102	
+T105	Concept 3086 3091	rayos
+T106	Concept 3096 3107	inofensivos
+R33	property-of Arg1:T106 Arg2:T105	
+T107	Concept 3118 3136	rayos ultravioleta
+T108	Concept 3118 3123	rayos
+R34	is-a Arg1:T107 Arg2:T108	
+T109	Concept 3138 3140	UV
+R35	same-as Arg1:T109 Arg2:T107	
+T110	Concept 3147 3165	forma de radiación
+R36	is-a Arg1:T107 Arg2:T110	
+T111	Action 3174 3180	causar
+E24	Action:T111 Subject:T107 Target:T112
+T112	Concept 3181 3190	problemas
+A9	Uncertain E24
+T113	Concept 3235 3245	vitamina D
+T114	Concept 3235 3243	vitamina
+R37	is-a Arg1:T113 Arg2:T114	
+T115	Concept 3196 3204	rayos UV
+T116	Concept 3196 3201	rayos
+R38	is-a Arg1:T115 Arg2:T116	
+T117	Concept 3217 3223	cuerpo
+T118	Action 3226 3234	producir
+E25	Action:T118 Subject:T117 Target:T113
+T119	Action 3262 3272	exposición
+E26	Action:T119 Subject:T115
+T120	Action 3281 3285	daña
+E27	Action:T120 Subject:E26 Target:T121
+T121	Concept 3289 3293	piel
+T122	Action 3205 3211	ayudan
+E28	Action:T122 Target:E25 Subject:T115
+T123	Concept 3313 3321	personas
+T124	Action 3328 3335	obtener
+E29	Action:T124 Subject:T123 Target:T125
+T125	Concept 3361 3371	vitamina D
+T126	Action 3405 3415	exposición
+E30	Action:T126 Subject:T127 Target:E29
+T127	Concept 3419 3422	sol
+T128	Concept 3498 3501	UVA
+T129	Concept 3504 3507	UVB
+T130	Concept 3545 3551	tierra
+T131	Action 3554 3561	afectar
+E31	Action:T131 Subject:T129 Subject2:T128 Target:T132
+T132	Concept 3565 3569	piel
+T133	Concept 3528 3538	superficie
+T134	Action 3516 3522	llegar
+E32	Action:T134 Subject:T129 Subject2:T128 Target:T133
+A10	Uncertain E32
+R39	part-of Arg1:T133 Arg2:T130	
+T135	Concept 3632 3641	rayos UVB
+T136	Concept 3632 3637	rayos
+R40	is-a Arg1:T135 Arg2:T136	
+T137	Concept 3656 3673	quemaduras de sol
+T138	Concept 3656 3666	quemaduras
+R41	is-a Arg1:T137 Arg2:T138	
+T139	Action 3649 3655	causar
+E33	Action:T139 Subject:T135 Target:T137
+A11	Uncertain E33
+T140	Concept 3679 3688	rayos UVA
+T141	Concept 3679 3684	rayos
+R42	is-a Arg1:T140 Arg2:T141	
+T142	Action 3696 3703	afectar
+E34	Action:T142 Target:T143 Subject:T140
+A12	Uncertain E34
+T143	Concept 3725 3729	piel
+T144	Concept 3759 3763	piel
+T145	Action 3767 3773	expone
+E35	Action:T145 Subject:T146 Target:T144
+T146	Concept 3776 3785	rayos UVA
+T147	Concept 3776 3781	rayos
+R43	is-a Arg1:T146 Arg2:T147	
+T148	Action 3800 3810	protegerse
+E36	Action:T148 Subject:E35 Target:T144
+T149	Action 3828 3839	produciendo
+E37	Action:T149 Subject:E36 Target:T150
+T150	Concept 3844 3852	melanina
+T151	Concept 3857 3865	pigmento
+T152	Concept 3872 3876	piel
+T153	Action 3895 3901	oscura
+E38	Action:T153 Target:T152 Subject:T150
+R44	is-a Arg1:T150 Arg2:T151	
+R45	part-of Arg1:T151 Arg2:T152	
+T154	Concept 3965 3974	bronceado
+T155	Concept 3982 3995	señal de daño
+T156	Concept 4002 4006	piel
+R46	part-of Arg1:T155 Arg2:T156	
+R47	is-a Arg1:T154 Arg2:T155	
+T159	Concept 4281 4288	luz UVA
+T157	Action 4276 4280	usan
+E39	Action:T157 Subject:T158 Target:T159
+T158	Concept 4262 4275	camas solares
+T160	Action 4304 4311	exponen
+E40	Action:T160 Subject:T158
+T161	Concept 4341 4350	rayos UVA
+T162	Concept 4341 4346	rayos
+R48	is-a Arg1:T161 Arg2:T162	
+T163	Action 4324 4337	concentración
+E41	Action:T163 Target:T161 Subject:E40
+T164	Concept 4397 4415	luces de bronceado
+T165	Action 4427 4434	exponen
+E42	Action:T165 Subject:T164
+T166	Concept 4445 4454	rayos UVB
+T167	Concept 4451 4454	UVB
+R49	is-a Arg1:T166 Arg2:T167	
+T168	Action 4483 4490	obtener
+E43	Action:T168 Target:T169
+T169	Concept 4495 4509	bronceado base
+T170	Action 4542 4552	protegerlo
+E44	Action:T170 Target:E45 Subject:E43
+T171	Concept 4569 4572	sol
+T172	Action 4556 4565	exponerse
+E45	Action:T172 Target:T171
+A13	Uncertain E44
+T173	Action 4473 4478	creen
+E46	Action:T173 Subject:T174 Target:E44
+T174	Concept 4464 4472	personas
+T175	Concept 4591 4605	bronceado base
+T176	Action 4613 4617	daño
+E47	Action:T176 Subject:T175 Target:T177
+T177	Concept 4623 4627	piel
+T178	Concept 4646 4664	quemaduras solares
+T179	Action 4633 4641	previene
+E48	Action:T179 Subject:T175 Target:T178
+A14	Negated E48
+T180	Concept 4669 4692	bronceado en interiores
+T181	Action 4712 4721	peligroso
+E49	Action:T181 
+T182	Concept 4735 4742	jóvenes
+T183	Concept 4775 4783	melanoma
+T184	Concept 4868 4883	investigaciones
+T185	Action 4884 4892	muestran
+E50	Action:T185 Target:E51 Subject:T184
+T186	Concept 4900 4909	bronceado
+T187	Concept 4910 4919	frecuente
+R50	property-of Arg1:T187 Arg2:T186	
+T188	Concept 4938 4946	adictivo
+T189	Action 4934 4937	ser
+E51	Action:T189 Target:T188 Subject:T186
+A15	Uncertain E51
+T190	Concept 5002 5009	broncea
+T191	Action 4991 4998	seguido
+E52	Action:T191 Target:T190
+T192	Action 5015 5019	daño
+E53	Action:T192 Target:T193 Subject:E52
+T193	Concept 5033 5037	piel
+T194	Concept 5043 5049	callos
+T195	Concept 5052 5064	callosidades
+T196	Action 5069 5077	causados
+E54	Action:T196 Target:T195 Target2:T194 Subject:T197 Subject2:T198
+T197	Concept 5082 5089	presión
+T198	Concept 5092 5100	fricción
+T199	Concept 5107 5111	piel
+T200	Action 5122 5130	aparecen
+E55	Action:T200 Subject:E56
+T201	Concept 5137 5140	pie
+T202	Concept 5150 5155	hueso
+T203	Action 5156 5160	roza
+E56	Action:T203 Subject:T204 Subject2:T202
+T204	Concept 5168 5175	calzado
+T205	Concept 5181 5187	callos
+T206	Action 5203 5211	aparecen
+E57	Action:T206 Subject:T205 Target:T211 Target2:T212
+T207	Concept 5261 5273	callosidades
+T208	Concept 5290 5297	plantas
+T209	Concept 5302 5305	pie
+T210	Action 5274 5282	aparecen
+E58	Action:T210 Subject:T207 Target:T208
+T211	Concept 5212 5218	arriba
+T212	Concept 5227 5235	costados
+T213	Concept 5240 5243	pie
+R51	part-of Arg1:T212 Arg2:T213	
+R52	part-of Arg1:T211 Arg2:T213	
+R53	part-of Arg1:T208 Arg2:T209	
+T214	Concept 5394 5401	zapatos
+T215	Concept 5429 5439	plantillas
+T216	Concept 5429 5454	plantillas sin medicación
+R54	is-a Arg1:T216 Arg2:T215	
+T217	Action 5470 5479	evitarlos
+E59	Action:T217 Subject:T216 Subject2:E60
+A16	Uncertain E59
+T218	Action 5409 5416	ajusten
+E60	Action:T218 Target:T214
+T219	Action 5499 5504	frote
+E61	Action:T219 Target:T220 Target2:T221 Subject:T222 Subject2:T223
+T220	Concept 5519 5524	callo
+T221	Concept 5527 5537	callosidad
+T222	Concept 5546 5554	toallita
+T223	Concept 5557 5569	piedra pómez
+T224	Action 5584 5591	reducir
+E62	Action:T224 Subject:E61 Target:T225
+T225	Concept 5595 5601	tamaño
+A17	Uncertain E62
+T226	Action 5642 5651	rasparlos
+E63	Action:T226 
+A18	Negated E63
+T227	Action 5608 5614	evitar
+E64	Action:T227 Target:T228 Subject:E63
+T228	Concept 5619 5628	infección
+T229	Concept 5720 5735	cuero cabelludo
+T230	Concept 5742 5746	piel
+T231	Action 5751 5756	cubre
+E65	Action:T231 Target:T232 Subject:T229
+T232	Concept 5760 5774	parte superior
+T233	Concept 5781 5787	cabeza
+R55	part-of Arg1:T232 Arg2:T233	
+R56	is-a Arg1:T229 Arg2:T230	
+T234	Concept 5825 5832	cabello
+T235	Action 5833 5838	crece
+E66	Action:T235 Target:T234
+T236	Concept 5873 5893	problemas de la piel
+T237	Action 5901 5908	afectar
+E67	Action:T237 Subject:T236 Target:T238
+A19	Uncertain E67
+T238	Concept 5912 5927	cuero cabelludo
+T239	Concept 5932 5937	caspa
+T240	Concept 5945 5956	descamación
+T241	Concept 5963 5967	piel
+R57	is-a Arg1:T239 Arg2:T240	
+R58	property-of Arg1:T240 Arg2:T241	
+T242	Concept 5973 5980	escamas
+T243	Concept 5985 5994	amarillas
+T244	Concept 5997 6004	blancas
+R59	property-of Arg1:T243 Arg2:T242	
+R60	property-of Arg1:T244 Arg2:T242	
+T245	Concept 6009 6014	caspa
+T246	Action 6030 6037	picazón
+E68	Action:T246 Subject:T245 Target:T247
+T247	Concept 6044 6059	cuero cabelludo
+T248	Concept 6155 6160	caspa
+T249	Concept 6167 6174	síntoma
+T250	Concept 6181 6202	dermatitis seborreica
+T251	Concept 6205 6213	seborrea
+R61	same-as Arg1:T251 Arg2:T250	
+T252	Action 6244 6249	causa
+E69	Action:T252 Subject:T250 Target:T253 Target2:T254
+T253	Concept 6250 6264	enrojecimiento
+T254	Concept 6267 6277	irritación
+T255	Concept 6219 6239	condición de la piel
+R62	is-a Arg1:T250 Arg2:T255	
+R63	property-of Arg1:T249 Arg2:T250	
+R64	is-a Arg1:T248 Arg2:T249	
+T256	Action 6307 6310	uso
+E70	Action:T256 Target:T257
+T257	Concept 6317 6333	champú anticaspa
+T258	Concept 6317 6323	champú
+R65	is-a Arg1:T257 Arg2:T258	
+T259	Action 6349 6358	controlar
+E71	Action:T259 Target:T260 Subject:E70
+T260	Concept 6362 6367	caspa
+T261	Concept 6438 6459	dermatitis seborreica
+T262	Action 6470 6477	afectar
+E72	Action:T262 Target:T263 Subject:T264
+T263	Concept 6484 6489	bebés
+T264	Concept 6494 6507	costra láctea
+R66	is-a Arg1:T264 Arg2:T261	
+A20	Uncertain E72
+T265	Action 6621 6628	afectar
+E73	Action:T265 Target:T271 Target2:T266 Target3:T267 Target4:T268 Target5:T269
+T266	Concept 6663 6671	párpados
+T267	Concept 6677 6683	axilas
+T268	Concept 6688 6693	ingle
+T269	Concept 6700 6706	orejas
+T270	Concept 6646 6652	cuerpo
+T271	Concept 6590 6605	cuero cabelludo
+R67	part-of Arg1:T266 Arg2:T270	
+R68	part-of Arg1:T267 Arg2:T270	
+R69	part-of Arg1:T268 Arg2:T270	
+R70	part-of Arg1:T269 Arg2:T270	
+R71	part-of Arg1:T271 Arg2:T270	
+T272	Concept 6888 6894	médico
+T273	Action 6901 6910	recetarle
+E74	Action:T273 Subject:T272 Target:T274 Target2:T275
+T274	Concept 6917 6923	champú
+T275	Concept 6926 6931	crema
+A21	Uncertain E74
+T276	Concept 6937 6945	cicatriz
+T277	Concept 6952 6966	parche de piel
+T278	Concept 6967 6977	permanente
+R72	property-of Arg1:T278 Arg2:T277	
+T279	Action 6982 6987	crece
+E75	Action:T279 Subject:T276
+T280	Concept 6998 7004	herida
+R73	is-a Arg1:T276 Arg2:T277	
+T281	Concept 7025 7031	cuerpo
+T282	Action 7035 7039	cura
+E76	Action:T282 Target:T281 Subject:T283 Subject2:T284 Subject3:T285 Subject4:T286
+T283	Concept 7055 7064	cortadura
+T284	Concept 7069 7075	raspón
+T285	Concept 7081 7090	quemadura
+T286	Concept 7097 7102	llaga
+T287	Action 7009 7014	forma
+E77	Action:T287 Subject:E76
+T288	Concept 7108 7118	cicatrices
+T289	Concept 7152 7159	cirugía
+T290	Action 7169 7174	corte
+E78	Action:T290 Target:T291 Subject:T289
+T291	Concept 7178 7182	piel
+T292	Concept 7184 7195	infecciones
+T293	Concept 7204 7212	varicela
+T294	Concept 7215 7236	afecciones de la piel
+T295	Concept 7246 7250	acné
+R74	is-a Arg1:T295 Arg2:T294	
+R75	is-a Arg1:T293 Arg2:T292	
+T296	Action 7134 7142	resultar
+E79	Action:T296 Subject:E78 Subject2:T293 Subject3:T295 Target:T288
+A22	Uncertain E79
+T297	Concept 7256 7266	cicatrices
+T298	Concept 7282 7289	gruesas
+T299	Concept 7304 7311	rosadas
+T300	Concept 7313 7318	rojas
+T301	Concept 7321 7331	brillantes
+R76	property-of Arg1:T298 Arg2:T297	
+R77	property-of Arg1:T299 Arg2:T297	
+R78	property-of Arg1:T300 Arg2:T297	
+R79	property-of Arg1:T301 Arg2:T297	
+T302	Concept 7361 7371	cicatrices
+T303	Action 7379 7391	desvanecerse
+E80	Action:T303 Subject:T302 Target:T302
+T304	Action 7418 7429	desaparecen
+E81	Action:T304 Subject:T302 Target:T302
+A23	Negated E81
+T305	Concept 7469 7477	cicatriz
+T306	Concept 7451 7461	apariencia
+R80	property-of Arg1:T306 Arg2:T305	
+T307	Action 7525 7536	minimizarla
+E82	Action:T307 Subject:T308 Target:T306
+T308	Concept 7501 7513	tratamientos
+T309	Concept 7567 7586	revisión quirúrgica
+T310	Concept 7591 7604	dermoabrasión
+T311	Concept 7610 7632	tratamientos con láser
+T312	Concept 7638 7649	inyecciones
+T313	Action 7654 7665	eliminación
+E83	Action:T313 Subject:T315 Target:T314
+T314	Concept 7669 7684	células muertas
+T315	Concept 7689 7707	productos químicos
+T316	Concept 7714 7720	cremas
+T317	Concept 7726 7736	cosméticos
+T318	Concept 7741 7750	productos
+T319	Concept 7772 7778	cuerpo
+T320	Action 7784 7793	limpiarlo
+E84	Action:T320 Target:T319 Subject:T317
+T321	Action 7819 7826	cambiar
+E85	Action:T321 Target:T322 Subject:T317
+T322	Concept 7830 7840	apariencia
+T324	Concept 7807 7816	atractivo
+R81	property-of Arg1:T324 Arg2:T319	
+R82	property-of Arg1:T322 Arg2:T319	
+R83	is-a Arg1:T317 Arg2:T318	
+T323	Concept 7857 7873	champú anticaspa
+T325	Concept 7875 7891	pasta de dientes
+T326	Concept 7904 7932	desodorante antitranspirante
+T327	Concept 7896 7901	flúor
+R84	property-of Arg1:T327 Arg2:T325	
+T328	Concept 7943 7953	cosméticos
+T329	Concept 7959 7971	medicamentos
+T330	Concept 7842 7851	Productos
+R85	is-a Arg1:T323 Arg2:T330	
+R86	is-a Arg1:T323 Arg2:T328	
+R87	is-a Arg1:T323 Arg2:T329	
+R88	is-a Arg1:T325 Arg2:T330	
+R89	is-a Arg1:T325 Arg2:T328	
+R90	is-a Arg1:T325 Arg2:T329	
+R91	is-a Arg1:T326 Arg2:T330	
+R92	is-a Arg1:T326 Arg2:T328	
+R93	is-a Arg1:T326 Arg2:T329	
+T331	Concept 7976 7994	ingrediente activo
+T332	Concept 8035 8043	producto
+T333	Concept 8048 8054	eficaz
+T334	Action 8023 8027	hace
+E86	Action:T334 Target:T333 Subject:T331
+T335	Concept 8001 8018	sustancia química
+R94	is-a Arg1:T331 Arg2:T335	
+R95	property-of Arg1:T333 Arg2:T332	
+T336	Concept 8140 8150	cosméticos
+T337	Concept 8165 8185	reacciones alérgicas
+T338	Action 8158 8164	causar
+E87	Action:T338 Target:T337 Subject:T336
+A24	Uncertain E87
+T339	Concept 8198 8203	señal
+T340	Concept 8190 8197	primera
+R96	property-of Arg1:T340 Arg2:T339	
+T341	Concept 8216 8220	piel
+T342	Concept 8221 8225	roja
+T343	Concept 8228 8236	irritada
+R97	property-of Arg1:T342 Arg2:T341	
+R98	property-of Arg1:T343 Arg2:T341	
+R99	is-a Arg1:T342 Arg2:T339	
+R100	is-a Arg1:T343 Arg2:T339	
+T344	Concept 8238 8248	Fragancias
+T345	Concept 8251 8264	preservativos
+T346	Action 8273 8279	causas
+E88	Action:T346 Subject:T345 Subject2:T344 Target:T347
+T347	Concept 8295 8315	problemas de la piel
+T348	Concept 8442 8451	etiquetas
+T349	Concept 8458 8465	natural
+T350	Concept 8470 8484	hipoalergénico
+R101	is-a Arg1:T350 Arg2:T348	
+R102	is-a Arg1:T349 Arg2:T348	
+T351	Concept 8587 8593	Eccema
+T352	Concept 8646 8666	hinchazón de la piel
+R104	property-of Arg1:T351 Arg2:T352	
+T353	Concept 8698 8706	sequedad
+T354	Concept 8709 8727	comezón en la piel
+T356	Concept 8756 8760	cara
+T357	Concept 8781 8786	codos
+T358	Concept 8803 8811	rodillas
+T359	Concept 8822 8827	manos
+T360	Concept 8834 8838	pies
+T361	Action 8840 8848	Rascarse
+E90	Action:T361 Target:T362
+T362	Concept 8852 8856	piel
+T363	Action 8863 8874	enrojecerla
+E91	Action:T363 Subject:E90 Target:T362
+T364	Concept 8890 8899	hinchazón
+T365	Concept 8902 8909	picazón
+T366	Action 8876 8886	aumentando
+E92	Action:T366 Subject:E90 Target:T364 Target2:T365
+T355	Concept 8739 8749	sarpullido
+T367	Concept 8914 8920	eccema
+T368	Concept 8927 8937	contagioso
+T369	Concept 9008 9014	eccema
+T370	Action 9021 9028	mejorar
+E89	Action:T370 Target:T369
+A25	Uncertain E89
+T371	Action 9031 9039	empeorar
+E93	Action:T371 Target:T369
+A26	Uncertain E93
+T372	Concept 9076 9086	enfermedad
+R103	is-a Arg1:T369 Arg2:T372	
+T373	Concept 9090 9104	larga duración
+R105	property-of Arg1:T373 Arg2:T369	
+T374	Concept 9219 9237	dermatitis atópica
+T375	Concept 9206 9212	eccema
+R106	is-a Arg1:T374 Arg2:T375	
+T376	Concept 9197 9202	común
+R107	property-of Arg1:T376 Arg2:T374	
+T377	Action 9297 9304	afectar
+E94	Action:T377 Target:T378 Target2:T379 Target3:T380
+T378	Concept 9271 9276	niños
+T379	Concept 9259 9264	bebés
+T380	Concept 9311 9318	adultos
+T381	Concept 9337 9342	niños
+T382	Concept 9347 9365	dermatitis atópica
+T383	Action 9366 9372	crecen
+E95	Action:T383 Target:T381 Subject:T381
+T384	Action 9392 9399	mejorar
+E96	Action:T384 Target:T382 Subject:E95
+T385	Action 9402 9413	desaparecer
+E97	Action:T385 Target:T382 Subject:E95
+T386	Concept 9486 9498	tratamientos
+T387	Concept 9514 9526	medicamentos
+T388	Concept 9528 9534	cremas
+T389	Concept 9549 9563	terapia de luz
+T391	Concept 9588 9592	piel
+R108	is-a Arg1:T387 Arg2:T386	
+R109	is-a Arg1:T388 Arg2:T386	
+R110	is-a Arg1:T389 Arg2:T386	
+T390	Concept 9574 9581	cuidado
+R111	is-a Arg1:T390 Arg2:T386	
+T392	Concept 9597 9601	piel
+T393	Concept 9608 9614	órgano
+T394	Concept 9630 9636	cuerpo
+T395	Concept 9619 9625	grande
+T396	Action 9638 9643	cubre
+E98	Action:T396 Subject:T392 Target:T398
+T397	Action 9646 9653	protege
+E99	Action:T397 Subject:T392 Target:T398
+T398	Concept 9657 9663	cuerpo
+R112	is-a Arg1:T392 Arg2:T393	
+R113	property-of Arg1:T395 Arg2:T392	
+R114	part-of Arg1:T392 Arg2:T394	
+T399	Concept 9714 9718	piel
+T400	Concept 9732 9740	síntomas
+T401	Concept 9746 9760	enrojecimiento
+T402	Concept 9762 9771	hinchazón
+T403	Concept 9773 9778	ardor
+T404	Concept 9781 9788	picazón
+T405	Action 9684 9690	irrite
+E100	Action:T405 Target:T399
+T406	Action 9692 9700	obstruya
+E101	Action:T406 Target:T399
+T407	Action 9703 9710	inflame
+E102	Action:T407 Target:T399
+T408	Action 9725 9731	causar
+E103	Action:T408 Subject:E102 Subject2:E101 Subject3:E100 Target:T401 Target2:T402 Target3:T403 Target4:T404
+R115	is-a Arg1:T401 Arg2:T400	
+R116	is-a Arg1:T402 Arg2:T400	
+R117	is-a Arg1:T403 Arg2:T400	
+R118	is-a Arg1:T404 Arg2:T400	
+T409	Concept 9793 9800	alergia
+T410	Concept 9802 9812	irritantes
+T411	Concept 9817 9837	composición genética
+T412	Concept 9848 9860	enfermedades
+T413	Concept 9863 9872	problemas
+T414	Concept 9877 9896	sistema inmunitario
+R119	property-of Arg1:T413 Arg2:T414	
+R120	property-of Arg1:T412 Arg2:T414	
+T415	Action 9904 9912	provocar
+E104	Action:T415 Subject:T413 Subject2:T412 Subject3:T411 Subject4:T410 Subject5:T409 Target:T416 Target2:T417 Target3:T418
+A27	Uncertain E104
+T416	Concept 9913 9923	sarpullido
+T417	Concept 9925 9934	urticaria
+T418	Concept 9943 9952	problemas
+T419	Concept 9959 9963	piel
+R121	property-of Arg1:T418 Arg2:T419	
+T420	Concept 10002 10006	acné
+T421	Concept 9972 9981	problemas
+T422	Concept 9988 9992	piel
+R122	property-of Arg1:T421 Arg2:T422	
+R123	is-a Arg1:T420 Arg2:T421	
+T423	Action 10016 10023	afectan
+E105	Action:T423 Subject:T421 Target:T424
+T424	Concept 10027 10037	apariencia
+T425	Concept 10043 10047	uñas
+T426	Concept 10055 10060	manos
+T427	Concept 10067 10071	pies
+T428	Action 10072 10080	protegen
+E106	Action:T428 Subject:T425 Target:T429
+T429	Concept 10085 10092	tejidos
+T430	Concept 10100 10105	dedos
+R124	part-of Arg1:T429 Arg2:T430	
+R125	part-of Arg1:T425 Arg2:T426	
+R126	part-of Arg1:T425 Arg2:T427	
+T431	Concept 10167 10176	queratina
+T432	Concept 10139 10147	proteína
+T433	Concept 10148 10158	endurecida
+R127	property-of Arg1:T433 Arg2:T431	
+R128	is-a Arg1:T431 Arg2:T432	
+T434	Action 10193 10202	encuentra
+E107	Action:T434 Subject:T431 Target:T435 Target2:T436
+T435	Concept 10209 10213	pelo
+T436	Concept 10219 10223	piel
+T437	Concept 10228 10233	salud
+T438	Concept 10241 10245	uñas
+R129	property-of Arg1:T437 Arg2:T438	
+T439	Concept 10259 10268	indicador
+T440	Concept 10293 10298	salud
+R130	property-of Arg1:T439 Arg2:T440	
+R131	is-a Arg1:T437 Arg2:T439	
+T441	Concept 10304 10308	uñas
+T442	Concept 10309 10319	saludables
+T444	Concept 10331 10336	lisas
+T443	Concept 10345 10359	color uniforme
+R132	property-of Arg1:T443 Arg2:T441	
+R133	property-of Arg1:T444 Arg2:T441	
+R134	property-of Arg1:T442 Arg2:T441	
+T445	Concept 10485 10495	pulmonares
+T446	Concept 10497 10506	cardíacas
+T447	Concept 10508 10515	renales
+T448	Concept 10518 10527	hepáticas
+T449	Concept 10538 10546	diabetes
+T450	Concept 10549 10555	anemia
+T451	Concept 10472 10484	enfermedades
+R135	property-of Arg1:T445 Arg2:T451	
+R136	property-of Arg1:T446 Arg2:T451	
+R137	property-of Arg1:T447 Arg2:T451	
+R138	property-of Arg1:T448 Arg2:T451	
+R139	is-a Arg1:T449 Arg2:T451	
+R140	is-a Arg1:T450 Arg2:T451	
+T452	Concept 10430 10449	tasa de crecimiento
+T453	Concept 10389 10401	decoloración
+T454	Concept 10409 10413	uñas
+R141	property-of Arg1:T452 Arg2:T454	
+R142	property-of Arg1:T453 Arg2:T454	
+T455	Action 10416 10423	cambios
+E108	Action:T455 Target:T452
+T456	Action 10457 10464	indicar
+E109	Action:T456 Subject:E108 Subject2:T453 Target:T451
+T457	Concept 10561 10576	manchas blancas
+T458	Concept 10583 10601	crestas verticales
+T459	Concept 10606 10617	inofensivas
+R143	property-of Arg1:T459 Arg2:T458	
+R144	property-of Arg1:T459 Arg2:T457	
+T460	Action 10717 10722	corte
+E110	Action:T460 Target:T461
+T461	Concept 10726 10734	cutícula
+T462	Action 10749 10755	causar
+E111	Action:T462 Subject:E110 Target:T463
+T463	Concept 10756 10767	infecciones
+A28	Uncertain E111
+T464	Concept 10855 10871	tejido conectivo
+T465	Concept 10915 10921	cuerpo
+R145	part-of Arg1:T464 Arg2:T465	
+T466	Action 10930 10935	forma
+E112	Action:T466 Target:T467 Subject:T464
+T467	Concept 10942 10949	tejidos
+T468	Action 10965 10972	fuertes
+E113	Action:T468 Target:T467 Subject:T464
+T469	Concept 10977 10990	esclerodermia
+T470	Action 11023 11032	endurezca
+E114	Action:T470 Target:T472 Subject:T469
+T471	Action 11044 11050	grueso
+E115	Action:T471 Target:T472 Subject:T469
+T472	Concept 11003 11019	tejido conectivo
+T473	Concept 11073 11082	hinchazón
+T475	Concept 11098 11106	músculos
+T476	Concept 11109 11123	articulaciones
+T474	Action 11085 11090	dolor
+E116	Action:T474 Target:T475 Target2:T476
+T477	Action 11066 11072	causar
+E117	Action:T477 Target:T473 Target2:E116
+A29	Uncertain E117
+T478	Concept 11128 11152	esclerodermia localizada
+T479	Action 11153 11159	afecta
+E118	Action:T479 Subject:T478 Target:T480
+T480	Concept 11174 11178	piel
+T481	Concept 11128 11141	esclerodermia
+R146	is-a Arg1:T478 Arg2:T481	
+T482	Concept 11183 11206	esclerodermia sistémica
+T483	Concept 11183 11196	esclerodermia
+R147	is-a Arg1:T482 Arg2:T483	
+T484	Action 11207 11213	afecta
+E119	Action:T484 Subject:T482 Target:T485 Target2:T486 Target3:T487
+T485	Concept 11218 11234	vasos sanguíneos
+T486	Concept 11241 11248	órganos
+T487	Concept 11271 11275	piel
+T488	Concept 11249 11257	internos
+R148	property-of Arg1:T488 Arg2:T486	
+T489	Concept 11454 11467	examen físico
+T490	Concept 11491 11506	biopsia de piel
+T491	Concept 11433 11449	historia clínica
+T492	Action 11390 11402	diagnostican
+E120	Action:T492 Subject:T491 Subject2:T489 Subject3:T490 Target:T493
+T493	Concept 11408 11417	condición
+T494	Concept 11611 11629	rayos ultravioleta
+T495	Concept 11631 11633	UV
+R149	same-as Arg1:T494 Arg2:T495	
+T496	Concept 11662 11671	radiación
+T497	Concept 11649 11658	invisible
+R150	property-of Arg1:T497 Arg2:T496	
+R151	is-a Arg1:T494 Arg2:T496	
+T498	Action 11680 11688	penetrar
+E121	Action:T498 Target:T499
+T499	Concept 11692 11696	piel
+T500	Action 11699 11704	dañar
+E122	Action:T500 Target:T501
+T501	Concept 11709 11716	células
+T502	Concept 11722 11739	quemaduras de sol
+T504	Concept 11767 11771	piel
+T503	Action 11756 11760	daño
+E123	Action:T503 Target:T504 Subject:T502
+T505	Concept 11832 11845	rayos del sol
+T506	Action 11849 11856	mataron
+E124	Action:T506 Subject:T505 Target:T507
+T507	Concept 11865 11872	células
+T508	Action 11875 11882	dañaron
+E125	Action:T508 Subject:T505 Target:T507
+T509	Action 11808 11815	Aparece
+E126	Action:T509 Subject:E124 Subject2:E125
+T510	Concept 11894 11902	rayos UV
+T511	Concept 11894 11899	rayos
+R152	is-a Arg1:T510 Arg2:T511	
+T512	Concept 11932 11936	piel
+T513	Action 11917 11925	lesiones
+E127	Action:T513 Subject:T510 Target:T512
+A30	Uncertain E127
+T514	Concept 12543 12551	lesiones
+T515	Concept 12563 12570	menores
+T516	Concept 12573 12580	severas
+T517	Action 12592 12599	peligro
+E128	Action:T517 Subject:T514 Target:T518
+T518	Concept 12603 12607	vida
+R153	property-of Arg1:T515 Arg2:T514	
+R154	property-of Arg1:T516 Arg2:T514	
+T519	Concept 12745 12752	heridas
+T520	Concept 12757 12765	lesiones
+R155	is-a Arg1:T519 Arg2:T520	
+T521	Action 12770 12776	rompen
+E129	Action:T521 Target:T522 Target2:T523 Subject:T519
+T522	Concept 12780 12784	piel
+T523	Concept 12793 12800	tejidos
+T524	Concept 12805 12811	cuerpo
+R156	part-of Arg1:T523 Arg2:T524	
+T525	Concept 12922 12944	incisiones quirúrgicas
+T526	Concept 12950 12957	suturas
+T527	Concept 12964 12970	puntos
+T528	Action 12979 12985	causan
+E130	Action:T528 Target:T529 Subject:T527 Subject2:T526 Subject3:T525
+T529	Concept 12986 12993	heridas
+T530	Concept 12999 13014	heridas menores
+T531	Action 13056 13066	limpiarlas
+E131	Action:T531 Target:T530
+T532	Concept 13077 13091	heridas serias
+T533	Concept 13115 13130	atención médica
+T534	Concept 14366 14373	lunares
+T535	Concept 14378 14390	crecimientos
+T536	Concept 14400 14404	piel
+R157	part-of Arg1:T535 Arg2:T536	
+R158	is-a Arg1:T534 Arg2:T535	
+T537	Concept 13524 13538	savia aceitosa
+T538	Concept 13548 13555	plantas
+R159	part-of Arg1:T537 Arg2:T538	
+T539	Concept 13560 13565	savia
+T540	Concept 13585 13589	raíz
+T541	Concept 13595 13601	tallos
+T542	Concept 13607 13612	hojas
+T543	Concept 13619 13625	frutos
+T544	Concept 13635 13642	plantas
+R160	part-of Arg1:T543 Arg2:T544	
+R161	part-of Arg1:T542 Arg2:T544	
+R162	part-of Arg1:T541 Arg2:T544	
+R163	part-of Arg1:T540 Arg2:T544	
+R164	part-of Arg1:T539 Arg2:T540	
+R165	part-of Arg1:T539 Arg2:T541	
+R166	part-of Arg1:T539 Arg2:T542	
+R167	part-of Arg1:T539 Arg2:T543	
+T545	Concept 13496 13504	personas
+T546	Action 13509 13518	sensibles
+E132	Action:T546 Subject:T537 Target:T545
+T547	Concept 13708 13716	erupción
+T548	Concept 13733 13737	leve
+T549	Concept 13740 13745	grave
+R168	property-of Arg1:T548 Arg2:T547	
+R169	property-of Arg1:T549 Arg2:T547	
+T550	Concept 13777 13782	savia
+T551	Concept 13796 13800	piel
+T552	Action 13787 13792	toque
+E133	Action:T552 Subject:T550 Target:T551
+T553	Action 13747 13758	dependiendo
+E134	Action:T553 Subject:T554 Target:T547 Subject2:T556
+T554	Concept 13765 13773	cantidad
+R170	property-of Arg1:T554 Arg2:T550	
+T555	Concept 13830 13837	persona
+T556	Concept 13809 13821	sensibilidad
+R171	property-of Arg1:T556 Arg2:T555	
+T557	Action 13890 13896	queman
+E135	Action:T557 Target:T558
+T558	Concept 13879 13886	plantas
+T559	Action 13854 13861	ocurrir
+E136	Action:T559 Subject:E135 Target:T560
+T560	Concept 13862 13871	problemas
+T561	Concept 13901 13907	hollín
+T562	Concept 13921 13926	savia
+T563	Action 13908 13916	cubierto
+E137	Action:T563 Subject:T562 Target:T561
+T564	Action 13931 13936	vuela
+E138	Action:T564 Target:T561 Subject:T565
+T565	Concept 13943 13947	aire
+T566	Action 13954 13962	penetrar
+E139	Action:T566 Subject:T561 Target:T567 Target2:T568 Target3:T569 Target4:T570
+A31	Uncertain E139
+T567	Concept 13970 13975	ojos,
+T568	Concept 13979 13984	nariz
+T569	Concept 13989 13997	garganta
+T570	Concept 14003 14023	sistema respiratorio
+T571	Action 14087 14098	identificar
+E140	Action:T571 Target:T572
+T572	Concept 14103 14110	plantas
+T573	Action 14124 14131	alejado
+E141	Action:T573 Target:T572
+T574	Action 14046 14052	evitar
+E142	Action:T574 Target:T575 Subject:E140 Subject2:E141
+T575	Concept 14056 14072	erupción cutánea
+T576	Concept 14429 14436	células
+T577	Concept 14452 14460	pigmento
+T578	Action 14437 14448	productoras
+E143	Action:T578 Target:T577 Subject:T576
+T579	Concept 14482 14493	melanocitos
+R172	same-as Arg1:T579 Arg2:T576	
+T580	Action 14495 14501	crecen
+E144	Action:T580 Target:T576
+T581	Concept 14467 14471	piel
+R173	property-of Arg1:T577 Arg2:T581	
+T582	Concept 14517 14524	lunares
+T583	Concept 14533 14540	comunes
+R174	property-of Arg1:T583 Arg2:T582	
+T584	Concept 14602 14609	persona
+T585	Action 14616 14627	desarrollar
+E145	Action:T585 Target:T586 Subject:T584
+T586	Concept 14635 14642	lunares
+T587	Concept 14628 14634	nuevos
+R175	property-of Arg1:T587 Arg2:T586	
+T588	Concept 14733 14740	lunares
+T589	Concept 14752 14759	rosados
+T590	Concept 14761 14768	morenos
+T591	Concept 14771 14779	marrones
+R176	is-a Arg1:T589 Arg2:T588	
+R177	is-a Arg1:T590 Arg2:T588	
+R178	is-a Arg1:T591 Arg2:T588	
+T592	Concept 15021 15036	nevo displásico
+T593	Concept 15044 15051	lunares
+T594	Action 15087 15098	convertirse
+E146	Action:T594 Subject:T593 Target:T595
+T595	Concept 15102 15110	melanoma
+T596	Concept 15123 15137	cáncer de piel
+R179	is-a Arg1:T595 Arg2:T596	
+T597	Concept 15456 15477	manchas de nacimiento
+T598	Concept 15479 15489	vasculares
+T599	Concept 15492 15503	pigmentadas
+R180	is-a Arg1:T598 Arg2:T597	
+R181	is-a Arg1:T599 Arg2:T597	
+T600	Concept 15354 15375	manchas de nacimiento
+T601	Concept 15380 15400	anomalías de la piel
+T602	Concept 15424 15437	recién nacido
+R182	is-a Arg1:T600 Arg2:T601	
+T603	Action 15408 15417	presentan
+E147	Action:T603 Subject:T602 Target:T601
+T604	Concept 15509 15519	vasculares
+T605	Action 15524 15532	formadas
+E148	Action:T605 Subject:E149 Target:T604
+T606	Concept 15537 15553	vasos sanguíneos
+T607	Action 15568 15580	desarrollado
+E149	Action:T607 Target:T606
+A32	Negated E149
+T608	Concept 15616 15621	rojas
+R183	property-of Arg1:T608 Arg2:T604	
+T609	Concept 15627 15638	hemangiomas
+T610	Concept 15645 15663	hemangiomas planos
+T611	Concept 15681 15699	manchas vasculares
+R184	is-a Arg1:T610 Arg2:T611	
+R185	is-a Arg1:T609 Arg2:T611	
+T612	Concept 15705 15716	pigmentadas
+T613	Concept 15751 15758	células
+R186	part-of Arg1:T613 Arg2:T612	
+T614	Concept 15776 15784	pigmento
+T615	Action 15795 15800	color
+E150	Action:T615 Subject:T614 Target:T616
+T616	Concept 15806 15810	piel
+T617	Action 15763 15772	contienen
+E151	Action:T617 Subject:T613 Target:T614
+T618	Concept 15903 15910	lunares
+T619	Concept 15922 15943	manchas de nacimiento
+R187	is-a Arg1:T618 Arg2:T619	
+T620	Concept 16134 16153	manchas pigmentadas
+T621	Action 16160 16166	tratan
+E152	Action:T621 Target:T620
+A33	Negated E152
+T622	Action 16192 16203	tratamiento
+E153	Action:T622 Subject:T623 Target:T624
+T623	Concept 16240 16245	láser
+T624	Concept 16213 16231	manchas vasculares
+T625	Concept 17491 17500	mosquitos
+T626	Concept 17505 17513	insectos
+T627	Action 17518 17523	viven
+E154	Action:T627 Subject:T625 Target:T628
+T628	Concept 17535 17540	mundo
+R188	is-a Arg1:T625 Arg2:T626	

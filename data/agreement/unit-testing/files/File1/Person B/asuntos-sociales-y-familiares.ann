@@ -1,0 +1,46 @@
+T1	Concept 33 40	costoso
+T2	Concept 109 116	médicos
+T3	Concept 3 10	cuidado
+T4	Action 69 75	cubrir
+E1	Action:T4 Target:T2 Subject:T6
+T5	Action 89 94	parte
+E2	Action:T5 
+T6	Concept 54 61	médicos
+T7	Concept 172 178	gastos
+T8	Action 186 191	están
+E3	Action:T8 Subject:T7
+T9	Action 312 318	ayudar
+E4	Action:T9 Subject:T10
+T10	Concept 246 255	programas
+T11	Action 334 340	hablar
+E5	Action:T11 Target:T13 Target2:T12
+T12	Concept 370 374	pago
+T13	Concept 355 360	dudas
+T14	Action 549 555	tienen
+E6	Action:T14 Subject:T15 Subject2:T16
+T15	Concept 556 561	padre
+T16	Concept 597 602	ellos
+T17	Action 621 624	hay
+E7	Action:T17 Target:T18
+T18	Concept 638 645	abuelos
+T19	Action 680 685	viven
+E8	Action:T19 Target:E9
+T20	Action 699 709	sustitutas
+E9	Action:T20 Target:T21
+T21	Concept 711 720	adoptivas
+T22	Action 747 750	son
+E10	Action:T22 Target:T23
+T23	Concept 775 783	personas
+T24	Concept 851 857	fuente
+T25	Concept 869 873	amor
+R1	is-a Arg1:T24 Arg2:T25	
+T26	Concept 837 842	Deben
+T27	Concept 847 850	una
+T28	Concept 861 866	apoyo
+R2	property-of Arg1:T24 Arg2:T26	
+T29	Concept 882 891	significa
+T30	Concept 925 931	tiempo
+R3	part-of Arg1:T30 Arg2:T29	
+T31	Concept 937 947	conflictos
+T32	Concept 964 978	vida familiar.
+R4	is-a Arg1:T31 Arg2:T32	

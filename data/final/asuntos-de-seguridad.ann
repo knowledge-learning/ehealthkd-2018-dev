@@ -1,0 +1,373 @@
+T4	Concept 0 8	Conducir
+T2	Concept 56 65	peligroso
+R0	property-of Arg1:T2 Arg2:T4
+T6	Concept 111 127	choques de autos
+T5	Action 73 78	causa
+E5	Action:T5 Target:T6
+T1	Action 166 169	use
+T21	Action 129 135	Pídale
+T20	Concept 143 150	persona
+T19	Concept 170 188	transporte público
+T18	Concept 205 213	conducir
+T17	Action 158 163	lleve
+T16	Action 199 204	pueda
+E16	Action:T16 Target:T18
+E17	Action:T17 Subject:T20
+E21	Action:T21 Target:T20
+E1	Action:T1 Target:T19
+T31	Action 218 226	necesita
+T27	Action 277 286	deténgase
+T26	Concept 290 308	costado del camino
+T25	Action 227 233	hablar
+T24	Action 249 255	enviar
+T23	Concept 238 246	teléfono
+T22	Concept 259 275	mensaje de texto
+E24	Action:T24 Target:T22
+E25	Action:T25 
+E27	Action:T27 Target:T26
+E31	Action:T31 Target:E24 Target2:E25
+T38	Concept 390 399	laborales
+T37	Action 337 344	cuidado
+T35	Action 363 372	expuestos
+T34	Concept 314 323	empleados
+T33	Concept 351 356	salud
+T32	Concept 382 389	riesgos
+E35	Action:T35 Target:T32 Subject:T34
+E37	Action:T37 Target:T33 Subject:T34
+R6	property-of Arg1:T38 Arg2:T32
+T3	Action 410 416	seguir
+T51	Action 404 409	deben
+T46	Concept 417 433	buenas prácticas
+T45	Concept 437 454	seguridad laboral
+T44	Action 457 465	prevenir
+T43	Concept 470 478	lesiones
+E44	Action:T44 Target:T43
+R8	property-of Arg1:T46 Arg2:T45
+E2	Action:T3 Target:T46
+E51	Action:T51 Target:E2 Target2:E44
+T56	Concept 503 510	riesgos
+T54	Action 491 498	reducir
+T53	Concept 520 529	problemas
+T52	Concept 537 542	salud
+E54	Action:T54 Target:T53 Target2:T56
+R9	property-of Arg1:T53 Arg2:T52
+R1	property-of Arg1:T53 Arg2:T56
+T75	Action 566 570	siga
+T74	Concept 575 581	pautas
+T71	Action 614 621	aprenda
+T70	Concept 625 630	forma
+T69	Concept 631 639	correcta
+T68	Concept 652 659	objetos
+T67	Concept 660 667	pesados
+T63	Concept 590 612	control de infecciones
+T61	Concept 548 564	equipo protector
+T60	Action 693 702	controlar
+T59	Concept 706 712	estrés
+T58	Action 643 651	levantar
+E58	Action:T58 Target:T68
+E60	Action:T60 Target:T59
+E71	Action:T71 Target:E58
+E75	Action:T75 Target:T74
+R12	property-of Arg1:T69 Arg2:T70
+R13	property-of Arg1:T67 Arg2:T68
+T7	Action 726 732	pensar
+T81	Concept 714 719	Usted
+T78	Concept 741 748	granjas
+T77	Concept 753 762	ambientes
+T76	Concept 763 772	pacíficos
+R14	property-of Arg1:T76 Arg2:T77
+R15	is-a Arg1:T77 Arg2:T78
+E3	Action:T7 Target:T78 Subject:T81
+T85	Concept 845 860	Estados Unidos.
+T84	Concept 805 812	granjas
+T83	Concept 790 797	trabajo
+T82	Concept 831 841	peligrosos
+R16	property-of Arg1:T84 Arg2:T83
+R17	property-of Arg1:T82 Arg2:T83
+T89	Concept 865 873	lesiones
+T88	Concept 897 904	comunes
+R18	property-of Arg1:T88 Arg2:T89
+T93	Concept 909 923	trabajo físico
+T92	Concept 930 940	accidentes
+T91	Action 948 954	causar
+T90	Concept 955 963	lesiones
+E91	Action:T91 Target:T90 Subject:T92 Subject2:T93
+T102	Concept 968 975	mayoría
+T100	Action 1008 1011	uso
+T99	Concept 983 993	accidentes
+T98	Concept 1015 1025	maquinaria
+T97	Action 994 1004	involucran
+E100	Action:T100 Target:T98
+R21	property-of Arg1:T102 Arg2:T99
+E97	Action:T97 Target:T99 Subject:E100
+T107	Concept 1040 1050	inspección
+T106	Concept 1053 1066	mantenimiento
+T105	Concept 1074 1082	máquinas
+T104	Action 1098 1106	prevenir
+T103	Concept 1111 1121	accidentes
+E104	Action:T104 Target:T103 Subject:T106 Subject2:T107
+R23	property-of Arg1:T106 Arg2:T105
+R24	property-of Arg1:T107 Arg2:T105
+T115	Concept 1155 1172	gafas protectoras
+T114	Concept 1133 1153	guantes de seguridad
+T113	Concept 1181 1202	equipos de protección
+T112	Action 1218 1225	reducir
+T111	Concept 1230 1240	accidentes
+E112	Action:T112 Target:T111 Subject:T115 Subject2:T114 Subject3:T113
+R27	is-a Arg1:T115 Arg2:T113
+R28	is-a Arg1:T114 Arg2:T113
+T131	Concept 1245 1254	imposible
+T130	Action 1255 1263	eliminar
+T126	Action 1310 1319	disminuir
+T125	Concept 1274 1293	peligros en la vida
+E126	Action:T126 Target:T125
+E130	Action:T130 Target:T125
+T135	Concept 1355 1365	especiales
+T134	Concept 1325 1339	niños pequeños
+T133	Action 1340 1346	corren
+T132	Concept 1347 1354	riesgos
+E133	Action:T133 Target:T132 Subject:T134
+R30	property-of Arg1:T135 Arg2:T132
+T138	Action 1416 1423	seguros
+T137	Concept 1370 1381	supervisión
+E138	Action:T138 Subject:T137
+T149	Action 1425 1433	Preparar
+T148	Concept 1437 1441	casa
+T147	Concept 1446 1456	protección
+T146	Concept 1457 1465	especial
+T145	Concept 1471 1476	niños
+T143	Action 1491 1497	ayudar
+E149	Action:T149 Target:T148
+R32	property-of Arg1:T146 Arg2:T147
+E143	Action:T143 Subject:E149
+T156	Concept 1529 1543	Estados Unidos
+T155	Concept 1504 1507	año
+T154	Concept 1508 1513	miles
+T153	Concept 1517 1525	personas
+T152	Action 1544 1549	muere
+T151	Concept 1556 1565	accidente
+T150	Concept 1566 1581	automovilístico
+E152	Action:T152 Target:T151 Subject:T153
+R34	property-of Arg1:T154 Arg2:T153
+T165	Concept 1583 1592	Seguridad
+T164	Action 1601 1610	significa
+T163	Concept 1617 1626	pendiente
+E164	Action:T164 Target:T163 Subject:T165
+T9	Concept 1702 1710	peatones
+T8	Action 1687 1695	atención
+T172	Action 1637 1645	Comparta
+T171	Concept 1649 1654	calle
+T170	Concept 1659 1669	bicicletas
+T169	Concept 1672 1677	motos
+E172	Action:T172 Target:T171
+R36	property-of Arg1:T170 Arg2:T171
+R37	property-of Arg1:T169 Arg2:T171
+E4	Action:T8 Target:T9
+T181	Action 1743 1749	poseen
+T179	Concept 1808 1821	adecuadamente
+T178	Concept 1719 1726	hogares
+T177	Concept 1750 1755	armas
+T176	Concept 1727 1742	estadounidenses
+T175	Action 1775 1781	causar
+T174	Concept 1782 1790	lesiones
+T173	Action 1800 1807	manejan
+E173	Action:T173 Target:T177 Target2:T179 Subject:T177
+E175	Action:T175 Target:T174 Subject:E173
+E181	Action:T181 Target:T177 Subject:T178
+R39	property-of Arg1:T176 Arg2:T178
+R40	part-of Arg1:T177 Arg2:T178
+T187	Concept 1832 1841	incendios
+T186	Concept 1855 1865	importante
+T184	Concept 1872 1881	seguridad
+T183	Concept 1893 1902	incendios
+T182	Action 1823 1831	Prevenir
+E182	Action:T182 Target:T187
+T192	Concept 1927 1934	cocinar
+T191	Action 1951 1956	causa
+T190	Concept 1964 1984	incendios domésticos
+T189	Concept 1964 1973	incendios
+T188	Concept 1911 1925	Estados Unidos
+E191	Action:T191 Target:T190 Subject:T192
+R41	is-a Arg1:T190 Arg2:T189
+T206	Action 2010 2019	presentan
+T205	Concept 2023 2027	gran
+T204	Concept 2028 2034	riesgo
+T200	Action 2051 2056	causa
+T199	Concept 2060 2080	muerte por incendios
+T198	Concept 1990 2001	cigarrillos
+T197	Concept 2060 2066	muerte
+E200	Action:T200 Target:T199 Subject:T198
+E206	Action:T206 Target:T204 Subject:T198
+R44	is-a Arg1:T199 Arg2:T197
+R45	property-of Arg1:T205 Arg2:T204
+T220	Action 2082 2091	Asegúrese
+T219	Action 2104 2110	cuenta
+T217	Concept 2134 2138	buen
+T216	Concept 2115 2130	alarmas de humo
+T215	Concept 2099 2103	casa
+T214	Concept 2115 2122	alarmas
+T213	Concept 2162 2166	piso
+T212	Concept 2177 2187	habitación
+T211	Concept 2139 2153	funcionamiento
+E219	Action:T219 Target:T215 Target2:T216
+E220	Action:T220 Target:E219
+R47	is-a Arg1:T216 Arg2:T214
+R48	part-of Arg1:T216 Arg2:T213
+R49	part-of Arg1:T216 Arg2:T212
+R50	part-of Arg1:T213 Arg2:T215
+R51	part-of Arg1:T212 Arg2:T215
+R52	property-of Arg1:T211 Arg2:T216
+R54	property-of Arg1:T217 Arg2:T211
+T225	Action 2197 2202	tenga
+T224	Concept 2203 2213	extintores
+T223	Concept 2215 2225	matafuegos
+T222	Concept 2235 2239	piso
+T221	Concept 2248 2254	cocina
+E225	Action:T225 Target:T224
+R55	same-as Arg1:T223 Arg2:T224
+R56	part-of Arg1:T224 Arg2:T222
+R57	part-of Arg1:T224 Arg2:T221
+T10	Action 2323 2327	usar
+T233	Action 2256 2261	Tenga
+T232	Action 2264 2273	practique
+T231	Concept 2277 2281	plan
+T230	Concept 2285 2295	evacuación
+T228	Action 2317 2322	pueda
+T227	Concept 2331 2337	puerta
+T226	Concept 2338 2347	principal
+E232	Action:T232 Target:T231
+E233	Action:T233 Target:T231
+R58	property-of Arg1:T230 Arg2:T231
+R59	property-of Arg1:T226 Arg2:T227
+E6	Action:T10 Target:T227
+E228	Action:T228 Target:E6
+T240	Concept 2352 2365	equipo médico
+T239	Action 2402 2414	diagnosticar
+T238	Action 2416 2421	curar
+T237	Action 2424 2430	tratar
+T236	Action 2453 2463	prevenirla
+T235	Concept 2379 2390	dispositivo
+T234	Concept 2435 2445	enfermedad
+E236	Action:T236 Target:T234 Subject:T240
+E237	Action:T237 Target:T234 Subject:T240
+E238	Action:T238 Target:T234 Subject:T240
+E239	Action:T239 Target:T234 Subject:T240
+R60	is-a Arg1:T240 Arg2:T235
+T258	Concept 2503 2510	medidor
+T257	Concept 2514 2521	glucosa
+T256	Concept 2528 2534	sangre
+T255	Concept 2567 2577	ventilador
+T252	Concept 2503 2534	medidor de glucosa en la sangre
+T251	Concept 2567 2586	ventilador mecánico
+T250	Concept 2475 2483	pequeños
+T249	Concept 2486 2493	simples
+T248	Concept 2538 2545	grandes
+T247	Concept 2548 2557	complejos
+R64	property-of Arg1:T249 Arg2:T252
+R65	property-of Arg1:T250 Arg2:T252
+R66	property-of Arg1:T247 Arg2:T251
+R67	property-of Arg1:T248 Arg2:T251
+R2	is-a Arg1:T251 Arg2:T255
+T11	Action 2600 2608	utilizar
+T263	Concept 2588 2593	Usted
+T262	Concept 2622 2626	casa
+T261	Concept 2632 2639	trabajo
+T260	Action 2651 2659	necesite
+T259	Concept 2670 2678	hospital
+E260	Action:T260 Target:T259 Subject:T263
+E7	Action:T11 Subject:T263
+T12	Action 2856 2862	vender
+T275	Concept 2683 2697	Estados Unidos
+T270	Concept 2881 2887	receta
+T269	Concept 2888 2894	médica
+T268	Action 2804 2811	aprobar
+T267	Concept 2702 2766	Administración de Alimentos y Medicamentos de los Estados Unidos
+T266	Concept 2768 2771	FDA
+T265	Concept 2822 2833	medicamento
+E268	Action:T268 Target:T265 Subject:T267
+R68	same-as Arg1:T266 Arg2:T267
+R70	property-of Arg1:T269 Arg2:T270
+E8	Action:T12 Target:T265
+T15	Action 3029 3034	tomar
+T14	Action 2963 2970	comprar
+T13	Concept 2937 2952	equipos médicos
+T287	Concept 2901 2906	usted
+T286	Concept 2908 2917	seguridad
+T285	Concept 2922 2934	medicamentos
+T282	Concept 2971 2980	medicinas
+T281	Action 2953 2962	significa
+T280	Concept 2985 2993	internet
+T279	Concept 3007 3016	farmacias
+T278	Concept 3017 3026	legítimas
+T277	Concept 3039 3048	medicinas
+T276	Concept 3049 3062	correctamente
+R71	property-of Arg1:T276 Arg2:T277
+R72	property-of Arg1:T278 Arg2:T279
+R3	property-of Arg1:T285 Arg2:T286
+R4	property-of Arg1:T13 Arg2:T286
+E9	Action:T14 Target:T282
+E10	Action:T15 Target:T277
+E281	Action:T281 Target:E9 Target2:E10 Subject:T286
+T294	Concept 3076 3080	agua
+T292	Concept 3127 3136	divertido
+T291	Concept 3092 3097	nadar
+T290	Concept 3099 3106	navegar
+T289	Concept 3109 3115	bucear
+T288	Concept 3064 3069	Jugar
+R73	is-a Arg1:T291 Arg2:T288
+R74	is-a Arg1:T290 Arg2:T288
+R75	is-a Arg1:T289 Arg2:T288
+R5	property-of Arg1:T292 Arg2:T288
+T298	Concept 3156 3165	peligroso
+T296	Concept 3167 3180	especialmente
+T295	Concept 3190 3195	niños
+T302	Concept 3203 3223	medidas de seguridad
+T301	Action 3239 3247	prevenir
+T300	Concept 3248 3256	lesiones
+T299	Concept 3259 3265	ahogos
+E301	Action:T301 Target:T300 Target2:T299 Subject:T302
+T312	Concept 3277 3285	deportes
+T311	Action 3286 3291	puede
+T310	Concept 3296 3305	divertido
+T309	Action 3321 3326	tiene
+T308	Concept 3327 3334	cuidado
+T307	Action 3343 3348	puede
+T306	Concept 3353 3362	peligroso
+E307	Action:T307 
+E309	Action:T309 Target:T308
+E311	Action:T311 Target:T310 Subject:T312
+T322	Action 3367 3372	tiene
+T321	Concept 3380 3386	lesión
+T320	Concept 3387 3393	previa
+T319	Concept 3405 3413	práctica
+T318	Concept 3420 3427	deporte
+T317	Action 3429 3438	asegúrese
+T316	Concept 3442 3453	recuperarse
+T315	Concept 3454 3467	completamente
+T314	Concept 3477 3485	comenzar
+T313	Concept 3489 3494	nuevo
+E317	Action:T317 Target:T316
+E322	Action:T322 Target:T321
+R77	property-of Arg1:T315 Arg2:T316
+R78	property-of Arg1:T313 Arg2:T314
+R79	property-of Arg1:T318 Arg2:T319
+T332	Action 3511 3518	proteja
+T330	Concept 3532 3538	cuerpo
+T329	Concept 3539 3548	lesionada
+T328	Concept 3556 3567	dispositivo
+T327	Concept 3568 3577	acojinado
+T326	Concept 3582 3589	aparato
+T325	Concept 3590 3600	ortopédico
+T324	Concept 3603 3609	equipo
+T323	Concept 3610 3618	especial
+E332	Action:T332 Target:T330
+R80	property-of Arg1:T323 Arg2:T324
+R81	property-of Arg1:T325 Arg2:T326
+R82	property-of Arg1:T327 Arg2:T328
+R83	property-of Arg1:T329 Arg2:T330
+T337	Action 3627 3635	comience
+T336	Concept 3636 3646	nuevamente
+T335	Action 3648 3654	hágalo
+T334	Concept 3655 3665	lentamente
+E335	Action:T335 
+E337	Action:T337 

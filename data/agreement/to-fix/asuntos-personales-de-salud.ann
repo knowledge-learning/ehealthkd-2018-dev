@@ -1,0 +1,171 @@
+T0	Concept 127 136	pacientes
+T1	Concept 97 120	descubrimientos médicos
+T2	Action 83 92	aplicarse
+T3	Action 55 62	prueban
+T4	Concept 25 50	estudios de investigación
+T5	Concept 4 20	ensayos clínicos
+T6	Concept-FAIL 71 75	bien
+T7	Concept-FAIL 97 112	descubrimientos
+E2	Action:T2 Target:T0 Subject:T1  
+E3	Action:T3   Target-FAIL:E2 Subject-FAIL:T5 Subject-FAIL2:T4
+R0	is-a Arg1:T5 Arg2:T4
+R1	is-a-FAIL Arg1:T1 Arg2:T7
+T8	Concept 160 169	preguntas
+T9	Concept 266 276	enfermedad
+T10	Action 255 261	tratar
+T11	Action 240 252	diagnosticar
+T12	Action 230 238	examinar
+T13	Action 220 228	prevenir
+T14	Concept 210 216	formas
+T15	Action 184 201	intenta encontrar
+T16	Action 151 159	responde
+T17	Concept 143 150	estudio
+T18	Concept-FAIL 170 181	científicas
+T19	Concept-FAIL 202 209	mejores
+T20	Concept-FAIL 202 216	mejores formas
+T21	Concept-FAIL 160 181	preguntas científicas
+E10	Action:T10 Target:T9   Subject-FAIL:T20
+E11	Action:T11 Target:T9   Subject-FAIL:T20
+E12	Action:T12 Target:T9   Subject-FAIL:T20
+E13	Action:T13 Target:T9   Subject-FAIL:T20
+E15	Action:T15  Subject:T17 Target-FAIL:T14 Target-FAIL2:T20 
+E16	Action:T16  Subject:T17 Target-FAIL:T8 Target-FAIL2:T21 
+R2	property-of-FAIL Arg1:T19 Arg2:T14
+R3	property-of-FAIL Arg1:T18 Arg2:T8
+R4	is-a-FAIL Arg1:T21 Arg2:T8
+R5	is-a-FAIL Arg1:T20 Arg2:T14
+T22	Concept 348 351	uno
+T23	Action 314 322	comparar
+T24	Concept 282 298	ensayos clínicos
+T25	Concept-FAIL 372 382	disponible
+T26	Concept-FAIL 338 343	nuevo
+T27	Concept-FAIL 326 337	tratamiento
+T28	Action-FAIL 307 313	pueden
+T29	Action-FAIL 362 371	encuentra
+T30	Concept-FAIL 326 343	tratamiento nuevo
+T31	Concept-FAIL 282 289	ensayos
+E23	Action:T23  Subject:T24 Target-FAIL:T27 Target-FAIL2:T30 Target-FAIL3:T22 
+E28	Action-FAIL:T28   Target-FAIL:E23 Subject-FAIL:T24
+E29	Action-FAIL:T29   Target-FAIL:T22 Subject-FAIL:T22
+R6	property-of-FAIL Arg1:T26 Arg2:T27
+R7	same-as-FAIL Arg1:T22 Arg2:T27
+R8	property-of-FAIL Arg1:T25 Arg2:T22
+R9	is-a-FAIL Arg1:T24 Arg2:T31
+T32	Action 445 453	llevarlo
+T33	Concept 425 439	plan de acción
+T34	Concept 413 422	protocolo
+T35	Concept 389 403	ensayo clínico
+T36	Concept-FAIL 425 429	plan
+T37	Action-FAIL 404 409	tiene
+T38	Concept-FAIL 389 395	ensayo
+E32	Action:T32   Target-FAIL:T35 Target-FAIL2:T34 
+E37	Action-FAIL:T37   Target-FAIL:T34 Subject-FAIL:T35
+R10	part-of-FAIL Arg1:T34 Arg2:T35
+R11	part-of-FAIL Arg1:T33 Arg2:T35
+R12	is-a-FAIL Arg1:T35 Arg2:T38
+R13	property-of-FAIL Arg1:T34 Arg2:T35
+R14	is-a-FAIL Arg1:T33 Arg2:T36
+R15	same-as-FAIL Arg1:T33 Arg2:T34
+R16	property-of-FAIL Arg1:T33 Arg2:T35
+T39	Concept 537 542	parte
+T40	Concept 500 507	estudio
+T41	Action 470 478	describe
+T42	Concept 465 469	plan
+T43	Concept-FAIL 558 567	necesaria
+T44	Concept-FAIL 547 554	estudio
+T45	Concept-FAIL 524 531	por qué
+T46	Concept-FAIL 509 513	cómo
+T47	Action-FAIL 489 493	hará
+E41	Action:T41  Subject:T42 Target-FAIL:E47 Target-FAIL2:T46 Target-FAIL3:T45 
+E47	Action-FAIL:T47
+R17	property-of-FAIL Arg1:T43 Arg2:T39
+R18	property-of-FAIL Arg1:T39 Arg2:T44
+R19	part-of-FAIL Arg1:T39 Arg2:T40
+R20	property-of-FAIL Arg1:T42 Arg2:T40
+T48	Action 629 639	participar
+T49	Concept 617 622	quién
+T50	Concept 600 606	reglas
+T51	Concept 574 581	estudio
+T52	Action-FAIL 623 628	puede
+T53	Concept-FAIL 592 599	propias
+T54	Action-FAIL 582 587	tiene
+E48	Action:T48   Target-FAIL:T51 Subject-FAIL:T49
+E52	Action-FAIL:T52   Target-FAIL:E48 Subject-FAIL:T49
+E54	Action-FAIL:T54   Target-FAIL:T50 Subject-FAIL:T51
+R21	part-of-FAIL Arg1:T50 Arg2:T51
+R22	property-of-FAIL Arg1:T53 Arg2:T50
+T55	Concept-FAIL 772 779	mujeres
+T56	Concept-FAIL 762 769	hombres
+T57	Action-FAIL 752 761	solicitan
+T58	Concept-FAIL 736 741	otros
+T59	Concept-FAIL 728 733	sanas
+T60	Concept-FAIL 719 727	personas
+T61	Action-FAIL 709 718	necesitan
+T62	Concept-FAIL 703 708	otros
+T63	Concept-FAIL 679 690	determinada
+T64	Concept-FAIL 691 701	enfermedad
+T65	Concept-FAIL 659 670	voluntarios
+T66	Action-FAIL 649 658	necesitan
+T67	Concept-FAIL 641 648	Algunos
+E57	Action-FAIL:T57   Target-FAIL:T56 Target-FAIL2:T55 Subject-FAIL:T58
+E61	Action-FAIL:T61   Target-FAIL:T60 Subject-FAIL:T62
+E66	Action-FAIL:T66   Target-FAIL:T65 Subject-FAIL:T67
+R23	property-of-FAIL Arg1:T64 Arg2:T65
+R24	property-of-FAIL Arg1:T63 Arg2:T64
+R25	property-of-FAIL Arg1:T59 Arg2:T60
+T68	Concept 894 910	ensayos clínicos
+T69	Action 872 879	aprueba
+T70	Action 860 869	supervisa
+T71	Action 852 858	revisa
+T72	Concept 847 850	IRB
+T73	Concept 784 817	Consejo Institucional de Revisión
+T74	Concept-FAIL 819 845	Institutional Review Board
+T75	Concept-FAIL 894 901	ensayos
+T76	Concept-FAIL 818 845	(Institutional Review Board
+E69	Action:T69 Target:T68   Subject-FAIL:T73 Subject-FAIL2:T72
+E70	Action:T70 Target:T68   Subject-FAIL:T73 Subject-FAIL2:T72
+E71	Action:T71 Target:T68   Subject-FAIL:T73 Subject-FAIL2:T72
+R26	same-as-FAIL Arg1:T74 Arg2:T73
+R27	same-as-FAIL Arg1:T72 Arg2:T73
+R28	same-as-FAIL Arg1:T72 Arg2:T76
+R29	same-as-FAIL Arg1:T76 Arg2:T73
+R30	same-as-FAIL Arg1:T73 Arg2:T72
+T77	Concept 915 918	IRB
+T78	Concept-FAIL 971 979	miembros
+T79	Concept-FAIL 958 968	estadistas
+T80	Concept-FAIL 925 956	comité independiente de médicos
+T81	Concept-FAIL 925 995	comité independiente de médicos, estadistas y miembros de la comunidad
+R31	is-a-FAIL Arg1:T77 Arg2:T80
+R32	is-a-FAIL Arg1:T77 Arg2:T79
+R33	is-a-FAIL Arg1:T77 Arg2:T78
+R34	is-a-FAIL Arg1:T77 Arg2:T81
+T82	Concept 1269 1285	gobierno federal
+T83	Action 1234 1244	financiado
+T84	Action 1217 1223	regula
+T85	Concept 1212 1215	FDA
+T86	Concept 1168 1210	Administración de Alimentos y Medicamentos
+T87	Concept 1147 1160	equipo médico
+T88	Concept 1123 1141	producto biológico
+T89	Concept 1110 1121	medicamento
+T90	Action 1096 1106	estudiando
+T91	Concept 1054 1087	Consejo Institucional de Revisión
+T92	Concept 1019 1034	estudio clínico
+T93	Concept 1000 1014	Estados Unidos
+T94	Action-FAIL 1247 1254	llevado
+T95	Action-FAIL 1035 1050	tiene que tener
+T96	Action-FAIL 1247 1261	llevado a cabo
+T97	Concept-FAIL 1054 1061	Consejo
+T98	Concept-FAIL 1054 1075	Consejo Institucional
+T99	Concept-FAIL 1019 1026	estudio
+E83	Action:T83 Target:T92 Subject:T82  
+E84	Action:T84 Target:T87   Subject-FAIL:T86 Subject-FAIL2:T85
+E90	Action:T90 Target:T89 Target2:T88 Subject:T92  
+E94	Action-FAIL:T94    Subject-FAIL:T82
+E95	Action-FAIL:T95   Target-FAIL:T91 Target-FAIL2:T87 Subject-FAIL:T92
+E96	Action-FAIL:T96   Target-FAIL:T92 Subject-FAIL:T82
+R35	same-as Arg1:T85 Arg2:T86
+R36	part-of-FAIL Arg1:T91 Arg2:T92
+R37	part-of-FAIL Arg1:T87 Arg2:T92
+R38	is-a-FAIL Arg1:T92 Arg2:T99
+R39	is-a-FAIL Arg1:T91 Arg2:T98
+R40	is-a-FAIL Arg1:T98 Arg2:T97

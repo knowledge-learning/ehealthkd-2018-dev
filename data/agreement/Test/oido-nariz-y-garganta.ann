@@ -1,0 +1,860 @@
+T0	Concept 106 114	personas
+T1	Concept 85 92	mayoría
+T2	Action 72 79	molesta
+T3	Concept 34 53	sistema inmunitario
+T4	Concept 19 27	reacción
+T5	Concept 4 11	alergia
+T6	Concept-FAIL 60 64	algo
+E2	Action:T2   Target-FAIL:T1 Target-FAIL2:T0 Subject-FAIL:T6 Subject-FAIL2:T5
+R0	is-a-FAIL Arg1:T5 Arg2:T4
+R1	property-of-FAIL Arg1:T1 Arg2:T0
+R2	property-of-FAIL Arg1:T4 Arg2:T3
+R3	same-as-FAIL Arg1:T4 Arg2:T5
+T7	Concept-FAIL 174 178	cosa
+T8	Concept-FAIL 151 160	sensibles
+T9	Concept-FAIL 131 139	alergias
+T10	Concept-FAIL 116 123	Quienes
+R4	part-of-FAIL Arg1:T9 Arg2:T10
+R5	property-of-FAIL Arg1:T8 Arg2:T10
+T11	Concept 228 236	gérmenes
+T12	Action 216 223	combate
+T13	Concept 196 215	sistema inmunitario
+T14	Concept-FAIL 180 191	Normalmente
+E12	Action:T12 Target:T11 Subject:T13  
+T15	Concept-FAIL 269 275	cuerpo
+T16	Concept-FAIL 244 262	sistema de defensa
+T17	Concept-FAIL 244 275	sistema de defensa de su cuerpo
+T18	Concept 347 359	falsa alarma
+T19	Action 332 340	responde
+T20	Concept 311 331	reacciones alérgicas
+T21	Concept-FAIL 296 303	mayoría
+T22	Concept-FAIL 311 321	reacciones
+E19	Action:T19 Target:T18   Subject-FAIL:T20
+R6	is-a-FAIL Arg1:T20 Arg2:T22
+T23	Concept 426 434	alergias
+T24	Concept 376 390	medio ambiente
+T25	Concept 365 370	genes
+T26	Concept-FAIL 415 418	rol
+T27	Action-FAIL 405 411	tienen
+E27	Action-FAIL:T27   Target-FAIL:T23 Subject-FAIL:T24 Subject-FAIL2:T25
+R7	property-of-FAIL Arg1:T26 Arg2:T24
+R8	property-of-FAIL Arg1:T26 Arg2:T25
+T28	Concept 549 558	hinchazón
+T29	Concept 562 566	asma
+T30	Concept 542 547	edema
+T31	Concept 529 540	sarpullidos
+T32	Concept 520 527	picazón
+T33	Concept 508 518	estornudos
+T34	Concept 492 506	goteos nasales
+T35	Concept 478 486	síntomas
+T36	Action 456 464	provocar
+T37	Concept 440 448	alergias
+E36	Action:T36 Target:T35 Subject:T37  
+R9	same-as Arg1:T28 Arg2:T30
+R10	is-a Arg1:T34 Arg2:T35
+R11	is-a Arg1:T33 Arg2:T35
+R12	is-a Arg1:T32 Arg2:T35
+R13	is-a Arg1:T31 Arg2:T35
+R14	is-a Arg1:T30 Arg2:T35
+R15	is-a Arg1:T29 Arg2:T35
+R16	is-a-FAIL Arg1:T28 Arg2:T35
+T38	Concept 596 603	severas
+T39	Concept 588 593	leves
+T40	Concept 572 580	alergias
+R17	property-of-FAIL Arg1:T39 Arg2:T40
+R18	property-of-FAIL Arg1:T38 Arg2:T40
+R19	is-a-FAIL Arg1:T39 Arg2:T40
+R20	is-a-FAIL Arg1:T38 Arg2:T40
+T41	Concept 659 664	fatal
+T42	Concept 633 643	anafilaxia
+T43	Concept 609 617	reacción
+T44	Concept 609 624	reacción severa
+T45	Action-FAIL 650 658	resultar
+E45	Action-FAIL:T45   Target-FAIL:T41 Subject-FAIL:T42
+R21	is-a Arg1:T44 Arg2:T43
+R22	is-a Arg1:T42 Arg2:T44
+R23	property-of-FAIL Arg1:T41 Arg2:T44
+T46	Concept 730 738	alergias
+T47	Action 713 725	diagnosticar
+T48	Concept 701 707	sangre
+T49	Concept 683 690	pruebas
+T50	Action 678 682	usan
+T51	Concept 670 677	médicos
+T52	Concept-FAIL 683 698	pruebas de piel
+T53	Concept-FAIL 694 698	piel
+E47	Action:T47 Target:T46   Subject-FAIL:T51 Subject-FAIL2:T49
+E50	Action:T50  Subject:T51 Target-FAIL:T52 Target-FAIL2:T49 
+R24	is-a-FAIL Arg1:T52 Arg2:T49
+R25	property-of-FAIL Arg1:T48 Arg2:T49
+R26	is-a-FAIL Arg1:T53 Arg2:T49
+R27	is-a-FAIL Arg1:T48 Arg2:T49
+T54	Concept 828 836	alergias
+T55	Action 817 823	causan
+T56	Concept 802 812	sustancias
+T57	Action 791 797	evitar
+T58	Concept 777 788	inyecciones
+T59	Concept 766 775	medicinas
+T60	Concept 744 756	tratamientos
+T61	Action-FAIL 757 765	incluyen
+E55	Action:T55 Target:T54 Subject:T56  
+E57	Action:T57 Target:T56 Subject:T60  
+E61	Action-FAIL:T61   Target-FAIL:T56 Subject-FAIL:T60
+R28	part-of-FAIL Arg1:T59 Arg2:T60
+R29	part-of-FAIL Arg1:T58 Arg2:T60
+R30	is-a-FAIL Arg1:T59 Arg2:T60
+R31	is-a-FAIL Arg1:T58 Arg2:T60
+T62	Concept 917 922	oreja
+T63	Action 891 894	usa
+T64	Concept 856 875	aparato electrónico
+T65	Concept 841 849	audífono
+T66	Concept-FAIL 904 910	dentro
+T67	Concept-FAIL 895 901	detrás
+T68	Concept-FAIL 876 883	pequeño
+T69	Concept-FAIL 856 863	aparato
+T70	Concept-FAIL 856 883	aparato electrónico pequeño
+E63	Action:T63   Target-FAIL:T62 Target-FAIL2:T65 Subject-FAIL:T65 Subject-FAIL2:T62
+R32	is-a-FAIL Arg1:T65 Arg2:T64
+R33	property-of-FAIL Arg1:T68 Arg2:T64
+R34	is-a-FAIL Arg1:T70 Arg2:T64
+R35	is-a-FAIL Arg1:T64 Arg2:T69
+R36	is-a-FAIL Arg1:T65 Arg2:T70
+T71	Concept-FAIL 951 955	alto
+T72	Concept-FAIL 936 942	sonido
+T73	Action-FAIL 924 928	Hace
+E73	Action-FAIL:T73   Target-FAIL:T72 
+R37	property-of-FAIL Arg1:T71 Arg2:T72
+T74	Action 994 998	oiga
+T75	Concept 1030 1038	ruidosos
+T76	Concept 988 993	gente
+T77	Action 975 980	hacer
+T78	Concept 960 968	audífono
+T79	Concept-FAIL 1008 1027	lugares silenciosos
+T80	Concept-FAIL 1016 1027	silenciosos
+T81	Concept-FAIL 1008 1015	lugares
+E74	Action:T74   Target-FAIL:T81 Subject-FAIL:T76
+E77	Action:T77  Subject:T78 Target-FAIL:T76 Target-FAIL2:E74 
+R38	part-of-FAIL Arg1:T80 Arg2:T81
+R39	part-of-FAIL Arg1:T75 Arg2:T81
+T82	Concept 1147 1159	oído interno
+T83	Concept 1123 1130	células
+T84	Concept 1123 1142	células sensoriales
+T85	Concept-FAIL 1081 1088	pérdida
+T86	Concept-FAIL 1111 1115	daño
+T87	Concept-FAIL 1081 1103	pérdida de la audición
+T88	Concept-FAIL 1063 1070	quienes
+T89	Action-FAIL 1054 1060	ayudan
+T90	Concept-FAIL 1044 1053	audífonos
+T91	Action-FAIL 1111 1115	daño
+T92	Action-FAIL 1081 1088	pérdida
+T93	Concept-FAIL 1147 1151	oído
+T94	Concept-FAIL 1095 1103	audición
+E89	Action-FAIL:T89   Target-FAIL:T88 Subject-FAIL:T90
+E91	Action-FAIL:T91   Target-FAIL:E92 Subject-FAIL:T84
+E92	Action-FAIL:T92   Target-FAIL:T94 
+R40	is-a Arg1:T84 Arg2:T83
+R41	property-of-FAIL Arg1:T87 Arg2:T88
+R42	is-a-FAIL Arg1:T87 Arg2:T85
+R43	part-of-FAIL Arg1:T82 Arg2:T93
+T95	Concept 1219 1224	ruido
+T96	Concept 1210 1214	edad
+T97	Concept 1198 1208	enfermedad
+T98	Concept-FAIL 1227 1244	algunas medicinas
+T99	Action-FAIL 1177 1184	ocurrir
+T100	Concept-FAIL 1166 1170	daño
+T101	Action-FAIL 1166 1170	daño
+T102	Concept-FAIL 1235 1244	medicinas
+E99	Action-FAIL:T99   Target-FAIL:T100 Subject-FAIL:T97 Subject-FAIL2:T96 Subject-FAIL3:T95 Subject-FAIL4:T98
+E101	Action-FAIL:T101    Subject-FAIL:T97 Subject-FAIL2:T96 Subject-FAIL3:T95 Subject-FAIL4:T102
+T103	Action-FAIL 1325 1328	usa
+T104	Concept-FAIL 1312 1321	audífonos
+T105	Action-FAIL 1285 1297	beneficiarse
+T106	Concept-FAIL 1264 1272	personas
+E103	Action-FAIL:T103   Target-FAIL:T104 Subject-FAIL:T106
+E105	Action-FAIL:T105   Target-FAIL:T104 Subject-FAIL:T106
+T107	Concept-FAIL 1388 1394	doctor
+T108	Concept-FAIL 1333 1338	usted
+T109	Action-FAIL 1376 1382	visite
+T110	Action-FAIL 1366 1374	ayudarle
+T111	Concept-FAIL 1351 1359	audífono
+E109	Action-FAIL:T109   Target-FAIL:T107 Target-FAIL2:T108 
+E110	Action-FAIL:T110   Target-FAIL:T108 Subject-FAIL:T111
+T112	Concept 1420 1429	audífonos
+T113	Concept-FAIL 1400 1410	diferentes
+T114	Concept-FAIL 1411 1415	tipo
+R44	property-of-FAIL Arg1:T113 Arg2:T112
+R45	property-of-FAIL Arg1:T114 Arg2:T112
+T115	Concept-FAIL 1506 1512	sonido
+T116	Action-FAIL 1494 1502	aumentan
+T117	Concept-FAIL 1480 1484	oído
+T118	Concept-FAIL 1464 1473	ubicación
+T119	Concept-FAIL 1453 1459	tamaño
+T120	Action-FAIL 1434 1445	diferencian
+E116	Action-FAIL:T116   Target-FAIL:T115 
+E120	Action-FAIL:T120   Target-FAIL:T119 Target-FAIL2:T118 
+T121	Concept 1608 1616	gravedad
+T122	Concept 1576 1592	pérdida auditiva
+T123	Action 1556 1563	depende
+T124	Concept 1539 1544	mejor
+T125	Concept 1517 1525	audífono
+T126	Concept-FAIL 1576 1583	pérdida
+T127	Concept-FAIL 1550 1555	usted
+T128	Action-FAIL 1530 1538	funcione
+T129	Concept-FAIL 1568 1572	tipo
+E123	Action:T123   Target-FAIL:T122 Target-FAIL2:T129 Target-FAIL3:T121 Subject-FAIL:T125
+E128	Action-FAIL:T128   Target-FAIL:T124 Subject-FAIL:T125
+R46	property-of Arg1:T121 Arg2:T122
+R47	is-a-FAIL Arg1:T122 Arg2:T126
+R48	property-of-FAIL Arg1:T124 Arg2:T125
+R49	property-of-FAIL Arg1:T129 Arg2:T122
+T130	Concept 1728 1732	agua
+T131	Concept 1717 1721	aire
+T132	Concept 1705 1712	presión
+T133	Concept 1667 1674	cambios
+T134	Concept 1667 1687	cambios barométricos
+T135	Concept 1621 1631	barotrauma
+T136	Action-FAIL 1653 1662	provocado
+T137	Concept-FAIL 1638 1652	daño al cuerpo
+T138	Concept-FAIL 1675 1687	barométricos
+T139	Concept-FAIL 1646 1652	cuerpo
+T140	Action-FAIL 1638 1642	daño
+E136	Action-FAIL:T136   Target-FAIL:T135 Subject-FAIL:T134
+E140	Action-FAIL:T140   Target-FAIL:T139 Subject-FAIL:T134
+R50	is-a Arg1:T134 Arg2:T133
+R51	is-a-FAIL Arg1:T135 Arg2:T137
+R52	part-of-FAIL Arg1:T132 Arg2:T131
+R53	part-of-FAIL Arg1:T132 Arg2:T130
+R54	same-as-FAIL Arg1:T135 Arg2:T134
+R55	property-of-FAIL Arg1:T132 Arg2:T131
+R56	property-of-FAIL Arg1:T132 Arg2:T130
+R57	same-as-FAIL Arg1:T138 Arg2:T132
+T141	Concept 1800 1817	cambio de altitud
+T142	Concept 1751 1761	barotrauma
+T143	Concept-FAIL 1771 1775	oído
+T144	Action-FAIL 1783 1792	producido
+T145	Concept-FAIL 1835 1840	dolor
+T146	Action-FAIL 1826 1834	provocar
+T147	Concept-FAIL 1800 1806	cambio
+E144	Action-FAIL:T144   Target-FAIL:T142 Subject-FAIL:T141
+E146	Action-FAIL:T146   Target-FAIL:T145 Subject-FAIL:T141
+R58	is-a-FAIL Arg1:T141 Arg2:T147
+T148	Action-FAIL 1868 1873	viaja
+T149	Action-FAIL 1915 1920	bucea
+T150	Concept-FAIL 1904 1912	montañas
+T151	Concept-FAIL 1890 1895	coche
+T152	Action-FAIL 1884 1886	va
+T153	Concept-FAIL 1877 1882	avión
+T154	Action-FAIL 1853 1860	suceder
+E148	Action-FAIL:T148
+E149	Action-FAIL:T149
+E152	Action-FAIL:T152
+E154	Action-FAIL:T154    Subject-FAIL:E148 Subject-FAIL2:E152 Subject-FAIL3:E149
+T155	Concept 2010 2016	cuerpo
+T156	Action 1995 2001	afecta
+T157	Concept 1977 1990	descompresión
+T158	Concept 1962 1972	enfermedad
+T159	Action 1952 1958	sufrir
+T160	Concept 1926 1936	buceadores
+E156	Action:T156 Target:T155   Subject-FAIL:T158 Subject-FAIL2:T157
+E159	Action:T159  Subject:T160 Target-FAIL:T158 Target-FAIL2:T157 
+R59	is-a-FAIL Arg1:T157 Arg2:T158
+T161	Concept 2077 2091	goma de mascar
+T162	Concept 2041 2051	barotrauma
+T163	Action-FAIL 2060 2067	incluye
+T164	Action-FAIL 2094 2102	bostezar
+T165	Concept-FAIL 2077 2081	goma
+T166	Action-FAIL 2068 2076	masticar
+T167	Concept-FAIL 2021 2032	tratamiento
+T168	Action-FAIL 2021 2032	tratamiento
+T169	Concept-FAIL 2094 2102	bostezar
+T170	Concept-FAIL 2041 2059	barotrauma de oído
+E163	Action-FAIL:T163   Target-FAIL:E166 Target-FAIL2:E164 Subject-FAIL:T167
+E164	Action-FAIL:T164
+E166	Action-FAIL:T166   Target-FAIL:T161 
+E168	Action-FAIL:T168   Target-FAIL:T170 Subject-FAIL:T161 Subject-FAIL2:T169
+R60	is-a-FAIL Arg1:T161 Arg2:T165
+R61	is-a-FAIL Arg1:T170 Arg2:T162
+T171	Action 2162 2168	ayudar
+T172	Concept 2135 2153	descongestionantes
+T173	Concept 2112 2124	medicamentos
+E171	Action:T171  Subject:T173  
+R62	is-a Arg1:T172 Arg2:T173
+T174	Concept-FAIL 2272 2287	cuerdas vocales
+T175	Concept-FAIL 2239 2246	laringe
+T176	Concept-FAIL 2229 2233	aire
+T177	Concept-FAIL 2216 2223	esófago
+T178	Action-FAIL 2197 2202	lleva
+T179	Concept-FAIL 2206 2212	comida
+T180	Concept-FAIL 2188 2192	tubo
+T181	Concept-FAIL 2173 2181	garganta
+E178	Action-FAIL:T178   Target-FAIL:T179 Target-FAIL2:T176 Subject-FAIL:T181
+R63	is-a-FAIL Arg1:T181 Arg2:T180
+R64	part-of-FAIL Arg1:T174 Arg2:T175
+T182	Concept 2329 2336	faringe
+T183	Concept 2308 2316	garganta
+R65	same-as-FAIL Arg1:T183 Arg2:T182
+R66	same-as-FAIL Arg1:T182 Arg2:T183
+T184	Concept 2353 2370	dolor de garganta
+T185	Concept-FAIL 2375 2381	varias
+T186	Concept-FAIL 2382 2389	razones
+T187	Concept-FAIL 2353 2358	dolor
+R67	is-a-FAIL Arg1:T184 Arg2:T187
+R68	property-of-FAIL Arg1:T185 Arg2:T186
+T188	Concept 2430 2435	gripe
+T189	Concept 2416 2423	resfrío
+T190	Concept-FAIL 2404 2409	causa
+R69	part-of-FAIL Arg1:T189 Arg2:T190
+R70	part-of-FAIL Arg1:T188 Arg2:T190
+T191	Action-FAIL 2452 2459	depende
+T192	Concept-FAIL 2466 2471	causa
+T193	Concept-FAIL 2440 2451	tratamiento
+E191	Action-FAIL:T191   Target-FAIL:T192 Subject-FAIL:T193
+T194	Concept 2545 2550	dolor
+T195	Action 2534 2541	aliviar
+T196	Concept 2519 2527	gárgaras
+T197	Concept 2503 2510	líquido
+T198	Concept 2480 2489	caramelos
+T199	Action-FAIL 2513 2518	hacer
+T200	Concept-FAIL 2497 2502	mucho
+T201	Action-FAIL 2491 2496	tomar
+T202	Action-FAIL 2473 2479	Chupar
+E195	Action:T195 Target:T194   Subject-FAIL:E202 Subject-FAIL2:E201 Subject-FAIL3:E199 Subject-FAIL4:T196 Subject-FAIL5:T197 Subject-FAIL6:T198
+E199	Action-FAIL:T199   Target-FAIL:T196 
+E201	Action-FAIL:T201   Target-FAIL:T197 
+E202	Action-FAIL:T202   Target-FAIL:T198 
+R71	property-of-FAIL Arg1:T200 Arg2:T197
+T203	Concept 2632 2640	aspirina
+T204	Action 2626 2631	tomar
+T205	Concept 2611 2616	niños
+T206	Action 2594 2600	ayudar
+T207	Concept 2552 2563	Analgésicos
+T208	Concept-FAIL 2567 2572	venta
+T209	Concept-FAIL 2567 2578	venta libre
+T210	Action-FAIL 2620 2625	deben
+E204	Action:T204 Target:T203   Subject-FAIL:T205
+E206	Action:T206  Subject:T207  
+E210	Action-FAIL:T210   Target-FAIL:E204 Subject-FAIL:T205
+R72	is-a-FAIL Arg1:T209 Arg2:T208
+R73	property-of-FAIL Arg1:T209 Arg2:T207
+R74	is-a-FAIL Arg1:T203 Arg2:T207
+T211	Concept 2673 2682	trastorno
+T212	Concept 2645 2655	enfermedad
+T213	Concept 2645 2666	enfermedad de Ménière
+T214	Concept-FAIL 2687 2699	oído interno
+T215	Concept-FAIL 2673 2699	trastorno del oído interno
+R75	is-a Arg1:T213 Arg2:T212
+R76	is-a-FAIL Arg1:T213 Arg2:T211
+R77	is-a-FAIL Arg1:T215 Arg2:T211
+R78	is-a-FAIL Arg1:T213 Arg2:T215
+T216	Concept 2868 2872	oído
+T217	Concept 2770 2778	tinnitus
+T218	Concept 2717 2722	mareo
+T219	Action 2707 2713	causar
+T220	Concept-FAIL 2856 2861	dolor
+T221	Concept-FAIL 2833 2842	sensación
+T222	Concept-FAIL 2833 2853	sensación de presión
+T223	Action-FAIL 2817 2827	desaparece
+T224	Action-FAIL 2807 2814	aparece
+T225	Concept-FAIL 2780 2787	pérdida
+T226	Concept-FAIL 2780 2802	pérdida de la audición
+T227	Concept-FAIL 2734 2750	sonido de rugido
+T228	Concept-FAIL 2734 2740	sonido
+T229	Concept-FAIL 2717 2729	mareo severo
+T230	Action-FAIL 2846 2853	presión
+T231	Action-FAIL 2856 2861	dolor
+T232	Concept-FAIL 2794 2802	audición
+T233	Action-FAIL 2780 2787	pérdida
+T234	Concept-FAIL 2734 2761	sonido de rugido en el oído
+E219	Action:T219   Target-FAIL:T229 Target-FAIL2:T226 Target-FAIL3:T218 Target-FAIL4:T217 Target-FAIL5:E233 Target-FAIL6:E231 Target-FAIL7:E230 Subject-FAIL:T227
+E223	Action-FAIL:T223   Target-FAIL:T226 
+E224	Action-FAIL:T224   Target-FAIL:T226 
+E230	Action-FAIL:T230   Target-FAIL:T216 
+E231	Action-FAIL:T231   Target-FAIL:T216 
+E233	Action-FAIL:T233   Target-FAIL:T232 
+R79	is-a-FAIL Arg1:T229 Arg2:T218
+R80	same-as-FAIL Arg1:T227 Arg2:T217
+R81	is-a-FAIL Arg1:T226 Arg2:T225
+R82	is-a-FAIL Arg1:T222 Arg2:T221
+R83	part-of-FAIL Arg1:T220 Arg2:T221
+R84	same-as-FAIL Arg1:T217 Arg2:T234
+T235	Concept-FAIL 2896 2900	oído
+T236	Action-FAIL 2880 2887	afectar
+E236	Action-FAIL:T236   Target-FAIL:T235 
+T237	Concept 2924 2931	sordera
+T238	Concept-FAIL 2909 2914	causa
+T239	Concept-FAIL 2909 2920	causa común
+R85	is-a-FAIL Arg1:T239 Arg2:T238
+T240	Concept 2967 2988	enfermedad de Ménière
+T241	Concept 2996 3003	ataques
+T242	Concept 2941 2949	personas
+T243	Concept-FAIL 2967 2977	enfermedad
+T244	Action-FAIL 2989 2995	tienen
+T245	Action-FAIL 2954 2960	sufren
+E244	Action-FAIL:T244   Target-FAIL:T241 Subject-FAIL:E245
+E245	Action-FAIL:T245   Target-FAIL:T240 Subject-FAIL:T242
+R86	property-of-FAIL Arg1:T241 Arg2:T242
+R87	is-a-FAIL Arg1:T240 Arg2:T243
+R88	property-of-FAIL Arg1:T240 Arg2:T242
+T246	Concept-FAIL 3131 3144	oído afectado
+T247	Concept-FAIL 3119 3124	dolor
+T248	Concept-FAIL 3109 3116	presión
+T249	Action-FAIL 3102 3108	sintió
+T250	Concept-FAIL 3091 3099	tinnitus
+T251	Action-FAIL 3081 3087	sufrió
+T252	Concept-FAIL 3073 3080	persona
+T253	Concept-FAIL 3056 3063	período
+T254	Concept-FAIL 3050 3063	corto período
+T255	Concept-FAIL 3030 3035	aviso
+T256	Action-FAIL 3018 3025	ocurrir
+E249	Action-FAIL:T249    Subject-FAIL:T252
+E251	Action-FAIL:T251    Subject-FAIL:T252
+E256	Action-FAIL:T256
+R89	is-a-FAIL Arg1:T254 Arg2:T253
+T257	Concept-FAIL 3178 3195	ataque de vértigo
+T258	Concept-FAIL 3178 3184	ataque
+T259	Action-FAIL 3163 3169	tienen
+T260	Concept-FAIL 3154 3162	personas
+E259	Action-FAIL:T259   Target-FAIL:T257 Subject-FAIL:T260
+R90	is-a-FAIL Arg1:T257 Arg2:T258
+T261	Concept-FAIL 3289 3297	personas
+T262	Concept 3447 3452	causa
+T263	Action 3436 3443	conocen
+T264	Concept 3413 3424	científicos
+E263	Action:T263 Target:T262 Subject:T264  
+T265	Concept 3631 3639	síntomas
+T266	Concept 3611 3624	examen físico
+T267	Concept 3611 3617	examen
+T268	Action 3595 3604	basándose
+T269	Action 3566 3578	diagnostican
+T270	Concept 3557 3565	doctores
+T271	Concept-FAIL 3584 3594	enfermedad
+T272	Concept-FAIL 3579 3583	esta
+E268	Action:T268 Target:T266 Target2:T265 Subject:T270  
+E269	Action:T269  Subject:T270 Target-FAIL:T271 Target-FAIL2:T272 
+R91	is-a Arg1:T266 Arg2:T267
+T273	Concept 3701 3709	audición
+T274	Action 3670 3678	examinar
+T275	Concept 3645 3663	prueba de audición
+T276	Concept 3645 3651	prueba
+T277	Action-FAIL 3684 3692	afectada
+E274	Action:T274 Target:T273 Subject:T275  
+E277	Action-FAIL:T277   Target-FAIL:T273 
+R92	is-a Arg1:T275 Arg2:T276
+T278	Concept 3827 3836	pastillas
+T279	Action 3776 3785	limitando
+T280	Concept 3789 3792	sal
+T281	Concept 3815 3825	diuréticos
+T282	Action 3807 3814	tomando
+T283	Concept 3748 3774	medicamentos para el mareo
+T284	Concept 3748 3760	medicamentos
+T285	Concept 3733 3743	enfermedad
+T286	Action 3720 3729	controlar
+T287	Concept-FAIL 3789 3804	sal en su dieta
+T288	Concept-FAIL 3799 3804	dieta
+T289	Concept-FAIL 3873 3881	líquidos
+T290	Concept-FAIL 3873 3893	líquidos adicionales
+T291	Concept-FAIL 3851 3857	cuerpo
+T292	Action-FAIL 3860 3868	eliminar
+T293	Action-FAIL 3841 3847	ayudan
+E279	Action:T279   Target-FAIL:T287 Target-FAIL2:T280 
+E282	Action:T282 Target:T281   
+E286	Action:T286 Target:T285 Subject:T283 Target-FAIL:E279 Target-FAIL2:E282 
+E292	Action-FAIL:T292   Target-FAIL:T290 
+E293	Action-FAIL:T293   Target-FAIL:E292 Subject-FAIL:T278
+R93	is-a-FAIL Arg1:T283 Arg2:T284
+R94	is-a-FAIL Arg1:T281 Arg2:T278
+R95	part-of-FAIL Arg1:T280 Arg2:T288
+T294	Concept 3954 3958	aire
+T295	Action 3946 3953	impulsa
+T296	Concept 3915 3922	aparato
+T297	Action 3899 3908	inserción
+T298	Concept-FAIL 3934 3941	externo
+T299	Concept-FAIL 3929 3933	oído
+T300	Action-FAIL 3979 3985	ayudar
+T301	Concept-FAIL 3929 3941	oído externo
+E295	Action:T295 Target:T294   Subject-FAIL:E297 Subject-FAIL2:T296
+E297	Action:T297 Target:T296   
+E300	Action-FAIL:T300    Subject-FAIL:E297
+R96	property-of-FAIL Arg1:T298 Arg2:T299
+T302	Concept 4021 4028	cirugía
+T303	Action 4012 4020	requerir
+T304	Concept 3991 3996	casos
+T305	Concept-FAIL 3997 4004	severos
+T306	Concept-FAIL 3991 4004	casos severos
+E303	Action:T303 Target:T302   Subject-FAIL:T304 Subject-FAIL2:T306
+R97	property-of-FAIL Arg1:T305 Arg2:T304
+R98	is-a-FAIL Arg1:T306 Arg2:T304
+T307	Concept 4079 4085	cuerpo
+T308	Concept 4033 4037	boca
+R99	part-of Arg1:T308 Arg2:T307
+T309	Action 4131 4143	dificultarle
+T310	Concept 4120 4124	boca
+T311	Action 4110 4116	afecte
+T312	Concept 4097 4105	problema
+T313	Action-FAIL 4165 4172	sonreír
+T314	Action-FAIL 4151 4156	beber
+T315	Action-FAIL 4144 4149	comer
+T316	Concept-FAIL 4165 4172	sonreír
+T317	Concept-FAIL 4151 4156	beber
+T318	Concept-FAIL 4144 4149	comer
+E309	Action:T309  Subject:T312 Target-FAIL:E315 Target-FAIL2:E314 Target-FAIL3:E313 Target-FAIL4:T318 Target-FAIL5:T317 Target-FAIL6:T316 
+E311	Action:T311 Target:T310 Subject:T312  
+E313	Action-FAIL:T313
+E314	Action-FAIL:T314
+E315	Action-FAIL:T315
+T319	Concept 4240 4248	problema
+T320	Concept 4196 4217	trastornos de la boca
+T321	Concept 4196 4206	trastornos
+T322	Action 4177 4188	tratamiento
+T323	Action-FAIL 4218 4223	varía
+T324	Action-FAIL 4224 4235	dependiendo
+E322	Action:T322 Target:T320   
+E323	Action-FAIL:T323   Target-FAIL:E322 Subject-FAIL:T319
+E324	Action-FAIL:T324   Target-FAIL:T319 Subject-FAIL:E322
+R100	is-a-FAIL Arg1:T320 Arg2:T321
+T325	Concept 4333 4344	hilo dental
+T326	Concept 4310 4319	frecuente
+T327	Concept 4300 4309	cepillado
+T328	Concept 4281 4287	limpia
+T329	Concept 4276 4280	boca
+T330	Action 4264 4272	mantener
+T331	Action-FAIL 4325 4328	uso
+E330	Action:T330 Target:T329   Subject-FAIL:T327 Subject-FAIL2:E331
+E331	Action-FAIL:T331   Target-FAIL:T325 
+R101	property-of Arg1:T328 Arg2:T329
+R102	property-of Arg1:T326 Arg2:T327
+T332	Concept 4402 4409	interno
+T333	Concept 4394 4399	medio
+T334	Concept 4385 4392	externo
+T335	Concept 4349 4353	oído
+R103	part-of Arg1:T332 Arg2:T335
+R104	part-of Arg1:T333 Arg2:T335
+R105	part-of Arg1:T334 Arg2:T335
+T336	Concept 4477 4489	oído externo
+T337	Action 4463 4469	entran
+T338	Concept 4449 4454	ondas
+T339	Concept-FAIL 4477 4481	oído
+T340	Concept-FAIL 4455 4462	sonoras
+T341	Concept-FAIL 4449 4462	ondas sonoras
+E337	Action:T337 Target:T336   Subject-FAIL:T338 Subject-FAIL2:T341
+R106	property-of-FAIL Arg1:T340 Arg2:T338
+R107	part-of-FAIL Arg1:T336 Arg2:T339
+R108	is-a-FAIL Arg1:T341 Arg2:T338
+T342	Concept 4535 4542	tímpano
+T343	Action 4525 4531	vibrar
+T344	Concept-FAIL 4501 4511	oído medio
+T345	Action-FAIL 4491 4497	Llegan
+E343	Action:T343 Target:T342   Subject-FAIL:E345
+E345	Action-FAIL:T345   Target-FAIL:T344 
+T346	Concept 4617 4625	osículos
+T347	Action 4563 4573	transmiten
+T348	Concept 4548 4559	vibraciones
+T349	Concept-FAIL 4591 4597	huesos
+T350	Concept-FAIL 4650 4660	oído medio
+E347	Action:T347 Target:T348   Subject-FAIL:T346
+R109	is-a-FAIL Arg1:T346 Arg2:T349
+R110	part-of-FAIL Arg1:T346 Arg2:T350
+T351	Concept 4711 4717	órgano
+T352	Concept 4694 4706	oído interno
+T353	Action 4678 4684	viajan
+T354	Concept 4666 4677	vibraciones
+T355	Concept-FAIL 4694 4698	oído
+T356	Concept-FAIL 4711 4728	órgano curvilíneo
+E353	Action:T353 Target:T352 Subject:T354  
+R111	part-of-FAIL Arg1:T352 Arg2:T355
+R112	is-a-FAIL Arg1:T352 Arg2:T351
+R113	is-a-FAIL Arg1:T356 Arg2:T351
+R114	is-a-FAIL Arg1:T352 Arg2:T356
+T357	Concept 4783 4791	impulsos
+T358	Action 4769 4778	transmite
+T359	Concept 4756 4768	oído interno
+T360	Concept-FAIL 4792 4801	nerviosos
+T361	Concept-FAIL 4756 4760	oído
+T362	Concept-FAIL 4811 4818	cerebro
+T363	Concept-FAIL 4783 4801	impulsos nerviosos
+E358	Action:T358  Subject:T359 Target-FAIL:T357 Target-FAIL2:T363 
+R115	part-of-FAIL Arg1:T359 Arg2:T361
+R116	property-of-FAIL Arg1:T360 Arg2:T357
+R117	is-a-FAIL Arg1:T363 Arg2:T357
+T364	Action-FAIL 4851 4858	sonidos
+T365	Action-FAIL 4835 4845	identifica
+T366	Concept-FAIL 4823 4830	cerebro
+E364	Action-FAIL:T364
+E365	Action-FAIL:T365
+T367	Action 4884 4892	controla
+T368	Concept 4896 4906	equilibrio
+T369	Concept 4863 4875	oído interno
+E367	Action:T367 Target:T368 Subject:T369  
+T370	Concept 4984 4991	sordera
+T371	Concept 4957 4981	problemas de la audición
+T372	Concept 4957 4966	problemas
+T373	Action-FAIL 4938 4956	pueden terminar en
+T374	Concept-FAIL 4916 4937	enfermedades del oído
+T375	Concept-FAIL 4916 4928	enfermedades
+T376	Action-FAIL 4945 4953	terminar
+T377	Action-FAIL 4916 4928	enfermedades
+T378	Concept-FAIL 4933 4937	oído
+E373	Action-FAIL:T373   Target-FAIL:T371 Target-FAIL2:T370 Subject-FAIL:T374
+E376	Action-FAIL:T376   Target-FAIL:T371 Target-FAIL2:T370 
+E377	Action-FAIL:T377   Target-FAIL:E376 Subject-FAIL:T378
+R118	is-a Arg1:T371 Arg2:T372
+R119	is-a-FAIL Arg1:T374 Arg2:T375
+T379	Concept 5053 5061	complejo
+T380	Concept 5043 5050	pequeño
+T381	Concept 5031 5042	electrónico
+T382	Concept 5019 5030	dispositivo
+T383	Concept 4996 5012	implante coclear
+T384	Concept 4996 5004	implante
+T385	Concept-FAIL 5114 5122	audición
+T386	Action-FAIL 5081 5093	proporcionar
+T387	Action-FAIL 5072 5078	ayudar
+E386	Action-FAIL:T386   Target-FAIL:T385 
+E387	Action-FAIL:T387   Target-FAIL:E386 Subject-FAIL:T383
+R120	is-a Arg1:T383 Arg2:T384
+R121	property-of Arg1:T380 Arg2:T382
+R122	property-of Arg1:T381 Arg2:T382
+R123	property-of Arg1:T379 Arg2:T382
+R124	is-a Arg1:T383 Arg2:T382
+T388	Action 5214 5226	beneficiarse
+T389	Concept 5124 5132	Personas
+T390	Concept 5177 5183	graves
+T391	Concept 5184 5196	dificultades
+T392	Concept 5157 5163	sordas
+T393	Concept-FAIL 5197 5206	auditivas
+T394	Action-FAIL 5170 5176	tengan
+T395	Action-FAIL 5137 5141	sean
+T396	Action-FAIL 5234 5237	uso
+T397	Concept-FAIL 5184 5206	dificultades auditivas
+E388	Action:T388   Target-FAIL:E396 Subject-FAIL:T389 Subject-FAIL2:E395 Subject-FAIL3:E394
+E394	Action-FAIL:T394   Target-FAIL:T397 Subject-FAIL:T389
+E395	Action-FAIL:T395   Target-FAIL:T392 Subject-FAIL:T389
+E396	Action-FAIL:T396
+R125	property-of-FAIL Arg1:T390 Arg2:T391
+R126	property-of-FAIL Arg1:T393 Arg2:T391
+R127	property-of-FAIL Arg1:T392 Arg2:T389
+R128	is-a-FAIL Arg1:T397 Arg2:T391
+R129	property-of-FAIL Arg1:T390 Arg2:T397
+T398	Concept 5434 5440	normal
+T399	Concept 5425 5433	audición
+T400	Action 5411 5421	restablece
+T401	Concept 5399 5407	implante
+E400	Action:T400 Target:T399 Subject:T401  
+R130	property-of Arg1:T398 Arg2:T399
+T402	Concept 5467 5474	persona
+T403	Action-FAIL 5448 5460	proporcionar
+T404	Action-FAIL 5485 5496	comprensión
+T405	Concept-FAIL 5501 5506	habla
+T406	Concept-FAIL 5475 5480	sorda
+T407	Concept-FAIL 5467 5480	persona sorda
+E403	Action-FAIL:T403    Subject-FAIL:T402
+E404	Action-FAIL:T404   Target-FAIL:T405 Subject-FAIL:T402
+R131	property-of-FAIL Arg1:T406 Arg2:T402
+R132	is-a-FAIL Arg1:T407 Arg2:T402
+T408	Action 5540 5552	beneficiarse
+T409	Concept 5525 5532	adultos
+T410	Concept 5514 5519	niños
+T411	Concept-FAIL 5556 5561	ellos
+E408	Action:T408  Subject:T409 Subject2:T410 Target-FAIL:T411 
+T412	Concept 5648 5653	polvo
+T413	Concept 5674 5684	irritantes
+T414	Concept 5659 5667	gérmenes
+T415	Action 5634 5644	eliminando
+T416	Action 5625 5632	respira
+T417	Concept 5616 5620	aire
+T418	Action 5606 5612	filtra
+T419	Concept-FAIL 5601 5605	Esta
+E415	Action:T415 Target:T412 Target2:T414 Target3:T413   
+E416	Action:T416 Target:T417   
+E418	Action:T418   Target-FAIL:T417 Target-FAIL2:E416 Subject-FAIL:T419
+T420	Action 5779 5787	resequen
+T421	Concept 5734 5742	pulmones
+T422	Action 5719 5725	evitar
+T423	Concept 5709 5713	aire
+T424	Action 5697 5705	humedece
+T425	Action 5686 5694	Calienta
+T426	Action-FAIL 5759 5767	conducen
+T427	Concept-FAIL 5749 5754	tubos
+E420	Action:T420 Target:T421   
+E422	Action:T422 Target:E420   
+E424	Action:T424 Target:T423   
+E425	Action:T425 Target:T423   
+E426	Action-FAIL:T426   Target-FAIL:T421 Subject-FAIL:T427
+T428	Concept 5847 5865	sentido del olfato
+T429	Concept 5847 5854	sentido
+T430	Action 5837 5843	ayudan
+T431	Concept 5815 5832	células nerviosas
+T432	Concept 5815 5822	células
+T433	Action 5806 5814	contiene
+T434	Concept 5792 5797	nariz
+T435	Concept-FAIL 5823 5832	nerviosas
+E430	Action:T430 Target:T428 Subject:T431  
+E433	Action:T433  Subject:T434 Target-FAIL:T431 Target-FAIL2:E430 
+R133	is-a Arg1:T431 Arg2:T432
+R134	property-of-FAIL Arg1:T435 Arg2:T432
+R135	is-a-FAIL Arg1:T428 Arg2:T429
+T436	Action-FAIL 5927 5933	sufrir
+T437	Concept-FAIL 5914 5920	cuerpo
+T438	Action-FAIL 5874 5880	existe
+T439	Concept-FAIL 5884 5904	problema en la nariz
+T440	Concept-FAIL 5884 5892	problema
+E436	Action-FAIL:T436   Target-FAIL:T437 Subject-FAIL:T437
+E438	Action-FAIL:T438   Target-FAIL:T439 
+R136	is-a-FAIL Arg1:T439 Arg2:T440
+T441	Concept 6015 6020	sueño
+T442	Concept 5999 6010	respiración
+T443	Action 5985 5995	dificultar
+T444	Concept 5971 5978	resfrío
+T445	Concept 5951 5956	nariz
+T446	Concept-FAIL 6036 6043	general
+T447	Concept-FAIL 6026 6035	bienestar
+T448	Concept-FAIL 5957 5963	tapada
+T449	Concept-FAIL 6026 6043	bienestar general
+T450	Action-FAIL 5957 5963	tapada
+E443	Action:T443 Target:T442 Target2:T441  Target-FAIL:T447 Target-FAIL2:T449 Subject-FAIL:T444 Subject-FAIL2:T444 Subject-FAIL3:T444
+E450	Action-FAIL:T450   Target-FAIL:T445 Subject-FAIL:T444 Subject-FAIL2:E443
+R137	property-of-FAIL Arg1:T448 Arg2:T445
+R138	property-of-FAIL Arg1:T446 Arg2:T447
+T451	Concept-FAIL 6078 6087	problemas
+T452	Concept-FAIL 6106 6111	nariz
+T453	Action-FAIL 6095 6102	afectar
+E453	Action-FAIL:T453   Target-FAIL:T452 Subject-FAIL:T451
+T454	Concept 6145 6152	árboles
+T455	Concept 6154 6161	malezas
+T456	Concept 6164 6169	pasto
+T457	Concept 6178 6186	pequeños
+T458	Concept 6187 6202	granos de polen
+T459	Concept 6187 6193	granos
+T460	Action 6170 6177	liberan
+T461	Concept-FAIL 6197 6202	polen
+T462	Concept-FAIL 6138 6143	otoño
+T463	Concept-FAIL 6129 6135	verano
+T464	Concept-FAIL 6118 6127	primavera
+E460	Action:T460 Target:T458 Target2:T458 Target3:T458 Subject:T456 Subject2:T455 Subject3:T454  
+R139	is-a Arg1:T458 Arg2:T459
+R140	property-of Arg1:T457 Arg2:T458
+T465	Concept-FAIL 6256 6264	garganta
+T466	Concept-FAIL 6248 6253	nariz
+T467	Action-FAIL 6233 6241	terminan
+T468	Concept-FAIL 6227 6232	ellos
+E467	Action-FAIL:T467   Target-FAIL:T466 Target-FAIL2:T465 Subject-FAIL:T468
+T469	Concept 6313 6329	rinitis alérgica
+T470	Concept 6297 6304	alergia
+T471	Concept-FAIL 6313 6320	rinitis
+T472	Concept-FAIL 6266 6270	Esto
+T473	Action-FAIL 6277 6285	provocar
+E473	Action-FAIL:T473   Target-FAIL:T469 Subject-FAIL:T472
+R141	is-a Arg1:T469 Arg2:T470
+R142	is-a-FAIL Arg1:T469 Arg2:T471
+T474	Concept 6419 6427	síntomas
+T475	Concept 6375 6391	rinitis alérgica
+T476	Action 6359 6371	diagnosticar
+T477	Concept 6334 6352	proveedor de salud
+T478	Concept-FAIL 6406 6412	físico
+T479	Concept-FAIL 6399 6405	examen
+T480	Concept-FAIL 6399 6412	examen físico
+E476	Action:T476 Target:T475 Subject:T477  
+R143	property-of-FAIL Arg1:T478 Arg2:T479
+R144	property-of-FAIL Arg1:T474 Arg2:T475
+T481	Concept-FAIL 6449 6466	pruebas de sangre
+T482	Concept-FAIL 6449 6456	pruebas
+R145	is-a-FAIL Arg1:T481 Arg2:T482
+T483	Concept 6532 6540	síntomas
+T484	Action 6520 6527	aliviar
+T485	Concept 6498 6512	sprays nasales
+T486	Concept 6486 6495	medicinas
+T487	Concept-FAIL 6498 6504	sprays
+E484	Action:T484 Target:T483 Target2:T483 Subject:T485 Subject2:T486  
+R146	is-a-FAIL Arg1:T485 Arg2:T487
+T488	Concept-FAIL 6611 6620	destilada
+T489	Concept-FAIL 6606 6610	agua
+T490	Action-FAIL 6601 6605	usar
+T491	Action-FAIL 6556 6563	hacerse
+T492	Concept-FAIL 6564 6581	enjuagues nasales
+E490	Action-FAIL:T490
+E491	Action-FAIL:T491   Target-FAIL:T492 
+R147	property-of-FAIL Arg1:T488 Arg2:T489
+T493	Concept 6649 6676	inyecciones para la alergia
+T494	Action-FAIL 6698 6706	sensible
+T495	Concept-FAIL 6726 6732	alivio
+T496	Action-FAIL 6718 6725	brindar
+T497	Concept-FAIL 6710 6715	polen
+T498	Concept-FAIL 6649 6660	inyecciones
+E494	Action-FAIL:T494   Target-FAIL:T497 
+E496	Action-FAIL:T496   Target-FAIL:T495 Subject-FAIL:T493
+R148	is-a-FAIL Arg1:T493 Arg2:T498
+T499	Concept 6865 6873	máquinas
+T500	Concept 6839 6858	podadoras de césped
+T501	Concept 6822 6828	radios
+T502	Concept 6804 6815	televisores
+T503	Action 6757 6761	está
+T504	Concept 6751 6756	ruido
+T505	Concept-FAIL 6874 6891	lavadoras de ropa
+T506	Concept-FAIL 6865 6891	máquinas lavadoras de ropa
+E503	Action:T503 Target:T502 Target2:T500 Subject:T504 Target-FAIL:T505 Target-FAIL2:T501 Target-FAIL3:T506 Subject-FAIL:T501
+R149	is-a-FAIL Arg1:T505 Arg2:T499
+R150	is-a-FAIL Arg1:T506 Arg2:T499
+T507	Concept-FAIL 6967 6975	audición
+T508	Action-FAIL 6956 6963	afectan
+T509	Action-FAIL 6922 6930	escuchan
+T510	Concept-FAIL 6941 6948	seguros
+T511	Concept-FAIL 6933 6940	niveles
+E508	Action-FAIL:T508   Target-FAIL:T507 
+E509	Action-FAIL:T509   Target-FAIL:E508 Subject-FAIL:T511
+R151	property-of-FAIL Arg1:T510 Arg2:T511
+T512	Action 7055 7062	dañinos
+T513	Concept 6986 6993	sonidos
+T514	Concept-FAIL 6986 7009	sonidos demasiado altos
+T515	Concept-FAIL 6994 7009	demasiado altos
+T516	Concept-FAIL 7004 7009	altos
+E512	Action:T512   Target-FAIL:T514 Subject-FAIL:T513
+R152	is-a-FAIL Arg1:T515 Arg2:T513
+R153	property-of-FAIL Arg1:T516 Arg2:T513
+T517	Concept 7149 7157	audición
+T518	Action 7138 7145	pérdida
+T519	Concept 7116 7128	oído interno
+T520	Concept 7090 7101	estructuras
+T521	Action 7077 7085	lastimar
+T522	Concept-FAIL 7173 7178	ruido
+T523	Action-FAIL 7158 7165	causada
+T524	Concept-FAIL 7102 7111	sensibles
+T525	Concept-FAIL 7064 7069	Estos
+E518	Action:T518 Target:T517   Subject-FAIL:T525
+E521	Action:T521 Target:T520   Subject-FAIL:T525
+E523	Action-FAIL:T523   Target-FAIL:E518 Subject-FAIL:T522
+R154	part-of Arg1:T520 Arg2:T519
+R155	property-of-FAIL Arg1:T524 Arg2:T520
+T526	Concept-FAIL 7255 7260	ruido
+T527	Concept-FAIL 7236 7260	niveles nocivos de ruido
+T528	Concept-FAIL 7236 7251	niveles nocivos
+T529	Action-FAIL 7224 7233	expuestos
+E529	Action-FAIL:T529   Target-FAIL:T527 
+R156	property-of-FAIL Arg1:T528 Arg2:T526
+T530	Concept 7572 7592	zumbido en los oídos
+T531	Concept 7534 7542	tinnitus
+T532	Concept-FAIL 7572 7579	zumbido
+R157	same-as-FAIL Arg1:T531 Arg2:T530
+R158	is-a-FAIL Arg1:T530 Arg2:T532
+R159	same-as-FAIL Arg1:T530 Arg2:T531
+T533	Concept-FAIL 7648 7655	zumbido
+T534	Concept-FAIL 7638 7645	silbido
+T535	Concept-FAIL 7629 7636	cliqueo
+T536	Concept-FAIL 7619 7624	rumor
+T537	Action-FAIL 7873 7879	dormir
+T538	Action-FAIL 7854 7862	trabajar
+T539	Action-FAIL 7849 7852	oír
+T540	Action-FAIL 7833 7843	dificultad
+T541	Concept-FAIL 7813 7819	severo
+T542	Concept-FAIL 7804 7812	tinnitus
+E537	Action-FAIL:T537
+E538	Action-FAIL:T538
+E539	Action-FAIL:T539
+E540	Action-FAIL:T540   Target-FAIL:E538 Target-FAIL2:E537 Target-FAIL3:E539 Subject-FAIL:T542 Subject-FAIL2:T542 Subject-FAIL3:T542
+R160	is-a-FAIL Arg1:T541 Arg2:T542
+T543	Concept-FAIL 7910 7915	causa
+T544	Concept-FAIL 7884 7895	tratamiento
+T545	Action-FAIL 7896 7903	depende
+E545	Action-FAIL:T545   Target-FAIL:T543 Subject-FAIL:T544
+T546	Concept-FAIL 7992 8001	medicinas
+T547	Concept-FAIL 7952 7964	dispositivos
+T548	Concept-FAIL 7941 7950	audífonos
+T549	Action-FAIL 7923 7930	incluir
+E549	Action-FAIL:T549   Target-FAIL:T548 Target-FAIL2:T547 Target-FAIL3:T546 
