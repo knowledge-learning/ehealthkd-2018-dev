@@ -22,11 +22,11 @@ T14	Concept 216 221	mujer
 T13	Action 241 250	intentado
 T11	Concept 112 124	Infertilidad
 T10	Concept 171 177	hombre
-E15	Action:T15 Target:T14 
+E15	Action:T15 Target:T14
 E17	Action:T17 Target:T16 Target2:E15 Subject:T10
 E18	Action:T18 Target:T20 Subject:T19
 R3	is-a Arg1:T11 Arg2:T20
-E13	Action:T13 Target:E15 
+E13	Action:T13 Target:E15
 T23	Concept 312 324	infertilidad
 T22	Concept 335 343	problema
 T21	Concept 351 357	hombre
@@ -39,8 +39,8 @@ T31	Action 434 442	consulte
 T30	Concept 448 454	médico
 T29	Concept 424 432	infértil
 T28	Action 408 416	sospecha
-E28	Action:T28 Target:T29 
-E31	Action:T31 Target:T30 
+E28	Action:T28 Target:T29
+E31	Action:T31 Target:T30
 T35	Concept 464 472	exámenes
 T34	Action 484 494	determinar
 T33	Concept 513 537	problema de infertilidad
@@ -58,7 +58,7 @@ T51	Action 742 747	tener
 T50	Concept 748 753	bebés
 T48	Concept 701 708	parejas
 T47	Action 709 717	tratadas
-E47	Action:T47 Target:T48 
+E47	Action:T47 Target:T48
 E51	Action:T51 Target:T50 Subject:T48
 T58	Concept 787 795	sexuales
 T56	Concept 777 786	problemas
@@ -71,7 +71,7 @@ T61	Concept 803 812	problemas
 T60	Action 820 828	haciendo
 T59	Concept 833 840	comunes
 E60	Action:T60 Target:T59 Subject:T61
-E62	Action:T62 Target:E60 
+E62	Action:T62 Target:E60
 T70	Concept 924 935	emocionales
 T67	Concept 868 874	estrés
 T66	Concept 883 893	enfermedad
@@ -95,9 +95,9 @@ T76	Concept 1084 1092	angustia
 T75	Action 1076 1083	generan
 T72	Concept 1022 1027	común
 T71	Action 1050 1055	duran
-E71	Action:T71  Subject:T78 Subject2:T77
+E71	Action:T71 Subject:T78 Subject2:T77
 E75	Action:T75 Target:T76 Subject:T78
-E81	Action:T81 Target:T79 
+E81	Action:T81 Target:T79
 R24	is-a Arg1:T83 Arg2:T84
 R25	property-of Arg1:T72 Arg2:T84
 R26	is-a Arg1:T79 Arg2:T80
@@ -146,6 +146,6 @@ T113	Concept 1544 1551	Pruebas
 T112	Action 1574 1584	determinar
 T111	Concept 1585 1597	enfermedades
 E112	Action:T112 Target:T111 Subject:T114
-E118	Action:T118 Target:T111 
+E118	Action:T118 Target:T111
 R37	is-a Arg1:T114 Arg2:T113
 R38	property-of Arg1:T115 Arg2:T111

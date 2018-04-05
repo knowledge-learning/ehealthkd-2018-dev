@@ -12,7 +12,6 @@ E8	Action:T8 Target:T7 Subject:T10
 R2	is-a Arg1:T10 Arg2:T9
 R3	is-a Arg1:T7 Arg2:T6
 T22	Concept 158 178	ayuda con los gastos
-T21	Concept 183 201	no están cubiertos
 T20	Concept 172 178	gastos
 T19	Action 192 201	cubiertos
 T18	Action 149 157	necesita
@@ -30,7 +29,6 @@ E19	Action:T19 Target:T20
 R4	is-a Arg1:T17 Arg2:T16
 R5	is-a Arg1:T14 Arg2:T13
 R6	is-a Arg1:T22 Arg2:T11
-R7	property-of Arg1:T21 Arg2:T22
 T27	Action 312 318	ayudar
 T26	Concept 271 304	organizaciones sin fines de lucro
 T25	Concept 271 285	organizaciones
@@ -60,9 +58,9 @@ R13	is-a Arg1:T37 Arg2:T30
 R14	part-of Arg1:T37 Arg2:T36
 R15	part-of Arg1:T37 Arg2:T35
 E34	Action:T34 Target:T28 Target2:E38 Subject:T32 Subject2:T30
-T50	Concept 522 540	tipos de familias.
+T50	Concept 531 539	familias
 T47	Action 507 514	Existen
-E47	Action:T47 Subject:T50
+E47	Action:T47 Subject:T3
 T53	Concept 556 561	padre
 T52	Concept 564 569	madre
 T51	Action 549 555	tienen
@@ -93,8 +91,8 @@ T66	Concept 765 771	grupos
 E68	Action:T68 Target:T70 Target2:T69 Subject:T71
 R26	is-a Arg1:T67 Arg2:T66
 R27	is-a Arg1:T71 Arg2:T67
-T74	Action 837 846	Deben ser
-T73	Concept 851 874	fuente de apoyo y amor.
+T74	Action 843 846	ser
+T73	Concept 851 857	fuente
 E74	Action:T74 Target:T73
 T78	Concept 906 919	vida familiar
 T77	Concept 879 889	conflictos
@@ -109,7 +107,7 @@ T84	Concept 989 1003	discapacidades
 T83	Concept 1005 1015	adicciones
 T82	Concept 1066 1085	problemas maritales
 T81	Concept 1066 1075	problemas
-E87	Action:T87 Target:T86
+E87	Action:T87 Target:T86 Subject:T42
 R31	is-a Arg1:T82 Arg2:T81
 R32	is-a Arg1:T90 Arg2:T91
 R33	is-a Arg1:T85 Arg2:T86
@@ -224,7 +222,7 @@ T169	Concept 2050 2075	profesionales de la salud
 T168	Action 2078 2084	evitar
 T167	Concept 2085 2096	confusiones
 E168	Action:T168 Target:T167
-E173	Action:T173 Target:T172 Target2:T171 Target3:T170 Target4:T169
+E173	Action:T173 Target2:T171 Target3:T170 Target4:T169 Subject:T172
 T182	Concept 2111 2121	testamento
 T181	Action 2130 2136	indica
 T180	Concept 2141 2153	tratamientos
@@ -233,8 +231,8 @@ T178	Concept 2192 2202	enfermedad
 T177	Concept 2203 2209	mortal
 T176	Concept 2235 2248	inconsciencia
 T175	Concept 2249 2259	permanente
-E179	Action:T179 Target:T180
-E181	Action:T181 Target:E179 Subject:T182
+E179	Action:T179 Target:T180 Subject:T46
+E181	Action:T181 Target:E179 Subject:T45
 R69	property-of Arg1:T177 Arg2:T178
 R70	property-of Arg1:T175 Arg2:T176
 T187	Concept 2261 2266	Usted
@@ -259,11 +257,10 @@ R73	is-a Arg1:T194 Arg2:T192
 R74	property-of Arg1:T188 Arg2:T189
 R17	is-a Arg1:T1 Arg2:T194
 R18	is-a Arg1:T1 Arg2:T192
-T2	Action 2484 2489	tomar
 T204	Concept 2466 2471	usted
 T203	Action 2484 2489	tomar
 T202	Concept 2494 2504	decisiones
-T201	Action 2551 2556	pueda
+T201	Action 2557 2564	hacerlo
 T200	Concept 2542 2547	usted
 T199	Concept 2431 2440	apoderado
 T198	Concept 2448 2455	persona
@@ -275,8 +272,7 @@ E203	Action:T203 Target:T202 Subject:T199
 R75	is-a Arg1:T199 Arg2:T198
 R76	property-of Arg1:T195 Arg2:T196
 R77	property-of Arg1:T202 Arg2:T196
-E1	Action:T2 Target:T202
-E201	Action:T201 Target:E1 Subject:T200
+E201	Action:T201 Subject:T200 Target:E203
 T212	Concept 2618 2629	actividades
 T210	Concept 2618 2640	actividades cotidianas
 T209	Concept 2570 2584	discapacidades
@@ -287,12 +283,11 @@ E207	Action:T207 Target:T210
 E208	Action:T208 Target:E207 Subject:T209
 R78	property-of Arg1:T206 Arg2:T210
 T216	Action 2658 2665	limitar
-T215	Concept 2666 2684	lo que puede hacer
+T215	Concept 2679 2684	hacer
 T214	Concept 2685 2691	física
 T213	Concept 2694 2705	mentalmente
 E216	Action:T216 Target:T215
 R81	property-of Arg1:T213 Arg2:T215
-R82	property-of Arg1:T214 Arg2:T215
 T221	Action 2750 2752	es
 T220	Concept 2707 2719	Discapacidad
 T219	Concept 2733 2744	incapacidad
@@ -308,51 +303,49 @@ T228	Concept 2879 2884	plena
 T226	Action 2821 2829	trabajar
 T225	Action 2831 2836	jugar
 T224	Action 2838 2846	aprender
-T223	Concept 2787 2814	personas con discapacidades
+T223	Concept 2800 2814	discapacidades
 T222	Concept 2787 2795	personas
-E224	Action:T224 Subject:T223
-E225	Action:T225 Subject:T223
-E226	Action:T226 Subject:T223
-E231	Action:T231 Target:T230 Subject:T223
-R83	is-a Arg1:T223 Arg2:T222
+E224	Action:T224 Subject:T222
+E225	Action:T225 Subject:T222
+E226	Action:T226 Subject:T222
+E231	Action:T231 Target:T230 Subject:T222
+R83	property-of Arg1:T223 Arg2:T222
 R84	property-of Arg1:T229 Arg2:T230
 R85	property-of Arg1:T228 Arg2:T230
-T238	Concept 2911 2943	aparatos para movilidad asistida
+T238	Concept 2925 2943	movilidad asistida
 T237	Concept 2949 2971	tecnología asistencial
-T236	Action 2980 2997	hacer más fáciles
+T236	Action 2990 2997	fáciles
 T235	Concept 3002 3016	tareas diarias
 T234	Concept 2911 2919	aparatos
 T233	Concept 3002 3008	tareas
-E236	Action:T236 Target:T235 Subject:T237 Subject2:T238
-R86	is-a Arg1:T238 Arg2:T234
+E236	Action:T236 Target:T235 Subject:T237 Subject2:T234
 R87	is-a Arg1:T235 Arg2:T233
 T249	Concept 3064 3078	Estados Unidos
 T248	Concept 3052 3060	personas
 T247	Concept 3089 3101	discapacidad
 R93	part-of Arg1:T248 Arg2:T249
 R94	property-of Arg1:T247 Arg2:T248
-T251	Concept 3103 3110	Algunas
+T251	Concept 3114 3119	ellas
 T250	Action 3120 3125	nacen
 E250	Action:T250 Subject:T251
 T255	Concept 3164 3174	enfermedad
 T254	Concept 3180 3189	accidente
 T253	Concept 3222 3234	discapacidad
-T252	Action 3194 3217	tiene como consecuencia
+T252	Action 3205 3217	consecuencia
 E252	Action:T252 Target:T253 Subject:T254 Subject2:T255
 T259	Concept 3244 3254	individuos
 T258	Action 3255 3266	desarrollan
 T257	Concept 3267 3281	discapacidades
 T256	Action 3295 3304	envejecen
 E258	Action:T258 Target:T257 Subject:T259
-E256	Action:T256 Target:E258 Subject:T259
+E256	Action:T256 Subject:T259
 T264	Concept 3347 3360	algún momento
 T263	Concept 3373 3378	vidas
-T262	Concept 3311 3316	todos
+T262	Concept 3306 3316	Casi todos
 T261	Action 3317 3326	tendremos
 T260	Concept 3331 3343	discapacidad
 E261	Action:T261 Target:T260 Subject:T262
 R95	part-of Arg1:T264 Arg2:T263
-T268	Concept 3398 3431	disolución legal de un matrimonio
 T267	Concept 3421 3431	matrimonio
 T266	Action 3398 3408	disolución
 T265	Concept 3383 3391	divorcio
@@ -376,7 +369,7 @@ T287	Concept 3604 3611	familia
 T286	Action 3612 3617	tiene
 T285	Action 3650 3659	afectados
 T284	Concept 3618 3623	niños
-E285	Action:T285 Target:T284 Subject:T284
+E285	Action:T285 Target:T284
 E286	Action:T286 Target:T284 Subject:T287
 T294	Concept 3674 3679	usted
 T293	Concept 3685 3691	médico
@@ -431,13 +424,12 @@ T318	Action 4161 4166	visto
 E318	Action:T318 Target:T320
 R19	property-of Arg1:T321 Arg2:T319
 T328	Concept 4286 4298	consultorios
-T327	Concept 4299 4306	médicos
+T327	Concept 4286 4306	consultorios médicos
 T326	Action 4244 4249	tenga
 T325	Concept 4257 4266	historias
 T324	Concept 4257 4275	historias clínicas
 E326	Action:T326 Target:T324
 R110	is-a Arg1:T324 Arg2:T325
-R112	property-of Arg1:T327 Arg2:T328
 T339	Concept 4350 4361	información
 T338	Action 4381 4387	llevar
 T337	Concept 4392 4399	propios
@@ -458,13 +450,9 @@ T341	Action 4500 4510	conducirlo
 T340	Concept 4459 4470	desamparado
 E341	Action:T341 Target:T342 Subject:T340 Subject2:T347
 E343	Action:T343 Target:T340 Subject:T344
-R20	part-of Arg1:T347 Arg2:T340
-T355	Concept 4553 4570	atención de salud
 T354	Action 4577 4585	empeorar
 T353	Concept 4532 4538	acceso
-T352	Concept 4539 4547	limitado
-E354	Action:T354 
-R119	property-of Arg1:T352 Arg2:T353
+E354	Action:T354 Subject:E6 Target:T89
 T359	Concept 4629 4647	personas sin techo
 T357	Concept 4616 4621	salud
 T356	Concept 4679 4683	peor
@@ -472,7 +460,7 @@ R120	property-of Arg1:T357 Arg2:T359
 R123	property-of Arg1:T356 Arg2:T357
 T367	Concept 4726 4743	mujeres sin hogar
 T366	Concept 4782 4794	abuso sexual
-T365	Action 4744 4756	son víctimas
+T365	Action 4748 4756	víctimas
 T364	Concept 4726 4733	mujeres
 T363	Concept 4760 4779	violencia doméstica
 T362	Concept 4760 4769	violencia
@@ -486,7 +474,7 @@ T376	Concept 4800 4805	niños
 T375	Action 4816 4822	tienen
 T374	Concept 4840 4849	problemas
 T373	Concept 4914 4920	abusos
-T372	Action 4902 4913	presenciado
+T372	Action 4896 4913	haber presenciado
 E372	Action:T372 Target:T373 Subject:T378
 E375	Action:T375 Target:T377 Target2:T380 Subject:T378
 R128	is-a Arg1:T378 Arg2:T376
@@ -502,7 +490,6 @@ R135	is-a Arg1:T388 Arg2:T385
 R136	is-a Arg1:T387 Arg2:T385
 R137	is-a Arg1:T389 Arg2:T386
 R138	is-a Arg1:T389 Arg2:T385
-R140	is-a Arg1:T386 Arg2:T385
 R141	is-a Arg1:T386 Arg2:T385
 R21	property-of Arg1:T390 Arg2:T385
 T400	Concept 5033 5040	agencia
@@ -519,7 +506,7 @@ R144	is-a Arg1:T399 Arg2:T400
 R146	property-of Arg1:T397 Arg2:T399
 T412	Concept 5156 5163	adultos
 T408	Concept 5128 5136	personas
-T407	Concept 5214 5244	necesidades médicas especiales
+T407	Concept 5214 5233	necesidades médicas
 T406	Concept 5088 5111	proveedores de atención
 T405	Concept 5088 5123	proveedores de atención al paciente
 T404	Action 5141 5147	cuidan
@@ -534,12 +521,9 @@ T422	Concept 5282 5304	miembros de la familia
 T421	Concept 5335 5344	servicios
 T419	Concept 5254 5277	proveedores de atención
 T418	Concept 5297 5304	familia
-T417	Concept 5282 5290	miembros
 T416	Action 5321 5326	pagan
 E416	Action:T416 Target:T419 Target2:T421
-R153	part-of Arg1:T417 Arg2:T418
 R154	part-of Arg1:T422 Arg2:T418
-R29	part-of Arg1:T422 Arg2:T419
 T443	Concept 5378 5383	horas
 T442	Concept 5387 5390	día
 T441	Concept 5394 5398	días
@@ -564,3 +548,87 @@ T455	Concept 5543 5549	grupos
 T454	Action 5566 5572	ayudar
 E454	Action:T454 Subject:T457
 R167	is-a Arg1:T457 Arg2:T455
+A3	Uncertain E8
+A4	Negated E55
+A5	Uncertain E133
+A6	Uncertain E186
+A7	Uncertain E185
+A8	Negated E201
+A9	Negated E217
+A10	Negated E15
+A11	Negated E19
+A12	Uncertain E27
+T3	Concept 522 527	tipos
+R7	property-of Arg1:T3 Arg2:T50	
+T21	Concept 861 866	apoyo
+T41	Concept 869 873	amor
+R30	property-of Arg1:T21 Arg2:T73	
+R44	property-of Arg1:T41 Arg2:T73	
+T42	Concept 928 933	cosas
+T43	Action 1746 1749	ser
+E2	Action:T43 Target:T44
+T44	Concept 1750 1757	crítico
+T45	Concept 2111 2129	testamento en vida
+R45	is-a Arg1:T45 Arg2:T182	
+T46	Concept 2154 2159	usted
+T48	Action 2180 2187	tuviera
+E3	Action:T48 Subject:T46 Target:T178
+T49	Action 2212 2221	estuviera
+E4	Action:T49 Subject:T46 Target:T176
+A13	Uncertain E201
+R46	is-a Arg1:T210 Arg2:T212	
+R47	property-of Arg1:T214 Arg2:T215	
+T2	Action 2900 2905	hacen
+E1	Action:T2 Subject:T222
+A14	Uncertain E236
+R49	property-of Arg1:T234 Arg2:T238	
+T62	Concept 2925 2934	movilidad
+R54	is-a Arg1:T238 Arg2:T62	
+T72	Concept 2949 2959	tecnología
+R60	is-a Arg1:T237 Arg2:T72	
+T75	Concept 3133 3145	discapacidad
+R61	property-of Arg1:T75 Arg2:T251	
+T76	Action 3153 3159	tienen
+E5	Action:T76 Target:T255 Target2:T254
+A15	Uncertain E261
+T79	Concept 3555 3561	tareas
+R62	is-a Arg1:T280 Arg2:T79	
+A16	Uncertain E285
+A17	Uncertain E298
+R65	property-of Arg1:T444 Arg2:T451	
+A18	Uncertain E454
+A19	Negated E308
+T80	Concept 4170 4178	historia
+R66	is-a Arg1:T320 Arg2:T80	
+A20	Uncertain E326
+R20	is-a Arg1:T327 Arg2:T328	
+A21	Uncertain E343
+A22	Uncertain E341
+T88	Action 4539 4547	limitado
+E6	Action:T88 Subject:T353 Target:E7
+T89	Concept 4590 4595	cosas
+T99	Concept 4629 4637	personas
+R79	is-a Arg1:T359 Arg2:T99	
+T116	Action 4553 4561	atención
+E7	Action:T116 Target:T117
+T117	Concept 4565 4570	salud
+T118	Action 4652 4657	viven
+E9	Action:T118 Subject:T359 Target:T127
+T127	Concept 4661 4675	Estados Unidos
+A23	Uncertain E9
+T136	Concept 4782 4787	abuso
+R80	is-a Arg1:T366 Arg2:T136	
+A24	Uncertain E372
+T142	Concept 5214 5225	necesidades
+R82	is-a Arg1:T407 Arg2:T142	
+T149	Concept 5234 5244	especiales
+R86	property-of Arg1:T149 Arg2:T407	
+A25	Uncertain E416
+T150	Action 5352 5357	están
+E10	Action:T150 Target:T152 Subject:T153
+T152	Concept 5362 5369	guardia
+T153	Concept 5346 5351	Ellos
+T157	Action 5512 5515	ser
+E11	Action:T157 Target:T158 Subject:T166
+T158	Concept 5530 5537	difícil
+T166	Concept 5496 5505	situación

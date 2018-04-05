@@ -35,7 +35,7 @@ T30	Action 342 352	desarrolla
 T29	Concept 364 370	cuerpo
 T28	Concept 377 382	madre
 E30	Action:T30 Target:T31 Subject:T31
-E35	Action:T35  Subject:T33
+E35	Action:T35 Subject:T33
 R12	is-a Arg1:T34 Arg2:T33
 R13	is-a Arg1:T33 Arg2:T32
 R14	part-of Arg1:T29 Arg2:T28
@@ -101,7 +101,7 @@ T113	Action 1066 1073	obtener
 T112	Concept 1074 1082	atención
 T111	Concept 1083 1091	prenatal
 T110	Concept 1092 1099	regular
-E113	Action:T113  Subject:T112
+E113	Action:T113 Subject:T112
 R47	property-of Arg1:T112 Arg2:T111
 R6	property-of Arg1:T110 Arg2:T112
 T117	Concept 1107 1129	defectos de nacimiento
@@ -117,7 +117,7 @@ T129	Concept 1258 1273	atención médica
 T127	Concept 1245 1254	proveedor
 T126	Action 1283 1294	descubrirlo
 T125	Concept 1320 1324	vida
-E126	Action:T126  Subject:T127
+E126	Action:T126 Subject:T127
 R50	property-of Arg1:T129 Arg2:T127
 A1	Negated E126
 T141	Concept 1330 1335	bebés
@@ -180,7 +180,7 @@ T185	Action 2041 2052	crecimiento
 T184	Concept 2056 2063	tumores
 T183	Concept 2066 2073	quistes
 T182	Concept 1964 1981	Von Hippel-Lindau
-E185	Action:T185 Target:T184 Target2:T183 
+E185	Action:T185 Target:T184 Target2:T183
 R76	part-of Arg1:T183 Arg2:T188
 R77	part-of Arg1:T184 Arg2:T188
 R78	same-as Arg1:T187 Arg2:T182
@@ -201,7 +201,7 @@ T199	Concept 2186 2193	riñones
 T198	Concept 2198 2206	páncreas
 T197	Concept 2235 2250	aparato genital
 T196	Concept 2220 2227	hombres
-E201	Action:T201 Target:T202 Target2:T200 Target3:T199 Target4:T198 Target5:T197 
+E201	Action:T201 Target:T202 Target2:T200 Target3:T199 Target4:T198 Target5:T197
 R86	part-of Arg1:T197 Arg2:T196
 T211	Concept 2285 2288	VHL
 T210	Concept 2340 2347	tumores
@@ -212,7 +212,7 @@ T205	Action 2298 2306	dependen
 T204	Concept 2311 2317	tamaño
 T203	Concept 2323 2332	ubicación
 E205	Action:T205 Target:T204 Target2:T203 Subject:T207
-E208	Action:T208 Target:T207 
+E208	Action:T208 Target:T207
 R88	part-of Arg1:T207 Arg2:T206
 R89	is-a Arg1:T211 Arg2:T206
 R90	property-of Arg1:T207 Arg2:T211
@@ -249,7 +249,7 @@ R102	part-of Arg1:T245 Arg2:T246
 T252	Concept 2854 2863	funciones
 T251	Action 2823 2831	realizan
 T250	Concept 2878 2885	células
-E251	Action:T251 Target:T252 
+E251	Action:T251 Target:T252
 R18	part-of Arg1:T252 Arg2:T250
 T261	Concept 2891 2900	proteínas
 T260	Action 2901 2907	mueven
@@ -269,8 +269,8 @@ T266	Concept 3057 3065	mutación
 T265	Action 3070 3076	cambio
 T264	Concept 3083 3086	gen
 T263	Concept 3092 3104	varios genes
-E265	Action:T265 Target:T264 Target2:T263 
-E267	Action:T267 Target:T266 
+E265	Action:T265 Target:T264 Target2:T263
+E267	Action:T267 Target:T266
 T277	Action 3232 3238	falten
 T276	Action 3206 3215	funcionen
 T275	Concept 3216 3229	correctamente
@@ -287,7 +287,7 @@ E277	Action:T277 Target:T268 Subject:E272
 R104	same-as Arg1:T269 Arg2:T268
 T281	Action 3252 3259	heredar
 T279	Concept 3264 3281	mutación genética
-E281	Action:T281 Target:T279 
+E281	Action:T281 Target:T279
 T288	Concept 3333 3339	sangre
 T287	Concept 3312 3319	pruebas
 T285	Concept 3312 3329	pruebas genéticas
@@ -311,7 +311,7 @@ T301	Concept 3569 3589	clínicas de genética
 T300	Action 3597 3605	ayudarle
 T299	Concept 3618 3621	uno
 T298	Action 3608 3617	encontrar
-E298	Action:T298 Target:T299 
+E298	Action:T298 Target:T299
 E300	Action:T300 Target:E298 Subject:T304 Subject2:T302 Subject3:T301
 T313	Concept 3693 3714	deficiencia de G-6-PD
 T311	Concept 3641 3675	glucosa -6- fosfato-deshidrogenasa
@@ -347,7 +347,7 @@ T329	Action 4034 4044	destruidos
 T328	Concept 4058 4064	cuerpo
 T327	Action 4071 4081	reponerlos
 E327	Action:T327 Target:T330 Subject:T328
-E329	Action:T329 Target:T330 
+E329	Action:T329 Target:T330
 T339	Concept 4110 4124	glóbulos rojos
 T338	Concept 4149 4157	químicos
 T337	Action 4128 4136	combinan
@@ -375,7 +375,7 @@ T346	Concept 4423 4432	sustancia
 T345	Concept 4461 4475	glóbulos rojos
 T344	Action 4399 4409	suspensión
 T343	Concept 4488 4511	transfusiones de sangre
-E344	Action:T344 Target:T346 
+E344	Action:T344 Target:T346
 E348	Action:T348 Target:T347 Subject:T349
 E353	Action:T353 Target:T345 Subject:T346
 R128	is-a Arg1:T349 Arg2:T350
@@ -385,7 +385,7 @@ T357	Concept 4553 4566	instrucciones
 T356	Action 4572 4580	producir
 T355	Concept 4581 4590	proteínas
 T354	Action 4539 4548	contienen
-E354	Action:T354 Target:T357 
+E354	Action:T354 Target:T357
 E356	Action:T356 Target:T355 Subject:T357
 T364	Concept 4599 4604	genes
 T363	Action 4608 4616	producen
@@ -439,7 +439,7 @@ T409	Concept 5146 5162	factor de riesgo
 T408	Action 5185 5192	aumente
 T406	Action 5214 5222	adquirir
 T405	Concept 5227 5237	enfermedad
-E406	Action:T406 Target:T405 
+E406	Action:T406 Target:T405
 E408	Action:T408 Target:E406 Subject:T409
 T417	Action 5311 5320	siguiendo
 T415	Concept 5324 5338	estilo de vida
@@ -448,8 +448,8 @@ T413	Concept 5369 5377	exámenes
 T412	Action 5350 5362	sometiéndose
 T411	Concept 5268 5274	riesgo
 T410	Action 5299 5310	disminuirlo
-E412	Action:T412 Target:T413 
-E417	Action:T417 Target:T415 
+E412	Action:T412 Target:T413
+E417	Action:T417 Target:T415
 R155	property-of Arg1:T414 Arg2:T415
 E410	Action:T410 Target:T411 Subject:E417
 T435	Concept 5393 5401	síndrome
@@ -495,7 +495,7 @@ R21	property-of Arg1:T452 Arg2:T448
 T455	Action 5731 5736	nacer
 T454	Concept 5741 5750	problemas
 T453	Concept 5741 5762	problemas del corazón
-E455	Action:T455 Target:T453 
+E455	Action:T455 Target:T453
 R172	is-a Arg1:T453 Arg2:T454
 T463	Concept 5806 5811	oídos
 T462	Action 5779 5788	presentar
@@ -504,7 +504,7 @@ T459	Concept 5817 5827	intestinos
 T458	Concept 5833 5837	ojos
 T457	Concept 5842 5850	tiroides
 T456	Concept 5856 5865	esqueleto
-E462	Action:T462  Subject:T461
+E462	Action:T462 Subject:T461
 R22	part-of Arg1:T461 Arg2:T463
 R24	part-of Arg1:T461 Arg2:T459
 R25	part-of Arg1:T461 Arg2:T458
@@ -519,7 +519,7 @@ T467	Action 5923 5931	aumentan
 T466	Concept 5939 5943	edad
 T465	Concept 5950 5955	madre
 E467	Action:T467 Target:T470 Target2:T468 Subject:T466
-E474	Action:T474 Target:T468 
+E474	Action:T474 Target:T468
 R174	property-of Arg1:T466 Arg2:T465
 R175	is-a Arg1:T468 Arg2:T472
 T478	Concept 5960 5968	síndrome
@@ -617,8 +617,8 @@ T538	Concept 6815 6822	tímidos
 T537	Action 6825 6831	tengan
 T536	Concept 6832 6841	problemas
 T535	Concept 6832 6855	problemas de adaptación
-E537	Action:T537 Target:T535 
-E539	Action:T539 Target:T538 
+E537	Action:T537 Target:T535
+E539	Action:T539 Target:T538
 R212	is-a Arg1:T535 Arg2:T536
 T551	Action 6864 6875	tratamiento
 T550	Concept 6895 6900	niños
@@ -633,8 +633,8 @@ T542	Concept 6961 6971	relaciones
 T541	Concept 6961 6980	relaciones sociales
 T540	Concept 6981 6989	normales
 E548	Action:T548 Target:T546 Target2:T544 Target3:T541 Subject:T550 Subject2:T550 Subject3:T550
-E549	Action:T549  Subject:T550
-E551	Action:T551 Target:T550 
+E549	Action:T549 Subject:T550
+E551	Action:T551 Target:T550
 R213	part-of Arg1:T546 Arg2:T547
 R214	property-of Arg1:T545 Arg2:T546
 R215	is-a Arg1:T541 Arg2:T542
@@ -672,7 +672,7 @@ T580	Concept 7269 7273	leve
 T579	Concept 7276 7282	severo
 T578	Concept 7289 7297	síntomas
 T577	Action 7305 7311	variar
-E577	Action:T577 Target:T578 
+E577	Action:T577 Target:T578
 R229	property-of Arg1:T580 Arg2:T581
 R230	property-of Arg1:T579 Arg2:T581
 R231	is-a Arg1:T581 Arg2:T582
@@ -711,7 +711,7 @@ T614	Concept 7642 7646	piel
 T613	Concept 7651 7667	sistema nervioso
 T612	Concept 7674 7682	pulmones
 T611	Action 7603 7612	problemas
-E611	Action:T611 Target:T616 Target2:T615 Target3:T614 Target4:T613 Target5:T612 
+E611	Action:T611 Target:T616 Target2:T615 Target3:T614 Target4:T613 Target5:T612
 T619	Concept 7703 7709	examen
 T618	Action 7715 7727	diagnosticar
 T617	Concept 7731 7739	síndrome
@@ -723,7 +723,7 @@ T622	Concept 7783 7800	historia familiar
 T621	Concept 7806 7819	examen físico
 T620	Action 7825 7839	diagnosticarlo
 E624	Action:T624 Target:T623 Target2:T622 Target3:T621 Subject:T625 Subject2:T625 Subject3:T625
-E620	Action:T620  Subject:T625 Subject2:E624
+E620	Action:T620 Subject:T625 Subject2:E624
 T632	Concept 7844 7852	síndrome
 T631	Concept 7862 7866	cura
 T630	Action 7856 7861	tiene
@@ -754,7 +754,7 @@ T648	Concept 8097 8106	cromosoma
 T647	Concept 8097 8108	cromosoma X
 T646	Concept 8109 8116	ausente
 T645	Concept 8119 8129	incompleto
-E649	Action:T649 Target:T648 
+E649	Action:T649 Target:T648
 R249	property-of Arg1:T646 Arg2:T647
 R250	property-of Arg1:T645 Arg2:T647
 R251	is-a Arg1:T647 Arg2:T648
@@ -764,8 +764,8 @@ T653	Concept 8165 8169	baja
 T652	Concept 8135 8140	niñas
 T651	Concept 8185 8192	ovarios
 T650	Action 8196 8205	funcionan
-E650	Action:T650 Target:T651 
-E655	Action:T655  Subject:T652
+E650	Action:T650 Target:T651
+E655	Action:T655 Subject:T652
 R252	property-of Arg1:T653 Arg2:T654
 R253	property-of Arg1:T654 Arg2:T652
 R254	part-of Arg1:T651 Arg2:T652
@@ -798,7 +798,7 @@ R267	is-a Arg1:T673 Arg2:T676
 T680	Action 8553 8562	encuentra
 T679	Concept 8566 8573	pruebas
 T678	Concept 8566 8584	pruebas prenatales
-E680	Action:T680  Subject:T678
+E680	Action:T680 Subject:T678
 R269	is-a Arg1:T678 Arg2:T679
 T695	Action 8642 8650	alcancen
 T694	Concept 8589 8596	hormona
@@ -823,7 +823,7 @@ T706	Concept 8760 8793	técnicas de reproducción asistida
 T705	Concept 8818 8825	mujeres
 T704	Concept 8833 8851	síndrome de Turner
 T703	Action 8801 8807	ayudar
-E711	Action:T711 Target:T705 
+E711	Action:T711 Target:T705
 R277	property-of Arg1:T704 Arg2:T705
 R280	is-a Arg1:T704 Arg2:T707
 E703	Action:T703 Target:T705 Target2:E711 Subject:T706
@@ -854,7 +854,7 @@ T730	Action 9135 9143	produzca
 T729	Concept 9165 9173	proteína
 T728	Concept 9110 9113	gen
 E730	Action:T730 Target:T729 Subject:T731
-E732	Action:T732 Target:T728 
+E732	Action:T732 Target:T728
 E733	Action:T733 Target:E730 Subject:E732
 T742	Concept 9179 9187	personas
 T741	Concept 9192 9207	cambios mayores
@@ -881,7 +881,7 @@ R294	is-a Arg1:T750 Arg2:T753
 R57	is-a Arg1:T752 Arg2:T753
 T755	Action 9361 9368	Obtener
 T754	Concept 9369 9380	tratamiento
-E755	Action:T755 Target:T754 
+E755	Action:T755 Target:T754
 T759	Concept 9435 9441	prueba
 T758	Concept 9435 9450	prueba genética
 T757	Action 9457 9469	diagnosticar
@@ -965,8 +965,8 @@ T818	Concept 10129 10140	aminoácidos
 T817	Action 10096 10103	afectan
 T814	Concept 10146 10159	carbohidratos
 T813	Concept 10166 10173	lípidos
-E819	Action:T819 Target:T818 Target2:T814 Target3:T813 
-E817	Action:T817 Target:E819 
+E819	Action:T819 Target:T818 Target2:T814 Target3:T813
+E817	Action:T817 Target:E819
 T826	Action 10256 10264	producen
 T825	Concept 10268 10275	energía
 T824	Concept 10231 10236	parte

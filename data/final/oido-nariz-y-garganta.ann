@@ -9,7 +9,6 @@ E2	Action:T2 Target:T1 Target2:T0 Subject:T6 Subject2:T5
 R0	is-a Arg1:T5 Arg2:T4
 R1	property-of Arg1:T1 Arg2:T0
 R2	property-of Arg1:T4 Arg2:T3
-R3	same-as Arg1:T4 Arg2:T5
 T10	Concept 116 123	Quienes
 T9	Concept 131 139	alergias
 T8	Concept 151 160	sensibles
@@ -41,8 +40,6 @@ R16	is-a Arg1:T28 Arg2:T35
 T40	Concept 374 382	alergias
 T39	Concept 390 395	leves
 T38	Concept 398 405	severas
-R17	property-of Arg1:T39 Arg2:T40
-R18	property-of Arg1:T38 Arg2:T40
 R19	is-a Arg1:T39 Arg2:T40
 R20	is-a Arg1:T38 Arg2:T40
 T44	Concept 411 426	reacción severa
@@ -72,8 +69,6 @@ T55	Action 619 625	causan
 T54	Concept 630 638	alergias
 E55	Action:T55 Target:T54 Subject:T56
 E57	Action:T57 Target:T56 Subject:T60
-R28	part-of Arg1:T59 Arg2:T60
-R29	part-of Arg1:T58 Arg2:T60
 R30	is-a Arg1:T59 Arg2:T60
 R31	is-a Arg1:T58 Arg2:T60
 T69	Concept 658 665	aparato
@@ -89,7 +84,7 @@ R35	is-a Arg1:T64 Arg2:T69
 T73	Action 726 730	Hace
 T72	Concept 738 744	sonido
 T71	Concept 753 757	alto
-E73	Action:T73 Target:T71 
+E73	Action:T73 Target:T71
 R37	property-of Arg1:T71 Arg2:T72
 T81	Concept 810 817	lugares
 T80	Concept 818 829	silenciosos
@@ -124,7 +119,7 @@ T98	Concept 1029 1046	algunas medicinas
 T97	Concept 1000 1010	enfermedad
 T96	Concept 1012 1016	edad
 T95	Concept 1021 1026	ruido
-E101	Action:T101  Subject:T97 Subject2:T96 Subject3:T95 Subject4:T102
+E101	Action:T101 Subject:T97 Subject2:T96 Subject3:T95 Subject4:T102
 T106	Concept 1066 1074	personas
 T105	Action 1087 1099	beneficiarse
 T104	Concept 1114 1123	audífonos
@@ -136,7 +131,7 @@ T110	Action 1168 1176	ayudarle
 T109	Action 1178 1184	visite
 T108	Concept 1135 1140	usted
 T107	Concept 1190 1196	doctor
-E109	Action:T109 Target:T107 Target2:T108 
+E109	Action:T109 Target:T107 Target2:T108
 E110	Action:T110 Target:T108 Subject:T111
 T114	Concept 1213 1217	tipo
 T113	Concept 1202 1212	diferentes
@@ -149,8 +144,8 @@ T118	Concept 1266 1275	ubicación
 T117	Concept 1282 1286	oído
 T116	Action 1296 1304	aumentan
 T115	Concept 1308 1314	sonido
-E116	Action:T116 Target:T115 
-E120	Action:T120 Target:T119 Target2:T118 Target3:E116 
+E116	Action:T116 Target:T115
+E120	Action:T120 Target:T119 Target2:T118 Target3:E116
 T125	Concept 1319 1327	audífono
 T124	Concept 1341 1346	mejor
 T123	Action 1358 1365	depende
@@ -198,13 +193,13 @@ T168	Action 1743 1754	tratamiento
 T166	Action 1790 1798	masticar
 T162	Concept 1763 1773	barotrauma
 T161	Concept 1799 1813	goma de mascar
-E166	Action:T166 Target:T161 
+E166	Action:T166 Target:T161
 E168	Action:T168 Target:T170 Subject:T161 Subject2:T169
 R61	is-a Arg1:T170 Arg2:T162
 T173	Concept 1834 1846	medicamentos
 T172	Concept 1857 1875	descongestionantes
 T171	Action 1884 1890	ayudar
-E171	Action:T171  Subject:T173
+E171	Action:T171 Subject:T173
 R62	is-a Arg1:T172 Arg2:T173
 T181	Concept 1895 1903	garganta
 T180	Concept 1910 1914	tubo
@@ -242,9 +237,9 @@ T197	Concept 2225 2232	líquido
 T196	Concept 2241 2249	gárgaras
 T195	Action 2256 2263	aliviar
 T194	Concept 2267 2272	dolor
-E199	Action:T199 Target:T196 
-E201	Action:T201 Target:T197 
-E202	Action:T202 Target:T198 
+E199	Action:T199 Target:T196
+E201	Action:T201 Target:T197
+E202	Action:T202 Target:T198
 R71	property-of Arg1:T200 Arg2:T197
 E195	Action:T195 Target:T194 Subject:E202 Subject2:E201 Subject3:E199 Subject4:T196 Subject5:T197 Subject6:T198
 T210	Action 2342 2347	deben
@@ -255,7 +250,7 @@ T205	Concept 2333 2338	niños
 T204	Action 2348 2353	tomar
 T203	Concept 2354 2362	aspirina
 E204	Action:T204 Target:T203 Subject:T205
-E206	Action:T206  Subject:T207
+E206	Action:T206 Subject:T207
 E210	Action:T210 Target:E204 Subject:T205
 R73	property-of Arg1:T209 Arg2:T207
 R74	is-a Arg1:T203 Arg2:T207
@@ -278,19 +273,19 @@ T221	Concept 2555 2564	sensación
 T219	Action 2429 2435	causar
 T217	Concept 2492 2500	tinnitus
 T216	Concept 2590 2594	oído
-E230	Action:T230 Target:T216 
-E231	Action:T231 Target:T216 
-E233	Action:T233 Target:T232 
+E230	Action:T230 Target:T216
+E231	Action:T231 Target:T216
+E233	Action:T233 Target:T232
 R80	same-as Arg1:T227 Arg2:T217
-E224	Action:T224  Subject:E233
-E223	Action:T223  Subject:E233
+E224	Action:T224 Subject:E233
+E223	Action:T223 Subject:E233
 E219	Action:T219 Target:T229 Target2:T217 Target3:E233 Target4:E231 Target5:E230 Subject:T227
 T236	Action 2602 2609	afectar
 T235	Concept 2618 2622	oído
-E236	Action:T236 Target:T235 
+E236	Action:T236 Target:T235
 T7	Action 2631 2636	causa
 T237	Concept 2646 2653	sordera
-E1	Action:T7 Target:T237 
+E1	Action:T7 Target:T237
 T243	Concept 2689 2699	enfermedad
 T242	Concept 2663 2671	personas
 T241	Concept 2718 2725	ataques
@@ -341,10 +336,10 @@ T281	Concept 3175 3185	diuréticos
 T280	Concept 3149 3152	sal
 T279	Action 3136 3145	limitando
 T278	Concept 3187 3196	pastillas
-E279	Action:T279 Target:T280 
-E282	Action:T282 Target:T281 
+E279	Action:T279 Target:T280
+E282	Action:T282 Target:T281
 E286	Action:T286 Target:T285 Target2:E279 Target3:E282 Subject:T283
-E292	Action:T292 Target:T290 
+E292	Action:T292 Target:T290
 E293	Action:T293 Target:E292 Subject:T278
 R93	is-a Arg1:T283 Arg2:T284
 R94	is-a Arg1:T281 Arg2:T278
@@ -357,7 +352,7 @@ T296	Concept 3275 3282	aparato
 T295	Action 3306 3313	impulsa
 T294	Concept 3314 3318	aire
 E297	Action:T297 Target:T296 Subject:T296
-E300	Action:T300  Subject:E297
+E300	Action:T300 Subject:E297
 R96	property-of Arg1:T298 Arg2:T299
 E295	Action:T295 Target:T294 Subject:E297 Subject2:T296
 T306	Concept 3351 3364	casos severos
@@ -375,16 +370,16 @@ T311	Action 3470 3476	afecte
 T310	Concept 3480 3484	boca
 T309	Action 3491 3503	dificultarle
 E311	Action:T311 Target:T310 Subject:T312
-E313	Action:T313  
-E314	Action:T314  
-E315	Action:T315  
+E313	Action:T313 
+E314	Action:T314 
+E315	Action:T315 
 E309	Action:T309 Target:E315 Target2:E314 Target3:E313 Subject:T312
 T323	Action 3578 3583	varía
 T322	Action 3537 3548	tratamiento
 T321	Concept 3556 3566	trastornos
 T320	Concept 3556 3577	trastornos de la boca
 T319	Concept 3600 3608	problema
-E322	Action:T322 Target:T320 
+E322	Action:T322 Target:T320
 E323	Action:T323 Target:E322 Subject:T319
 R100	is-a Arg1:T320 Arg2:T321
 T331	Action 3685 3688	uso
@@ -394,7 +389,7 @@ T328	Concept 3641 3647	limpia
 T327	Concept 3660 3669	cepillado
 T326	Concept 3670 3679	frecuente
 T325	Concept 3693 3704	hilo dental
-E331	Action:T331 Target:T325 
+E331	Action:T331 Target:T325
 R101	property-of Arg1:T328 Arg2:T329
 R102	property-of Arg1:T326 Arg2:T327
 E330	Action:T330 Target:T329 Subject:T327 Subject2:E331
@@ -417,7 +412,7 @@ T345	Action 3817 3823	Llegan
 T344	Concept 3827 3837	oído medio
 T343	Action 3851 3857	vibrar
 T342	Concept 3861 3868	tímpano
-E345	Action:T345 Target:T344 
+E345	Action:T345 Target:T344
 E343	Action:T343 Target:T342 Subject:E345
 T350	Concept 3976 3986	oído medio
 T349	Concept 3917 3923	huesos
@@ -464,7 +459,7 @@ T382	Concept 4305 4316	dispositivo
 T381	Concept 4317 4328	electrónico
 T380	Concept 4329 4336	pequeño
 T379	Concept 4339 4347	complejo
-E386	Action:T386 Target:T385 
+E386	Action:T386 Target:T385
 E387	Action:T387 Target:E386 Subject:T383
 R120	is-a Arg1:T383 Arg2:T384
 R121	property-of Arg1:T380 Arg2:T382
@@ -477,7 +472,7 @@ T391	Concept 4470 4482	dificultades
 T390	Concept 4463 4469	graves
 T389	Concept 4410 4418	Personas
 T388	Action 4500 4512	beneficiarse
-E388	Action:T388  Subject:T389
+E388	Action:T388 Subject:T389
 R125	property-of Arg1:T390 Arg2:T391
 R126	property-of Arg1:T393 Arg2:T391
 R127	property-of Arg1:T392 Arg2:T389
@@ -506,8 +501,8 @@ T415	Action 4727 4737	eliminando
 T414	Concept 4752 4760	gérmenes
 T413	Concept 4767 4777	irritantes
 T412	Concept 4741 4746	polvo
-E415	Action:T415 Target:T412 Target2:T414 Target3:T413 
-E416	Action:T416 Target:T417 
+E415	Action:T415 Target:T412 Target2:T414 Target3:T413
+E416	Action:T416 Target:T417
 E418	Action:T418 Target:E416 Subject:T419
 T425	Action 4779 4787	Calienta
 T424	Action 4790 4798	humedece
@@ -515,10 +510,10 @@ T423	Concept 4802 4806	aire
 T422	Action 4812 4818	evitar
 T421	Concept 4827 4835	pulmones
 T420	Action 4872 4880	resequen
-E420	Action:T420 Target:T421 
-E422	Action:T422 Target:E420 
-E424	Action:T424 Target:T423 
-E425	Action:T425 Target:T423 
+E420	Action:T420 Target:T421
+E422	Action:T422 Target:E420
+E424	Action:T424 Target:T423
+E425	Action:T425 Target:T423
 T434	Concept 4885 4890	nariz
 T433	Action 4899 4907	contiene
 T432	Concept 4908 4915	células
@@ -544,7 +539,7 @@ T444	Concept 5064 5071	resfrío
 T443	Action 5078 5088	dificultar
 T442	Concept 5092 5103	respiración
 T441	Concept 5108 5113	sueño
-E443	Action:T443 Target:T442 Target2:T441 Target3:T447 
+E443	Action:T443 Target:T442 Target2:T441 Target3:T447
 E450	Action:T450 Target:T445 Subject:T444 Subject2:E443
 R138	property-of Arg1:T446 Arg2:T447
 T453	Action 5188 5195	afectar
@@ -596,7 +591,7 @@ T496	Action 5708 5715	brindar
 T495	Concept 5716 5722	alivio
 T494	Action 5688 5696	sensible
 T493	Concept 5639 5666	inyecciones para la alergia
-E494	Action:T494 Target:T497 
+E494	Action:T494 Target:T497
 E496	Action:T496 Target:T495 Subject:T493
 R148	is-a Arg1:T493 Arg2:T498
 T506	Concept 5855 5881	máquinas lavadoras de ropa
@@ -611,13 +606,13 @@ T510	Concept 5931 5938	seguros
 T509	Action 5912 5920	escuchan
 T508	Action 5946 5953	afectan
 T507	Concept 5957 5965	audición
-E508	Action:T508 Target:T507 
+E508	Action:T508 Target:T507
 E509	Action:T509 Target:E508 Subject:T511
 R151	property-of Arg1:T510 Arg2:T511
 T516	Concept 5994 5999	altos
 T513	Concept 5976 5983	sonidos
 T512	Action 6045 6052	dañinos
-E512	Action:T512  Subject:T513
+E512	Action:T512 Subject:T513
 R153	property-of Arg1:T516 Arg2:T513
 T525	Concept 6054 6059	Estos
 T524	Concept 6092 6101	sensibles
@@ -642,9 +637,9 @@ T540	Action 6279 6289	dificultad
 T539	Action 6295 6298	oír
 T538	Action 6300 6308	trabajar
 T537	Action 6319 6325	dormir
-E537	Action:T537  
-E538	Action:T538  
-E539	Action:T539  
+E537	Action:T537 
+E538	Action:T538 
+E539	Action:T539 
 E540	Action:T540 Target:E538 Target2:E537 Target3:E539 Subject:T542
 R160	is-a Arg1:T541 Arg2:T542
 T545	Action 6342 6349	depende
@@ -655,4 +650,5 @@ T549	Action 6369 6376	incluir
 T548	Concept 6387 6396	audífonos
 T547	Concept 6398 6410	dispositivos
 T546	Concept 6438 6447	medicinas
-E549	Action:T549 Target:T548 Target2:T547 Target3:T546 
+E549	Action:T549 Target:T548 Target2:T547 Target3:T546
+A1	Negated E2

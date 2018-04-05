@@ -12,7 +12,7 @@ T7	Concept 108 115	embrión
 T6	Concept 121 125	feto
 T5	Concept 131 139	placenta
 T4	Concept 144 149	útero
-E11	Action:T11 Target:T10 Target2:T9 
+E11	Action:T11 Target:T10 Target2:T9
 R1	part-of Arg1:T5 Arg2:T4
 R2	same-as Arg1:T7 Arg2:T6
 E8	Action:T8 Target:T7 Target2:T6 Target3:T5 Subject:E11
@@ -43,8 +43,8 @@ E23	Action:T23 Target:T28 Subject:T27
 R6	is-a Arg1:T28 Arg2:T25
 R7	is-a Arg1:T27 Arg2:T24
 R8	property-of Arg1:T26 Arg2:T27
-E2	Action:T17 Target:T22 
-E32	Action:T32 Target:E2 
+E2	Action:T17 Target:T22
+E32	Action:T32 Target:E2
 T43	Action 462 468	tienen
 T42	Concept 393 415	asesoramiento genético
 T41	Concept 495 515	trastornos genéticos
@@ -80,15 +80,15 @@ T56	Concept 705 709	bebé
 T55	Action 680 686	piense
 T54	Concept 617 622	usted
 T53	Action 689 695	planee
-E60	Action:T60 Target:T56 
-E61	Action:T61 Target:T57 
-E55	Action:T55 Target:E60 
-E53	Action:T53 Target:E60 
+E60	Action:T60 Target:T56
+E61	Action:T61 Target:T57
+E55	Action:T55 Target:E60
+E53	Action:T53 Target:E60
 T65	Concept 745 762	pruebas genéticas
 T64	Concept 729 740	información
 T63	Concept 745 752	pruebas
 T62	Action 717 724	obtener
-E62	Action:T62 Target:T64 
+E62	Action:T62 Target:T64
 R13	is-a Arg1:T65 Arg2:T63
 T72	Action 764 771	Existen
 T71	Concept 799 821	asesoramiento genético
@@ -96,7 +96,7 @@ T70	Concept 772 778	muchas
 T69	Concept 779 786	razones
 T68	Concept 799 812	asesoramiento
 T67	Action 792 798	buscar
-E67	Action:T67 Target:T71 
+E67	Action:T67 Target:T71
 E72	Action:T72 Target:E67 Subject:T69
 R15	is-a Arg1:T71 Arg2:T68
 R16	property-of Arg1:T70 Arg2:T69
@@ -142,7 +142,7 @@ T106	Concept 1231 1239	diabetes
 T105	Action 1240 1250	desaparece
 T104	Concept 1271 1275	bebé
 T103	Concept 1307 1315	diabetes
-E108	Action:T108  Subject:T104
+E108	Action:T108 Subject:T104
 R33	is-a Arg1:T109 Arg2:T103
 E105	Action:T105 Target:T106 Subject:T106 Subject2:E108
 E3	Action:T29 Target:T109 Subject:E105
@@ -160,7 +160,7 @@ T121	Concept 1469 1477	diabetes
 T120	Concept 1506 1514	embarazo
 T119	Concept 1484 1501	segundo trimestre
 T118	Concept 1403 1410	mayoría
-E123	Action:T123 Target:T121 
+E123	Action:T123 Target:T121
 E127	Action:T127 Target:E123 Subject:T122
 R38	property-of Arg1:T118 Arg2:T122
 T135	Action 1563 1573	examinadas
@@ -197,7 +197,7 @@ T149	Concept 1749 1753	bebé
 T148	Concept 1782 1790	embarazo
 T147	Concept 1770 1777	semanas
 T146	Concept 1837 1847	embarazada
-E157	Action:T157 Target:T149 
+E157	Action:T157 Target:T149
 R46	is-a Arg1:T155 Arg2:T150
 R47	part-of Arg1:T155 Arg2:T152
 R49	is-a Arg1:T159 Arg2:T147
@@ -240,7 +240,7 @@ E185	Action:T185 Target:T183 Subject:T180
 R57	property-of Arg1:T182 Arg2:T183
 T187	Concept 2234 2238	bebé
 T186	Action 2223 2228	dañar
-E186	Action:T186 Target:T187 
+E186	Action:T186 Target:T187
 T194	Concept 2259 2271	medicamentos
 T193	Concept 2275 2280	venta
 T192	Concept 2281 2286	libre
@@ -248,7 +248,7 @@ T191	Concept 2289 2299	con receta
 T190	Concept 2301 2308	hierbas
 T189	Concept 2311 2322	suplementos
 T188	Action 2246 2254	incluyen
-E188	Action:T188 Target:T194 Target2:T190 Target3:T189 
+E188	Action:T188 Target:T194 Target2:T190 Target3:T189
 R58	property-of Arg1:T193 Arg2:T192
 R59	property-of Arg1:T193 Arg2:T191
 R60	property-of Arg1:T194 Arg2:T193
@@ -258,15 +258,15 @@ T198	Action 2372 2377	dejar
 T197	Action 2381 2386	tomar
 T196	Action 2361 2369	comenzar
 T195	Action 2332 2337	hable
-E195	Action:T195 Target:T200 
-E197	Action:T197 Target:T199 
-E198	Action:T198 Target:E197 
-E196	Action:T196 Target:E197 
+E195	Action:T195 Target:T200
+E197	Action:T197 Target:T199
+E198	Action:T198 Target:E197
+E196	Action:T196 Target:E197
 T30	Action 2448 2459	perjudicial
 T205	Concept 2426 2433	remedio
 T204	Action 2418 2422	usar
 T201	Concept 2481 2485	bebé
-E204	Action:T204 Target:T205 
+E204	Action:T204 Target:T205
 E4	Action:T30 Target:T201 Subject:E204
 T217	Concept 2604 2626	medicamentos de receta
 T216	Concept 2519 2526	mujeres
@@ -287,7 +287,7 @@ T221	Concept 2672 2679	riesgos
 T220	Concept 2682 2692	beneficios
 T219	Concept 2631 2639	decisión
 T218	Action 2643 2651	tomarlos
-E218	Action:T218  
+E218	Action:T218 
 E5	Action:T31 Target:T221 Target2:T220 Subject:T219
 T227	Concept 2705 2714	proveedor
 T226	Concept 2705 2726	proveedor de cuidados
@@ -309,7 +309,7 @@ T230	Action 2809 2814	tomar
 T229	Concept 2815 2834	vitaminas regulares
 T228	Concept 2815 2824	vitaminas
 E230	Action:T230 Target:T229 Subject:T231
-E234	Action:T234 Target:T235 Target2:T231 
+E234	Action:T234 Target:T235 Target2:T231
 E236	Action:T236 Target:T235 Subject:T231
 R67	is-a Arg1:T229 Arg2:T228
 R68	is-a Arg1:T231 Arg2:T237
@@ -320,7 +320,7 @@ T241	Concept 2917 2926	vitaminas
 T240	Concept 2917 2937	vitaminas especiales
 T239	Concept 2947 2966	mujeres embarazadas
 T238	Concept 2947 2954	mujeres
-E242	Action:T242 Target:T240 
+E242	Action:T242 Target:T240
 R71	is-a Arg1:T240 Arg2:T241
 R72	is-a Arg1:T239 Arg2:T238
 T44	Action 2982 2987	tomar
@@ -332,10 +332,10 @@ T246	Concept 2971 2981	importante
 T245	Action 3035 3041	quedar
 T244	Concept 3021 3025	días
 T243	Concept 3011 3016	todos
-E245	Action:T245 Target:T249 
+E245	Action:T245 Target:T249
 R73	is-a Arg1:T251 Arg2:T250
 R74	property-of Arg1:T243 Arg2:T244
-E6	Action:T44 Target:T251 
+E6	Action:T44 Target:T251
 T260	Concept 3087 3092	ácido
 T258	Concept 3117 3137	problemas congénitos
 T256	Concept 3087 3099	ácido fólico
@@ -398,7 +398,7 @@ T296	Concept 3629 3637	embarazo
 T295	Concept 3648 3662	parte del peso
 T294	Concept 3642 3647	mayor
 T293	Action 3666 3672	ganará
-E293	Action:T293 Target:T295 
+E293	Action:T293 Target:T295
 E298	Action:T298 Target:T297 Subject:T299
 R88	property-of Arg1:T294 Arg2:T295
 T311	Concept 3715 3722	mujeres
@@ -451,7 +451,7 @@ T331	Concept 4056 4068	presión alta
 T330	Concept 4125 4130	usted
 T329	Concept 4139 4143	bebé
 E333	Action:T333 Target:T332 Subject:T331
-E337	Action:T337 Target:T331 
+E337	Action:T337 Target:T331
 R97	is-a Arg1:T331 Arg2:T336
 T344	Concept 4145 4150	Usted
 T343	Action 4162 4168	tenido
@@ -464,7 +464,7 @@ E343	Action:T343 Target:T342 Subject:T344
 R98	is-a Arg1:T342 Arg2:T341
 T346	Concept 4239 4247	embarazo
 T345	Action 4218 4227	padecerla
-E345	Action:T345  
+E345	Action:T345 
 T348	Concept 4265 4277	hipertensión
 T347	Concept 4265 4289	hipertensión gestacional
 R99	is-a Arg1:T347 Arg2:T348
@@ -475,7 +475,7 @@ T352	Concept 4354 4368	recién nacidos
 T351	Concept 4361 4368	nacidos
 T350	Concept 4371 4391	nacimiento prematuro
 T349	Concept 4371 4381	nacimiento
-E355	Action:T355 Target:T354 
+E355	Action:T355 Target:T354
 R100	is-a Arg1:T354 Arg2:T353
 R101	is-a Arg1:T350 Arg2:T349
 R102	is-a Arg1:T352 Arg2:T351
@@ -488,7 +488,7 @@ T361	Concept 4449 4456	cuidado
 T358	Concept 4507 4511	bebé
 T357	Concept 4406 4423	presión sanguínea
 T356	Concept 4490 4495	salud
-E366	Action:T366 Target:T357 
+E366	Action:T366 Target:T357
 R103	is-a Arg1:T357 Arg2:T364
 R104	is-a Arg1:T362 Arg2:T361
 E365	Action:T365 Target:T356 Target2:T358 Subject:E366
@@ -510,7 +510,7 @@ R108	is-a Arg1:T379 Arg2:T376
 R109	is-a Arg1:T377 Arg2:T378
 R112	is-a Arg1:T370 Arg2:T369
 R113	property-of Arg1:T367 Arg2:T368
-E9	Action:T66 Target:T372 Target2:T370 Target3:T368 
+E9	Action:T66 Target:T372 Target2:T370 Target3:T368
 E374	Action:T374 Target:E9 Subject:T379
 T385	Concept 4694 4701	presión
 T384	Concept 4718 4726	embarazo
@@ -528,7 +528,7 @@ T389	Concept 4774 4791	aumento repentino
 T388	Concept 4774 4781	aumento
 T387	Concept 4774 4805	aumento repentino de la presión
 T386	Action 4765 4770	causa
-E386	Action:T386 Target:T392 
+E386	Action:T386 Target:T392
 R116	is-a Arg1:T391 Arg2:T390
 R117	is-a Arg1:T392 Arg2:T387
 R118	is-a Arg1:T392 Arg2:T389
@@ -546,7 +546,7 @@ R123	property-of Arg1:T395 Arg2:T394
 R124	property-of Arg1:T395 Arg2:T393
 T401	Action 4949 4955	conoce
 T400	Concept 4959 4979	manera de prevenirla
-E401	Action:T401 Target:T400 
+E401	Action:T401 Target:T400
 T409	Concept 4999 5023	mujeres con preeclampsia
 T408	Concept 4999 5006	mujeres
 T407	Concept 4984 4991	mayoría
@@ -565,7 +565,7 @@ T414	Concept 5168 5172	bebé
 T412	Concept 5114 5119	único
 T411	Concept 5134 5146	preeclampsia
 T410	Action 5125 5129	cura
-E415	Action:T415 Target:T414 
+E415	Action:T415 Target:T414
 E410	Action:T410 Target:T411 Subject:E415
 T420	Concept 5174 5179	Todos
 T418	Concept 5184 5193	embarazos
@@ -579,20 +579,20 @@ T424	Concept 5254 5271	problema de salud
 T423	Concept 5254 5262	problema
 T422	Action 5291 5297	quedar
 T421	Concept 5298 5308	embarazada
-E422	Action:T422 Target:T421 
-E426	Action:T426 Target:T425 
+E422	Action:T422 Target:T421
+E426	Action:T426 Target:T425
 R129	is-a Arg1:T424 Arg2:T423
 T429	Action 5324 5335	desarrollar
 T428	Concept 5340 5349	condición
 T427	Concept 5361 5369	embarazo
-E429	Action:T429 Target:T428 
+E429	Action:T429 Target:T428
 T436	Concept 5399 5408	embarazos
 T434	Concept 5399 5418	embarazos múltiples
 T433	Action 5377 5383	causas
 T432	Concept 5423 5431	problema
 T431	Concept 5423 5440	problema de salud
 T430	Concept 5471 5490	abuso de sustancias
-E433	Action:T433  Subject:T434 Subject2:T430 Subject3:T431
+E433	Action:T433 Subject:T434 Subject2:T430 Subject3:T431
 R131	is-a Arg1:T434 Arg2:T436
 T443	Concept 5548 5558	enfermedad
 T442	Concept 5559 5566	crónica
@@ -601,9 +601,9 @@ T440	Concept 5587 5593	médico
 T439	Action 5599 5608	enterarse
 T438	Action 5629 5638	minimizar
 T437	Concept 5642 5648	riesgo
-E438	Action:T438 Target:T437 
-E439	Action:T439  
-E441	Action:T441  Subject:T440
+E438	Action:T438 Target:T437
+E439	Action:T439 
+E441	Action:T441 Subject:T440
 R132	property-of Arg1:T442 Arg2:T443
 T450	Action 5686 5693	produce
 T449	Concept 5697 5705	embarazo
@@ -612,8 +612,8 @@ T447	Concept 5737 5772	equipo de profesionales de la salud
 T446	Action 5780 5789	supervise
 T445	Concept 5737 5743	equipo
 E446	Action:T446 Target:T449 Subject:T447
-E448	Action:T448 Target:T447 
-E450	Action:T450 Target:T449 
+E448	Action:T448 Target:T447
+E450	Action:T450 Target:T449
 R133	is-a Arg1:T447 Arg2:T445
 T461	Action 5819 5827	aumentar
 T460	Concept 5831 5850	riesgo del embarazo
@@ -633,8 +633,8 @@ T466	Concept 5965 5972	cuidado
 T465	Concept 5965 5981	cuidado prenatal
 T464	Action 5997 6008	detectarlas
 T463	Action 6011 6020	tratarlas
-E463	Action:T463  Subject:T465
-E464	Action:T464  Subject:T465
+E463	Action:T463 Subject:T465
+E464	Action:T464 Subject:T465
 R142	is-a Arg1:T465 Arg2:T466
 T472	Concept 6055 6060	dolor
 T471	Concept 6105 6113	embarazo
@@ -676,8 +676,8 @@ T491	Action 6413 6423	prevenirse
 T490	Action 6426 6434	tratarse
 T489	Concept 6453 6459	prueba
 T488	Concept 6464 6472	positiva
-E490	Action:T490 Target:T492 
-E491	Action:T491 Target:T492 
+E490	Action:T490 Target:T492
+E491	Action:T491 Target:T492
 R154	property-of Arg1:T488 Arg2:T489
 T504	Concept 6570 6577	persona
 T503	Concept 6614 6627	planificación
@@ -693,7 +693,7 @@ T494	Concept 6614 6636	planificación familiar
 T493	Concept 6639 6661	cobertura de un seguro
 E496	Action:T496 Target:T495 Subject:T504
 E497	Action:T497 Target:E496 Subject:T499
-E501	Action:T501 Target:T500 
+E501	Action:T501 Target:T500
 R155	is-a Arg1:T494 Arg2:T495
 R156	is-a Arg1:T493 Arg2:T495
 R157	part-of Arg1:T499 Arg2:T498
@@ -765,8 +765,8 @@ T546	Action 7367 7376	confirman
 T545	Action 7379 7388	descartan
 T544	Concept 7389 7398	problemas
 T543	Concept 7402 7407	salud
-E545	Action:T545 Target:T544 
-E546	Action:T546 Target:T544 
+E545	Action:T545 Target:T544
+E546	Action:T546 Target:T544
 R181	property-of Arg1:T544 Arg2:T543
 T549	Concept 7436 7457	período de tres meses
 T548	Concept 7462 7470	embarazo
@@ -793,8 +793,8 @@ T561	Action 7684 7692	mantener
 T560	Concept 7630 7638	atención
 T559	Action 7622 7629	obtener
 T558	Concept 7630 7645	atención médica
-E559	Action:T559 Target:T558 
-E563	Action:T563 Target:T562 
+E559	Action:T559 Target:T558
+E563	Action:T563 Target:T562
 R188	is-a Arg1:T558 Arg2:T560
 E561	Action:T561 Target:E563 Subject:T558
 T573	Action 7805 7814	embarazar
@@ -833,11 +833,11 @@ T590	Concept 8077 8083	doctor
 T589	Concept 8098 8105	pruebas
 T588	Action 8089 8097	realizar
 E588	Action:T588 Target:T591 Subject:T590
-E592	Action:T592  Subject:T593
+E592	Action:T592 Subject:T593
 R24	is-a Arg1:T591 Arg2:T589
 T596	Action 8180 8190	revertirse
 T595	Concept 8163 8173	vasectomía
-E596	Action:T596 Target:T595 Target2:T595 
+E596	Action:T596 Target:T595 Target2:T595
 T77	Concept 8257 8291	enfermedades de transmisión sexual
 T604	Concept 8301 8309	VIH/SIDA
 T601	Concept 8221 8231	vasectomía
@@ -857,7 +857,7 @@ T607	Concept 8342 8352	vasectomía
 T606	Concept 8396 8408	enfermedades
 T605	Concept 8396 8430	enfermedades de transmisión sexual
 E608	Action:T608 Target:T607 Subject:T611
-E610	Action:T610 Target:T613 
+E610	Action:T610 Target:T613
 E612	Action:T612 Target:T605 Subject:E608
 E618	Action:T618 Target:E610 Subject:E608
 R195	is-a Arg1:T613 Arg2:T609

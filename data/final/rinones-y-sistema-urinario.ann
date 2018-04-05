@@ -78,7 +78,7 @@ T62	Concept 729 736	mujeres
 T60	Concept 713 721	síntomas
 T59	Action 744 752	empeorar
 T58	Concept 764 776	menstruación
-E59	Action:T59 Target:T58 Subject:T60
+E59	Action:T59 Target2:T60 Subject:T58
 R12	property-of Arg1:T60 Arg2:T62
 T65	Action 793 802	presentar
 T64	Concept 803 808	dolor
@@ -86,10 +86,7 @@ T63	Concept 821 840	relaciones sexuales
 E65	Action:T65 Target:T64
 R13	property-of Arg1:T64 Arg2:T63
 T73	Concept 870 878	cistitis
-T71	Concept 845 854	desconoce
-T70	Action 858 863	causa
 T67	Concept 870 891	cistitis intersticial
-E70	Action:T70 Target:T67 Subject:T71
 R14	is-a Arg1:T67 Arg2:T73
 T76	Concept 928 933	tiene
 T75	Concept 903 909	examen
@@ -417,7 +414,7 @@ T353	Concept 4036 4046	enfermedad
 T352	Concept 4036 4052	enfermedad renal
 T349	Concept 4036 4060	enfermedad renal crónica
 T348	Action 4071 4079	empeorar
-E348	Action:T348 Subject:T349
+E348	Action:T348 Target:T349
 R99	is-a Arg1:T352 Arg2:T353
 R100	is-a Arg1:T349 Arg2:T352
 T357	Concept 4120 4133	insuficiencia
@@ -866,7 +863,7 @@ T783	Concept 8553 8559	piedra
 T782	Action 8599 8607	necesite
 T781	Concept 8608 8619	tratamiento
 E782	Action:T782 Target:T781 Subject:T783
-E784	Action:T784 Subject:T783
+E784	Action:T784 Subject:T783 Target:T783
 T795	Concept 8736 8742	cuerpo
 T792	Action 8679 8688	insertado
 T791	Action 8711 8716	lleva
@@ -1112,13 +1109,11 @@ E1003	Action:T1003 Target:T1002 Subject:T1004
 R299	is-a Arg1:T1002 Arg2:T1007
 R300	is-a Arg1:T1001 Arg2:T1006
 R301	is-a Arg1:T1000 Arg2:T1005
-T1012	Action 11059 11065	pueden
 T1011	Concept 11046 11058	tratamientos
 T1010	Action 11066 11072	ayudar
 T1009	Concept 11081 11089	síntomas
 T1008	Concept 11096 11110	complicaciones
 E1010	Action:T1010 Target:T1009 Target2:T1008 Subject:T1011
-E1012	Action:T1012 
 T1024	Concept 11197 11204	riñones
 T1023	Concept 11231 11244	insuficiencia
 T1022	Concept 11112 11117	Estos
@@ -1159,7 +1154,7 @@ E1040	Action:T1040 Target:T1034 Subject:T1037
 R309	property-of Arg1:T1036 Arg2:T1037
 R310	part-of Arg1:T1037 Arg2:T1038
 R93	is-a Arg1:T1035 Arg2:T1042
-T1045	Action 11558 11566	no tiene
+T1045	Action 11561 11566	tiene
 T1044	Concept 11547 11557	enfermedad
 T1043	Concept 11567 11575	síntomas
 E1045	Action:T1045 Target:T1043 Subject:T1044
@@ -1433,3 +1428,25 @@ T1297	Action 14127 14133	lidiar
 E1297	Action:T1297 Target:T1300 Subject:T1299 Subject2:T1298
 R409	same-as Arg1:T1299 Arg2:T1298
 R410	is-a Arg1:T1298 Arg2:T1299
+T48	Action 845 854	desconoce
+E4	Action:T48 Target:E5
+T70	Action 858 863	causa
+E5	Action:T70 Target:T67
+A5	Negated E74
+A6	Uncertain E85
+T71	Action 1028 1031	hay
+E6	Action:T71 Target:T83
+A7	Negated E6
+A8	Negated E332
+A9	Negated E590
+A10	Negated E609
+A11	Negated E784
+A12	Uncertain E782
+A13	Negated E928
+A14	Negated E998
+A15	Negated E1040
+A16	Negated E1045
+A17	Uncertain E375
+A18	Uncertain E348
+T90	Concept 4080 4093	con el tiempo
+A19	Uncertain E529

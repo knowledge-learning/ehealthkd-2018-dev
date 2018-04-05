@@ -31,7 +31,7 @@ R3	part-of Arg1:T16 Arg2:T17
 T25	Action 304 312	penetrar
 T24	Concept 319 323	agua
 T23	Concept 337 352	desbordamientos
-E25	Action:T25 Target:T24 
+E25	Action:T25 Target:T24
 T30	Concept 357 379	exposición al arsénico
 T29	Concept 400 418	problemas de salud
 T28	Action 386 392	causar
@@ -59,7 +59,7 @@ T48	Action 513 519	causar
 T47	Concept 529 546	pequeñas verrugas
 T46	Concept 520 526	callos
 T45	Concept 538 546	verrugas
-E48	Action:T48 Target:T46 Target2:T47 
+E48	Action:T48 Target:T46 Target2:T47
 R23	is-a Arg1:T47 Arg2:T45
 T57	Concept 564 580	niveles elevados
 T56	Concept 564 592	niveles elevados de arsénico
@@ -110,8 +110,8 @@ T82	Concept 1002 1013	tratamiento
 T81	Concept 911 921	peligrosos
 T80	Concept 936 945	capacidad
 E83	Action:T83 Target:T80 Subject:T81
-E84	Action:T84 Target:T86 
-E87	Action:T87 Target:T88 
+E84	Action:T84 Target:T86
+E87	Action:T87 Target:T88
 R45	is-a Arg1:T88 Arg2:T82
 R46	is-a Arg1:T86 Arg2:T85
 T96	Concept 1026 1044	agentes biológicos
@@ -126,7 +126,7 @@ T104	Concept 1118 1128	enfermedad
 T103	Action 1111 1117	causan
 T102	Concept 1140 1145	horas
 T101	Concept 1148 1152	días
-E103	Action:T103 Target:T104 
+E103	Action:T103 Target:T104
 T118	Concept 1221 1236	virus de fiebre
 T117	Action 1294 1300	usarse
 T116	Concept 1306 1324	agentes biológicos
@@ -158,7 +158,7 @@ T123	Action 1340 1343	usa
 T122	Concept 1380 1388	personas
 E123	Action:T123 Target:T132 Subject:T128
 E129	Action:T129 Target:T122 Subject:T128
-E130	Action:T130 Target:T131 Target2:T125 Target3:T124 
+E130	Action:T130 Target:T131 Target2:T125 Target3:T124
 R56	is-a Arg1:T132 Arg2:T127
 R57	is-a Arg1:T131 Arg2:T126
 T140	Concept 1486 1506	preparativos médicos
@@ -200,7 +200,7 @@ T169	Concept 1804 1836	actividades de los seres humanos
 T168	Concept 1829 1836	humanos
 T167	Concept 1783 1793	naturaleza
 T166	Concept 1804 1815	actividades
-E170	Action:T170  Subject:T167 Subject2:T169
+E170	Action:T170 Subject:T167 Subject2:T169
 R79	is-a Arg1:T171 Arg2:T168
 R80	is-a Arg1:T169 Arg2:T166
 T178	Concept 1845 1848	día
@@ -219,8 +219,8 @@ T183	Concept 1929 1943	investigadores
 T182	Concept 1991 2007	cambio climático
 T181	Concept 2040 2045	salud
 T180	Concept 2021 2028	impacto
-E187	Action:T187 Target:T180 
-E1	Action:T6 Target:T182 
+E187	Action:T187 Target:T180
+E1	Action:T6 Target:T182
 E185	Action:T185 Target:E187 Target2:E1 Subject:T183
 T210	Concept 2097 2121	campos electromagnéticos
 T208	Concept 2055 2063	personas
@@ -241,7 +241,7 @@ T213	Action 2171 2179	relación
 T212	Concept 2143 2151	estudios
 E213	Action:T213 Target:T216 Target2:T217 Subject:T212
 R102	property-of Arg1:T224 Arg2:T223
-E14	Action:T133  Subject:T220
+E14	Action:T133 Subject:T220
 R77	property-of Arg1:E14 Arg2:T217
 R78	property-of Arg1:E14 Arg2:T216
 T237	Action 2326 2336	encontrado
@@ -275,7 +275,7 @@ T251	Concept 2516 2528	preocupación
 T250	Action 2583 2589	causen
 T249	Concept 2590 2596	cáncer
 E250	Action:T250 Target:T249 Target2:T256 Subject:T254 Subject2:T259
-E252	Action:T252 Target:T251 
+E252	Action:T252 Target:T251
 R108	is-a Arg1:T257 Arg2:T254
 R109	is-a Arg1:T256 Arg2:T253
 T267	Concept 2646 2672	energía de radiofrecuencia
@@ -298,7 +298,7 @@ T272	Concept 2818 2827	problemas
 T271	Concept 2784 2792	relación
 T270	Action 2773 2779	pruebe
 E270	Action:T270 Target:T271 Subject:T279
-E276	Action:T276 Target:E270 
+E276	Action:T276 Target:E270
 R117	is-a Arg1:T279 Arg2:T275
 R121	property-of Arg1:T274 Arg2:T272
 R122	property-of Arg1:T280 Arg2:T274
@@ -321,7 +321,7 @@ T292	Concept 3034 3038	aire
 T291	Concept 3052 3056	casa
 T290	Concept 3087 3098	contaminado
 E294	Action:T294 Target:T293 Subject:T299
-E300	Action:T300 Target:E294 
+E300	Action:T300 Target:E294
 R125	is-a Arg1:T299 Arg2:T295
 R6	property-of Arg1:T290 Arg2:T292
 R7	property-of Arg1:T291 Arg2:T292
@@ -358,7 +358,7 @@ E333	Action:T333 Target:T332 Subject:T327
 R146	property-of Arg1:T330 Arg2:T331
 R147	property-of Arg1:T343 Arg2:T330
 R148	property-of Arg1:T342 Arg2:T343
-E3	Action:T15 Target:T22 
+E3	Action:T15 Target:T22
 T349	Concept 3632 3644	enfermedades
 T348	Concept 3557 3570	contaminantes
 T347	Concept 3585 3592	cuadros
@@ -376,8 +376,8 @@ T355	Action 3721 3729	eliminar
 T354	Concept 3734 3747	contaminantes
 T353	Concept 3765 3772	calidad
 T352	Concept 3777 3781	aire
-E355	Action:T355 Target:T354 
-E363	Action:T363 Target:T356 
+E355	Action:T355 Target:T354
+E363	Action:T363 Target:T356
 R155	property-of Arg1:T353 Arg2:T352
 E362	Action:T362 Target:T353 Subject:E355 Subject2:E363
 T371	Action 3881 3888	beberla
@@ -388,11 +388,11 @@ T365	Concept 3857 3865	fábricas
 T364	Concept 3800 3805	gente
 E366	Action:T366 Target:T365 Subject:T364
 E368	Action:T368 Target:T367 Subject:T364
-E371	Action:T371  Subject:T364
+E371	Action:T371 Subject:T364
 T378	Concept 3915 3920	peces
 T377	Action 3961 3971	sobrevivir
 T372	Concept 3926 3938	vida salvaje
-E377	Action:T377 Target:T372 Target2:T378 
+E377	Action:T377 Target:T372 Target2:T378
 T384	Concept 3980 3993	contaminantes
 T383	Action 4001 4006	dañar
 T382	Concept 4016 4020	ríos
@@ -425,9 +425,9 @@ T410	Concept 4327 4334	plantas
 T409	Action 4260 4268	obstruir
 T408	Action 4298 4306	bloquear
 T407	Action 4315 4322	matando
-E407	Action:T407 Target:T410 
-E408	Action:T408 Target:T411 
-E409	Action:T409 Target:T412 
+E407	Action:T407 Target:T410
+E408	Action:T408 Target:T411
+E409	Action:T409 Target:T412
 R167	part-of Arg1:T412 Arg2:T414
 T423	Action 4394 4403	problemas
 T419	Concept 4340 4350	nutrientes
@@ -497,7 +497,7 @@ R209	property-of Arg1:T472 Arg2:T475
 T480	Action 5084 5094	inhalación
 T477	Action 5101 5109	aumentar
 T476	Concept 5137 5155	problemas de salud
-E480	Action:T480  
+E480	Action:T480 
 E477	Action:T477 Target:T476 Subject:E480
 T494	Concept 5174 5186	enfermedades
 T493	Concept 5242 5247	niños
@@ -541,7 +541,7 @@ E507	Action:T507 Target:T514 Subject:T513 Subject2:E511 Subject3:E508
 T518	Action 5598 5604	causas
 T517	Concept 5614 5633	desastres naturales
 T516	Concept 5636 5653	actos deliberados
-E518	Action:T518  Subject:T517 Subject2:T516
+E518	Action:T518 Subject:T517 Subject2:T516
 T525	Action 5699 5706	efectos
 T524	Concept 5659 5679	derrames de petróleo
 T523	Concept 5707 5718	ambientales
@@ -626,8 +626,8 @@ T611	Concept 6819 6826	desagüe
 T610	Action 6789 6795	vierta
 T609	Action 6834 6838	bote
 T608	Concept 6844 6850	basura
-E609	Action:T609 Target:T608 
-E610	Action:T610 Target:T612 Target2:T611 
+E609	Action:T609 Target:T608
+E610	Action:T610 Target:T612 Target2:T611
 T624	Action 6891 6902	recolección
 T619	Action 6871 6877	tienen
 T618	Concept 6859 6870	comunidades
@@ -648,16 +648,16 @@ T638	Action 7028 7037	inhalarlo
 T637	Action 7039 7049	inyectarlo
 T636	Action 7052 7062	absorberlo
 T630	Concept 7078 7082	piel
-E636	Action:T636  
-E637	Action:T637  
-E638	Action:T638  
-E639	Action:T639  
+E636	Action:T636 
+E637	Action:T637 
+E638	Action:T638 
+E639	Action:T639 
 T32	Concept 7138 7147	demasiado
 T31	Action 7130 7137	ingiere
 T643	Concept 7094 7103	sustancia
 T642	Concept 7117 7123	veneno
 R290	is-a Arg1:T643 Arg2:T642
-E5	Action:T31 Target:T643 
+E5	Action:T31 Target:T643
 T654	Concept 7173 7187	envenenamiento
 T653	Concept 7216 7228	enfermedades
 T652	Concept 7253 7259	lesión
@@ -682,9 +682,9 @@ T658	Concept 7303 7318	envenenamientos
 T657	Concept 7352 7361	productos
 T656	Action 7290 7298	prevenir
 T655	Action 7333 7337	usar
-E655	Action:T655 Target:T657 
-E662	Action:T662 Target:T657 
-E6	Action:T43  Subject:T44
+E655	Action:T655 Target:T657
+E662	Action:T662 Target:T657
+E6	Action:T43 Subject:T44
 E656	Action:T656 Target:T658 Subject:E655 Subject2:E662
 T666	Concept 7418 7427	productos
 T664	Concept 7441 7461	alcance de los niños
@@ -702,8 +702,8 @@ T49	Action 7530 7538	sospecha
 T677	Concept 7579 7621	centro de control de envenenamientos local
 T675	Action 7570 7575	llame
 T674	Concept 7559 7569	envenenado
-E675	Action:T675 Target:T677 
-E7	Action:T49 Target:T674 
+E675	Action:T675 Target:T677
+E7	Action:T49 Target:T674
 T687	Concept 7678 7680	CO
 T684	Concept 7692 7700	sin olor
 T683	Concept 7701 7709	ni color
@@ -719,7 +719,7 @@ R317	property-of Arg1:T680 Arg2:T682
 T690	Concept 7759 7769	enfermedad
 T689	Concept 7775 7781	muerte
 T688	Action 7736 7742	causar
-E688	Action:T688 Target:T690 Target2:T689 
+E688	Action:T688 Target:T690 Target2:T689
 T699	Concept 7786 7788	CO
 T698	Concept 7808 7829	humo de la combustión
 T697	Action 7845 7854	expulsado
@@ -746,7 +746,7 @@ R24	property-of Arg1:T707 Arg2:T711
 T717	Action 8093 8104	respirarlos
 T715	Concept 8064 8071	persona
 T714	Action 8078 8089	envenenarse
-E717	Action:T717  Subject:T715
+E717	Action:T717 Subject:T715
 E714	Action:T714 Target:T715 Subject:E717
 T724	Concept 8146 8156	envenenado
 T722	Concept 8161 8163	CO
@@ -795,10 +795,10 @@ T767	Action 8720 8728	ingieren
 T766	Action 8731 8739	absorben
 T758	Concept 8645 8663	sustancias tóxicas
 T757	Concept 8673 8682	productos
-E766	Action:T766 Target:T758 
-E767	Action:T767 Target:T758 
-E768	Action:T768 Target:T758 
-E769	Action:T769  Subject:E768 Subject2:E767 Subject3:E766
+E766	Action:T766 Target:T758
+E767	Action:T767 Target:T758
+E768	Action:T768 Target:T758
+E769	Action:T769 Subject:E768 Subject2:E767 Subject3:E766
 R347	part-of Arg1:T758 Arg2:T757
 T772	Concept 8786 8804	sustancias tóxicas
 T771	Concept 8764 8769	gente
@@ -825,8 +825,8 @@ T792	Concept 8970 8979	problemas
 T791	Action 8981 8989	mantenga
 T789	Concept 9011 9034	contenedores originales
 T788	Concept 8994 9003	productos
-E791	Action:T791  Subject:T788
-E793	Action:T793 Target:T792 
+E791	Action:T791 Subject:T788
+E793	Action:T793 Target:T792
 T99	Concept 9168 9172	piel
 T97	Concept 9187 9196	productos
 T90	Action 9173 9180	absorbe
@@ -835,9 +835,9 @@ T76	Action 9149 9154	traga
 T66	Concept 9123 9135	ayuda médica
 T65	Action 9116 9122	busque
 T794	Concept 9085 9098	instrucciones
-E8	Action:T65  
-E9	Action:T76 Target:T97 
-E10	Action:T89 Target:T97 
+E8	Action:T65 
+E9	Action:T76 Target:T97
+E10	Action:T89 Target:T97
 E11	Action:T90 Target:T97 Subject:T99
 T804	Concept 9201 9221	humo de segunda mano
 T803	Concept 9240 9244	humo
@@ -855,7 +855,7 @@ R38	property-of Arg1:T800 Arg2:T803
 R39	property-of Arg1:T799 Arg2:T803
 T806	Concept 9365 9384	sustancias químicas
 T805	Action 9339 9347	Contiene
-E805	Action:T805 Target:T806 
+E805	Action:T805 Target:T806
 T811	Concept 9402 9420	productos químicos
 T810	Concept 9425 9432	tóxicos
 T809	Concept 9457 9463	cáncer
@@ -876,8 +876,8 @@ T827	Concept 9647 9672	inhalación pasiva de humo
 T826	Concept 9628 9640	no fumadores
 T825	Concept 9697 9713	lugares cerrados
 T824	Action 9613 9621	proteger
-E833	Action:T833  
-E834	Action:T834 Target:E833 
+E833	Action:T833 
+E834	Action:T834 Target:E833
 E824	Action:T824 Target:T826 Subject:E834
 T840	Concept 9733 9741	elemento
 T838	Concept 9718 9726	mercurio
@@ -903,13 +903,13 @@ T852	Concept 9906 9914	sin olor
 T851	Concept 9915 9923	ni color
 R50	property-of Arg1:T852 Arg2:T853
 R54	property-of Arg1:T851 Arg2:T853
-E13	Action:T119  
+E13	Action:T119 
 T858	Concept 9976 9982	polvos
 T857	Concept 9985 9994	cristales
 T856	Action 9936 9943	combina
 T855	Concept 9954 9963	elementos
 T854	Action 9969 9975	formar
-E856	Action:T856  Subject:T855
+E856	Action:T856 Subject:T855
 E854	Action:T854 Target:T858 Target2:T857 Subject:E856
 T861	Concept 9999 10007	mercurio
 T860	Concept 10031 10040	productos
@@ -945,8 +945,8 @@ T889	Concept 10372 10379	pescado
 T888	Action 10314 10324	acumularse
 T887	Action 10366 10371	comen
 E887	Action:T887 Target:T889 Subject:T890
-E888	Action:T888 Target:T892 Target2:T891 Target3:E887 
-E895	Action:T895 Target:T893 
+E888	Action:T888 Target:T892 Target2:T891 Target3:E887
+E895	Action:T895 Target:T893
 T898	Concept 10384 10400	sistema nervioso
 T897	Concept 10435 10443	mercurio
 T896	Action 10404 10412	sensible
@@ -956,7 +956,7 @@ T903	Action 10448 10458	exposición
 T902	Action 10481 10486	dañar
 T901	Concept 10490 10497	cerebro
 T900	Concept 10504 10511	riñones
-E903	Action:T903 Target:T904 
+E903	Action:T903 Target:T904
 E902	Action:T902 Target:T901 Target2:T900 Subject:E903
 T910	Concept 10517 10528	embarazadas
 T909	Concept 10547 10555	mercurio
@@ -978,7 +978,7 @@ T919	Concept 10695 10702	cálidas
 T918	Concept 10704 10711	mojadas
 T917	Concept 10714 10721	húmedas
 T916	Action 10667 10673	Crecen
-E916	Action:T916  
+E916	Action:T916 
 R410	property-of Arg1:T919 Arg2:T920
 R411	property-of Arg1:T918 Arg2:T920
 R412	property-of Arg1:T917 Arg2:T920
@@ -1003,12 +1003,12 @@ T936	Concept 10858 10862	moho
 T935	Concept 10865 10880	esporas de moho
 T934	Action 10887 10893	causar
 T933	Concept 10894 10914	reacciones alérgicas
-E937	Action:T937 Target:T936 Target2:T935 
-E938	Action:T938 Target:T936 Target2:T935 
+E937	Action:T937 Target:T936 Target2:T935
+E938	Action:T938 Target:T936 Target2:T935
 E934	Action:T934 Target:T933 Subject:E937 Subject2:E938
 T940	Action 10929 10935	causar
 T939	Concept 10936 10957	infecciones micóticas
-E940	Action:T940 Target:T939 
+E940	Action:T940 Target:T939
 T948	Action 10970 10980	exposición
 T947	Concept 10984 10988	moho
 T946	Action 10995 11004	irritarle
@@ -1017,13 +1017,13 @@ T944	Concept 11018 11022	piel
 T943	Concept 11027 11032	nariz
 T942	Concept 11037 11045	garganta
 T941	Concept 11052 11060	pulmones
-E948	Action:T948 Target:T947 
+E948	Action:T948 Target:T947
 E946	Action:T946 Target:T945 Target2:T944 Target3:T942 Target4:T941 Target5:T943 Subject:E948
 T952	Concept 11077 11089	gas incoloro
 T951	Action 11122 11132	respiramos
 T950	Concept 11065 11070	ozono
 T949	Concept 11113 11117	aire
-E951	Action:T951 Target:T949 
+E951	Action:T951 Target:T949
 R417	part-of Arg1:T950 Arg2:T949
 R418	is-a Arg1:T950 Arg2:T952
 T955	Concept 11152 11156	malo
@@ -1034,7 +1034,7 @@ R422	part-of Arg1:T961 Arg2:T957
 R62	part-of Arg1:T960 Arg2:T961
 T965	Concept 11323 11349	rayos ultravioleta del sol
 T964	Action 11308 11315	protege
-E964	Action:T964  
+E964	Action:T964 
 T971	Concept 11363 11382	capa de ozono bueno
 T970	Concept 11351 11382	Parte de la capa de ozono bueno
 T969	Action 11383 11394	desapareció
@@ -1058,7 +1058,7 @@ T982	Concept 11602 11611	problemas
 T981	Concept 11618 11637	sistema inmunitario
 T978	Action 11549 11557	aumentar
 T977	Concept 11590 11599	cataratas
-E978	Action:T978 Target:T985 
+E978	Action:T978 Target:T985
 R425	property-of Arg1:T983 Arg2:T984
 R426	property-of Arg1:T982 Arg2:T981
 R427	property-of Arg1:T985 Arg2:T984
@@ -1076,7 +1076,7 @@ T994	Concept 11763 11770	fuentes
 T993	Action 11771 11781	reaccionan
 T992	Concept 11802 11813	luz del sol
 E993	Action:T993 Target:T992 Subject:T995 Subject2:T994 Subject3:T1000
-E997	Action:T997  Subject:E993
+E997	Action:T997 Subject:E993
 R432	is-a Arg1:T999 Arg2:T994
 R433	is-a Arg1:T995 Arg2:T994
 R434	part-of Arg1:T1000 Arg2:T999
@@ -1088,8 +1088,8 @@ T1003	Concept 11862 11866	peor
 T1007	Action 11878 11886	Respirar
 T1006	Concept 11890 11900	ozono malo
 T1005	Action 11911 11917	dañino
-E1007	Action:T1007 Target:T1006 
-E1005	Action:T1005  Subject:E1007
+E1007	Action:T1007 Target:T1006
+E1005	Action:T1005 Subject:E1007
 T1020	Action 11932 11942	irritación
 T1019	Concept 11949 11957	garganta
 T1018	Action 12065 12075	exposición
@@ -1103,8 +1103,8 @@ T1011	Concept 11999 12009	bronquitis
 T1010	Concept 12012 12020	enfisema
 T1009	Concept 12029 12045	daños pulmonares
 T1008	Concept 12046 12057	permanentes
-E1014	Action:T1014 Target:T1013 
-E1018	Action:T1018  
+E1014	Action:T1014 Target:T1013
+E1018	Action:T1018 
 E1020	Action:T1020 Target:T1019 Subject:T1019
 R436	is-a Arg1:T1012 Arg2:T1013
 R437	is-a Arg1:T1011 Arg2:T1013
@@ -1118,10 +1118,10 @@ T1024	Concept 12159 12167	cultivos
 T1023	Concept 12188 12196	animales
 T1022	Concept 12173 12181	personas
 E1025	Action:T1025 Target:T1024 Target2:T1023 Target3:T1022 Subject:T1026
-E1027	Action:T1027  Subject:T1026
+E1027	Action:T1027 Subject:T1026
 T1029	Concept 12202 12212	pesticidas
 T1028	Action 12229 12237	librarse
-E1028	Action:T1028  Subject:T1029
+E1028	Action:T1028 Subject:T1029
 T1040	Concept 12355 12362	hierbas
 T1038	Concept 12252 12262	pesticidas
 T1037	Action 12283 12288	matar
@@ -1151,27 +1151,27 @@ E1047	Action:T1047 Target:E1053 Subject:T1050
 T1056	Action 12602 12609	dañinos
 T1055	Concept 12619 12627	personas
 T1054	Concept 12634 12642	mascotas
-E1056	Action:T1056 Target:T1055 Target2:T1054 
+E1056	Action:T1056 Target:T1055 Target2:T1054
 T1059	Concept 12685 12704	métodos no químicos
 T1058	Action 12659 12667	prefiera
-E1058	Action:T1058 Target:T1059 
+E1058	Action:T1058 Target:T1059
 T121	Concept 12742 12755	correctamente
 T1062	Action 12709 12717	necesita
 T1061	Concept 12721 12730	pesticida
 T1060	Action 12732 12741	utilícelo
-E1060	Action:T1060 Target:T1061 
-E1062	Action:T1062 Target:T1061 
+E1060	Action:T1060 Target:T1061
+E1062	Action:T1062 Target:T1061
 T1066	Action 12757 12762	Tenga
 T1065	Concept 12772 12779	cuidado
 T1064	Concept 12793 12798	niños
 T1063	Concept 12801 12809	mascotas
-E1066	Action:T1066 Target:T1065 
+E1066	Action:T1066 Target:T1065
 T1071	Concept 12857 12870	correctamente
 T1070	Action 12833 12841	desechar
 T1069	Concept 12846 12856	pesticidas
 T1068	Action 12887 12895	proteger
 T1067	Concept 12899 12913	medio ambiente
-E1070	Action:T1070 Target:T1069 
+E1070	Action:T1070 Target:T1069
 E1068	Action:T1068 Target:T1067 Subject:E1070
 T1074	Concept 12919 12948	pesticidas con base biológica
 T1073	Concept 12919 12929	pesticidas
@@ -1181,11 +1181,11 @@ R443	property-of Arg1:T1072 Arg2:T1074
 T1080	Action 12984 12989	tiene
 T1079	Concept 12990 12994	olor
 T1078	Concept 12998 13003	sabor
-E1080	Action:T1080 Target:T1079 Target2:T1078 
+E1080	Action:T1080 Target:T1079 Target2:T1078
 T1083	Action 13016 13024	causarle
 T1082	Concept 13028 13036	problema
 T1081	Concept 13043 13047	casa
-E1083	Action:T1083 Target:T1082 
+E1083	Action:T1083 Target:T1082
 T1091	Action 13058 13066	proviene
 T1090	Concept 13088 13095	natural
 T1089	Concept 13052 13057	radón
@@ -1194,8 +1194,8 @@ T1087	Concept 13113 13118	suelo
 T1086	Concept 13124 13129	rocas
 T1085	Concept 13135 13139	agua
 T1084	Action 13073 13087	descomposición
-E1084	Action:T1084 Target:T1088 
-E1091	Action:T1091  Subject:T1089 Subject2:E1084
+E1084	Action:T1084 Target:T1088
+E1091	Action:T1091 Subject:T1089 Subject2:E1084
 R446	part-of Arg1:T1088 Arg2:T1087
 R447	part-of Arg1:T1088 Arg2:T1086
 R448	part-of Arg1:T1088 Arg2:T1085
@@ -1241,8 +1241,8 @@ T1120	Concept 13691 13698	alguien
 T1119	Action 13708 13712	haga
 T1118	Concept 13716 13722	prueba
 E1119	Action:T1119 Target:T1118 Subject:T1120
-E1122	Action:T1122 Target:E1119 
-E1124	Action:T1124 Target:T1123 
+E1122	Action:T1122 Target:E1119
+E1124	Action:T1124 Target:T1123
 T1128	Concept 13728 13736	sistemas
 T1127	Action 13759 13768	disminuir
 T1126	Concept 13772 13789	cantidad de radón
@@ -1266,7 +1266,7 @@ T1140	Action 13941 13950	duplicado
 T1139	Concept 13957 13969	último siglo
 T1138	Action 13998 14005	tenemos
 T1137	Concept 14006 14018	agua potable
-E1138	Action:T1138 Target:T1137 
+E1138	Action:T1138 Target:T1137
 E1140	Action:T1140 Target:T1141 Subject:T1141
 T1148	Concept 14047 14060	contaminación
 T1147	Action 14139 14145	causar
@@ -1309,5 +1309,5 @@ T1164	Concept 14529 14536	minería
 T1163	Concept 14539 14549	industrias
 T1162	Action 14519 14522	uso
 E1162	Action:T1162 Target:T1164 Target2:T1163 Subject:T1166 Subject2:T1165
-E1167	Action:T1167 Target:T1166 Target2:T1165 
+E1167	Action:T1167 Target:T1166 Target2:T1165
 R76	is-a Arg1:T1169 Arg2:T1170

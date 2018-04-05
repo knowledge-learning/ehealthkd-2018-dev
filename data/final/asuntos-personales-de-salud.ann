@@ -11,10 +11,10 @@ E3	Action:T3 Target:E2 Subject:T5
 R0	is-a Arg1:T5 Arg2:T4
 R1	is-a Arg1:T1 Arg2:T7
 T21	Concept 160 181	preguntas científicas
-T20	Concept 202 216	mejores formas
+T20	Concept 202 209	mejores
 T17	Concept 143 150	estudio
 T16	Action 151 159	responde
-T15	Action 184 201	intenta encontrar
+T15	Action 192 201	encontrar
 T14	Concept 210 216	formas
 T13	Action 220 228	prevenir
 T12	Action 230 238	examinar
@@ -22,32 +22,30 @@ T11	Action 240 252	diagnosticar
 T10	Action 255 261	tratar
 T9	Concept 266 276	enfermedad
 T8	Concept 160 169	preguntas
-E10	Action:T10 Target:T9 Subject:T20
-E11	Action:T11 Target:T9 Subject:T20
-E12	Action:T12 Target:T9 Subject:T20
-E13	Action:T13 Target:T9 Subject:T20
-E15	Action:T15 Target:T20 Subject:T17
+E10	Action:T10 Target:T9 Subject:T14
+E11	Action:T11 Target:T9 Subject:T14
+E12	Action:T12 Target:T9 Subject:T14
+E13	Action:T13 Target:T9 Subject:T14
+E15	Action:T15 Subject:T17 Target:T14
 E16	Action:T16 Target:T21 Subject:T17
 R4	is-a Arg1:T21 Arg2:T8
-R5	is-a Arg1:T20 Arg2:T14
+R5	property-of Arg1:T20 Arg2:T14
 T31	Concept 282 289	ensayos
-T30	Concept 326 343	tratamiento nuevo
+T30	Concept 326 337	tratamiento
 T25	Concept 372 382	disponible
 T24	Concept 282 298	ensayos clínicos
 T23	Action 314 322	comparar
-T22	Concept 348 351	uno
-E23	Action:T23 Target:T30 Target2:T22 Subject:T24
-R8	property-of Arg1:T25 Arg2:T22
+E23	Action:T23 Target:T30 Subject:T24
+R8	property-of Arg1:T25 Arg2:T30
 R9	is-a Arg1:T24 Arg2:T31
 T38	Concept 389 395	ensayo
 T35	Concept 389 403	ensayo clínico
 T34	Concept 413 422	protocolo
 T33	Concept 425 439	plan de acción
 T32	Action 445 453	llevarlo
-E32	Action:T32 Target:T35 Target2:T34
+E32	Action:T32 Target:T35 Target2:T34 Target3:T33
 R12	is-a Arg1:T35 Arg2:T38
 R13	property-of Arg1:T34 Arg2:T35
-R15	same-as Arg1:T33 Arg2:T34
 R16	property-of Arg1:T33 Arg2:T35
 T47	Action 489 493	hará
 T46	Concept 509 513	cómo
@@ -116,3 +114,7 @@ R3	is-a Arg1:T77 Arg2:T18
 R6	part-of Arg1:T19 Arg2:T18
 R7	part-of Arg1:T79 Arg2:T18
 R10	part-of Arg1:T78 Arg2:T18
+A1	Uncertain E15
+T26	Concept 338 343	nuevo
+R11	property-of Arg1:T26 Arg2:T30	
+A2	Uncertain E23

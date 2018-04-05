@@ -23,7 +23,7 @@ T14	Concept 147 155	aparatos
 T13	Concept 158 166	técnicas
 T12	Action 174 179	crear
 T11	Concept 180 188	imágenes
-E12	Action:T12 Target:T11 Subject:T14 Subject2:T13
+E12	Action:T12 Subject:T14 Subject2:T13 Target:T52
 R4	part-of Arg1:T17 Arg2:T15
 R139	property-of Arg1:T16 Arg2:T15
 T23	Concept 254 260	imagen
@@ -37,7 +37,7 @@ E21	Action:T21 Target:T23 Subject:T22
 T26	Concept 358 378	pruebas por imágenes
 T25	Concept 358 365	pruebas
 T24	Action 382 388	duelen
-E24	Action:T24  Subject:T26
+E24	Action:T24 Target:T26
 R5	is-a Arg1:T26 Arg2:T25
 T33	Action 439 446	incluir
 T32	Concept 424 431	pruebas
@@ -51,7 +51,7 @@ T37	Concept 544 552	diminuta
 T36	Concept 526 532	cuerpo
 T35	Action 510 519	introduce
 T34	Concept 537 543	cámara
-E35	Action:T35 Target:T34 Target2:T36 
+E35	Action:T35 Target:T34 Target2:T36
 R8	property-of Arg1:T37 Arg2:T34
 R9	is-a Arg1:T38 Arg2:T39
 T41	Concept 612 622	tubo visor
@@ -68,7 +68,7 @@ T44	Concept 755 762	corazón
 T43	Concept 768 776	pulmones
 T42	Concept 782 787	colon
 E46	Action:T46 Target:T47 Subject:T50
-E51	Action:T51  Subject:T50
+E51	Action:T51 Subject:T50
 R11	is-a Arg1:T44 Arg2:T45
 R12	is-a Arg1:T43 Arg2:T45
 R13	is-a Arg1:T42 Arg2:T45
@@ -89,7 +89,7 @@ T62	Concept 911 926	alta frecuencia
 T61	Action 932 940	observar
 T60	Concept 941 948	órganos
 T59	Concept 951 962	estructuras
-E61	Action:T61 Target:T60 Target2:T59 
+E61	Action:T61 Target:T60 Target2:T59
 R18	property-of Arg1:T63 Arg2:T64
 R19	property-of Arg1:T62 Arg2:T64
 T73	Action 1021 1025	usan
@@ -101,7 +101,7 @@ T68	Concept 1051 1067	vasos sanguíneos
 T67	Concept 1073 1080	riñones
 T66	Concept 1085 1091	hígado
 T65	Concept 1100 1107	órganos
-E70	Action:T70 Target:T69 Target2:T67 Target3:T66 Target4:T68 
+E70	Action:T70 Target:T69 Target2:T67 Target3:T66 Target4:T68
 E73	Action:T73 Target:E70 Subject:T72
 R20	is-a Arg1:T72 Arg2:T71
 R21	is-a Arg1:T66 Arg2:T65
@@ -146,7 +146,7 @@ T104	Concept 1456 1467	transductor
 T103	Action 1476 1483	captura
 T102	Concept 1488 1493	ondas
 T101	Action 1498 1505	rebotan
-E101	Action:T101  Subject:T102
+E101	Action:T101 Subject:T102
 E103	Action:T103 Target:E101 Subject:T104
 T108	Concept 1510 1528	máquina ecográfica
 T107	Concept 1510 1517	máquina
@@ -185,13 +185,13 @@ R43	property-of Arg1:T124 Arg2:T126
 R44	part-of Arg1:T122 Arg2:T123
 T131	Concept 1797 1803	médico
 T130	Action 1807 1812	mueve
-E130	Action:T130  Subject:T131
+E130	Action:T130 Subject:T131
 T137	Action 1966 1977	extirpación
 T136	Concept 1981 1999	pólipos  del colon
 T134	Concept 1910 1921	endoscopios
 T133	Action 1925 1929	usan
 T132	Concept 1935 1942	cirugía
-E137	Action:T137 Target:T136 
+E137	Action:T137 Target:T136
 E133	Action:T133 Target:T132 Target2:E137 Subject:T134
 T147	Concept 2004 2024	escanografía nuclear
 T146	Action 2041 2048	utiliza
@@ -227,7 +227,7 @@ T166	Concept 2363 2369	cámara
 T165	Action 2370 2374	toma
 T164	Concept 2379 2387	imágenes
 E165	Action:T165 Target:T164 Subject:T166
-E167	Action:T167  Subject:T168
+E167	Action:T167 Subject:T168 Target:T168
 R25	property-of Arg1:T169 Arg2:T168
 T178	Concept 2393 2406	escanografías
 T177	Concept 2393 2416	escanografías nucleares
@@ -249,10 +249,10 @@ T182	Concept 2562 2569	órganos
 T181	Concept 2579 2586	corazón
 T180	Concept 2593 2601	pulmones
 T179	Action 2525 2532	mostrar
-E183	Action:T183 Target:T182 
+E183	Action:T183 Target:T182
 R62	is-a Arg1:T181 Arg2:T182
 R63	is-a Arg1:T180 Arg2:T182
-E179	Action:T179 Target:E183 
+E179	Action:T179 Target:E183
 T200	Concept 2620 2653	imágenes por resonancia magnética
 T199	Concept 2680 2685	ondas
 T193	Concept 2765 2771	cuerpo
@@ -264,7 +264,7 @@ T188	Concept 2680 2694	ondas de radio
 T187	Action 2700 2708	observar
 T186	Concept 2709 2716	órganos
 T185	Concept 2719 2730	estructuras
-E187	Action:T187 Target:T186 Target2:T185 
+E187	Action:T187 Target:T186 Target2:T185
 E189	Action:T189 Target:T191 Target2:T188 Subject:T200
 R65	property-of Arg1:T190 Arg2:T191
 R68	part-of Arg1:T186 Arg2:T193
@@ -302,7 +302,7 @@ T221	Action 3187 3197	permanecer
 T220	Concept 3198 3205	inmóvil
 T219	Concept 3146 3153	estudio
 E221	Action:T221 Target:T220 Subject:T222
-E223	Action:T223  Subject:T219
+E223	Action:T223 Subject:T219
 T226	Concept 3210 3221	exploración
 T225	Action 3225 3230	causa
 T224	Concept 3231 3236	dolor
@@ -314,7 +314,7 @@ E228	Action:T228 Target:T227 Subject:T229
 T237	Concept 3301 3308	tapones
 T235	Action 3291 3300	ofrecerle
 T233	Concept 3277 3284	técnico
-E235	Action:T235 Target:T237 Subject:T233
+E235	Action:T235 Subject:T233 Target:T152
 T246	Concept 3338 3361	hemoglobina glicosilada
 T244	Concept 3401 3409	diabetes
 T243	Concept 3401 3416	diabetes tipo 2
@@ -340,22 +340,22 @@ T262	Concept 3571 3576	HbA1c
 T261	Action 3582 3585	ver
 T260	Action 3603 3612	manejando
 T259	Concept 3616 3624	diabetes
-E260	Action:T260 Target:T259 
+E260	Action:T260 Target:T259
 E261	Action:T261 Target:E260 Subject:T262
-E263	Action:T263 Target:T262 
+E263	Action:T263 Target:T262
 T275	Action 3635 3640	tiene
 T274	Concept 3641 3649	diabetes
 T273	Action 3656 3665	someterse
 T272	Concept 3671 3683	prueba HbA1c
 T270	Concept 3671 3677	prueba
-E273	Action:T273 Target:T272 
-E275	Action:T275 Target:T274 
+E273	Action:T273 Target:T272
+E275	Action:T275 Target:T274
 R29	is-a Arg1:T272 Arg2:T270
 T280	Action 3784 3791	cambiar
 T279	Concept 3795 3810	plan de cuidado
 T277	Concept 3722 3739	esultado de HbA1c
 T276	Concept 3743 3758	demasiado alto,
-E280	Action:T280 Target:T279 
+E280	Action:T280 Target:T279
 R95	property-of Arg1:T276 Arg2:T277
 T288	Concept 3875 3881	sangre
 T287	Concept 3831 3838	pruebas
@@ -417,7 +417,7 @@ T323	Action 4437 4444	evaluar
 T322	Concept 4445 4457	tratamientos
 T321	Action 4460 4469	controlar
 T320	Concept 4470 4482	enfermedades
-E321	Action:T321 Target:T320 
+E321	Action:T321 Target:T320
 E323	Action:T323 Target:T322 Subject:T327
 E324	Action:T324 Target:T322 Subject:T327
 E326	Action:T326 Target:T325 Subject:T327
@@ -453,7 +453,7 @@ T353	Concept 4836 4841	grasa
 T352	Concept 4850 4865	tejidos blandos
 T351	Concept 4850 4857	tejidos
 T350	Action 4866 4874	absorben
-E350	Action:T350  Subject:T352 Subject2:T353
+E350	Action:T350 Subject:T352 Subject2:T353
 R116	is-a Arg1:T352 Arg2:T351
 T359	Concept 4909 4913	aire
 T358	Action 4914 4921	absorbe
@@ -489,11 +489,11 @@ T377	Action 5284 5288	usar
 T376	Action 5315 5323	proteger
 T375	Concept 5332 5351	partes de su cuerpo
 E376	Action:T376 Target:T375 Subject:T378
-E377	Action:T377 Target:T378 
+E377	Action:T377 Target:T378
 T386	Concept 5368 5377	radiación
 T385	Action 5382 5388	recibe
 T382	Concept 5396 5407	radiografía
-E385	Action:T385 Target:T386 Target2:T382 
+E385	Action:T385 Target:T386 Target2:T382
 T391	Concept 5437 5448	radiografía
 T389	Concept 5471 5489	dosis de radiación
 T388	Concept 5437 5457	radiografía de tórax
@@ -504,7 +504,7 @@ T395	Concept 5588 5602	signos vitales
 T394	Action 5603 5611	muestran
 T393	Action 5630 5641	funcionando
 T392	Concept 5645 5651	cuerpo
-E393	Action:T393 Target:T392 
+E393	Action:T393 Target:T392
 E394	Action:T394 Target:E393 Subject:T395
 T408	Concept 5709 5733	diagnóstico con imágenes
 T407	Concept 5656 5680	tomografía computarizada
@@ -539,6 +539,74 @@ T427	Concept 6053 6071	tinte de contraste
 T426	Action 6076 6081	ayuda
 T425	Action 6117 6121	vean
 T424	Concept 6096 6113	partes del cuerpo
-E425	Action:T425  Subject:T424
+E425	Action:T425 Subject:T424
 E426	Action:T426 Target:E425 Subject:T427
 E428	Action:T428 Target:T427 Subject:T429
+T52	Concept 180 221	imágenes de las estructuras y actividades
+R52	is-a Arg1:T52 Arg2:T11	
+A1	Negated E24
+A2	Negated E83
+A3	Negated E225
+A4	Negated E421
+T78	Action 391 394	son
+E3	Action:T78 Target:T79 Subject:T26
+T79	Concept 395 414	fáciles de realizar
+A5	Uncertain E33
+T81	Concept 564 568	tubo
+T90	Concept 569 574	largo
+T99	Concept 577 584	delgado
+R55	property-of Arg1:T90 Arg2:T81	
+R56	property-of Arg1:T99 Arg2:T81	
+T109	Action 553 558	unida
+E5	Action:T109 Target:T81 Target2:T34
+T110	Concept 612 616	tubo
+R64	is-a Arg1:T41 Arg2:T110	
+T118	Concept 966 985	interior del cuerpo
+R66	part-of Arg1:T60 Arg2:T118	
+R67	part-of Arg1:T59 Arg2:T118	
+T128	Action 886 893	Utiliza
+E6	Action:T128 Target:T64
+T135	Concept 979 985	cuerpo
+R70	part-of Arg1:T118 Arg2:T135	
+T138	Concept 1706 1710	tubo
+R71	is-a Arg1:T119 Arg2:T138	
+T139	Concept 2331 2350	mesa de exploración
+T148	Concept 3318 3323	oídos
+T152	Concept 3301 3323	tapones para los oídos
+R72	is-a Arg1:T152 Arg2:T237	
+T158	Concept 3504 3511	pruebas
+R77	is-a Arg1:T257 Arg2:T158	
+T159	Concept 3817 3825	diabetes
+T161	Concept 4529 4534	ondas
+R78	is-a Arg1:T328 Arg2:T161	
+T162	Concept 4558 4566	imágenes
+R79	is-a Arg1:T332 Arg2:T162	
+T163	Concept 4635 4641	blanco
+T184	Concept 4644 4649	negro
+R80	property-of Arg1:T163 Arg2:T332	
+R82	part-of Arg1:T184 Arg2:T332	
+T194	Concept 4626 4631	tonos
+T195	Concept 4570 4577	rayos X
+T196	Concept 5080 5090	otros usos
+T197	Action 5058 5066	utilizan
+E7	Action:T197 Subject:T364 Target:T196
+T198	Concept 5125 5130	tórax
+T213	Concept 5217 5221	mama
+T230	Concept 5411 5418	pequeña
+R83	property-of Arg1:T230 Arg2:T386	
+T231	Concept 5452 5457	tórax
+T234	Concept 5578 5582	días
+T232	Action 5490 5497	similar
+E9	Action:T232 Subject:T389 Target:T236
+T236	Concept 5535 5556	expuesto del ambiente
+R84	property-of Arg1:T234 Arg2:T236	
+T241	Concept 5756 5763	rayos X
+T245	Concept 5830 5849	procedimiento de TC
+T247	Concept 5847 5849	TC
+T248	Concept 5830 5843	procedimiento
+R86	is-a Arg1:T245 Arg2:T248	
+T249	Concept 5964 5971	rayos X
+T250	Concept 6053 6058	tinte
+R88	is-a Arg1:T427 Arg2:T250	
+R89	property-of Arg1:T194 Arg2:T163	
+R91	property-of Arg1:T194 Arg2:T184	
