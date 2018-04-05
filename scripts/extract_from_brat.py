@@ -6,7 +6,7 @@ import shutil
 
 
 def main():
-    brat_path = "../data/TASS-2018/"
+    brat_path = "../data/publish/files/"
     output_path = "output/training"
 
     for dirpath, _, filenames in os.walk(brat_path):
@@ -80,7 +80,7 @@ def main():
                                 targets.append(c)
 
                     for subj in subjects:
-                        subj = subj[8:]
+                        subj = subj.split(':')[1]
                         while subj.startswith("E"):
                             subj = mapping[subj]
                         subj = subj[1:]
@@ -92,7 +92,7 @@ def main():
                             written.add(rel)
 
                     for targ in targets:
-                        targ = targ[7:]
+                        targ = targ.split(':')[1]
                         while targ.startswith("E"):
                             targ = mapping[targ]
                         targ = targ[1:]
@@ -117,24 +117,24 @@ def main():
     example_gold = "output/example/gold/"
     example_dev = "output/example/dev/"
 
-    for prefix in "input_ output_A_ output_B_ output_C_".split():
-        shutil.move(os.path.join(output_path, prefix + "example.txt"),
-                    os.path.join(example_gold, prefix + "example.txt"))
-        shutil.move(os.path.join(output_path, prefix + "example.errors.txt"),
-                    os.path.join(example_dev, prefix + "example.txt"))
+    # for prefix in "input_ output_A_ output_B_ output_C_".split():
+    #     shutil.move(os.path.join(output_path, prefix + "example.txt"),
+    #                 os.path.join(example_gold, prefix + "example.txt"))
+    #     shutil.move(os.path.join(output_path, prefix + "example.errors.txt"),
+    #                 os.path.join(example_dev, prefix + "example.txt"))
 
-    agreement = "output/agreement/"
-    names = "apiad sestevez ygutierrez"
+    # agreement = "output/agreement/"
+    # names = "apiad sestevez ygutierrez"
 
-    for prefix in "input_ output_A_ output_B_ output_C_".split():
-        for fname in names.split():
-            shutil.move(os.path.join(output_path, prefix + fname + ".txt"),
-                        os.path.join(agreement, prefix + fname + ".txt"))
+    # for prefix in "input_ output_A_ output_B_ output_C_".split():
+    #     for fname in names.split():
+    #         shutil.move(os.path.join(output_path, prefix + fname + ".txt"),
+    #                     os.path.join(agreement, prefix + fname + ".txt"))
 
-        shutil.move(os.path.join(output_path, prefix + "trial.txt"),
-                    os.path.join(agreement, prefix + "trial.txt"))
+    #     shutil.move(os.path.join(output_path, prefix + "trial.txt"),
+    #                 os.path.join(agreement, prefix + "trial.txt"))
 
-    os.remove(os.path.join(example_dev, "input_example.txt"))
+    # os.remove(os.path.join(example_dev, "input_example.txt"))
 
 
 if __name__ == '__main__':
