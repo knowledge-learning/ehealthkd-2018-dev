@@ -235,13 +235,9 @@ T208	Concept 2564 2573	incendios
 T207	Concept 2593 2601	líquidos
 T206	Action 2630 2636	causas
 T205	Concept 2656 2666	quemaduras
-E206	Action:T206 Target:T205 Subject:T209 Subject2:T208 Subject3:T207 Subject4:T213
-R70	property-of Arg1:T209 Arg2:T211
-R71	property-of Arg1:T209 Arg2:T210
+E206	Action:T206 Target:T205 Subject:T209 Subject2:T208 Subject3:T207 Subject4:T213 Subject5:T211 Subject6:T210
 R72	property-of Arg1:T213 Arg2:T207
 R73	property-of Arg1:T213 Arg2:T214
-R74	property-of Arg1:T211 Arg2:T209
-R75	property-of Arg1:T210 Arg2:T209
 T219	Action 2709 2719	inhalación
 T218	Concept 2723 2727	humo
 T217	Concept 2730 2748	partículas tóxicas
@@ -273,7 +269,7 @@ T243	Action 2999 3005	tratar
 T242	Concept 3010 3021	infecciones
 E243	Action:T243 Target:T242 Subject:T246
 E244	Action:T244 Target:T242 Subject:T246
-R79	part-of Arg1:T245 Arg2:T246
+R79	property-of Arg1:T245 Arg2:T246
 T259	Concept 3043 3049	graves
 T258	Concept 3028 3038	quemaduras
 T257	Concept 3078 3089	tratamiento
@@ -286,7 +282,7 @@ T251	Action 3162 3168	recibe
 T250	Action 3114 3124	reemplazar
 T249	Action 3095 3102	limpiar
 T248	Action 3069 3077	necesite
-E248	Action:T248 Target:T257 Subject:T258
+E248	Action:T248 Subject:T258 Target:T257
 E249	Action:T249 Target:T256 Subject:T257
 E250	Action:T250 Target:T255 Subject:T257
 E251	Action:T251 Target:T253 Target2:T252 Subject:T257 Subject2:T254
@@ -304,8 +300,8 @@ T269	Action 3290 3304	enrojecimiento
 T268	Concept 3311 3315	piel
 T267	Action 3284 3289	Causa
 T266	Concept 3318 3328	espinillas
-E269	Action:T269 Target:T268 Target2:T266
-E267	Action:T267 Target:E269
+E269	Action:T269 Target:T268
+E267	Action:T267 Target:E269 Target2:T266
 T274	Concept 3333 3340	rosácea
 T273	Action 3348 3353	común
 T272	Concept 3364 3371	mujeres
@@ -334,7 +330,6 @@ R86	is-a Arg1:T284 Arg2:T288
 R87	is-a Arg1:T283 Arg2:T288
 R88	is-a Arg1:T282 Arg2:T288
 R89	property-of Arg1:T286 Arg2:T285
-R90	property-of Arg1:T288 Arg2:T286
 T293	Concept 3639 3648	problemas
 T292	Action 3631 3638	ocurren
 E292	Action:T292 Target:T293
@@ -352,7 +347,6 @@ T309	Concept 3766 3775	inflamada
 R94	part-of Arg1:T313 Arg2:T312
 R95	property-of Arg1:T310 Arg2:T313
 R96	property-of Arg1:T309 Arg2:T313
-R97	is-a Arg1:T311 Arg2:T313
 T319	Concept 3784 3795	sarpullidos
 T318	Concept 3800 3805	rojos
 T317	Concept 3807 3816	dolorosos
@@ -367,7 +361,7 @@ T323	Concept 3912 3922	carne viva
 T322	Concept 3845 3856	sarpullidos
 T321	Action 3872 3880	conducir
 T320	Concept 3883 3891	ampollas
-E321	Action:T321 Target:T320 Target2:T324 Subject:T322
+E321	Action:T321 Target:T320 Subject:T322 Target2:T323
 R106	property-of Arg1:T323 Arg2:T324
 T327	Concept 3962 3978	cuadros clínicos
 T326	Concept 3927 3937	sarpullido
@@ -408,8 +402,7 @@ E360	Action:T360 Target:T367 Subject:T361
 R117	property-of Arg1:T362 Arg2:T363
 T370	Concept 4445 4456	sarpullidos
 T369	Action 4457 4463	tienen
-T368	Concept 4471 4477	causas
-E369	Action:T369 Target:T368 Subject:T370
+E369	Action:T369 Subject:T370 Target:T294
 T388	Concept 4602 4608	cremas
 T387	Concept 4613 4622	cortisona
 T386	Concept 4550 4562	tratamientos
@@ -452,9 +445,6 @@ T404	Concept 4890 4896	brazos
 T403	Concept 4905 4909	pies
 T402	Concept 4930 4935	manos
 R131	part-of Arg1:T406 Arg2:T402
-R132	part-of Arg1:T405 Arg2:T404
-R133	part-of Arg1:T405 Arg2:T403
-R134	part-of Arg1:T405 Arg2:T406
 T414	Concept 4971 4980	bacterias
 T413	Concept 4987 4991	piel
 T412	Action 4956 4962	mezcla
@@ -471,7 +461,7 @@ T417	Concept 5103 5107	olor
 T416	Concept 5042 5059	antitranspirantes
 T415	Concept 5062 5074	desodorantes
 E419	Action:T419 Target:T416 Target2:T415
-E420	Action:T420 
+E420	Action:T420 Target:T185
 E418	Action:T418 Target:T417 Subject:E419 Subject2:E420
 T437	Concept 5125 5144	transpira demasiado
 T434	Concept 5212 5219	sistema
@@ -581,16 +571,14 @@ T503	Concept 6070 6074	piel
 E504	Action:T504 Target:T503 Subject:T505
 E507	Action:T507 Target:T506 Subject:T505
 R167	property-of Arg1:T508 Arg2:T506
-T515	Action 6146 6151	clara
 T514	Concept 6132 6137	áreas
 T512	Concept 6097 6105	vitiligo
 T511	Concept 6113 6121	afección
 T510	Action 6126 6131	causa
-T509	Concept 6141 6145	piel
-E515	Action:T515 Target:T514
+T509	Concept 6141 6151	piel clara
 R168	is-a Arg1:T512 Arg2:T511
 R170	part-of Arg1:T514 Arg2:T509
-E510	Action:T510 Target:E515 Subject:T512
+E510	Action:T510 Subject:T512 Target:T514
 T520	Concept 6219 6226	persona
 T519	Concept 6156 6165	albinismo
 T518	Concept 6172 6187	cuadro genético
@@ -602,12 +590,10 @@ R172	part-of Arg1:T516 Arg2:T520
 T522	Concept 6232 6239	persona
 T521	Concept 6244 6253	albinismo
 R173	property-of Arg1:T521 Arg2:T522
-T530	Action 6452 6457	clara
 T526	Concept 6361 6372	infecciones
 T525	Concept 6378 6386	ampollas
 T524	Concept 6393 6403	quemaduras
 T523	Concept 6443 6447	piel
-E530	Action:T530 Target:T523 Target2:T523 Target3:T523 Subject:T524 Subject2:T525 Subject3:T526
 T537	Concept 6476 6483	ronchas
 T536	Concept 6484 6491	rojizas
 T535	Concept 6527 6531	piel
@@ -713,13 +699,13 @@ E615	Action:T615 Target:T614
 T618	Concept 7467 7475	vitiligo
 T617	Action 7482 7490	provocar
 T616	Concept 7518 7523	canas
-E617	Action:T617 Target:T616 Subject:T618
+E617	Action:T617 Subject:T618 Target:E16
 T623	Concept 7537 7548	piel oscura
 T622	Action 7556 7562	perder
 T621	Concept 7563 7568	color
 T620	Concept 7582 7586	boca
 E622	Action:T622 Target:T621
-R204	property-of Arg1:T621 Arg2:T620
+R204	property-of Arg1:T621 Arg2:T247
 T631	Concept 7598 7618	bloqueadores solares
 T630	Concept 7644 7648	piel
 T629	Action 7632 7640	proteger
@@ -787,3 +773,118 @@ T87	Action 1692 1703	a través de
 E4	Action:T87 Subject:E140 Target:T138 Target2:T137 Target3:T136
 T88	Concept 2080 2104	problemas de la tiroides
 R42	is-a Arg1:T88 Arg2:T164	
+T89	Concept 2193 2199	cáncer
+T90	Concept 2259 2264	dieta
+T91	Concept 2273 2282	proteínas
+T92	Concept 2284 2292	historia
+T93	Concept 2309 2318	nutrición
+T116	Concept 2360 2378	trasplante capilar
+T117	Concept 2360 2370	trasplante
+T118	Concept 2532 2540	líquidos
+T119	Concept 2730 2740	partículas
+A4	Uncertain E226
+A5	Uncertain E161
+A6	Uncertain E229
+T120	Concept 3378 3386	personas
+T125	Concept 3390 3394	piel
+T130	Concept 3395 3400	clara
+T131	Concept 3429 3433	edad
+A7	Negated E306
+A8	Uncertain E303
+T132	Concept 3904 3908	piel
+T133	Concept 4013 4023	sustancias
+A9	Uncertain E292
+T134	Concept 4227 4235	pequeñas
+T135	Concept 4126 4136	dermatitis
+A10	Uncertain E336
+A11	Uncertain E627
+T148	Concept 7598 7610	bloqueadores
+T149	Concept 8102 8124	tratamiento anticipado
+T150	Concept 8102 8113	tratamiento
+T151	Concept 7915 7923	personas
+T152	Concept 7897 7905	problema
+T165	Action 7883 7893	constituir
+E5	Action:T165 
+A12	Uncertain E5
+T167	Concept 7712 7720	vitiligo
+T168	Concept 7537 7541	piel
+T180	Concept 5273 5281	problema
+R46	is-a Arg1:T107 Arg2:T46	
+R51	is-a Arg1:T103 Arg2:T39	
+R55	part-of Arg1:T85 Arg2:T136	
+R56	is-a Arg1:T177 Arg2:T90	
+R57	is-a Arg1:T176 Arg2:T92	
+R64	is-a Arg1:T175 Arg2:T93	
+R68	part-of Arg1:T91 Arg2:T177	
+R76	is-a Arg1:T211 Arg2:T118	
+R69	is-a Arg1:T116 Arg2:T117	
+R70	is-a Arg1:T116 Arg2:T189	
+T182	Action 3550 3559	presentan
+E7	Action:T182 Subject:T285 Target:T288
+R71	same-as Arg1:T311 Arg2:T313	
+R74	part-of Arg1:T324 Arg2:T132	
+A13	Uncertain E410
+T183	Action 4853 4860	produce
+E8	Action:T183 Subject:T184 Subject2:T403 Subject3:T406 Target:T405
+T184	Concept 4876 4882	debajo
+R75	part-of Arg1:T184 Arg2:T404	
+A14	Uncertain E418
+T185	Concept 5019 5034	con regularidad
+T186	Concept 5292 5302	Transpirar
+A15	Uncertain E441
+R77	is-a Arg1:T424 Arg2:T180	
+A16	Uncertain E439
+T181	Action 5168 5175	deberse
+E9	Action:T181 
+T187	Action 7867 7874	peligro
+E10	Action:T187 Target:T190
+T190	Concept 7859 7863	vida
+T191	Action 7850 7855	poner
+E11	Action:T191 Target:E10 Subject:T662
+A17	Uncertain E496
+T192	Action 6421 6427	causas
+E12	Action:T192 Target:T523 Subject:T524 Subject2:T525 Subject3:T526
+T193	Concept 6452 6457	clara
+R78	property-of Arg1:T193 Arg2:T523	
+T204	Action 6263 6268	tener
+E13	Action:T204 Subject:T522 Target2:T235 Target:E15
+E14	Action:T204 Subject:T522 Target2:T212
+A18	Negated E14
+A19	Uncertain E571
+A20	Uncertain E14
+A21	Uncertain E13
+T212	Concept 6269 6274	color
+T220	Concept 6309 6313	piel
+T234	Concept 6314 6320	normal
+R90	property-of Arg1:T234 Arg2:T220	
+T235	Concept 6323 6328	áreas
+T236	Concept 6341 6345	piel
+T237	Concept 6346 6355	sin color
+R91	property-of Arg1:T237 Arg2:T235	
+R92	property-of Arg1:T235 Arg2:T236	
+A22	Negated E599
+T238	Concept 6280 6290	coloración
+T239	Concept 7328 7337	tendencia
+A23	Uncertain E615
+T240	Action 6291 6301	más ligera
+E15	Action:T240 Target:T238
+A24	Uncertain E617
+A25	Uncertain E622
+T241	Action 7494 7503	aparición
+E16	Action:T241 Target:T616
+R93	is-a Arg1:T623 Arg2:T168	
+T247	Concept 7569 7586	dentro de la boca
+R97	part-of Arg1:T247 Arg2:T620	
+A26	Uncertain E11
+R98	property-of Arg1:T635 Arg2:T167	
+A27	Uncertain E655
+R99	property-of Arg1:T238 Arg2:T220	
+R100	is-a Arg1:T149 Arg2:T150	
+T270	Concept 8090 8095	mejor
+R101	property-of Arg1:T270 Arg2:T149	
+T289	Action 7991 7997	tienen
+E17	Action:T289 Subject:T668 Target:T290
+T290	Concept 8014 8026	tratamientos
+T291	Action 2189 2192	por
+E19	Action:T291 Subject:T172 Target:T89
+T294	Concept 4464 4477	muchas causas

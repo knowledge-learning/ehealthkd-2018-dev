@@ -9,14 +9,11 @@ R0	is-a Arg1:T5 Arg2:T2
 R1	is-a Arg1:T3 Arg2:T5
 T13	Concept 92 116	componentes del arsénico
 T12	Action 130 139	preservar
-T11	Concept 92 103	componentes
 T10	Concept 108 116	arsénico
 T9	Concept 143 149	madera
 T8	Concept 156 167	plaguicidas
 T7	Concept 181 191	industrias
-E12	Action:T12 Target:T9 Subject:T13
-R4	is-a Arg1:T13 Arg2:T11
-R5	part-of Arg1:T8 Arg2:T13
+E12	Action:T12 Target:T9
 T21	Concept 196 204	arsénico
 T20	Concept 221 225	aire
 T19	Concept 230 234	agua
@@ -26,12 +23,10 @@ T16	Concept 260 265	polvo
 R8	part-of Arg1:T21 Arg2:T20
 R9	part-of Arg1:T21 Arg2:T19
 R10	part-of Arg1:T21 Arg2:T18
-R2	part-of Arg1:T18 Arg2:T17
 R3	part-of Arg1:T16 Arg2:T17
 T25	Action 304 312	penetrar
 T24	Concept 319 323	agua
-T23	Concept 337 352	desbordamientos
-E25	Action:T25 Target:T24
+E25	Action:T25 Target:T24 Subject:E17
 T30	Concept 357 379	exposición al arsénico
 T29	Concept 400 418	problemas de salud
 T28	Action 386 392	causar
@@ -40,21 +35,10 @@ T26	Concept 400 409	problemas
 E28	Action:T28 Target:T29 Subject:T30
 R11	is-a Arg1:T30 Arg2:T27
 R12	is-a Arg1:T29 Arg2:T26
-T42	Concept 438 455	tiempo prolongado
-T41	Concept 458 471	niveles bajos
 T40	Action 478 485	cambiar
 T39	Concept 489 505	color de la piel
-T38	Concept 423 471	exposición por tiempo prolongado a niveles bajos
-T37	Concept 423 433	exposición
-T36	Concept 438 444	tiempo
-T35	Concept 458 465	niveles
 T34	Concept 501 505	piel
-T33	Concept 489 494	color
-E40	Action:T40 Target:T39 Subject:T38
-R15	is-a Arg1:T42 Arg2:T36
-R16	is-a Arg1:T41 Arg2:T35
-R17	is-a Arg1:T39 Arg2:T33
-R18	is-a Arg1:T38 Arg2:T37
+E40	Action:T40 Target:T39 Subject:E18
 T48	Action 513 519	causar
 T47	Concept 529 546	pequeñas verrugas
 T46	Concept 520 526	callos
@@ -951,12 +935,12 @@ T898	Concept 10384 10400	sistema nervioso
 T897	Concept 10435 10443	mercurio
 T896	Action 10404 10412	sensible
 E896	Action:T896 Target:T897 Subject:T898
-T904	Concept 10461 10474	altos niveles
+T904	Concept 10461 10466	altos
 T903	Action 10448 10458	exposición
 T902	Action 10481 10486	dañar
 T901	Concept 10490 10497	cerebro
 T900	Concept 10504 10511	riñones
-E903	Action:T903 Target:T904
+E903	Action:T903 Target:T375
 E902	Action:T902 Target:T901 Target2:T900 Subject:E903
 T910	Concept 10517 10528	embarazadas
 T909	Concept 10547 10555	mercurio
@@ -971,7 +955,7 @@ T914	Concept 10609 10615	hongos
 T913	Concept 10642 10652	exteriores
 T912	Concept 10655 10665	interiores
 T911	Action 10627 10638	encontrarse
-E911	Action:T911 Target:T913 Target2:T912 Subject:T915 Subject2:T914
+E911	Action:T911 Target:T913 Target2:T912 Subject2:T914
 R409	part-of Arg1:T914 Arg2:T915
 T920	Concept 10683 10694	condiciones
 T919	Concept 10695 10702	cálidas
@@ -984,14 +968,11 @@ R411	property-of Arg1:T918 Arg2:T920
 R412	property-of Arg1:T917 Arg2:T920
 T120	Concept 10750 10757	húmedos
 T926	Concept 10732 10739	lugares
-T925	Concept 10732 10747	lugares mojados
 T923	Concept 10764 10768	casa
 T922	Concept 10791 10797	hongos
 T921	Action 10784 10790	tendrá
 E921	Action:T921 Target:T922 Subject:T923
-R413	is-a Arg1:T925 Arg2:T926
-R55	is-a Arg1:T120 Arg2:T926
-R58	part-of Arg1:T925 Arg2:T923
+R55	property-of Arg1:T120 Arg2:T926
 R59	part-of Arg1:T120 Arg2:T923
 T929	Concept 10822 10840	problemas de salud
 T928	Action 10813 10821	causarle
@@ -1019,22 +1000,21 @@ T942	Concept 11037 11045	garganta
 T941	Concept 11052 11060	pulmones
 E948	Action:T948 Target:T947
 E946	Action:T946 Target:T945 Target2:T944 Target3:T942 Target4:T941 Target5:T943 Subject:E948
-T952	Concept 11077 11089	gas incoloro
+T952	Concept 11081 11089	incoloro
 T951	Action 11122 11132	respiramos
 T950	Concept 11065 11070	ozono
 T949	Concept 11113 11117	aire
 E951	Action:T951 Target:T949
 R417	part-of Arg1:T950 Arg2:T949
-R418	is-a Arg1:T950 Arg2:T952
-T955	Concept 11152 11156	malo
+R418	is-a Arg1:T950 Arg2:T397
 T961	Concept 11282 11302	superficie terrestre
 T960	Concept 11196 11209	ozono "bueno"
 T957	Concept 11229 11239	naturaleza
 R422	part-of Arg1:T961 Arg2:T957
-R62	part-of Arg1:T960 Arg2:T961
-T965	Concept 11323 11349	rayos ultravioleta del sol
+R62	part-of Arg1:T960 Arg2:T957
+T965	Concept 11323 11341	rayos ultravioleta
 T964	Action 11308 11315	protege
-E964	Action:T964 
+E964	Action:T964 Target:T965
 T971	Concept 11363 11382	capa de ozono bueno
 T970	Concept 11351 11382	Parte de la capa de ozono bueno
 T969	Action 11383 11394	desapareció
@@ -1042,7 +1022,7 @@ T968	Concept 11399 11418	sustancias químicas
 T967	Action 11419 11429	fabricadas
 T966	Concept 11437 11443	hombre
 E967	Action:T967 Target:T968 Subject:T966
-E969	Action:T969 Target:T970 Subject:E967
+E969	Action:T969 Target2:E967 Subject:T970
 R63	part-of Arg1:T970 Arg2:T971
 T976	Concept 11460 11471	ozono bueno
 T975	Concept 11477 11485	personas
@@ -1053,38 +1033,33 @@ E974	Action:T974 Target:T973 Subject:T975
 R424	property-of Arg1:T972 Arg2:T973
 T985	Concept 11561 11567	riesgo
 T984	Concept 11571 11577	cáncer
-T983	Concept 11584 11588	piel
+T983	Concept 11571 11588	cáncer en la piel
 T982	Concept 11602 11611	problemas
 T981	Concept 11618 11637	sistema inmunitario
 T978	Action 11549 11557	aumentar
 T977	Concept 11590 11599	cataratas
 E978	Action:T978 Target:T985
-R425	property-of Arg1:T983 Arg2:T984
+R425	is-a Arg1:T983 Arg2:T984
 R426	property-of Arg1:T982 Arg2:T981
-R427	property-of Arg1:T985 Arg2:T984
+R427	property-of Arg1:T985 Arg2:T983
 R428	property-of Arg1:T985 Arg2:T977
 R429	property-of Arg1:T985 Arg2:T982
 T989	Concept 11681 11686	suelo
 T988	Concept 11642 11654	ozono "malo"
-R67	part-of Arg1:T988 Arg2:T989
+R67	part-of Arg1:T988 Arg2:T442
 T1000	Concept 11708 11721	contaminantes
 T999	Concept 11729 11740	automóviles
 T997	Action 11691 11696	forma
-T996	Concept 11782 11794	químicamente
 T995	Concept 11746 11754	fábricas
 T994	Concept 11763 11770	fuentes
-T993	Action 11771 11781	reaccionan
+T993	Action 11771 11794	reaccionan químicamente
 T992	Concept 11802 11813	luz del sol
-E993	Action:T993 Target:T992 Subject:T995 Subject2:T994 Subject3:T1000
+E993	Action:T993 Target:T992 Subject3:T1000
 E997	Action:T997 Subject:E993
 R432	is-a Arg1:T999 Arg2:T994
 R433	is-a Arg1:T995 Arg2:T994
 R434	part-of Arg1:T1000 Arg2:T999
 R435	part-of Arg1:T1000 Arg2:T995
-T1002	Concept 11821 11841	componente principal
-T1001	Concept 11846 11850	smog
-T1004	Concept 11870 11876	verano
-T1003	Concept 11862 11866	peor
 T1007	Action 11878 11886	Respirar
 T1006	Concept 11890 11900	ozono malo
 T1005	Action 11911 11917	dañino
@@ -1104,8 +1079,8 @@ T1010	Concept 12012 12020	enfisema
 T1009	Concept 12029 12045	daños pulmonares
 T1008	Concept 12046 12057	permanentes
 E1014	Action:T1014 Target:T1013
-E1018	Action:T1018 
-E1020	Action:T1020 Target:T1019 Subject:T1019
+E1018	Action:T1018 Target:T1017
+E1020	Action:T1020 Target:T1019
 R436	is-a Arg1:T1012 Arg2:T1013
 R437	is-a Arg1:T1011 Arg2:T1013
 R438	is-a Arg1:T1010 Arg2:T1013
@@ -1137,7 +1112,6 @@ R440	part-of Arg1:T1035 Arg2:T1038
 T1042	Concept 12405 12425	productos domésticos
 T1041	Concept 12436 12446	pesticidas
 R441	part-of Arg1:T1041 Arg2:T1042
-T1053	Action 12558 12562	daño
 T1050	Concept 12452 12462	pesticidas
 T1049	Action 12470 12478	proteger
 T1048	Concept 12482 12487	salud
@@ -1146,8 +1120,7 @@ T1046	Concept 12501 12509	gérmenes
 T1045	Concept 12530 12537	plantas
 T1044	Concept 12515 12523	animales
 E1049	Action:T1049 Target:T1048 Subject:T1050
-E1053	Action:T1053 Target:T1048 Subject:T1045 Subject2:T1044 Subject3:T1046
-E1047	Action:T1047 Target:E1053 Subject:T1050
+E1047	Action:T1047 Subject:T1050 Target:E20
 T1056	Action 12602 12609	dañinos
 T1055	Concept 12619 12627	personas
 T1054	Concept 12634 12642	mascotas
@@ -1155,7 +1128,6 @@ E1056	Action:T1056 Target:T1055 Target2:T1054
 T1059	Concept 12685 12704	métodos no químicos
 T1058	Action 12659 12667	prefiera
 E1058	Action:T1058 Target:T1059
-T121	Concept 12742 12755	correctamente
 T1062	Action 12709 12717	necesita
 T1061	Concept 12721 12730	pesticida
 T1060	Action 12732 12741	utilícelo
@@ -1166,7 +1138,6 @@ T1065	Concept 12772 12779	cuidado
 T1064	Concept 12793 12798	niños
 T1063	Concept 12801 12809	mascotas
 E1066	Action:T1066 Target:T1065
-T1071	Concept 12857 12870	correctamente
 T1070	Action 12833 12841	desechar
 T1069	Concept 12846 12856	pesticidas
 T1068	Action 12887 12895	proteger
@@ -1187,15 +1158,12 @@ T1082	Concept 13028 13036	problema
 T1081	Concept 13043 13047	casa
 E1083	Action:T1083 Target:T1082
 T1091	Action 13058 13066	proviene
-T1090	Concept 13088 13095	natural
 T1089	Concept 13052 13057	radón
 T1088	Concept 13100 13106	uranio
 T1087	Concept 13113 13118	suelo
 T1086	Concept 13124 13129	rocas
 T1085	Concept 13135 13139	agua
-T1084	Action 13073 13087	descomposición
-E1084	Action:T1084 Target:T1088
-E1091	Action:T1091 Subject:T1089 Subject2:E1084
+E1091	Action:T1091 Subject:T1089 Target:T471 Target2:T1088
 R446	part-of Arg1:T1088 Arg2:T1087
 R447	part-of Arg1:T1088 Arg2:T1086
 R448	part-of Arg1:T1088 Arg2:T1085
@@ -1205,9 +1173,9 @@ T1093	Action 13164 13169	causa
 T1092	Concept 13173 13189	cáncer de pulmón
 E1093	Action:T1093 Target:T1092 Subject:T1094
 T1099	Concept 13251 13268	espacios abiertos
-T1098	Concept 13227 13243	niveles de radón
+T1098	Concept 13238 13243	radón
 T1097	Concept 13221 13226	bajos
-R450	property-of Arg1:T1097 Arg2:T1098
+R450	property-of Arg1:T1097 Arg2:T478
 T1101	Concept 13277 13287	interiores
 T1100	Concept 13301 13317	niveles elevados
 T1109	Concept 13408 13415	paredes
@@ -1228,11 +1196,8 @@ T1110	Concept 13500 13512	agua de pozo
 R454	part-of Arg1:T1112 Arg2:T1111
 R455	part-of Arg1:T1112 Arg2:T1110
 T1117	Concept 13544 13548	casa
-T1116	Concept 13555 13571	niveles de radón
 T1115	Concept 13572 13580	elevados
 T1114	Concept 13598 13606	análisis
-R456	property-of Arg1:T1115 Arg2:T1116
-R457	property-of Arg1:T1116 Arg2:T1117
 T1124	Action 13617 13624	comprar
 T1123	Concept 13628 13643	kit de análisis
 T1122	Action 13679 13688	contratar
@@ -1242,13 +1207,13 @@ T1119	Action 13708 13712	haga
 T1118	Concept 13716 13722	prueba
 E1119	Action:T1119 Target:T1118 Subject:T1120
 E1122	Action:T1122 Target:E1119
-E1124	Action:T1124 Target:T1123
+E1124	Action:T1124 Target:T1123 Target2:T1121
 T1128	Concept 13728 13736	sistemas
 T1127	Action 13759 13768	disminuir
-T1126	Concept 13772 13789	cantidad de radón
-T1125	Concept 13796 13811	niveles seguros
+T1126	Concept 13784 13789	radón
+T1125	Concept 13804 13811	seguros
 E1127	Action:T1127 Target:T1126 Subject:T1128
-R458	property-of Arg1:T1125 Arg2:T1126
+R458	property-of Arg1:T1125 Arg2:T527
 T1133	Concept 13816 13821	costo
 T1132	Concept 13834 13840	tamaño
 T1131	Concept 13846 13852	diseño
@@ -1266,20 +1231,18 @@ T1140	Action 13941 13950	duplicado
 T1139	Concept 13957 13969	último siglo
 T1138	Action 13998 14005	tenemos
 T1137	Concept 14006 14018	agua potable
-E1138	Action:T1138 Target:T1137
-E1140	Action:T1140 Target:T1141 Subject:T1141
-T1148	Concept 14047 14060	contaminación
+E1138	Action:T1138 Target:T1137 Subject:T1139
+E1140	Action:T1140 Target:T1141 Subject:T1139
 T1147	Action 14139 14145	causar
 T1146	Concept 14146 14165	problemas de salud.
 T1145	Concept 14083 14097	medio ambiente
 T1144	Concept 14107 14111	aire
 T1143	Concept 14116 14120	agua
 T1142	Concept 14126 14132	tierra
-E1147	Action:T1147 Target:T1146 Subject:T1148
+E1147	Action:T1147 Target:T1146 Subject:E31
 R461	part-of Arg1:T1144 Arg2:T1145
 R462	part-of Arg1:T1143 Arg2:T1145
 R463	part-of Arg1:T1142 Arg2:T1145
-R464	property-of Arg1:T1148 Arg2:T1145
 T1157	Concept 14183 14197	crisis de asma
 T1156	Action 14211 14223	consecuencia
 T1155	Concept 14227 14240	contaminantes
@@ -1310,4 +1273,296 @@ T1163	Concept 14539 14549	industrias
 T1162	Action 14519 14522	uso
 E1162	Action:T1162 Target:T1164 Target2:T1163 Subject:T1166 Subject2:T1165
 E1167	Action:T1167 Target:T1166 Target2:T1165
-R76	is-a Arg1:T1169 Arg2:T1170
+A1	Uncertain E25
+A2	Uncertain E28
+A3	Uncertain E40
+A4	Uncertain E48
+A5	Uncertain E55
+A6	Negated E103
+A7	Uncertain E117
+A8	Uncertain E170
+T98	Concept 1991 1997	cambio
+R81	is-a Arg1:T182 Arg2:T98	
+T134	Concept 2189 2199	exposición
+A9	Negated E237
+T141	Concept 2358 2368	exposición
+A10	Negated E246
+A11	Negated E276
+T142	Concept 2999 3003	aire
+T146	Action 3241 3246	haber
+E15	Action:T146 
+T151	Concept 3511 3517	fuente
+T152	Concept 3521 3534	contaminación
+A12	Uncertain E346
+A13	Uncertain E383
+T163	Concept 4176 4180	agua
+T164	Concept 4198 4203	suelo
+A14	Uncertain E400
+A15	Uncertain E409
+A16	Uncertain E408
+A17	Uncertain E428
+T165	Concept 4559 4564	aguas
+T172	Concept 4559 4575	aguas estancadas
+A18	Uncertain E434
+T179	Concept 4633 4646	contaminación
+T184	Concept 4651 4655	aire
+T186	Concept 4673 4683	partículas
+T188	Concept 4706 4710	aire
+T189	Concept 4750 4760	compuestos
+T190	Concept 5063 5067	aire
+T191	Concept 5045 5058	contaminantes
+T192	Concept 5137 5146	problemas
+T193	Concept 5150 5155	salud
+A19	Uncertain E477
+T194	Concept 5231 5235	edad
+T195	Concept 5294 5307	contaminación
+T196	Concept 5312 5316	aire
+T197	Concept 5334 5338	aire
+T198	Concept 4237 4243	huevos
+T199	Concept 3785 3795	interiores
+T200	Concept 5614 5623	desastres
+T201	Concept 5636 5641	actos
+T202	Concept 5659 5667	derrames
+T203	Concept 5671 5679	petróleo
+T209	Concept 5737 5745	derrames
+T211	Concept 5749 5757	petróleo
+A20	Uncertain E528
+A21	Uncertain E533
+T214	Concept 5877 5883	tierra
+T215	Concept 5891 5894	río
+T218	Concept 5903 5906	mar
+T219	Action 120 124	usan
+E16	Action:T219 Subject:T13 Target:E12 Target2:T8 Target3:T7
+R84	part-of Arg1:T13 Arg2:T10	
+R2	part-of Arg1:T20 Arg2:T16	
+R4	part-of Arg1:T19 Arg2:T16	
+R5	part-of Arg1:T18 Arg2:T16	
+T11	Action 337 352	desbordamientos
+E17	Action:T11 
+T23	Action 423 433	exposición
+E18	Action:T23 Target:T35 Target2:T37
+T35	Concept 458 465	niveles
+T36	Concept 466 471	bajos
+R15	property-of Arg1:T36 Arg2:T35	
+T37	Concept 438 444	tiempo
+T38	Concept 445 455	prolongado
+R16	property-of Arg1:T38 Arg2:T37	
+R17	property-of Arg1:T39 Arg2:T34	
+T33	Concept 6080 6090	irritación
+R18	is-a Arg1:T552 Arg2:T557	
+R85	is-a Arg1:T553 Arg2:T33	
+T41	Concept 5945 5955	exposición
+T42	Concept 5973 5983	exposición
+T221	Concept 6190 6197	efectos
+A22	Negated E561
+T222	Concept 6272 6282	sustancias
+A23	Uncertain E566
+T225	Concept 6308 6313	salud
+T226	Concept 6396 6404	desechos
+T227	Concept 6478 6490	insecticidas
+T228	Concept 6464 6469	pilas
+T234	Concept 6504 6513	diluyente
+T238	Concept 6517 6524	pintura
+T239	Concept 6600 6608	desechos
+T240	Concept 6641 6653	desperdicios
+T241	Concept 6677 6696	producto secundario
+T247	Concept 6734 6746	desperdicios
+A24	Uncertain E602
+A25	Negated E610
+A26	Negated E609
+T255	Concept 6906 6926	desperdicios tóxicos
+T258	Concept 6906 6918	desperdicios
+T260	Concept 6971 6980	sustancia
+T261	Concept 7579 7585	centro
+T268	Concept 7589 7615	control de envenenamientos
+T269	Concept 7616 7621	local
+A27	Uncertain E688
+T277	Concept 7808 7812	humo
+T278	Concept 7905 7912	fogones
+T281	Concept 7916 7919	gas
+T282	Concept 7922 7930	sistemas
+T286	Concept 7934 7945	calefacción
+A28	Uncertain E704
+A29	Uncertain E714
+T289	Concept 8347 8355	detector
+T296	Concept 8359 8361	CO
+T297	Concept 8394 8401	niveles
+A30	Uncertain E731
+T298	Concept 8531 8546	usos domésticos
+A31	Uncertain E744
+T301	Concept 8645 8655	sustancias
+T303	Concept 8786 8796	sustancias
+A32	Uncertain E742
+T304	Concept 8847 8856	sustancia
+T308	Concept 8931 8935	daño
+T310	Concept 8877 8885	defectos
+T312	Concept 9011 9023	contenedores
+T313	Concept 8478 8488	reparación
+T317	Concept 9365 9375	sustancias
+T318	Concept 9201 9205	humo
+T320	Concept 9209 9221	segunda mano
+T323	Concept 9402 9411	productos
+T324	Concept 9531 9538	niveles
+T326	Concept 9542 9559	inhalación pasiva
+T334	Concept 9542 9552	inhalación
+A33	Negated E834
+T335	Concept 9647 9664	inhalación pasiva
+T336	Concept 9647 9657	inhalación
+T337	Concept 9697 9704	lugares
+T338	Concept 9631 9640	fumadores
+T339	Concept 9794 9802	mercurio
+T340	Concept 9843 9851	plateado
+T341	Concept 9870 9874	olor
+T350	Concept 10045 10053	mercurio
+T351	Concept 10077 10088	termómetros
+T357	Concept 10092 10098	vidrio
+T358	Concept 10130 10135	pilas
+T359	Concept 10139 10144	botón
+T360	Concept 10100 10118	tapaduras dentales
+T361	Concept 10159 10167	mercurio
+T369	Concept 10214 10218	piel
+A34	Uncertain E874
+A35	Uncertain E895
+T370	Concept 10384 10391	sistema
+A36	Uncertain E902
+A37	Uncertain E907
+T374	Concept 10740 10747	mojados
+T375	Concept 10467 10474	niveles
+A38	Uncertain E928
+T376	Concept 10822 10831	problemas
+T385	Concept 10835 10840	salud
+R86	property-of Arg1:T904 Arg2:T375	
+T373	Concept 10865 10872	esporas
+T389	Concept 10876 10880	moho
+T395	Concept 10894 10904	reacciones
+A39	Uncertain E934
+A40	Uncertain E940
+T396	Concept 10936 10947	infecciones
+A41	Uncertain E921
+R87	property-of Arg1:T374 Arg2:T926	
+R58	part-of Arg1:T926 Arg2:T923	
+R88	is-a Arg1:T929 Arg2:T376	
+R89	part-of Arg1:T929 Arg2:T385	
+R90	is-a Arg1:T935 Arg2:T373	
+R91	part-of Arg1:T389 Arg2:T935	
+R92	is-a Arg1:T933 Arg2:T395	
+R93	is-a Arg1:T939 Arg2:T396	
+A42	Uncertain E946
+T397	Concept 11077 11080	gas
+R94	property-of Arg1:T952 Arg2:T397	
+T402	Concept 11196 11201	ozono
+R95	is-a Arg1:T960 Arg2:T402	
+T403	Concept 11346 11349	sol
+R96	part-of Arg1:T965 Arg2:T403	
+T406	Concept 11323 11328	rayos
+R98	is-a Arg1:T965 Arg2:T406	
+T413	Concept 11399 11409	sustancias
+T420	Concept 11371 11376	ozono
+T421	Concept 11515 11524	radiación
+T422	Concept 11460 11465	ozono
+A43	Uncertain E974
+R100	is-a Arg1:T968 Arg2:T413	
+A44	Uncertain E978
+T437	Concept 11618 11625	sistema
+R101	is-a Arg1:T981 Arg2:T437	
+R105	part-of Arg1:T420 Arg2:T971	
+T438	Concept 11642 11647	ozono
+R106	is-a Arg1:T988 Arg2:T438	
+T442	Concept 11671 11686	nivel del suelo
+R110	part-of Arg1:T442 Arg2:T989	
+T443	Concept 11802 11805	luz
+R111	is-a Arg1:T992 Arg2:T443	
+T444	Concept 11810 11813	sol
+R115	part-of Arg1:T992 Arg2:T444	
+T445	Concept 11890 11895	ozono
+R116	is-a Arg1:T1006 Arg2:T445	
+A45	Uncertain E1005
+T446	Concept 12029 12034	daños
+A46	Uncertain E1028
+T447	Action 12122 12125	son
+E19	Action:T447 Subject:T1026 Target:T455
+T455	Concept 12126 12137	bienvenidas
+A47	Negated E19
+T456	Concept 12405 12414	productos
+R118	is-a Arg1:T1042 Arg2:T456	
+A48	Uncertain E1049
+T458	Concept 12316 12326	sustancias
+R119	is-a Arg1:T1035 Arg2:T458	
+A49	Uncertain E1056
+T457	Action 12549 12557	causarle
+E20	Action:T457 Subject:T1045 Subject2:T1044 Subject3:T1046 Target:T466
+T465	Concept 12685 12692	métodos
+T466	Concept 12558 12562	daño
+R120	is-a Arg1:T1059 Arg2:T465	
+A50	Uncertain E1058
+T121	Action 12780 12789	alrededor
+E21	Action:T121 Target:T1064 Target2:T1063 Subject:E1066
+A51	Uncertain E1068
+A52	Negated E1080
+A53	Uncertain E1083
+T471	Concept 13073 13095	descomposición natural
+R124	property-of Arg1:T471 Arg2:T1088	
+T473	Concept 13173 13179	cáncer
+R126	is-a Arg1:T1092 Arg2:T473	
+T474	Action 13213 13220	Existen
+E22	Action:T474 Subject:T1098 Target:T1099
+T478	Concept 13227 13234	niveles
+T488	Concept 13251 13259	espacios
+R127	property-of Arg1:T478 Arg2:T1098	
+T479	Action 13295 13300	haber
+E23	Action:T479 Subject:T1100 Target:T1101
+T489	Action 13372 13378	través
+E24	Action:T489 Target:T1107 Subject:E1104
+T490	Concept 13301 13308	niveles
+R128	is-a Arg1:T1099 Arg2:T488	
+T491	Concept 13073 13087	descomposición
+T492	Concept 13500 13504	agua
+R129	is-a Arg1:T1110 Arg2:T492	
+R131	is-a Arg1:T471 Arg2:T491	
+R132	property-of Arg1:T1100 Arg2:T490	
+A54	Uncertain E1104
+T501	Concept 14006 14010	agua
+R133	is-a Arg1:T1137 Arg2:T501	
+T502	Concept 13508 13512	pozo
+T504	Concept 13555 13562	niveles
+T515	Concept 13566 13571	radón
+T519	Action 13584 13594	haciéndole
+E26	Action:T519 Target:T1114
+R134	part-of Arg1:T1110 Arg2:T502	
+T520	Action 13532 13537	saber
+E27	Action:T520 Target:T1117 Subject:E26
+T521	Action 13549 13554	tiene
+E29	Action:T521 Subject:T1117 Target:T515
+R135	property-of Arg1:T504 Arg2:T515	
+R137	property-of Arg1:T1115 Arg2:T504	
+T526	Concept 13772 13780	cantidad
+T527	Concept 13796 13803	niveles
+R138	property-of Arg1:T526 Arg2:T1126	
+R141	property-of Arg1:T527 Arg2:T1126	
+A55	Uncertain E1127
+T531	Concept 13925 13929	vida
+R142	property-of Arg1:T1141 Arg2:T531	
+T532	Action 14024 14029	beber
+E30	Action:T532 Target:T1137
+T537	Concept 13964 13969	siglo
+R143	property-of Arg1:T1139 Arg2:T537	
+A56	Uncertain E1147
+T541	Action 14047 14060	contaminación
+E31	Action:T541 Target:T1144 Target2:T1143 Target3:T1142
+T542	Concept 14146 14155	problemas
+R144	is-a Arg1:T1146 Arg2:T542	
+T543	Concept 14193 14197	asma
+R145	part-of Arg1:T1157 Arg2:T543	
+A57	Uncertain E1156
+T548	Concept 14308 14315	riesgos
+T549	Concept 14434 14446	intoxicación
+R149	is-a Arg1:T1169 Arg2:T549	
+T554	Concept 14451 14456	plomo
+R153	part-of Arg1:T554 Arg2:T1168	
+T555	Concept 14408 14419	actividades
+R76	is-a Arg1:T1170 Arg2:T555	
+T556	Action 14395 14404	resultado
+E32	Action:T556 Subject:T1170 Target:T1169 Target2:E1167
+R154	is-a Arg1:T1164 Arg2:T1170	
+R156	is-a Arg1:T1163 Arg2:T1170	
+R157	is-a Arg1:T1168 Arg2:T1170	
