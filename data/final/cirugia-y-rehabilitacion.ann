@@ -11,13 +11,13 @@ T11	Concept 93 104	anestésicos
 T10	Action 105 115	disminuyen
 T9	Action 118 124	evitan
 T8	Concept 136 141	dolor
-E9	Action:T9 Subject:T11 Subject2:T8
+E9	Action:T9 Subject:T11 Target:T8
 E10	Action:T10 Target:T8 Subject:T11
 T16	Action 163 170	recibir
 T15	Concept 183 187	leve
 T14	Concept 174 182	sedativo
 T13	Action 200 206	relaje
-E16	Action:T16 Target:T14
+E16	Action:T16 Target:T14 Subject:T21
 R1	property-of Arg1:T15 Arg2:T14
 E13	Action:T13 Subject:E16
 T20	Action 250 258	recordar
@@ -32,15 +32,15 @@ T27	Concept 305 311	médico
 T26	Concept 288 297	anestesia
 T25	Action 328 337	dependerá
 T24	Concept 348 356	factores
-E25	Action:T25 Target:T24 Subject:T26
-E28	Action:T28 Target:T26 Subject:T27
-E29	Action:T29 Target:E28 Subject:T27
+E25	Action:T25 Target:T24 Subject:E28
+E28	Action:T28 Target:T26 Subject:E29
+E29	Action:T29 Subject:T27
 T37	Action 364 372	incluyen
 T33	Concept 384 407	intervención quirúrgica
 T32	Action 420 428	realizar
 T31	Concept 434 449	estado de salud
 T30	Concept 461 469	paciente
-E32	Action:T32 Target:T33 Subject:T33
+E32	Action:T32 Target:T33
 E37	Action:T37 Target:E32 Target2:T31
 R2	property-of Arg1:T31 Arg2:T30
 T43	Action 471 478	Existen
@@ -60,10 +60,10 @@ T54	Action 636 643	mejorar
 T53	Concept 651 669	función del cuerpo
 T52	Concept 606 613	síntoma
 T51	Concept 624 633	condición
-T50	Concept 651 658	función
+T50	Concept 663 669	cuerpo
 E54	Action:T54 Target:T53
 E55	Action:T55 Target:T52
-R6	is-a Arg1:T53 Arg2:T50
+R6	property-of Arg1:T53 Arg2:T50
 R7	part-of Arg1:T52 Arg2:T51
 T61	Action 702 710	detectar
 T60	Concept 679 687	cirugías
@@ -77,7 +77,7 @@ T66	Action 818 828	examinarlo
 T65	Concept 740 748	cirujano
 T64	Concept 767 774	biopsia
 T63	Concept 806 812	tejido
-E66	Action:T66 Target:T63
+E66	Action:T66 Target:T63 Subject:T69
 E67	Action:T67 Target:T63
 E68	Action:T68 Target:T64 Subject:T65
 E70	Action:T70 Target:E67 Subject:T64
@@ -136,7 +136,7 @@ T105	Concept 1345 1353	lesiones
 T104	Concept 1354 1366	accidentales
 R22	property-of Arg1:T107 Arg2:T108
 R23	property-of Arg1:T104 Arg2:T105
-R24	part-of Arg1:T111 Arg2:T110
+R24	property-of Arg1:T111 Arg2:T110
 R25	is-a Arg1:T112 Arg2:T106
 R26	is-a Arg1:T105 Arg2:T111
 R27	is-a Arg1:T112 Arg2:T111
@@ -153,7 +153,7 @@ T120	Concept 1422 1431	cirujanos
 T119	Concept 1452 1462	apariencia
 T118	Concept 1505 1512	cirugía
 T117	Concept 1485 1491	cuerpo
-E123	Action:T123 Target:T119 Target2:T121 Subject:T120 Subject2:T122
+E123	Action:T123 Target:T119 Subject:T120 Subject2:T122
 R31	is-a Arg1:T122 Arg2:T118
 R32	part-of Arg1:T121 Arg2:T117
 R4	property-of Arg1:T119 Arg2:T121
@@ -212,8 +212,8 @@ T154	Concept 2066 2073	semanas
 T153	Concept 2076 2081	meses
 T152	Concept 2096 2103	cirugía
 R40	property-of Arg1:T156 Arg2:T155
-E3	Action:T34 
-E6	Action:T35 
+E3	Action:T34 Target:T152
+E6	Action:T35 Target:T156
 E2	Action:T12 Target:E3 Target2:E6 Subject:T158
 T164	Action 2105 2111	Seguir
 T163	Action 2153 2161	ayudarle
@@ -221,7 +221,7 @@ T162	Action 2164 2175	recuperarse
 T161	Concept 2116 2131	recomendaciones
 T160	Concept 2138 2146	cirujano
 T159	Concept 2180 2191	rápidamente
-E162	Action:T162 
+E162	Action:T162 Target:T159
 E164	Action:T164 Target:T161
 R110	property-of Arg1:T161 Arg2:T160
 E163	Action:T163 Target:E162 Subject:E164
@@ -260,7 +260,7 @@ T190	Concept 2503 2524	miembros artificiales
 T189	Action 2537 2550	desenvolverse
 T188	Concept 2503 2511	miembros
 T187	Action 2528 2536	permiten
-E189	Action:T189 
+E189	Action:T189 Target:T93
 R48	is-a Arg1:T190 Arg2:T188
 E187	Action:T187 Target:E189 Subject:T190
 T196	Concept 2587 2593	lesión
@@ -279,7 +279,7 @@ T197	Concept 2754 2765	habilidades
 E199	Action:T199 Target:T197
 E200	Action:T200 Target:T198
 E8	Action:T39 Target:T38
-E11	Action:T48 Target:E200 Target2:E199 Target3:E8
+E11	Action:T48 Target:E200 Target2:E199 Target3:E8 Target4:E24
 T206	Concept 2833 2840	proceso
 T205	Concept 2847 2861	rehabilitación
 R51	is-a Arg1:T205 Arg2:T206
@@ -299,7 +299,6 @@ T216	Concept 2990 2994	edad
 T215	Action 3000 3011	haya tenido
 T214	Concept 3015 3022	derrame
 T213	Concept 3043 3057	rehabilitación
-T212	Concept 3092 3097	ayuda
 E215	Action:T215 Target:T214 Subject:T217
 R49	property-of Arg1:T216 Arg2:T217
 E14	Action:T56 Target:T213 Subject:E215
@@ -414,14 +413,81 @@ E293	Action:T293 Target:T296 Subject:T295
 E297	Action:T297 Target:T294 Subject:T295
 R105	is-a Arg1:T296 Arg2:T292
 T304	Concept 3948 3956	cuidados
-T303	Concept 3957 3967	intensivos
+T303	Concept 3948 3967	cuidados intensivos
 T302	Action 3975 3986	recuperarse
 T301	Concept 3935 3944	pacientes
 T300	Action 4001 4007	mueren
-E300	Action:T300 Target:T301 Subject:T301
-E302	Action:T302 Subject:T301 Subject2:T301
-R107	property-of Arg1:T303 Arg2:T304
+E300	Action:T300 Subject:T301
+E302	Action:T302 Subject:T301
 T307	Concept 4015 4025	directivas
 T306	Concept 4026 4033	médicas
 T305	Concept 4052 4062	importante
 R108	property-of Arg1:T306 Arg2:T307
+A1	Uncertain E16
+T21	Concept 143 148	Usted
+A2	Negated E20
+A3	Uncertain E20
+T22	Concept 384 396	intervención
+R60	is-a Arg1:T33 Arg2:T22	
+T23	Concept 450 456	actual
+R68	property-of Arg1:T23 Arg2:T31	
+A4	Uncertain E47
+A5	Uncertain E46
+A6	Uncertain E55
+A7	Uncertain E54
+A8	Uncertain E61
+A9	Uncertain E68
+A10	Uncertain E76
+A11	Uncertain E87
+T78	Action 1229 1234	haber
+E22	Action:T78 Target:T111
+T88	Concept 890 897	corazón
+A12	Uncertain E22
+A13	Uncertain E115
+A14	Uncertain E123
+T72	Action 1607 1612	haber
+E23	Action:T72 Target:T132 Target2:T131
+R69	part-of Arg1:T130 Arg2:T129	
+A15	Uncertain E23
+A16	Uncertain E136
+A17	Negated E1
+T90	Concept 1839 1848	anestesia
+A18	Uncertain E6
+R76	property-of Arg1:T156 Arg2:T154	
+R77	property-of Arg1:T156 Arg2:T153	
+A19	Uncertain E185
+A20	Uncertain E7
+A21	Uncertain E175
+T93	Concept 2555 2559	bien
+T113	Concept 2624 2629	seria
+R78	property-of Arg1:T113 Arg2:T195	
+T124	Action 2768 2777	encontrar
+E24	Action:T124 Target:T157
+T140	Concept 2778 2784	nuevas
+T157	Concept 2785 2791	formas
+R79	property-of Arg1:T140 Arg2:T157	
+A22	Uncertain E11
+T168	Concept 2805 2810	cosas
+T171	Action 2902 2909	esperan
+E26	Action:T171 Target:E27 Subject:T207
+T177	Action 2910 2920	alcanzarse
+E27	Action:T177 Target:T210
+T191	Action 3159 3164	hacer
+E30	Action:T191 
+A23	Uncertain E30
+T201	Concept 3860 3864	vida
+T202	Concept 3692 3696	vías
+T203	Concept 3711 3717	sondas
+A24	Uncertain E297
+R80	is-a Arg1:T285 Arg2:T203	
+R81	is-a Arg1:T286 Arg2:T202	
+R82	is-a Arg1:T303 Arg2:T304	
+R86	property-of Arg1:T303 Arg2:T301	
+A25	Uncertain E300
+A26	Uncertain E302
+T209	Action 4049 4051	es
+E31	Action:T209 
+T204	Action 4009 4014	Tener
+E33	Action:T204 
+T212	Concept 3395 3403	cirugías
+A27	Uncertain E274
