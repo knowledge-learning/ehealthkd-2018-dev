@@ -104,14 +104,14 @@ T94	Concept 1080 1084	agua
 T93	Concept 1091 1100	alimentos
 T92	Action 1048 1057	diseminan
 T91	Concept 1071 1075	aire
-E92	Action:T92 Target:T91 Target2:T94 Target3:T93 Subject:T96
+E92	Action:T92 Target4:T96 Subject:T91 Subject2:T94 Subject3:T93
 R48	is-a Arg1:T96 Arg2:T95
 T104	Concept 1118 1128	enfermedad
 T103	Action 1111 1117	causan
 T102	Concept 1140 1145	horas
 T101	Concept 1148 1152	días
 E103	Action:T103 Target:T104
-T118	Concept 1221 1236	virus de fiebre
+T118	Concept 1230 1248	fiebre hemorrágica
 T117	Action 1294 1300	usarse
 T116	Concept 1306 1324	agentes biológicos
 T115	Concept 1221 1248	virus de fiebre hemorrágica
@@ -125,13 +125,10 @@ T108	Concept 1278 1285	viruela
 T107	Concept 1306 1313	agentes
 T106	Action 1176 1184	preocupa
 E117	Action:T117 Target:T116 Subject:T113 Subject2:T112 Subject3:T115 Subject4:T110 Subject5:T109 Subject6:T108
-R51	is-a Arg1:T118 Arg2:T111
 R52	is-a Arg1:T116 Arg2:T107
-R53	is-a Arg1:T115 Arg2:T118
 E106	Action:T106 Target:E117 Subject:T114
 T132	Concept 1344 1359	medidas médicas
 T131	Concept 1400 1418	agentes biológicos
-T130	Action 1420 1430	incluyendo
 T129	Action 1365 1373	proteger
 T128	Concept 1329 1339	biodefensa
 T127	Concept 1344 1351	medidas
@@ -142,7 +139,6 @@ T123	Action 1340 1343	usa
 T122	Concept 1380 1388	personas
 E123	Action:T123 Target:T132 Subject:T128
 E129	Action:T129 Target:T122 Subject:T128
-E130	Action:T130 Target:T131 Target2:T125 Target3:T124
 R56	is-a Arg1:T132 Arg2:T127
 R57	is-a Arg1:T131 Arg2:T126
 T140	Concept 1486 1506	preparativos médicos
@@ -214,7 +210,6 @@ T205	Concept 2084 2094	exposición
 T204	Action 2067 2076	preocupan
 E204	Action:T204 Target:T206 Target2:T205 Subject:T208
 R97	is-a Arg1:T210 Arg2:T207
-R99	property-of Arg1:T207 Arg2:T205
 T133	Action 2287 2295	relación
 T224	Concept 2218 2223	mayor
 T223	Concept 2224 2230	riesgo
@@ -223,21 +218,18 @@ T217	Concept 2189 2212	exposición a los campos
 T216	Concept 2234 2251	leucemia infantil
 T213	Action 2171 2179	relación
 T212	Concept 2143 2151	estudios
-E213	Action:T213 Target:T216 Target2:T217 Subject:T212
+E213	Action:T213 Target:T216 Subject:T217
 R102	property-of Arg1:T224 Arg2:T223
-E14	Action:T133 Subject:T220
-R77	property-of Arg1:E14 Arg2:T217
-R78	property-of Arg1:E14 Arg2:T216
+E14	Action:T133 Subject:T217 Target:T216
 T237	Action 2326 2336	encontrado
 T236	Concept 2411 2430	cánceres infantiles
 T235	Concept 2371 2395	campos electromagnéticos
 T233	Action 2396 2404	provoque
 T232	Concept 2303 2318	investigaciones
-T231	Concept 2337 2347	evidencias
 T230	Concept 2411 2419	cánceres
 T229	Concept 2371 2377	campos
-E233	Action:T233 Target:T236 Subject:T235
-E237	Action:T237 Target:T231 Subject:T232
+E233	Action:T233 Target:T236 Subject:E36
+E237	Action:T237 Subject:T232 Target:E233
 R103	is-a Arg1:T236 Arg2:T230
 R104	is-a Arg1:T235 Arg2:T229
 T248	Concept 2432 2440	Estudios
@@ -259,7 +251,7 @@ T251	Concept 2516 2528	preocupación
 T250	Action 2583 2589	causen
 T249	Concept 2590 2596	cáncer
 E250	Action:T250 Target:T249 Target2:T256 Subject:T254 Subject2:T259
-E252	Action:T252 Target:T251
+E252	Action:T252 Target:T251 Subject:E250
 R108	is-a Arg1:T257 Arg2:T254
 R109	is-a Arg1:T256 Arg2:T253
 T267	Concept 2646 2672	energía de radiofrecuencia
@@ -279,9 +271,8 @@ T275	Concept 2748 2757	evidencia
 T274	Concept 2831 2836	salud
 T273	Concept 2806 2815	celulares
 T272	Concept 2818 2827	problemas
-T271	Concept 2784 2792	relación
 T270	Action 2773 2779	pruebe
-E270	Action:T270 Target:T271 Subject:T279
+E270	Action:T270 Subject:T279 Target:E37
 E276	Action:T276 Target:E270
 R117	is-a Arg1:T279 Arg2:T275
 R121	property-of Arg1:T274 Arg2:T272
@@ -308,14 +299,6 @@ E294	Action:T294 Target:T293 Subject:T299
 E300	Action:T300 Target:E294
 R125	is-a Arg1:T299 Arg2:T295
 R6	property-of Arg1:T290 Arg2:T292
-R7	property-of Arg1:T291 Arg2:T292
-R13	property-of Arg1:T302 Arg2:T292
-T311	Concept 3206 3212	tiempo
-T309	Concept 3111 3128	grupo de personas
-T307	Concept 3111 3116	grupo
-T306	Concept 3225 3233	edificio
-T305	Concept 3146 3154	síntomas
-R130	is-a Arg1:T309 Arg2:T307
 T319	Concept 3257 3267	específica
 T316	Concept 3280 3305	enfermedad del legionario
 T315	Concept 3251 3256	causa
@@ -324,7 +307,6 @@ R136	is-a Arg1:T316 Arg2:T314
 R139	property-of Arg1:T319 Arg2:T315
 T325	Concept 3329 3358	síndrome del edificio enfermo
 T322	Concept 3329 3337	síndrome
-T321	Concept 3342 3350	edificio
 R140	is-a Arg1:T325 Arg2:T322
 T22	Concept 3511 3534	fuente de contaminación
 T15	Action 3499 3507	eliminar
@@ -333,15 +315,14 @@ T342	Concept 3413 3423	interiores
 T333	Action 3483 3489	siente
 T332	Concept 3490 3495	mejor
 T331	Concept 3376 3385	problemas
-T330	Concept 3393 3400	calidad
+T330	Concept 3393 3409	calidad del aire
 T329	Action 3434 3440	causan
 T328	Concept 3441 3450	molestias
 T327	Concept 3471 3479	personas
 E329	Action:T329 Target:T328 Subject:T331
 E333	Action:T333 Target:T332 Subject:T327
 R146	property-of Arg1:T330 Arg2:T331
-R147	property-of Arg1:T343 Arg2:T330
-R148	property-of Arg1:T342 Arg2:T343
+R148	part-of Arg1:T343 Arg2:T342
 E3	Action:T15 Target:T22
 T349	Concept 3632 3644	enfermedades
 T348	Concept 3557 3570	contaminantes
@@ -358,7 +339,7 @@ T362	Action 3754 3761	mejorar
 T356	Concept 3690 3698	edificio
 T355	Action 3721 3729	eliminar
 T354	Concept 3734 3747	contaminantes
-T353	Concept 3765 3772	calidad
+T353	Concept 3765 3781	calidad del aire
 T352	Concept 3777 3781	aire
 E355	Action:T355 Target:T354
 E363	Action:T363 Target:T356
@@ -409,7 +390,7 @@ T410	Concept 4327 4334	plantas
 T409	Action 4260 4268	obstruir
 T408	Action 4298 4306	bloquear
 T407	Action 4315 4322	matando
-E407	Action:T407 Target:T410
+E407	Action:T407 Target:T410 Subject:E408
 E408	Action:T408 Target:T411
 E409	Action:T409 Target:T412
 R167	part-of Arg1:T412 Arg2:T414
@@ -432,7 +413,7 @@ E425	Action:T425 Target:T424 Subject:T426 Subject2:T427
 E428	Action:T428 Target:T429 Subject:T424
 R170	part-of Arg1:T430 Arg2:T429
 T436	Concept 4526 4535	bacterias
-T435	Concept 4559 4586	aguas estancadas residuales
+T435	Concept 4576 4586	residuales
 T434	Action 4595 4605	contaminar
 T433	Concept 4609 4613	agua
 T432	Concept 4614 4619	dulce
@@ -506,7 +487,7 @@ T498	Action 5342 5348	ocurre
 T497	Concept 5365 5373	exterior
 T496	Action 5449 5456	afectar
 T495	Concept 5460 5465	salud
-E496	Action:T496 Target:T495 Subject:T499 Subject2:T503
+E496	Action:T496 Target:T495 Subject2:T503
 E498	Action:T498 Target:T497 Target2:T506 Subject:T499
 R224	part-of Arg1:T506 Arg2:T505
 R14	property-of Arg1:T506 Arg2:T503
@@ -535,12 +516,10 @@ T530	Concept 5737 5757	derrames de petróleo
 T529	Concept 5786 5798	salud humana
 T528	Action 5773 5780	afectar
 E528	Action:T528 Target:T529 Subject:T530
-T536	Concept 5845 5864	petróleo se derramó
 T535	Concept 5845 5853	petróleo
 T534	Concept 5806 5813	efectos
 T533	Action 5821 5829	depender
-E533	Action:T533 Target:T536 Subject:T534
-R235	is-a Arg1:T536 Arg2:T535
+E533	Action:T533 Subject:T534 Target:T306 Target2:T214 Target3:T215 Target4:T218
 T540	Concept 5915 5923	factores
 T539	Concept 5937 5955	tipo de exposición
 T538	Concept 5961 5983	cantidad de exposición
@@ -549,7 +528,6 @@ R240	is-a Arg1:T538 Arg2:T540
 T547	Concept 5998 6006	personas
 T546	Action 6011 6018	limpian
 T545	Concept 6019 6027	derrames
-T544	Concept 6043 6049	riesgo
 E546	Action:T546 Target:T545 Subject:T547
 T560	Concept 6101 6107	ocular
 T559	Concept 6134 6147	respiratorios
@@ -567,7 +545,7 @@ R20	is-a Arg1:T559 Arg2:T557
 T563	Concept 6190 6211	efectos a largo plazo
 T562	Concept 6221 6229	derrames
 T561	Action 6165 6169	sabe
-E561	Action:T561 Target:T563 Subject:T562
+E561	Action:T561 Target:T563
 T569	Concept 6272 6291	sustancias químicas
 T568	Concept 6308 6320	salud humana
 T567	Concept 6326 6340	medio ambiente
@@ -632,7 +610,7 @@ T638	Action 7028 7037	inhalarlo
 T637	Action 7039 7049	inyectarlo
 T636	Action 7052 7062	absorberlo
 T630	Concept 7078 7082	piel
-E636	Action:T636 
+E636	Action:T636 Subject:T630
 E637	Action:T637 
 E638	Action:T638 
 E639	Action:T639 
@@ -668,26 +646,16 @@ T656	Action 7290 7298	prevenir
 T655	Action 7333 7337	usar
 E655	Action:T655 Target:T657
 E662	Action:T662 Target:T657
-E6	Action:T43 Subject:T44
+E6	Action:T43 Subject:T44 Target:E662 Target2:E655
 E656	Action:T656 Target:T658 Subject:E655 Subject2:E662
-T666	Concept 7418 7427	productos
-T664	Concept 7441 7461	alcance de los niños
-T663	Action 7428 7436	alejados
-E663	Action:T663 Target:T664 Subject:T666
 T672	Concept 7466 7477	tratamiento
-T671	Concept 7511 7515	tipo
+T671	Concept 7511 7525	tipo de veneno
 T670	Action 7499 7506	depende
 T668	Concept 7484 7498	envenenamiento
 T667	Concept 7519 7525	veneno
 E670	Action:T670 Target:T671 Subject:T672
 R304	property-of Arg1:T672 Arg2:T668
 R305	property-of Arg1:T671 Arg2:T667
-T49	Action 7530 7538	sospecha
-T677	Concept 7579 7621	centro de control de envenenamientos local
-T675	Action 7570 7575	llame
-T674	Concept 7559 7569	envenenado
-E675	Action:T675 Target:T677
-E7	Action:T49 Target:T674
 T687	Concept 7678 7680	CO
 T684	Concept 7692 7700	sin olor
 T683	Concept 7701 7709	ni color
@@ -695,9 +663,8 @@ T682	Concept 7657 7676	monóxido de carbono
 T681	Concept 7688 7691	gas
 T680	Concept 7719 7728	peligroso
 R310	is-a Arg1:T682 Arg2:T681
-R313	property-of Arg1:T684 Arg2:T681
-R314	property-of Arg1:T683 Arg2:T681
-R315	property-of Arg1:T680 Arg2:T681
+R313	property-of Arg1:T684 Arg2:T682
+R314	property-of Arg1:T683 Arg2:T682
 R316	same-as Arg1:T687 Arg2:T682
 R317	property-of Arg1:T680 Arg2:T682
 T690	Concept 7759 7769	enfermedad
@@ -732,19 +699,13 @@ T715	Concept 8064 8071	persona
 T714	Action 8078 8089	envenenarse
 E717	Action:T717 Subject:T715
 E714	Action:T714 Target:T715 Subject:E717
-T724	Concept 8146 8156	envenenado
-T722	Concept 8161 8163	CO
-T720	Concept 8176 8184	síntomas
-T718	Action 8192 8201	parecerse
-E718	Action:T718 Target:T720 Subject:T720
-R328	part-of Arg1:T722 Arg2:T724
 T730	Concept 8293 8307	envenenamiento
 T729	Concept 8235 8243	personas
 T728	Concept 8254 8262	dormidas
 T727	Concept 8265 8276	intoxicadas
 T726	Action 8284 8289	morir
 T725	Concept 8312 8314	CO
-E726	Action:T726 Target:T729 Subject:T725
+E726	Action:T726 Target:T728 Target2:T727 Subject:T730
 R331	property-of Arg1:T728 Arg2:T729
 R332	property-of Arg1:T727 Arg2:T729
 R333	property-of Arg1:T725 Arg2:T730
@@ -753,7 +714,7 @@ T739	Concept 8388 8401	altos niveles
 T738	Concept 8405 8407	CO
 T732	Concept 8414 8419	hogar
 T731	Action 8368 8378	advertirle
-E731	Action:T731 Target:T739 Subject:T740
+E731	Action:T731 Subject:T740 Target:E7
 R337	property-of Arg1:T739 Arg2:T738
 R338	part-of Arg1:T738 Arg2:T732
 T752	Concept 8612 8619	familia
@@ -768,11 +729,7 @@ T743	Concept 8563 8575	ingredientes
 T742	Action 8587 8592	dañar
 T741	Concept 8596 8601	salud
 E742	Action:T742 Target:T741 Target2:T752 Target3:T750 Subject:T743
-E744	Action:T744 Target:T743 Subject:T749
-R28	property-of Arg1:T748 Arg2:T749
-R29	property-of Arg1:T747 Arg2:T749
-R35	property-of Arg1:T746 Arg2:T749
-R36	property-of Arg1:T745 Arg2:T749
+E744	Action:T744 Target:T743 Subject:E42
 T769	Action 8697 8701	daño
 T768	Action 8708 8715	inhalan
 T767	Action 8720 8728	ingieren
@@ -809,7 +766,7 @@ T792	Concept 8970 8979	problemas
 T791	Action 8981 8989	mantenga
 T789	Concept 9011 9034	contenedores originales
 T788	Concept 8994 9003	productos
-E791	Action:T791 Subject:T788
+E791	Action:T791 Subject:T788 Target:T789
 E793	Action:T793 Target:T792
 T99	Concept 9168 9172	piel
 T97	Concept 9187 9196	productos
@@ -818,10 +775,9 @@ T89	Action 9156 9162	inhala
 T76	Action 9149 9154	traga
 T66	Concept 9123 9135	ayuda médica
 T65	Action 9116 9122	busque
-T794	Concept 9085 9098	instrucciones
-E8	Action:T65 
-E9	Action:T76 Target:T97
-E10	Action:T89 Target:T97
+E8	Action:T65 Target:T66
+E9	Action:T76 Target:T97 Subject:T311
+E10	Action:T89 Target:T97 Subject:T311
 E11	Action:T90 Target:T97 Subject:T99
 T804	Concept 9201 9221	humo de segunda mano
 T803	Concept 9240 9244	humo
@@ -846,23 +802,18 @@ T809	Concept 9457 9463	cáncer
 T808	Action 9450 9456	causar
 E808	Action:T808 Target:T809 Subject:T811
 R365	property-of Arg1:T810 Arg2:T811
-T100	Concept 9476 9491	cantidad segura
-T815	Concept 9495 9515	humo de segunda mano
-R40	property-of Arg1:T100 Arg2:T815
-T105	Concept 9542 9567	inhalación pasiva de humo
+T105	Concept 9563 9567	humo
 T818	Concept 9525 9538	bajos niveles
 T817	Concept 9579 9592	perjudiciales
 R41	property-of Arg1:T818 Arg2:T105
-R42	property-of Arg1:T817 Arg2:T105
 T834	Action 9679 9687	permitir
 T833	Action 9688 9693	fumar
-T827	Concept 9647 9672	inhalación pasiva de humo
 T826	Concept 9628 9640	no fumadores
 T825	Concept 9697 9713	lugares cerrados
 T824	Action 9613 9621	proteger
-E833	Action:T833 
+E833	Action:T833 Target:T825
 E834	Action:T834 Target:E833
-E824	Action:T824 Target:T826 Subject:E834
+E824	Action:T824 Subject:E834 Target:E47
 T840	Concept 9733 9741	elemento
 T838	Concept 9718 9726	mercurio
 T837	Concept 9765 9769	aire
@@ -905,7 +856,6 @@ T864	Concept 10100 10127	tapaduras dentales de plata
 R396	part-of Arg1:T867 Arg2:T866
 R397	part-of Arg1:T867 Arg2:T864
 R398	part-of Arg1:T867 Arg2:T865
-T879	Concept 10198 10218	pomadas para la piel
 T878	Concept 10150 10167	sales de mercurio
 T877	Concept 10150 10155	sales
 T876	Concept 10189 10195	cremas
@@ -913,7 +863,6 @@ T875	Concept 10198 10205	pomadas
 T874	Action 10175 10185	utilizarse
 E874	Action:T874 Target:T878 Subject:T876 Subject2:T875
 R399	is-a Arg1:T878 Arg2:T877
-R400	is-a Arg1:T879 Arg2:T875
 T886	Concept 10223 10231	mercurio
 T885	Concept 10238 10242	aire
 T884	Action 10246 10253	asienta
@@ -1285,13 +1234,11 @@ T98	Concept 1991 1997	cambio
 R81	is-a Arg1:T182 Arg2:T98	
 T134	Concept 2189 2199	exposición
 A9	Negated E237
-T141	Concept 2358 2368	exposición
 A10	Negated E246
 A11	Negated E276
 T142	Concept 2999 3003	aire
 T146	Action 3241 3246	haber
-E15	Action:T146 
-T151	Concept 3511 3517	fuente
+E15	Action:T146 Target:T315
 T152	Concept 3521 3534	contaminación
 A12	Uncertain E346
 A13	Uncertain E383
@@ -1373,14 +1320,10 @@ A26	Negated E609
 T255	Concept 6906 6926	desperdicios tóxicos
 T258	Concept 6906 6918	desperdicios
 T260	Concept 6971 6980	sustancia
-T261	Concept 7579 7585	centro
-T268	Concept 7589 7615	control de envenenamientos
-T269	Concept 7616 7621	local
 A27	Uncertain E688
 T277	Concept 7808 7812	humo
 T278	Concept 7905 7912	fogones
 T281	Concept 7916 7919	gas
-T282	Concept 7922 7930	sistemas
 T286	Concept 7934 7945	calefacción
 A28	Uncertain E704
 A29	Uncertain E714
@@ -1388,7 +1331,6 @@ T289	Concept 8347 8355	detector
 T296	Concept 8359 8361	CO
 T297	Concept 8394 8401	niveles
 A30	Uncertain E731
-T298	Concept 8531 8546	usos domésticos
 A31	Uncertain E744
 T301	Concept 8645 8655	sustancias
 T303	Concept 8786 8796	sustancias
@@ -1403,16 +1345,9 @@ T318	Concept 9201 9205	humo
 T320	Concept 9209 9221	segunda mano
 T323	Concept 9402 9411	productos
 T324	Concept 9531 9538	niveles
-T326	Concept 9542 9559	inhalación pasiva
-T334	Concept 9542 9552	inhalación
 A33	Negated E834
-T335	Concept 9647 9664	inhalación pasiva
-T336	Concept 9647 9657	inhalación
 T337	Concept 9697 9704	lugares
-T338	Concept 9631 9640	fumadores
 T339	Concept 9794 9802	mercurio
-T340	Concept 9843 9851	plateado
-T341	Concept 9870 9874	olor
 T350	Concept 10045 10053	mercurio
 T351	Concept 10077 10088	termómetros
 T357	Concept 10092 10098	vidrio
@@ -1566,3 +1501,140 @@ E32	Action:T556 Subject:T1170 Target:T1169 Target2:E1167
 R154	is-a Arg1:T1164 Arg2:T1170	
 R156	is-a Arg1:T1163 Arg2:T1170	
 R157	is-a Arg1:T1168 Arg2:T1170	
+R51	is-a Arg1:T115 Arg2:T111	
+R53	part-of Arg1:T118 Arg2:T115	
+R158	is-a Arg1:T125 Arg2:T132	
+R159	is-a Arg1:T124 Arg2:T132	
+T130	Action 1460 1467	incluye
+E33	Action:T130 Target:T137 Target2:T140
+R160	is-a Arg1:T145 Arg2:T148	
+R162	property-of Arg1:T148 Arg2:T150	
+A58	Uncertain E204
+R99	property-of Arg1:T210 Arg2:T205	
+T558	Action 2156 2166	encontrado
+E34	Action:T558 Subject:T212 Target:E213
+R163	is-a Arg1:T217 Arg2:T134	
+R164	property-of Arg1:T223 Arg2:T216	
+T564	Action 2276 2286	establecen
+E35	Action:T564 Target:E14 Subject:T220
+A60	Negated E35
+T141	Action 2358 2368	exposición
+E36	Action:T141 Target:T235
+T231	Action 2784 2792	relación
+E37	Action:T231 Subject:T273 Target:T272
+R77	part-of Arg1:T142 Arg2:T299	
+R7	part-of Arg1:T292 Arg2:T302	
+R13	part-of Arg1:T292 Arg2:T291	
+R78	is-a Arg1:T316 Arg2:T315	
+A59	Uncertain E15
+A61	Uncertain E333
+R130	property-of Arg1:T152 Arg2:T22	
+R147	property-of Arg1:T330 Arg2:T343	
+R166	part-of Arg1:T352 Arg2:T199	
+T151	Action 3903 3909	recreo
+E38	Action:T151 Subject:T364
+R169	part-of Arg1:T163 Arg2:T390	
+T271	Action 4147 4152	lleva
+E39	Action:T271 Target:T391 Target2:T390 Subject:T394
+R171	part-of Arg1:T164 Arg2:T404	
+R172	is-a Arg1:T172 Arg2:T165	
+R175	property-of Arg1:T435 Arg2:T172	
+R177	is-a Arg1:T441 Arg2:T179	
+R178	part-of Arg1:T184 Arg2:T441	
+R179	is-a Arg1:T440 Arg2:T186	
+R180	part-of Arg1:T439 Arg2:T188	
+R181	is-a Arg1:T453 Arg2:T189	
+R182	is-a Arg1:T451 Arg2:T448	
+R183	part-of Arg1:T464 Arg2:T461	
+R184	is-a Arg1:T475 Arg2:T191	
+R187	part-of Arg1:T190 Arg2:T475	
+R188	is-a Arg1:T476 Arg2:T192	
+R189	property-of Arg1:T476 Arg2:T193	
+R190	property-of Arg1:T194 Arg2:T484	
+R200	is-a Arg1:T481 Arg2:T195	
+R201	part-of Arg1:T196 Arg2:T481	
+R202	part-of Arg1:T197 Arg2:T499	
+A62	Uncertain E496
+R204	is-a Arg1:T517 Arg2:T200	
+R207	is-a Arg1:T516 Arg2:T201	
+R208	is-a Arg1:T524 Arg2:T202	
+R210	part-of Arg1:T203 Arg2:T524	
+R211	is-a Arg1:T530 Arg2:T209	
+R212	part-of Arg1:T211 Arg2:T530	
+T305	Action 5857 5864	derramó
+E41	Action:T305 Target:T535
+T306	Concept 5837 5853	tipo de petróleo
+R213	property-of Arg1:T306 Arg2:T535	
+R214	property-of Arg1:T539 Arg2:T41	
+R215	property-of Arg1:T538 Arg2:T42	
+R220	is-a Arg1:T563 Arg2:T221	
+R221	property-of Arg1:T563 Arg2:T562	
+R222	is-a Arg1:T569 Arg2:T222	
+R223	is-a Arg1:T568 Arg2:T225	
+R225	property-of Arg1:T584 Arg2:T228	
+R226	is-a Arg1:T583 Arg2:T227	
+R227	is-a Arg1:T582 Arg2:T234	
+R228	part-of Arg1:T238 Arg2:T582	
+R229	is-a Arg1:T592 Arg2:T239	
+R230	is-a Arg1:T598 Arg2:T240	
+R231	property-of Arg1:T241 Arg2:T597	
+R232	is-a Arg1:T605 Arg2:T247	
+R233	is-a Arg1:T255 Arg2:T258	
+R234	is-a Arg1:T616 Arg2:T255	
+R235	is-a Arg1:T626 Arg2:T260	
+A63	Uncertain E639
+A64	Uncertain E638
+A65	Uncertain E637
+A66	Uncertain E636
+R236	property-of Arg1:T32 Arg2:T643	
+R237	is-a Arg1:T698 Arg2:T277	
+R238	is-a Arg1:T692 Arg2:T278	
+R241	part-of Arg1:T281 Arg2:T692	
+R242	property-of Arg1:T286 Arg2:T691	
+A67	Uncertain E726
+R243	is-a Arg1:T740 Arg2:T289	
+R244	property-of Arg1:T739 Arg2:T297	
+T49	Action 8382 8387	tiene
+E7	Action:T49 Target:T739
+R245	property-of Arg1:T313 Arg2:T746	
+R246	is-a Arg1:T758 Arg2:T301	
+R252	is-a Arg1:T772 Arg2:T303	
+T261	Action 8439 8446	utiliza
+E42	Action:T261 Subject2:T748 Subject3:T747 Subject4:T746 Subject5:T745 Target:T749
+R28	is-a Arg1:T789 Arg2:T312	
+T268	Concept 9066 9074	etiqueta
+T269	Action 9056 9062	indica
+E43	Action:T269 Subject:T268
+T282	Action 9037 9047	utilícelos
+E44	Action:T282 Target:E43
+T298	Concept 9105 9113	etiqueta
+T307	Concept 9085 9098	instrucciones
+T309	Action 9076 9080	Siga
+E45	Action:T309 Target:T307
+R29	property-of Arg1:T307 Arg2:T298	
+T311	Concept 9139 9144	usted
+R35	part-of Arg1:T99 Arg2:T311	
+R36	is-a Arg1:T804 Arg2:T318	
+R253	property-of Arg1:T320 Arg2:T804	
+R254	is-a Arg1:T806 Arg2:T317	
+R255	is-a Arg1:T811 Arg2:T323	
+A68	Uncertain E808
+R40	property-of Arg1:T818 Arg2:T324	
+T100	Action 9542 9559	inhalación pasiva
+E46	Action:T100 Target:T105
+R42	property-of Arg1:T817 Arg2:T818	
+T321	Action 9647 9664	inhalación pasiva
+E47	Action:T321 Target:T326 Subject:T826
+T326	Concept 9668 9672	humo
+R256	is-a Arg1:T825 Arg2:T337	
+R257	is-a Arg1:T842 Arg2:T339	
+R258	is-a Arg1:T867 Arg2:T350	
+R259	is-a Arg1:T866 Arg2:T351	
+R263	part-of Arg1:T357 Arg2:T866	
+R264	is-a Arg1:T864 Arg2:T360	
+T334	Concept 10122 10127	plata
+R265	part-of Arg1:T334 Arg2:T864	
+R266	is-a Arg1:T865 Arg2:T358	
+R267	property-of Arg1:T359 Arg2:T865	
+R270	part-of Arg1:T361 Arg2:T878	
+R271	is-a Arg1:T898 Arg2:T370	
