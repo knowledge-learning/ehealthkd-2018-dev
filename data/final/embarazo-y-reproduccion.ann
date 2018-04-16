@@ -166,7 +166,7 @@ T131	Concept 1520 1527	mujeres
 T130	Concept 1545 1551	riesgo
 T129	Concept 1539 1544	mayor
 E134	Action:T134 Target:T130 Subject:T131
-E135	Action:T135 Target:E134
+E135	Action:T135 Target:T131
 R39	property-of Arg1:T129 Arg2:T130
 T143	Action 1593 1598	tiene
 T142	Action 1631 1640	controlar
@@ -267,7 +267,7 @@ T225	Concept 2705 2735	proveedor de cuidados de salud
 T224	Action 2745 2750	tomar
 T223	Concept 2756 2764	decisión
 T222	Concept 2765 2771	juntos
-E224	Action:T224 Target:T223 Subject:T225
+E224	Action:T224 Target:T223 Subject:T225 Subject2:T564
 R64	is-a Arg1:T225 Arg2:T226
 R65	is-a Arg1:T226 Arg2:T227
 T237	Concept 2777 2784	mujeres
@@ -348,7 +348,7 @@ T278	Concept 3456 3465	principal
 E283	Action:T283 Subject:T284 Target:T281
 R82	property-of Arg1:T281 Arg2:T282
 R83	property-of Arg1:T278 Arg2:T279
-E7	Action:T45 Target:T52 Subject:T280
+E7	Action:T45 Target:T52 Subject:E31
 T292	Concept 3501 3508	Comidas
 T291	Concept 3509 3517	sensatas
 T290	Concept 3520 3532	equilibradas
@@ -684,7 +684,7 @@ T542	Concept 7337 7344	pruebas
 T541	Concept 7314 7320	doctor
 T540	Action 7327 7336	sugerirle
 T539	Concept 7337 7359	pruebas de diagnóstico
-E540	Action:T540 Target:T539 Subject:T541
+E540	Action:T540 Target:T539 Subject:T541 Subject2:E70
 R180	is-a Arg1:T539 Arg2:T542
 T546	Action 7367 7376	confirman
 T545	Action 7379 7388	descartan
@@ -721,7 +721,7 @@ T558	Concept 7630 7645	atención médica
 E559	Action:T559 Target:T558
 E563	Action:T563 Target:T562
 R188	is-a Arg1:T558 Arg2:T560
-E561	Action:T561 Target:E563 Subject:E559
+E561	Action:T561 Target:E563 Subject:E559 Subject2:T566
 T573	Action 7805 7814	embarazar
 T572	Concept 7785 7791	hombre
 T571	Concept 7821 7826	mujer
@@ -741,7 +741,7 @@ T578	Action 7927 7933	llevan
 T577	Concept 7937 7944	esperma
 T576	Concept 7917 7922	tubos
 E578	Action:T578 Target:T577 Subject:T576
-E579	Action:T579 Subject:T581 Target:E578
+E579	Action:T579 Subject:T581 Target:T576
 T584	Concept 7985 7992	hombres
 T583	Action 7993 8001	regresan
 T582	Concept 8007 8012	hogar
@@ -832,7 +832,7 @@ R47	property-of Arg1:T141 Arg2:T173
 A11	Uncertain E186
 R48	part-of Arg1:T177 Arg2:T176	
 T144	Action 2352 2357	antes
-E22	Action:T144 Subject:E196 Target:E195
+E22	Action:T144 Subject:E196 Target:E195 Subject2:E198
 A12	Negated E204
 A13	Uncertain E4
 T145	Action 2490 2497	tomarlo
@@ -853,7 +853,7 @@ T158	Action 3318 3323	antes
 E29	Action:T158 Subject:E275 Target:T268
 A17	Negated E283
 T160	Action 3409 3418	significa
-E30	Action:T160 Subject:T284 Target:E7
+E30	Action:T160 Subject:T284 Target:E31
 T171	Action 3441 3448	consume
 E31	Action:T171 Target:T280
 T175	Action 3533 3538	serán
@@ -996,3 +996,11 @@ R119	part-of Arg1:T594 Arg2:T459
 A44	Negated E600
 T466	Action 8089 8105	realizar pruebas
 E69	Action:T466 Subject:T590 Target:T459
+T525	Concept 1574 1579	antes
+T564	Concept 2694 2699	Usted
+R24	property-of Arg1:T222 Arg2:T223	
+T565	Action 7262 7272	De acuerdo
+E70	Action:T565 Target:T412
+T566	Concept 7651 7662	otras cosas
+T570	Action 3449 3452	son
+E71	Action:T570 Subject:E31 Target:T279

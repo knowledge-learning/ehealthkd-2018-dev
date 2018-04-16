@@ -469,7 +469,7 @@ R79	property-of Arg1:T140 Arg2:T157
 A22	Uncertain E11
 T168	Concept 2805 2810	cosas
 T171	Action 2902 2909	esperan
-E26	Action:T171 Target:E27 Subject:T207
+E26	Action:T171 Target:E27
 T177	Action 2910 2920	alcanzarse
 E27	Action:T177 Target:T210
 T191	Action 3159 3164	hacer

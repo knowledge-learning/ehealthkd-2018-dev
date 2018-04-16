@@ -683,17 +683,13 @@ T691	Concept 7922 7945	sistemas de calefacción
 E697	Action:T697 Target:T698 Subject:T696 Subject2:T695 Subject3:T694 Subject4:T693 Subject5:T692 Subject6:T691
 R321	part-of Arg1:T699 Arg2:T698
 T58	Concept 8026 8031	buena
-T713	Concept 7953 7964	proveniente
 T712	Concept 7974 7979	humos
 T711	Concept 8000 8007	lugares
 T707	Concept 8032 8058	circulación de aire fresco
 T705	Concept 7950 7952	CO
 T704	Action 7986 7996	acumularse
 E704	Action:T704 Target:T705 Subject:T705
-R324	property-of Arg1:T712 Arg2:T713
-R325	property-of Arg1:T713 Arg2:T705
 R22	property-of Arg1:T58 Arg2:T707
-R24	property-of Arg1:T707 Arg2:T711
 T717	Action 8093 8104	respirarlos
 T715	Concept 8064 8071	persona
 T714	Action 8078 8089	envenenarse
@@ -787,12 +783,7 @@ T799	Concept 9298 9302	pipa
 T798	Concept 9309 9313	humo
 T797	Action 9314 9322	exhalado
 T796	Concept 9330 9337	fumador
-T795	Action 9229 9235	mezcla
-E795	Action:T795 Target:T804 Subject:T803 Subject2:T798
 E797	Action:T797 Target:T798 Subject:T796
-R37	property-of Arg1:T801 Arg2:T803
-R38	property-of Arg1:T800 Arg2:T803
-R39	property-of Arg1:T799 Arg2:T803
 T806	Concept 9365 9384	sustancias químicas
 T805	Action 9339 9347	Contiene
 E805	Action:T805 Target:T806
@@ -838,7 +829,7 @@ T852	Concept 9906 9914	sin olor
 T851	Concept 9915 9923	ni color
 R50	property-of Arg1:T852 Arg2:T853
 R54	property-of Arg1:T851 Arg2:T853
-E13	Action:T119 
+E13	Action:T119 Target:T853
 T858	Concept 9976 9982	polvos
 T857	Concept 9985 9994	cristales
 T856	Action 9936 9943	combina
@@ -865,10 +856,9 @@ E874	Action:T874 Target:T878 Subject:T876 Subject2:T875
 R399	is-a Arg1:T878 Arg2:T877
 T886	Concept 10223 10231	mercurio
 T885	Concept 10238 10242	aire
-T884	Action 10246 10253	asienta
+T884	Action 10246 10264	asienta en el agua
 T883	Concept 10260 10264	agua
-E884	Action:T884 Target:T883 Subject:T886
-R402	part-of Arg1:T886 Arg2:T885
+E884	Action:T884 Target2:T886
 T895	Action 10272 10277	pasar
 T893	Concept 10293 10311	cadena alimenticia
 T892	Concept 10328 10336	pescados
@@ -1079,7 +1069,7 @@ T1058	Action 12659 12667	prefiera
 E1058	Action:T1058 Target:T1059
 T1062	Action 12709 12717	necesita
 T1061	Concept 12721 12730	pesticida
-T1060	Action 12732 12741	utilícelo
+T1060	Action 12732 12755	utilícelo correctamente
 E1060	Action:T1060 Target:T1061
 E1062	Action:T1062 Target:T1061
 T1066	Action 12757 12762	Tenga
@@ -1180,7 +1170,7 @@ T1140	Action 13941 13950	duplicado
 T1139	Concept 13957 13969	último siglo
 T1138	Action 13998 14005	tenemos
 T1137	Concept 14006 14018	agua potable
-E1138	Action:T1138 Target:T1137 Subject:T1139
+E1138	Action:T1138 Target:T1137 Subject:T570
 E1140	Action:T1140 Target:T1141 Subject:T1139
 T1147	Action 14139 14145	causar
 T1146	Concept 14146 14165	problemas de salud.
@@ -1615,7 +1605,6 @@ R29	property-of Arg1:T307 Arg2:T298
 T311	Concept 9139 9144	usted
 R35	part-of Arg1:T99 Arg2:T311	
 R36	is-a Arg1:T804 Arg2:T318	
-R253	property-of Arg1:T320 Arg2:T804	
 R254	is-a Arg1:T806 Arg2:T317	
 R255	is-a Arg1:T811 Arg2:T323	
 A68	Uncertain E808
@@ -1638,3 +1627,23 @@ R266	is-a Arg1:T865 Arg2:T358
 R267	property-of Arg1:T359 Arg2:T865	
 R270	part-of Arg1:T361 Arg2:T878	
 R271	is-a Arg1:T898 Arg2:T370	
+T335	Concept 2337 2347	evidencias
+T336	Action 8015 8021	tienen
+E49	Action:T336 Target:T707 Subject:T711
+A69	Negated E49
+T338	Action 7953 7964	proveniente
+E50	Action:T338 Subject:T705 Target:T712
+T341	Action 9249 9257	proviene
+E52	Action:T341 Subject:T803 Target:E53 Target2:E797
+T536	Action 9270 9275	quema
+E53	Action:T536 Target:T801 Target2:T800 Target3:T799
+T544	Action 9222 9224	es
+E51	Action:T544 Subject:T804 Target:E54
+T340	Action 9229 9235	mezcla
+E54	Action:T340 Target:E52
+R24	part-of Arg1:T886 Arg2:T885	
+T565	Action 10206 10210	para
+E56	Action:T565 Subject:E874 Target:T369
+R37	part-of Arg1:T908 Arg2:T910	
+T570	Concept 13905 13912	Nuestro
+R38	property-of Arg1:T1141 Arg2:T570	

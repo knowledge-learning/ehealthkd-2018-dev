@@ -461,7 +461,7 @@ T417	Concept 5103 5107	olor
 T416	Concept 5042 5059	antitranspirantes
 T415	Concept 5062 5074	desodorantes
 E419	Action:T419 Target:T416 Target2:T415
-E420	Action:T420 Target:T185
+E420	Action:T420 
 E418	Action:T418 Target:T417 Subject:E419 Subject2:E420
 T437	Concept 5125 5144	transpira demasiado
 T434	Concept 5212 5219	sistema
@@ -470,12 +470,9 @@ T431	Concept 5246 5252	azúcar
 T430	Concept 5259 5265	sangre
 T429	Action 5230 5241	disminución
 T427	Concept 5146 5159	hiperhidrosis
-T426	Concept 5181 5190	trastorno
 T425	Concept 5212 5228	sistema nervioso
 T424	Concept 5273 5290	problema de salud
 E429	Action:T429 Target:T431
-R138	property-of Arg1:T426 Arg2:T432
-R139	property-of Arg1:T426 Arg2:T425
 R140	part-of Arg1:T431 Arg2:T430
 R142	is-a Arg1:T425 Arg2:T434
 R146	same-as Arg1:T437 Arg2:T427
@@ -489,19 +486,9 @@ T438	Concept 5372 5378	cuerpo
 E439	Action:T439 Target:T438
 E441	Action:T441 Target:T440 Subject:E439 Subject2:T442
 R148	same-as Arg1:T442 Arg2:T446
-T453	Concept 5412 5418	causas
 T452	Concept 5506 5510	piel
 T451	Concept 5517 5524	nervios
 T450	Concept 5422 5432	anhidrosis
-T449	Concept 5448 5462	deshidratación
-T448	Concept 5468 5478	quemaduras
-T447	Concept 5489 5499	trastornos
-R149	property-of Arg1:T453 Arg2:T450
-R150	property-of Arg1:T447 Arg2:T451
-R151	is-a Arg1:T447 Arg2:T453
-R152	is-a Arg1:T449 Arg2:T453
-R153	is-a Arg1:T448 Arg2:T453
-R4	property-of Arg1:T447 Arg2:T452
 T463	Concept 5547 5557	coloración
 T462	Concept 5564 5568	piel
 T461	Concept 5580 5585	color
@@ -568,7 +555,7 @@ T506	Concept 6057 6065	melanina
 T505	Concept 6033 6039	cuerpo
 T504	Action 6087 6092	clara
 T503	Concept 6070 6074	piel
-E504	Action:T504 Target:T503 Subject:T505
+E504	Action:T504 Target:T503 Subject:T503
 E507	Action:T507 Target:T506 Subject:T505
 R167	property-of Arg1:T508 Arg2:T506
 T514	Concept 6132 6137	áreas
@@ -729,11 +716,6 @@ T655	Action 7794 7800	causar
 E655	Action:T655 Target:T662 Subject:T656
 R221	is-a Arg1:T657 Arg2:T656
 R222	property-of Arg1:T661 Arg2:T662
-T666	Concept 7931 7938	centros
-T665	Concept 7942 7950	cuidados
-T664	Concept 7951 7965	especializados
-R223	property-of Arg1:T664 Arg2:T665
-R27	property-of Arg1:T665 Arg2:T666
 T668	Concept 7971 7990	úlceras por presión
 T667	Concept 7971 7978	úlceras
 R225	is-a Arg1:T668 Arg2:T667
@@ -801,11 +783,6 @@ A11	Uncertain E627
 T148	Concept 7598 7610	bloqueadores
 T149	Concept 8102 8124	tratamiento anticipado
 T150	Concept 8102 8113	tratamiento
-T151	Concept 7915 7923	personas
-T152	Concept 7897 7905	problema
-T165	Action 7883 7893	constituir
-E5	Action:T165 
-A12	Uncertain E5
 T167	Concept 7712 7720	vitiligo
 T168	Concept 7537 7541	piel
 T180	Concept 5273 5281	problema
@@ -829,18 +806,17 @@ E8	Action:T183 Subject:T184 Subject2:T403 Subject3:T406 Target:T405
 T184	Concept 4876 4882	debajo
 R75	part-of Arg1:T184 Arg2:T404	
 A14	Uncertain E418
-T185	Concept 5019 5034	con regularidad
 T186	Concept 5292 5302	Transpirar
 A15	Uncertain E441
 R77	is-a Arg1:T424 Arg2:T180	
 A16	Uncertain E439
 T181	Action 5168 5175	deberse
-E9	Action:T181 
+E9	Action:T181 Subject:T427 Target:E21 Target2:E429
 T187	Action 7867 7874	peligro
 E10	Action:T187 Target:T190
 T190	Concept 7859 7863	vida
 T191	Action 7850 7855	poner
-E11	Action:T191 Target:E10 Subject:T662
+E11	Action:T191 Target:E10 Subject:E655
 A17	Uncertain E496
 T192	Action 6421 6427	causas
 E12	Action:T192 Target:T523 Subject:T524 Subject2:T525 Subject3:T526
@@ -888,3 +864,16 @@ T290	Concept 8014 8026	tratamientos
 T291	Action 2189 2192	por
 E19	Action:T291 Subject:T172 Target:T89
 T294	Concept 4464 4477	muchas causas
+A28	Uncertain E9
+T295	Action 5181 5190	trastorno
+E21	Action:T295 Target:T432 Target2:T425
+T296	Action 5412 5418	causas
+E22	Action:T296 Target:T450 Subject:E23 Subject2:E24 Subject3:E26
+T297	Action 5448 5462	deshidratación
+E23	Action:T297 
+T298	Action 5468 5478	quemaduras
+E24	Action:T298 
+T299	Action 5489 5499	trastornos
+E26	Action:T299 Target:T452 Target2:T451
+R109	is-a Arg1:T17 Arg2:T12	
+R4	is-a Arg1:T338 Arg2:T135	
