@@ -856,9 +856,9 @@ E874	Action:T874 Target:T878 Subject:T876 Subject2:T875
 R399	is-a Arg1:T878 Arg2:T877
 T886	Concept 10223 10231	mercurio
 T885	Concept 10238 10242	aire
-T884	Action 10246 10264	asienta en el agua
+T884	Action 10246 10253	asienta
 T883	Concept 10260 10264	agua
-E884	Action:T884 Target2:T886
+E884	Action:T884 Target:T883 Subject:T886
 T895	Action 10272 10277	pasar
 T893	Concept 10293 10311	cadena alimenticia
 T892	Concept 10328 10336	pescados
@@ -1647,3 +1647,5 @@ E56	Action:T565 Subject:E874 Target:T369
 R37	part-of Arg1:T908 Arg2:T910	
 T570	Concept 13905 13912	Nuestro
 R38	property-of Arg1:T1141 Arg2:T570	
+R39	is-a Arg1:T779 Arg2:T304	
+R253	is-a Arg1:T777 Arg2:T308	

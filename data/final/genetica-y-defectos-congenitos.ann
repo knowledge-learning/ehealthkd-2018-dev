@@ -1230,3 +1230,4 @@ R256	property-of Arg1:T359 Arg2:T613
 R257	property-of Arg1:T359 Arg2:T612	
 T373	Action 8498 8502	base
 E34	Action:T373 Target:T677 Target2:T671 Subject:E672
+R264	is-a Arg1:T398 Arg2:T90	

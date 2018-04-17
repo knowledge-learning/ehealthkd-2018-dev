@@ -523,7 +523,7 @@ T457	Concept 5271 5279	pequeños
 T456	Concept 5257 5262	pasto
 T455	Concept 5247 5254	malezas
 T454	Concept 5238 5245	árboles
-E460	Action:T460 Target:T458 Target2:T458 Target3:T458 Subject:T456 Subject2:T455 Subject3:T454
+E460	Action:T460 Target3:T458 Subject:T456 Subject2:T455 Subject3:T454
 R139	is-a Arg1:T458 Arg2:T459
 R140	property-of Arg1:T457 Arg2:T458
 T468	Concept 5320 5325	ellos
