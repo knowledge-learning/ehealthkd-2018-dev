@@ -417,7 +417,11 @@ def split_test_dev(training, dev, output):
 
     for fname in os.listdir(dev):
         if fname.endswith('.ann'):
-            all_sentences.extend(parse_ann(os.path.join(dev, fname)).sentences)
+            sentences = parse_ann(os.path.join(dev, fname)).sentences
+
+            for s in sentences:
+                if s.annotations:
+                    all_sentences.append(s)
 
     training = training_annotations(training)
 
