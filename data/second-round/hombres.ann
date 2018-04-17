@@ -1,0 +1,177 @@
+T9	Concept 58 72	funcionamiento
+T8	Concept 73 79	sexual
+T7	Concept 103 110	hombres
+T5	Concept 4 24	problemas en el pene
+T4	Concept 4 13	problemas
+T3	Action 32 38	causar
+T2	Concept 39 44	dolor
+T1	Action 47 54	afectar
+T0	Concept 85 95	fertilidad
+E1	Action:T1 Target:T0 Target2:T9 Subject:T5
+E3	Action:T3 Target:T2 Subject:T5
+R0	is-a Arg1:T5 Arg2:T4
+R1	property-of Arg1:T8 Arg2:T9
+R2	property-of Arg1:T0 Arg2:T7
+T20	Concept 131 138	término
+T19	Concept 147 155	doctores
+T18	Action 156 160	usan
+T17	Action 178 183	tiene
+T16	Concept 184 196	dificultades
+T15	Action 200 209	embarazar
+T14	Concept 216 221	mujer
+T13	Action 241 250	intentado
+T11	Concept 112 124	Infertilidad
+T10	Concept 171 177	hombre
+E15	Action:T15 Target:T14
+E17	Action:T17 Target:T16 Subject:T10
+E18	Action:T18 Target:T20 Subject:T19
+R3	is-a Arg1:T11 Arg2:T20
+E13	Action:T13 Target:E15 Subject:T10 Target2:T41
+T23	Concept 312 324	infertilidad
+T21	Concept 351 357	hombre
+T24	Concept 392 397	mujer
+T31	Action 434 442	consulte
+T30	Concept 448 454	médico
+T29	Concept 424 432	infértil
+T28	Action 408 416	sospecha
+E28	Action:T28 Target:T29 Subject:T6
+E31	Action:T31 Target:T30 Subject:E28
+T35	Concept 464 472	exámenes
+T34	Action 484 494	determinar
+T33	Concept 513 537	problema de infertilidad
+T32	Concept 513 521	problema
+E34	Action:T34 Target:T33 Subject:T35
+R8	is-a Arg1:T33 Arg2:T32
+T40	Concept 581 593	tratamientos
+T39	Concept 603 615	medicamentos
+T38	Concept 617 624	cirugía
+T37	Concept 627 663	tecnologías de reproducción asistida
+R9	is-a Arg1:T39 Arg2:T40
+R10	is-a Arg1:T38 Arg2:T40
+R11	is-a Arg1:T37 Arg2:T40
+T51	Action 742 747	tener
+T50	Concept 748 753	bebés
+T48	Concept 701 708	parejas
+T47	Action 709 717	tratadas
+E47	Action:T47 Subject:T48 Target:T12
+E51	Action:T51 Target:T50 Subject:E47
+T58	Concept 777 795	problemas sexuales
+T56	Concept 777 786	problemas
+T55	Concept 762 769	hombres
+T54	Action 770 776	tienen
+E54	Action:T54 Subject:T55 Target:T58
+T62	Action 854 863	envejecen
+T61	Concept 803 812	problemas
+T60	Action 820 828	haciendo
+T59	Concept 833 840	comunes
+E60	Action:T60 Target:T59 Subject:T61
+E62	Action:T62 Target:E60
+T70	Concept 914 935	problemas emocionales
+T67	Concept 868 874	estrés
+T66	Concept 883 893	enfermedad
+T65	Concept 895 907	medicamentos
+T64	Concept 914 923	problemas
+T63	Concept 955 963	factores
+R18	is-a Arg1:T70 Arg2:T64
+R19	is-a Arg1:T64 Arg2:T63
+R20	is-a Arg1:T65 Arg2:T63
+R21	is-a Arg1:T66 Arg2:T63
+R22	is-a Arg1:T67 Arg2:T63
+T84	Concept 971 980	problemas
+T83	Concept 1001 1011	disfunción
+T82	Concept 1001 1018	disfunción sexual
+T81	Action 1123 1129	acudir
+T80	Concept 1135 1146	profesional
+T79	Concept 1135 1158	profesional de la salud
+T78	Concept 1040 1049	problemas
+T77	Concept 1068 1073	meses
+T76	Concept 1084 1092	angustia
+T75	Action 1076 1083	generan
+T72	Concept 1022 1027	común
+T71	Action 1050 1055	duran
+E71	Action:T71 Subject:T78 Subject2:T77
+E75	Action:T75 Target:T76 Subject:T78
+E81	Action:T81 Target:T79 Subject:T46
+R25	property-of Arg1:T72 Arg2:T84
+R26	is-a Arg1:T79 Arg2:T80
+R4	is-a Arg1:T82 Arg2:T83
+T87	Action 1209 1217	atención
+T86	Concept 1178 1185	hombres
+T85	Concept 1223 1228	salud
+E87	Action:T87 Target:T85 Subject:T86
+T96	Concept 1308 1314	cáncer
+T95	Concept 1242 1262	condiciones de salud
+T94	Action 1267 1274	afectan
+T93	Concept 1291 1298	hombres
+T92	Concept 1308 1326	cáncer de próstata
+T91	Concept 1335 1358	niveles de testosterona
+E94	Action:T94 Target:T93 Subject:T92 Subject2:T91 Subject3:T95
+R27	is-a Arg1:T92 Arg2:T95
+R28	is-a Arg1:T91 Arg2:T95
+R12	is-a Arg1:T92 Arg2:T96
+T110	Concept 1374 1385	principales
+T108	Concept 1520 1531	diagnóstico
+T107	Concept 1532 1542	anticipado
+T106	Concept 1460 1482	enfermedades cardiacas
+T105	Concept 1460 1472	enfermedades
+T104	Action 1491 1501	prevenirse
+T103	Action 1504 1512	tratarse
+T102	Concept 1386 1402	riesgos de salud
+T101	Concept 1386 1393	riesgos
+T100	Concept 1441 1457	cáncer del colon
+T99	Concept 1441 1447	cáncer
+T98	Action 1407 1416	enfrentan
+T97	Concept 1421 1428	hombres
+E98	Action:T98 Target:T102 Subject:T97
+E103	Action:T103 Target:T102 Subject:T108
+E104	Action:T104 Target:T102 Subject:T108
+R29	is-a Arg1:T102 Arg2:T101
+R30	is-a Arg1:T100 Arg2:T99
+R31	is-a Arg1:T106 Arg2:T102
+R32	is-a Arg1:T100 Arg2:T102
+R33	is-a Arg1:T106 Arg2:T105
+R34	property-of Arg1:T110 Arg2:T101
+R36	property-of Arg1:T107 Arg2:T108
+T118	Action 1637 1646	tratarlas
+T115	Concept 1598 1615	en forma temprana
+T114	Concept 1544 1566	Pruebas de diagnóstico
+T113	Concept 1544 1551	Pruebas
+T112	Action 1574 1584	determinar
+T111	Concept 1585 1597	enfermedades
+E112	Action:T112 Target:T111 Subject:T114
+E118	Action:T118 Target:T111
+R37	is-a Arg1:T114 Arg2:T113
+R38	property-of Arg1:T115 Arg2:T111
+A1	Uncertain E112
+A2	Uncertain E104
+A3	Uncertain E103
+A4	Uncertain E3
+T6	Concept 402 407	usted
+T26	Concept 627 638	tecnologías
+R13	is-a Arg1:T37 Arg2:T26	
+T12	Concept 722 734	infertilidad
+R14	is-a Arg1:T58 Arg2:T56	
+T27	Concept 1346 1358	testosterona
+R15	property-of Arg1:T91 Arg2:T27	
+T36	Concept 1329 1334	bajos
+R16	property-of Arg1:T36 Arg2:T91	
+T41	Concept 268 274	un año
+T22	Action 335 343	problema
+E2	Action:T22 Subject:T23 Target:T21
+T25	Action 377 385	problema
+E4	Action:T25 Target:T24
+A6	Uncertain E34
+T42	Action 557 566	encontrar
+E5	Action:T42 Target:T43
+T43	Concept 570 575	causa
+T44	Concept 642 663	reproducción asistida
+A7	Uncertain E51
+R5	part-of Arg1:T44 Arg2:T37	
+T45	Action 965 970	Tener
+E6	Action:T45 Target:T82
+R6	is-a Arg1:T82 Arg2:T84	
+T46	Concept 1096 1101	usted
+T49	Concept 1110 1116	pareja
+R7	property-of Arg1:T49 Arg2:T46	
+T52	Concept 1257 1262	salud
+R17	property-of Arg1:T95 Arg2:T52	
