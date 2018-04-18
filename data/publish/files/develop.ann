@@ -230,7 +230,7 @@ T229	Concept 1899 1935	organizaciones de enfermedades raras
 T230	Concept 1938 1958	clínicas de genética
 T231	Action 1966 1974	ayudarle
 T232	Action 1977 1986	encontrar
-E233	Action:T232 
+E233	Action:T232
 E234	Action:T231 Target:E233 Subject:T227 Subject2:T229 Subject3:T230
 A235	Uncertain E234
 T236	Concept 1865 1871	Grupos
@@ -391,9 +391,9 @@ T390	Action 3098 3108	inyectarlo
 T391	Action 3111 3121	absorberlo
 T392	Concept 3137 3141	piel
 E393	Action:T391 Subject:T392
-E394	Action:T390 
-E395	Action:T389 
-E396	Action:T388 
+E394	Action:T390
+E395	Action:T389
+E396	Action:T388
 A397	Uncertain E396
 A398	Uncertain E395
 A399	Uncertain E394
@@ -543,7 +543,7 @@ T542	Concept 4360 4364	olor
 T543	Concept 4299 4316	antitranspirantes
 T544	Concept 4319 4331	desodorantes
 E545	Action:T540 Target:T543 Target2:T544
-E546	Action:T539 
+E546	Action:T539
 E547	Action:T541 Target:T542 Subject:E545 Subject2:E546
 A548	Uncertain E547
 T549	Concept 4388 4398	específica
@@ -669,7 +669,7 @@ R668	property-of Arg1:T665 Arg2:T664
 R669	is-a Arg1:T662 Arg2:T664
 T670	Concept 5364 5377	profundamente
 T671	Action 5456 5459	uso
-E672	Action:T671 
+E672	Action:T671
 T673	Action 5392 5398	tengan
 E674	Action:T673 Subject:T666 Target:T662
 R675	property-of Arg1:T670 Arg2:T663
@@ -973,7 +973,7 @@ T972	Concept 7834 7841	cálidas
 T973	Concept 7843 7850	mojadas
 T974	Concept 7853 7860	húmedas
 T975	Action 7806 7812	Crecen
-E976	Action:T975 
+E976	Action:T975
 R977	property-of Arg1:T972 Arg2:T971
 R978	property-of Arg1:T973 Arg2:T971
 R979	property-of Arg1:T974 Arg2:T971
@@ -1981,7 +1981,7 @@ T1980	Concept 16025 16029	oído
 E1981	Action:T1977 Target:T1978 Target2:T1979 Subject:T1974
 E1982	Action:T1975 Target:T1976 Subject:T1974
 T1983	Action 15912 15919	ocurrir
-E1984	Action:T1983 
+E1984	Action:T1983
 A1985	Uncertain E1984
 T1986	Concept 16025 16038	oído afectado
 R1987	property-of Arg1:T1986 Arg2:T1980
@@ -2067,9 +2067,9 @@ R2066	is-a Arg1:T2058 Arg2:T2057
 R2067	property-of Arg1:T2060 Arg2:T2061
 R2068	part-of Arg1:T2061 Arg2:T2059
 T2069	Action 16708 16713	antes
-E2070	Action:T2069 
+E2070	Action:T2069
 T2071	Action 16717 16722	estar
-E2072	Action:T2071 
+E2072	Action:T2071
 T2073	Concept 16739 16753	detector de CO
 T2074	Concept 16780 16793	altos niveles
 T2075	Concept 16797 16799	CO
@@ -2372,9 +2372,9 @@ T2371	Concept 19077 19084	médicas
 T2372	Concept 19103 19113	importante
 R2373	property-of Arg1:T2371 Arg2:T2370
 T2374	Action 19100 19102	es
-E2375	Action:T2374 
+E2375	Action:T2374
 T2376	Action 19060 19065	Tener
-E2377	Action:T2376 
+E2377	Action:T2376
 T2378	Concept 19172 19186	partes de piel
 T2379	Concept 19190 19200	carne viva
 T2380	Concept 19123 19134	sarpullidos
@@ -2580,7 +2580,7 @@ R2579	property-of Arg1:T2571 Arg2:T2570
 R2580	property-of Arg1:T2574 Arg2:T2573
 E2581	Action:T2565 Target:T2572 Target2:T2573 Subject:E2576
 T2582	Action 20773 20778	hacer
-E2583	Action:T2582 
+E2583	Action:T2582
 A2584	Uncertain E2583
 T2585	Concept 20867 20872	Altas
 T2586	Concept 20957 20963	graves
